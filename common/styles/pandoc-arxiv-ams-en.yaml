@@ -1,0 +1,20 @@
+---
+# AMS mathematical preprint profile using only arXiv-compatible TeX packages.
+documentclass: amsart
+classoption:
+  - 11pt
+  - reqno
+default-author: Lior Isthmus
+
+# Existing manuscripts number headings manually.
+numbersections: false
+lang: en
+
+# Retain amsart's native indented-paragraph style instead of Pandoc's parskip.
+indent: true
+
+colorlinks: true
+linkcolor: blue
+urlcolor: blue
+citecolor: blue
+...

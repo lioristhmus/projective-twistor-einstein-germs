@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "version": "1.0",
+  "canonical_change": "YAML version and reversible editorial ledger",
+  "editorial_events": 129,
+  "reverse_editorial_replay": "exact pre-editorial v1.0 source, then exact v0.2.12 after metadata reversal",
+  "mathematical_AST_nodes_unchanged": {
+    "manuscript.md": 5748,
+    "PROOF.md": 598,
+    "notation.md": 193
+  },
+  "citation_AST_nodes_unchanged": 185,
+  "displayed_formulas_unchanged": 578,
+  "ordered_source_anchors_unchanged": 752,
+  "ordered_TeX_labels_unchanged": 875,
+  "generated_TeX_math_fingerprints_unchanged": 5748,
+  "main_theorem_blocks_sha256": {
+    "thm:gg-main": "3bab7ec43902f4eca964a76417496a81d85fe25fcb743a750448ca104da7eb0e",
+    "thm:gg-independent-source-operator-correspondence": "3dde3df04d3778abd26d56657498080d3ef97ae5d848c83f6c40360405895671",
+    "thm:gg-structured-googly-realization": "13fcd83aaab832c782a0f31bf76564dff3022e4149bc517c5ec53e474570b7db",
+    "thm:gg-unified-projective-gravitational-correspondence": "b1a7f501bb4c6419dbf9b05ee62133ca8d20b25863254be8c3a4e26227d6712c"
+  },
+  "AI_disclosure": "byte-identical",
+  "bibliography_proof_note_notation": "Proof note and notation byte-identical; bibliography differs only in the two specified note fields",
+  "DAG_change": "none in editorial pass",
+  "generated_TeX": "regenerated from the edited canonical source",
+  "file_sha256": {
+    "manuscript.md": "ae3292b78bcdcd847f1d2b4ea56dd92f104a9eb1f4ae367ed75e170748cb4ea7",
+    "manuscript.tex": "19ee8cb549046f4acc3360a47439a37ab752d69b34ab07bb84748f3dfb74936c",
+    "manuscript.pdf": "18395e1414a149d197089c14a92a4a16ed19a0efa7403947088e653f25b1f46c",
+    "references.bib": "2c5bb173fd0b2455a4f3737ba76fb55d002a0dc82c2b13ca8ddc0deb8704c088"
+  },
+  "new_foundational_reproof": false,
+  "formal_verification": false,
+  "bibliography_non_note_sha256": "d14e4809810a87be2c001c84b1f0d320c10413f2559e2295e6c2a4f5dd460ad7",
+  "bibliography_public_notes": {
+    "AdamoEtAl2026v2": "Version 2",
+    "Adamo2018SpinorConventions": "Section 1.2, p. 6, equations (1.5)--(1.10)"
+  }
+}

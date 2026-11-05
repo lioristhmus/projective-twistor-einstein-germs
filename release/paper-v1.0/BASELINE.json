@@ -1,0 +1,28 @@
+{
+  "baseline": "v0.2.12-review",
+  "manuscript_changes": [
+    {
+      "field": "YAML version",
+      "old": "0.2.12-review",
+      "new": "1.0"
+    },
+    {
+      "field": "Limited editorial changes",
+      "ledger": "EDITORIAL-CHANGES.json",
+      "reversible_to_pre_editorial_v1_commit": "95335f8d918a98ce7a9d967ba813d2ebb186b67b"
+    }
+  ],
+  "baseline_files": {
+    "manuscript.md": "c4a826d4d0992a26122914a1adcfceb948ce3b21a090fea4271123a4914a471e",
+    "manuscript.tex": "7f78b8f5256de42a5e633d8cdc066b3af63b152dde3724392abb5f99bc248d28",
+    "manuscript.pdf": "27aadfc0e51590f87e1832d58ef11ff4d98082b2065ce054fff9e4a86869eabc",
+    "PROOF.md": "cb6740b356f0b8d2a7358763574425af8ab50fdbd2a03047696319909c1fbd14",
+    "notation.md": "822f13898d9bd706bdf62fa77dad6491d2a29dc9366633e26be672eb17af6096",
+    "references.bib": "13b8ba49eb13bdeeb651ee2c4a99588ac5ad75af635d14b6d22c2711700e3904",
+    "PROOF-DAG.json": "fbb8ccb796349bfb642d427c6fb8115814281d1be415f918b643840dc0f51cc9",
+    "PROOF-NOTE-DAG.json": "aad95bab191aff8616a93d5e1841296bae1b6486cb29db0f457f87758349b97b"
+  },
+  "layout_script": "v0.2.12 export-only adjustments, adapted to repository-relative paths",
+  "mathematical_changes": false,
+  "AI_disclosure_changes": false
+}

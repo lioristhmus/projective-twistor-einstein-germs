@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "version": "1.0",
+  "prepared_date": "2026-11-05",
+  "tools": {
+    "python": "Python 3.14.7",
+    "pandoc": "pandoc 3.9.0.2",
+    "pandoc-crossref": "pandoc-crossref v0.3.23 git commit UNKNOWN (UNKNOWN) built with Pandoc v3.9.0.2, pandoc-types v1.23.1.1 and GHC 9.14.1",
+    "xelatex": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026/Homebrew)",
+    "poppler": "pdftoppm version 26.09.0"
+  },
+  "pages": 219,
+  "previous_public_v1_pages": 219,
+  "PDF_author": "Lior Isthmus",
+  "generated_TeX_math_fingerprints_identical": 5748,
+  "ordered_TeX_labels_identical": 875,
+  "semantic_named_destinations_preserved": true,
+  "removed_page_only_destinations": [],
+  "PDF_named_destinations_checked": 1640,
+  "all_page_overviews_rendered": 219,
+  "visually_inspected_pages": [
+    1,
+    181,
+    182,
+    201,
+    219
+  ],
+  "overfull_boxes": 0,
+  "missing_glyphs": false,
+  "undefined_references": false,
+  "underfull_hbox": 5,
+  "underfull_vbox": 12,
+  "protected_prior_files_unchanged": 274,
+  "mathematical_computation_jobs": 0,
+  "publication_state": "local preparation; no remote publication",
+  "sha256": {
+    "manuscript.md": "ae3292b78bcdcd847f1d2b4ea56dd92f104a9eb1f4ae367ed75e170748cb4ea7",
+    "manuscript.tex": "19ee8cb549046f4acc3360a47439a37ab752d69b34ab07bb84748f3dfb74936c",
+    "manuscript.pdf": "18395e1414a149d197089c14a92a4a16ed19a0efa7403947088e653f25b1f46c"
+  },
+  "changed_rendered_pages": [
+    181,
+    182,
+    201
+  ],
+  "decoded_RGB_identical_pages": 216,
+  "visual_review": "All 219 pages rendered and compared as decoded RGB images. 216 pages match the preceding PDF exactly. The three changed pages and the first and last pages were inspected at readable resolution; no clipping, overlap or missing glyphs observed.",
+  "bibliography_note_cleanup": {
+    "date": "2026-11-05",
+    "note_fields_updated": 2,
+    "manuscript_md_tex_pdf": "byte-identical to preceding v1.0",
+    "typesetting_rerun": false,
+    "citation_rendering_comparison": "Pandoc/crossref/citeproc TeX output byte-identical before and after the two note edits"
+  }
+}

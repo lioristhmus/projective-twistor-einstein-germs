@@ -1,0 +1,20 @@
+% Common LaTeX macros for CCG papers
+% Keep this minimal and portable across engines.
+
+% Math shortcuts
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\eps}{\varepsilon}
+
+% Theorem-like environments (lightweight)
+% If you need full theoremstyles, consider amsthm or thmtools here.
+% \usepackage{amsthm}   % already available via TeX Live if needed
+% \newtheorem{theorem}{Theorem}
+% \newtheorem{lemma}{Lemma}
+
+% Code listings default (avoid minted to keep shell-escape off)
+\lstset{basicstyle=\ttfamily\small,breaklines=true,columns=fullflexible}
+

@@ -1,0 +1,15 @@
+Copyright 2026 Lior Isthmus
+
+This repository uses two licenses, according to file scope:
+
+1. The manuscript, generated manuscript artifacts (including TeX and PDF),
+   bibliography, proof note, notation index, citation metadata, dependency data,
+   release reports, manifests, checksums and prose documentation are licensed
+   under Creative Commons Attribution 4.0 International (CC BY 4.0).
+   See LICENSE-CC-BY-4.0.md.
+
+2. Build and validation code under scripts/ and rendering support under
+   common/styles/ are licensed under the Apache License, Version 2.0.
+   See LICENSE-APACHE-2.0.
+
+Standard TeX packages and system dependencies are not redistributed here.

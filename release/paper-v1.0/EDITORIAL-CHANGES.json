@@ -1,0 +1,1172 @@
+{
+  "schema": "paper-editorial-changes-v1",
+  "version": "1.0",
+  "source": "manuscript.md",
+  "base_commit": "95335f8d918a98ce7a9d967ba813d2ebb186b67b",
+  "base_sha256": "ee8a33fa32095982537002f03174fbcd2abf97ca553ed838f0c4522e97c682c3",
+  "result_sha256": "ae3292b78bcdcd847f1d2b4ea56dd92f104a9eb1f4ae367ed75e170748cb4ea7",
+  "scope": "Repeated emphasis and duplicated explanations only; mathematical expressions, main theorem blocks, bibliography, AI disclosure and calibrated scope retained.",
+  "events": [
+    {
+      "id": "edit-001",
+      "original_line": 721,
+      "before": "They start in normal degree three and are contact-line cochains on the product cover. The positive lift is the cotangent lift of the Hamiltonian deformation on $T_0$; the negative lift is its determined dual lift. Their cohomology classes have exactly the two original free lists, with the normalization verified in Appendix C. They have an actual mixed interaction: for",
+      "after": "They start in normal degree three and are contact-line cochains on the product cover. The positive lift is the cotangent lift of the Hamiltonian deformation on $T_0$; the negative lift is its determined dual lift. Their cohomology classes have exactly the two original free lists, with the normalization verified in Appendix C. They have a mixed interaction: for",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-002",
+      "original_line": 825,
+      "before": "$(1,\\varrho,\\zeta,\\varrho\\zeta)$ form all nine bidegree-$(2,2)$ polynomials. The tensor product of the two three-point Vandermonde matrices is invertible, and its quadratic kernel is the single null-form line. The last normalization is nonzero on that line. The ten-by-ten matrix is consequently a unit. The actual moving quadric has this same one-dimensional quadratic ideal, so $G$ is its genuine inverse conformal form, not a fit to only nine directions. Put $g_{\\mathrm{aux}}=G^{-1}$.",
+      "after": "$(1,\\varrho,\\zeta,\\varrho\\zeta)$ form all nine bidegree-$(2,2)$ polynomials. The tensor product of the two three-point Vandermonde matrices is invertible, and its quadratic kernel is the single null-form line. The last normalization is nonzero on that line. The ten-by-ten matrix is consequently a unit. The actual moving quadric has this same one-dimensional quadratic ideal, so $G$ is its inverse conformal form, not a fit to only nine directions. Put $g_{\\mathrm{aux}}=G^{-1}$.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-003",
+      "original_line": 840,
+      "before": "For the affine normalization, lift $\\iota$ by the actual covector $\\ell_f$ to the nonprojective null cone in $T^*M$. Write",
+      "after": "For the affine normalization, lift $\\iota$ by the covector $\\ell_f$ to the nonprojective null cone in $T^*M$. Write",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-004",
+      "original_line": 849,
+      "before": "$dp(D)=g^{-1}\\ell_f$; its scaling exists and is unique by the preceding characteristic identification. In the actual covector lift,",
+      "after": "$dp(D)=g^{-1}\\ell_f$; its scaling exists and is unique by the preceding characteristic identification. In the covector lift,",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-005",
+      "original_line": 858,
+      "before": "The regular complete contact incidence determines a rank-two holomorphic bundle $\\mathcal E_J$ independently of a chosen scalar metric. Its solutions are defined by a projective ray operator on the intrinsic density line. With the same density calibration, its actual Cauchy transitions and inverse transitions are exactly the matrices $B_{ij}$ below. Their Wronskian supplies a specified isomorphism $\\bigwedge^2\\mathcal E_J\\xrightarrow{\\sim}\\mathcal L$, which is the identification used in subsequent formulas. The construction is natural under marked contact/incidence comparisons and finite parameter restriction.",
+      "after": "The regular complete contact incidence determines a rank-two holomorphic bundle $\\mathcal E_J$ independently of a chosen scalar metric. Its solutions are defined by a projective ray operator on the intrinsic density line. With the same density calibration, its Cauchy transitions and inverse transitions are exactly the matrices $B_{ij}$ below. Their Wronskian supplies a specified isomorphism $\\bigwedge^2\\mathcal E_J\\xrightarrow{\\sim}\\mathcal L$, which is the identification used in subsequent formulas. The construction is natural under marked contact/incidence comparisons and finite parameter restriction.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-006",
+      "original_line": 874,
+      "before": "Hence these are one intrinsic line-valued ray operator. Its two-dimensional solution spaces descend by short-ray ODE uniqueness. The Wronskian takes values in $\\mathcal L$. Appendix D proves graph-frame invariance directly and compares the identical actual calibrated Cauchy frames, including inverse matrices and scale changes. No Schouten tensor or Einstein germ is an input of this definition. \u220e",
+      "after": "Hence these are one intrinsic line-valued ray operator. Its two-dimensional solution spaces descend by short-ray ODE uniqueness. The Wronskian takes values in $\\mathcal L$. Appendix D proves graph-frame invariance directly and compares the identical calibrated Cauchy frames, including inverse matrices and scale changes. No Schouten tensor or Einstein germ is an input of this definition. \u220e",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-007",
+      "original_line": 960,
+      "before": "These coherent formulas retain the actual selected section under a scale comparison.",
+      "after": "These coherent formulas retain the selected section under a scale comparison.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-008",
+      "original_line": 972,
+      "before": "in every null direction. A symmetric quadratic form zero on the complete nondegenerate null quadric is a multiple of $g$. Conversely that trace-free equation supplies raywise solutions whose Cauchy states agree under the actual $B_{ij}$, proving both inverses.",
+      "after": "in every null direction. A symmetric quadratic form zero on the complete nondegenerate null quadric is a multiple of $g$. Conversely that trace-free equation supplies raywise solutions whose Cauchy states agree under the $B_{ij}$, proving both inverses.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-009",
+      "original_line": 1004,
+      "before": "We can now correct the actual bundle defect and the entire record simultaneously. At a small extension with highest ideal $J$, first express the lower selected density as the Einstein scale and lift that scale to the trial stage. For arbitrary lifted local states define the actual target-minus-source defect",
+      "after": "We can now correct the actual bundle defect and the entire record simultaneously. At a small extension with highest ideal $J$, first express the lower selected density as the Einstein scale and lift that scale to the trial stage. For arbitrary lifted local states define the target-minus-source defect",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-010",
+      "original_line": 1052,
+      "before": "*Proof.* Appendix D derives the optical-class map using the actual bundle above. In the lifted lower Einstein scale the comparison scalar $1$ has ray residual $P^{\\mathrm{trial}}(k,k)$ in $J$. Local double primitives make its highest class exactly $[P^{\\mathrm{trial}\\,\\circ}]$. The actual contracted Bianchi identity",
+      "after": "*Proof.* Appendix D derives the optical-class map using the actual bundle above. In the lifted lower Einstein scale the comparison scalar $1$ has ray residual $P^{\\mathrm{trial}}(k,k)$ in $J$. Local double primitives make its highest class exactly $[P^{\\mathrm{trial}\\,\\circ}]$. The contracted Bianchi identity",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-011",
+      "original_line": 1067,
+      "before": "Fix the value and gradient in the lifted lower selected scale, then compute the actual numerical coefficient $\\lambda_*$ of this same section from its prolongation. Since",
+      "after": "Fix the value and gradient in the lifted lower selected scale, then compute the numerical coefficient $\\lambda_*$ of this same section from its prolongation. Since",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-012",
+      "original_line": 1111,
+      "before": "These independently admitted affine objects are equivalent to the calibrated contact/optical objects with a whole unit section. Their actual overlap maps have the local holomorphic law",
+      "after": "These independently admitted affine objects are equivalent to the calibrated contact/optical objects with a whole unit section. Their overlap maps have the local holomorphic law",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-013",
+      "original_line": 1121,
+      "before": "*Proof.* Appendix D.7 proves uniqueness and holomorphic dependence of the lifted compact skies, and identifies their normal-bundle condition with invertibility of $\\mathrm d_qj_A$. Appendix D.8 identifies the projective extension with the intrinsic Schwarzian equality, obtains the compatible marked root and the same whole optical section, and proves both inverse comparisons. Appendix D.9 gives the explicit actual matrix calculation and its cochain obstruction. The convergence statement follows from the finite formulas there and the common analytic witness in \u00a76. Thus the Einstein recognition in Proposition 5.4 is a consequence of this holomorphic admission. \u220e",
+      "after": "*Proof.* Appendix D.7 proves uniqueness and holomorphic dependence of the lifted compact skies, and identifies their normal-bundle condition with invertibility of $\\mathrm d_qj_A$. Appendix D.8 identifies the projective extension with the intrinsic Schwarzian equality, obtains the compatible marked root and the same whole optical section, and proves both inverse comparisons. Appendix D.9 gives the explicit matrix calculation and its cochain obstruction. The convergence statement follows from the finite formulas there and the common analytic witness in \u00a76. Thus the Einstein recognition in Proposition 5.4 is a consequence of this holomorphic admission. \u220e",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-014",
+      "original_line": 1206,
+      "before": "The anchor and structure equations proved in \u00a74 apply to these actual flows. With horizontal directions first, the remaining six directions span $\\ker\\theta$, and its quotient has the derived metric. Its connection is torsion free and its curvature is $R_{\\mathcal U}$, so its Ricci trace is exactly $\\varepsilon\\Lambda g_\\varepsilon$.",
+      "after": "The anchor and structure equations proved in \u00a74 apply to these flows. With horizontal directions first, the remaining six directions span $\\ker\\theta$, and its quotient has the derived metric. Its connection is torsion free and its curvature is $R_{\\mathcal U}$, so its Ricci trace is exactly $\\varepsilon\\Lambda g_\\varepsilon$.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-015",
+      "original_line": 1212,
+      "before": "In the physical scale the actual canonical sections are",
+      "after": "In the physical scale the canonical sections are",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-016",
+      "original_line": 1279,
+      "before": "### 6.3. Literal comparison with the finite generator",
+      "after": "### 6.3. Coefficient comparison with the finite generator",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-017",
+      "original_line": 1289,
+      "before": "The defined stored tuples satisfy the literal equality",
+      "after": "The defined stored tuples satisfy the equality",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-018",
+      "original_line": 1302,
+      "before": "Their canonical bundles, actual $I$ and $X$ then agree, not just their scalar norm. Apply the same $P$ on both sides. Normal development, prescribed Moser path, initialized flow, graph projection and the same four-evaluation inverse have unique identical solutions. Their fresh tangent-sky graphs, potentials, hit maps, selected Cauchy states and optical fundamental matrices agree by the same finite ODE uniqueness. The affine matrices are the same finite functions of these states. This proves equality of every augmented component and inverse. It also proves compatibility under truncation.",
+      "after": "Their canonical bundles, $I$ and $X$ then agree, not just their scalar norm. Apply the same $P$ on both sides. Normal development, prescribed Moser path, initialized flow, graph projection and the same four-evaluation inverse have unique identical solutions. Their fresh tangent-sky graphs, potentials, hit maps, selected Cauchy states and optical fundamental matrices agree by the same finite ODE uniqueness. The affine matrices are the same finite functions of these states. This proves equality of every augmented component and inverse. It also proves compatibility under truncation.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-019",
+      "original_line": 1351,
+      "before": "at that point, in precisely the same tautological parallel frame. The difference of these two partial line connections is tensorial. Choosing a normal frame at each point proves it is zero everywhere. Thus the determinant identification is Bott-parallel and descends along the connected short alpha leaves, giving the actual isomorphism",
+      "after": "at that point, in the same tautological parallel frame. The difference of these two partial line connections is tensorial. Choosing a normal frame at each point proves it is zero everywhere. Thus the determinant identification is Bott-parallel and descends along the connected short alpha leaves, giving the actual isomorphism",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-020",
+      "original_line": 1386,
+      "before": "Substitution cancels the two $\\Upsilon$ terms, proving invariance of the actual pullback form. Under $\\pi\\mapsto a\\pi$ it is homogeneous of degree two and annihilates the Euler field, as required for an $L^2$-valued one-form. On the alpha-integrable locus, the remaining component of the basicness equation, obtained by differentiating in a normal spin frame, is",
+      "after": "Substitution cancels the two $\\Upsilon$ terms, proving invariance of the pullback form. Under $\\pi\\mapsto a\\pi$ it is homogeneous of degree two and annihilates the Euler field, as required for an $L^2$-valued one-form. On the alpha-integrable locus, the remaining component of the basicness equation, obtained by differentiating in a normal spin frame, is",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-021",
+      "original_line": 1451,
+      "before": "The actual ordered jets of this witness obey exactly the finite linear recurrence just specified. At each order, equality of the inhomogeneous equations and free component, with the highest-kernel description, gives equality of the whole jet. This proves consistency of the finite rule without putting the witness into that rule as an input. Lemma E.2 and Theorem E.1 then make its registered coefficients literally the coefficients of the one representative $K_Z\\psi_\\varepsilon$.",
+      "after": "The ordered jets of this witness obey exactly the finite linear recurrence just specified. At each order, equality of the inhomogeneous equations and free component, with the highest-kernel description, gives equality of the whole jet. This proves consistency of the finite rule without putting the witness into that rule as an input. Lemma E.2 and Theorem E.1 then make its registered coefficients literally the coefficients of the one representative $K_Z\\psi_\\varepsilon$.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-022",
+      "original_line": 1491,
+      "before": "Under this comparison the two selected metrics coincide. For an auxiliary coframe their two unit densities therefore have ratio $r$ with $r^2=1$ and $r(o)=1$. On a smaller connected germ $r+1$ is a unit, so $r=1$. The Einstein-bundle section map is injective, hence the actual forms coincide, including their derivatives. This argument also works over a finite local coefficient algebra because $r+1$ has unit residue. It does not replace preservation of the form by preservation of its kernel or its squared norm.",
+      "after": "Under this comparison the two selected metrics coincide. For an auxiliary coframe their two unit densities therefore have ratio $r$ with $r^2=1$ and $r(o)=1$. On a smaller connected germ $r+1$ is a unit, so $r=1$. The Einstein-bundle section map is injective, hence the forms coincide, including their derivatives. This argument also works over a finite local coefficient algebra because $r+1$ has unit residue. It does not replace preservation of the form by preservation of its kernel or its squared norm.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-023",
+      "original_line": 1519,
+      "before": "*Proof.* Let their selected metrics be $g_1,g_2$. The normal-metric uniqueness of Proposition A.4 gives the actual marked isometry",
+      "after": "*Proof.* Let their selected metrics be $g_1,g_2$. The normal-metric uniqueness of Proposition A.4 gives the marked isometry",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-024",
+      "original_line": 1521,
+      "before": "The tangent identification in this formula is the retained marked one. Its inverse and spin lift are fixed by the same initialized normal maps. Let $C_f$ be its induced null-ray map. In actual ray charts $\\psi_i^a$ set",
+      "after": "The tangent identification in this formula is the retained marked one. Its inverse and spin lift are fixed by the same initialized normal maps. Let $C_f$ be its induced null-ray map. In ray charts $\\psi_i^a$ set",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-025",
+      "original_line": 1546,
+      "before": "$\\widehat K_i j_1=j_2 f^F$ on the actual incidence, and hence intertwine all compact lifted skies. In point-map notation,",
+      "after": "$\\widehat K_i j_1=j_2 f^F$ on the incidence, and hence intertwine all compact lifted skies. In point-map notation,",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-026",
+      "original_line": 1557,
+      "before": "Coherence is actual. For successive comparisons write $(K_{12},d_{12},u_{12})$ and $(K_{23},d_{23},u_{23})$. Their composite has",
+      "after": "The comparisons compose as follows. For successive comparisons write $(K_{12},d_{12},u_{12})$ and $(K_{23},d_{23},u_{23})$. Their composite has",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-027",
+      "original_line": 1581,
+      "before": "Thus the affine coefficient is computed from the same actual Cauchy matrices and section; it is not new free source data.",
+      "after": "Thus the affine coefficient is computed from the same Cauchy matrices and section; it is not new free source data.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-028",
+      "original_line": 1609,
+      "before": "By definition its tautological contact value pulls back to the actual ray contact value, with the induced value-line isomorphism. The contact Levi pairing",
+      "after": "By definition its tautological contact value pulls back to the ray contact value, with the induced value-line isomorphism. The contact Levi pairing",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-029",
+      "original_line": 1619,
+      "before": "The form on $Z_+$ is the actual descended $\\vartheta$ of Lemma 7.2. In the physical scale of the source metric, the pullback formula of Proposition 7.1 therefore reads the density $\\sigma=1$; Proposition 5.4 evaluates the selected ray section as this same density. The contact comparison $C$ preserves the tautological contact value and the sky incidence, so the construction of \u00a7D.1 identifies their density lines with the same central root. For each fixed ray, its Hamilton affine parameter and these density frames then identify the two optical equations and their Cauchy data. ODE uniqueness identifies their full solutions, transition matrices and Wronskian isomorphism, including inverse transitions. Finally the affine coordinate is the ratio of the same companion solution to $\\sigma$, with derivative $\\sigma^{-2}$. The unique lift of each compact sky in \u00a7D.7 fixes its additive constant, and \u00a7D.8 gives the unique projective extension. This proves the contact, selected-section and affine commutative comparison with the same numerical scalar.",
+      "after": "The form on $Z_+$ is the descended $\\vartheta$ of Lemma 7.2. In the physical scale of the source metric, the pullback formula of Proposition 7.1 therefore reads the density $\\sigma=1$; Proposition 5.4 evaluates the selected ray section as this same density. The contact comparison $C$ preserves the tautological contact value and the sky incidence, so the construction of \u00a7D.1 identifies their density lines with the same central root. For each fixed ray, its Hamilton affine parameter and these density frames then identify the two optical equations and their Cauchy data. ODE uniqueness identifies their full solutions, transition matrices and Wronskian isomorphism, including inverse transitions. Finally the affine coordinate is the ratio of the same companion solution to $\\sigma$, with derivative $\\sigma^{-2}$. The unique lift of each compact sky in \u00a7D.7 fixes its additive constant, and \u00a7D.8 gives the unique projective extension. This proves the contact, selected-section and affine commutative comparison with the same numerical scalar.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-030",
+      "original_line": 1651,
+      "before": "Its spin differential is the specified initialized lift. The covariant source instruction $U\\to V$ uses $\\Xi_{a,A}^{-1}$; the displayed metric map has the opposite direction. Their ray and affine maps are the actual maps of Proposition 8.1 with that direction.",
+      "after": "Its spin differential is the specified initialized lift. The covariant source instruction $U\\to V$ uses $\\Xi_{a,A}^{-1}$; the displayed metric map has the opposite direction. Their ray and affine maps are the maps of Proposition 8.1 with that direction.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-031",
+      "original_line": 1664,
+      "before": "Associativity follows from actual map composition, including its initialized spin transports. On the reversed radial segment the direct and broken transports cancel, which proves the inverse formula. For any actual metric isometry with spin lift, its image of the marked point determines $a$ and its differential relative to $\\nu_a$ determines the full $A$. An isometry is fixed by these data since it intertwines the initialized exponential maps. This proves existence, uniqueness and the bijection of physical Hom sets. An element in the kernel of the tensor representation still has its distinct spin lift and is not removed.",
+      "after": "Associativity follows from map composition, including its initialized spin transports. On the reversed radial segment the direct and broken transports cancel, which proves the inverse formula. For any metric isometry with spin lift, its image of the marked point determines $a$ and its differential relative to $\\nu_a$ determines the full $A$. An isometry is fixed by these data since it intertwines the initialized exponential maps. This proves existence, uniqueness and the bijection of physical Hom sets. An element in the kernel of the tensor representation still has its distinct spin lift and is not removed.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-032",
+      "original_line": 1673,
+      "before": "$\\Gamma R_{a,A}d_{\\mathrm{rec}}$ together with the two actual counits of Theorem 7.4. Its composition and inverse diagrams are the ones just proved, followed by their actual ordinary comparisons. In a mixed field this operation rebuilds both the selected background and its registered class; there need not be a point map of one fixed old background threefold.",
+      "after": "$\\Gamma R_{a,A}d_{\\mathrm{rec}}$ together with the two counits of Theorem 7.4. Its composition and inverse diagrams are the ones just proved, followed by their ordinary comparisons. In a mixed field this operation rebuilds both the selected background and its registered class; there need not be a point map of one fixed old background threefold.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-033",
+      "original_line": 1700,
+      "before": "*Proof of Theorem 2.4.* The two original analytic residue dictionaries are Theorem 3.1, with both factorial normalizations fixed. Lemma 3.2 and Appendix A supply the polynomial curvature completion. Theorem 3.3 proves convergence of its actual whole-record Cartan flows with all derivative slots and the ordered reserve of Appendix B.",
+      "after": "*Proof of Theorem 2.4.* The two original analytic residue dictionaries are Theorem 3.1, with both factorial normalizations fixed. Lemma 3.2 and Appendix A supply the polynomial curvature completion. Theorem 3.3 proves convergence of its whole-record Cartan flows with all derivative slots and the ordered reserve of Appendix B.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-034",
+      "original_line": 1702,
+      "before": "The source Hamiltonians and their genuine interaction are the original ones of \u00a75 and Proposition 9.1. The explicitly fixed cochain splittings and zero-record symbol inverse are proved in Appendix C; they correct the actual whole optical defect while retaining the complete free record. Proposition 5.8 fixes the operator/point orientation. Theorem 5.5 is the finite generating law. Proposition 5.9 fixes its trial execution and proves finite-prefix source dependence, including the normalization of its own derived geometry. The prescribed normalization and literal coefficient comparison of Theorem 6.3 prove common convergence of its actual maps, inverse maps, section, incidence and canonical connection.",
+      "after": "The source Hamiltonians and their interaction are the original ones of \u00a75 and Proposition 9.1. The explicitly fixed cochain splittings and zero-record symbol inverse are proved in Appendix C; they correct the optical defect while retaining the complete free record. Proposition 5.8 fixes the operator/point orientation. Theorem 5.5 is the finite generating law. Proposition 5.9 fixes its trial execution and proves finite-prefix source dependence, including the normalization of its own derived geometry. The prescribed normalization and coefficient comparison of Theorem 6.3 prove common convergence of its maps, inverse maps, section, incidence and canonical connection.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-035",
+      "original_line": 1704,
+      "before": "Propositions 4.1\u20134.3 and 5.4 recognize the canonical normal Einstein geometry and selected scalar. Proposition A.4 proves uniqueness from the whole free record and scalar. Every marked analytic Einstein germ supplies analytic original classes by Theorem 3.1; applying the generator and this uniqueness gives its actual marked inverse. The independent ray recognition and the same argument give both ray inverses. Definition 5.6 and Proposition 5.7 and Appendix D give the intrinsic optical and affine presentations and their two inverse comparisons.",
+      "after": "Propositions 4.1\u20134.3 and 5.4 recognize the canonical normal Einstein geometry and selected scalar. Proposition A.4 proves uniqueness from the whole free record and scalar. Every marked analytic Einstein germ supplies analytic original classes by Theorem 3.1; applying the generator and this uniqueness gives its marked inverse. The independent ray recognition and the same argument give both ray inverses. Definition 5.6 and Proposition 5.7 and Appendix D give the intrinsic optical and affine presentations and their two inverse comparisons.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-036",
+      "original_line": 1706,
+      "before": "Proposition 7.1 decodes all independently admitted ordinary objects. Proposition 7.3 and Appendix E give the actual registered class and its common representative inverse. Theorem 7.4 proves both ordinary counits on their entire independent domain. Proposition 8.1 proves actual source independence and coherent chart comparisons. Theorem 8.2 proves both classical chiral cotangent limits by actual atlas maps along the whole compact sky. Theorem 8.3 gives the independent point action, its full spin Hom sets and the ordinary physical action. Proposition 8.4 gives precisely the Lorentz real restriction.",
+      "after": "Proposition 7.1 decodes all independently admitted ordinary objects. Proposition 7.3 and Appendix E give the registered class and its common representative inverse. Theorem 7.4 proves both ordinary counits on their entire independent domain. Proposition 8.1 proves source independence and coherent chart comparisons. Theorem 8.2 proves both classical chiral cotangent limits by atlas maps along the whole compact sky. Theorem 8.3 gives the independent point action, its full spin Hom sets and the ordinary physical action. Proposition 8.4 gives the Lorentz real restriction.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-037",
+      "original_line": 1889,
+      "before": "*Proof.* The actual section equation makes $T_{ij}$ triangular with fixed first column and determinant $c_{ij}$. Equation ([-@eq:gg-affine-translation-from-source]) gives its affine coordinate and the exact overlap law, including all moving arguments. Conversely that affine law recovers the original Cauchy matrix. Sections D.7\u2013D.8 derive the compact lift, root and whole section from the independent admission, so the preservation condition is defined before Einstein recognition. Section D.9 identifies its failure with the original target-minus-source defect; Theorem 5.5 therefore supplies the same correction at every finite order. Theorem 6.3 gives its actual analytic sum.",
+      "after": "*Proof.* The section equation makes $T_{ij}$ triangular with fixed first column and determinant $c_{ij}$. Equation ([-@eq:gg-affine-translation-from-source]) gives its affine coordinate and the exact overlap law, including all moving arguments. Conversely that affine law recovers the original Cauchy matrix. Sections D.7\u2013D.8 derive the compact lift, root and whole section from the independent admission, so the preservation condition is defined before Einstein recognition. Section D.9 identifies its failure with the original target-minus-source defect; Theorem 5.5 therefore supplies the same correction at every finite order. Theorem 6.3 gives its analytic sum.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-038",
+      "original_line": 1929,
+      "before": "*Proof.* Appendix F.1 constructs the source operators and proves their analytic symbol bounds. Theorem F.1 proves the finite comparisons and all triple and quadruple identities. Proposition F.2 identifies the derived-sheaf torsor transport with the original affine law, retaining the moving arguments. Section F.4 applies the fixed-manifold quantization and structured uniqueness theorems with the filtration, full symbols and adjoint coherences retained. Proposition F.3 proves the framed point assertion using the actual symplectization of each sky. \u220e",
+      "after": "*Proof.* Appendix F.1 constructs the source operators and proves their analytic symbol bounds. Theorem F.1 proves the finite comparisons and all triple and quadruple identities. Proposition F.2 identifies the derived-sheaf torsor transport with the original affine law, retaining the moving arguments. Section F.4 applies the fixed-manifold quantization and structured uniqueness theorems with the filtration, full symbols and adjoint coherences retained. Proposition F.3 proves the framed point assertion using the symplectization of each sky. \u220e",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-039",
+      "original_line": 2280,
+      "before": "$\\partial_i\\partial_jA_{ij}-\\Delta\\operatorname{tr}A=0$, with zero Cauchy data. Thus the initial metric and second fundamental form have precisely the prescribed first variations.",
+      "after": "$\\partial_i\\partial_jA_{ij}-\\Delta\\operatorname{tr}A=0$, with zero Cauchy data. Thus the initial metric and second fundamental form have the prescribed first variations.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-040",
+      "original_line": 2400,
+      "before": "Every fixed coefficient uses only finitely many completed derivatives. At a fixed spatial degree the Jacobi recursion has only finitely many terms and divides only by fixed positive integers, so its metric coefficients are polynomials in a finite free prefix and $\\Lambda$. Formal inversion at the fixed tangent metric has the same property. Hence every coefficient of its curvature, Einstein and normal-coordinate residuals is also such a polynomial. On a finite Lorentz-real witness with the required longer prefix, the actual normal-coordinate Jacobi formula gives this coefficient and every residual vanishes. The maximal-real-form argument of Proposition A.3 makes these polynomial identities valid on independent complex lists and therefore over every commutative complex coefficient algebra. This explicitly supplies the formal parameter-ring use made in \u00a76.",
+      "after": "Every fixed coefficient uses only finitely many completed derivatives. At a fixed spatial degree the Jacobi recursion has only finitely many terms and divides only by fixed positive integers, so its metric coefficients are polynomials in a finite free prefix and $\\Lambda$. Formal inversion at the fixed tangent metric has the same property. Hence every coefficient of its curvature, Einstein and normal-coordinate residuals is also such a polynomial. On a finite Lorentz-real witness with the required longer prefix, the normal-coordinate Jacobi formula gives this coefficient and every residual vanishes. The maximal-real-form argument of Proposition A.3 makes these polynomial identities valid on independent complex lists and therefore over every commutative complex coefficient algebra. This explicitly supplies the formal parameter-ring use made in \u00a76.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-041",
+      "original_line": 2451,
+      "before": "Apply the actual commutator in Lemma 3.2 to $U_{r-1}$. The completely upper $U_{r+1}$ term cancels and gives",
+      "after": "Apply the commutator in Lemma 3.2 to $U_{r-1}$. The completely upper $U_{r+1}$ term cancels and gives",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-042",
+      "original_line": 2508,
+      "before": "On another input $j$ it selects one of its $p_j-h_j$ remaining slots and adds the stated normalized edge. Their sum is at most $N$. These arguments keep the actual raw lower inclusions and their orientation signs. \u220e",
+      "after": "On another input $j$ it selects one of its $p_j-h_j$ remaining slots and adds the stated normalized edge. Their sum is at most $N$. These arguments keep the raw lower inclusions and their orientation signs. \u220e",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-043",
+      "original_line": 2603,
+      "before": "These rows hold for either outer chirality. To evaluate the exact slot map, write an upper outer block as $B_a=\\partial_ag/(q+1)$, where its old $W_{r-1}$ degree is $q$. Substitute the chosen coefficient into $g$ and leave its new derivative index $c$ free, calling the resulting polynomial $D_c$. Substitution retains its prescribed output degree. After $J_r^*\\tau$, the actual output in this factor is",
+      "after": "These rows hold for either outer chirality. To evaluate the exact slot map, write an upper outer block as $B_a=\\partial_ag/(q+1)$, where its old $W_{r-1}$ degree is $q$. Substitute the chosen coefficient into $g$ and leave its new derivative index $c$ free, calling the resulting polynomial $D_c$. Substitution retains its prescribed output degree. After $J_r^*\\tau$, the output in this factor is",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-044",
+      "original_line": 2868,
+      "before": "$G=c_r(\\eta^{0'})^{r+4}/\\varrho$, where $c_r=(-1)^rr!/(r+4)!$. Put $u=x^{00'}$, $q=x^{10'}$ and $a_r=r!/(r+3)!$. The factor exchange $\\widetilde A=-u$, $\\widetilde B=-q$, $\\widetilde\\zeta=\\varrho$, $\\widetilde\\varrho=-\\zeta$ gives the actual primitives",
+      "after": "$G=c_r(\\eta^{0'})^{r+4}/\\varrho$, where $c_r=(-1)^rr!/(r+4)!$. Put $u=x^{00'}$, $q=x^{10'}$ and $a_r=r!/(r+3)!$. The factor exchange $\\widetilde A=-u$, $\\widetilde B=-q$, $\\widetilde\\zeta=\\varrho$, $\\widetilde\\varrho=-\\zeta$ gives the primitives",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-045",
+      "original_line": 3050,
+      "before": "The selection rule evaluates the finite matrices $L_m$ on the optical defect and uses these fixed cochains; it does not evaluate a nonlinear Einstein solution or replace the selected maps by the auxiliary potential. The potential proves consistency and a common spatial estimate for the same unique class inverse. Repetition over a finite parameter algebra makes each finite stage analytic. Common convergence of all normalized stages is the separate literal comparison of \u00a76.",
+      "after": "The selection rule evaluates the finite matrices $L_m$ on the optical defect and uses these fixed cochains; it does not evaluate a nonlinear Einstein solution or replace the selected maps by the auxiliary potential. The potential proves consistency and a common spatial estimate for the same unique class inverse. Repetition over a finite parameter algebra makes each finite stage analytic. Common convergence of all normalized stages is the separate coefficient comparison of \u00a76.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-046",
+      "original_line": 3152,
+      "before": "### D.3. The global operator and its actual transition frames",
+      "after": "### D.3. The global operator and its transition frames",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-047",
+      "original_line": 3244,
+      "before": "The null evaluation identifies $H^0(\\mathcal L^2)$ with the trace-free symmetric quadratic forms. With $\\delta u_{ij}=u_j-u_i$, a scalar lift $\\delta u=r$ of an optical cocycle has agreeing $D^2u_i=A(k,k)$ and connecting class $[A]$. A different lift adds $\\operatorname{Hess}_0f$; conversely the local double primitives of any $A(k,k)$ realize its class. Thus the two actual \u010cech constructions are inverse with the asserted sign.",
+      "after": "The null evaluation identifies $H^0(\\mathcal L^2)$ with the trace-free symmetric quadratic forms. With $\\delta u_{ij}=u_j-u_i$, a scalar lift $\\delta u=r$ of an optical cocycle has agreeing $D^2u_i=A(k,k)$ and connecting class $[A]$. A different lift adds $\\operatorname{Hess}_0f$; conversely the local double primitives of any $A(k,k)$ realize its class. Thus the two \u010cech constructions are inverse with the asserted sign.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-048",
+      "original_line": 3258,
+      "before": "At a lower finite stage, first lift its selected Einstein scale. Every product of a highest coefficient with a positive parameter coefficient then vanishes, so the same flat symbol applies. All lower moving bases and endpoint variations are kept before taking this highest coefficient. The actual Bianchi identity and the spatially constant lower trace give",
+      "after": "At a lower finite stage, first lift its selected Einstein scale. Every product of a highest coefficient with a positive parameter coefficient then vanishes, so the same flat symbol applies. All lower moving bases and endpoint variations are kept before taking this highest coefficient. The Bianchi identity and the spatially constant lower trace give",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-049",
+      "original_line": 3314,
+      "before": "For $m=2$ take $\\frac12A_{ab}x^ax^b$ and retain its free multiple of $q$; weights zero and one retain a constant and a linear function. These are exactly the six flat whole-neighborhood section freedoms. Central value and gradient remove five. With them fixed, adding $\\gamma q$ changes the actual numerical scalar by $12\\gamma$, since $\\Delta q=8$ and the central prolongation is the one in \u00a75. Thus",
+      "after": "For $m=2$ take $\\frac12A_{ab}x^ax^b$ and retain its free multiple of $q$; weights zero and one retain a constant and a linear function. These are exactly the six flat whole-neighborhood section freedoms. Central value and gradient remove five. With them fixed, adding $\\gamma q$ changes the numerical scalar by $12\\gamma$, since $\\Delta q=8$ and the central prolongation is the one in \u00a75. Thus",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-050",
+      "original_line": 3451,
+      "before": "For clarity its fractional-linear conclusion has a root-free proof. Put $v=\\tau_w$, $h=v'/v$, $v_0=\\tau_w(0)$ and $d_0=\\tau_{ww}(0)/(2\\tau_w(0))$. The zero Schwarzian equation is $h'=h^2/2$. Its unique local holomorphic solution with $h(0)=2d_0$ is $h=2d_0/(1-d_0w)$. Then $v=v_0/(1-d_0w)^2$, and integration with the actual value $\\tau(0)$ gives",
+      "after": "For clarity its fractional-linear conclusion has a root-free proof. Put $v=\\tau_w$, $h=v'/v$, $v_0=\\tau_w(0)$ and $d_0=\\tau_{ww}(0)/(2\\tau_w(0))$. The zero Schwarzian equation is $h'=h^2/2$. Its unique local holomorphic solution with $h(0)=2d_0$ is $h=2d_0/(1-d_0w)$. Then $v=v_0/(1-d_0w)^2$, and integration with the value $\\tau(0)$ gives",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-051",
+      "original_line": 3481,
+      "before": "$\\operatorname{Ann}(s)=\\mathcal L^{-1}$ by the actual Wronskian.",
+      "after": "$\\operatorname{Ann}(s)=\\mathcal L^{-1}$ by the Wronskian.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-052",
+      "original_line": 3491,
+      "before": "For the actual local section states let",
+      "after": "For the local section states let",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-053",
+      "original_line": 3500,
+      "before": "The first column is the selected solution; the second is the companion with Wronskian $l_i$. Its actual section equation and $\\det B_{ij}=c_{ij}$ give",
+      "after": "The first column is the selected solution; the second is the companion with Wronskian $l_i$. Its section equation and $\\det B_{ij}=c_{ij}$ give",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-054",
+      "original_line": 3522,
+      "before": "The calibrated slope $c^{-1}$ forces $T_{11}^2=1$, and the fixed branch forces $T_{11}=1$; over finite algebras $T_{11}+1$ is a unit. This preserves the actual section.",
+      "after": "The calibrated slope $c^{-1}$ forces $T_{11}^2=1$, and the fixed branch forces $T_{11}=1$; over finite algebras $T_{11}+1$ is a unit. This preserves the section.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-055",
+      "original_line": 3524,
+      "before": "For a trial highest target-minus-source defect $r_{ij}$ the same actual matrices give",
+      "after": "For a trial highest target-minus-source defect $r_{ij}$ the same matrices give",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-056",
+      "original_line": 3608,
+      "before": "### E.2. Whole short fibers and actual quotient overlaps",
+      "after": "### E.2. Whole short fibers and quotient overlaps",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-057",
+      "original_line": 3663,
+      "before": "The fibers there are connected and are the same whole short fibers in both descriptions. The quotient transition is the actual transverse hit map, with its actual line factor. No global section of $q_+$ is chosen.",
+      "after": "The fibers there are connected and are the same whole short fibers in both descriptions. The quotient transition is the transverse hit map, with its line factor. No global section of $q_+$ is chosen.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-058",
+      "original_line": 3686,
+      "before": "The integrand contracts the actual relative one-form with the coordinate-normalized vector fields $E_A$. It is not an unconverted spin-frame component. The path stays in the convex whole fiber. In the parallel frame, $d_\\alpha k_i=0$ is the ordinary closed-one-form identity, so the radial homotopy gives $d_\\alpha u_i=k_i$, with zero value at the chosen transversal.",
+      "after": "The integrand contracts the relative one-form with the coordinate-normalized vector fields $E_A$. It is not an unconverted spin-frame component. The path stays in the convex whole fiber. In the parallel frame, $d_\\alpha k_i=0$ is the ordinary closed-one-form identity, so the radial homotopy gives $d_\\alpha u_i=k_i$, with zero value at the chosen transversal.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-059",
+      "original_line": 3705,
+      "before": "Their actual coboundary is $b$. Apply this result to",
+      "after": "Their coboundary is $b$. Apply this result to",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-060",
+      "original_line": 3727,
+      "before": "For a finite coefficient algebra use the coefficients of these same holomorphic formulas, with the same unit residues and initialized ODEs. Uniqueness gives literal compatibility with an analytic family's Taylor reduction. This does not postulate an analytic extension of arbitrary finite algebra data or a norm uniform in the algebra's dimension. Parameter derivatives of a supplied analytic family are taken before Taylor reduction. These facts prove all remaining assertions of Theorem E.1. \u220e",
+      "after": "For a finite coefficient algebra use the coefficients of these same holomorphic formulas, with the same unit residues and initialized ODEs. Uniqueness gives compatibility with an analytic family's Taylor reduction. This does not postulate an analytic extension of arbitrary finite algebra data or a norm uniform in the algebra's dimension. Parameter derivatives of a supplied analytic family are taken before Taylor reduction. These facts prove all remaining assertions of Theorem E.1. \u220e",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-061",
+      "original_line": 3752,
+      "before": "Here the free coordinate is an actual block of $X$. Taking $C_0C_1r<1/2$ gives the strict convexity estimate ([-@eq:gg-penrose-whole-parent-convexity]). Hence a graph's intersection with $|X|<r$ is convex and connected. Its free coordinates lie in $|y|<r$, away from the parent boundary.",
+      "after": "Here the free coordinate is a block of $X$. Taking $C_0C_1r<1/2$ gives the strict convexity estimate ([-@eq:gg-penrose-whole-parent-convexity]). Hence a graph's intersection with $|X|<r$ is convex and connected. Its free coordinates lie in $|y|<r$, away from the parent boundary.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-062",
+      "original_line": 3758,
+      "before": "It is closed in $U\\times U$. Indeed for a convergent sequence of related pairs, select a subsequence with the first directions in one fixed core. The whole related leaves stay in its larger parent by the preceding no-exit argument. Their two actual transverse hits are equal. The buffered hit maps extend at both limiting points, so their hits remain equal. The whole graph sublevel is connected, and the limiting pair is again related.",
+      "after": "It is closed in $U\\times U$. Indeed for a convergent sequence of related pairs, select a subsequence with the first directions in one fixed core. The whole related leaves stay in its larger parent by the preceding no-exit argument. Their two transverse hits are equal. The buffered hit maps extend at both limiting points, so their hits remain equal. The whole graph sublevel is connected, and the limiting pair is again related.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-063",
+      "original_line": 3828,
+      "before": "$\\sigma_1[B(h),B(k)]=t\\{h,k\\}$. This includes their genuine mixed operation; lower-order quantum terms remain.",
+      "after": "$\\sigma_1[B(h),B(k)]=t\\{h,k\\}$. This includes their mixed operation; lower-order quantum terms remain.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-064",
+      "original_line": 3951,
+      "before": "Kashiwara's Theorem 2 gives the canonical module stack of an actual complex contact manifold $Y$. The relevant uniqueness statement is stronger than unfiltered Morita equivalence: [@Polesello2005, Theorem 3.3] gives uniqueness up to an equivalence unique up to a unique isomorphism, when the filtration, full graded-symbol identification and compatible anti-involution are retained. The anti-involution includes its square and degree-zero duality coherences. A global operator ring is not supplied by this statement.",
+      "after": "Kashiwara's Theorem 2 gives the canonical module stack of a complex contact manifold $Y$. The relevant uniqueness statement is stronger than unfiltered Morita equivalence: [@Polesello2005, Theorem 3.3] gives uniqueness up to an equivalence unique up to a unique isomorphism, when the filtration, full graded-symbol identification and compatible anti-involution are retained. The anti-involution includes its square and degree-zero duality coherences. A global operator ring is not supplied by this statement.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-065",
+      "original_line": 4057,
+      "before": "The initial term $n=0$, $\\Delta=0$ is included. There is no condition $q<1$. Pullback by the actual classical maps gives the same type of bound on the corresponding smaller final tube.",
+      "after": "The initial term $n=0$, $\\Delta=0$ is included. There is no condition $q<1$. Pullback by the classical maps gives the same type of bound on the corresponding smaller final tube.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-066",
+      "original_line": 4093,
+      "before": "*Proof.* Theorem 6.3 provides the actual contact maps, multipliers and inverses on a common complex amplitude disk containing one. Relative to the exact reference atlas, their homogeneous symplectizations supply the actual classical tubes of Theorem F.4. Fixed finite cover refinements and parent restrictions give uniform coordinate and inverse bounds. Cauchy in a larger amplitude disk reads the holomorphic Hamiltonian of the actual logarithmic time derivative. No logarithm of an infinite diffeomorphism series is used. Section F.1 lifts this Hamiltonian to a skew order-one family $B_{ij}(t)$ with the required uniform symbol bounds.",
+      "after": "*Proof.* Theorem 6.3 provides the contact maps, multipliers and inverses on a common complex amplitude disk containing one. Relative to the exact reference atlas, their homogeneous symplectizations supply the classical tubes of Theorem F.4. Fixed finite cover refinements and parent restrictions give uniform coordinate and inverse bounds. Cauchy in a larger amplitude disk reads the holomorphic Hamiltonian of the actual logarithmic time derivative. No logarithm of an infinite diffeomorphism series is used. Section F.1 lifts this Hamiltonian to a skew order-one family $B_{ij}(t)$ with the required uniform symbol bounds.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-067",
+      "original_line": 4102,
+      "before": "The reverse generator is the displayed actual generator, rather than a separately reselected principal lift. Theorem F.4 gives the analytic filtered comparisons with their actual classical symbols. Proposition F.2 then gives precisely the old affine cochains and moving arguments.",
+      "after": "The reverse generator is the displayed actual generator, rather than a separately reselected principal lift. Theorem F.4 gives the analytic filtered comparisons with their actual classical symbols. Proposition F.2 then gives the old affine cochains and moving arguments.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-068",
+      "original_line": 4127,
+      "before": "The amplitude jets of Theorem F.6 are compatible with Theorem F.1 up to normalized filtered inner equivalence. The actual contact and calibrated affine tuples are unchanged.",
+      "after": "The amplitude jets of Theorem F.6 are compatible with Theorem F.1 up to normalized filtered inner equivalence. The contact and calibrated affine tuples are unchanged.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-069",
+      "original_line": 4137,
+      "before": "Since $B_N\\in\\varepsilon F_1\\mathcal E\\otimes A_N$, its time-ordered series has at most $N$ factors and defines a finite polynomial with operator coefficients. Put $U_N=U_N(1,\\varepsilon)$. Its adjoint action solves the amplitude-jet equation of Theorem F.6. This construction takes the finite Taylor coefficients of $B$ and does not exponentiate a positive-order operator over the ordinary analytic coefficient field. Its logarithm belongs to $\\varepsilon F_1$ by the finite Magnus recursion, since $F_1$ is closed under commutators. Let $U_N^{\\rm old}$ be the auxiliary exponential of Theorem F.1. The logarithm of $W_N=U_N(U_N^{\\rm old})^{-1}$ has order at most one and zero degree-one symbol: both have the same actual classical contact action. Unitarity makes its logarithm skew and kills the degree-zero symbol. Hence $W_N\\in1+F_{-1}\\mathcal E\\otimes A_N$.",
+      "after": "Since $B_N\\in\\varepsilon F_1\\mathcal E\\otimes A_N$, its time-ordered series has at most $N$ factors and defines a finite polynomial with operator coefficients. Put $U_N=U_N(1,\\varepsilon)$. Its adjoint action solves the amplitude-jet equation of Theorem F.6. This construction takes the finite Taylor coefficients of $B$ and does not exponentiate a positive-order operator over the ordinary analytic coefficient field. Its logarithm belongs to $\\varepsilon F_1$ by the finite Magnus recursion, since $F_1$ is closed under commutators. Let $U_N^{\\rm old}$ be the auxiliary exponential of Theorem F.1. The logarithm of $W_N=U_N(U_N^{\\rm old})^{-1}$ has order at most one and zero degree-one symbol: both have the same classical contact action. Unitarity makes its logarithm skew and kills the degree-zero symbol. Hence $W_N\\in1+F_{-1}\\mathcal E\\otimes A_N$.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-070",
+      "original_line": 4148,
+      "before": "Both sides are the normalized unit with the indicated inner action, so equality follows also by injectivity. Conjugation by $W_N$ is trivial on $\\mathscr U_1$. Thus the actual affine cochains, their inverses and compact lifts remain the same. \u220e",
+      "after": "Both sides are the normalized unit with the indicated inner action, so equality follows also by injectivity. Conjugation by $W_N$ is trivial on $\\mathscr U_1$. Thus the affine cochains, their inverses and compact lifts remain the same. \u220e",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-071",
+      "original_line": 4150,
+      "before": "This comparison does not assert literal equality or convergence of the previously chosen auxiliary infinite operator section. The physical source tuples retain their actual classical gauge.",
+      "after": "This comparison does not assert literal equality or convergence of the previously chosen auxiliary infinite operator section. The physical source tuples retain their classical gauge.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-072",
+      "original_line": 4366,
+      "before": "$(r+n)!/n!\\le2^{r+n}r!$ give a uniform exponential times $r!$, by precisely the finite $n$ sum of Theorem F.4. There is no loss of a new domain at each normal order. This constructs the analytic evolution. Reverse evolution gives the inverse. Its leading term is the $L_0$ half-form transport.",
+      "after": "$(r+n)!/n!\\le2^{r+n}r!$ give a uniform exponential times $r!$, by the finite $n$ sum of Theorem F.4. There is no loss of a new domain at each normal order. This constructs the analytic evolution. Reverse evolution gives the inverse. Its leading term is the $L_0$ half-form transport.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-073",
+      "original_line": 4398,
+      "before": "Write $L_i$ for the actual flattening algebra maps and",
+      "after": "Write $L_i$ for the flattening algebra maps and",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-074",
+      "original_line": 4401,
+      "before": "$\\dot\\varphi_{ij}=\\operatorname{ad}(B_{ij})\\varphi_{ij}$, the actual flattened generator is",
+      "after": "$\\dot\\varphi_{ij}=\\operatorname{ad}(B_{ij})\\varphi_{ij}$, the flattened generator is",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-075",
+      "original_line": 4410,
+      "before": "We construct joint Hom generators in two stages. At source amplitude zero, move the physical point along $x=ax$, starting at $x=0$. The reference $\\varphi_{ij}$ is fixed, so the displayed formula has $B_{ij}=0$. Start from a single fixed same-order simple intertwiner $\\tau_0$, supplied by the local simple-symbol calculus [@DAgnoloSchapira2007, \u00a74]. Apply Lemma G.2 to $\\psi_a\\psi_0^{-1}$ and take $S_a\\tau_0$; this gives an actual holomorphic family in $x$. Next follow the actual source amplitude path, with $x$ and the remaining source parameters passive, using the same initialized relative evolution with the full actual generator. It gives holomorphic semilinear intertwiners on the whole retained family. Thus local Hom is actually free of rank one over $\\mathcal O_S$, rather than merely one-dimensional at each parameter.",
+      "after": "We construct joint Hom generators in two stages. At source amplitude zero, move the physical point along $x=ax$, starting at $x=0$. The reference $\\varphi_{ij}$ is fixed, so the displayed formula has $B_{ij}=0$. Start from a single fixed same-order simple intertwiner $\\tau_0$, supplied by the local simple-symbol calculus [@DAgnoloSchapira2007, \u00a74]. Apply Lemma G.2 to $\\psi_a\\psi_0^{-1}$ and take $S_a\\tau_0$; this gives an actual holomorphic family in $x$. Next follow the source amplitude path, with $x$ and the remaining source parameters passive, using the same initialized relative evolution with the full generator. It gives holomorphic semilinear intertwiners on the whole retained family. Thus local Hom is actually free of rank one over $\\mathcal O_S$, rather than merely one-dimensional at each parameter.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-076",
+      "original_line": 4414,
+      "before": "$u_j\\mapsto b_{ij}u_i$ let $e_{ij}$ be its actual leading coefficient. The fixed initial simple-symbol calculus and Lemma G.2's half-form transport imply",
+      "after": "$u_j\\mapsto b_{ij}u_i$ let $e_{ij}$ be its leading coefficient. The fixed initial simple-symbol calculus and Lemma G.2's half-form transport imply",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-077",
+      "original_line": 4518,
+      "before": "The Lorentz sky operation exchanges the two conjugate spin factors. Their product $\\mathcal O(-1,-1)$ has an antilinear lift of square one, compatible with the half-canonical root after fixing its calibrated phase. In ordered local coordinates the factor exchange reverses the top-form wedge; the corresponding fixed half-form phase compensates its minus sign. Multiplying an antilinear lift by a unit phase does not change its antilinear square. Fix this compatible phase once with the Lorentz marking. Choose the calibrated cone section on its real null-direction locus and a nonzero compatible real vector along it, and extend holomorphically on the source germ. Such choices exist locally; the fixed real spin identification and the initialized transports carry them over the source family. This is not a claim that an arbitrary separately chosen complex frame is fixed by conjugation.",
+      "after": "The Lorentz sky operation exchanges the two conjugate spin factors. Their product $\\mathcal O(-1,-1)$ has an antilinear lift of square one, compatible with the half-canonical root after fixing its calibrated phase. In ordered local coordinates the factor exchange reverses the top-form wedge; the corresponding fixed half-form phase compensates its minus sign. Multiplying an antilinear lift by a unit phase does not change its antilinear square. Fix this compatible phase once with the Lorentz marking. Choose the calibrated cone section on its real null-direction locus and a nonzero compatible real vector along it, and extend holomorphically on the source germ. These compatible choices exist locally and are transported over the source family by the fixed real spin identification and initialized transports.",
+      "reasons": [
+        "State compatibility positively; retain the local existence, selected phase and transported-real-frame construction already specified in this paragraph."
+      ]
+    },
+    {
+      "id": "edit-078",
+      "original_line": 4719,
+      "before": "On a triple the actual classical cocycle makes",
+      "after": "On a triple the classical cocycle makes",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-079",
+      "original_line": 4723,
+      "before": "Keep the same torsor under $\\mathscr U_1\\simeq\\mathcal L^{-1}$, with its restricted actual cochains. Pull this finite operator cover to the complete incidence and choose H.3's finite graph/module charts over it. Carry any extra chart indices in all pulled-back algebra data as well. Restrict the actual relative root, its square identification and all base factors to those same charts. Proposition F.3 supplies the static central module and H.3 constructs its family there. The root transitions obey their exact cocycle; G.3's symbol normalization then gives $\\tau_{ab}\\tau_{bc}=C_{abc}\\tau_{ac}$ with these same $C_{abc}$. Its tangent transports and their inverses have the retained buffers, so taking the finite maxima gives the common module bounds. The whole-parameter calibrated vector is restricted, not reselected at each parameter. This defines $Q:\\mathfrak C_\\Lambda\\to\\mathfrak O_\\Lambda$ without first decoding an Einstein metric. The composition $FQ$ is the original actual contact-affine object under the restriction equivalence of H.1, with its tautological complete-family identifications.",
+      "after": "Keep the same torsor under $\\mathscr U_1\\simeq\\mathcal L^{-1}$, with its restricted cochains. Pull this finite operator cover to the complete incidence and choose H.3's finite graph/module charts over it. Carry any extra chart indices in all pulled-back algebra data as well. Restrict the relative root, its square identification and all base factors to those same charts. Proposition F.3 supplies the static central module and H.3 constructs its family there. The root transitions obey their exact cocycle; G.3's symbol normalization then gives $\\tau_{ab}\\tau_{bc}=C_{abc}\\tau_{ac}$ with these same $C_{abc}$. Its tangent transports and their inverses have the retained buffers, so taking the finite maxima gives the common module bounds. The whole-parameter calibrated vector is restricted, not reselected at each parameter. This defines $Q:\\mathfrak C_\\Lambda\\to\\mathfrak O_\\Lambda$ without first decoding an Einstein metric. The composition $FQ$ is the original contact-affine object under the restriction equivalence of H.1, with its tautological complete-family identifications.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-080",
+      "original_line": 4756,
+      "before": "The symbols of an admitted physical comparison preserve the entire affine/projective calibration. D.8 and Proposition 5.4 recover the selected metric naturally, so that map is an actual isometry. Its actual full spin lift gives the distinct label of Theorem 8.3. Conversely Lemma H.2 and H.3 lift each such physical comparison. Thus the physical Hom classes agree, including spin-center distinctions not detectable by the scalar action.",
+      "after": "The symbols of an admitted physical comparison preserve the entire affine/projective calibration. D.8 and Proposition 5.4 recover the selected metric naturally, so that map is an isometry. Its full spin lift gives the distinct label of Theorem 8.3. Conversely Lemma H.2 and H.3 lift each such physical comparison. Thus the physical Hom classes agree, including spin-center distinctions not detectable by the scalar action.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-081",
+      "original_line": 4758,
+      "before": "The coupled antilinear construction and normalized square of Theorem G.5 use the same actual comparisons and compatible root/local-system frames. The preceding uniqueness transports its square and finite Real diagrams. On the declared Lorentz slice it gives precisely Proposition 8.4's physical real structure. Every parameter comparison used the given common parents, finite refinements and actual unit margins; finite jets are taken from those holomorphic families. \u220e",
+      "after": "The coupled antilinear construction and normalized square of Theorem G.5 use the same comparisons and compatible root/local-system frames. The preceding uniqueness transports its square and finite Real diagrams. On the declared Lorentz slice it gives Proposition 8.4's physical real structure. Every parameter comparison used the given common parents, finite refinements and unit margins; finite jets are taken from those holomorphic families. \u220e",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-082",
+      "original_line": 4772,
+      "before": "At a trial operator stage, the regular compact seed gives the characteristic-family construction of H.3 and F.3 gives the intrinsic first-unit translation sheaf. Retain the calibrated affine reduction of the preceding corrected stage and choose provisional section-state lifts at the next order. Lemma I.1 reads their actual defect on the freshly recomputed incidence; its vanishing supplies the next affine reduction. A particular torsor is not manufactured by the bare algebra. Projective-extension admission is not assumed before this defect vanishes. Its actual states and matrices are exactly those of D.9. In particular,",
+      "after": "At a trial operator stage, the regular compact seed gives the characteristic-family construction of H.3 and F.3 gives the intrinsic first-unit translation sheaf. Retain the calibrated affine reduction of the preceding corrected stage and choose provisional section-state lifts at the next order. Lemma I.1 reads their actual defect on the freshly recomputed incidence; its vanishing supplies the next affine reduction. A particular torsor is not manufactured by the bare algebra. Projective-extension admission is not assumed before this defect vanishes. Its states and matrices are exactly those of D.9. In particular,",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-083",
+      "original_line": 4801,
+      "before": "The intrinsic first-unit translation sheaf does not select a particular affine torsor on an uncorrected trial. At that stage the obstruction to extending the previously calibrated optical reduction is precisely the cochain of D.9. Its vanishing supplies the actual next calibrated affine torsor.",
+      "after": "The intrinsic first-unit translation sheaf does not select a particular affine torsor on an uncorrected trial. At that stage the obstruction to extending the previously calibrated optical reduction is the cochain of D.9. Its vanishing supplies the actual next calibrated affine torsor.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-084",
+      "original_line": 4818,
+      "before": "When this cochain is zero, $T_{ij}$ fixes $e_1$. Its determinant is the actual contact-line factor $c_{ij}$, so it has the form",
+      "after": "When this cochain is zero, $T_{ij}$ fixes $e_1$. Its determinant is the contact-line factor $c_{ij}$, so it has the form",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-085",
+      "original_line": 4823,
+      "before": "The actual matrix cocycle is exactly the affine cocycle with all moving arguments. Before vanishing, a general $T_{ij}$ is not such an affine transition. F.3 provides its translation sheaf $\\mathscr U_1\\simeq\\mathcal L^{-1}$; it does not remove this reduction obstruction or manufacture a distinguished torsor from the bare ring. The same calculation applies at a highest finite stage. \u220e",
+      "after": "The matrix cocycle is exactly the affine cocycle with all moving arguments. Before vanishing, a general $T_{ij}$ is not such an affine transition. F.3 provides its translation sheaf $\\mathscr U_1\\simeq\\mathcal L^{-1}$; it does not remove this reduction obstruction or manufacture a distinguished torsor from the bare ring. The same calculation applies at a highest finite stage. \u220e",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-086",
+      "original_line": 4849,
+      "before": "Its normal prolongation is parallel, has norm $-\\Lambda/3$, and selects $g=\\sigma^{-2}g_{\\mathrm{aux}}$. Conversely the parallel section with the retained unit scale component gives this equation and D.8's actual projective extension. The two constructions are inverse comparisons preserving the actual root and central value.",
+      "after": "Its normal prolongation is parallel, has norm $-\\Lambda/3$, and selects $g=\\sigma^{-2}g_{\\mathrm{aux}}$. Conversely the parallel section with the retained unit scale component gives this equation and D.8's projective extension. The two constructions are inverse comparisons preserving the actual root and central value.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-087",
+      "original_line": 4966,
+      "before": "are precisely $\\nabla_v(\\omega,\\pi)^T=-\\Omega_v(\\omega,\\pi)^T$ in this calibration [@Penrose2015, p. 12]. The initialized map $C$ therefore intertwines the connections as well as both infinity tensors. This comparison uses no metric rescaling, no inverse infinity form and no division by $\\Lambda$.",
+      "after": "are $\\nabla_v(\\omega,\\pi)^T=-\\Omega_v(\\omega,\\pi)^T$ in this calibration [@Penrose2015, p. 12]. The initialized map $C$ therefore intertwines the connections as well as both infinity tensors. This comparison uses no metric rescaling, no inverse infinity form and no division by $\\Lambda$.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-088",
+      "original_line": 5003,
+      "before": "For the second assertion, the torsor, projective extension and density root are holomorphic data specified before Einstein recognition. Section D.8 and Proposition 5.4 recover the unit almost-Einstein density and its canonical parallel tractor. Proposition I.3\u2019s explicit exterior-square map intertwines the normal and rank-four spin connections, with the norm and numerical dictionary fixed in \u00a72. The reverse construction recovers the same projective extension and root. The actual operator, torsor and module comparisons of Theorem H.4 make this correspondence natural; a principal symbol alone is insufficient. The flat scale test in Proposition I.3 shows why the retained infinity data are substantive.",
+      "after": "For the second assertion, the torsor, projective extension and density root are holomorphic data specified before Einstein recognition. Section D.8 and Proposition 5.4 recover the unit almost-Einstein density and its canonical parallel tractor. Proposition I.3\u2019s explicit exterior-square map intertwines the normal and rank-four spin connections, with the norm and numerical dictionary fixed in \u00a72. The reverse construction recovers the same projective extension and root. The operator, torsor and module comparisons of Theorem H.4 make this correspondence natural; a principal symbol alone is insufficient. The flat scale test in Proposition I.3 shows why the retained infinity data are substantive.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-089",
+      "original_line": 5159,
+      "before": "*Proof.* Write the actual descent as",
+      "after": "*Proof.* Write the descent as",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-090",
+      "original_line": 5168,
+      "before": "Since $\\sigma_0(C)=1$, the associated graded glues strictly. Normalized inner action on $\\mathscr U_1=(1+F_{-1})/(1+F_{-2})\\simeq\\mathcal L^{-1}$ is identity. The actual torsor maps are supplied in H.1 and the normalized comparisons lie over that same classical torsor and root. Thus the normalized associator comparison fixes the embedded support, torsor, root, their compact lifts and derived jets. Its specified same Spin label fixes the normal spin comparison. Uniqueness of the initialized ray ODE makes its raywise local-twistor comparison identity. This uses both the strict translation sheaf and the supplied torsor maps; identity on a translation sheaf alone would not determine an affine map.",
+      "after": "Since $\\sigma_0(C)=1$, the associated graded glues strictly. Normalized inner action on $\\mathscr U_1=(1+F_{-1})/(1+F_{-2})\\simeq\\mathcal L^{-1}$ is identity. The torsor maps are supplied in H.1 and the normalized comparisons lie over that same classical torsor and root. Thus the normalized associator comparison fixes the embedded support, torsor, root, their compact lifts and derived jets. Its specified same Spin label fixes the normal spin comparison. Uniqueness of the initialized ray ODE makes its raywise local-twistor comparison identity. This uses both the strict translation sheaf and the supplied torsor maps; identity on a translation sheaf alone would not determine an affine map.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-091",
+      "original_line": 5199,
+      "before": "The two vectors are independent, and their three pairings under $H$ vanish. A parallel $\\lambda\\in V_\\gamma^*$ gives the optical solution $\\lambda(X(u))$. Value and slope on a transverse slice give its inverse, so this is the actual Cauchy identification",
+      "after": "The two vectors are independent, and their three pairings under $H$ vanish. A parallel $\\lambda\\in V_\\gamma^*$ gives the optical solution $\\lambda(X(u))$. Value and slope on a transverse slice give its inverse, so this is the Cauchy identification",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-092",
+      "original_line": 5217,
+      "before": "Its common line is $0\\oplus\\ker\\mu=\\ell_\\gamma$, and the span of all kernels is $\\operatorname{im}\\mu\\oplus S'_x=h_\\gamma$. The other projective chart completes precisely the pencil between this line and hyperplane. The short physical evaluations select the open subset of D.8, rather than all points in the completed projective line. For a compact point module, H.3 supplies its support $Q_x$; evaluation of $\\mathcal T_{\\mathrm{LT,ray}}$ on that support supplies these same point planes.",
+      "after": "Its common line is $0\\oplus\\ker\\mu=\\ell_\\gamma$, and the span of all kernels is $\\operatorname{im}\\mu\\oplus S'_x=h_\\gamma$. The other projective chart completes the pencil between this line and hyperplane. The short physical evaluations select the open subset of D.8, rather than all points in the completed projective line. For a compact point module, H.3 supplies its support $Q_x$; evaluation of $\\mathcal T_{\\mathrm{LT,ray}}$ on that support supplies these same point planes.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-093",
+      "original_line": 5261,
+      "before": "Proposition J.1 gives $DI=(0,P^{\\mathrm{trial}\\,\\circ},-dJ_{\\mathrm{trial}}/4)$ for the provisional density. This identifies the class and its sign. The actual contracted Bianchi identity gives $d\\operatorname{div}a_m=0$, so D.5 applies its fixed inverse and the correction is $\\Delta c=-L_ma_m+\\iota Z$. Recompute the incidence, optical states, adapted matrices, root and scalar. Once the class vanishes, the same double-primitive argument gives $v_i=u_i-f$ with $\\delta v=r$ and $D^2v=0$; adding it cancels the target-minus-source mismatch. This is the stage at which the next global affine reduction is obtained.",
+      "after": "Proposition J.1 gives $DI=(0,P^{\\mathrm{trial}\\,\\circ},-dJ_{\\mathrm{trial}}/4)$ for the provisional density. This identifies the class and its sign. The contracted Bianchi identity gives $d\\operatorname{div}a_m=0$, so D.5 applies its fixed inverse and the correction is $\\Delta c=-L_ma_m+\\iota Z$. Recompute the incidence, optical states, adapted matrices, root and scalar. Once the class vanishes, the same double-primitive argument gives $v_i=u_i-f$ with $\\delta v=r$ and $D^2v=0$; adding it cancels the target-minus-source mismatch. This is the stage at which the next global affine reduction is obtained.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-094",
+      "original_line": 5530,
+      "before": "With [@eq:sh-scale-a3], the actual scalar curvature of the auxiliary metric in [@eq:sh-scale-a2] is",
+      "after": "With [@eq:sh-scale-a3], the scalar curvature of the auxiliary metric in [@eq:sh-scale-a2] is",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-095",
+      "original_line": 5554,
+      "before": "Use $\\Omega=r^{-1}$ and $\\operatorname{Scal}(g_-)=0$ to obtain $12m/r$. Negating the metric changes the inverse metric and hence the scalar sign, while fixing the covariant Ricci tensor. This proves [@eq:sh-scale-a16]. An independent check is $\\Box_{r^{-2}g_-}r=2m$, obtained directly from $\\sqrt{|\\det(r^{-2}g_-)|}=r^{-2}\\sin\\theta$ and $(r^{-2}g_-)^{rr}=r^2f$. For $r^{-2}g_-$, the reciprocal of its scalar, $r/(12m)$, has Laplacian $1/6$, precisely the value required for the scalar-flat conformal metric. \u220e",
+      "after": "Use $\\Omega=r^{-1}$ and $\\operatorname{Scal}(g_-)=0$ to obtain $12m/r$. Negating the metric changes the inverse metric and hence the scalar sign, while fixing the covariant Ricci tensor. This proves [@eq:sh-scale-a16]. An independent check is $\\Box_{r^{-2}g_-}r=2m$, obtained directly from $\\sqrt{|\\det(r^{-2}g_-)|}=r^{-2}\\sin\\theta$ and $(r^{-2}g_-)^{rr}=r^2f$. For $r^{-2}g_-$, the reciprocal of its scalar, $r/(12m)$, has Laplacian $1/6$, the value required for the scalar-flat conformal metric. \u220e",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-096",
+      "original_line": 5599,
+      "before": "The actual auxiliary scalar after [@eq:sh-scale-a20] is",
+      "after": "The auxiliary scalar after [@eq:sh-scale-a20] is",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-097",
+      "original_line": 5832,
+      "before": "The oriented time-oriented product region has a spin structure: its tangent bundle is the sum of a trivial real rank-two bundle and $TS^2$, and $w_2(TS^2)$ is the Euler class $2$ modulo $2$. Fix that spin structure and take local analytic sections of its full principal spin bundle on a finite good cover. Their transition functions satisfy the actual spin cocycle. This constructs compatible lifts first; it does not choose unrelated signs on different double overlaps. Their local complexifications extend after finite shrinkage. The unit physical density for $g_m$ fixes the density calibration. The spinor-line construction of the sky roots, with the base factor retained as in G.5 and H.4, is functorial for these actual full-spin transitions. Its root comparisons therefore extend on the same finite system after a further finite restriction. \u220e",
+      "after": "The oriented time-oriented product region has a spin structure: its tangent bundle is the sum of a trivial real rank-two bundle and $TS^2$, and $w_2(TS^2)$ is the Euler class $2$ modulo $2$. Fix that spin structure and take local analytic sections of its full principal spin bundle on a finite good cover. Their transition functions satisfy the spin cocycle. This constructs compatible lifts first; it does not choose unrelated signs on different double overlaps. Their local complexifications extend after finite shrinkage. The unit physical density for $g_m$ fixes the density calibration. The spinor-line construction of the sky roots, with the base factor retained as in G.5 and H.4, is functorial for these full-spin transitions. Its root comparisons therefore extend on the same finite system after a further finite restriction. \u220e",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-098",
+      "original_line": 5859,
+      "before": "The negative formula exchanges the two spin factors. Each symmetrization is an average, exactly as in Theorem 3.1. This is one definition of every order using the actual connection of $g_m$; it introduces no separate guessed formula for higher derivatives. On the physical real slice it gives $U^-_r=\\overline{U^+_r}$ in the coupled spin identification.",
+      "after": "The negative formula exchanges the two spin factors. Each symmetrization is an average, exactly as in Theorem 3.1. This is one definition of every order using the connection of $g_m$; it introduces no separate guessed formula for higher derivatives. On the physical real slice it gives $U^-_r=\\overline{U^+_r}$ in the coupled spin identification.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-099",
+      "original_line": 5905,
+      "before": "**Contact geometry.** On the nonzero null cotangent cone use the actual cotangent lift",
+      "after": "**Contact geometry.** On the nonzero null cotangent cone use the cotangent lift",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-100",
+      "original_line": 5930,
+      "before": "This map carries the actual evaluation $\\epsilon_x/\\sigma_s(x)$ to $\\epsilon_{f(x)}/\\sigma_t(f(x))$. By Proposition J.4 it is the same affine comparison as that obtained from the actual compact incidence. In \u00a78.1's affine charts its point map is",
+      "after": "This map carries the evaluation $\\epsilon_x/\\sigma_s(x)$ to $\\epsilon_{f(x)}/\\sigma_t(f(x))$. By Proposition J.4 it is the same affine comparison as that obtained from the compact incidence. In \u00a78.1's affine charts its point map is",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-101",
+      "original_line": 5947,
+      "before": "**Normal transport, infinity and point planes.** The isometry and its specified full-spin lift induce the actual connection isomorphisms on the normal tractor and local-twistor bundles. In a metric splitting the tractor map is the identity on the scalar slots and the induced cotangent map on the middle slot. Substitution in J.1's formula for $D$ verifies the intertwining, since $f$ preserves $\\nabla$, $P$ and $g$. It preserves $H$, $X$, the selected density and $I=L\\sigma$. In the physical vacuum scale $\\sigma=1$, $P=0$, so $I=(1,0,0)$ and $H(I,I)=0$. No division by this zero norm is used. Proposition I.3's spin exterior-square identification is natural for the full-spin lift, hence carries both actual infinity tensors, including their normalization, and all raywise local-twistor flags. The point-plane kernels in J.4 are carried by the same linear map. Evaluation and $X/\\sigma$ agree with [@eq:schw-bc-affine-solution-map], so there is no separate unmatched choice of affine lift.",
+      "after": "**Normal transport, infinity and point planes.** The isometry and its specified full-spin lift induce the connection isomorphisms on the normal tractor and local-twistor bundles. In a metric splitting the tractor map is the identity on the scalar slots and the induced cotangent map on the middle slot. Substitution in J.1's formula for $D$ verifies the intertwining, since $f$ preserves $\\nabla$, $P$ and $g$. It preserves $H$, $X$, the selected density and $I=L\\sigma$. In the physical vacuum scale $\\sigma=1$, $P=0$, so $I=(1,0,0)$ and $H(I,I)=0$. No division by this zero norm is used. Proposition I.3's spin exterior-square identification is natural for the full-spin lift, hence carries both infinity tensors, including their normalization, and all raywise local-twistor flags. The point-plane kernels in J.4 are carried by the same linear map. Evaluation and $X/\\sigma$ agree with [@eq:schw-bc-affine-solution-map], so there is no separate unmatched choice of affine lift.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-102",
+      "original_line": 5957,
+      "before": "where $\\alpha_A$ is the actual comparison of Theorem J.6. For the second arrow, H.4 quantizes the symbol map $(K_i^{-1})^*$ in the calibrated projective Heisenberg charts, retaining the chosen root, and G.5 supplies the framed module maps. More explicitly, on a common finite refinement there are chart algebra maps $k_i$, actual normalized units $U_{ij}$ and actual point-module maps $F_i$ satisfying",
+      "after": "where $\\alpha_A$ is the actual comparison of Theorem J.6. For the second arrow, H.4 quantizes the symbol map $(K_i^{-1})^*$ in the calibrated projective Heisenberg charts, retaining the chosen root, and G.5 supplies the framed module maps. More explicitly, on a common finite refinement there are chart algebra maps $k_i$, normalized units $U_{ij}$ and point-module maps $F_i$ satisfying",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-103",
+      "original_line": 5969,
+      "before": "Here $\\varphi$ and $C$ are the actual overlap maps and associators, and $\\tau$ are the actual module overlaps. All base changes and moving arguments are those of H.4 and Theorem J.6. The second equation retains both associators; replacing it by a principal-symbol equality would be insufficient. Compact embedded support classification and the framed module construction identify the module supported on $Q_x$ with the module on $Q_{f(x)}$ over its whole compact support. G.5 and H.4's normalized-inner and framed-Hom uniqueness give inverses and coherent finite composites. The geometric components are precisely those already described, by Theorem J.6. In particular, a central full-spin label is retained even if some tensor components factor through its orthogonal image.",
+      "after": "Here $\\varphi$ and $C$ are the overlap maps and associators, and $\\tau$ are the module overlaps. All base changes and moving arguments are those of H.4 and Theorem J.6. The second equation retains both associators; replacing it by a principal-symbol equality would be insufficient. Compact embedded support classification and the framed module construction identify the module supported on $Q_x$ with the module on $Q_{f(x)}$ over its whole compact support. G.5 and H.4's normalized-inner and framed-Hom uniqueness give inverses and coherent finite composites. The geometric components are those already described, by Theorem J.6. In particular, a central full-spin label is retained even if some tensor components factor through its orthogonal image.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-104",
+      "original_line": 6028,
+      "before": "with the source-dependent radial/broken-path spin correction $K_U$ of \u00a78.3. The physical point-map direction is the one specified there. In particular, we have not replaced this law by addition of displacements or by multiplication $AB$ alone. The genuine spin holonomy around a curved path is allowed to be nontrivial. The strict chart-transition identity [@eq:schw-bc-physical-chart-coherence] follows from changes of sections, not from path independence of the connection.",
+      "after": "with the source-dependent radial/broken-path spin correction $K_U$ of \u00a78.3. The physical point-map direction is the one specified there. In particular, we have not replaced this law by addition of displacements or by multiplication $AB$ alone. The spin holonomy around a curved path is allowed to be nontrivial. The strict chart-transition identity [@eq:schw-bc-physical-chart-coherence] follows from changes of sections, not from path independence of the connection.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-105",
+      "original_line": 6041,
+      "before": "These equations include the moving arguments. The inverse is the actual inverse affine map, with translation $-(d_{12}u_{12})\\circ K_{12}^{-1}$. The full-spin maps carry the root and its calibration, hence the optical section, infinity tensors and affine slice agree on triples by functoriality, with no sign selected afresh on the triple. The compact support $Q_x$ and its lifted evaluation are carried to the same compact support and evaluation under both routes.",
+      "after": "These equations include the moving arguments. The inverse is the inverse affine map, with translation $-(d_{12}u_{12})\\circ K_{12}^{-1}$. The full-spin maps carry the root and its calibration, hence the optical section, infinity tensors and affine slice agree on triples by functoriality, with no sign selected afresh on the triple. The compact support $Q_x$ and its lifted evaluation are carried to the same compact support and evaluation under both routes.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-106",
+      "original_line": 6055,
+      "before": "for the framed point-module maps $M$. These equations are in addition to the internal chart-overlap associators $C_{ijk}$ retained in [@eq:schw-bc-actual-operator-comparison]. The two routes through a fourfold composite have the actual equality",
+      "after": "for the framed point-module maps $M$. These equations are in addition to the internal chart-overlap associators $C_{ijk}$ retained in [@eq:schw-bc-actual-operator-comparison]. The two routes through a fourfold composite have the equality",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-107",
+      "original_line": 6062,
+      "before": "To see this equality, associate $L_{\\delta\\gamma}L_{\\gamma\\beta}L_{\\beta\\alpha}$ in its two ways. The displayed sides implement the same inner action over the same physical map and full-spin label. Both have the normalization of Lemma F.8. Their equality follows from normalized-inner uniqueness; the framed module equality then follows from the framed-Hom uniqueness in H.4. The same uniqueness gives identities, inverse comparisons and every retained finite composition diagram. Whole compact point modules, the local-twistor flags and calibrated infinity forms are preserved by Theorem J.6, including their actual module actions. The full-spin center remains part of the label in these equalities.",
+      "after": "To see this equality, associate $L_{\\delta\\gamma}L_{\\gamma\\beta}L_{\\beta\\alpha}$ in its two ways. The displayed sides implement the same inner action over the same physical map and full-spin label. Both have the normalization of Lemma F.8. Their equality follows from normalized-inner uniqueness; the framed module equality then follows from the framed-Hom uniqueness in H.4. The same uniqueness gives identities, inverse comparisons and every retained finite composition diagram. Whole compact point modules, the local-twistor flags and calibrated infinity forms are preserved by Theorem J.6, including their module actions. The full-spin center remains part of the label in these equalities.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-108",
+      "original_line": 6301,
+      "before": "There is a separate sign check using an actual geometric Jacobi field. Rotation of the orbital plane gives an out-of-plane amplitude $y=r\\sin\\phi$; this follows by differentiating a spatial rotational isometry and pairing with $e_\\theta$, up to an immaterial constant sign. The geodesic first integrals give",
+      "after": "There is a separate sign check using a geometric Jacobi field. Rotation of the orbital plane gives an out-of-plane amplitude $y=r\\sin\\phi$; this follows by differentiating a spatial rotational isometry and pairing with $e_\\theta$, up to an immaterial constant sign. The geodesic first integrals give",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-109",
+      "original_line": 6648,
+      "before": "We next verify compatibility with the actual finite computation. Let $A^{(0)}(x)$ be the amplitude-zero matrix on the common parent. With",
+      "after": "We next verify compatibility with the finite computation. Let $A^{(0)}(x)$ be the amplitude-zero matrix on the common parent. With",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-110",
+      "original_line": 6659,
+      "before": "For the initialized ODE, its amplitude-zero solution is the actual solution of the residue equation. At each degree $n\\ge1$, the combined state coefficient satisfies",
+      "after": "For the initialized ODE, its amplitude-zero solution is the solution of the residue equation. At each degree $n\\ge1$, the combined state coefficient satisfies",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-111",
+      "original_line": 6968,
+      "before": "The actual two-form components and the undeformed endomorphism are",
+      "after": "The two-form components and the undeformed endomorphism are",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-112",
+      "original_line": 7188,
+      "before": "On a neighborhood where its stated inverse branches, $u_{\\rm src}=x+\\mathrm iy\\ne0$, $q$, $\\varrho$ and the retained roots are defined, the primitive tensor identity is $\\Phi_{\\rm pr}^*G_{\\rm int}=2r^{-2}g_m$. It follows that $\\Phi_{\\rm pr}^*g_{\\rm src}=g_m$ with the calibrated density, point and actual full-spin lift. If $F:g[A_g]\\to(g_m,o,s)$ is the initialized metric comparison of Theorem K.7, the completed native comparison and inverse are",
+      "after": "On a neighborhood where its stated inverse branches, $u_{\\rm src}=x+\\mathrm iy\\ne0$, $q$, $\\varrho$ and the retained roots are defined, the primitive tensor identity is $\\Phi_{\\rm pr}^*G_{\\rm int}=2r^{-2}g_m$. It follows that $\\Phi_{\\rm pr}^*g_{\\rm src}=g_m$ with the calibrated density, point and full-spin lift. If $F:g[A_g]\\to(g_m,o,s)$ is the initialized metric comparison of Theorem K.7, the completed native comparison and inverse are",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-113",
+      "original_line": 7206,
+      "before": "The transported full-spin frame therefore intertwines the exact Weyl contractions and averaged spin symmetrizations at every order. The source records are the same complete records used to define $A_g$. Normal uniqueness gives the actual $F$ and inverse. Composition now gives the displayed two-sided inverse identities on the common restricted source and target domains.",
+      "after": "The transported full-spin frame therefore intertwines the exact Weyl contractions and averaged spin symmetrizations at every order. The source records are the same complete records used to define $A_g$. Normal uniqueness gives the $F$ and inverse. Composition now gives the displayed two-sided inverse identities on the common restricted source and target domains.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-114",
+      "original_line": 7208,
+      "before": "The induced null-cotangent map preserves the tautological form and null characteristics, so it gives the actual ray contact maps and their inverse hit maps. Its scalar optical solution map preserves value, slope, Wronskian, density-square calibration and the selected affine evaluation. The normal tractor and full-spin local-twistor maps preserve $I,X,DX$, optical flags, point planes and both actual infinity forms. H.4 and Theorem J.6 then supply the actual projective operator and whole compact point-module maps, including the two-associator and framed-module equations [@eq:schw-bc-compatible-enriched-comparisons]. G.5, Lemma F.8 and framed-Hom uniqueness give their finite inverse and composition coherence. These enrichments are canonically constructed from the selected native metric; an operator presentation of the original coincidence surface is not assumed as input. \u220e",
+      "after": "The induced null-cotangent map preserves the tautological form and null characteristics, so it gives the ray contact maps and their inverse hit maps. Its scalar optical solution map preserves value, slope, Wronskian, density-square calibration and the selected affine evaluation. The normal tractor and full-spin local-twistor maps preserve $I,X,DX$, optical flags, point planes and both infinity forms. H.4 and Theorem J.6 then supply the projective operator and whole compact point-module maps, including the two-associator and framed-module equations [@eq:schw-bc-compatible-enriched-comparisons]. G.5, Lemma F.8 and framed-Hom uniqueness give their finite inverse and composition coherence. These enrichments are canonically constructed from the selected native metric; an operator presentation of the original coincidence surface is not assumed as input. \u220e",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-115",
+      "original_line": 7238,
+      "before": "Here $\\nu_i$ is the actual initialized full-spin transport along the radial geodesic. Theorem 8.3 identifies $V_i(\\varepsilon)$ with the entire curvature record of this same metric at $x_i(\\varepsilon)$ in frame $e_i(\\varepsilon)$. The record-flow estimates and the null-geodesic/parallel-spin Cauchy argument of Lemma K.6 give a uniform factorial bound on a smaller record radius. Thus the exact encoders of Theorem 3.1 make $V_i$ bounded holomorphic passive source families.",
+      "after": "Here $\\nu_i$ is the initialized full-spin transport along the radial geodesic. Theorem 8.3 identifies $V_i(\\varepsilon)$ with the entire curvature record of this same metric at $x_i(\\varepsilon)$ in frame $e_i(\\varepsilon)$. The record-flow estimates and the null-geodesic/parallel-spin Cauchy argument of Lemma K.6 give a uniform factorial bound on a smaller record radius. Thus the exact encoders of Theorem 3.1 make $V_i$ bounded holomorphic passive source families.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-116",
+      "original_line": 7273,
+      "before": "and set $s_{\\rm in}=1$ after construction. The physical variable $\\varepsilon$ is still retained. There is no assertion that these vertex metrics are physically compared for arbitrary $s_{\\rm in}$ by scaling the rebased records linearly. Theorem G.5 uses exactly this independent-internal-amplitude evaluation and quantizes the inverse pullback of the actual ray map of $f_{ij}^\\varepsilon$. Its reference at $\\varepsilon=0$ is the actual flat translation/full-spin action, with its half-density calibration.",
+      "after": "and set $s_{\\rm in}=1$ after construction. The physical variable $\\varepsilon$ is still retained. There is no assertion that these vertex metrics are physically compared for arbitrary $s_{\\rm in}$ by scaling the rebased records linearly. Theorem G.5 uses exactly this independent-internal-amplitude evaluation and quantizes the inverse pullback of the ray map of $f_{ij}^\\varepsilon$. Its reference at $\\varepsilon=0$ is the flat translation/full-spin action, with its half-density calibration.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-117",
+      "original_line": 7306,
+      "before": "Thus the quantifiers are: fix the bounded record family and the compact amplitude/parameter sets; choose common parents, passive displacement and inverse/root margins; choose the actual common base and readout core; then choose the positive short length and final marks. The optical amplitude truncation on this subsystem remains the single central Taylor polynomial in $\\varepsilon$, read out before evaluation at one. It neither requires linearity of the rebased records in $\\varepsilon$ nor asserts an exact cocycle for independently truncated vertex metrics.",
+      "after": "Thus the quantifiers are: fix the bounded record family and the compact amplitude/parameter sets; choose common parents, passive displacement and inverse/root margins; choose the common base and readout core; then choose the positive short length and final marks. The optical amplitude truncation on this subsystem remains the single central Taylor polynomial in $\\varepsilon$, read out before evaluation at one. It neither requires linearity of the rebased records in $\\varepsilon$ nor asserts an exact cocycle for independently truncated vertex metrics.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-118",
+      "original_line": 7468,
+      "before": "The extensions in this display are actual short extensions of the exact family. The cuts for $\\lambda\\in P_a$ are",
+      "after": "The extensions in this display are short extensions of the exact family. The cuts for $\\lambda\\in P_a$ are",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-119",
+      "original_line": 7493,
+      "before": "At amplitude one, Lemma K.6 and the initialized normal metric comparison preceding Theorem K.7 give an exact normal-to-EF map $\\chi$ with analytic inverse $\\kappa$. Choose sufficiently small concentric complex EF polydiscs around the marked point. Four nested such polydiscs can be placed inside the physical image of the normal readout parent, so that the second larger polydisc $V^2$ and its closure lie in the image of the normal $C^3$ control core and the largest $V^3$ has a positive gap to the actual readout boundary. Reserve any further spatial Cauchy gap needed below before making this choice. The real locus of the smallest $V^0$ contains the marked point.",
+      "after": "At amplitude one, Lemma K.6 and the initialized normal metric comparison preceding Theorem K.7 give an exact normal-to-EF map $\\chi$ with analytic inverse $\\kappa$. Choose sufficiently small concentric complex EF polydiscs around the marked point. Four nested such polydiscs can be placed inside the physical image of the normal readout parent, so that the second larger polydisc $V^2$ and its closure lie in the image of the normal $C^3$ control core and the largest $V^3$ has a positive gap to the readout boundary. Reserve any further spatial Cauchy gap needed below before making this choice. The real locus of the smallest $V^0$ contains the marked point.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-120",
+      "original_line": 7572,
+      "before": "Here $h_i$ is $m^{-2}$ times the physical metric in the initialized normal coordinates, and $\\mathcal R_{i,N}$ includes this final fixed scalar multiplication. It commutes with finite reduction and coefficient-polynomial evaluation; the bound $H_i$ below includes the factor $m^{-2}$. This identity is an equality of coefficient germs on their common representatives. Inverses use finite nilpotent sums; compositions use only the finitely many amplitude coefficients and derivatives needed at the retained degree; initialized ODE coefficients satisfy unique finite linear inhomogeneous recursions. These are precisely the operations in the readout, so the identity includes its nonlinear metric reconstruction and normal development. Evaluating the stored tuple first and then applying a nonlinear readout would not give this identity.",
+      "after": "Here $h_i$ is $m^{-2}$ times the physical metric in the initialized normal coordinates, and $\\mathcal R_{i,N}$ includes this final fixed scalar multiplication. It commutes with finite reduction and coefficient-polynomial evaluation; the bound $H_i$ below includes the factor $m^{-2}$. This identity is an equality of coefficient germs on their common representatives. Inverses use finite nilpotent sums; compositions use only the finitely many amplitude coefficients and derivatives needed at the retained degree; initialized ODE coefficients satisfy unique finite linear inhomogeneous recursions. These are the operations in the readout, so the identity includes its nonlinear metric reconstruction and normal development. Evaluating the stored tuple first and then applying a nonlinear readout would not give this identity.",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-121",
+      "original_line": 7648,
+      "before": "$h_i(1)=\\chi_i^*g$. Undoing the fixed unit conversion gives the original physical metrics and initialized isometries, with their original root and full-spin calibration. Their coordinate transitions are the actual maps",
+      "after": "$h_i(1)=\\chi_i^*g$. Undoing the fixed unit conversion gives the original physical metrics and initialized isometries, with their original root and full-spin calibration. Their coordinate transitions are the maps",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-122",
+      "original_line": 7799,
+      "before": "as $E_{\\rm temp}$. Define the actual, computed transition matrix",
+      "after": "as $E_{\\rm temp}$. Define the computed transition matrix",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-123",
+      "original_line": 7894,
+      "before": "On each subinterval integrate the actual null geodesic and parallel frame of its own readout metric, together with the actual transverse Jacobi equation of that metric. Its tidal matrix is real symmetric, so the corresponding four-dimensional transfer $U_{j,N}$ is symplectic. At a cut use the state reset above and record the computed matrix $\\mathsf C_{j,N}$. The full optical algorithm uses, in the stipulated order,",
+      "after": "On each subinterval integrate the null geodesic and parallel frame of its own readout metric, together with the transverse Jacobi equation of that metric. Its tidal matrix is real symmetric, so the corresponding four-dimensional transfer $U_{j,N}$ is symplectic. At a cut use the state reset above and record the computed matrix $\\mathsf C_{j,N}$. The full optical algorithm uses, in the stipulated order,",
+      "reasons": [
+        "Remove a repeated emphasis word; the specified object, formula and scope are retained."
+      ]
+    },
+    {
+      "id": "edit-124",
+      "original_line": 7901,
+      "before": "Every factor and hence the product is symplectic. Earlier frame and phase discrepancies remain in the incoming state, in $R$, and in this accumulated product. Reinitializing the target frame does not authorize replacing $\\mathsf C_{j,N}$ by the identity or resetting the accumulated transfer.",
+      "after": "Every factor and hence the product is symplectic. Earlier frame and phase discrepancies remain in the incoming state, in $R$, and in this accumulated product. Target-frame reinitialization retains $\\mathsf C_{j,N}$ and the accumulated transfer.",
+      "reasons": [
+        "Express the same finite-product rule positively; retain the computed screen switch and all accumulated errors."
+      ]
+    },
+    {
+      "id": "edit-125",
+      "original_line": 7903,
+      "before": "The local state-flow estimates of Theorem K.12 apply on each retained interval with its actual initial error. The two switch inequalities supply the interface contributions to their finite iteration. Neither a missing initial-error term nor a reset-dependent affine rescaling is suppressed.",
+      "after": "The local state-flow estimates of Theorem K.12 apply on each retained interval with its initial error. The two switch inequalities propagate this error and the interface contributions through the finite iteration, using the same affine clock.",
+      "reasons": [
+        "Retain entrance error, interface contributions and the fixed affine clock in one positive statement."
+      ]
+    },
+    {
+      "id": "edit-126",
+      "original_line": 7907,
+      "before": "The construction is an explicitly prescribed piecewise optical approximation. Its position is continuous and each open segment is an actual readout-metric null geodesic; tangents, frames and Jacobi jets have the displayed small interface resets. It need not be a geodesic of a globally glued approximate metric, and its optical transfer is not asserted to be the derivative of a global nonlinear geodesic flow or of the nonlinear state-reset algorithm. The exact cuts and reference parallel-frame values are specified Schwarzschild benchmark data supplied by \u00a7K.3, independently of the optical transfer being approximated. The construction does not give a numerical certification from finitely many twistor coefficients alone. These distinctions do not affect the proved state, phase, Wronskian and finite-product rules. \u220e",
+      "after": "The construction is a piecewise optical approximation with continuous position. Each open segment is a null geodesic of its own readout metric; the prescribed small interface resets join tangents, frames and covariant Jacobi data. Its optical transfer uses the covariant Cauchy prescription above. The exact cuts, coordinate comparisons and parallel Sachs frame are fixed Schwarzschild benchmark data from \u00a7K.3, independent of the transfer being approximated. The bounds are relative to these inputs and the retained analytic margins. \u220e",
+      "reasons": [
+        "Consolidate the model and benchmark inputs. The preceding covariant-jet definition still explicitly distinguishes this rule from differentiating the nonlinear reset; that distinction is referenced later."
+      ]
+    },
+    {
+      "id": "edit-127",
+      "original_line": 8129,
+      "before": "Here $\\Phi_\\lambda$ is exactly the original \u00a7K.3 transport, in its original polar-first screen and dimensionless phase. This Cauchy transport is not asserted to be the derivative of the nonlinear state-reset map.",
+      "after": "Here $\\Phi_\\lambda$ is the \u00a7K.3 transport in its polar-first screen and dimensionless phase. The Cauchy transport is the one defined in Lemma K.21.",
+      "reasons": [
+        "Reference the existing covariant Cauchy definition instead of repeating its nonvariational qualification."
+      ]
+    },
+    {
+      "id": "edit-128",
+      "original_line": 7206,
+      "before": "The transported full-spin frame therefore intertwines the exact Weyl contractions and averaged spin symmetrizations at every order. The source records are the same complete records used to define $A_g$. Normal uniqueness gives the $F$ and inverse. Composition now gives the displayed two-sided inverse identities on the common restricted source and target domains.",
+      "after": "The transported full-spin frame therefore intertwines the exact Weyl contractions and averaged spin symmetrizations at every order. The source records are the same complete records used to define $A_g$. Normal uniqueness gives $F$ and its inverse. Composition now gives the displayed two-sided inverse identities on the common restricted source and target domains.",
+      "reasons": [
+        "Repair the article and possessive after the emphasis-word deletion."
+      ]
+    },
+    {
+      "id": "edit-129",
+      "original_line": 7907,
+      "before": "The construction is a piecewise optical approximation with continuous position. Each open segment is a null geodesic of its own readout metric; the prescribed small interface resets join tangents, frames and covariant Jacobi data. Its optical transfer uses the covariant Cauchy prescription above. The exact cuts, coordinate comparisons and parallel Sachs frame are fixed Schwarzschild benchmark data from \u00a7K.3, independent of the transfer being approximated. The bounds are relative to these inputs and the retained analytic margins. \u220e",
+      "after": "The construction is a piecewise optical approximation with continuous position. Each open segment is a null geodesic of its own readout metric; the prescribed small interface resets join tangents, frames and covariant Jacobi data. Its optical transfer uses the covariant Cauchy prescription above. The exact cuts and parallel Sachs frame from \u00a7K.3, together with the coordinate comparisons fixed in Theorem K.18, are benchmark data independent of the transfer being approximated. The bounds are relative to these inputs and the retained analytic margins. \u220e",
+      "reasons": [
+        "Identify the separate sources of the benchmark cuts, frame and coordinate comparisons."
+      ]
+    }
+  ]
+}

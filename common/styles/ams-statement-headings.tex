@@ -1,0 +1,9 @@
+% Match amsart's theorem preskip while keeping Markdown statement bodies roman.
+\makeatletter
+\newcommand{\pandocstatementheading}[1]{%
+  \par\addpenalty{\@beginparpenalty}%
+  \addvspace{.5\baselineskip plus .2\baselineskip minus .2\baselineskip}%
+  {\normalfont\bfseries #1\par}%
+  \nobreak\@afterindenttrue\@afterheading
+}
+\makeatother

@@ -1,0 +1,188 @@
+{
+  "schema": "paper-publication-package-v1",
+  "version": "1.0",
+  "prepared_date": "2026-11-05",
+  "baseline": "v0.2.12-review",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 50,
+      "sha256": "b6c8e1480f54b7cac35fe64da9c149d70486358737b959833f5d42c378ebe740"
+    },
+    {
+      "path": "BUILDING.md",
+      "bytes": 2342,
+      "sha256": "f2acd2662e61f62f66bd98c00a5a1e880e07a6df7549bf9ee0f77dbf1fe4a831"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 737,
+      "sha256": "ef6c03f058d078bd721047a5bd1ccb45339414f693224313cd251303ac4907c5"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 667,
+      "sha256": "513b3331519737d9bef7f417c335cfe2c4be0e5849b0ad0f018f4885c5b41137"
+    },
+    {
+      "path": "LICENSE-APACHE-2.0",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "path": "LICENSE-CC-BY-4.0.md",
+      "bytes": 712,
+      "sha256": "e70351153dec11e3dc6ad1ab4c5ad2e821fd121a07362f1a7b8f593c89fcdfa9"
+    },
+    {
+      "path": "PUBLICATION.md",
+      "bytes": 2374,
+      "sha256": "574e5663888a68cc0641c9cc355054d9e29c1ddf02b77aa076db15c818c3a80e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2939,
+      "sha256": "d192af727d775c730638dc8d6b27b37a0739da21bc728948bb2ea08e183cdfcd"
+    },
+    {
+      "path": "common/styles/ams-statement-headings.tex",
+      "bytes": 338,
+      "sha256": "c4b970021df0e6a96d207599964fc3931e6c3899b63854d728c13ad39b75e716"
+    },
+    {
+      "path": "common/styles/arxiv-preamble.tex",
+      "bytes": 785,
+      "sha256": "d381c6a8e7b056f89f4222aea7e2c76e650f5560cfd9cea58d4608a24e51a891"
+    },
+    {
+      "path": "common/styles/macros.tex",
+      "bytes": 652,
+      "sha256": "9a8334605a62112fff0692691dacb2f92b656b11e052d84ae95cc56811fddaa4"
+    },
+    {
+      "path": "common/styles/pandoc-arxiv-ams-en.yaml",
+      "bytes": 408,
+      "sha256": "414129f005a4e99ea66e7134e767fed42931ad498c01057117a92190fe11ee43"
+    },
+    {
+      "path": "common/styles/pandoc-bibliography-heading.lua",
+      "bytes": 2630,
+      "sha256": "5e34f8709be663e7ef94cea7945653057d44b678f187c7115296e8c0ca3c107b"
+    },
+    {
+      "path": "common/styles/pandoc-join-display-paragraphs.lua",
+      "bytes": 3609,
+      "sha256": "872f887524855da748659625c0041332fa31df01435ee1c6cc9482a8a39b3639"
+    },
+    {
+      "path": "common/styles/pandoc-manual-reference-anchors.lua",
+      "bytes": 365,
+      "sha256": "8405e9d7f93d5b50b1c5f1ac7290bb98ab687857b78b366c5a715e9ec8913bfe"
+    },
+    {
+      "path": "common/styles/pandoc-promote-topmatter.lua",
+      "bytes": 7607,
+      "sha256": "5e433c9af8f15982e25b3da185028d10829d8278dd14a4b1e697db8b0a6f59a7"
+    },
+    {
+      "path": "common/styles/pandoc-statement-headings.lua",
+      "bytes": 2162,
+      "sha256": "3f0f8015b6713fbf42806e6418b83e88362aad08ca89f0cafc63e6462bc2c22b"
+    },
+    {
+      "path": "common/styles/pandoc-unnumber-abstract-equations.lua",
+      "bytes": 1779,
+      "sha256": "5eff716cdec9b81443777695e7d8fdc4bb0360ba3e21cb9439af3d885385c718"
+    },
+    {
+      "path": "release/paper-v1.0/BASELINE.json",
+      "bytes": 1247,
+      "sha256": "3393a20a3072c996f436933160d0e784942a9935d737a92caf6e9101caf02076"
+    },
+    {
+      "path": "release/paper-v1.0/BUILD-REPORT.json",
+      "bytes": 2086,
+      "sha256": "ae5e554fd4bd60f03bfd3f382fcabd4bef408af827d828b5b93651f6d76f6222"
+    },
+    {
+      "path": "release/paper-v1.0/EDITORIAL-CHANGES.json",
+      "bytes": 124358,
+      "sha256": "b32418e5c8f68321b6649c2b4760cdafb74ddc8afc37475ccd4d8b7f630a04ba"
+    },
+    {
+      "path": "release/paper-v1.0/PROOF-DAG.json",
+      "bytes": 10884,
+      "sha256": "7437cee5069c6811381261659e19b98cb18780d3aa50be5e36bf1b297a27ed69"
+    },
+    {
+      "path": "release/paper-v1.0/PROOF-NOTE-DAG.json",
+      "bytes": 2486,
+      "sha256": "50286e3242619fefa074e4615406e386c359cdf631fd9aa0eeed932987da2a2e"
+    },
+    {
+      "path": "release/paper-v1.0/PROOF.md",
+      "bytes": 68136,
+      "sha256": "cb6740b356f0b8d2a7358763574425af8ab50fdbd2a03047696319909c1fbd14"
+    },
+    {
+      "path": "release/paper-v1.0/RELEASE-NOTES.md",
+      "bytes": 1418,
+      "sha256": "b5d9749ee47175b65b090e496b38c5ffdf1a766cbca01c6981f8547df769449d"
+    },
+    {
+      "path": "release/paper-v1.0/SOURCE-CHECK.json",
+      "bytes": 2062,
+      "sha256": "f0cd3f8eda35617e432a67e2748ffc3a88875e8d5f48e7466e3a2a4bedbf3a25"
+    },
+    {
+      "path": "release/paper-v1.0/manuscript.md",
+      "bytes": 656321,
+      "sha256": "ae3292b78bcdcd847f1d2b4ea56dd92f104a9eb1f4ae367ed75e170748cb4ea7"
+    },
+    {
+      "path": "release/paper-v1.0/manuscript.pdf",
+      "bytes": 1035761,
+      "sha256": "18395e1414a149d197089c14a92a4a16ed19a0efa7403947088e653f25b1f46c"
+    },
+    {
+      "path": "release/paper-v1.0/manuscript.tex",
+      "bytes": 726151,
+      "sha256": "19ee8cb549046f4acc3360a47439a37ab752d69b34ab07bb84748f3dfb74936c"
+    },
+    {
+      "path": "release/paper-v1.0/notation.md",
+      "bytes": 14159,
+      "sha256": "822f13898d9bd706bdf62fa77dad6491d2a29dc9366633e26be672eb17af6096"
+    },
+    {
+      "path": "release/paper-v1.0/references.bib",
+      "bytes": 9288,
+      "sha256": "2c5bb173fd0b2455a4f3737ba76fb55d002a0dc82c2b13ca8ddc0deb8704c088"
+    },
+    {
+      "path": "scripts/build_paper.py",
+      "bytes": 2292,
+      "sha256": "41a56637141fef8647ae9d9885a09e4cd2c1e321304547392d6884bca985ca28"
+    },
+    {
+      "path": "scripts/export_markdown.sh",
+      "bytes": 12146,
+      "sha256": "1a3457db5faf9b55d4618ec4b65243a576b35919d91771af0fe1c8e8f2aa504f"
+    },
+    {
+      "path": "scripts/prepare_layout.py",
+      "bytes": 12037,
+      "sha256": "c69a99c706c6dc04070fa6de4d5ed919dc0b4b6eebc2079ee4adcc5ac96c9e0c"
+    },
+    {
+      "path": "scripts/prepare_paper_tex.py",
+      "bytes": 16734,
+      "sha256": "aa570b1ef4201544151c7fa002aeb149580ab23c224846c615d1c17b6b222704"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "bytes": 5505,
+      "sha256": "9d72c47b4b8b1002b2f8b3a9c4bfd743c3eb9b6ad0b08ef4297e666d13ebd9ae"
+    }
+  ]
+}

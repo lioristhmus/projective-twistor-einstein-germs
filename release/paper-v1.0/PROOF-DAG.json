@@ -1,0 +1,400 @@
+{
+  "schema": "googly-finite-readout-DAG-v1",
+  "version": "1.0",
+  "nodes": [
+    {
+      "id": "BASE",
+      "kind": "fixed_input",
+      "claim": "Main correspondence contracts and physical/full-spin arrows retained; authorized local corrections C1,C3,C4.",
+      "requires": [
+        "GRAPH_DERIVATIVE",
+        "EXTERNAL_COMPONENTS",
+        "CHIRALITY_SUM"
+      ],
+      "anchors": [
+        "thm:gg-main",
+        "thm:gg-op-physical-comparisons",
+        "thm:gg-independent-op-equivalence"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "PRIMITIVE",
+      "kind": "direct_proof",
+      "claim": "Explicit source convention, rank-two projector, contour2 and generic tensor",
+      "requires": [],
+      "anchors": [
+        "prop:sh-r1-primitive-tensor",
+        "eq:sh-r29-projector-annihilator"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "CALIBRATION",
+      "kind": "direct_proof",
+      "claim": "Local angular/root chart, source mass and signed sheet, exact metric/density/tractor/fullspin",
+      "requires": [
+        "PRIMITIVE"
+      ],
+      "anchors": [
+        "thm:sh-r1-calibrated-horizon-map"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "RECORDS",
+      "kind": "direct_proof_relative_to_BASE",
+      "claim": "Complete analytic records and actual initialized normal comparison",
+      "requires": [
+        "BASE"
+      ],
+      "anchors": [
+        "lem:schw-bc-record-family",
+        "eq:sh-r29-radial-frame-boost"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "NATIVE_COMPOSITE",
+      "kind": "proof_relative_to_BASE",
+      "claim": "Phi o F and literal inverse, all-order records and actual enrichments on the A* chart",
+      "requires": [
+        "CALIBRATION",
+        "RECORDS",
+        "BASE"
+      ],
+      "anchors": [
+        "prop:gg-schwarzschild-primitive-comparison",
+        "prop:schw-bc-native-generated-composite"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "COMPATIBLE",
+      "kind": "proof_relative_to_BASE",
+      "claim": "Nonlinear outer physical amplitude, separate inner amplitude, actual compact-sky and inverse parents",
+      "requires": [
+        "BASE",
+        "RECORDS"
+      ],
+      "anchors": [
+        "lem:schw-bc-compatible-local-amplitude"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "FINITE_K",
+      "kind": "proof_relative_to_BASE",
+      "claim": "Finite standard-metric K cover via local stars and coherent amplitude-one comparisons",
+      "requires": [
+        "COMPATIBLE",
+        "BASE"
+      ],
+      "anchors": [
+        "thm:schw-bc-finite-horizon"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "OLD_OPTICS",
+      "kind": "preserved_direct_proof",
+      "claim": "Entrance initialized compact nonradial family and all original L3 calculations",
+      "requires": [],
+      "anchors": [
+        "prop:gg-schwarzschild-main-optics"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "READOUT",
+      "kind": "proof_relative_to_BASE",
+      "claim": "Finite inverse/ODE reduction before coefficient evaluation; two independent Cauchy losses",
+      "requires": [
+        "BASE"
+      ],
+      "anchors": [
+        "lem:sh-holomorphic-metric-tail"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "RATIONAL_OPTICS",
+      "kind": "direct_proof",
+      "claim": "Separately horizon-initialized E1,L=m ray and rational Volterra enclosure",
+      "requires": [],
+      "anchors": [
+        "ex:sch-r1-rational-observable"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "COMMON_SHORT",
+      "kind": "proof_relative_to_BASE",
+      "claim": "One central family only after common base/C3/passive restrictions",
+      "requires": [
+        "COMPATIBLE",
+        "READOUT",
+        "RATIONAL_OPTICS"
+      ],
+      "anchors": [
+        "eq:schw-bc-common-subsystem-length"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "OPTICAL_ERROR",
+      "kind": "proof_relative_to_BASE",
+      "claim": "Metric C3, actual initialized state, tidal and finite Duhamel/projection errors",
+      "requires": [
+        "READOUT",
+        "COMMON_SHORT",
+        "RATIONAL_OPTICS"
+      ],
+      "anchors": [
+        "eq:sch-r1-rational-amplitude-error"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "PRINTED_CONJUNCTION",
+      "kind": "refuted",
+      "claim": "Incompatible printed identities are not promoted by the corrected primitive recipe",
+      "requires": [
+        "PRIMITIVE",
+        "CALIBRATION"
+      ],
+      "anchors": [
+        "sec:sh-r1-primitive-comparison"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "GRAPH_DERIVATIVE",
+      "kind": "local_corrected_proof",
+      "claim": "Full multiplier variation composed with inverse direction map",
+      "requires": [],
+      "anchors": [
+        "eq:gg-graph-linearization"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "EXTERNAL_COMPONENTS",
+      "kind": "local_explicit_dictionary",
+      "claim": "External epsilon/operations/basis/volume/connection comparison with primary source",
+      "requires": [],
+      "anchors": [
+        "eq:gg-original-infinity-external-spinor-convention"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "CHIRALITY_SUM",
+      "kind": "local_constant_clarification",
+      "claim": "Two intermediate chiralities absorbed by the existing quarter reserve",
+      "requires": [],
+      "anchors": [
+        "thm:gg-budget-coefficients"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "SINGLE_READOUT_INCLUSION",
+      "kind": "explicit_hypothesis_unproved_for_the_entire_long_family",
+      "claim": "One readout and inner C3domain contain the closed inflated position tube with positive buffer",
+      "requires": [],
+      "anchors": [
+        "prop:gg-schwarzschild-main-errors"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "LONG_FAMILY_ERROR",
+      "kind": "conditional_theorem",
+      "claim": "Proposition10.3 on the old long ray family, conditional on formal spatial inclusion",
+      "requires": [
+        "READOUT",
+        "OLD_OPTICS",
+        "SINGLE_READOUT_INCLUSION"
+      ],
+      "anchors": [
+        "prop:gg-schwarzschild-main-errors"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "FRO_LOCAL_STABILITY",
+      "kind": "preserved_local_estimates",
+      "anchors": [
+        "lem:sh-inverse-curvature-stability",
+        "lem:sh-null-frame-initialization",
+        "thm:sh-finite-optical-stability"
+      ],
+      "requires": [
+        "READOUT",
+        "OLD_OPTICS"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "FRO_domains",
+      "kind": "direct_finite_construction_relative_to_BASE",
+      "anchors": [
+        "thm:fro-a-finite-domain-schedule"
+      ],
+      "requires": [
+        "OLD_OPTICS",
+        "READOUT",
+        "RECORDS",
+        "FINITE_K"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "FRO_tails",
+      "kind": "direct_finite_construction_relative_to_BASE",
+      "anchors": [
+        "prop:fro-a-finite-readout-tail"
+      ],
+      "requires": [
+        "FRO_domains",
+        "READOUT"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "FRO_overlaps",
+      "kind": "direct_finite_construction_relative_to_BASE",
+      "anchors": [
+        "prop:fro-a-overlaps-exact-atlas"
+      ],
+      "requires": [
+        "FRO_tails",
+        "FINITE_K"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "FRO_switch",
+      "kind": "direct_finite_construction_relative_to_BASE",
+      "anchors": [
+        "lem:fro-b-cauchy-switch"
+      ],
+      "requires": [
+        "FRO_domains",
+        "FRO_overlaps",
+        "FRO_LOCAL_STABILITY"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "FRO_state",
+      "kind": "direct_finite_construction_relative_to_BASE",
+      "anchors": [
+        "prop:fr-opt-c-state-accumulation"
+      ],
+      "requires": [
+        "FRO_tails",
+        "FRO_switch",
+        "FRO_LOCAL_STABILITY"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "FRO_transport",
+      "kind": "direct_finite_construction_relative_to_BASE",
+      "anchors": [
+        "prop:fr-opt-c-phase-accumulation",
+        "cor:fr-opt-c-effective-error"
+      ],
+      "requires": [
+        "FRO_state",
+        "FRO_switch",
+        "OLD_OPTICS"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "FRO_observations",
+      "kind": "direct_finite_construction_relative_to_BASE",
+      "anchors": [
+        "prop:fr-opt-c-observables"
+      ],
+      "requires": [
+        "FRO_transport",
+        "OLD_OPTICS"
+      ],
+      "source": "manuscript.md"
+    },
+    {
+      "id": "FRO_full-family",
+      "kind": "direct_finite_construction_relative_to_BASE",
+      "anchors": [
+        "prop:gg-schwarzschild-finite-readout"
+      ],
+      "requires": [
+        "FRO_domains",
+        "FRO_tails",
+        "FRO_overlaps",
+        "FRO_switch",
+        "FRO_state",
+        "FRO_transport",
+        "FRO_observations"
+      ],
+      "source": "manuscript.md"
+    }
+  ],
+  "acyclic": true,
+  "no_application_to_baseline_dependency": true,
+  "scoped_native_Astar_complete": true,
+  "native_global_spacetime_angular_gluing": false,
+  "source_radius_or_sufficient_N_numerically_evaluated": false,
+  "human_peer_review": false,
+  "formal_verification": false,
+  "foundational_proof_body_byte_identical": false,
+  "main_theorem_contracts_and_physical_arrows_unchanged": true,
+  "finite_readout_scope": {
+    "same_original_full_family": true,
+    "exact_affine_endpoints": true,
+    "single_readout_long_tube_inclusion_proved": false,
+    "global_approximate_metric_claimed": false,
+    "derivative_of_nonlinear_reset_claimed": false,
+    "constants_and_sufficient_order_numerically_evaluated": false
+  },
+  "revision029": {
+    "source_sha256": "e5b3bae1e48e15d522505d1406a9fd0a8ee85e0fa4c27c9b2fe2bad011dbdfc9",
+    "kind": "explicit boundary degrees, inherited hypotheses, fixed convention comparison and companion alpha-renaming",
+    "logical_premises_unchanged": true,
+    "null_companion": "mathcal N",
+    "truncation_degree": "N"
+  },
+  "source_sha256": "180859a63cb16f2f72fdfb6b963a8e24b88e8aeaf07dc590af9e0a7bb4302730",
+  "revision0210": {
+    "source_sha256": "180859a63cb16f2f72fdfb6b963a8e24b88e8aeaf07dc590af9e0a7bb4302730",
+    "corrected_issues": [
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "M7",
+      "M8",
+      "M9",
+      "M10",
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ],
+    "stable_anchors_retained": true,
+    "dependencies_unchanged": true,
+    "appendix_display_map": {
+      "old_K": "L",
+      "old_L": "K"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "schema": "finite-readout-proof-dag-v1",
+  "version": "1.0",
+  "baseline": "0.2.7-review",
+  "nodes": [
+    {
+      "id": "domains",
+      "anchors": [
+        "thm:fro-a-finite-domain-schedule"
+      ],
+      "depends_on": [
+        "baseline-L3",
+        "baseline-L6-L9"
+      ]
+    },
+    {
+      "id": "tails",
+      "anchors": [
+        "prop:fro-a-finite-readout-tail"
+      ],
+      "depends_on": [
+        "domains",
+        "baseline-L9"
+      ]
+    },
+    {
+      "id": "overlaps",
+      "anchors": [
+        "prop:fro-a-overlaps-exact-atlas"
+      ],
+      "depends_on": [
+        "tails",
+        "baseline-L7-L8"
+      ]
+    },
+    {
+      "id": "switch",
+      "anchors": [
+        "lem:fro-b-cauchy-switch"
+      ],
+      "depends_on": [
+        "domains",
+        "overlaps",
+        "baseline-L11"
+      ]
+    },
+    {
+      "id": "state",
+      "anchors": [
+        "prop:fr-opt-c-state-accumulation"
+      ],
+      "depends_on": [
+        "tails",
+        "switch",
+        "baseline-L10-L12"
+      ]
+    },
+    {
+      "id": "transport",
+      "anchors": [
+        "prop:fr-opt-c-phase-accumulation",
+        "cor:fr-opt-c-effective-error"
+      ],
+      "depends_on": [
+        "state",
+        "switch",
+        "baseline-L3"
+      ]
+    },
+    {
+      "id": "observations",
+      "anchors": [
+        "prop:fr-opt-c-observables"
+      ],
+      "depends_on": [
+        "transport",
+        "baseline-L3"
+      ]
+    },
+    {
+      "id": "full-family",
+      "anchors": [
+        "thm:fro-full-family"
+      ],
+      "depends_on": [
+        "domains",
+        "tails",
+        "overlaps",
+        "switch",
+        "state",
+        "transport",
+        "observations"
+      ]
+    }
+  ],
+  "comparison_target": "original entire Proposition10.2 family at exact affine terminal times",
+  "single_readout_long_tube_inclusion_proved": false,
+  "mathematical_computation_jobs": 0,
+  "proof_sha256": "24cf7a898c9948549ee8fd86348da60b65856956a4ab25f4fba1372cdac5bc32",
+  "revision029": {
+    "null_companion": "mathcal N",
+    "truncation_degree": "N",
+    "inherited_observable_hypotheses_recalled": true,
+    "fixed_metric_tolerance_explicit": true
+  },
+  "revision0210": {
+    "current_display_aliases": {
+      "baseline-L3": "K.3",
+      "baseline-L6-L9": "K.6–K.9",
+      "baseline-L9": "K.9",
+      "baseline-L7-L8": "K.7–K.8",
+      "baseline-L11": "K.11",
+      "baseline-L10-L12": "K.10–K.12"
+    },
+    "fixed_import_provenance": "0.2.7-review"
+  }
+}

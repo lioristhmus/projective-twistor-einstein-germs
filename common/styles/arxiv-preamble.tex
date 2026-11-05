@@ -1,0 +1,26 @@
+% Portable additions for the arXiv-oriented profile.
+% Keep packages within the standard TeX Live distribution.
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{microtype}
+\usepackage{centernot}
+\usepackage{newunicodechar}
+
+% Portable negated hooked arrow used by several manuscripts.
+\providecommand{\nhookrightarrow}{\centernot\hookrightarrow}
+
+% U+220E END OF PROOF: render a small hollow square at the right margin.
+\newcommand{\rightqedsquare}{%
+  \ifhmode
+    \unskip\nobreak\hfill\ensuremath{\square}%
+  \else
+    \noindent\hfill\ensuremath{\square}%
+  \fi
+}
+\newunicodechar{∎}{\rightqedsquare}
+
+% Reduce avoidable overfull lines without changing the source manuscript.
+\setlength{\emergencystretch}{2em}
