@@ -1,0 +1,113 @@
+[
+  {
+    "job": "failure-probe",
+    "result": "results/failure-probe/result.json",
+    "environment": "results/failure-probe/environment.json",
+    "log": "results/failure-probe/log.jsonl",
+    "origin": "Fresh 0.2.0 execution, 2026-11-13",
+    "mathematical_check": false,
+    "status": "FAIL"
+  },
+  {
+    "job": "kasner-r1",
+    "result": "results/kasner-r1/result.json",
+    "environment": "results/kasner-r1/environment.json",
+    "log": "results/kasner-r1/log.jsonl",
+    "origin": "Fresh 0.2.0 execution, 2026-11-13",
+    "mathematical_check": true,
+    "status": "PASS"
+  },
+  {
+    "job": "kasner-r3",
+    "result": "results/kasner-r3/result.json",
+    "environment": "results/kasner-r3/environment.json",
+    "log": "results/kasner-r3/log.jsonl",
+    "origin": "Fresh 0.2.0 execution, 2026-11-13",
+    "mathematical_check": true,
+    "status": "PASS"
+  },
+  {
+    "job": "schwarzschild",
+    "result": "results/schwarzschild/result.json",
+    "environment": "results/schwarzschild/environment.json",
+    "log": "results/schwarzschild/log.jsonl",
+    "origin": "Fresh 0.2.0 execution, 2026-11-13",
+    "mathematical_check": true,
+    "status": "PASS"
+  },
+  {
+    "job": "adamo",
+    "result": "results/adamo/result.json",
+    "environment": "results/adamo/environment.json",
+    "log": "results/adamo/log.jsonl",
+    "origin": "Fresh 0.2.0 execution, 2026-11-13",
+    "mathematical_check": true,
+    "status": "PASS"
+  },
+  {
+    "job": "b-low4",
+    "result": "results/b-low4/result.json",
+    "environment": "results/b-low4/environment.json",
+    "log": "results/b-low4/log.jsonl",
+    "origin": "Fresh 0.2.0 execution, 2026-11-13",
+    "mathematical_check": true,
+    "status": "PASS"
+  },
+  {
+    "job": "b-low8",
+    "result": "results/b-low8/result.json",
+    "environment": "results/b-low8/environment.json",
+    "log": "results/b-low8/log.jsonl",
+    "origin": "Fresh 0.2.0 execution, 2026-11-13",
+    "mathematical_check": true,
+    "status": "PASS"
+  },
+  {
+    "job": "ab-r1",
+    "result": "results/ab-r1/result.json",
+    "environment": "results/ab-r1/environment.json",
+    "log": "results/ab-r1/log.jsonl",
+    "origin": "Fresh 0.2.0 execution, 2026-11-13",
+    "mathematical_check": true,
+    "status": "PASS"
+  },
+  {
+    "job": "ab-r4",
+    "result": "results/ab-r4/result.json",
+    "environment": "results/ab-r4/environment.json",
+    "log": "results/ab-r4/log.jsonl",
+    "origin": "Fresh 0.2.0 execution, 2026-11-13",
+    "mathematical_check": true,
+    "status": "PASS"
+  },
+  {
+    "job": "s9-two-wave",
+    "result": "results/s9-two-wave/result.json",
+    "environment": "results/s9-two-wave/environment.json",
+    "log": "results/s9-two-wave/log.jsonl",
+    "origin": "Fresh 0.2.0 execution, 2026-11-13",
+    "mathematical_check": true,
+    "status": "PASS"
+  },
+  {
+    "job": "d2-schwarzian",
+    "result": "results/d2-schwarzian/result.json",
+    "environment": "results/d2-schwarzian/environment.json",
+    "log": "results/d2-schwarzian/log.jsonl",
+    "origin": "Fresh 0.2.0 execution, 2026-11-13",
+    "mathematical_check": true,
+    "status": "PASS"
+  },
+  {
+    "job": "witness-r2",
+    "execution_root": "independent",
+    "result": "independent/results/witness-r2/result.json",
+    "environment": "independent/results/witness-r2/environment.json",
+    "log": "independent/results/witness-r2/log.jsonl",
+    "origin": "Fresh revision-3 execution of unchanged Claude implementation through a new enforcing adapter, 2026-11-13",
+    "mathematical_check": true,
+    "evidence_namespace": "independent-implementation-witness",
+    "primary_record_id": false,
+    "status": "PASS"
+  }
+]

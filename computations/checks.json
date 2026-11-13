@@ -1,0 +1,1756 @@
+{
+  "schema": "local-twistor-computations-v0.2",
+  "paper_source_sha256": "ae3292b78bcdcd847f1d2b4ea56dd92f104a9eb1f4ae367ed75e170748cb4ea7",
+  "checks": [
+    {
+      "id": "KASNER-R1",
+      "job": "kasner-r1",
+      "classification": "finite-exact",
+      "manuscript_anchors": [
+        "lem:gg-budget-spencer",
+        "eq:gg-budget-actual-recursion"
+      ],
+      "identity": "Fixed vacuum Kasner: explicit Q0=0 plus geometric Spencer inverse/commutator comparisons. The r>=1 geometric comparison itself is Einstein-insensitive.",
+      "input_profile": "kasner",
+      "code": "code/kasner_exact.py",
+      "adapter": "code/checks.py",
+      "result": "results/kasner-r1/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "One Kasner vacuum at t=1, Lambda=0; pilot contained in the order-three profile. HQ is geometrically differentiated; the polynomial product rule is not exercised. Chiral outputs are conjugate on this real metric. The geometric residual comparison also holds on non-Einstein metrics; the full current Kasner job still asserts vacuum conditions and Q0=0 and is not claimed to pass on those metrics.",
+      "actual_assertions": [
+        {
+          "file": "code/kasner_exact.py",
+          "line": 48,
+          "end_line": 49,
+          "assertion": "assert all(sum(R[a,b,c,a] for a in range(4)) == 0\n           for b,c in it.product(range(4), repeat=2))"
+        },
+        {
+          "file": "code/kasner_exact.py",
+          "line": 50,
+          "end_line": 50,
+          "assertion": "assert sum(ps) == 1 and sum(p*p for p in ps) == 1"
+        },
+        {
+          "file": "code/kasner_exact.py",
+          "line": 135,
+          "end_line": 137,
+          "assertion": "assert op == matrix(K,4,4,lambda x,y:\n        (B[x//2,y//2] if x%2 == y%2 else 0)\n        +(Bp[x%2,y%2] if x//2 == y//2 else 0))"
+        },
+        {
+          "file": "code/kasner_exact.py",
+          "line": 172,
+          "end_line": 173,
+          "assertion": "assert all(sym(ch,0,(s,))[u,v]-U[u+s//2,v+s%2]==0\n               for s,u,v in it.product(range(4),range(n+1),range(m+1)))"
+        },
+        {
+          "file": "code/kasner_exact.py",
+          "line": 206,
+          "end_line": 206,
+          "assertion": "assert not errors, ('recursion',r,ch,errors[:3])"
+        },
+        {
+          "file": "code/kasner_exact.py",
+          "line": 207,
+          "end_line": 207,
+          "assertion": "assert not errors_upper, ('free projection',r,ch,errors_upper[:3])"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 40,
+        "end_line": 41,
+        "predicate": "ok"
+      },
+      "code_sha256": "8460d1fef4058a8a195a73acb21970225d6b037773b0fb9e570196352e90798b",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "Spencer inverse and geometric specialization of lines 1-3 only; no test of the full five-line Einstein polynomial recursion.",
+      "tested_parts": "For eq:gg-budget-actual-recursion, only lines 1-3 (Spencer inverse and Q expression) with geometric HQ and geometric R; not R_U(U0,Lambda) reconstruction or the polynomial product rule. Q0 and vacuum assertions are separate."
+    },
+    {
+      "id": "KASNER-R3",
+      "job": "kasner-r3",
+      "classification": "finite-exact",
+      "manuscript_anchors": [
+        "lem:gg-budget-spencer",
+        "eq:gg-budget-actual-recursion"
+      ],
+      "identity": "Fixed vacuum Kasner: explicit Q0=0 plus geometric Spencer inverse/commutator comparisons. The r>=1 geometric comparison itself is Einstein-insensitive.",
+      "input_profile": "kasner",
+      "code": "code/kasner_exact.py",
+      "adapter": "code/checks.py",
+      "result": "results/kasner-r3/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "One Kasner vacuum at t=1, Lambda=0; not all-input or all-order compatibility. HQ is geometrically differentiated; the polynomial product rule is not exercised. Chiral outputs are conjugate on this real metric. The geometric residual comparison also holds on non-Einstein metrics; the full current Kasner job still asserts vacuum conditions and Q0=0 and is not claimed to pass on those metrics.",
+      "actual_assertions": [
+        {
+          "file": "code/kasner_exact.py",
+          "line": 48,
+          "end_line": 49,
+          "assertion": "assert all(sum(R[a,b,c,a] for a in range(4)) == 0\n           for b,c in it.product(range(4), repeat=2))"
+        },
+        {
+          "file": "code/kasner_exact.py",
+          "line": 50,
+          "end_line": 50,
+          "assertion": "assert sum(ps) == 1 and sum(p*p for p in ps) == 1"
+        },
+        {
+          "file": "code/kasner_exact.py",
+          "line": 135,
+          "end_line": 137,
+          "assertion": "assert op == matrix(K,4,4,lambda x,y:\n        (B[x//2,y//2] if x%2 == y%2 else 0)\n        +(Bp[x%2,y%2] if x//2 == y//2 else 0))"
+        },
+        {
+          "file": "code/kasner_exact.py",
+          "line": 172,
+          "end_line": 173,
+          "assertion": "assert all(sym(ch,0,(s,))[u,v]-U[u+s//2,v+s%2]==0\n               for s,u,v in it.product(range(4),range(n+1),range(m+1)))"
+        },
+        {
+          "file": "code/kasner_exact.py",
+          "line": 206,
+          "end_line": 206,
+          "assertion": "assert not errors, ('recursion',r,ch,errors[:3])"
+        },
+        {
+          "file": "code/kasner_exact.py",
+          "line": 207,
+          "end_line": 207,
+          "assertion": "assert not errors_upper, ('free projection',r,ch,errors_upper[:3])"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 40,
+        "end_line": 41,
+        "predicate": "ok"
+      },
+      "code_sha256": "8460d1fef4058a8a195a73acb21970225d6b037773b0fb9e570196352e90798b",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "Spencer inverse and geometric specialization of lines 1-3 only; no test of the full five-line Einstein polynomial recursion.",
+      "tested_parts": "For eq:gg-budget-actual-recursion, only lines 1-3 (Spencer inverse and Q expression) with geometric HQ and geometric R; not R_U(U0,Lambda) reconstruction or the polynomial product rule. Q0 and vacuum assertions are separate."
+    },
+    {
+      "id": "SCH-RICCI",
+      "job": "schwarzschild",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "eq:sh-scale-a2",
+        "eq:sh-scale-a3"
+      ],
+      "identity": "g*g_inverse=I and Ricci(h)=0 for the explicit EF tensor.",
+      "input_profile": "schwarzschild",
+      "code": "code/schwarzschild_exact.py",
+      "adapter": "code/checks.py",
+      "result": "results/schwarzschild/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "Fixed vacuum lapse in EF coordinates; the arbitrary-lapse static Ricci list is not computed.",
+      "actual_assertions": [
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 15,
+          "end_line": 15,
+          "assertion": "assert s.simplify(g*gi)==s.eye(4)"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 28,
+          "end_line": 28,
+          "assertion": "assert Ric==s.zeros(4)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 46,
+        "end_line": 47,
+        "predicate": "data['inverse_metric'] and data['Ricci_zero']"
+      },
+      "code_sha256": "dfaacd9abf57e5e24d7e060f21eabbcca4bb6b2607b2f502f2f1b9db7d0c2d76",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "SCH-SCREEN",
+      "job": "schwarzschild",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "eq:sh-optics-d-10",
+        "eq:gg-schwarzschild-main-tide",
+        "sec:sh-optics-3"
+      ],
+      "identity": "Null first integral, parallel polar screen, computed 3mL^2/r^5 tide, radial acceleration derived from Christoffels, and directly differentiated r*sin(phi) Jacobi amplitude.",
+      "input_profile": "schwarzschild",
+      "code": "code/schwarzschild_exact.py",
+      "adapter": "code/checks.py",
+      "result": "results/schwarzschild/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "Equatorial polar component only; literal k formula excludes f=0. Second screen, horizon extension and transfer estimates are not computed.",
+      "tested_parts": "Polar tidal entry and e_theta parallelism only; no second screen or full matrix claim.",
+      "actual_assertions": [
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 33,
+          "end_line": 33,
+          "assertion": "assert reduce((k.T*g.subs(th,s.pi/2)*k)[0])==0"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 35,
+          "end_line": 35,
+          "assertion": "assert s.simplify(out-3*m*L*L/r**5)==0,out"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 38,
+          "end_line": 38,
+          "assertion": "assert all(s.simplify(de2[a]+sum(G[a,b,c].subs(th,s.pi/2)*k[b]*e2[c] for b in range(4) for c in range(4)))==0 for a in range(4))"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 42,
+          "end_line": 42,
+          "assertion": "assert s.simplify(rpp-(L*L/r**3-3*m*L*L/r**4))==0"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 45,
+          "end_line": 45,
+          "assertion": "assert s.simplify(jacobi_second+3*m*L**2/r**5*r*s.sin(ph))==0"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 48,
+        "end_line": 50,
+        "predicate": "data['polar_screen_parallel'] and data['rotation_Jacobi_check']"
+      },
+      "code_sha256": "dfaacd9abf57e5e24d7e060f21eabbcca4bb6b2607b2f502f2f1b9db7d0c2d76",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "SCH-CONFORMAL",
+      "job": "schwarzschild",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "prop:sh-scale-1",
+        "prop:sh-scale-2",
+        "eq:sh-scale-a15",
+        "eq:sh-scale-a16",
+        "eq:sh-scale-a7",
+        "eq:sh-scale-a13",
+        "eq:sh-scale-a14"
+      ],
+      "identity": "Direct conformal scalar and Laplace-Beltrami(r), sigma=1/r, rho=-f/(2r) in r^-2*h, all three tractor parallel equations and zero norm.",
+      "input_profile": "schwarzschild",
+      "code": "code/schwarzschild_exact.py",
+      "adapter": "code/checks.py",
+      "result": "results/schwarzschild/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "The program uses h=-g_E, reversing scalar and bottom-slot signs. Local chart calculation, not global geometry.",
+      "actual_assertions": [
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 51,
+          "end_line": 51,
+          "assertion": "assert scal==12*m/r"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 52,
+          "end_line": 52,
+          "assertion": "assert boxK_r==2*m"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 56,
+          "end_line": 56,
+          "assertion": "assert s.simplify(volume**2+gk.det())==0"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 58,
+          "end_line": 58,
+          "assertion": "assert boxK_direct==boxK_r"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 64,
+          "end_line": 64,
+          "assertion": "assert scalk==scal"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 68,
+          "end_line": 68,
+          "assertion": "assert s.simplify(H-gk*trH/4)==s.zeros(4)"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 69,
+          "end_line": 69,
+          "assertion": "assert norm==0"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 70,
+          "end_line": 70,
+          "assertion": "assert s.simplify(rho+f/(2*r))==0"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 71,
+          "end_line": 71,
+          "assertion": "assert s.simplify(H+gk*rho)==s.zeros(4)"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 73,
+          "end_line": 73,
+          "assertion": "assert all(s.simplify(s.diff(rho,coords[a])-sum(P[a,b]*raised_mu[b] for b in range(4)))==0 for a in range(4))"
+        },
+        {
+          "file": "code/schwarzschild_exact.py",
+          "line": 75,
+          "end_line": 75,
+          "assertion": "assert len(data.encode())<65536"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 51,
+        "end_line": 54,
+        "predicate": "data['status'] == 'PASS' and data['normal_tractor_norm'] == '0'"
+      },
+      "code_sha256": "dfaacd9abf57e5e24d7e060f21eabbcca4bb6b2607b2f502f2f1b9db7d0c2d76",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "AASS-ALGEBRA",
+      "job": "adamo",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "sec:sh-r1-primitive-comparison"
+      ],
+      "identity": "External (2.13) coefficient agreement, (2.24) metric/sigma multipliers, (3.6) AB=-TX and (3.28) printed Laplacian -1/12 versus consistent 1/6.",
+      "input_profile": "adamo",
+      "code": "code/adamo_exact.py",
+      "adapter": "code/checks.py",
+      "result": "results/adamo/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "External arXiv:2607.06236v2 formulas under the specified source conventions; not extra claims of the local paper.",
+      "actual_assertions": [
+        {
+          "file": "code/adamo_exact.py",
+          "line": 47,
+          "end_line": 47,
+          "assertion": "assert first_coefficient == second_coefficient"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 48,
+          "end_line": 48,
+          "assertion": "assert first_coefficient*q2/2 == -2*M/r"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 57,
+          "end_line": 57,
+          "assertion": "assert zero(ec.transpose()*eta*ec-I4-2*c*D.transpose()*O*D)"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 75,
+          "end_line": 75,
+          "assertion": "assert zero(sigma_theta-sigma_printed)"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 76,
+          "end_line": 76,
+          "assertion": "assert zero(sigma_c-sigma_flat-c*correction)"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 77,
+          "end_line": 77,
+          "assertion": "assert not zero(correction)"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 95,
+          "end_line": 95,
+          "assertion": "assert zero(Kab+TX)"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 96,
+          "end_line": 96,
+          "assertion": "assert not zero(Kab-TX)"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 104,
+          "end_line": 104,
+          "assertion": "assert rad.det() == 1/r**4"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 105,
+          "end_line": 105,
+          "assertion": "assert rad.inverse()[1,1] == r**2*(1+HH)"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 109,
+          "end_line": 109,
+          "assertion": "assert lap_printed(Omega_printed) == -F(1)/12"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 112,
+          "end_line": 112,
+          "assertion": "assert scalar_printed == -12*M/r"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 114,
+          "end_line": 114,
+          "assertion": "assert lap_printed(Omega_consistent) == F(1)/6"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 63,
+        "end_line": 66,
+        "predicate": "all(data[x] for x in ('2.13', '2.24', '3.6', '3.28'))"
+      },
+      "code_sha256": "758680cf9d5cc7bc02ddad4e9242cc2e9bf1c16cc5d81ca8ca53125ac6e65893",
+      "evidence_role": "external-exact-comparison",
+      "anchor_role": "Context only; this ID does not verify a statement of the local manuscript."
+    },
+    {
+      "id": "AASS-PRINTED-CURVATURE",
+      "job": "adamo",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "sec:sh-r1-primitive-comparison"
+      ],
+      "identity": "For the printed external metric with lapse 1+2M/r: Ricci(gS)=0 and Scal(r^-2 gS)=-12M/r.",
+      "input_profile": "adamo",
+      "code": "code/adamo_exact.py",
+      "adapter": "code/checks.py",
+      "result": "results/adamo/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "External printed tensor differs from adopted G0. Static chart excludes lapse zero.",
+      "actual_assertions": [
+        {
+          "file": "code/adamo_exact.py",
+          "line": 198,
+          "end_line": 198,
+          "assertion": "assert ricS.is_zero() and scS==0"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 200,
+          "end_line": 200,
+          "assertion": "assert scK==-12*mm/rr"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 67,
+        "end_line": 69,
+        "predicate": "data['printed_metric_bridge']['gS_Ricci_zero']"
+      },
+      "code_sha256": "758680cf9d5cc7bc02ddad4e9242cc2e9bf1c16cc5d81ca8ca53125ac6e65893",
+      "evidence_role": "external-exact-comparison",
+      "anchor_role": "Context only; this ID does not verify a statement of the local manuscript."
+    },
+    {
+      "id": "K5-PROJECTOR",
+      "job": "adamo",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "prop:sh-r1-primitive-tensor",
+        "eq:sh-r1-primitive-projector",
+        "eq:sh-r1-general-source-metric"
+      ],
+      "identity": "P^2=P and omega0(.,J.) equals symmetric G0=-r^-2[delta+4mu_src/r(dtau+i dr)^2]. Also trace(P)=2, J^2=-I, and the actual omega0 wedge matrix equals D^T*WS*D.",
+      "input_profile": "adamo",
+      "code": "code/adamo_exact.py",
+      "adapter": "code/checks.py",
+      "result": "results/adamo/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "Does not test closure, involutivity or global gluing. Retained script G denotes G0 before contour factor two.",
+      "actual_assertions": [
+        {
+          "file": "code/adamo_exact.py",
+          "line": 124,
+          "end_line": 124,
+          "assertion": "assert s == -ii*r"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 130,
+          "end_line": 130,
+          "assertion": "assert zero(PP*PP-PP)"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 138,
+          "end_line": 138,
+          "assertion": "assert zero(omega_from_wedge-D.transpose()*WS*D)"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 139,
+          "end_line": 139,
+          "assertion": "assert PP.trace()==2 and zero(JJ*JJ+I4)"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 146,
+          "end_line": 146,
+          "assertion": "assert all(normal(ell[j]+k[j]/sq2)==0 for j in range(4))"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 148,
+          "end_line": 148,
+          "assertion": "assert zero(printed_gS-I4-2*M/r*matrix(F,4,4,lambda j,l:k[j]*k[l]))"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 150,
+          "end_line": 150,
+          "assertion": "assert zero(G-GG)"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 151,
+          "end_line": 151,
+          "assertion": "assert zero(G-G.transpose())"
+        },
+        {
+          "file": "code/adamo_exact.py",
+          "line": 153,
+          "end_line": 153,
+          "assertion": "assert lap_ours == F(1)/6"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 70,
+        "end_line": 74,
+        "predicate": "data['our_K5']['original_projector_idempotent']\n                 and data['our_K5']['G0_symmetric']\n                 and data['our_K5']['G0_equals_minus_r_inv_sq_delta_plus_4mu']"
+      },
+      "code_sha256": "758680cf9d5cc7bc02ddad4e9242cc2e9bf1c16cc5d81ca8ca53125ac6e65893",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "K5-EF",
+      "job": "adamo",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "prop:gg-schwarzschild-primitive-comparison",
+        "thm:sh-r1-calibrated-horizon-map",
+        "eq:sh-r1-calibrated-pullback"
+      ],
+      "identity": "Four-by-four polar-source tensor pullback with mu_src=m/2, varrho=-r, tau=i(r-v), giving 2g_m/r^2; density sqrt(2)/r recovers g_m.",
+      "input_profile": "adamo",
+      "code": "code/adamo_exact.py",
+      "adapter": "code/checks.py",
+      "result": "results/adamo/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "Local angular/root chart only. Analytic inverse, branch continuation, spin lift and global gluing remain theoretical. Cartesian-to-polar reduction is handwritten; the actual Cartesian Jacobian is not executed. The displayed density component is a chosen input; the squared metric identity does not certify its marked root sign or spin transport.",
+      "actual_assertions": [
+        {
+          "file": "code/checks.py",
+          "line": 87,
+          "end_line": 87,
+          "assertion": "assert s.simplify(pulled-2/r**2*ef) == s.zeros(4)"
+        },
+        {
+          "file": "code/checks.py",
+          "line": 88,
+          "end_line": 88,
+          "assertion": "assert s.simplify(pulled/(s.sqrt(2)/r)**2-ef) == s.zeros(4)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 89,
+        "end_line": 92,
+        "predicate": "data['our_K5']['calibrated_EF_pullback']"
+      },
+      "code_sha256": "758680cf9d5cc7bc02ddad4e9242cc2e9bf1c16cc5d81ca8ca53125ac6e65893",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "K5-RESIDUE",
+      "job": "adamo",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "prop:sh-r1-primitive-tensor",
+        "eq:sh-r1-residue",
+        "eq:sh-r1-contour-value"
+      ],
+      "identity": "lambda=A+wB: Q=-s^2w, Dlambda=s dw, residue=(AB^T+BA^T)/s^3; symmetric wedge yields omega_int=2omega0.",
+      "input_profile": "adamo",
+      "code": "code/checks.py",
+      "adapter": "code/checks.py",
+      "result": "results/adamo/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "s=<AB> nonzero; ordinary wedge, one positive contour turn, prefactor 1/(2pi).",
+      "actual_assertions": [
+        {
+          "file": "code/checks.py",
+          "line": 101,
+          "end_line": 101,
+          "assertion": "assert s.expand(Q+span**2*w)==0 and s.expand(D-span)==0"
+        },
+        {
+          "file": "code/checks.py",
+          "line": 104,
+          "end_line": 104,
+          "assertion": "assert s.simplify(residue-(A*B.T+B*A.T)/span**3)==s.zeros(2)"
+        },
+        {
+          "file": "code/checks.py",
+          "line": 110,
+          "end_line": 110,
+          "assertion": "assert H[0,1]==H[1,0]"
+        },
+        {
+          "file": "code/checks.py",
+          "line": 113,
+          "end_line": 113,
+          "assertion": "assert s.simplify(integral-2*evaluated)==s.zeros(4)"
+        },
+        {
+          "file": "code/checks.py",
+          "line": 114,
+          "end_line": 114,
+          "assertion": "assert evaluated != s.zeros(4)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 115,
+        "end_line": 117,
+        "predicate": "True"
+      },
+      "code_sha256": "e7b9adcfa93d6478ef3264f2bc73b3c3aeabee5ea7362a29d609e22468682085",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "B-RESIDUAL-R4",
+      "job": "b-low4",
+      "classification": "numerical-diagnostic",
+      "manuscript_anchors": [
+        "lem:gg-budget-spencer",
+        "eq:gg-budget-actual-recursion"
+      ],
+      "identity": "Finite float64 deltaQ-RHS, quadratic JstarHQ and symmetry residuals <=1e-10 in unweighted coefficient-array norms.",
+      "input_profile": "diagnostic",
+      "code": "code/b3check.py",
+      "adapter": "code/checks.py",
+      "result": "results/b-low4/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "No explicit all-degree P++Q residual here. Finite selected labels/degrees; no general compatibility proof.",
+      "actual_assertions": [],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 145,
+        "end_line": 146,
+        "predicate": "ok"
+      },
+      "code_sha256": "c948ca59377d9289326ec74ed11ec36ec9f6e035d7cb816455c4b212ba5e2708",
+      "guard_scope": "Production report predicate plus exception-based finite-field/scalar guards; no exact-arithmetic assertion.",
+      "evidence_role": "finite-numerical-residual-or-crosscheck",
+      "anchor_role": "The stated finite numerical specialization, not the general theorem."
+    },
+    {
+      "id": "B-VALUES-R4",
+      "job": "b-low4",
+      "classification": "numerical-diagnostic",
+      "manuscript_anchors": [
+        "lem:gg-budget-transfers",
+        "thm:gg-budget-coefficients"
+      ],
+      "identity": "Record unscaled labeled polarized coefficient sums, restricted-slot singular-value estimates and insertion ratios; require complete finite order fields and finite insertion-table entries.",
+      "input_profile": "diagnostic",
+      "code": "code/b3check.py",
+      "adapter": "code/checks.py",
+      "result": "results/b-low4/result.json",
+      "expected": "PASS means complete finite observation data only. No inequality of Lemma B.3 or Theorem B.4 is tested.",
+      "exclusions": "Lower-value interpretation concerns the measured polarized maps, not one identified ordered B coefficient. No polarization-factor bridge, atomic mass, certified upper bound, all-order gain or convergence proof.",
+      "actual_assertions": [],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 155,
+        "end_line": 161,
+        "predicate": "all(np.isfinite(v) for x in rows for v in x.values()) and all(np.isfinite(v) for v in gain_values)"
+      },
+      "code_sha256": "c948ca59377d9289326ec74ed11ec36ec9f6e035d7cb816455c4b212ba5e2708",
+      "guard_scope": "Production report predicate plus exception-based finite-field/scalar guards; no exact-arithmetic assertion.",
+      "evidence_role": "numerical-observation-record",
+      "anchor_role": "Context only; no B.3/B.4 inequality is asserted or tested."
+    },
+    {
+      "id": "B-RESIDUAL-R8",
+      "job": "b-low8",
+      "classification": "numerical-diagnostic",
+      "manuscript_anchors": [
+        "lem:gg-budget-spencer",
+        "eq:gg-budget-actual-recursion"
+      ],
+      "identity": "Finite float64 deltaQ-RHS, quadratic JstarHQ and symmetry residuals <=1e-10 in unweighted coefficient-array norms.",
+      "input_profile": "diagnostic",
+      "code": "code/b3check.py",
+      "adapter": "code/checks.py",
+      "result": "results/b-low8/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "No explicit all-degree P++Q residual here. Finite selected labels/degrees; no general compatibility proof.",
+      "actual_assertions": [],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 145,
+        "end_line": 146,
+        "predicate": "ok"
+      },
+      "code_sha256": "c948ca59377d9289326ec74ed11ec36ec9f6e035d7cb816455c4b212ba5e2708",
+      "guard_scope": "Production report predicate plus exception-based finite-field/scalar guards; no exact-arithmetic assertion.",
+      "evidence_role": "finite-numerical-residual-or-crosscheck",
+      "anchor_role": "The stated finite numerical specialization, not the general theorem."
+    },
+    {
+      "id": "B-VALUES-R8",
+      "job": "b-low8",
+      "classification": "numerical-diagnostic",
+      "manuscript_anchors": [
+        "lem:gg-budget-transfers",
+        "thm:gg-budget-coefficients"
+      ],
+      "identity": "Record unscaled labeled polarized coefficient sums, restricted-slot singular-value estimates and insertion ratios; require complete finite order fields and finite insertion-table entries.",
+      "input_profile": "diagnostic",
+      "code": "code/b3check.py",
+      "adapter": "code/checks.py",
+      "result": "results/b-low8/result.json",
+      "expected": "PASS means complete finite observation data only. No inequality of Lemma B.3 or Theorem B.4 is tested.",
+      "exclusions": "Lower-value interpretation concerns the measured polarized maps, not one identified ordered B coefficient. No polarization-factor bridge, atomic mass, certified upper bound, all-order gain or convergence proof.",
+      "actual_assertions": [],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 155,
+        "end_line": 161,
+        "predicate": "all(np.isfinite(v) for x in rows for v in x.values()) and all(np.isfinite(v) for v in gain_values)"
+      },
+      "code_sha256": "c948ca59377d9289326ec74ed11ec36ec9f6e035d7cb816455c4b212ba5e2708",
+      "guard_scope": "Production report predicate plus exception-based finite-field/scalar guards; no exact-arithmetic assertion.",
+      "evidence_role": "numerical-observation-record",
+      "anchor_role": "Context only; no B.3/B.4 inequality is asserted or tested."
+    },
+    {
+      "id": "B-CROSS-R4",
+      "job": "b-low4",
+      "classification": "numerical-diagnostic",
+      "manuscript_anchors": [
+        "lem:gg-budget-spencer",
+        "eq:gg-budget-actual-recursion"
+      ],
+      "identity": "Four printed coefficient-sum norms of polarized and nilpotent routes agree to scaled error <=1e-5, seed=1, ++-, r<=4.",
+      "input_profile": "diagnostic",
+      "code": "code/bfcheck.py",
+      "adapter": "code/checks.py",
+      "result": "results/b-low4/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "Shared projection helpers; not independent implementations or componentwise equality. Float64 and seven-digit printed values.",
+      "actual_assertions": [],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 176,
+        "end_line": 180,
+        "predicate": "np.isfinite(error) and error<=1e-5"
+      },
+      "code_sha256": "65a8f159da0e0a34f8c71e428c00a4e889fdb129dc1b03dce734733b94171e08",
+      "guard_scope": "Production report predicate plus exception-based finite-field/scalar guards; no exact-arithmetic assertion.",
+      "evidence_role": "finite-numerical-residual-or-crosscheck",
+      "anchor_role": "The stated finite numerical specialization, not the general theorem.",
+      "sample_content": {
+        "printed_norm_pairs": 32,
+        "both_at_most_threshold": 15,
+        "outside_threshold": 17,
+        "threshold": 1.2e-16,
+        "degree3_pairs_above_threshold": 1
+      }
+    },
+    {
+      "id": "B-RANDOM-R4",
+      "job": "b-low4",
+      "classification": "numerical-diagnostic",
+      "manuscript_anchors": [
+        "lem:gg-budget-spencer",
+        "eq:gg-budget-actual-recursion"
+      ],
+      "identity": "Nilpotent float64 recursion residuals <=1e-10 on one real random two-chirality prefix, seed=7, r<=4.",
+      "input_profile": "diagnostic",
+      "code": "code/bfcheck.py",
+      "adapter": "code/checks.py",
+      "result": "results/b-low4/result.json",
+      "expected": "PASS after required assertions and records; numerical PASS has only the stated finite scope",
+      "exclusions": "Directional derivative construction is algebraic but coefficient arithmetic is float64; no exact or all-input assertion.",
+      "actual_assertions": [],
+      "report_predicate": {
+        "file": "code/checks.py",
+        "line": 184,
+        "end_line": 189,
+        "predicate": "levels=={1,2,3,4} and bool(residual) and len(residual)==sum(line.startswith('level ') for line in random.splitlines())\n                 and all(np.isfinite(v) and v<=tol for v in residual)"
+      },
+      "code_sha256": "65a8f159da0e0a34f8c71e428c00a4e889fdb129dc1b03dce734733b94171e08",
+      "guard_scope": "Production report predicate plus exception-based finite-field/scalar guards; no exact-arithmetic assertion.",
+      "evidence_role": "finite-numerical-residual-or-crosscheck",
+      "anchor_role": "The stated finite numerical specialization, not the general theorem."
+    },
+    {
+      "id": "AB-PROJECTORS-R1",
+      "job": "ab-r1",
+      "classification": "finite-exact",
+      "manuscript_anchors": [
+        "lem:gg-budget-spencer",
+        "eq:gg-budget-spencer-spectrum",
+        "eq:gg-budget-actual-recursion"
+      ],
+      "identity": "All basis vectors of D_r in both chiralities: block decomposition, deltaP++=0, MJstar delta=1-P++, and compressed spectrum for 1<=r<=1.",
+      "input_profile": "ab-exact",
+      "code": "code/ab_exact.py",
+      "adapter": "code/ab_exact.py",
+      "result": "results/ab-r1/result.json",
+      "expected": "PASS only after all corresponding computed assertions",
+      "exclusions": "Finite r only; no surjectivity claim on arbitrary antisymmetric sources. The order-one pilot overlaps order four.",
+      "actual_assertions": [
+        {
+          "file": "code/ab_exact.py",
+          "line": 165,
+          "end_line": 165,
+          "assertion": "assert all(exact(v) for v in (X,pp,pm,mp,mm,jmap(X))), 'nonrational projector coefficient'"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 166,
+          "end_line": 166,
+          "assertion": "assert iszero(X-pp-pm-mp-mm)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 167,
+          "end_line": 167,
+          "assertion": "assert iszero(delta(pp))"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 169,
+          "end_line": 169,
+          "assertion": "assert iszero(res),('inverse',r,c,[(i,str(v)) for i,v in enumerate(res.flat) if v!=0][:8])"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 170,
+          "end_line": 170,
+          "assertion": "assert iszero(jstar(delta(X))-(scale(mp,QQ(n+1)/n)+scale(pm,QQ(m+1)/m)+scale(mm,QQ(n*m-1)/(n*m))))"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 172,
+          "end_line": 172,
+          "assertion": "assert iszero(blocks(B)[i]-B)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/ab_exact.py",
+        "line": 174,
+        "end_line": 176,
+        "predicate": "True"
+      },
+      "code_sha256": "7a494c7be6ad3fa61a365101c94e37ec1784f2e41db5fdd457eb970811201b95",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "AB-WEYL-ADMISSIBILITY-R1",
+      "job": "ab-r1",
+      "classification": "finite-exact",
+      "manuscript_anchors": [
+        "eq:gg-weyl-spinor-decomposition",
+        "eq:gg-weyl-spinor-readout",
+        "prop:gg-polynomial-completion"
+      ],
+      "identity": "All ten binary-quartic Weyl basis vectors give antisymmetric, metric-skew, algebraically Bianchi and Ricci-zero curvature operators; the signed paper readout recovers both chiral inputs on 320 components.",
+      "input_profile": "ab-exact",
+      "code": "code/ab_exact.py",
+      "adapter": "code/ab_exact.py",
+      "result": "results/ab-r1/result.json",
+      "expected": "PASS only after all corresponding computed assertions",
+      "exclusions": "Linear algebraic curvature conditions at Lambda=0; does not compute general differentiated Bianchi completion. Repeated pilot check.",
+      "actual_assertions": [
+        {
+          "file": "code/ab_exact.py",
+          "line": 190,
+          "end_line": 190,
+          "assertion": "assert iszero(O[a,b]+O[b,a])"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 191,
+          "end_line": 191,
+          "assertion": "assert iszero(eta@O[a,b]+O[a,b].T@eta)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 193,
+          "end_line": 193,
+          "assertion": "assert O[a,b,d,e]+O[b,e,d,a]+O[e,a,d,b]==0"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 195,
+          "end_line": 195,
+          "assertion": "assert sum(O[a,b,a,e] for a in range(4))==0"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 209,
+          "end_line": 209,
+          "assertion": "assert value==expected,('Weyl readout',c,j,output_chirality,fixed,value,expected)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/ab_exact.py",
+        "line": 210,
+        "end_line": 212,
+        "predicate": "True"
+      },
+      "code_sha256": "7a494c7be6ad3fa61a365101c94e37ec1784f2e41db5fdd457eb970811201b95",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization.",
+      "normalization_scope": "The signed inverse readout fixes this linear Weyl-to-curvature map at Lambda=0. It does not test an independent sign change within curvature_source, or the missing nonzero-Lambda term, against a coordinate metric."
+    },
+    {
+      "id": "AB-EXACT-SET-R1",
+      "job": "ab-r1",
+      "classification": "finite-exact",
+      "manuscript_anchors": [
+        "prop:gg-polynomial-completion",
+        "prop:gg-formal-normal-uniqueness",
+        "eq:gg-budget-actual-recursion"
+      ],
+      "identity": "Actual polynomial product rule over QQ[e0,e1,e2]/(ei^2): deltaQ=RHS, JstarHQ=0, P++Q=0, rational types, through r=1.",
+      "input_profile": "ab-exact",
+      "code": "code/ab_exact.py",
+      "adapter": "code/ab_exact.py",
+      "result": "results/ab-r1/result.json",
+      "expected": "PASS only after all corresponding computed assertions",
+      "exclusions": "One explicit quotient-algebra family of independent complex free lists, Lambda=0. Formal coefficient-algebra use depends on A.3/A.4. No new analytic metric witness, all-input theorem or all-order estimate. Compatibility alone does not calibrate the curvature-action sign or Lambda coefficient. The separate independent witness result does not execute this backend.",
+      "actual_assertions": [
+        {
+          "file": "code/ab_exact.py",
+          "line": 229,
+          "end_line": 229,
+          "assertion": "assert iszero(Q[1][1][3]-ordered_yw-ordered_wy)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 230,
+          "end_line": 230,
+          "assertion": "assert not iszero(Q[1][1][3])"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 135,
+          "end_line": 135,
+          "assertion": "assert iszero(jstar(HQ)),('JstarHQ',r,k,co)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 137,
+          "end_line": 137,
+          "assertion": "assert exact(value),('nonexact coefficient',r,k,co)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 138,
+          "end_line": 138,
+          "assertion": "assert iszero(delta(value)-RHS),('exact-set',r,k,co)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 139,
+          "end_line": 139,
+          "assertion": "assert iszero(blocks(value)[0]),('free projection',r,k,co)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/ab_exact.py",
+        "line": 239,
+        "end_line": 246,
+        "predicate": "True"
+      },
+      "code_sha256": "7a494c7be6ad3fa61a365101c94e37ec1784f2e41db5fdd457eb970811201b95",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "AB-PROJECTORS-R4",
+      "job": "ab-r4",
+      "classification": "finite-exact",
+      "manuscript_anchors": [
+        "lem:gg-budget-spencer",
+        "eq:gg-budget-spencer-spectrum",
+        "eq:gg-budget-actual-recursion"
+      ],
+      "identity": "All basis vectors of D_r in both chiralities: block decomposition, deltaP++=0, MJstar delta=1-P++, and compressed spectrum for 1<=r<=4.",
+      "input_profile": "ab-exact",
+      "code": "code/ab_exact.py",
+      "adapter": "code/ab_exact.py",
+      "result": "results/ab-r4/result.json",
+      "expected": "PASS only after all corresponding computed assertions",
+      "exclusions": "Finite r only; no surjectivity claim on arbitrary antisymmetric sources. The order-one pilot overlaps order four.",
+      "actual_assertions": [
+        {
+          "file": "code/ab_exact.py",
+          "line": 165,
+          "end_line": 165,
+          "assertion": "assert all(exact(v) for v in (X,pp,pm,mp,mm,jmap(X))), 'nonrational projector coefficient'"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 166,
+          "end_line": 166,
+          "assertion": "assert iszero(X-pp-pm-mp-mm)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 167,
+          "end_line": 167,
+          "assertion": "assert iszero(delta(pp))"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 169,
+          "end_line": 169,
+          "assertion": "assert iszero(res),('inverse',r,c,[(i,str(v)) for i,v in enumerate(res.flat) if v!=0][:8])"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 170,
+          "end_line": 170,
+          "assertion": "assert iszero(jstar(delta(X))-(scale(mp,QQ(n+1)/n)+scale(pm,QQ(m+1)/m)+scale(mm,QQ(n*m-1)/(n*m))))"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 172,
+          "end_line": 172,
+          "assertion": "assert iszero(blocks(B)[i]-B)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/ab_exact.py",
+        "line": 174,
+        "end_line": 176,
+        "predicate": "True"
+      },
+      "code_sha256": "7a494c7be6ad3fa61a365101c94e37ec1784f2e41db5fdd457eb970811201b95",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "AB-WEYL-ADMISSIBILITY",
+      "job": "ab-r4",
+      "classification": "finite-exact",
+      "manuscript_anchors": [
+        "eq:gg-weyl-spinor-decomposition",
+        "eq:gg-weyl-spinor-readout",
+        "prop:gg-polynomial-completion"
+      ],
+      "identity": "All ten binary-quartic Weyl basis vectors give antisymmetric, metric-skew, algebraically Bianchi and Ricci-zero curvature operators; the signed paper readout recovers both chiral inputs on 320 components.",
+      "input_profile": "ab-exact",
+      "code": "code/ab_exact.py",
+      "adapter": "code/ab_exact.py",
+      "result": "results/ab-r4/result.json",
+      "expected": "PASS only after all corresponding computed assertions",
+      "exclusions": "Linear algebraic curvature conditions at Lambda=0; does not compute general differentiated Bianchi completion. Repeated pilot check.",
+      "actual_assertions": [
+        {
+          "file": "code/ab_exact.py",
+          "line": 190,
+          "end_line": 190,
+          "assertion": "assert iszero(O[a,b]+O[b,a])"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 191,
+          "end_line": 191,
+          "assertion": "assert iszero(eta@O[a,b]+O[a,b].T@eta)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 193,
+          "end_line": 193,
+          "assertion": "assert O[a,b,d,e]+O[b,e,d,a]+O[e,a,d,b]==0"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 195,
+          "end_line": 195,
+          "assertion": "assert sum(O[a,b,a,e] for a in range(4))==0"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 209,
+          "end_line": 209,
+          "assertion": "assert value==expected,('Weyl readout',c,j,output_chirality,fixed,value,expected)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/ab_exact.py",
+        "line": 210,
+        "end_line": 212,
+        "predicate": "True"
+      },
+      "code_sha256": "7a494c7be6ad3fa61a365101c94e37ec1784f2e41db5fdd457eb970811201b95",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization.",
+      "normalization_scope": "The signed inverse readout fixes this linear Weyl-to-curvature map at Lambda=0. It does not test an independent sign change within curvature_source, or the missing nonzero-Lambda term, against a coordinate metric."
+    },
+    {
+      "id": "AB-EXACT-SET-R4",
+      "job": "ab-r4",
+      "classification": "finite-exact",
+      "manuscript_anchors": [
+        "prop:gg-polynomial-completion",
+        "prop:gg-formal-normal-uniqueness",
+        "eq:gg-budget-actual-recursion"
+      ],
+      "identity": "Actual polynomial product rule over QQ[e0,e1,e2]/(ei^2): deltaQ=RHS, JstarHQ=0, P++Q=0, rational types, through r=4. Mixed cubic coefficient is required nonzero at r=4.",
+      "input_profile": "ab-exact",
+      "code": "code/ab_exact.py",
+      "adapter": "code/ab_exact.py",
+      "result": "results/ab-r4/result.json",
+      "expected": "PASS only after all corresponding computed assertions",
+      "exclusions": "One explicit quotient-algebra family of independent complex free lists, Lambda=0. Formal coefficient-algebra use depends on A.3/A.4. No new analytic metric witness, all-input theorem or all-order estimate. Compatibility alone does not calibrate the curvature-action sign or Lambda coefficient. The separate independent witness result does not execute this backend.",
+      "actual_assertions": [
+        {
+          "file": "code/ab_exact.py",
+          "line": 229,
+          "end_line": 229,
+          "assertion": "assert iszero(Q[1][1][3]-ordered_yw-ordered_wy)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 230,
+          "end_line": 230,
+          "assertion": "assert not iszero(Q[1][1][3])"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 238,
+          "end_line": 238,
+          "assertion": "assert any(row['mixed_cubic_nonzero'] for row in top if row['r']==4)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 135,
+          "end_line": 135,
+          "assertion": "assert iszero(jstar(HQ)),('JstarHQ',r,k,co)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 137,
+          "end_line": 137,
+          "assertion": "assert exact(value),('nonexact coefficient',r,k,co)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 138,
+          "end_line": 138,
+          "assertion": "assert iszero(delta(value)-RHS),('exact-set',r,k,co)"
+        },
+        {
+          "file": "code/ab_exact.py",
+          "line": 139,
+          "end_line": 139,
+          "assertion": "assert iszero(blocks(value)[0]),('free projection',r,k,co)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/ab_exact.py",
+        "line": 239,
+        "end_line": 246,
+        "predicate": "True"
+      },
+      "code_sha256": "7a494c7be6ad3fa61a365101c94e37ec1784f2e41db5fdd457eb970811201b95",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "S9-WAVE-RICCI",
+      "job": "s9-two-wave",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "eq:gg-two-wave-trial",
+        "eq:gg-two-wave-christoffels",
+        "eq:gg-two-wave-ricci"
+      ],
+      "identity": "Derive inverse, all Christoffels, all Ricci entries for arbitrary f(u),q(x); single-wave curvature supports and opposite coordinate Hodge signs.",
+      "input_profile": "s9",
+      "code": "code/two_wave.py",
+      "adapter": "code/two_wave.py",
+      "result": "results/s9-two-wave/result.json",
+      "expected": "PASS only after all corresponding computed assertions",
+      "exclusions": "No contact-cocycle admission or absolute spin-frame chirality identification.",
+      "actual_assertions": [
+        {
+          "file": "code/two_wave.py",
+          "line": 93,
+          "end_line": 93,
+          "assertion": "assert clean(g.det() - 1) == 0"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 94,
+          "end_line": 94,
+          "assertion": "assert equal_matrix(gi, expected_gi)"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 95,
+          "end_line": 95,
+          "assertion": "assert equal_matrix(g * gi, sp.eye(4))"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 106,
+          "end_line": 107,
+          "assertion": "assert all(clean(value - expected_gamma.get(key, 0)) == 0\n               for key, value in gamma.items())"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 109,
+          "end_line": 110,
+          "assertion": "assert all(gamma[order[a], order[b], c] == 0\n               for a, b, c in product(range(4), repeat=3) if a <= b)"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 113,
+          "end_line": 113,
+          "assertion": "assert equal_matrix(ricci, expected_ricci)"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 114,
+          "end_line": 114,
+          "assertion": "assert scalar == 0"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 115,
+          "end_line": 115,
+          "assertion": "assert equal_matrix(ricci.subs(s, 0), sp.zeros(4))"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 116,
+          "end_line": 116,
+          "assertion": "assert equal_matrix(ricci.subs(t, 0), sp.zeros(4))"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 125,
+          "end_line": 125,
+          "assertion": "assert support_f == {(0, 2)} and entries_f > 0"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 126,
+          "end_line": 126,
+          "assertion": "assert support_q == {(1, 2)} and entries_q > 0"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 131,
+          "end_line": 131,
+          "assertion": "assert equal_matrix(hodge_two_form(form_f, gi.subs(s, 0)), form_f)"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 132,
+          "end_line": 132,
+          "assertion": "assert equal_matrix(hodge_two_form(form_q, gi.subs(t, 0)), -form_q)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/two_wave.py",
+        "line": 133,
+        "end_line": 142,
+        "predicate": "True"
+      },
+      "code_sha256": "eba18ec31245281aec86f5ea3496eeca2c530880a4c3f7c5b42d6a388cd2e0b0",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "S9-MIXED-COTTON",
+      "job": "s9-two-wave",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "eq:gg-mixed-cotton"
+      ],
+      "identity": "For f=u^3,q=x^2 derive all Schouten components and the stated covariant Cotton component; verify nonzero ts coefficient.",
+      "input_profile": "s9",
+      "code": "code/two_wave.py",
+      "adapter": "code/two_wave.py",
+      "result": "results/s9-two-wave/result.json",
+      "expected": "PASS only after all corresponding computed assertions",
+      "exclusions": "Fixed polynomial specialization; no computation of the cohomology quotient class.",
+      "actual_assertions": [
+        {
+          "file": "code/two_wave.py",
+          "line": 150,
+          "end_line": 150,
+          "assertion": "assert equal_matrix(schouten, expected_p)"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 151,
+          "end_line": 152,
+          "assertion": "assert clean(sum(gip[a, b] * schouten[a, b]\n                     for a, b in product(range(4), repeat=2))) == 0"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 161,
+          "end_line": 161,
+          "assertion": "assert clean(cotton - sp.Rational(3, 2) * t * s * x**2) == 0"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 162,
+          "end_line": 162,
+          "assertion": "assert quotient_ts(cotton, t, s) == cotton"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 163,
+          "end_line": 163,
+          "assertion": "assert clean(cotton.diff(t).diff(s).subs({t: 0, s: 0, x: 1})) == sp.Rational(3, 2)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/two_wave.py",
+        "line": 164,
+        "end_line": 170,
+        "predicate": "True"
+      },
+      "code_sha256": "eba18ec31245281aec86f5ea3496eeca2c530880a4c3f7c5b42d6a388cd2e0b0",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "S9-MIXED-REPAIR",
+      "job": "s9-two-wave",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "eq:gg-mixed-explicit-repair"
+      ],
+      "identity": "Derive trace/divergence/Box and linearized Ricci of H dx^2, then the full repaired Ricci: zero in (t^2,s^2), unrestricted residual 3ts^2 v x^4/2.",
+      "input_profile": "s9",
+      "code": "code/two_wave.py",
+      "adapter": "code/two_wave.py",
+      "result": "results/s9-two-wave/result.json",
+      "expected": "PASS only after all corresponding computed assertions",
+      "exclusions": "Mixed quotient-ring repair only; nonzero unrestricted negative control, no fixed-free-record restoration algorithm.",
+      "actual_assertions": [
+        {
+          "file": "code/two_wave.py",
+          "line": 184,
+          "end_line": 184,
+          "assertion": "assert trace_h == 0 and divergence_h == [0, 0, 0, 0]"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 185,
+          "end_line": 185,
+          "assertion": "assert clean(box_h - 6*u*x**2) == 0"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 191,
+          "end_line": 191,
+          "assertion": "assert equal_matrix(linear_ricci, expected_linear_ricci)"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 195,
+          "end_line": 195,
+          "assertion": "assert equal_matrix(repaired * repaired_inverse, sp.eye(4))"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 196,
+          "end_line": 196,
+          "assertion": "assert all(quotient_ts(value, t, s) == 0 for value in repaired_ricci)"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 197,
+          "end_line": 197,
+          "assertion": "assert quotient_ts(repaired_scalar, t, s) == 0"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 202,
+          "end_line": 202,
+          "assertion": "assert equal_matrix(repaired_ricci, unrestricted_expected)"
+        },
+        {
+          "file": "code/two_wave.py",
+          "line": 204,
+          "end_line": 204,
+          "assertion": "assert point_ricci[2, 2] == sp.Rational(3, 2)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/two_wave.py",
+        "line": 205,
+        "end_line": 216,
+        "predicate": "True"
+      },
+      "code_sha256": "eba18ec31245281aec86f5ea3496eeca2c530880a4c3f7c5b42d6a388cd2e0b0",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "D2-MATRIX-CHAIN-RULE",
+      "job": "d2-schwarzian",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "eq:gg-intrinsic-matrix-schwarzian",
+        "eq:gg-intrinsic-projective-covariance"
+      ],
+      "identity": "Generate D_v derivatives using f_prime^-1 D_u in an ordered-word algebra and verify the matrix Schwarzian covariance without commuting derivatives.",
+      "input_profile": "d2",
+      "code": "code/schwarzian_exact.py",
+      "adapter": "code/schwarzian_exact.py",
+      "result": "results/d2-schwarzian/result.json",
+      "expected": "PASS only after all corresponding computed assertions",
+      "exclusions": "Invertible S_prime and f_prime nonzero; formal algebraic identity, not coordinate/ODE existence.",
+      "actual_assertions": [
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 94,
+          "end_line": 94,
+          "assertion": "assert _sub(_mul(H,Q),_mul(Q,H)), 'P inverse and Q must remain noncommuting'"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 95,
+          "end_line": 95,
+          "assertion": "assert _sub(Av,_add(_scale(1/a,A),_scale(-b/a**2,I)))=={}"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 101,
+          "end_line": 101,
+          "assertion": "assert _sub(Schv,target)=={}, 'Ordered matrix chain-rule residual'"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/schwarzian_exact.py",
+        "line": 102,
+        "end_line": 109,
+        "predicate": "True"
+      },
+      "code_sha256": "a0872095e30101bbc272f52aa0f7a4ea1f362360f050425e962731a8e67c42b5",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "D2-JACOBI-ALGEBRA",
+      "job": "d2-schwarzian",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "eq:gg-intrinsic-jacobi-normalization",
+        "eq:gg-intrinsic-jacobi-identities",
+        "eq:gg-intrinsic-schwarzian-conjugacy"
+      ],
+      "identity": "Conditional Gram differential equation, Jacobi and Wronskian identities, symmetry of HC and transpose-conjugacy, with matrix order retained.",
+      "input_profile": "d2",
+      "code": "code/schwarzian_exact.py",
+      "adapter": "code/schwarzian_exact.py",
+      "result": "results/d2-schwarzian/result.json",
+      "expected": "PASS only after all corresponding computed assertions",
+      "exclusions": "S and its derivatives symmetric, invertible P and Y, Y^T Y=P^-1. Analytic normalization ODE is not solved.",
+      "actual_assertions": [
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 125,
+          "end_line": 125,
+          "assertion": "assert all(value=={} for value in identities.values()), identities"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/schwarzian_exact.py",
+        "line": 126,
+        "end_line": 134,
+        "predicate": "True"
+      },
+      "code_sha256": "a0872095e30101bbc272f52aa0f7a4ea1f362360f050425e962731a8e67c42b5",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    },
+    {
+      "id": "D2-RATIONAL-MATRIX",
+      "job": "d2-schwarzian",
+      "classification": "symbolic-exact",
+      "manuscript_anchors": [
+        "eq:gg-intrinsic-matrix-schwarzian",
+        "eq:gg-intrinsic-jacobi-normalization",
+        "eq:gg-intrinsic-jacobi-identities",
+        "eq:gg-intrinsic-schwarzian-conjugacy",
+        "eq:gg-intrinsic-projective-covariance"
+      ],
+      "identity": "A noncommuting rational symmetric 2x2 graph: full rational coordinate/half-trace identities and admissible initial Jacobi jets.",
+      "input_profile": "d2",
+      "code": "code/schwarzian_exact.py",
+      "adapter": "code/schwarzian_exact.py",
+      "result": "results/d2-schwarzian/result.json",
+      "expected": "PASS only after all corresponding computed assertions",
+      "exclusions": "One graph and coordinate change, local unit conditions; no general symplectic graph-frame invariance or analytic ODE solve.",
+      "actual_assertions": [
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 152,
+          "end_line": 152,
+          "assertion": "assert P.subs(u,0).det()==2"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 154,
+          "end_line": 154,
+          "assertion": "assert commutator_at_zero!=sp.zeros(2)"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 156,
+          "end_line": 156,
+          "assertion": "assert (A*A_derivative-A_derivative*A).subs(u,0)!=sp.zeros(2)"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 165,
+          "end_line": 165,
+          "assertion": "assert _matrix_equal(Schv,expected)"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 167,
+          "end_line": 167,
+          "assertion": "assert sp.cancel(kappav-(kappau-scalar_schwarzian/2)/fp**2)==0"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 176,
+          "end_line": 176,
+          "assertion": "assert _matrix_equal(Y0.T*Y0,P0.inv())"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 177,
+          "end_line": 177,
+          "assertion": "assert _matrix_equal(Y0.T*Y1-Y1.T*Y0,sp.zeros(2))"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 178,
+          "end_line": 178,
+          "assertion": "assert _matrix_equal(Y2+R0*Y0,sp.zeros(2))"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 179,
+          "end_line": 179,
+          "assertion": "assert _matrix_equal(Z2+R0*Z0,sp.zeros(2))"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 180,
+          "end_line": 180,
+          "assertion": "assert _matrix_equal(Y0.T*Z1-Y1.T*Z0,sp.eye(2))"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 181,
+          "end_line": 181,
+          "assertion": "assert _matrix_equal(Z0.T*Z1-Z1.T*Z0,sp.zeros(2))"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 182,
+          "end_line": 182,
+          "assertion": "assert _matrix_equal(R0,R0.T)"
+        },
+        {
+          "file": "code/schwarzian_exact.py",
+          "line": 183,
+          "end_line": 183,
+          "assertion": "assert _matrix_equal(Schu.subs(u,0),(Y0.inv()*R0*Y0).T)"
+        }
+      ],
+      "report_predicate": {
+        "file": "code/schwarzian_exact.py",
+        "line": 184,
+        "end_line": 197,
+        "predicate": "True"
+      },
+      "code_sha256": "a0872095e30101bbc272f52aa0f7a4ea1f362360f050425e962731a8e67c42b5",
+      "evidence_role": "paper-exact-check",
+      "anchor_role": "The explicitly scoped formula or finite specialization."
+    }
+  ],
+  "primary_record_count": 28,
+  "independent_evidence": [
+    {
+      "id": "IW-GEOMETRY-CONTROLS-R2",
+      "classification": "finite-exact",
+      "evidence_role": "independent-implementation-witness",
+      "job": "witness-r2",
+      "execution_root": "independent",
+      "code": "independent/code/witness_controls.py",
+      "code_sha256": "59c7a8b14e830cd283cc5205f7a8448e251e2fec08c0d8c1f66fea3acdc8f2b4",
+      "library": "independent/code/t3_recursion.py",
+      "library_sha256": "a8fa9e73f51dd0a6c3a8eb4944c592b018623c483213de64a48af1ad3222cfa3",
+      "result": "independent/results/witness-r2/result.json",
+      "environment": "independent/results/witness-r2/environment.json",
+      "log": "independent/results/witness-r2/log.jsonl",
+      "manuscript_anchors": [
+        "eq:gg-budget-actual-recursion",
+        "eq:gg-algebraic-curvature",
+        "eq:gg-weyl-spinor-decomposition",
+        "eq:gg-weyl-spinor-readout"
+      ],
+      "identity": "Five Einstein witnesses through r=2: Q0=0 and polynomial Q equals geometric Q; all seven metrics obey geometric Ricci identity. Sign/Lambda controls and two non-Einstein distinctions are enforced.",
+      "input_profile": "independent/inputs.json",
+      "actual_guards": [
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 20,
+          "end_line": 20,
+          "predicate": "require(rmax == 2, 'Only the audited order-two profile is supported')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 27,
+          "end_line": 27,
+          "predicate": "require(line.startswith('PREFLIGHT '), 'Unexpected upstream import output')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 34,
+          "end_line": 36,
+          "predicate": "require(all(row['delta Q - RHS nonzero coefficient polys'] == 0\n                and row['J* HQ nonzero coefficient polys'] == 0 for row in rows),\n            'Correct polynomial compatibility failed')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 61,
+          "end_line": 62,
+          "predicate": "require(all(rep['geometric_ricci_identity(any metric)'].values()),\n                label + ': geometric commutator failed')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 64,
+          "end_line": 65,
+          "predicate": "require(rep['einstein_residual_terms'] == 0,\n                    label + ': Einstein condition failed')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 66,
+          "end_line": 66,
+          "predicate": "require(all(rep['Q0_zero(Bianchi)'].values()), label + ': Q0 nonzero')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 67,
+          "end_line": 69,
+          "predicate": "require(all(v['mismatches'] == 0\n                        for v in rep['poly_Q_vs_geometric_Q'].values()),\n                    label + ': polynomial/geometric mismatch')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 71,
+          "end_line": 72,
+          "predicate": "require(rep['einstein_residual_terms'] > 0,\n                    label + ': negative metric is accidentally Einstein')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 73,
+          "end_line": 74,
+          "predicate": "require(not any(rep['Q0_zero(Bianchi)'].values()),\n                    label + ': negative Q0 control did not distinguish both readouts')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 75,
+          "end_line": 77,
+          "predicate": "require(all(v['mismatches'] > 0\n                        for v in rep['poly_Q_vs_geometric_Q'].values()),\n                    label + ': negative polynomial/geometric control not detected')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 81,
+          "end_line": 82,
+          "predicate": "require(all(n > 0 for n in reps[label]['wrong_convention_mismatches'][nc1].values()),\n                label + ': wrong curvature-action sign was not detected')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 83,
+          "end_line": 84,
+          "predicate": "require(reps['two-wave']['wrong_convention_mismatches'][nc1]['r2+'] > 0,\n            'Mixed two-wave order-two sign control was not detected')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 85,
+          "end_line": 86,
+          "predicate": "require(all(n > 0 for n in reps['kottler']['wrong_convention_mismatches'][nc3].values()),\n            'Kottler: doubled Lambda coefficient was not detected')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 88,
+          "end_line": 89,
+          "predicate": "require(all(n == 0 for n in reps[label]['wrong_convention_mismatches'][nc3].values()),\n                label + ': Lambda-zero control should be insensitive to its coefficient')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 90,
+          "end_line": 91,
+          "predicate": "require(str(reps['kottler']['Lambda']) == '-1/10',\n            'Kottler Einstein constant convention changed')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 92,
+          "end_line": 94,
+          "predicate": "require(reps['single-wave-1']['U0_plus_nonzero']\n            and not reps['single-wave-1']['U0_minus_nonzero'],\n            'First single-wave chiral support changed')"
+        },
+        {
+          "file": "independent/code/witness_controls.py",
+          "line": 95,
+          "end_line": 97,
+          "predicate": "require(reps['single-wave-2']['U0_minus_nonzero']\n            and not reps['single-wave-2']['U0_plus_nonzero'],\n            'Second single-wave chiral support changed')"
+        }
+      ],
+      "exclusions": "Different implementation from primary ab_exact.py. Seven explicit holomorphic/complexified metrics and orders 1-2 only. No direct geometry bridge for the primary backend, all-order estimate, atomic mass or convergence.",
+      "upstream_printed_controls_are_pass_conditions": false,
+      "adapter_enforces_witness_negative_controls": true
+    }
+  ]
+}

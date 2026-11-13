@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "version": "1.1",
+  "prepared_date": "2026-11-13",
+  "engine": "pdfLaTeX",
+  "pages": 219,
+  "tools": {
+    "python3": "Python 3.14.7",
+    "pandoc": "pandoc 3.9.0.2",
+    "pandoc-crossref": "pandoc-crossref v0.3.23 git commit UNKNOWN (UNKNOWN) built with Pandoc v3.9.0.2, pandoc-types v1.23.1.1 and GHC 9.14.1",
+    "pdflatex": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026/Homebrew)",
+    "pdfinfo": "pdfinfo version 26.09.0"
+  },
+  "mathematics_changed": false,
+  "ordered_Markdown_math_nodes_unchanged": 5748,
+  "ordered_TeX_labels_unchanged": 875,
+  "undefined_references": false,
+  "missing_glyphs": false,
+  "overfull_hbox_pt": [
+    1.11414
+  ],
+  "all_pages_rendered": 219,
+  "visually_reviewed_pages": [
+    1,
+    5,
+    39,
+    216,
+    217,
+    219
+  ],
+  "visual_review": "All 219 pages reviewed in contact sheets, with readable detail review of title, supplement paragraph, known display overflow, AI-use disclosure and references. No new clipping or overlap; the existing 1.11414pt display overflow remains within the page margin.",
+  "typesetting_adjustments": "EXPORT-ADJUSTMENTS.json; layout only, mathematical fingerprints preserved",
+  "mathematical_jobs_executed": 0,
+  "publication_performed": false,
+  "full_markdown_rebuild_completed": true
+}

@@ -1,0 +1,28 @@
+{
+  "baseline_version": "1.0",
+  "version": "1.1",
+  "baseline_markdown_sha256": "ae3292b78bcdcd847f1d2b4ea56dd92f104a9eb1f4ae367ed75e170748cb4ea7",
+  "changes": [
+    {
+      "before": "date: \"2026-11-05\"",
+      "after": "date: \"2026-11-13\""
+    },
+    {
+      "before": "version: \"1.0\"",
+      "after": "version: \"1.1\""
+    },
+    {
+      "before": "The subject is local analytic geometry: arbitrary global spacetime topology, smooth nonanalytic data and uniform estimates for infinite unbounded point/frame histories are outside the assertions. The notation index in Appendix L records the source spaces, bundle conventions and comparison maps.",
+      "after": "The subject is local analytic geometry: arbitrary global spacetime topology, smooth nonanalytic data and uniform estimates for infinite unbounded point/frame histories are outside the assertions. The notation index in Appendix L records the source spaces, bundle conventions and comparison maps.\n\n**Computational supplement.** Reproducible SageMath computations for selected identities and finite-order examples are supplied in the computational supplement, version 0.2.0, revision 3 [@Isthmus2026LocalComputations]. The package includes code, inputs, recorded environments and results, and an index linking each check to the manuscript formulas. It covers selected curvature, optical and coordinate-change identities and low-order curvature-record recursions; the general estimates and convergence arguments are given in the text."
+    },
+    {
+      "before": "## AI-use disclosure {.unnumbered .unlisted}\n\nAI systems were used extensively throughout this research and the preparation of this manuscript. The models used were GPT-6 Pro, gpt-6.1-sol (xhigh), and Claude Opus 5.5 (xhigh).",
+      "after": "<div id=\"ai-use-disclosure\"></div>\n\n**AI-use disclosure.** AI systems were used extensively throughout this research and the preparation of this manuscript. The models used were GPT-6 Pro, gpt-6.1-sol (xhigh), and Claude Opus 5.5 (xhigh). Selected symbolic identities and explicit metric examples were checked using SageMath and SymPy; the code, inputs, computational environment and recorded results are provided in the computational supplement [@Isthmus2026LocalComputations]."
+    }
+  ],
+  "added_bibliography_entry": "\n@misc{Isthmus2026LocalComputations,\n  author = {Isthmus, Lior},\n  title = {Computational supplement for A projective twistor correspondence for local analytic Einstein germs},\n  year = {2026},\n  version = {0.2.0, revision 3},\n  note = {SageMath code, finite exact and symbolic checks, numerical diagnostics, and recorded inputs, environments and results. Included with paper version 1.1},\n  url = {https://github.com/lioristhmus/projective-twistor-einstein-germs/tree/paper-v1.1/computations}\n}\n",
+  "supplement_version": "0.2.0-r3",
+  "supplement_original_paper_baseline": "paper-v1.0",
+  "all_v1_0_release_files_preserved": true,
+  "AI_disclosure_revision": "Aligned paragraph format and computational-check sentence with the global paper; original model list retained."
+}

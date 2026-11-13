@@ -1,0 +1,17 @@
+{
+  "witness-r2": {
+    "module": "witness_controls",
+    "function": "run",
+    "profile": {
+      "max_r": 2
+    },
+    "dependencies": [
+      "witness_controls.py",
+      "t3_recursion.py",
+      "preflight.py"
+    ],
+    "check_ids": [
+      "IW-GEOMETRY-CONTROLS-R2"
+    ]
+  }
+}

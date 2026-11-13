@@ -1,0 +1,333 @@
+{
+  "source_sha256": "ae3292b78bcdcd847f1d2b4ea56dd92f104a9eb1f4ae367ed75e170748cb4ea7",
+  "locators": [
+    {
+      "anchor": "eq:gg-algebraic-curvature",
+      "anchor_line": 367,
+      "source_start_line": 364,
+      "source_end_line": 367,
+      "source_block_sha256": "b1b26cab5e1c3a926e301bcb97f7b166b53d891e49724a3a9eeb1584734f8a5b",
+      "source_block": "$$\n R_U(a,b)c=W_U(a,b)c+\n       \\frac{\\Lambda}{3}\\{a\\,\\eta(b,c)-b\\,\\eta(a,c)\\}.\n$$ {#eq:gg-algebraic-curvature}"
+    },
+    {
+      "anchor": "eq:gg-budget-actual-recursion",
+      "anchor_line": 2436,
+      "source_start_line": 2425,
+      "source_end_line": 2436,
+      "source_block_sha256": "892f09f14a86745fa8c31edd8b067b962ef3e11064903354de569e2c0259eb18",
+      "source_block": "$$\n \\begin{aligned}\n \\ker\\delta_r&=\\operatorname{im}P_{++},\\\\\n M_r&=\\frac n{n+1}P_{-+}+\\frac m{m+1}P_{+-}\n                         +\\frac{nm}{nm-1}P_{--},\\\\\n Q_r&=M_rJ_r^*(\\tau\\,\\mathsf H Q_{r-1}-K_r),\\\\\n K_r(a,b)&=\\mathsf V_{R_U(a,b)}U_{r-1},\\\\\n (\\mathsf H Q_{r-1})(a,b)\n  &=\\sum_{j=0}^{r-2}D_{U_j}Q_{r-1,b}\n                         [i_aU_{j+1}+Q_{j,a}].\n \\end{aligned}\n$$ {#eq:gg-budget-actual-recursion}"
+    },
+    {
+      "anchor": "eq:gg-budget-spencer-spectrum",
+      "anchor_line": 2444,
+      "source_start_line": 2442,
+      "source_end_line": 2444,
+      "source_block_sha256": "b20f205c6df8d954e99d7f934edfbe76c54388c03ac56fe165cdfa1871e9d2ac",
+      "source_block": "$$\n \\delta_r^*\\delta_r=2(1-C_n\\otimes C_m)\n$$ {#eq:gg-budget-spencer-spectrum}"
+    },
+    {
+      "anchor": "eq:gg-intrinsic-jacobi-identities",
+      "anchor_line": 3124,
+      "source_start_line": 3120,
+      "source_end_line": 3124,
+      "source_block_sha256": "a0dafa37b077c83ab679d2381aeffc3ae1d5f9de355ec16c9db0df1cba200edf",
+      "source_block": "$$\n Y''+RY=0,\\quad Z''+RZ=0,\\quad\n Y^{\\mathsf T}Z'-(Y')^{\\mathsf T}Z=1,\\quad\n Y^{\\mathsf T}Y'-(Y')^{\\mathsf T}Y=0 .\n$$ {#eq:gg-intrinsic-jacobi-identities}"
+    },
+    {
+      "anchor": "eq:gg-intrinsic-jacobi-normalization",
+      "anchor_line": 3114,
+      "source_start_line": 3110,
+      "source_end_line": 3114,
+      "source_block_sha256": "d7b08e1b976611f822256a92250eca6493ad3a9269ca0823ca30e836491419f4",
+      "source_block": "$$\n Y'=-\\tfrac12YS''(S')^{-1},\\qquad\n Y(u_0)^{\\mathsf T}Y(u_0)=S'(u_0)^{-1},\n \\qquad Z=YS .\n$$ {#eq:gg-intrinsic-jacobi-normalization}"
+    },
+    {
+      "anchor": "eq:gg-intrinsic-matrix-schwarzian",
+      "anchor_line": 3106,
+      "source_start_line": 3101,
+      "source_end_line": 3106,
+      "source_block_sha256": "7d4e10bd44d0b1a68b3686cf6d34dd2683597f1211f6ffb0c8a928b95b9338a7",
+      "source_block": "$$\n \\mathcal S_u(S)=\n       \\tfrac12(S')^{-1}S'''\n       -\\tfrac34\\big((S')^{-1}S''\\big)^2,\\qquad\n \\kappa_u=\\tfrac12\\operatorname{tr}\\mathcal S_u(S).\n$$ {#eq:gg-intrinsic-matrix-schwarzian}"
+    },
+    {
+      "anchor": "eq:gg-intrinsic-projective-covariance",
+      "anchor_line": 3143,
+      "source_start_line": 3136,
+      "source_end_line": 3143,
+      "source_block_sha256": "858c83223a7124548711920a83ba286918665a0bcad5a523f3214e3c938db262",
+      "source_block": "$$\n \\mathcal S_v(S)=f'^{-2}\n       \\left(\\mathcal S_u(S)-\\tfrac12\\{f,u\\}1_2\\right),\n \\qquad\n \\kappa_v=f'^{-2}\\left(\\kappa_u-\\tfrac12\\{f,u\\}\\right),\n \\quad\n \\{f,u\\}=\\frac{f'''}{f'}-\\frac32\\left(\\frac{f''}{f'}\\right)^2.\n$$ {#eq:gg-intrinsic-projective-covariance}"
+    },
+    {
+      "anchor": "eq:gg-intrinsic-schwarzian-conjugacy",
+      "anchor_line": 3130,
+      "source_start_line": 3128,
+      "source_end_line": 3130,
+      "source_block_sha256": "ae574a320eb4ed96fd7ff1ac3cc870e72c0ab16f7fb3f822582a05c21ea9038d",
+      "source_block": "$$\n \\mathcal S_u(S)=(Y^{-1}RY)^{\\mathsf T}.\n$$ {#eq:gg-intrinsic-schwarzian-conjugacy}"
+    },
+    {
+      "anchor": "eq:gg-mixed-cotton",
+      "anchor_line": 1807,
+      "source_start_line": 1804,
+      "source_end_line": 1807,
+      "source_block_sha256": "615bfa6d1abdd7eb6324a858559a8aa4d9a195f04415d3a3bb28c3746ff3ffd8",
+      "source_block": "$$\n [ts]P^\\circ=\\tfrac32ux^2\\,\\mathrm dx^2=:A_5,\\qquad\n [ts](\\nabla_uP_{xx}-\\nabla_xP_{ux})=\\tfrac32x^2 .\n$$ {#eq:gg-mixed-cotton}"
+    },
+    {
+      "anchor": "eq:gg-mixed-explicit-repair",
+      "anchor_line": 1827,
+      "source_start_line": 1823,
+      "source_end_line": 1827,
+      "source_block_sha256": "5e6f29d65dcdaacb4603488512342e505bd9061edc0a77f69622f64cb7f09f1d",
+      "source_block": "$$\n \\Box_\\eta H=6ux^2,\\qquad\n \\operatorname{Ric}^{(1)}(H\\,\\mathrm dx^2)\n                           =-3ux^2\\,\\mathrm dx^2 .\n$$ {#eq:gg-mixed-explicit-repair}"
+    },
+    {
+      "anchor": "eq:gg-schwarzschild-main-tide",
+      "anchor_line": 2092,
+      "source_start_line": 2089,
+      "source_end_line": 2092,
+      "source_block_sha256": "ae07263dfb8a7fabff628fef75fe2868cbcebb127a05af59fde6ec864ca4802a",
+      "source_block": "$$\n \\mathcal R_u=\\frac{3mL^2}{r^5}\n \\begin{pmatrix}1&0\\\\0&-1\\end{pmatrix}.\n$$ {#eq:gg-schwarzschild-main-tide}"
+    },
+    {
+      "anchor": "eq:gg-two-wave-christoffels",
+      "anchor_line": 1786,
+      "source_start_line": 1778,
+      "source_end_line": 1786,
+      "source_block_sha256": "5457b2792442f9b9115b28787da662a90f550bd775d9458bb610ca486f2b2711",
+      "source_block": "$$\n \\begin{aligned}\n \\Gamma^v_{xx}&=-tf'/2,&\n \\Gamma^u_{xx}&=tsqf'/2,&\n \\Gamma^y_{ux}&=-tf'/2,\\\\\n \\Gamma^y_{vv}&=sq'/2,&\n \\Gamma^u_{vx}&=sq'/2.\n \\end{aligned}\n$$ {#eq:gg-two-wave-christoffels}"
+    },
+    {
+      "anchor": "eq:gg-two-wave-ricci",
+      "anchor_line": 1793,
+      "source_start_line": 1790,
+      "source_end_line": 1793,
+      "source_block_sha256": "4069c051fddaabdedc7c956190fef998952c684fd5d673720f75de7676a790a1",
+      "source_block": "$$\n \\operatorname{Ric}(g)=\\tfrac12tsqf''\\,\\mathrm dx^2,\n \\qquad \\operatorname{Scal}(g)=0 .\n$$ {#eq:gg-two-wave-ricci}"
+    },
+    {
+      "anchor": "eq:gg-two-wave-trial",
+      "anchor_line": 1772,
+      "source_start_line": 1769,
+      "source_end_line": 1772,
+      "source_block_sha256": "345a3c7f097b4e2ea2564df222f5b7126ba77d759da125e076d07467c5111179",
+      "source_block": "$$\n \\eta=2\\,\\mathrm du\\,\\mathrm dv-2\\,\\mathrm dx\\,\\mathrm dy,\\qquad\n g=\\eta+t f(u)\\,\\mathrm dx^2+s q(x)\\,\\mathrm dv^2 .\n$$ {#eq:gg-two-wave-trial}"
+    },
+    {
+      "anchor": "eq:gg-weyl-spinor-decomposition",
+      "anchor_line": 119,
+      "source_start_line": 110,
+      "source_end_line": 119,
+      "source_block_sha256": "f42f4e2059099a5afd70d3d42ebe7e9e297ceddb56eb1de19196562f2bb9141a",
+      "source_block": "$$\n \\begin{aligned}\n R_{abcd}&=g(R(e_a,e_b)e_c,e_d),\\\\\n C_{abcd}&=R_{abcd}\n   -g_{ad}P_{bc}+g_{bd}P_{ac}+g_{ac}P_{bd}-g_{bc}P_{ad},\\\\\n C_{AA'BB'CC'DD'}\n &=-\\Psi^+_{ABCD}\\epsilon_{A'B'}\\epsilon_{C'D'}\n   -\\Psi^-_{A'B'C'D'}\\epsilon_{AB}\\epsilon_{CD} .\n \\end{aligned}\n$$ {#eq:gg-weyl-spinor-decomposition}"
+    },
+    {
+      "anchor": "eq:gg-weyl-spinor-readout",
+      "anchor_line": 132,
+      "source_start_line": 123,
+      "source_end_line": 132,
+      "source_block_sha256": "dbf382d02ce9fba64e9d024749f1e6abbfe8468d9e06c1bbf1dcf4bffea5323e",
+      "source_block": "$$\n \\begin{aligned}\n \\mathfrak p_+(C)_{ABCD}=\\Psi^+_{ABCD}\n   &=-\\tfrac14\\epsilon^{A'B'}\\epsilon^{C'D'}\n                       C_{AA'BB'CC'DD'},\\\\\n \\mathfrak p_-(C)_{A'B'C'D'}=\\Psi^-_{A'B'C'D'}\n   &=-\\tfrac14\\epsilon^{AB}\\epsilon^{CD}\n                       C_{AA'BB'CC'DD'} .\n \\end{aligned}\n$$ {#eq:gg-weyl-spinor-readout}"
+    },
+    {
+      "anchor": "eq:sh-optics-d-10",
+      "anchor_line": 6290,
+      "source_start_line": 6286,
+      "source_end_line": 6290,
+      "source_block_sha256": "cf5b0aab788206e2583c6570276fa169d347f2d77e395abbf0e2ae5ab92f4fda",
+      "source_block": "$$\n h(e_\\theta,R(e_\\theta,k)k)\n =c^2\\left(\\frac{f'}{2r}+\\frac{1-f}{r^2}\\right)\n =\\frac{3mL^2}{r^5}=:d_u>0.\n$$ {#eq:sh-optics-d-10}"
+    },
+    {
+      "anchor": "eq:sh-r1-calibrated-pullback",
+      "anchor_line": 7073,
+      "source_start_line": 7070,
+      "source_end_line": 7073,
+      "source_block_sha256": "f644c8b4e25429cb6a4e00df3892b3aad5bfed2099fd02e0a5e8b88b71bc774c",
+      "source_block": "$$\n h_*:=\\Phi_{\\rm pr}^*G_{\\rm int}=\\frac2{r^2}g_m,\\qquad\n \\sigma_*=\\frac{\\sqrt2}{r},\\qquad \\sigma_*^{-2}h_*=g_m.\n$$ {#eq:sh-r1-calibrated-pullback}"
+    },
+    {
+      "anchor": "eq:sh-r1-contour-value",
+      "anchor_line": 6919,
+      "source_start_line": 6916,
+      "source_end_line": 6919,
+      "source_block_sha256": "2ee5975f50744c602ad33160802c5870251a7403c606674d5f6d410a252ef811",
+      "source_block": "$$\n \\omega_{\\rm int}=2\\omega_0,\\qquad\n \\omega_0=\\frac{i}{s^3}A_aB_b\\,dX^{aa'}\\wedge dX^b{}_{a'},\n$$ {#eq:sh-r1-contour-value}"
+    },
+    {
+      "anchor": "eq:sh-r1-general-source-metric",
+      "anchor_line": 6926,
+      "source_start_line": 6921,
+      "source_end_line": 6926,
+      "source_block_sha256": "16308c5c6e1bd887f1263e5adfa0ac1b619e82966fffba8a2d0e33a8f4d61069",
+      "source_block": "$$\n G_{\\rm int}=2G_0,\\qquad\n G_0=-\\frac1{\\varrho^2}\n \\left[\\delta+\\frac{4\\mu_{\\rm src}}{\\varrho}\n                  (d\\tau+i\\,d\\varrho)^2\\right].\n$$ {#eq:sh-r1-general-source-metric}"
+    },
+    {
+      "anchor": "eq:sh-r1-primitive-projector",
+      "anchor_line": 6892,
+      "source_start_line": 6887,
+      "source_end_line": 6892,
+      "source_block_sha256": "1219881ed9eba314cf822174e82062b0a1e60b635a60e84d5ae88b0c6d78506c",
+      "source_block": "$$\n \\mathsf P^{bb'}{}_{aa'}=\n \\frac{A^bB_a}{s}\\delta_{a'}^{b'}\n +\\frac{c}{s^2}\\varphi_{a'}{}^{b'}B_aB^b,\n \\qquad J=i(1-2\\mathsf P).\n$$ {#eq:sh-r1-primitive-projector}"
+    },
+    {
+      "anchor": "eq:sh-r1-residue",
+      "anchor_line": 6964,
+      "source_start_line": 6960,
+      "source_end_line": 6964,
+      "source_block_sha256": "dbc742b2f62e142590c6d8192bc82df0166a7e0d945ff64507462c722706fcf3",
+      "source_block": "$$\n Q=-s^2w,\\qquad D\\lambda=s\\,dw,\\qquad\n \\operatorname*{Res}_{w=0}\\frac{\\lambda_a\\lambda_bD\\lambda}{Q^2}\n       =\\frac{A_aB_b+B_aA_b}{s^3}.\n$$ {#eq:sh-r1-residue}"
+    },
+    {
+      "anchor": "eq:sh-scale-a13",
+      "anchor_line": 5494,
+      "source_start_line": 5491,
+      "source_end_line": 5494,
+      "source_block_sha256": "d45385c535b9cf4cf630474c4665aa1973bafaf56c3e3358547bb5a0f20c4b59",
+      "source_block": "$$\nd\\sigma-\\mu=0,\\qquad\n\\nabla_h\\mu+P^h\\sigma+h\\rho=0.\n$$ {#eq:sh-scale-a13}"
+    },
+    {
+      "anchor": "eq:sh-scale-a14",
+      "anchor_line": 5509,
+      "source_start_line": 5505,
+      "source_end_line": 5509,
+      "source_block_sha256": "52f5ea1a6b8e1537d5a87c280996781342664a659d73651fee54fb2eccbbaf31",
+      "source_block": "$$\nP^h(\\mu^{\\sharp_h},\\cdot)\n=\\left(\\frac{f'}{2r}-\\frac f{2r^2}\\right)dr\n=d\\left(\\frac f{2r}\\right)=d\\rho.\n$$ {#eq:sh-scale-a14}"
+    },
+    {
+      "anchor": "eq:sh-scale-a15",
+      "anchor_line": 5516,
+      "source_start_line": 5513,
+      "source_end_line": 5516,
+      "source_block_sha256": "631825a6d51153937aad80491b61a1125bbdb526c25451c93d8ef5c485b87f58",
+      "source_block": "$$\nH(I,I)=2\\sigma\\rho+|\\mu|_h^2\n=\\frac f{r^2}-\\frac f{r^2}=0.\n$$ {#eq:sh-scale-a15}"
+    },
+    {
+      "anchor": "eq:sh-scale-a16",
+      "anchor_line": 5535,
+      "source_start_line": 5532,
+      "source_end_line": 5535,
+      "source_block_sha256": "890016860ebb1b8da83ec2826c0c202862b950f13e756ab0685518fa31e8e7a0",
+      "source_block": "$$\n\\operatorname{Scal}(g_c)=-\\frac{12m}{r},\\qquad\n\\sigma=-\\frac{\\operatorname{Scal}(g_c)}{12m}.\n$$ {#eq:sh-scale-a16}"
+    },
+    {
+      "anchor": "eq:sh-scale-a2",
+      "anchor_line": 5393,
+      "source_start_line": 5389,
+      "source_end_line": 5393,
+      "source_block_sha256": "de572751f76eef8bd8db1a9345b072ae0844887ceb9f7d60c44631300396703d",
+      "source_block": "$$\ng_E=f\\,dv^2-2\\,dv\\,dr-r^2d\\Omega_2^2,\n\\qquad g_c=r^{-2}g_E,\n\\qquad \\sigma=r^{-1}.\n$$ {#eq:sh-scale-a2}"
+    },
+    {
+      "anchor": "eq:sh-scale-a3",
+      "anchor_line": 5400,
+      "source_start_line": 5397,
+      "source_end_line": 5400,
+      "source_block_sha256": "cc8026db25160ab1b574edda2f189d10f8b23b24dea4b80859397c1f8e68dab2",
+      "source_block": "$$\nR(X,Y)=[\\nabla_X,\\nabla_Y]-\\nabla_{[X,Y]},\\qquad\n\\operatorname{Ric}(Y,Z)=\\operatorname{tr}(X\\mapsto R(X,Y)Z),\n$$ {#eq:sh-scale-a3}"
+    },
+    {
+      "anchor": "eq:sh-scale-a7",
+      "anchor_line": 5444,
+      "source_start_line": 5440,
+      "source_end_line": 5444,
+      "source_block_sha256": "c9347aae3400ae6b9e175ec5d198d03ec18fa07b0670ea0f135009613a322656",
+      "source_block": "$$\nI=L\\sigma=(\\sigma,\\mu,\\rho)\n=\\left(\\frac1r,-\\frac{dr}{r^2},\\frac{f}{2r}\\right),\n\\qquad D I=0,\\qquad H(I,I)=0.\n$$ {#eq:sh-scale-a7}"
+    },
+    {
+      "anchor": "lem:gg-budget-spencer",
+      "anchor_line": 2419,
+      "source_start_line": 2419,
+      "source_end_line": 2437,
+      "source_block_sha256": "e003d78f7fa2c49c13b706126140e3404b1d5ee99bca7ac05a068d0f17ced376",
+      "source_block": "<div id=\"lem:gg-budget-spencer\"></div>\n\n**Lemma B.1.**\n\nFor the original derivation $\\mathsf H_aU_r=i_aU_{r+1}+Q_{r,a}$, $r\\ge0$, the initial case is $Q_0=0$. For $r\\ge1$ one has the following identities, with the last sum interpreted as zero when $r=1$:\n\n$$\n \\begin{aligned}\n \\ker\\delta_r&=\\operatorname{im}P_{++},\\\\\n M_r&=\\frac n{n+1}P_{-+}+\\frac m{m+1}P_{+-}\n                         +\\frac{nm}{nm-1}P_{--},\\\\\n Q_r&=M_rJ_r^*(\\tau\\,\\mathsf H Q_{r-1}-K_r),\\\\\n K_r(a,b)&=\\mathsf V_{R_U(a,b)}U_{r-1},\\\\\n (\\mathsf H Q_{r-1})(a,b)\n  &=\\sum_{j=0}^{r-2}D_{U_j}Q_{r-1,b}\n                         [i_aU_{j+1}+Q_{j,a}].\n \\end{aligned}\n$$ {#eq:gg-budget-actual-recursion}\n"
+    },
+    {
+      "anchor": "lem:gg-budget-transfers",
+      "anchor_line": 2539,
+      "source_start_line": 2539,
+      "source_end_line": 2557,
+      "source_block_sha256": "4509030838894181f6911e29389ae96caa604585cda813455d1363725caba1ca",
+      "source_block": "<div id=\"lem:gg-budget-transfers\"></div>\n\n**Lemma B.3.**\n\nFor an insertion of a coefficient of $Q_t$, $t\\ge1$, into one specified position of a coefficient of $Q_{r-1}$, the actual recursion satisfies\n\n$$\n \\begin{aligned}\n m_r(M_rJ_r^*\\tau I_i(B,C))\n       &\\le\\frac{K_0}{t+1}m_{r-1}(B)m_t(C),&K_0&=2^{24},\\\\\n m_r(M_rJ_r^*\\tau L_iB)\n       &\\le c_rm_{r-1}(B),&\n c_r&=\\frac{r(r+4)}{r(r+4)-1}.\n \\end{aligned}\n$$ {#eq:gg-budget-transfer-bounds}\n\nThe transferred curvature source has mass at most $C_*(r+1)$ for a structural $C_*$. Moreover\n$1\\le P_r=\\prod_{s=1}^rc_s\\le P_\\infty\\le e^{11/18}$.\n"
+    },
+    {
+      "anchor": "prop:gg-formal-normal-uniqueness",
+      "anchor_line": 2383,
+      "source_start_line": 2383,
+      "source_end_line": 2388,
+      "source_block_sha256": "bd17ab3e9fc6a2c527660aff3dcc2c85f83be9cbacadc75adc1aeaca5d715399",
+      "source_block": "<div id=\"prop:gg-formal-normal-uniqueness\"></div>\n\n**Proposition A.4.**\n\nThe completed curvature list determines a unique formal metric in marked geodesic normal coordinates. This formal metric has its prescribed Einstein constant and ordered curvature derivatives. Two analytic marked normal metrics with the same complete free lists and numerical constant are equal as germs.\n"
+    },
+    {
+      "anchor": "prop:gg-polynomial-completion",
+      "anchor_line": 2361,
+      "source_start_line": 2361,
+      "source_end_line": 2366,
+      "source_block_sha256": "bce92c3155c153586c54b48dc83c197602c34e6397b1ce26e2be5ee8493d346e",
+      "source_block": "<div id=\"prop:gg-polynomial-completion\"></div>\n\n**Proposition A.3.**\n\nThe polynomial completion and the original Cartan derivations of Lemma 3.2 exist uniquely and obey all the identities stated there, on independent complex lists.\n"
+    },
+    {
+      "anchor": "prop:gg-schwarzschild-primitive-comparison",
+      "anchor_line": 2159,
+      "source_start_line": 2159,
+      "source_end_line": 2177,
+      "source_block_sha256": "fbc3372ca2d8c4cb44063c7700f57bfb49bb0e7da37a3905791fd1367a2092c7",
+      "source_block": "<div id=\"prop:gg-schwarzschild-primitive-comparison\"></div>\n\n**Proposition 10.4.** Fix the primitive restricted Dolbeault projector and positively oriented contour in \u00a7K.5, with its printed prefactor $1/(2\\pi)$, the source parameter $\\mu_{\\rm src}=m/2$, and the continued signed radial sheet $\\varrho=-r$. On a sufficiently small simply connected neighborhood of $(v,r,\\theta,\\phi)=(0,2m,\\pi/2,0)$, retain the local angular inverse branches and $x+\\mathrm iy\\ne0$. The actual map\n\n$$\n \\Phi_{\\rm pr}(v,r,\\theta,\\phi)\n =\\bigl(\\mathrm i(r-v),r\\sin\\theta\\cos\\phi,\n                   r\\sin\\theta\\sin\\phi,r\\cos\\theta\\bigr)\n$$ {#eq:gg-schwarzschild-primitive-map}\n\ninto the complexification of the primitive metric domain has an actual local inverse and satisfies\n\n$$\n \\Phi_{\\rm pr}^*G_{\\rm int}=h_*:=2r^{-2}g_m,\\qquad\n \\sigma_*=\\sqrt2/r,\\qquad \\sigma_*^{-2}h_*=g_m.\n$$ {#eq:gg-schwarzschild-primitive-identity}\n\nThe selected density, its square identification and central root value, and the normal tractor agree with those of Proposition 10.1 after the stated constant auxiliary-frame change. Transporting the specified EF full-spin frame gives actual marked comparisons. The selected primitive metric and the record-generated objects therefore have the actual enriched comparisons of Theorem K.7, with two-sided inverses, on their common local representatives.\n"
+    },
+    {
+      "anchor": "prop:sh-r1-primitive-tensor",
+      "anchor_line": 6912,
+      "source_start_line": 6912,
+      "source_end_line": 6929,
+      "source_block_sha256": "3c227fd9ca79c24ab81312ac634347e050ad97d1d98410011022d9d9141508ab",
+      "source_block": "<div id=\"prop:sh-r1-primitive-tensor\"></div>\n\n**Proposition K.14 (Primitive tensor calculation).** On this source chart, $\\mathsf P$ is a rank-two projector and its two eigendistributions are involutive. The form and symmetric metric defined above are\n\n$$\n \\omega_{\\rm int}=2\\omega_0,\\qquad\n \\omega_0=\\frac{i}{s^3}A_aB_b\\,dX^{aa'}\\wedge dX^b{}_{a'},\n$$ {#eq:sh-r1-contour-value}\n\n$$\n G_{\\rm int}=2G_0,\\qquad\n G_0=-\\frac1{\\varrho^2}\n \\left[\\delta+\\frac{4\\mu_{\\rm src}}{\\varrho}\n                  (d\\tau+i\\,d\\varrho)^2\\right].\n$$ {#eq:sh-r1-general-source-metric}\n\nThe form is closed and nondegenerate, and $\\omega_0(JU,JV)=\\omega_0(U,V)$. These identities hold on the whole chart with either signed radial branch.\n"
+    },
+    {
+      "anchor": "prop:sh-scale-1",
+      "anchor_line": 5428,
+      "source_start_line": 5428,
+      "source_end_line": 5447,
+      "source_block_sha256": "3cb8aa1706e9a9372d463173e192b9046f943f43a41abb0b4f23b0ab50cef09c",
+      "source_block": "<div id=\"prop:sh-scale-1\"></div>\n\n**Proposition K.1.**\n\nIn the representative $g_c$, the nonvanishing density whose component is $\\sigma=1/r$ selects precisely $g_E$:\n\n$$\ng_E=\\sigma^{-2}g_c.\n$$ {#eq:sh-scale-a6}\n\nIt satisfies the almost-Einstein equation of Proposition 5.4. Its normal prolongation is\n\n$$\nI=L\\sigma=(\\sigma,\\mu,\\rho)\n=\\left(\\frac1r,-\\frac{dr}{r^2},\\frac{f}{2r}\\right),\n\\qquad D I=0,\\qquad H(I,I)=0.\n$$ {#eq:sh-scale-a7}\n\nIt consequently has prescribed numerical Einstein label $\\Lambda=-3H(I,I)=0$, including at the future horizon.\n"
+    },
+    {
+      "anchor": "prop:sh-scale-2",
+      "anchor_line": 5526,
+      "source_start_line": 5526,
+      "source_end_line": 5538,
+      "source_block_sha256": "f0fa16af220017cba178101764a097c3de9408f761cd6105f2729dffb05aa6e4",
+      "source_block": "<div id=\"prop:sh-scale-2\"></div>\n\n**Proposition K.2.**\n\nWith [@eq:sh-scale-a3], the scalar curvature of the auxiliary metric in [@eq:sh-scale-a2] is\n\n$$\n\\operatorname{Scal}(g_c)=-\\frac{12m}{r},\\qquad\n\\sigma=-\\frac{\\operatorname{Scal}(g_c)}{12m}.\n$$ {#eq:sh-scale-a16}\n\nIf the metric is negated to signature $-+++$, its scalar is $12m/r$ and its scale component is the scalar divided by $12m$.\n"
+    },
+    {
+      "anchor": "sec:sh-optics-3",
+      "anchor_line": 6187,
+      "source_start_line": 6187,
+      "source_end_line": 6189,
+      "source_block_sha256": "febc92c5709ec984405ccaf6f085500751bbe7f4d1a7960984c2a564921db4b2",
+      "source_block": "<div id=\"sec:sh-optics-3\"></div>\n\n#### K.3.3. A genuinely parallel Sachs basis"
+    },
+    {
+      "anchor": "sec:sh-r1-primitive-comparison",
+      "anchor_line": 6840,
+      "source_start_line": 6840,
+      "source_end_line": 6842,
+      "source_block_sha256": "bf769820489204ef5e475ed4f8c8a652225a7ed0023ce83b602bb3860b424540",
+      "source_block": "<div id=\"sec:sh-r1-primitive-comparison\"></div>\n\n### K.5. A calibrated Schwarzschild source primitive"
+    },
+    {
+      "anchor": "thm:gg-budget-coefficients",
+      "anchor_line": 2667,
+      "source_start_line": 2667,
+      "source_end_line": 2679,
+      "source_block_sha256": "402211c81c0c38d2fa167836cb5d45cf676c75510470e052283d9b15ec97c81a",
+      "source_block": "<div id=\"thm:gg-budget-coefficients\"></div>\n\n**Theorem B.4.**\n\nThere are structural $a,b>0$ such that the original ordered degree-$d$ coefficients satisfy\n\n$$\n \\gamma_r(B^{[d]}_{r,\\mathbf j}),\\ \n \\|B^{[d]}_{r,\\mathbf j}\\|_{\\mathrm{op}}\n \\le ab^{d-2}r\\,\\frac{r!}{\\prod_i j_i!},\n \\qquad |\\mathbf j|=r+3-2d,\\quad d\\ge2 .\n$$ {#eq:gg-budget-coefficient-conclusion}\n"
+    },
+    {
+      "anchor": "thm:sh-r1-calibrated-horizon-map",
+      "anchor_line": 7058,
+      "source_start_line": 7058,
+      "source_end_line": 7083,
+      "source_block_sha256": "07b2cda33468cd9bcdf1bfaadb4cd3eb82986203244224d6d1c675cc5b856259",
+      "source_block": "<div id=\"thm:sh-r1-calibrated-horizon-map\"></div>\n\n**Theorem K.15 (Calibrated primitive-to-Schwarzschild map).** Let $U$ be a sufficiently small simply connected complex EF parent of $o=(0,2m,\\pi/2,0)$ on which $r$, $\\sin\\theta$ and the following source units are nonzero. Use $\\mu_{\\rm src}=m/2$, take $\\varrho=-r$, and define\n\n$$\n \\Phi_{\\rm pr}(v,r,\\theta,\\phi)=\n \\left(\\tau=i(r-v),\\ x=r\\sin\\theta\\cos\\phi,\n       \\ y=r\\sin\\theta\\sin\\phi,\\ z=r\\cos\\theta\\right).\n$$ {#eq:sh-r1-horizon-map}\n\nThe source branches of $q$ and the contour pole $[A]$ are fixed as above. Then $\\Phi_{\\rm pr}$ and its actual inverse are regular across $r=2m$, and\n\n$$\n h_*:=\\Phi_{\\rm pr}^*G_{\\rm int}=\\frac2{r^2}g_m,\\qquad\n \\sigma_*=\\frac{\\sqrt2}{r},\\qquad \\sigma_*^{-2}h_*=g_m.\n$$ {#eq:sh-r1-calibrated-pullback}\n\nWith the density root and full spin lift fixed by their marked central values, this is an actual calibrated comparison. In the vector-middle-slot normal-tractor convention its auxiliary components are\n\n$$\n I_*=\n \\left(\\frac{\\sqrt2}{r},\\frac{\\partial_v+f\\partial_r}{\\sqrt2},\n                         \\frac f{2\\sqrt2r}\\right),\\qquad\n DI_*=0,\\qquad H(I_*,I_*)=0.\n$$ {#eq:sh-r1-vector-tractor}\n"
+    }
+  ]
+}

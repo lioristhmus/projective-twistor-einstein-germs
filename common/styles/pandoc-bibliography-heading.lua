@@ -34,6 +34,12 @@ function Pandoc(doc)
       end
     end})
   end
+  -- AMS starred sections already write their own table-of-contents entry.
+  local heading_classes = {"unnumbered"}
+  if FORMAT:match("latex") and doc.meta.documentclass
+      and pandoc.utils.stringify(doc.meta.documentclass) == "amsart" then
+    heading_classes[#heading_classes + 1] = "unlisted"
+  end
   local parsed = pandoc.read(title, "markdown")
   local first = parsed.blocks[1]
   local title_inlines = first and (first.t == "Para" or first.t == "Plain" or first.t == "Header")
@@ -67,7 +73,7 @@ function Pandoc(doc)
           end
         end
         if not has_heading(output[index]) then
-          output:insert(pandoc.Header(1, title_inlines, pandoc.Attr("", {"unnumbered"})))
+          output:insert(pandoc.Header(1, title_inlines, pandoc.Attr("", heading_classes)))
         end
       end
       output:insert(block)

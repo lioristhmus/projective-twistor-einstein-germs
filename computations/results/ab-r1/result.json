@@ -1,0 +1,140 @@
+{
+  "job": "ab-r1",
+  "status": "PASS",
+  "client_exit_code": 0,
+  "checks": [
+    {
+      "basis_tests": [
+        {
+          "basis_dimension": 48,
+          "chirality": 1,
+          "r": 1
+        },
+        {
+          "basis_dimension": 48,
+          "chirality": -1,
+          "r": 1
+        }
+      ],
+      "classification": "finite-exact",
+      "id": "AB-PROJECTORS-R1",
+      "info": "",
+      "record": "check",
+      "scope": "All basis vectors of D_r for 1<=r<=max_r and both chiralities; no all-order claim.",
+      "status": "PASS",
+      "title": "Exact finite-basis Spencer/free projections"
+    },
+    {
+      "classification": "finite-exact",
+      "cyclic_components": 2560,
+      "id": "AB-WEYL-ADMISSIBILITY-R1",
+      "info": "",
+      "inverse_readout_components": 320,
+      "quartic_basis_vectors": 10,
+      "record": "check",
+      "scope": "Complete linear Weyl basis at Lambda=0, including signed -1/4 inverse readout; higher free lists are symmetric spinor coefficients, not arbitrary ordered curvature arrays.",
+      "status": "PASS",
+      "title": "Quartic Weyl inputs: curvature constraints and inverse chiral readout"
+    },
+    {
+      "Lambda": 0,
+      "admissibility": "Free lists lie in W_j by symmetric coherent construction; algebraic curvature constraints checked above. Applicability of formal completion to independent lists and coefficient algebras uses Proposition A.3/A.4, not a new computed metric witness.",
+      "algebra": "QQ[e0,e1,e2]/(e0^2,e1^2,e2^2); additional square-zero variables implement derivatives",
+      "checks": "delta Q=RHS, Jstar H Q=0, P++Q=0, every coefficient rational",
+      "classification": "finite-exact",
+      "exclusions": "One explicit finite quotient-algebra input family, Lambda=0. No independently constructed Einstein metric, general differentiated Bianchi completion, atomic mass, all-order estimate or convergence theorem is certified.",
+      "field": "QQ",
+      "id": "AB-EXACT-SET-R1",
+      "info": "",
+      "labels": [
+        {
+          "chirality": 1,
+          "order_weight": 1,
+          "pi": [
+            "1",
+            "1"
+          ],
+          "xi": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "chirality": 1,
+          "order_weight": 2,
+          "pi": [
+            "0",
+            "1"
+          ],
+          "xi": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "chirality": -1,
+          "order_weight": 3,
+          "pi": [
+            "2",
+            "-1"
+          ],
+          "xi": [
+            "1",
+            "2"
+          ]
+        }
+      ],
+      "max_r": 1,
+      "polarization_r1": "[e0e1]Q1(e0*y+e1*w)=B(y,w)+B(w,y), explicitly nonzero; no division by 2",
+      "record": "check",
+      "recursive_scalar_tests": 768,
+      "status": "PASS",
+      "title": "Exact recurrence on a declared mixed free-record family",
+      "top_level": [
+        {
+          "chirality": 1,
+          "mixed_cubic_nonzero": false,
+          "nonzero_coefficients": 12,
+          "r": 1,
+          "scalar_coefficients": 384
+        },
+        {
+          "chirality": -1,
+          "mixed_cubic_nonzero": false,
+          "nonzero_coefficients": 0,
+          "r": 1,
+          "scalar_coefficients": 384
+        }
+      ]
+    }
+  ],
+  "worker_summary": {
+    "error": null,
+    "expected_count": 3,
+    "failed": [],
+    "job": "ab-r1",
+    "metrics": {
+      "cpu.stat": "usage_usec 3605890\nuser_usec 3393545\nsystem_usec 212345\nnice_usec 0\nnr_periods 37\nnr_throttled 19\nthrottled_usec 52568\nnr_bursts 0\nburst_usec 0",
+      "memory.peak": "235491328",
+      "pids.peak": "7"
+    },
+    "missing": [],
+    "observed_count": 3,
+    "record": "summary",
+    "status": "PASS",
+    "versions": {
+      "machine": "x86_64",
+      "numpy": "2.4.4",
+      "platform": "Linux",
+      "python": "3.12.3",
+      "sage": "10.9",
+      "sympy": "1.14.0"
+    },
+    "worker_seconds": 2.707
+  },
+  "stopped": true,
+  "removed": true,
+  "lock_released": true,
+  "log_sha256": "139c1c4c34ede4f7dabeba6589cad315a2b4e115ed13591e2763f64e0a9e328b",
+  "error": null
+}

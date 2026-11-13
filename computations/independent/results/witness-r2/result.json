@@ -1,0 +1,385 @@
+{
+  "job": "witness-r2",
+  "status": "PASS",
+  "client_exit_code": 0,
+  "checks": [
+    {
+      "classification": "finite-exact",
+      "enforced_controls": [
+        "Five Einstein witnesses: Einstein residual zero, Q0 zero, polynomial/geometric agreement",
+        "All seven metrics: geometric Ricci identity",
+        "Non-Einstein controls: Einstein residual and Q0 nonzero, polynomial/geometric mismatch",
+        "NC1 sign flip: Kasner/Kottler every tested order/chirality; two-wave r2+",
+        "NC3 doubled Lambda coefficient: Kottler every tested order/chirality",
+        "Lambda-zero Kasner/two-wave: NC3 insensitive, expected zero mismatch",
+        "Opposite single-wave chiral supports and Kottler Lambda=-1/10"
+      ],
+      "exact_arithmetic": "gmpy2",
+      "id": "IW-GEOMETRY-CONTROLS-R2",
+      "implementation": "Claude T3, unchanged; primary ab_exact.py not called",
+      "info": "",
+      "max_r": 2,
+      "record": "check",
+      "scope": "Finite exact witnesses through r=2 in an independent implementation. Higher-order Claude results remain historical audit evidence. No direct geometric witness test of primary ab_exact.py, all-order estimate or convergence.",
+      "status": "PASS",
+      "title": "Independent finite geometric witnesses with enforced convention controls",
+      "witnesses": {
+        "kasner": {
+          "Lambda": "0",
+          "Q0_zero(Bianchi)": {
+            "+": true,
+            "-": true
+          },
+          "U0_minus_nonzero": true,
+          "U0_plus_nonzero": true,
+          "einstein_residual_terms": 0,
+          "geometric_ricci_identity(any metric)": {
+            "r1+": true,
+            "r1-": true,
+            "r2+": true,
+            "r2-": true
+          },
+          "poly_Q_vs_geometric_Q": {
+            "r1+": {
+              "compared": 32,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            },
+            "r1-": {
+              "compared": 32,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            },
+            "r2+": {
+              "compared": 82,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": true
+            },
+            "r2-": {
+              "compared": 82,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": true
+            }
+          },
+          "seconds": 0.2,
+          "witness": "kasner",
+          "wrong_convention_mismatches": {
+            "NC1 sign(R_U)->-1": {
+              "r1+": 12,
+              "r1-": 12,
+              "r2+": 40,
+              "r2-": 40
+            },
+            "NC3 Lambda/3->2Lambda/3": {
+              "r1+": 0,
+              "r1-": 0,
+              "r2+": 0,
+              "r2-": 0
+            }
+          }
+        },
+        "kottler": {
+          "Lambda": "-1/10",
+          "Q0_zero(Bianchi)": {
+            "+": true,
+            "-": true
+          },
+          "U0_minus_nonzero": true,
+          "U0_plus_nonzero": true,
+          "einstein_residual_terms": 0,
+          "geometric_ricci_identity(any metric)": {
+            "r1+": true,
+            "r1-": true,
+            "r2+": true,
+            "r2-": true
+          },
+          "poly_Q_vs_geometric_Q": {
+            "r1+": {
+              "compared": 24,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            },
+            "r1-": {
+              "compared": 24,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            },
+            "r2+": {
+              "compared": 80,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": true
+            },
+            "r2-": {
+              "compared": 80,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": true
+            }
+          },
+          "seconds": 0.2,
+          "witness": "kottler",
+          "wrong_convention_mismatches": {
+            "NC1 sign(R_U)->-1": {
+              "r1+": 4,
+              "r1-": 4,
+              "r2+": 8,
+              "r2-": 8
+            },
+            "NC3 Lambda/3->2Lambda/3": {
+              "r1+": 4,
+              "r1-": 4,
+              "r2+": 8,
+              "r2-": 8
+            }
+          }
+        },
+        "non-Einstein-kasner": {
+          "Lambda": "269/1800",
+          "Q0_zero(Bianchi)": {
+            "+": false,
+            "-": false
+          },
+          "U0_minus_nonzero": true,
+          "U0_plus_nonzero": true,
+          "einstein_residual_terms": 16,
+          "geometric_ricci_identity(any metric)": {
+            "r1+": true,
+            "r1-": true,
+            "r2+": true,
+            "r2-": true
+          },
+          "poly_Q_vs_geometric_Q": {
+            "r1+": {
+              "compared": 32,
+              "mismatches": 20,
+              "mixed_terms_nonzero_here": false
+            },
+            "r1-": {
+              "compared": 32,
+              "mismatches": 20,
+              "mixed_terms_nonzero_here": false
+            },
+            "r2+": {
+              "compared": 82,
+              "mismatches": 40,
+              "mixed_terms_nonzero_here": true
+            },
+            "r2-": {
+              "compared": 82,
+              "mismatches": 40,
+              "mixed_terms_nonzero_here": true
+            }
+          },
+          "seconds": 0.2,
+          "witness": "non-Einstein-kasner",
+          "wrong_convention_mismatches": {}
+        },
+        "non-Einstein-trial": {
+          "Lambda": "0",
+          "Q0_zero(Bianchi)": {
+            "+": false,
+            "-": false
+          },
+          "U0_minus_nonzero": true,
+          "U0_plus_nonzero": true,
+          "einstein_residual_terms": 6,
+          "geometric_ricci_identity(any metric)": {
+            "r1+": true,
+            "r1-": true,
+            "r2+": true,
+            "r2-": true
+          },
+          "poly_Q_vs_geometric_Q": {
+            "r1+": {
+              "compared": 23,
+              "mismatches": 2,
+              "mixed_terms_nonzero_here": false
+            },
+            "r1-": {
+              "compared": 25,
+              "mismatches": 2,
+              "mixed_terms_nonzero_here": false
+            },
+            "r2+": {
+              "compared": 81,
+              "mismatches": 4,
+              "mixed_terms_nonzero_here": true
+            },
+            "r2-": {
+              "compared": 81,
+              "mismatches": 4,
+              "mixed_terms_nonzero_here": true
+            }
+          },
+          "seconds": 0.1,
+          "witness": "non-Einstein-trial",
+          "wrong_convention_mismatches": {}
+        },
+        "single-wave-1": {
+          "Lambda": "0",
+          "Q0_zero(Bianchi)": {
+            "+": true,
+            "-": true
+          },
+          "U0_minus_nonzero": false,
+          "U0_plus_nonzero": true,
+          "einstein_residual_terms": 0,
+          "geometric_ricci_identity(any metric)": {
+            "r1+": true,
+            "r1-": true,
+            "r2+": true,
+            "r2-": true
+          },
+          "poly_Q_vs_geometric_Q": {
+            "r1+": {
+              "compared": 20,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            },
+            "r1-": {
+              "compared": 20,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            },
+            "r2+": {
+              "compared": 80,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            },
+            "r2-": {
+              "compared": 80,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            }
+          },
+          "seconds": 0.0,
+          "witness": "single-wave-1",
+          "wrong_convention_mismatches": {}
+        },
+        "single-wave-2": {
+          "Lambda": "0",
+          "Q0_zero(Bianchi)": {
+            "+": true,
+            "-": true
+          },
+          "U0_minus_nonzero": true,
+          "U0_plus_nonzero": false,
+          "einstein_residual_terms": 0,
+          "geometric_ricci_identity(any metric)": {
+            "r1+": true,
+            "r1-": true,
+            "r2+": true,
+            "r2-": true
+          },
+          "poly_Q_vs_geometric_Q": {
+            "r1+": {
+              "compared": 20,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            },
+            "r1-": {
+              "compared": 20,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            },
+            "r2+": {
+              "compared": 80,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            },
+            "r2-": {
+              "compared": 80,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            }
+          },
+          "seconds": 0.0,
+          "witness": "single-wave-2",
+          "wrong_convention_mismatches": {}
+        },
+        "two-wave": {
+          "Lambda": "0",
+          "Q0_zero(Bianchi)": {
+            "+": true,
+            "-": true
+          },
+          "U0_minus_nonzero": true,
+          "U0_plus_nonzero": true,
+          "einstein_residual_terms": 0,
+          "geometric_ricci_identity(any metric)": {
+            "r1+": true,
+            "r1-": true,
+            "r2+": true,
+            "r2-": true
+          },
+          "poly_Q_vs_geometric_Q": {
+            "r1+": {
+              "compared": 21,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            },
+            "r1-": {
+              "compared": 20,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            },
+            "r2+": {
+              "compared": 80,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": true
+            },
+            "r2-": {
+              "compared": 80,
+              "mismatches": 0,
+              "mixed_terms_nonzero_here": false
+            }
+          },
+          "seconds": 0.1,
+          "witness": "two-wave",
+          "wrong_convention_mismatches": {
+            "NC1 sign(R_U)->-1": {
+              "r1+": 0,
+              "r1-": 0,
+              "r2+": 2,
+              "r2-": 0
+            },
+            "NC3 Lambda/3->2Lambda/3": {
+              "r1+": 0,
+              "r1-": 0,
+              "r2+": 0,
+              "r2-": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "worker_summary": {
+    "error": null,
+    "expected_count": 1,
+    "failed": [],
+    "job": "witness-r2",
+    "metrics": {
+      "cpu.stat": "usage_usec 1688421\nuser_usec 1600190\nsystem_usec 88231\nnice_usec 0\nnr_periods 18\nnr_throttled 9\nthrottled_usec 49368\nnr_bursts 0\nburst_usec 0",
+      "memory.peak": "37982208",
+      "pids.peak": "7"
+    },
+    "missing": [],
+    "observed_count": 1,
+    "record": "summary",
+    "status": "PASS",
+    "versions": {
+      "machine": "x86_64",
+      "numpy": "2.4.4",
+      "platform": "Linux",
+      "python": "3.12.3",
+      "sage": "10.9",
+      "sympy": "1.14.0"
+    },
+    "worker_seconds": 0.746
+  },
+  "stopped": true,
+  "removed": true,
+  "lock_released": true,
+  "log_sha256": "e01ada8f76927b09c126e8d7e8b7ed53aa0ad32dcbcbb56e1df1a82a3a9ac7a8",
+  "error": null
+}

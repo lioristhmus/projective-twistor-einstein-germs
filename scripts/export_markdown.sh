@@ -9,6 +9,7 @@ Usage:
 Options:
   --profile NAME       standard | ccg-jp | arxiv | arxiv-ams | arxiv-strict | ams
                        (default: standard)
+  --engine NAME        pdflatex | xelatex for standard/arxiv-ams (default: pdflatex).
   --toc                Ask Pandoc to generate a table of contents.
   --citeproc           Enable citation processing (default).
   --no-citeproc        Disable citation processing.
@@ -36,16 +37,17 @@ EOF
 
 list_profiles() {
   cat <<'EOF'
-standard      AMS mathematical preprint with running heads (XeLaTeX).
+standard      AMS mathematical preprint with running heads (pdfLaTeX; --engine xelatex optional).
 ccg-jp        Previous CCG Japanese template (LuaLaTeX).
 arxiv         Portable English article profile (XeLaTeX).
-arxiv-ams     AMS mathematical preprint with running heads (XeLaTeX).
+arxiv-ams     Same as standard, with a profile suffix (pdfLaTeX; --engine xelatex optional).
 arxiv-strict  arxiv profile with a required TeX Live 2025 XeLaTeX wrapper.
 ams           Existing English amsart profile (LuaLaTeX).
 EOF
 }
 
 PROFILE="standard"
+ENGINE_OVERRIDE=""
 TOC=false
 CITEPROC=true
 OUTPUT_DIR=""
@@ -64,6 +66,14 @@ while [ $# -gt 0 ]; do
     --toc)
       TOC=true
       shift
+      ;;
+    --engine)
+      [ $# -ge 2 ] || { echo "Missing value for --engine" >&2; exit 2; }
+      case "$2" in
+        pdflatex|xelatex) ENGINE_OVERRIDE="$2" ;;
+        *) echo "--engine must be pdflatex or xelatex: $2" >&2; exit 2 ;;
+      esac
+      shift 2
       ;;
     --citeproc)
       CITEPROC=true
@@ -124,10 +134,15 @@ INPUT_DIR="$(cd "$(dirname "$INPUT")" && pwd)"
 INPUT="$INPUT_DIR/$(basename "$INPUT")"
 INPUT_BASE="$(basename "${INPUT%.md}")"
 
+if [ -n "$ENGINE_OVERRIDE" ] && [ "$PROFILE" != "standard" ] && [ "$PROFILE" != "arxiv-ams" ]; then
+  echo "--engine applies only to standard/arxiv-ams; $PROFILE keeps its own engine." >&2
+  exit 2
+fi
+
 case "$PROFILE" in
   standard)
     DEFAULT_STEM="$INPUT_BASE"
-    ENGINE="$(command -v xelatex || true)"
+    ENGINE="$(command -v "${ENGINE_OVERRIDE:-pdflatex}" || true)"
     READER="markdown-fancy_lists+raw_tex+tex_math_dollars+raw_html+footnotes+table_captions"
     ;;
   ccg-jp)
@@ -142,7 +157,7 @@ case "$PROFILE" in
     ;;
   arxiv-ams)
     DEFAULT_STEM="$INPUT_BASE.arxiv-ams"
-    ENGINE="$(command -v xelatex || true)"
+    ENGINE="$(command -v "${ENGINE_OVERRIDE:-pdflatex}" || true)"
     READER="markdown-fancy_lists+raw_tex+tex_math_dollars+raw_html+footnotes+table_captions"
     ;;
   arxiv-strict)
@@ -185,15 +200,16 @@ for command_name in pandoc pandoc-crossref; do
   }
 done
 
-if [ "$PROFILE" = "standard" ] || [ "$PROFILE" = "arxiv" ] \
-    || [ "$PROFILE" = "arxiv-ams" ] || [ "$PROFILE" = "arxiv-strict" ]; then
+if [ "$PROFILE" = "standard" ] || [ "$PROFILE" = "arxiv-ams" ]; then
+  echo "[$PROFILE] TeX engine: $("$ENGINE" --version 2>/dev/null | sed -n '1p')"
+  echo "Note: submission servers may use different TeX Live/package versions; pagination can differ." >&2
+elif [ "$PROFILE" = "arxiv" ] || [ "$PROFILE" = "arxiv-strict" ]; then
   ENGINE_VERSION="$("$ENGINE" --version 2>/dev/null | sed -n '1p')"
   if [ "$PROFILE" = "arxiv-strict" ] && [[ "$ENGINE_VERSION" != *"TeX Live 2025"* ]]; then
     echo "arxiv-strict requires TeX Live 2025; found: $ENGINE_VERSION" >&2
     exit 4
   fi
-  if { [ "$PROFILE" = "standard" ] || [ "$PROFILE" = "arxiv" ] \
-      || [ "$PROFILE" = "arxiv-ams" ]; } \
+  if [ "$PROFILE" = "arxiv" ] \
       && [[ "$ENGINE_VERSION" != *"TeX Live 2025"* ]]; then
     echo "Note: local arxiv profile is using $ENGINE_VERSION" >&2
     echo "      arXiv currently defaults to TeX Live 2025; final validation occurs on arXiv." >&2
@@ -267,6 +283,7 @@ case "$PROFILE" in
       --lua-filter "$STYLE_DIR/pandoc-promote-topmatter.lua"
       --include-in-header "$STYLE_DIR/arxiv-preamble.tex"
       --include-in-header "$STYLE_DIR/ams-statement-headings.tex"
+      --include-in-header "$STYLE_DIR/ams-abstract-heading.tex"
       --include-in-header "$STYLE_DIR/macros.tex"
     )
     ;;
@@ -307,6 +324,9 @@ if $USE_DISPLAY_JOIN; then
     --lua-filter "$STYLE_DIR/pandoc-promote-topmatter.lua"
     --lua-filter "$STYLE_DIR/pandoc-unnumber-abstract-equations.lua"
   )
+  if [ "${ENGINE_OVERRIDE:-pdflatex}" = "pdflatex" ]; then
+    PANDOC_AST_ARGS+=(--lua-filter "$STYLE_DIR/pandoc-pdftex-check.lua")
+  fi
   if [ -f "$ROOT/common/bib/references.bib" ]; then
     PANDOC_AST_ARGS+=(--bibliography "$ROOT/common/bib/references.bib")
   fi
@@ -325,6 +345,7 @@ if $USE_DISPLAY_JOIN; then
     --lua-filter "$STYLE_DIR/pandoc-manual-reference-anchors.lua"
     --include-in-header "$STYLE_DIR/arxiv-preamble.tex"
     --include-in-header "$STYLE_DIR/ams-statement-headings.tex"
+    --include-in-header "$STYLE_DIR/ams-abstract-heading.tex"
     --include-in-header "$STYLE_DIR/macros.tex"
   )
   # crossref rewrites Cite nodes; render bibliography citations only afterwards.
@@ -355,6 +376,11 @@ run_latex() {
   ) >"$log_file" 2>&1; then
     echo "LaTeX failed. Last 40 log lines:" >&2
     tail -40 "$log_file" >&2
+    return 1
+  fi
+  if $USE_DISPLAY_JOIN && [ "${ENGINE_OVERRIDE:-pdflatex}" = "pdflatex" ] \
+      && grep -q 'Missing character:' "$log_file"; then
+    echo "pdfLaTeX reported missing glyphs; outputs were not published. Inspect $log_file" >&2
     return 1
   fi
 }

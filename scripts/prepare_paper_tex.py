@@ -303,6 +303,36 @@ def overfull_boxes(log, minimum=0):
     return boxes
 
 
+
+def place_ams_abstract(tex):
+    """Move only Pandoc's adjacent AMS title/abstract pair to native order."""
+    protected = protected_ranges(tex)
+    classes = re.finditer(r"\\documentclass(?:\s*\[[^]]*\])?\s*\{([^}]+)\}", tex)
+    document_class = next((m for m in classes
+                           if not any(a <= m.start() < b for a, b in protected)), None)
+    if document_class is None or document_class.group(1) != "amsart":
+        return tex, False
+    pattern = r"(\\begin\{document\}\s*)(\\maketitle[ \t]*\r?\n)([ \t]*\\begin\{abstract\})"
+    match = re.search(pattern, tex)
+    if not match:
+        return tex, False
+    if any(a <= match.start() < b for a, b in protected):
+        return tex, False
+    finish = None
+    for token in TOKEN.finditer(tex, match.end()):
+        if any(a <= token.start() < b for a, b in protected):
+            continue
+        if token.group() == r"\begin{abstract}":
+            return tex, False
+        if token.group() == r"\end{abstract}":
+            finish = token.end()
+            break
+    if finish is None:
+        return tex, False
+    block = tex[match.start(3):finish]
+    replacement = match.group(1) + block + "\n" + match.group(2)
+    return tex[:match.start()] + replacement + tex[finish:], True
+
 def normalize(tex):
     edits, events = [], []
     for region in math_regions(tex):
@@ -321,6 +351,9 @@ def normalize(tex):
     result = replace_ranges(tex, edits)
     if count:
         events.append({"action": "bibliography-line-flexibility", "count": count})
+    result, moved = place_ams_abstract(result)
+    if moved:
+        events.append({"action": "ams-abstract-before-title", "count": 1})
     return result, events
 
 

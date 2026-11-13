@@ -1,0 +1,212 @@
+{
+  "job": "b-low8",
+  "status": "PASS",
+  "client_exit_code": 0,
+  "checks": [
+    {
+      "classification": "numerical-diagnostic",
+      "id": "B-RESIDUAL-R8",
+      "info": "",
+      "maxima": {
+        "JsHQ": 6.7e-17,
+        "resF3": 8.7e-16,
+        "resL": 3e-16,
+        "sym2": 1.2e-15
+      },
+      "norm": "Unweighted Frobenius norm of coefficient arrays, not the weighted tensor norm",
+      "record": "check",
+      "status": "PASS",
+      "title": "Finite float64 recursion and quadratic JstarHQ residuals",
+      "tolerance": 1e-10
+    },
+    {
+      "classification": "numerical-diagnostic",
+      "id": "B-VALUES-R8",
+      "info": "",
+      "insertion_table_rows": 6,
+      "labels": [
+        {
+          "chirality": "+",
+          "pi": [
+            0.24578803576743347,
+            -0.9693235999776271
+          ],
+          "xi": [
+            0.38771363110095136,
+            0.9217798762494848
+          ]
+        },
+        {
+          "chirality": "+",
+          "pi": [
+            -0.6786461510329862,
+            0.7344653849488846
+          ],
+          "xi": [
+            0.8969110660465839,
+            0.44221096730314147
+          ]
+        },
+        {
+          "chirality": "-",
+          "pi": [
+            0.051917388635129444,
+            0.998651382994741
+          ],
+          "xi": [
+            0.7782852357617386,
+            0.6279108947894558
+          ]
+        }
+      ],
+      "orders": [
+        {
+          "JsHQ": 0.0,
+          "N2/r": 2.5793,
+          "N2full": 3.873,
+          "N2max": 2.5793,
+          "N3/r": 0.0,
+          "N3max": 0.0,
+          "dt": 0.0,
+          "maxrss": 60.0,
+          "r": 1,
+          "resF3": 0.0,
+          "resL": 1.6e-16,
+          "sym2": 1.4e-16
+        },
+        {
+          "JsHQ": 0.0,
+          "N2/r": 0.99241,
+          "N2full": 2.622,
+          "N2max": 1.9848,
+          "N3/r": 0.0,
+          "N3max": 0.0,
+          "dt": 0.0,
+          "maxrss": 60.0,
+          "r": 2,
+          "resF3": 0.0,
+          "resL": 2.3e-16,
+          "sym2": 3.2e-16
+        },
+        {
+          "JsHQ": 3.7e-17,
+          "N2/r": 0.65615,
+          "N2full": 2.4944,
+          "N2max": 1.9685,
+          "N3/r": 4.3775e-18,
+          "N3max": 1.3132e-17,
+          "dt": 0.0,
+          "maxrss": 60.0,
+          "r": 3,
+          "resF3": 0.0,
+          "resL": 2.3e-16,
+          "sym2": 8.8e-16
+        },
+        {
+          "JsHQ": 4.8e-17,
+          "N2/r": 0.51012,
+          "N2full": 2.5957,
+          "N2max": 2.0405,
+          "N3/r": 0.02152,
+          "N3max": 0.086078,
+          "dt": 0.0,
+          "maxrss": 62.0,
+          "r": 4,
+          "resF3": 1.9e-16,
+          "resL": 2.6e-16,
+          "sym2": 9.6e-16
+        },
+        {
+          "JsHQ": 6.7e-17,
+          "N2/r": 0.42887,
+          "N2full": 2.7364,
+          "N2max": 2.1443,
+          "N3/r": 0.023118,
+          "N3max": 0.11559,
+          "dt": 0.1,
+          "maxrss": 65.0,
+          "r": 5,
+          "resF3": 4.9e-16,
+          "resL": 2.6e-16,
+          "sym2": 1.1e-15
+        },
+        {
+          "JsHQ": 6.7e-17,
+          "N2/r": 0.37735,
+          "N2full": 2.897,
+          "N2max": 2.2641,
+          "N3/r": 0.022021,
+          "N3max": 0.13213,
+          "dt": 0.1,
+          "maxrss": 70.0,
+          "r": 6,
+          "resF3": 7.3e-16,
+          "resL": 3e-16,
+          "sym2": 1.1e-15
+        },
+        {
+          "JsHQ": 6.7e-17,
+          "N2/r": 0.34187,
+          "N2full": 3.0693,
+          "N2max": 2.3931,
+          "N3/r": 0.020577,
+          "N3max": 0.14404,
+          "dt": 0.2,
+          "maxrss": 77.0,
+          "r": 7,
+          "resF3": 8.6e-16,
+          "resL": 3e-16,
+          "sym2": 1.1e-15
+        },
+        {
+          "JsHQ": 6.7e-17,
+          "N2/r": 0.31601,
+          "N2full": 3.249,
+          "N2max": 2.5281,
+          "N3/r": 0.019246,
+          "N3max": 0.15397,
+          "dt": 0.2,
+          "maxrss": 87.0,
+          "r": 8,
+          "resF3": 8.7e-16,
+          "resL": 3e-16,
+          "sym2": 1.2e-15
+        }
+      ],
+      "record": "check",
+      "scope": "Finite observations of unscaled labeled polarized coefficient sums only. Their coherent values approximate lower bounds on the corresponding polarized maps under the full operator norms; no identification with one ordered paper coefficient is asserted. The values have float64 error. No upper bound or convergence assertion. Insertion denominators use 40-step power estimates, not certified operator norms.",
+      "seed": 1,
+      "status": "PASS",
+      "title": "Sampled coherent values and restricted-slot norm estimates"
+    }
+  ],
+  "worker_summary": {
+    "error": null,
+    "expected_count": 2,
+    "failed": [],
+    "job": "b-low8",
+    "metrics": {
+      "cpu.stat": "usage_usec 1779122\nuser_usec 1655322\nsystem_usec 123799\nnice_usec 0\nnr_periods 17\nnr_throttled 7\nthrottled_usec 45026\nnr_bursts 0\nburst_usec 0",
+      "memory.peak": "80461824",
+      "pids.peak": "7"
+    },
+    "missing": [],
+    "observed_count": 2,
+    "record": "summary",
+    "status": "PASS",
+    "versions": {
+      "machine": "x86_64",
+      "numpy": "2.4.4",
+      "platform": "Linux",
+      "python": "3.12.3",
+      "sage": "10.9",
+      "sympy": "1.14.0"
+    },
+    "worker_seconds": 0.825
+  },
+  "stopped": true,
+  "removed": true,
+  "lock_released": true,
+  "log_sha256": "f361250059378878f85f0a519bd3dae590cbcb6248b74253a9969532bf556928",
+  "error": null
+}

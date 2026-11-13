@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Check the local publication package using only the Python standard library."""
 from pathlib import Path
-import hashlib, json, re, sys
+import hashlib, json, re, sys, subprocess
 
 ROOT=Path(__file__).resolve().parents[1]
 PAPER=ROOT/'release/paper-v1.0'
-IGNORED={'.git','build','tmp','dist','__pycache__'}
+IGNORED={'.git','build','tmp','dist','__pycache__','.DS_Store'}
 
 def digest(path):
     h=hashlib.sha256()
@@ -88,11 +88,13 @@ def main():
     for n in names:
         if Path(n).suffix in {'.md','.tex','.bib','.json','.cff','.py','.sh','.lua','.yaml'}:
             assert ('/'+'Users'+'/') not in (ROOT/n).read_text(),n
-    print(json.dumps({'status':'PASS','publication_files':len(actual),'version':'1.0',
-                      'canonical_change':'YAML version and reversible editorial ledger','displayed_formulas':len(displays),
+    current=subprocess.run([sys.executable, '-B', str(ROOT/'scripts/verify_v1_1.py')], capture_output=True, text=True, check=True, timeout=60)
+    current_qa=json.loads(current.stdout)
+    print(json.dumps({'status':'PASS','publication_files':len(actual),'version':manifest['version'],'frozen_baseline_version':'1.0','current_release_qa':current_qa,
+                      'frozen_v1_0_editorial_ledger':'verified','displayed_formulas':len(displays),
                       'source_anchors':len(labels),'TeX_labels':len(texlabels),
-                      'AI_disclosure':'unchanged','main_theorems':'unchanged',
-                      'bibliography':'two public-facing note edits only'},indent=2))
+                      'frozen_v1_0_AI_disclosure':'unchanged','main_theorems':'unchanged',
+                      'frozen_v1_0_bibliography':'unchanged, including its two public-facing note edits'},indent=2))
 
 if __name__=='__main__':
     try:main()

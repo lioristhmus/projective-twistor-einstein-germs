@@ -1,0 +1,18 @@
+% House style for standard/arxiv-ams: match the References section heading.
+% The native abstract box, margins and body font remain owned by amsart.
+\usepackage{etoolbox}
+\newcommand{\pandocabstractheading}{%
+  \par\begingroup
+    \normalsize\section*{\abstractname}%
+  \endgroup
+  \nobreak\noindent\ignorespaces
+}
+\makeatletter
+\patchcmd{\abstract}
+  {\item[\hskip\labelsep\scshape\abstractname.]}
+  {\item[]\pandocabstractheading}
+  {}%
+  {\PackageError{studio-ams-abstract}
+     {Unsupported amsart abstract definition}
+     {Check the installed class before updating the abstract-heading patch.}}
+\makeatother

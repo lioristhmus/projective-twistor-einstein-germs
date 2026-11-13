@@ -1,5 +1,6 @@
 ---
 # AMS mathematical preprint profile using only arXiv-compatible TeX packages.
+# export_markdown.sh defaults to pdfLaTeX; --engine xelatex retains Unicode fonts.
 documentclass: amsart
 classoption:
   - 11pt

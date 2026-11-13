@@ -1,0 +1,8383 @@
+---
+title: "A projective twistor correspondence for local analytic Einstein germs"
+author: "Lior Isthmus"
+language: en
+date: "2026-11-13"
+version: "1.1"
+bibliography: references.bib
+---
+
+<div id="sec:gg-title"></div>
+
+# A projective twistor correspondence for local analytic Einstein germs
+
+**Lior Isthmus**[^author-email]
+
+[^author-email]: Email: <lioristhmus@proton.me>
+
+<div id="sec:gg-abstract"></div>
+
+## Abstract
+
+For each prescribed numerical cosmological constant, including zero, we establish a convergent projective twistor correspondence recovering every marked four-dimensional local analytic Einstein germ of any algebraic Weyl type. The inputs are two independent analytic Čech classes of weights $2$ and $-6$ on a fixed flat twistor germ $T_0$ along its whole marked zero line, encoding both complete chiral curvature records. The fixed source correction and calibration select a unit optical section, an intrinsic projective extension condition recognizes Einstein geometry, and the prescribed normalized contact, optical and affine maps and their inverses converge on common neighborhoods of the whole physical sky for bounded holomorphic input families. On independently admitted ordinary and operator domains we prove both inverse comparisons, with the two source operations acting in one projective analytic Heisenberg model. The same comparisons preserve the nonlinear source, compact point objects, optical evaluation and calibrated infinity forms, together with physical point and full spin-frame changes and coupled Lorentz reality. For fixed positive Schwarzschild mass, we obtain finite horizon-crossing presentations, a calibrated local primitive comparison and optical approximation bounds for the entire specified compact nonradial crossing family using finite local readouts and the exact benchmark cuts, coordinate comparisons and Sachs reference frames.
+
+\tableofcontents
+
+<div id="sec:gg-introduction"></div>
+
+## 1. Introduction
+
+Penrose described the googly obstruction as the problem of incorporating the interacting helicity opposite to the one described by the ordinary nonlinear-graviton construction, while retaining the same basic twistor conventions [@Penrose2015, abstract]. The classical correspondence produces half-flat conformal geometry from holomorphic threefolds with suitable rational curves [@Penrose1976]. The problem concerns the full nonlinear interaction of the two gravitational chiralities in local analytic geometry.
+
+Our inputs are two independent analytic Čech classes of weights $2$ and $-6$ on the fixed germ $T_0$ of $\operatorname{Tot}(\mathcal O(1)\oplus\mathcal O(1))$ along its whole marked zero line, a numerical cosmological constant and the point and full spin marking. The contact carrier, optical bundle and selected Einstein scale are derived from these data; no independent dual-twistor class, connection, scale or Einstein metric is supplied.
+
+The three spaces have distinct roles: $T_0$ is the fixed input germ, $Z$ the generated contact fivefold, and $Z_+$ the selected half-flat background of the independent ordinary presentation. The initial model $Z_0\subset\mathbb P(T^*T_0)$ supplies the starting contact charts; a general mixed output need not retain its fixed cotangent projection. Physical points are represented by a complete four-dimensional family of compact Legendrian sky quadrics $Q_x\simeq\mathbb P^1\times\mathbb P^1$ in $Z$. The rational lines in $Z_+$ describe the auxiliary half-flat metric, on which the unrestricted opposite-chirality class is registered and read linearly. Reconstruction of the full coupled Einstein geometry from the two records is nonlinear. Section 7 constructs both ordinary counits, and §8.3 gives covariant point and full spin-frame changes, which generally change both the background and the registered class.
+
+Theorem 2.4 recovers every marked local analytic Einstein germ, with both complete chiral curvature records, every algebraic Weyl type and numerical cosmological constant including zero, and proves both inverse comparisons on the independently defined ordinary domain. To prove convergence, the same prescribed normalizer is applied to finite source execution and to an analytic Cartan witness: Theorem 6.3 identifies each finite stored tuple with the amplitude Taylor restriction of one jointly holomorphic tuple. Its prescribed contact, optical and affine representatives, including their inverses, consequently converge on common neighborhoods of the whole physical sky for bounded holomorphic families and fixed finite conditioned diagrams.
+
+The two bare contact-lift spaces fail to close under the mixed bracket, and contact-cocycle compatibility alone does not ensure extension of the selected scale (Propositions 9.1–9.2). The source law in §5 uses fixed holomorphic cochain operations and the compatible inverse $L_m$ to remove the optical obstruction while retaining the prescribed entire free record. Fresh incidence and optical computation follow each correction; value, gradient and numerical scalar fix the six flat homogeneous scale modes. The resulting unit whole-neighborhood optical section determines the calibrated affine reduction of Proposition 5.7, whose intrinsic projective extension condition recognizes Einstein geometry by Proposition 5.4. Proposition 5.9 and §6.1 specify the respective roles of finite source execution and the geometric comparison used to prove convergence.
+
+The free symmetric curvature coordinates are the classical exact-set gravitational null data [@Penrose1980, §§2–3], whose description already includes a cosmological term (p.233). The flat free-field integral formulas of that paper's §4 are distinct from the nonlinear existence and analytic estimates proved here in §§3–6 and Appendices A–B.
+
+The null-geodesic/contact correspondence, reconstruction from complete normal sky quadrics and deformation framework are classical [@LeBrun1983, III.1–III.3 and III.6]. The same paper's Appendix gives the metric-cohomology correspondence underlying the affine torsor of §D.7 [@LeBrun1983, p.230]. Baston and Mason studied formal-neighborhood criteria for conformal gravity and Einstein geometry in second-order perturbation theory [@BastonMason1987, p.815]. LeBrun proved the fully curved extension theorem: the canonical first-order Poisson thickening extends uniquely through order four, its fifth-order obstruction is the Bach tensor, and the additional sixth-order obstruction is the Eastwood–Dighton tensor [@LeBrun1991, Main Theorem and Theorems 9.1–9.3, p.8 and §9]. The conformally Einstein interpretation of their joint vanishing has the stated algebraic-generality hypothesis on the Weyl curvature.
+
+LeBrun's Einstein-bundle criterion recognizes conformally Einstein metrics by nonvanishing holomorphic sections on the space of null geodesics [@LeBrun1985]. The ray bundle has rank two on the fivefold $Z$; the ordinary Einstein-bundle form takes values in the rank-three bundle $\Omega^1_{Z_+}\otimes L^2$ on $Z_+$. Wolf explicitly attributes the recognition to LeBrun and describes this intrinsic ordinary sheaf [@Wolf2007, §3.8]. Here Proposition 5.3 constructs the ray bundle from the tangent-sky curve, Proposition 5.4 identifies its whole-neighborhood unit sections with scales, and Proposition J.4 compares its Cauchy and tractor realizations.
+
+The unit-scale/parallel-tractor equivalence is standard [@Gover2004, §2, Theorem 2.1]; Proposition 5.4 proves the form used here and identifies it with the intrinsic optical data. Friedrich's conformal characteristic construction gives formal null-data determination at past time-like infinity [@Friedrich2013, arXiv v1, §1 and Lemma 6.1]. It concerns a conformal vacuum boundary problem and is not used as an analytic convergence theorem for the present germs.
+
+Penrose's bi-twistor framework combines twistor and dual-twistor variables with canonical commutation relations, using their classical limit to describe null-geodesic propagation in conformally curved spacetimes [@Penrose2026BiTwistors, {sec. 6}, pp.8–9]. Its concluding paragraph anticipates a cohomological construction of general real spacetimes as a future direction.
+
+Theorems 9.10–9.12 construct the independent operator presentation in one projective analytic Heisenberg model, with the negative source acting through derivative variables. Both inverse comparisons hold on the entire independently admitted operator domain. Theorem 9.12 identifies the nonlinear source, calibrated infinity forms, optical evaluation and compact point objects through the same natural comparisons, using raywise descent of the normal local-twistor bundle and explicit point-plane and affine-slice comparisons. The point modules represent the same physical skies $Q_x$. These comparisons retain physical point and full spin-frame changes and coupled Lorentz reality.
+
+Adamo et al. propose data on one twistor space, holomorphic constraints and Einsteinity without explicitly solving field equations on twistor space as three criteria for their Schwarzschild construction [@AdamoEtAl2026, §1, including footnote 2]. Section 10 and Appendix K apply the correspondence across the future Schwarzschild horizon, with a calibrated local source-primitive comparison and enriched finite overlaps. Proposition 10.5 gives optical approximation bounds on the entire specified compact nonradial crossing family using finite local readouts and the exact benchmark cuts, coordinate comparisons and Sachs reference frames. Proposition 10.3 remains a conditional single-readout estimate, and §§K.6–K.7 give a sufficiently short common-source interval.
+
+The proof separates finite holomorphic source execution from an analytically bounded Cartan realization before comparing their prescribed representatives. Ordinary and operator counits are proved on their independent domains before the source, infinity and point diagrams are collected in Theorem 9.12.
+
+The main proof dependencies are:
+
+| Assertion | Construction and proof |
+| --- | --- |
+| Original input and curvature records | Theorem 3.1 and Appendix A |
+| Finite source law and fixed compatible inverse | Theorem 5.5 and Appendices C–D |
+| Common convergence of its prescribed representatives | Theorems 3.3 and 6.3, Appendix B |
+| Geometric, ordinary and physical inverse comparisons | Theorem 2.4, §§7–8, Appendix E |
+| Independent analytic operator and module inverse comparisons | Theorem 9.10, Appendices F–H |
+| The same source, infinity structure and point diagram | Theorem 9.12, Propositions I.3, J.1 and J.3–J.5, Theorems J.2 and J.6, and Proposition J.7 |
+| Finite Schwarzschild application | Section 10 and Appendix K, including the full-family finite-readout approximation of Proposition 10.5, using the preceding correspondence |
+
+The proofs of Theorem 2.4 and Theorems 9.10–9.11 use neither Theorem 9.12 nor Appendix J. The simultaneous source, infinity and point comparison uses these preceding correspondences and explicit geometric comparisons. The application row depends on these results and supplies no premise for them.
+
+All uniform assertions use the bounded original families and fixed finite conditioned diagrams of Definition 2.1. The subject is local analytic geometry: arbitrary global spacetime topology, smooth nonanalytic data and uniform estimates for infinite unbounded point/frame histories are outside the assertions. The notation index in Appendix L records the source spaces, bundle conventions and comparison maps.
+
+**Computational supplement.** Reproducible SageMath computations for selected identities and finite-order examples are supplied in the computational supplement, version 0.2.0, revision 3 [@Isthmus2026LocalComputations]. The package includes code, inputs, recorded environments and results, and an index linking each check to the manuscript formulas. It covers selected curvature, optical and coordinate-change identities and low-order curvature-record recursions; the general estimates and convergence arguments are given in the text.
+
+<div id="sec:gg-objects"></div>
+
+## 2. Objects and the main correspondence
+
+Let $S,S'$ be complex symplectic two-spaces and $V=S\otimes S'$, with its induced nondegenerate symmetric form $\eta$. Fix the bases, affine origin and full spin marking. In both ordered spin bases our alternating matrices and index operations are
+
+$$
+ \epsilon_{AB}=\epsilon_{A'B'}=
+       \begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
+ \epsilon^{AB}=\epsilon^{A'B'}=
+       \begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+ v^A=\epsilon^{AB}v_B,\quad v_A=\epsilon_{AB}v^B .
+$$ {#eq:gg-spin-index-convention}
+
+The primed operations have the same order. Thus $\eta_{AA'BB'}=\epsilon_{AB}\epsilon_{A'B'}$, $\pi^{A'}=(-\pi_{1'},\pi_{0'})$, and, for the north lift $\pi_{A'}=(1,\zeta)$, $\pi_{A'}\,\mathrm d\pi^{A'}=-\mathrm d\zeta$.
+
+<div id="sec:gg-curvature-signature-conventions"></div>
+
+Our curvature convention is $R(a,b)=[\nabla_a,\nabla_b]-\nabla_{[a,b]}$, with $\operatorname{Ric}(b,c)=\operatorname{tr}(a\mapsto R(a,b)c)$. The Lorentz restriction uses signature $(+,-,-,-)$. In a compatible soldering frame the real vectors are Hermitian matrices and $\eta(v,v)=2\det(v^{AA'})$. Throughout, $\Lambda$ means the prescribed coefficient in $\operatorname{Ric}(g)=\Lambda g$. For example, the de Sitter metric of radius $a$ in this signature has $\operatorname{Ric}=-3a^{-2}g$ with this curvature convention. Appendix A.1 temporarily uses Gaussian witnesses of signature $(-,+,+,+)$; its explicit metric negation and reversed auxiliary scalar give the opposite-signature witnesses before the fixed spin readout. Negating a metric fixes its connection and covariant Ricci tensor and changes its Einstein coefficient’s sign; no such change is made silently in the source label.
+
+In four dimensions our Schouten tensor is $P=\tfrac12(\operatorname{Ric}-\tfrac16\operatorname{Scal}\,g)$. For the component comparison with Penrose’s printed formulas [@Penrose2015, {secs. 4 and 6, especially p.12}], denote their scalar by $\Lambda_{\mathrm P}$. We declare the curvature-component dictionary
+$R^{\mathrm P}_{abc}{}^d=[R(e_a,e_b)e_c]^d$ with the $R$ just fixed. The primary text contracts
+$\operatorname{Ric}^{\mathrm P}_{ac}=R^{\mathrm P}_{abc}{}^b$,
+whereas our Ricci contraction is $R^{\mathrm P}_{bac}{}^b$. Consequently
+
+$$
+ \operatorname{Ric}^{\mathrm P}=-\operatorname{Ric},\qquad
+ \Lambda_{\mathrm P}=-\Lambda,\qquad
+ P^{\mathrm P}
+   =\tfrac1{12}\operatorname{Scal}^{\mathrm P}g
+                         -\tfrac12\operatorname{Ric}^{\mathrm P}
+   =P .
+$$ {#eq:gg-original-infinity-curvature-dictionary}
+
+The primary article states that contraction but does not specify its curvature commutator sign. The displayed component identification explicitly fixes our dictionary; it is not a claim that an unstated historical convention was independently verified. The numerical $\Lambda$ prescribed throughout this manuscript is unchanged.
+
+We lower the output of the curvature operator in the last slot:
+
+$$
+ \begin{aligned}
+ R_{abcd}&=g(R(e_a,e_b)e_c,e_d),\\
+ C_{abcd}&=R_{abcd}
+   -g_{ad}P_{bc}+g_{bd}P_{ac}+g_{ac}P_{bd}-g_{bc}P_{ad},\\
+ C_{AA'BB'CC'DD'}
+ &=-\Psi^+_{ABCD}\epsilon_{A'B'}\epsilon_{C'D'}
+   -\Psi^-_{A'B'C'D'}\epsilon_{AB}\epsilon_{CD} .
+ \end{aligned}
+$$ {#eq:gg-weyl-spinor-decomposition}
+
+In particular the component readout, inverse to the last line, is
+
+$$
+ \begin{aligned}
+ \mathfrak p_+(C)_{ABCD}=\Psi^+_{ABCD}
+   &=-\tfrac14\epsilon^{A'B'}\epsilon^{C'D'}
+                       C_{AA'BB'CC'DD'},\\
+ \mathfrak p_-(C)_{A'B'C'D'}=\Psi^-_{A'B'C'D'}
+   &=-\tfrac14\epsilon^{AB}\epsilon^{CD}
+                       C_{AA'BB'CC'DD'} .
+ \end{aligned}
+$$ {#eq:gg-weyl-spinor-readout}
+
+Indeed $\epsilon^{AB}\epsilon_{AB}=-2$, and contraction of a symmetric spinor with $\epsilon$ is zero. Thus, with $u=x^{00'}$, $v=x^{01'}$ and $q=x^{10'}$, the highest components are $\Psi^+_{0000}=-C_{uvuv}$ and $\Psi^-_{0'0'0'0'}=-C_{uquq}$. The chiral labels $+$ and $-$ mean these unprimed and primed spinors, respectively; physical names for their helicities depend on the twistor orientation. On the marked Lorentz slice this real component convention gives $\Psi^-=\overline{\Psi^+}$.
+
+Put $T_0=\operatorname{Tot}(\mathcal O(1)^{\oplus2})\to\mathbb P(S')$, as a germ along its entire zero line. Its north and south coordinates and incidence are
+
+$$
+ \zeta=\pi_{1'}/\pi_{0'},\quad
+ w^A=\omega^A/\pi_{0'},\qquad
+ \xi=\zeta^{-1},\quad v^A=w^A/\zeta,\qquad
+ \omega^A=x^{AA'}\pi_{A'}.
+$$ {#eq:gg-flat-incidence}
+
+<div id="def:gg-original-input"></div>
+
+**Definition 2.1.**
+
+For an integer $m$, let $\mathscr H_m(T_0)$ be the two-chart analytic Čech group in the direct limit over neighborhoods of the whole zero line, with coboundaries
+$a_0(w,\zeta)-\zeta^m a_1(w/\zeta,1/\zeta)$.
+In the north frame, fix the ordered overlap and Čech differential by
+
+$$
+ F_{NS}=F,\qquad
+ (\delta a)_{NS}(w,\zeta)
+   =\zeta^m a_S(w/\zeta,1/\zeta)-a_N(w,\zeta).
+$$ {#eq:gg-original-cech-orientation}
+
+This differential has the displayed coboundary image, since reversing its sign does not change that subspace. When both cochains are already expressed in one common frame, we write the same differential as $a_S-a_N$.
+The original free input at a numerical $\Lambda\in\mathbb C$ is
+
+$$
+ \mathcal A_\Lambda=\mathscr H_2(T_0)\oplus\mathscr H_{-6}(T_0).
+$$ {#eq:gg-original-input}
+
+A bounded holomorphic family has representatives bounded on one common annular fiber neighborhood, bounded $|\Lambda|$, and fixed positive parent-chart and bounded spin/inverse-spin margins. The parameter base is a finite-dimensional complex manifold germ; the representatives, numerical function $\Lambda$ and markings depend holomorphically on it. The finite-jet assertions are restrictions of these holomorphic families to finite Taylor neighborhoods. The nilpotent amplitude stages used in §5 are the separate flat-residue source filtration specified there. Uniform output assertions always mean a common shrink for each such bounded family and each fixed finite diagram of permitted point/frame operations. A conditioned finite diagram has positive coordinate and conic Cauchy buffers; bounded maps and inverses; a positive lower bound for each determinant, contact multiplier, root coefficient and frame coefficient that must be a unit; and images of all its specified finite composites contained in their assigned parents with positive buffer. These conditions are imposed on the supplied representatives. A common restriction reserves the minima of these finitely many buffers and unit margins, while retaining the entire compact parameter set under consideration, including the amplitude path through one when it is used.
+
+Write $\mathfrak E_\Lambda$ for holomorphic Einstein four-germs with $\operatorname{Ric}=\Lambda g$, the fixed tangent form at the marked point, and the full spin marking. Objects are considered up to fixed-mark isometry. Moving-point and frame instructions are retained as physical arrows, with their specified spin lifts; they are not erased when their tensor endpoints agree. Their short representatives and finite compositions are specified in §8.
+
+The geometric output has an intrinsic description. A sky incidence consists of a contact fivefold $Z$ with a complete regular four-dimensional family of embedded compact Legendrian quadrics $Q_x\simeq\mathbb P^1\times\mathbb P^1$, their ordered rulings, and correspondence $p:F\to M$, $q:F\to Z$. The contact line restricts to $\mathcal O(1,1)$ on each sky, and the one-dimensional $q$-fibers project nontrivially to $M$.
+
+<div id="def:gg-ray-object"></div>
+
+**Definition 2.2.**
+
+A regular-normal affine ray object consists of this incidence, a rank-six holomorphic nondegenerate quadratic bundle $(\mathcal V,H)$ on $Z$, a section $I$ with $H(I,I)=-\Lambda/3$, and an affine line subbundle $\mathscr A\subset\mathcal V$. The bundle is trivial on the central sky, and the translation line of $\mathscr A$ restricts to $\mathcal O(-1,-1)$. Every $Y\in\mathscr A$ satisfies $H(Y,Y)=0$ and $H(I,Y)=1$. The initial full spin lift is retained.
+
+Complete-sky evaluation and inverse null transport reconstruct the rank-six bundle $\mathcal T=p_*q^*\mathcal V$, its connection $D$, and the unique affine-torsor section $X$, as proved in §4. Put $W_{\mathrm{scr}}=(\mathbb CI+\mathbb CX)^\perp$, the rank-four middle bundle of tangent Spin type $S\otimes S'$, and $\theta(v)=D_vX$. Regular-normal means that $\theta:TM\to W_{\mathrm{scr}}$ is invertible, $F^DX=0$, and the Ricci contraction of the projected ambient curvature is zero. Explicitly, with $\operatorname{pr}_{W_{\mathrm{scr}}}$ the $H$-orthogonal projection, put
+
+$$
+ \mathcal R_{\mathrm{mid}}(v,w)u
+  =\theta^{-1}\operatorname{pr}_{W_{\mathrm{scr}}}
+                   F^D(v,w)\theta(u),\qquad
+ \operatorname{Ric}_{\mathrm{mid}}(w,u)
+  =\operatorname{tr}\bigl(v\mapsto\mathcal R_{\mathrm{mid}}(v,w)u\bigr)=0.
+$$ {#eq:gg-ray-middle-curvature-definition}
+
+This is the middle block of the ambient curvature, rather than the curvature of the connection obtained by projecting $D$ to $W_{\mathrm{scr}}$. Denote these objects and their enriched, spin-lifted geometric comparisons by $\mathfrak S_\Lambda$.
+
+The connection in this definition is reconstructed, not an additional arbitrary input. These recognition conditions are proved for every generated output. There is also a presentation without a supplied rank-six bundle or normality condition: take a regular contact seed and a unit whole-neighborhood section of its intrinsic projective optical bundle, with the same central calibration and derived numerical scalar. Proposition 5.3 and Appendix D construct that bundle independently; Proposition 5.4 and the canonical reconstruction of §4 give this ray presentation and its inverse.
+
+<div id="def:gg-ordinary-object"></div>
+
+**Definition 2.3.**
+
+An ordinary object consists of a holomorphic threefold germ $Z_+$ along a complete regular rational line $\ell$, its complete nearby line family with $N_{\ell/Z_+}=\mathcal O(1)^{\oplus2}$, a degree-one line bundle $L$ with an actual root identification $\alpha:L^{-4}\xrightarrow{\sim}K_{Z_+}$, an actual form
+$\tau\in H^0(Z_+,\Omega^1\otimes L^2)$, and an arbitrary analytic class
+$\beta\in H^1(Z_+,L^{-6})$, with the retained point, tangent and full spin marking.
+
+The marking identifies $\ell$ with $\mathbb P(S'_o)$ and induces the adjunction identification $d_o:\mathcal O(-4)\xrightarrow{\sim}K_{Z_+}|_\ell$. The degree-one calibration is an actual isomorphism
+
+$$
+ \kappa:L|_\ell\xrightarrow{\sim}\mathcal O_{\mathbb P(S'_o)}(1),
+ \qquad \alpha|_\ell=d_o\circ\kappa^{-4}.
+$$ {#eq:gg-ordinary-degree-one-calibration}
+
+The central restriction of $\tau$, read using $\kappa^2$, is exactly
+
+$$
+ \tau|_{T\ell}=\pi_{A'}\,\mathrm d\pi^{A'}.
+$$ {#eq:gg-central-ordinary-calibration}
+
+The classical complete-line construction reads a density $\sigma$ from this same form, with $\sigma(o)=1$. Its canonical prolongation $I_\tau$ is given in §7. The numerical label is $\Lambda=-3H(I_\tau,I_\tau)$, without rescaling the form or class. Objects are taken modulo fixed-mark ordinary comparisons preserving all these data, including $\alpha$ and $\kappa$. Thus a line comparison $f_L$ at a fixed mark satisfies $\kappa_t\circ f_L|_\ell=\kappa_s$. Denote them by $\mathfrak W_\Lambda$. Their physical arrow admission is defined independently in §8. For a moving comparison with specified primed spin map $B:S'_s\to S'_t$, let $j_B:\mathcal O_s(1)\to\mathcal O_t(1)$ be the induced degree-one map over $\mathbb P(B)$. The calibration condition is $\kappa_t\circ f_L|_{\ell_s}=j_B\circ\kappa_s$. In particular $B=-1$ acts by $-1$ on $\mathcal O(1)$, and its specified full-spin arrow is retained.
+
+The fixed central value removes a real sign ambiguity: opposite unit sections can determine the same selected metric. The definition does not identify them by a scalar gauge. It is a condition in ordinary holomorphic geometry, not membership in a known generated image.
+
+The ordinary self-dual Einstein correspondence is classical [@Ward1980]. Its Einstein-bundle formulation is used here in the bosonic local form of [@Wolf2007, Propositions 3.4–3.7]. The author's degree-minus-one universal bundle is the inverse of our $L$. The actual form has the same bundle type at zero cosmological constant. The selected density and the numerical constant are read with our calibration, as in §7.
+
+<div id="thm:gg-main"></div>
+
+**Theorem 2.4.**
+
+For each fixed numerical $\Lambda\in\mathbb C$ and every original analytic pair in $\mathcal A_\Lambda$, the holomorphic generating law of §5, with the specified normalizer of §6, produces convergent contact and optical transition maps and inverse maps on a neighborhood of the whole compact physical sky. Their exact cocycles, complete four-dimensional incidence, nondegenerate solder and canonical normal connection are generated by this law. Its distinguished whole-sky optical section is the same canonical Einstein scale, and its two complete free curvature records are precisely the original ones.
+
+The resulting object maps $\mathcal G:\mathcal A_\Lambda\to\mathfrak S_\Lambda$ and $\mathcal E:\mathfrak S_\Lambda\to\mathcal A_\Lambda$ recover every marked holomorphic Einstein germ and satisfy
+
+$$
+ \mathcal E\circ\mathcal G=1_{\mathcal A_\Lambda},\qquad
+ \mathcal G\circ\mathcal E\simeq1_{\mathfrak S_\Lambda}.
+$$ {#eq:gg-main-generator-inverses}
+
+There are independently defined ordinary objects and actual representative maps
+$\Gamma:\mathcal A_\Lambda\to\mathfrak W_\Lambda$ and
+$d_{\mathrm{rec}}:\mathfrak W_\Lambda\to\mathcal A_\Lambda$ with
+
+$$
+ d_{\mathrm{rec}}\circ\Gamma=1_{\mathcal A_\Lambda},\qquad \Gamma\circ d_{\mathrm{rec}}\simeq1_{\mathfrak W_\Lambda}.
+$$ {#eq:gg-main-ordinary-inverses}
+
+Consequently $\mathcal G\circ d_{\mathrm{rec}}:\mathfrak W_\Lambda\to\mathfrak S_\Lambda$ and $\Gamma\circ\mathcal E:\mathfrak S_\Lambda\to\mathfrak W_\Lambda$ have both inverse object comparisons. At the physical-arrow level, Theorem 8.3 equips the original records with the short point/full-spin-frame instructions, their source-dependent composition and their inverses. With precisely those arrows, the correspondences are bijective on physical spin-isometry Hom sets.
+
+All assertions hold for both independent chiralities, all algebraic Weyl types and numerical $\Lambda=0$, with common domains for the bounded holomorphic families and fixed finite diagrams of Definition 2.1. The original Lorentz-real coefficient condition and real $\Lambda$ produce exactly the Lorentz-real Einstein germs, with coupled reality and point/frame operations on the ordinary objects. No Weyl determinant or cosmological constant is inverted.
+
+The proof is completed in §8. Sections 3–6 establish the actual generator and its analytic estimates; §7 proves the ordinary counit on every independently admitted object.
+
+
+
+<div id="sec:gg-records"></div>
+
+## 3. Original classes and convergent record transport
+
+For $r\ge0$ put
+$W_r^+=\operatorname{Sym}^{r+4}S^*\otimes\operatorname{Sym}^rS'^*$ and
+$W_r^-=\operatorname{Sym}^rS^*\otimes\operatorname{Sym}^{r+4}S'^*$.
+The free records of an Einstein metric are formed from the spinors in [@eq:gg-weyl-spinor-readout]:
+
+$$
+ U_r^+=\operatorname{Sym}_{A_1\cdots A_{r+4}}
+       \operatorname{Sym}_{A'_1\cdots A'_r}
+       \nabla_{A_1A'_1}\cdots\nabla_{A_rA'_r}
+                     \Psi^+_{A_{r+1}\cdots A_{r+4}}\big|_o .
+$$ {#eq:gg-free-record-projection}
+
+The negative formula exchanges the spin factors and uses $\Psi^-$. Each symmetrization is an average. A subscript $a,j$ counts slots equal to one in the fixed component bases; it is not a coefficient of a generating polynomial.
+
+<div id="thm:gg-residue"></div>
+
+**Theorem 3.1.**
+
+The original analytic classes are equivalent to independent complete lists $U_r^\pm\in W_r^\pm$ satisfying, for some $C,R_0>0$,
+
+$$
+ \|U_r^\pm\|_{\mathrm{ev}}\le Cr!R_0^{-r},\qquad
+ \|U_r^+\|_{\mathrm{ev}}
+  =\sup_{|\xi|,|\pi|\le1}|U_r^+(\xi^{r+4},\pi^r)|.
+$$ {#eq:gg-original-factorial-bound}
+
+The analogous definition exchanges the spin factors for $U^-$. The exact encoders are
+
+$$
+ \begin{aligned}
+ F_2[U^+]&=\sum_{r,a,j}
+ \frac{U^+_{r;a,j}}{(r+4-a)!a!}
+ (w^0)^{r+4-a}(w^1)^a\zeta^{-j-1},\\
+ F_{-6}[U^-]&=\sum_{r,a,j}
+ \frac{U^-_{r;a,j}}{(r-a)!a!}
+ (w^0)^{r-a}(w^1)^a\zeta^{-j-1}.
+ \end{aligned}
+$$ {#eq:gg-original-encoders}
+
+In the first sum $0\le a\le r+4$, $0\le j\le r$; in the second $0\le a\le r$, $0\le j\le r+4$. The correspondence is on actual analytic quotients and has common smaller representatives and coboundaries for bounded holomorphic families.
+
+*Proof.* At fiber degree $n$, a weight-$m$ overlap has a Laurent expansion. The north coboundary removes powers $h\ge0$ and the south coboundary removes $h\le m-n$. Exactly
+
+$$
+ m-n+1\le h\le-1
+$$ {#eq:gg-surviving-laurent}
+
+remain. Thus the normal representative is
+$\sum_{n\ge\max(0,m+2)}\sum_{a=0}^n\sum_{j=0}^{n-m-2}
+c^{(m)}_{n,a,j}(w^0)^{n-a}(w^1)^a\zeta^{-j-1}$.
+The two tails have no common surviving monomial, proving uniqueness.
+
+Choose fixed nested circles on either side of $|\zeta|=1$ and a smaller fiber polydisk contained in both chart domains. Fiber Taylor estimates and the Laurent Cauchy formula bound all surviving coefficients by $AB^n$ for finite $A,B$. Conversely such a bound makes the normal series converge on a smaller annular fiber neighborhood, since $a,j$ have only polynomially many choices and $|\zeta|^{-j-1}$ grows at most exponentially in $n$. The removed tails are Cauchy integrals on the two fixed circles. Their geometric denominators are bounded by the buffers; after the south substitution $w=\zeta v$, its additional degree factors are at most exponential. A single fiber restriction therefore makes both tails actual holomorphic cochains. This proves the analytic quotient assertion.
+
+The flat contour fields use the counterclockwise Laurent contour in the north frame, with the ordered overlap $F_{NS}=F$ and Čech differential fixed by [@eq:gg-original-cech-orientation]. In this trivialization its differential is $\mathrm d\zeta=-\pi_{A'}\,\mathrm d\pi^{A'}$. They are
+
+$$
+ \begin{aligned}
+ C^+_{ABCD}(x)
+ &=\frac1{2\pi i}\oint
+   \partial_{w^A}\partial_{w^B}
+   \partial_{w^C}\partial_{w^D}F_2(x\pi,\zeta)\,
+   \mathrm d\zeta,\\
+ C^-_{A'B'C'D'}(x)
+ &=\frac1{2\pi i}\oint
+   \pi_{A'}\pi_{B'}\pi_{C'}\pi_{D'}
+   F_{-6}(x\pi,\zeta)\,\mathrm d\zeta .
+ \end{aligned}
+$$ {#eq:gg-flat-contours}
+
+Symmetry and an alternating spin contraction give their flat massless equations. Differentiating at $x=0$ shows that the component multipliers are exactly $(r+4-a)!a!$ and $(r-a)!a!$, respectively: the primed slots contribute $\zeta^j$ and the residue picks $\zeta^{-j-1}$. This proves the formulas and their inverses.
+
+For completeness, put the auxiliary Hermitian norms inherited from the full spin tensor powers on symmetric tensors. Coherent evaluation gives
+
+$$
+ \|T\|_{\mathrm{ev}}\le\|T\|
+ \le\sqrt{(p+1)(q+1)}\,\|T\|_{\mathrm{ev}},
+ \qquad
+ T\in\operatorname{Sym}^pS^*\otimes\operatorname{Sym}^qS'^* .
+$$ {#eq:gg-coherent-norm}
+
+Indeed the squared coherent integral on the two unit spheres is
+$\|T\|^2/((p+1)(q+1))$, by phase orthogonality and
+$\int_0^1 t^j(1-t)^{p-j}\mathrm dt=j!(p-j)!/(p+1)!$.
+The reverse inequality follows by the supremum and the forward one by Cauchy–Schwarz. The factor for $W_r^\pm$ is at most $r+3$.
+
+Consequently the factorial bound implies exponential bounds for both normal coefficient arrays: use
+$r!/((r-a)!a!)=\binom ra$ and
+$r!/((r+4-a)!a!)=\binom{r+4}a/((r+1)\cdots(r+4))$.
+Polynomial factors are absorbed by one further exponential. Conversely an exponential coefficient bound and the exact extraction multipliers bound every component by a constant times $(r+4)!B^r$. The full tensor norm is at most $2^{r+2}$ times the largest component. Since $(r+4)!/r!$ is polynomial, another fixed radius loss gives the stated $r!$ bound. All bounds are uniform on the fixed input buffers. Every splitting is a bounded complex-linear operation there, so finite-dimensional holomorphic dependence is preserved. ∎
+
+The contour fields encode the entire free list at the mark. They are not identified away from that mark with the nonlinear Weyl fields of the final metric.
+
+<div id="lem:gg-completion"></div>
+
+**Lemma 3.2.**
+
+There is a unique polynomial ordered completion $\mathcal C_r(U,\Lambda)$ of the two free lists into Einstein curvature jets. The original infinitesimal displacement and spin-frame operations are polynomial derivations $\mathsf H_a,\mathsf V_B$, with
+
+$$
+ \begin{aligned}
+ [\mathsf H_a,\mathsf H_b]&=-\mathsf V_{R_U(a,b)},&
+ [\mathsf V_B,\mathsf H_a]&=\mathsf H_{Ba},&
+ [\mathsf V_B,\mathsf V_C]&=\mathsf V_{[B,C]},\\
+ \mathsf H_aU_r&=i_aU_{r+1}+Q_{r,a}(U,\Lambda),&
+ \mathsf H_a\Lambda&=\mathsf V_B\Lambda=0,&
+ \mathsf H_a\mathcal C_r&=\mathcal C_{r+1}(a;\,\cdot).
+ \end{aligned}
+$$ {#eq:gg-cartan-derivations}
+
+Here $Q_0=0$, $Q_r$ uses only $U_0,\ldots,U_{r-1},\Lambda$, and
+
+$$
+ R_U(a,b)c=W_U(a,b)c+
+       \frac{\Lambda}{3}\{a\,\eta(b,c)-b\,\eta(a,c)\}.
+$$ {#eq:gg-algebraic-curvature}
+
+Here $\eta(W_U(a,b)c,d)$ is the tensor in [@eq:gg-weyl-spinor-decomposition] with $\Psi^\pm=U_0^\pm$. This specifies the inverse component conversion in every curvature action. The Bianchi identities and frame-equivariance identities hold polynomially on the independent complex lists, with the curvature action on every derivative slot retained. Complete free records and $\Lambda$ determine the formal normal metric uniquely.
+
+*Proof.* The complete proof is given in Appendix A. The highest difference of two ordered completions has commuting derivative slots and zero Bianchi contractions. The two-spinor identity makes it separately symmetric, hence precisely the two free tensors of that order. Adding their projection to the linear compatibility system makes its constant matrix injective. Finite analytic Einstein witnesses for every real finite prefix prove consistency. A fixed constant left inverse therefore gives polynomial coefficients; maximal-real-form polynomial continuation supplies independent complex inputs.
+
+Every asserted derivation identity uses finitely many components and holds on those witnessed prefixes as actual covariant differentiation and frame change. It is consequently a polynomial identity. The necessary finite prefix includes every derivative appearing in that identity; no infinite analytic witness is used in this argument. The radial Jacobi recurrence fixes the formal normal metric from the completed ordered curvature. Appendix A supplies the witness construction, all normal-form hypotheses and the formal uniqueness argument. ∎
+
+The infinitesimal frame convention is the readout at the changed frame: $\mathsf V_B$ inserts $B$ in each tensor argument. Its finite version is the pullback of the tensor by the specified spin element. The first Bianchi identity and its differential form imply the Lie–Rinehart Jacobi identity, including the curvature-dependent coefficients in the first bracket.
+
+Let $X_0=(U_0^+,U_0^-,\Lambda)$ and $X_r=(U_r^+,U_r^-)$ for $r>0$, and define
+
+$$
+ \|X\|_R=\sum_{r\ge0}\frac{R^r}{r!}\|X_r\|.
+$$ {#eq:gg-record-banach-norm}
+
+The original bounds give $\|X\|_{R_0/2}\le16C+|\Lambda|$ by the preceding coherent estimate. This is an initial radius conversion, not a norm change repeated at each nonlinear derivative.
+
+<div id="thm:gg-record-flows"></div>
+
+**Theorem 3.3.**
+
+On every bounded set of this analytic-record space, the actual $\mathsf H_a$ have normally convergent flows into spaces of smaller positive radius, for bounded $a$ and small common complex time. Inverses, derivatives and every specified finite word have common positive domains. Finite-dimensional holomorphic parameter dependence and bounded full-spin actions are preserved. For the coefficient involution $\mathfrak c$ of §8.4, the flows satisfy $\mathfrak c\Phi_a^t(X)=\Phi_{\mathfrak ca}^{\bar t}(\mathfrak cX)$. Its fixed set is preserved for $\mathfrak ca=a$ and real $t$, and by full Lorentz-real Spin actions.
+
+*Proof.* We give the coefficient estimate and scalar analytic argument; Appendix B proves the estimate for the original derivation, including its linear-transfer and insertion constants. With $X_0=(U_0^+,U_0^-,\Lambda)$ and $X_j=(U_j^+,U_j^-)$ for $j>0$, write the recursively ordered expansion
+
+$$
+ Q_{r,a}(X)=\sum_{d\ge2}\ 
+ \sum_{\substack{\mathbf j=(j_1,\ldots,j_d)\in\mathbb N_0^d\\
+                 |\mathbf j|=r+3-2d}}
+ B^{[d]}_{r,\mathbf j}(a;X_{j_1},\ldots,X_{j_d}).
+$$ {#eq:gg-ordered-polynomial-expansion}
+
+The input positions retain their derivative orders and chiralities; a scalar $\Lambda$ position is a component of $X_0$. There is no $1/d!$ symmetrization. The coefficients are the ordered multilinear maps of Appendix B.2, grouped using the fixed auxiliary direct-sum Hermitian norms. There are at most $3^d$ input-type choices and two output chiralities. Hence the passage from a typed coefficient bound to a grouped bound costs at most $2\cdot3^d$; replacing its constants $a,b$ by $18a,3b$ absorbs this once, since $2\cdot3^d a b^{d-2}=18a(3b)^{d-2}$. For $\|a\|\le1$ the grouped coefficients therefore satisfy, for structural $a_0,b_0>0$,
+
+$$
+ \|B^{[d]}_{r,\mathbf j}\|
+ \le a_0b_0^{d-2}r\,\frac{r!}{\prod_i j_i!},
+ \qquad
+ |\mathbf j|=r+3-2d,\qquad d\ge2.
+$$ {#eq:gg-actual-coefficient-budget}
+
+Appendix B computes the normalized one-derivative recursion for $\mathsf H_a$, uses one contraction mass for all operations, and retains the inverse-order gain of each nonlinear insertion. Its transfer costs within the recurrence for $Q$ are
+
+$$
+ c_r=\frac{r(r+4)}{r(r+4)-1},
+ \qquad
+ \prod_{r\ge1}c_r\le e^{11/18}.
+$$ {#eq:gg-linear-transfer-product}
+
+This accumulated cost is already included in the displayed coefficient budget; the separate leading term is a tensor contraction, so $\|i_aU_{r+1}\|\le\|a\|\,\|U_{r+1}\|$.
+
+For $\|a\|\le A$ and initial bound $M$, divide the record components by $r!$. Their formal flow series are dominated by the nonnegative scalar recursion
+
+$$
+ \partial_\tau F
+  =A\left(F_z+z\frac{\mathrm d}{\mathrm dz}V(z,F)\right),
+ \qquad
+ V(z,w)=\frac{a_0zw^2}{1-b_0z^2w},
+ \qquad F(0,z)=\frac M{1-z/R}.
+$$ {#eq:gg-flow-majorant}
+
+The derivative of $V(z,F)$ is total. To verify the majorization, write $X_r(\tau)=\sum_{k\ge0}X_{r,k}\tau^k$ and $F(\tau,z)=\sum_{k,r\ge0}f_{k,r}\tau^kz^r$. The initial norm bound gives $\|X_{r,0}\|/r!\le f_{0,r}=MR^{-r}$. Apply norms to each time coefficient. If the coefficients through order $k$ are dominated, the linear shift is bounded by the corresponding coefficient of $AF_z$, and the ordered degree-$d$ part is bounded by
+
+$$
+ A a_0b_0^{d-2}r
+ [\tau^k]\!
+ \sum_{j_1+\cdots+j_d=r+3-2d}
+       \prod_{i=1}^d[ z^{j_i}]F(\tau,z)
+ = [\tau^kz^r]\,A z\frac{\mathrm d}{\mathrm dz}
+       \bigl(a_0b_0^{d-2}z^{2d-3}F^d\bigr).
+$$ {#eq:gg-flow-coefficient-majorization}
+
+For fixed $r$, this is a finite sum over $d$ and the ordered input list. The coefficient equation $(k+1)X_{r,k+1}=[\tau^k](\mathsf H_aX)_r$ and the same scalar equation for $f_{k+1,r}$ therefore prove $\|X_{r,k+1}\|/r!\le f_{k+1,r}$. All coefficients of the scalar recursion are nonnegative, so induction in $k$, simultaneously for every $r$, proves formal coefficientwise domination. This argument precedes any assertion of convergence.
+
+Let $W_*=4M+1$ and choose $0<\rho\le R/8$ with $16b_0\rho^2W_*\le1$. The finite characteristic equations are
+
+$$
+ \dot z=-A(1+zV_w),\qquad
+ \dot w=AzV_z,\qquad
+ z(0)=\zeta,\quad w(0)=M/(1-\zeta/R).
+$$ {#eq:gg-majorant-characteristics}
+
+On $|z|\le2\rho$, $|w|\le W_*$, the denominator is bounded away from zero and
+$|zV_w|\le16a_0\rho^2W_*$,
+$|zV_z|\le5a_0\rho W_*^2$.
+In the scaled coordinates $(z/\rho,w/W_*)$, the vector field and its first derivatives are bounded. The ordinary integral equation is a contraction on a small common time disk, with displacement less than $1/8$. For $|\zeta|\le\rho$ its initial scaled second coordinate is less than $2/7$, so trajectories remain in the displayed domain.
+
+On $|\zeta|=3\rho/4$, the displacement bound
+$|z(\tau,\zeta)-\zeta|\le\rho/8$ and Rouché's theorem give a unique simple inverse for $|z_*|<\rho/2$. Thus
+$F(\tau,z_*)=w(\tau,\zeta(\tau,z_*))$ is jointly holomorphic and bounded by $W_*$. Its Taylor series is the nonnegative formal recursion just used. The proved coefficientwise domination now makes the double record series converge normally on strict interior time disks and record radii, with termwise derivatives.
+
+Each coefficient is a polynomial in finitely many initial records. The same domination gives holomorphic maps into the smaller-radius sequence space; alternatively any supplied finite-dimensional holomorphic family is jointly holomorphic by uniform convergence. Formal reversal and composition identities become analytic identities. A bounded spin flow acts on $2r+4$ slots with bound $\exp(c(r+2)|tB|)$, absorbed by one strict radius decrease. For a fixed finite word choose its successive output bounds and radii as the next inputs. A finite number of positive restrictions, also for the inverse word, has a positive minimum. The polynomial tensor identities give $\mathfrak c(\mathsf H_aX)=\mathsf H_{\mathfrak ca}(\mathfrak cX)$. Conjugating the convergent time series and using uniqueness of the initialized flow proves the stated equivariance. Real directions, real times and Lorentz-real Spin elements therefore preserve the fixed set. ∎
+
+
+
+<div id="sec:gg-cartan"></div>
+
+## 4. Cartan geometry and its intrinsic ray description
+
+The record-flow theorem gives a finite construction of the geometry needed to prove convergence of the generating law. It also supplies physical point and spin operations before any ordinary counit is used.
+
+<div id="prop:gg-finite-cartan"></div>
+
+**Proposition 4.1.**
+
+The original analytic record and $\Lambda$ determine a holomorphic Einstein four-germ by record flows and finite matrix ODEs. Its entire free record is the original one. For bounded holomorphic input families, its normal coordinates and radial spin frames have common positive domains. The construction is unique up to the prescribed marked isometry.
+
+*Proof.* Choose a constant basis $e_1,\ldots,e_{10}$ of
+$V\oplus\mathfrak{so}(V,\eta)$, write $D_i=\rho(e_i)$ for the derivations of Lemma 3.2 and
+$[e_i,e_j]=c_{ij}^{\,k}(U)e_k$ for their Lie–Rinehart coefficients. These coefficients depend only on $U_0,\Lambda$ and fixed representation matrices.
+
+Successively set
+$U_n(x_1,\ldots,x_n)=\Phi_n^{x_n}(U_{n-1})$.
+Theorem 3.3 gives these maps on common smaller neighborhoods, including derivatives and parameters. Construct columns $\alpha_i$ by the finite ODEs
+
+$$
+ \partial_n\alpha_i=-C_n(U_n)\alpha_i\quad(i<n),
+ \qquad \alpha_i|_{x_n=0}=(\alpha_{n-1})_i,
+ \qquad \alpha_n=e_n,\qquad
+ (C_n)^k{}_l=c_{nl}^{\,k}.
+$$ {#eq:gg-finite-matrix-transport}
+
+We verify the anchor equation
+$\partial_i f(U_n)=\alpha_i^k(D_kf)(U_n)$
+on every cylinder polynomial and the zero-defect equations
+
+$$
+ F_{ij}:=\partial_i\alpha_j-\partial_j\alpha_i
+              +c(U_n)(\alpha_i,\alpha_j)=0.
+$$ {#eq:gg-coframe-defect}
+
+For the anchor residual $Z_i(f)$, the defining flow and matrix equation give
+$\partial_nZ_i(f)=Z_i(D_nf)$, with zero initial value. Induction makes every $x_n$ Taylor coefficient zero. Holomorphy gives $Z_i(f)=0$. The mixed defects $F_{ni}$ vanish directly. For $i,j<n$, differentiate the defect and use the anchor equation. The terms outside $-C_nF_{ij}$ are the coefficient Jacobi expression
+
+$$
+ D_nc_{lm}^{\,k}+D_lc_{mn}^{\,k}+D_mc_{nl}^{\,k}
+ +c_{lm}^{\,q}c_{nq}^{\,k}
+ +c_{mn}^{\,q}c_{lq}^{\,k}
+ +c_{nl}^{\,q}c_{mq}^{\,k}=0.
+$$ {#eq:gg-coefficient-jacobi}
+
+Thus $\partial_nF_{ij}=-C_nF_{ij}$ with zero initial data. Ordinary finite linear uniqueness completes the induction.
+
+At $n=10$ the coframe matrix $\alpha=(\alpha_i)$ is the identity at the origin, regardless of the rank of the record orbit. It remains invertible after a common shrink. Split it as $(\theta,\omega)$. The zero-defect equations say
+
+$$
+ \mathrm d\theta+\omega\wedge\theta=0,\qquad
+ \mathrm d\omega+\omega\wedge\omega
+       =\tfrac12R_U(\theta,\theta),\qquad
+ \mathrm df(U)=\rho(\theta,\omega)f(U).
+$$ {#eq:gg-realized-cartan}
+
+The involutive rank-six vertical distribution $\ker\theta$ has a local four-dimensional holomorphic quotient. Equivalently, take a transverse four-slice and extend it by the six finite vertical flows; their derivative is a unit at the mark. The identity
+$\mathcal L_{Z_B}\theta=-B\theta$
+makes $\eta(\theta,\theta)$ basic, hence a nondegenerate quotient metric $g$. The first equation identifies $\omega$ with its Levi–Civita connection. The second identifies its curvature with $R_U$, whose Ricci trace is $\Lambda\eta$. The anchor equation gives every ordered covariant curvature derivative, including its derivative-slot action, and hence the entire original free record.
+
+All inverse matrices are units at the fixed mark. On common smaller polydisks they have norm at most twice their marked inverse bound. The record-flow bounds, finite linear ODE estimates and finite inverse theorem therefore give uniform coordinate and metric/inverse-metric bounds. Apply the finite geodesic endpoint ODE, its inverse, and radial spin parallel transport to obtain common normal coordinates and spin frames, with $g(0)=\eta$ and $\partial g(0)=0$.
+
+For uniqueness, equal free lists give equal completed ordered curvature jets. In marked exponential coordinates and parallel frames, the curvature along each radial geodesic has identical Taylor series. The radial Jacobi equation
+$J_v''+R(J_v,x)x=0$, $J_v(0)=0$, $J_v'(0)=v$
+then gives identical endpoint Jacobi fields, and
+$g_x(v,w)=\eta(J_v(1),J_w(1))$.
+An isometry with the prescribed point and tangent map must intertwine these exponential maps, proving uniqueness. This argument works formally over parameter coefficient rings as well. ∎
+
+For any given analytic Einstein metric its free records satisfy the original factorial bound. Evaluate its Weyl spinors along the geodesics with initial velocities $\xi\otimes\pi$, transporting the frame. The unit spinor pairs are compact, so finite holomorphic ODE estimates give one affine disk and curvature bound. Cauchy's formula gives exactly the bound of Theorem 3.1. Thus Proposition 4.1 covers all marked analytic Einstein germs.
+
+In the selected Einstein scale the canonical rank-six metric and connection are
+
+$$
+ \begin{aligned}
+ H((\sigma,\mu,\rho),(\sigma',\mu',\rho'))
+   &=\sigma\rho'+\rho\sigma'+g(\mu,\mu'),\\
+ D_v(\sigma,\mu,\rho)
+   &=\bigl(v\sigma-g(v,\mu),\
+      \nabla_v\mu+((\Lambda/6)\sigma+\rho)v,\
+      v\rho-(\Lambda/6)g(v,\mu)\bigr),\\
+ X&=(0,0,1),\qquad I=(1,0,-\Lambda/6).
+ \end{aligned}
+$$ {#eq:gg-canonical-tractor}
+
+In particular $DI=0$, $H(I,I)=-\Lambda/3$,
+$H(X,X)=0$, $H(I,X)=1$, and the Gram determinant of $(I,X)$ is $-1$. These formulas identify the normal standard-tractor connection: for a general auxiliary scale its middle coefficient is the Schouten tensor, which here is $(\Lambda/6)g$, and its curvature has Weyl middle block and zero Cotton block. It is not an arbitrary connection preserving a vector.
+
+The null-geodesic contact space and its complete family of normal sky quadrics are the classical correspondence of [@LeBrun1983, III.1–III.3]. Propositions 4.2–4.3 give its local representatives together with the calibrated rank-six bundle data used here.
+
+<div id="prop:gg-ray-construction"></div>
+
+**Proposition 4.2.**
+
+The metric of Proposition 4.1 has a holomorphic contact ray neighborhood of its whole compact sky, its canonical descended rank-six bundle and the affine line of $X$ along every ray. They form an object of $\mathfrak S_\Lambda$. No chirality or algebraic-type restriction is required.
+
+*Proof.* On its frame bundle fix a nonzero null $k$. For
+$\alpha_k=\eta(k,\theta)$, the torsion equation gives
+
+$$
+ \begin{aligned}
+ \alpha_k(X_v+Z_B)&=\eta(k,v),\\
+ \mathrm d\alpha_k(X_v+Z_B,X_w+Z_C)
+       &=\eta(Bk,w)-\eta(Ck,v).
+ \end{aligned}
+$$ {#eq:gg-ray-levi-pairing}
+
+The $\mathfrak{so}(V)$ orbit tangent of $k$ is $k^\perp$: for $w\perp k$ choose $\ell$ with $\eta(\ell,k)=1$ and use
+$Bv=w\eta(\ell,v)-\ell\eta(w,v)$.
+Thus the characteristic kernel of this pairing on $\ker\alpha_k$ is
+
+$$
+ \mathcal K_k=\mathbb CX_k
+       \oplus\{Z_B:Bk\in\mathbb Ck\}.
+$$ {#eq:gg-ray-characteristic}
+
+It has dimension five. The vertical stabilizer is a Lie algebra, and its bracket with $X_k$ is a multiple of $X_k$; hence it is involutive. The quotient hyperplane has nondegenerate Levi form, proving contactness. Curvature has not been restricted in this calculation.
+
+For a whole-sky neighborhood use the projective null-direction bundle over a small four-neighborhood. Choose finitely many compact direction cores with larger angular parents. On each parent choose a fixed coordinate covector $b$ nonzero on its directions and normalize the initial affine tangent by $b(k)=1$. Holomorphic geodesic flows and their direction lifts exist on one buffered time disc $|t|<T$. After shrinking these parents, their spacetime curves satisfy $|(b\circ\gamma)'(t)-1|\le1/2$ there. The hit on $b(x)=0$ is therefore unique and holomorphic, with holomorphic inverse flow coordinates. Denote the transverse hit map, including the direction at that hit, by $\chi$.
+
+We also reserve a connected-fiber margin before forming the quotient. Fix the derivative bounds on larger spatial and angular parents first. With $u=b(x)$, write the spacetime projection of each relevant leaf as $G_z(u)$, where $z$ is its transverse hit. On a whole convex parent $u$-disc the finite ODE bounds give $|G_z'|\ge a>0$, $|G_z''|\le C$ and $|G_z|\le R_p$. Choose that parent small enough that $R_pC<a^2/2$. The real Hessian of $|G_z|^2$ is then bounded below by $2(a^2-R_pC)$ times the Euclidean form. Choose an inner spatial ball $B_r$ with $\|b\|r$ below half the free-coordinate parent radius and $4\|b\|r<T/2$. Every point over $B_r$ in a direction core has a hit in the retained transverse parent, by the same inverse-flow bound. Thus each graph sublevel $|G_z(u)|<r$ is convex and connected on its whole parent. In a normal spin frame the connection is $O(|x|)$, so the direction change along its $O(r)$ coordinate segments is $O(r^2)$; choose $r$ so this is smaller than every angular buffer. A leaf starting in a core cannot leave this graph while remaining over $B_r$: its hit is constant, its free coordinate stays strictly inside its parent, and its direction stays inside the larger angular parent. Uniqueness of the flow then keeps every continuation on that graph. Conversely the convex free-coordinate segment joins any two graph points over $B_r$.
+
+Let $F_{\rm in}$ be the projective null-direction bundle over $B_r$, and let $R_{\rm short}$ mean membership in the same connected characteristic leaf in $F_{\rm in}$. The preceding argument identifies each such leaf with one whole graph sublevel. For two related points whose initial direction is in a fixed core, let $t$ be their connecting affine time in its parent. Integration along the complex time segment gives
+
+$$
+ |t|\le2|b(\gamma(t)-\gamma(0))|
+       \le4\|b\|r<T/2.
+$$ {#eq:gg-short-ray-time-buffer}
+
+Consequently $R_{\rm short}$ is relatively closed in $F_{\rm in}\times F_{\rm in}$. Indeed, for a convergent sequence of related pairs choose a subsequence whose first directions lie in one fixed core. Their connecting times have a convergent subsequence in the compact disc $|t|\le T/2$, and the ODE depends continuously on the initial point and time there. The buffered hit maps extend at both limits; from $\chi(p_n)=\chi(q_n)$ we obtain $\chi(p)=\chi(q)$. Their common graph sublevel is connected, so the limiting pair is again related. This asserts relative closedness of the relation, not closedness of an open inner plaque in a larger parent.
+
+The quotient projection is open, since saturation of an open set is the union of its images under local holomorphic leaf flows. For an unrelated pair, relative closedness supplies a product neighborhood disjoint from $R_{\rm short}$; its two open quotient images are disjoint. The quotient is Hausdorff. The hit maps are its holomorphic submersion charts near the central sky, and their transition maps are the actual hits on the next transversal along the same short leaf. Uniqueness gives inverse maps and exact cocycles, without a further long-ray identification. All choices use finitely many ODE bounds, unit hit derivatives and angular buffers; they are uniform on the conditioned families used in §6.1. This is the one-dimensional characteristic-flow version of the graph and no-exit construction in §E.6.
+
+Directions at one point form $Q=\mathbb P(S)\times\mathbb P(S')$ and embed in the quotient. Its tangent is killed by $\alpha_k$, so it is Legendrian; the contact line is the dual tautological null line $\mathcal O(1,1)$. The contact normal sequence has kernel
+$\Omega_Q^1\otimes\mathcal O(1,1)=\mathcal O(-1,1)\oplus\mathcal O(1,-1)$
+and quotient $\mathcal O(1,1)$. The kernel has zero cohomology in every degree. Hence $H^0(N_{Q/Z})=H^0(\mathcal O(1,1))$ has dimension four and $H^1(N_{Q/Z})=0$. The compact-support completeness of Lemma D.1 gives a universal smooth four-dimensional embedded family. The rulings persist: each ruling line has trivial normal line in $Q$ and vanishing first obstruction, and the two resulting fibrations identify nearby surfaces with $\mathbb P^1\times\mathbb P^1$. Their contact line retains bidegree $(1,1)$. On each surface the contact restriction is a section of $\Omega_Q^1\otimes\mathcal O(1,1)$, whose $H^0$ is zero, so all these surfaces are Legendrian. The point-family derivative is $v\mapsto[k\mapsto g(k,v)]$, an isomorphism onto that four-dimensional section space. The finite inverse theorem therefore identifies it with the complete family.
+
+Parallel transport of the canonical bundle along the same short ray segments gives holomorphic rank-six transitions and exact cocycles. Evaluation at the point trivializes it on each sky. In its ray-parallel trivialization,
+$D_k^2X=0$ for an affinely parametrized null geodesic, directly from the displayed canonical connection. Thus $X$ traces an affine line whose translation is the tautological null line, restricting to $\mathcal O(-1,-1)$. The selected $I$ is its same descended parallel section. The canonical curvature gives both normality conditions. ∎
+
+<div id="prop:gg-intrinsic-recognition"></div>
+
+**Proposition 4.3.**
+
+Every independently supplied object of $\mathfrak S_\Lambda$ is the canonical ray geometry of its recovered analytic Einstein metric. The identification retains the actual selected section and the full spin mark, and is fully faithful.
+
+*Proof.* First reconstruct the bundle and connection. Proper base change in the form for a holomorphic bundle on a proper compact-fiber family gives locally free $p_*q^*\mathcal V$ and the evaluation isomorphism near the central sky [@Grauert1960, §7, Sätze 3, 5–6; @Grauert1963]. The base is a smooth germ, the incidence is proper and smooth, and the pulled-back bundle is coherent and flat over that base. Here the central bundle is $\mathcal O_Q^{\,6}$ and $H^j(Q,\mathcal O_Q)=0$ for $j>0$. Upper semicontinuity makes these higher groups vanish nearby; the Euler characteristic is six, so $h^0=6$. Evaluation is an isomorphism on the compact central fiber and therefore on a common nearby family. This verifies all required hypotheses. For a finite local Artin extension, factor it into finitely many small extensions $0\to J\to A'\to A\to0$ with $\mathfrak m_{A'}J=0$. At each step the kernel is $J\otimes_{\mathbb C}\mathcal O_Q^{\,6}$; its $H^1$ vanishes, so the six sections lift and their basis evaluation remains a unit. Finite induction gives the assertion for the original extension.
+
+The affine torsor on a sky has translation $\mathcal O(-1,-1)$, whose $H^0$ and $H^1$ both vanish. It has exactly one section. Its image in the sky-trivial bundle is constant on the compact sky, defining $X\in\mathcal T$. Analytic dependence can also be seen without a torsor base-change assertion: in an evaluation frame the affine-membership equations are linear, their homogeneous kernels have zero intersection, and finitely many rows have rank six at the central sky. Solve these unit rows; fiberwise uniqueness verifies all the remaining equations. This works over finite parameter algebras.
+
+For the inverse transport, the point-family tangent is $H^0(Q,\mathcal O(1,1))$. At a sky point, the projected ray line is the kernel of its first-jet evaluation; a section with zero value and first derivative is the product of the two linear factors vanishing at that point. These kernels form $\mathcal O(-1,-1)$ and give the complete Segre null quadric. In an evaluation frame the given $q$-constant partial connection, divided by this tautological ray direction, has coefficients in
+$H^0(Q,\operatorname{End}\mathcal T\otimes\mathcal O(1,1))$.
+Each is a unique linear function of the tangent direction. It consequently defines one connection $D$ on $\mathcal T$, with the usual Leibniz rule. Its $q$-parallel transport is the supplied one. The descended $H,I$ satisfy $DH=DI=0$ since their derivatives vanish in every null direction.
+
+Put $g(v,w)=H(\theta(v),\theta(w))$ and project $D$ to $W_{\mathrm{scr}}=(I,X)^\perp$. The nondegenerate Gram matrix of $I,X$ makes this projection a holomorphic algebraic operation, even at $\Lambda=0$. Pairing derivatives with $I,X$ shows
+
+$$
+ D_v\theta(w)
+  =\theta(\nabla_vw)-g(v,w)I
+                         -(\Lambda/3)g(v,w)X.
+$$ {#eq:gg-recognition-connection}
+
+The projected connection, defined by $\theta(\nabla_vw)=\operatorname{pr}_{W_{\mathrm{scr}}}D_v\theta(w)$, is metric. Since $H$ and the scale plane are nondegenerate, so are $H|_{W_{\mathrm{scr}}}$ and $g$. Antisymmetrizing [@eq:gg-recognition-connection] gives the correctly typed torsion identity
+
+$$
+ \theta\bigl(T^\nabla(v,w)\bigr)
+ =D_v\theta(w)-D_w\theta(v)-\theta([v,w])
+ =F^D(v,w)X.
+$$ {#eq:gg-recognition-torsion-type}
+
+It vanishes by regular-normality, so $\nabla$ is Levi–Civita. Alternating two derivatives of [@eq:gg-recognition-connection] and projecting to $W_{\mathrm{scr}}$ gives the ambient middle curvature of Definition 2.2:
+
+$$
+ R^g(v,w)u-\frac{\Lambda}{3}
+                 \{g(w,u)v-g(v,u)w\}.
+$$ {#eq:gg-recognition-curvature}
+
+Taking the trace of $v\mapsto\mathcal R_{\mathrm{mid}}(v,w)u$ in dimension four gives $\operatorname{Ric}_{\mathrm{mid}}=\operatorname{Ric}(g)-\Lambda g$. Its vanishing is exactly $\operatorname{Ric}(g)=\Lambda g$. In the basis $X$, $I+(\Lambda/6)X$ and $W_{\mathrm{scr}}$ the connection is the canonical one above.
+
+Under the given $q$-parallel identification, $X$ stays in its prescribed affine line. Its tangent is the corresponding null direction. Differentiating once more in an affine parameter and using the connection formula proves that the projected ray is the null geodesic of $g$. The contact structure is the canonical Hilbert contact structure as well. Both contain the tangent planes of all skies through a ray. The planes from two distinct sufficiently close points span the four-dimensional contact plane: their Jacobi-field pairing has leading term $(t_2-t_1)\eta_{\mathrm{screen}}$, which is invertible for small nonzero separation. Hence the two contact hyperplanes agree. The supplied ray bundle and affine line are identified by their same null transport, not by replacement with another connection.
+
+An enriched comparison induces the recovered isometry. Conversely an isometry transports its null rays, canonical bundle, $I$ and affine line. There is no further bundle ambiguity: $I,X$ and the four solder vectors span rank six with nonzero Gram determinant. The initial spin lift is retained separately, including its central kernel. This proves full faithfulness. ∎
+
+Section 5 defines the source gluing law; §6 uses the Cartan construction above to prove its common convergence.
+
+
+
+<div id="sec:gg-generation"></div>
+
+## 5. Holomorphic generation and the compatible optical correction
+
+We now define the source law. All its finite stages use the original classes and fixed holomorphic operations. Geometry recovered from those stages is derived data.
+
+We distinguish coordinate-algebra comparisons from point maps. The overlap operator is $E_{ij}:\mathcal O_j\to\mathcal O_i$, whereas the stored point map is $\Phi_{ij}:Z_j\to Z_i$, with
+
+$$
+ E_{ij}=(\Phi_{ij}^{-1})^*,\qquad
+ E_{ij}=\exp(\varepsilon X_{h_{ij}})
+       \ \Longleftrightarrow\
+ \Phi_{ij}=\operatorname{Fl}_{-\varepsilon X_{h_{ij}}}.
+$$ {#eq:gg-overlap-operator-point-convention}
+
+All logarithms, Baker–Campbell–Hausdorff products and Hamiltonian correction cochains below refer to $E$. All graph actions, contact multipliers and optical transitions refer to the actual point maps $\Phi$. Proposition 5.8 verifies the sign against the incidence metric.
+
+Start with homogeneous $Z=(\omega^A,\pi_{A'})$ on $T_0$ and its marked linear dual $W=(\kappa_A,\eta^{A'})$. The open incidence
+$W\cdot Z=0$, $\pi\ne0$, $\kappa\ne0$
+is an open part of $\mathbb PT^*T_0$, with contact form $W\,\mathrm dZ$. Its zero sky is $Q=\mathbb P(S^*)\times\mathbb P(S')$. The dual structure is fixed by the original linear marking.
+
+The original negative class determines, rather than accompanies, a dual positive class. If its coefficients in Theorem 3.1 are $c^-_{r,a,j}$, set
+
+$$
+ G(\eta,\varrho)=
+ \sum_{r\ge0}\sum_{a=0}^r\sum_{j=0}^{r+4}
+ (-1)^r\frac{(r-a)!a!}{(r+4-j)!j!}\,
+ c^-_{r,a,j}(\eta^0)^{r+4-j}(\eta^1)^j\varrho^{-a-1}.
+$$ {#eq:gg-derived-dual-class}
+
+The sign is fixed by the dual incidence $\eta=-\kappa x$. Both extraction multipliers are those in Theorem 3.1, so this preserves every $U_r^-$. This is a bijection of analytic germs: for
+$|c^-_{r,a,j}|\le M\delta^{-r}$ and $1/2\le|\varrho|\le2$, with $b=|\eta^0|+|\eta^1|$,
+
+$$
+ |G|\le\frac{Mb^4}{12(1-2b/\delta)^2},
+ \qquad 2b<\delta.
+$$ {#eq:gg-dual-convergence}
+
+Indeed
+$\sum_a(r-a)!a!|\varrho|^{-a-1}\le(r+1)r!2^{r+1}$,
+the remaining monomial sum is $b^{r+4}/(r+4)!$, and $r!/(r+4)!\le1/24$. Conversely the inverse coefficient multiplier is bounded by
+$(r+1)(r+2)(r+3)(r+4)2^r$.
+Fixed-radius Cauchy splitting gives actual cochains in both directions. The same inequalities prove the family statement.
+
+In the chart $\pi_{0'}=\kappa_0=1$, put
+$\zeta=\pi_{1'}$, $\varrho=\kappa_1$, $s=\eta^{1'}$.
+Then $\eta^{0'}=-w^0-\varrho w^1-\zeta s$ and
+
+$$
+ \alpha=\mathrm dw^0+\varrho\,\mathrm dw^1+s\,\mathrm d\zeta.
+$$ {#eq:gg-cotangent-contact-form}
+
+For a Hamiltonian $h$, the exact contact field is
+
+$$
+ \begin{aligned}
+ X_h={}&(h-\varrho h_\varrho-sh_s)\partial_{w^0}
+ +h_\varrho\partial_{w^1}+h_s\partial_\zeta\\
+ &+(\varrho h_{w^0}-h_{w^1})\partial_\varrho
+ +(s h_{w^0}-h_\zeta)\partial_s,\\
+ \{h,k\}&=X_hk-h_{w^0}k,\qquad [X_h,X_k]=X_{\{h,k\}}.
+ \end{aligned}
+$$ {#eq:gg-contact-hamiltonians}
+
+The two first-order lifts are
+
+$$
+ h_+=\partial_{w^1}F_2-\varrho\partial_{w^0}F_2,\qquad
+ h_-=-\partial_{\eta^{1'}}G+\zeta\partial_{\eta^{0'}}G.
+$$ {#eq:gg-two-contact-lifts}
+
+They start in normal degree three and are contact-line cochains on the product cover. The positive lift is the cotangent lift of the Hamiltonian deformation on $T_0$; the negative lift is its determined dual lift. Their cohomology classes have exactly the two original free lists, with the normalization verified in Appendix C. They have a mixed interaction: for
+$F=(w^0)^4/\zeta$ and $G=(\eta^{0'})^4/\varrho$ the bracket is
+$48(w^0)^2(\varrho w^1+\zeta s)(w^0+\varrho w^1+\zeta s)^2$, which is not zero.
+
+Use an amplitude $\varepsilon$, with prescribed complete record
+$\varepsilon U$ and numerical coefficient $\lambda(\varepsilon)=\varepsilon\Lambda$.
+At finite order work over $A_N=\mathbb C[\varepsilon]/(\varepsilon^{N+1})$; finite parameter algebras with the same flat residue can be used for the same induction. Products, logarithms and exponentials relative to the reference atlas are finite nilpotent operations. No logarithm of an arbitrary analytic contact map is asserted to converge.
+
+<div id="lem:gg-contact-extension"></div>
+
+<div id="lem:gg-contact-extension-cubic"></div>
+
+**Lemma 5.1.**
+
+Every finite source contact stage in the cubic Hamiltonian gauge $H_{ij}\in\mathcal I_Q^3\mathcal L$ admits a contact-cocycle lift in that same gauge to the next parameter order, with holomorphic spatial coefficients. Here $\mathcal I_Q$ is the ideal of the reference zero sky, and $H_{ij}$ is the nilpotent logarithm relative to the reference atlas. Closed contact corrections in each normal degree have the cohomology described in Appendix C. The prescribed source execution remains in this gauge at every stage.
+
+*Proof.* The flat normal bundle has
+$0\to K\to V\otimes\mathcal O_Q\to N\to0$,
+where $K=\mathcal O(-1,-1)$ and the contact line is $\mathcal L=K^*$. Degree-$n$ contact Hamiltonians form
+$\mathcal F_n=\mathcal L\otimes\operatorname{Sym}^nN^*$.
+For $n\ge1$ the normalized derivative $(1/n)\partial_k$ gives
+
+$$
+ 0\longrightarrow\mathcal F_n
+ \longrightarrow\mathcal L\otimes\operatorname{Sym}^nV^*
+ \longrightarrow\mathcal L^2\otimes\operatorname{Sym}^{n-1}V^*
+ \longrightarrow0 .
+$$ {#eq:gg-contact-normal-sequence}
+
+Both right-hand bundles have no higher cohomology, hence $H^2(\mathcal F_n)=0$. Appendix C gives a fixed explicit two-cocycle repair with norm at most $C_0(n+1)C_1^n$ on buffered charts. It therefore repairs an entire analytic normal series after one restriction.
+
+Lift the nilpotent contact logarithms by coefficient lifts within $\mathcal I_Q^3\mathcal L$. This is an invariant source gauge. In adapted coordinates $\alpha=dz+p\,dq$, with $\mathcal I_Q=(z,p)$, the Jacobi formula gives
+
+$$
+ \{\mathcal I_Q^a\mathcal L,\mathcal I_Q^b\mathcal L\}
+       \subset\mathcal I_Q^{a+b-1}\mathcal L,
+       \qquad a,b\ge1.
+$$ {#eq:gg-cubic-source-filtration}
+
+Tangential derivatives preserve normal order, normal derivatives lower it by at most one, and a term with two normal derivatives has a normal-coordinate factor. Thus cubic Hamiltonians are closed under the contact brackets and finite Baker–Campbell–Hausdorff operations. Reference substitutions preserve the ideal. The triple defect is consequently a cubic contact Hamiltonian two-cocycle with coefficients in the highest kernel $J$; associativity makes it closed because $\mathfrak mJ=0$. Its degree-preserving repair uses only $n\ge3$. Subtracting that repair gives the required exact cocycle, with literal inverse orientations and holomorphic coefficients.
+
+The initial source lifts displayed above are cubic. The zero-new-coefficient trial rule preserves this property. The optical correction has degree $n=m+1\ge3$, and its fixed representatives preserve that degree. Induction therefore proves the gauge assertion for the actual source execution. This statement concerns the source-correction representatives; the later stored normalizer is compared by its own deterministic metric-normalization argument. Only finitely many derivatives and the convergent fixed spatial splittings occur at each parameter order. ∎
+
+The cubic condition is stronger than fixing the sky and the point-map first jet. For example, $h=z^2$ has flow $(z,p,q)\mapsto(z/(1-tz),p/(1-tz)^2,q)$ for $\alpha=dz+p\,dq$. It has identity first point jets along the sky while its Hamiltonian is quadratic. The source gauge in the lemma is established by the preceding induction, rather than deduced from those point jets.
+
+The compatible optical correction is a further condition; it does not follow from this contact lemma alone. To state it we first construct its incidence and bundle from the maps.
+
+For contact graph coordinates put
+$q=(\varrho,\zeta)$,
+$u=w^0+\varrho w^1$,
+$p=(w^1,-s)$, so $\alpha=\mathrm du-p\,\mathrm dq$.
+A scalar $f(q)$ represents its Legendrian graph $j^1f$.
+For a contact map $\Phi$, let
+$\psi_{\Phi,f}(q)=\operatorname{pr}_q\Phi(j^1f(q))$
+and define its scalar graph action by
+$\mathscr A_\Phi(f)(\psi_{\Phi,f}(q))=\operatorname{pr}_u\Phi(j^1f(q))$.
+The direction projection is a unit at the reference and therefore invertible at each finite stage. These are exact actions under composition.
+
+Fix four direction points $(0,0),(1,0),(0,1),(1,1)$ and their line frames. Let $\mathfrak e$ be their four evaluations followed by the inverse evaluation matrix of $1,\varrho,\zeta,\varrho\zeta$. The flat scalar sky is
+$s_x=x^{00'}+\varrho x^{10'}+\zeta x^{01'}+\varrho\zeta x^{11'}$.
+
+<div id="prop:gg-finite-incidence"></div>
+
+**Proposition 5.2.**
+
+Every finite contact-cocycle stage has a unique scalar family satisfying
+$\mathscr A_{\Phi_{ij}}f_j=f_i$ and $\mathfrak e(f)=x$.
+It is a complete family of embedded polarized Legendrian quadrics over its finite algebra. Its conformal metric and actual ray derivatives are determined by this same family.
+
+*Proof.* Write $f_s=f+sv$ and
+$(Q_s,U_s,P_s)=\Phi(q,f_s(q),\mathrm df_s(q))$, with
+$F_s=\mathscr A_\Phi(f_s)$. At fixed old direction $q$, the contact identity
+$\Phi^*\alpha=c_\Phi\alpha$ gives
+$\delta U-P\,\delta Q=(c_\Phi\circ j^1f)v$, where $\delta=\partial_s|_{s=0}$.
+The image is Legendrian, so $U_s=F_s(Q_s)$ and
+$P_s=\mathrm dF_s(Q_s)$. Differentiating the first identity and subtracting
+$P\,\delta Q$ therefore gives
+$(\mathrm d\mathscr A_\Phi|_f(v))\circ\psi_{\Phi,f}
+=(c_\Phi\circ j^1f)v$. Consequently, at fixed new direction,
+
+$$
+ \mathrm d\mathscr A_\Phi|_f(v)
+       =\bigl((c_\Phi\circ j^1f)v\bigr)
+                         \circ\psi_{\Phi,f}^{-1}.
+$$ {#eq:gg-graph-linearization}
+
+The terms involving $\mathrm dv$ in $\delta Q$ and $\delta U$ cancel in
+this contact variation.
+
+Thus at the highest parameter degree the new graph residual is an $\mathcal O(1,1)$ one-cocycle, without a direction derivative of the highest unknown. The tensor product of the fixed two-circle Laurent contractions solves this cocycle. Subtract its global section with the same four evaluations. This produces the unique primitive of zero four-evaluation; $H^1(\mathcal O(1,1))=0$ gives existence and the four-dimensional $H^0$ gives uniqueness. Iterate over the finite parameter algebra. The source terms and graph inverses are finite analytic operations, so the coefficients are holomorphic on a possibly order-dependent spatial neighborhood.
+
+At each finite extension the abstract direction-chart change is a cocycle in
+$T_Q=\mathcal O(2,0)\oplus\mathcal O(0,2)$, whose $H^1$ vanishes. The contact-line deformation is trivial because $H^1(\mathcal O_Q)=0$. Hence the abstract polarized type remains $(Q,\mathcal O(1,1))$; this does not trivialize its embedded contact deformation. The four variations $\partial_{x^a}f_i$ are its complete contact-line section system.
+
+Its inverse conformal metric can be read by one finite matrix inverse. Evaluate
+$\ell_\nu=(\partial_{x^a}f_i)$ at the nine directions
+$(\varrho,\zeta)\in\{-1,0,1\}^2$, in fixed frames, and solve
+
+$$
+ G^{ab}(\ell_\nu)_a(\ell_\nu)_b=0\quad(\nu=1,\ldots,9),
+ \qquad \eta_{ab}G^{ab}=4 .
+$$ {#eq:gg-nine-direction-metric}
+
+At the residue the restrictions of quadratics to
+$(1,\varrho,\zeta,\varrho\zeta)$ form all nine bidegree-$(2,2)$ polynomials. The tensor product of the two three-point Vandermonde matrices is invertible, and its quadratic kernel is the single null-form line. The last normalization is nonzero on that line. The ten-by-ten matrix is consequently a unit. The actual moving quadric has this same one-dimensional quadratic ideal, so $G$ is its inverse conformal form, not a fit to only nine directions. Put $g_{\mathrm{aux}}=G^{-1}$.
+
+We also identify the actual ray curves before imposing an Einstein condition. Write $g=g_{\mathrm{aux}}$ in this calculation. Let $F$ be this complete incidence, with projections $p:F\to M$ and $q:F\to Z$. A local contact frame $\alpha$ pulls back to a one-form vanishing on $\ker dp$, because the skies are Legendrian. It therefore defines a nonzero covector $\ell_f$ at $p(f)$ by
+$q^*\alpha(Y)=\ell_f(dp\,Y)$.
+On every whole sky its projective class is the evaluation embedding of the complete $H^0(\mathcal O(1,1))$ system. Thus
+
+$$
+ \iota:F\xrightarrow{\ \sim\ }
+ \mathcal C_g=\{(x,[p])\in\mathbb P(T^*M):
+                         g^{ab}p_ap_b=0\},\qquad
+ \iota(f)=(p(f),[\ell_f]).
+$$ {#eq:gg-trial-characteristic-null-incidence}
+
+This is a fiberwise Segre isomorphism over $M$, with unit coordinate minors over the finite algebra. It carries the pulled-back contact value to the tautological covector value. On $\ker q^*\alpha$, the characteristic line of $d(q^*\alpha)=q^*d\alpha$ is precisely $\ker dq$, since $q$ is a submersion and the contact Levi form on $Z$ is nondegenerate.
+
+For the affine normalization, lift $\iota$ by the covector $\ell_f$ to the nonprojective null cone in $T^*M$. Write
+$\vartheta=p_a\,dx^a$ and $H_g=g^{ab}p_ap_b/2$ there. The Hamilton field with $\iota_{X_{H_g}}d\vartheta=-dH_g$ is
+
+$$
+ X_{H_g}=g^{ab}p_b\,\partial_{x^a}
+          -\tfrac12(\partial_a g^{bc})p_bp_c\,\partial_{p_a}.
+$$ {#eq:gg-trial-affine-hamiltonian}
+
+On the null cone $\vartheta(X_{H_g})=2H_g=0$, and $-dH_g$ vanishes on its tangent space. Its nonzero projective image therefore spans the characteristic line already identified above; its spacetime projection is $g^{-1}p$. Let $D$ be the generator of $\ker dq$ with
+$dp(D)=g^{-1}\ell_f$; its scaling exists and is unique by the preceding characteristic identification. In the covector lift,
+$\iota_Dd\vartheta=q^*(\iota_{dqD}d\alpha)=0$ on every incidence tangent, while $\iota_{X_{H_g}}d\vartheta=-dH_g$ also pulls back to zero. Their difference has zero spacetime projection, so its contraction with $d\vartheta$ is a vertical covector variation $\delta p_a\,dx^a$. Since $p:F\to M$ is a submersion, this can vanish on all incidence tangents only if $\delta p=0$. The lift of $D$ is therefore exactly $X_{H_g}$, rather than that field plus an Euler rescaling. Its spacetime equation is the affinely parametrized null-geodesic equation of $g_{\mathrm{aux}}$.
+
+This argument uses regular contact incidence and the unit conformal metric only. All its equalities, kernels and inverse minors commute with finite parameter reduction, so it applies to the trial stage as well as a corrected Einstein stage. ∎
+
+<div id="prop:gg-intrinsic-optical"></div>
+
+**Proposition 5.3.**
+
+The regular complete contact incidence determines a rank-two holomorphic bundle $\mathcal E_J$ independently of a chosen scalar metric. Its solutions are defined by a projective ray operator on the intrinsic density line. With the same density calibration, its Cauchy transitions and inverse transitions are exactly the matrices $B_{ij}$ below. Their Wronskian supplies a specified isomorphism $\bigwedge^2\mathcal E_J\xrightarrow{\sim}\mathcal L$, which is the identification used in subsequent formulas. The construction is natural under marked contact/incidence comparisons and finite parameter restriction.
+
+*Proof.* Put $\mathcal K=\ker\mathrm dq$. First-jet evaluation gives
+$\mathcal K|_{Q_x}=\mathcal O(-1,-1)$, so
+$\mathcal K\otimes q^*\mathcal L$ descends by compact-fiber evaluation to a line $\mathcal B$ on $M$. Take its root pair $\mathcal E[1]^2=\mathcal B$ on the small marked smooth moduli germ, with the specified central sign. This uses no square root of $\mathcal O(1,1)$.
+
+For any ray coordinate $u$ and contact-line frame $l$, let
+$m_u^2=\partial_u\otimes l$. The tangent-sky graph defines the potential by the matrix Schwarzian in the next displayed formula. Appendix D proves that, under $v=f(u)$ and $l_v=h\,l$,
+
+$$
+ \kappa_v=f'^{-2}\big(\kappa_u-\tfrac12\{f,u\}\big),\qquad
+ y_v=\sqrt{f'/h}\,y_u,\qquad
+ (\partial_v^2+\kappa_v)y_v
+  =h^{-1/2}f'^{-3/2}(\partial_u^2+\kappa_u)y_u .
+$$ {#eq:gg-projective-optical-definition}
+
+Hence these are one intrinsic line-valued ray operator. Its two-dimensional solution spaces descend by short-ray ODE uniqueness. The Wronskian takes values in $\mathcal L$. Appendix D proves graph-frame invariance directly and compares the identical calibrated Cauchy frames, including inverse matrices and scale changes. No Schouten tensor or Einstein germ is an input of this definition. ∎
+
+Choose local contact forms $\alpha_i$. For comparison with the intrinsic construction, take the density frame $e$ specified by
+$\boldsymbol g=g_{\mathrm{aux}}e^2$; this agrees with the central mark.
+On the incidence there is a unique generator $D_i$ of $\ker\mathrm dq$ whose projection $k_i$ satisfies
+$g_{\mathrm{aux}}(k_i,\mathrm dp\,Y)=q^*\alpha_i(Y)$.
+The characteristic and covector-lift computation of Proposition 5.2 identifies this generator with the Hamilton field of the null covector, so it is affine for the trial $g_{\mathrm{aux}}$ without an Einstein assumption. If
+$\Phi_{ij}^*\alpha_i=c_{ij}\alpha_j$, then $D_i=c_{ij}D_j$, with $c_{ij}$ constant along a ray.
+
+The tangent-sky curve in the fixed contact plane is a regular symmetric graph $S_i(t)$. Its optical potential is defined from that curve:
+
+$$
+ \kappa_i=\frac12\operatorname{tr}
+   \left\{\frac12(S_i')^{-1}S_i'''
+           -\frac34\big((S_i')^{-1}S_i''\big)^2\right\},
+ \qquad D_i^2y+\kappa_i y=0 .
+$$ {#eq:gg-optical-equation}
+
+To identify this potential geometrically, write $g=g_{\mathrm{aux}}$, fix one short affine null geodesic $\gamma$ with tangent $k$, and write $u$ for its affine parameter and $\mathcal D_z=\ker\alpha_z$ for the contact plane. Proposition 5.2, or the independent reconstruction in §D.7, identifies $z\in Z$ with this unparametrized geodesic. A variation through null geodesics is a Jacobi field. Conversely the initial-value theorem integrates every Jacobi initial datum satisfying the linearized null constraint to such a variation. The contact condition is $g(k,J)=0$. Changes of affine origin and speed are the fields $(a+bu)k$, so the contact plane is the four-dimensional solution space
+
+$$
+ \mathcal D_z\simeq
+ \frac{\{J:\nabla_k^2J+R(J,k)k=0,\quad
+             g(k,J)=g(k,\nabla_kJ)=0\}}
+      {\{(a+bu)k:a,b\in\mathbb C\}}.
+$$ {#eq:gg-contact-jacobi-solution-space}
+
+Here the orthogonality conditions can equivalently be imposed at one initial point. They persist by the Jacobi equation. This is a space of solutions along $\gamma$, rather than the two-dimensional screen $k^\perp/\langle k\rangle$ at one point. In the covector normalization of Proposition 5.2 its conserved symplectic pairing is
+$W(J_1,J_2)=g(J_1,\nabla_kJ_2)-g(\nabla_kJ_1,J_2)=-d\alpha(J_1,J_2)$.
+Indeed differentiating the null Hamilton flow gives the displayed Jacobi equation, and differentiating $\alpha(J)=g(k,J)$ gives the last equality. Both pairings pass to the quotient by $(a+bu)k$. Varying a ray while keeping $x=\gamma(u)$ fixed is precisely a variation vanishing there; modulo the tangential fields this says
+$T_zQ_x=\ker(\operatorname{ev}_u:\mathcal D_z\to k^\perp/\langle k\rangle)$.
+These kernels are Lagrangian. This is the contact realization of the sky incidence [@LeBrun1983, III.2–III.3].
+
+Choose a parallel orthonormal screen frame. Its Jacobi equation is
+$j''+\mathcal Rj=0$, where $\mathcal R[j]=[R(J,k)k]$ is symmetric. Complete $k$ to a null frame to take the Ricci trace: the two null-direction contributions vanish by $R(k,k)=0$ and $g(R(n,k)k,k)=0$. Thus
+$\operatorname{tr}\mathcal R=\operatorname{Ric}(k,k)$ with exactly the curvature and Ricci conventions of §2. Choose a symplectically normalized fundamental pair of screen solution matrices $Y,Z$, so
+
+$$
+ Y^{\mathsf T}Z'-(Y')^{\mathsf T}Z=1_2,\qquad
+ Y^{\mathsf T}Y'=(Y')^{\mathsf T}Y,\qquad
+ Z^{\mathsf T}Z'=(Z')^{\mathsf T}Z.
+$$ {#eq:gg-geometric-jacobi-wronskians}
+
+A solution is $j=Ya+Zb$. On a chart where $Y$ is a unit, its vanishing at $u$ is $a=-Y^{-1}Zb$. The row identity $YZ^{\mathsf T}=ZY^{\mathsf T}$, a consequence of the displayed symplectic normalization, makes $S=Y^{-1}Z$ symmetric. In the constant symplectic coordinates $(b,-a)$ the actual tangent-sky curve is precisely this graph, with the stated sign convention. In these coordinates $d\alpha=d(-a)\wedge db=-W$, consistently with the contact normalization above. The Wronskian identities give
+$S'=Y^{-1}Y^{-{\mathsf T}}$ and
+$(S')^{-1}S''=-2(Y^{-1}Y')^{\mathsf T}$.
+Writing $A=(S')^{-1}S''$ now gives
+$\frac12A'-\frac14A^2=(Y^{-1}\mathcal RY)^{\mathsf T}$.
+The trace in the optical definition is consequently
+$\kappa=\frac12\operatorname{Ric}(k,k)=P(k,k)$, since $g(k,k)=0$ in dimension four. Any other constant symplectic graph frame gives the same trace by §D.2. The proof uses only null-geodesic incidence, metric compatibility and finite-dimensional ODE uniqueness, so it applies to the trial metric before Einstein admission and commutes with finite parameter reduction.
+
+For actual transverse slices let $\tau_{ij}$ be the time in $D_j$ needed to move from slice $j$ to slice $i$ over $\Phi_{ij}z$. The optical transitions are
+
+$$
+ \begin{aligned}
+ \partial_tF_j(t,z)
+  &=\begin{pmatrix}0&1\\-\kappa_j(t,z)&0\end{pmatrix}F_j(t,z),
+       &F_j(0,z)&=1,\\
+ B_{ij}(z)
+  &=\begin{pmatrix}1&0\\0&c_{ij}(z)\end{pmatrix}
+                         F_j(\tau_{ij}(z),z).
+ \end{aligned}
+$$ {#eq:gg-actual-optical-transitions}
+
+They satisfy
+$B_{ik}=(B_{ij}\circ\Phi_{jk})B_{jk}$,
+because both routes continue the same solution to the same final Cauchy state. Their determinant is $c_{ij}$, not a globally imposed unit. Thus the Wronskian identifies
+$\bigwedge^2\mathcal E_J\simeq\mathcal L$
+by the specified Wronskian isomorphism.
+
+Under $\widehat g=\Omega^2g$ the density convention is
+$\widehat y=\Omega y$, $\widehat D=\Omega^{-2}D$. Direct differentiation gives
+
+$$
+ \begin{aligned}
+ \widehat\kappa
+   &=\Omega^{-4}\{\kappa-D^2\log\Omega+(D\log\Omega)^2\},\\
+ C_{\Omega,i}
+   &=\begin{pmatrix}
+       \Omega&0\\\Omega^{-1}D_i\log\Omega&\Omega^{-1}
+      \end{pmatrix},&
+ \widehat B_{ij}
+   &=(C_{\Omega,i}\circ\Phi_{ij})B_{ij}C_{\Omega,j}^{-1}.
+ \end{aligned}
+$$ {#eq:gg-optical-density-covariance}
+
+These coherent formulas retain the selected section under a scale comparison.
+
+<div id="prop:gg-optical-einstein"></div>
+
+**Proposition 5.4.**
+
+A holomorphic section of this optical bundle on a neighborhood containing a whole compact sky is exactly an analytic density satisfying
+$(\nabla^2\sigma+P\sigma)_0=0$.
+If its value at the mark is a unit, its selected metric $\sigma^{-2}g_{\mathrm{aux}}$ is Einstein and its prolongation is the same canonical parallel section $I$.
+
+*Proof.* Evaluate the section on the incidence. On each compact connected sky it is a holomorphic function with values in the fixed one-dimensional density fiber, hence constant. These constants descend holomorphically to $\sigma(x)$. The ray equation implies
+$k^ak^b(\nabla_a\nabla_b\sigma+P_{ab}\sigma)=0$
+in every null direction. A symmetric quadratic form zero on the complete nondegenerate null quadric is a multiple of $g$. Conversely that trace-free equation supplies raywise solutions whose Cauchy states agree under the $B_{ij}$, proving both inverses.
+
+Set $J_g=\operatorname{Scal}(g)/6$ and
+
+$$
+ \mu=\nabla\sigma,\qquad
+ \rho=-\tfrac14(\Delta\sigma+J_g\sigma),\qquad
+ \lambda_\sigma=-3(2\sigma\rho+|\mu|^2).
+$$ {#eq:gg-selected-scale-prolongation}
+
+The trace-free equation gives
+$\nabla_a\mu_b+P_{ab}\sigma+g_{ab}\rho=0$.
+Its divergence, using
+$\nabla^aP_{ab}=\partial_bJ_g$ and
+$\operatorname{Ric}=2P+J_gg$, gives
+$\nabla_b\rho=P_b{}^a\mu_a$.
+These are exactly the normal tractor parallel equations. Their norm is constant. The Schouten transformation is
+
+$$
+ P^{\sigma^{-2}g}
+  =P^g+\sigma^{-1}\nabla^2\sigma
+               -\tfrac12\sigma^{-2}|\mathrm d\sigma|^2g
+  =\left(-\sigma\rho-\tfrac12|\mu|^2\right)\sigma^{-2}g .
+$$ {#eq:gg-optical-einstein-schouten}
+
+It proves $\operatorname{Ric}(\sigma^{-2}g)=\lambda_\sigma\sigma^{-2}g$ and identifies the same $I=(\sigma,\mu,\rho)$, without dividing by $\lambda_\sigma$. Normalizing the evaluation vector by $\sigma$ makes its position affine: if $X''+\kappa X=0$ and $\sigma''+\kappa\sigma=0$, then
+$Y=X/\sigma$, $\mathrm d\widehat t/\mathrm dt=\sigma^{-2}$ satisfy
+$\mathrm dY/\mathrm d\widehat t=\sigma X'-\sigma'X$, whose derivative is zero. The translation line is $\mathcal L^{-1}$. The dual optical plane embeds in the normal bundle as $\langle X,D_kX\rangle$, by its Cauchy evaluation, so this is precisely the affine line of Definition 2.2. ∎
+
+The requirement is on a whole neighborhood, not only the central sky. Indeed
+$\mathcal E_J|_Q\simeq\mathcal O\oplus\mathcal O(1,1)$ has five central sections. The sixth flat scale freedom is invisible in these central Cauchy values and is detected transversely.
+
+We can now correct the actual bundle defect and the entire record simultaneously. At a small extension with highest ideal $J$, first express the lower selected density as the Einstein scale and lift that scale to the trial stage. For arbitrary lifted local states define the target-minus-source defect
+
+$$
+ r_{ij}=\widetilde s_i\circ\Phi_{ij}-B_{ij}\widetilde s_j .
+$$ {#eq:gg-optical-defect-sign}
+
+Its highest weighted piece of weight $m$ belongs to the flat sheaf
+$\mathcal S_m=\ker(D^2:P_m\otimes\mathcal O_Q
+\to P_{m-2}\otimes\mathcal L^2)$.
+A value has degree $m$ and a slope degree $m-1$. This grading is required for the actual transport, and is not ordinary normal degree on the ray space. Fixed scalar Čech splitting $\delta u=r$ gives
+$D^2u=A_{ab}(x)k^ak^b$ and the class
+
+$$
+ a_m=[A]\in
+ \mathcal Q_m=
+ \frac{P_{m-2}\otimes\operatorname{Sym}^2_0V^*}
+                   {\operatorname{Hess}_0P_m}.
+$$ {#eq:gg-optical-obstruction-class}
+
+Contact degree $m+1$ has class space
+$\mathcal C_{m+1}=H^1(Q,\mathcal F_{m+1})$ and free projection
+$\Pi_{m+1}:\mathcal C_{m+1}\to W_{m-2}^+\oplus W_{m-2}^-$.
+The fixed linear vacuum inclusion is $\iota_{m+1}$. Appendix D proves the exact sequence of the specified maps
+
+$$
+ 0\longrightarrow W_{m-2}^+\oplus W_{m-2}^-
+ \xrightarrow{\iota}\mathcal C_{m+1}
+ \xrightarrow{o_m}\mathcal Q_m
+ \xrightarrow{d_m}Z^2_{m-4}\longrightarrow0,
+ \quad
+ o_mJ[h]=[P(h)^\circ],\quad d_m[A]=\mathrm d\,\operatorname{div}A.
+$$ {#eq:gg-optical-symbol-exact-sequence}
+
+Negative polynomial degrees mean zero. The inverse
+$L_m:\ker d_m\to\ker\Pi_{m+1}$ of $o_m$ is a fixed finite constant-matrix operation.
+
+<div id="thm:gg-compatible-correction"></div>
+
+**Theorem 5.5.**
+
+For every trial contact lift of an already corrected lower stage the actual optical class satisfies $d_ma_m=0$. If $Z_{m-2}$ is the difference between the prescribed and current entire free record at that weight, the closed contact correction class is
+
+$$
+ \Delta c_{m+1}=-L_ma_m+\iota_{m+1}Z_{m-2}.
+$$ {#eq:gg-simultaneous-correction}
+
+A fixed analytic cochain representative, fresh incidence and optical recomputation, and the uniquely normalized remaining scalar correction give the next stage. It has a whole optical section, its same canonical Einstein scale, numerical coefficient $\varepsilon\Lambda$ and every prescribed free coefficient. It is independent, up to the marked selected-section comparison, of the trial lift.
+
+*Proof.* Appendix D derives the optical-class map using the actual bundle above. In the lifted lower Einstein scale the comparison scalar $1$ has ray residual $P^{\mathrm{trial}}(k,k)$ in $J$. Local double primitives make its highest class exactly $[P^{\mathrm{trial}\,\circ}]$. The contracted Bianchi identity
+$\nabla^aP^\circ_{ab}=\tfrac34\partial_bJ_g$
+has, at this highest coefficient, flat derivative: all lower $P^\circ$ terms vanish and the lower scalar is constant. Hence
+$\mathrm d\,\operatorname{div}a_m=0$.
+This uses the moving incidence and Cauchy frames; an arbitrary rank-two defect would not have this compatibility.
+
+A closed contact class changes the obstruction and free record by
+$(a_m,\operatorname{Rec})\mapsto
+(a_m+o_m\Delta c,\operatorname{Rec}+\Pi_{m+1}\Delta c)$.
+Every product of a $J$-valued variation with a coefficient of positive parameter degree vanishes, since $\mathfrak mJ=0$ for the maximal ideal of this small extension. The exact sequence and $\Pi\iota=1$ prove the two simultaneous corrections, including every derivative order. Use the fixed representative $\ell_{m+1}\Delta c$ constructed in Appendix C and apply the positive highest exponential to the coordinate-algebra overlaps $E$. The corresponding stored point correction is the inverse flow $\operatorname{Fl}_{-X_{\ell_{m+1}\Delta c}}$. Recompute the graphs from those point maps, as fixed by Proposition 5.8.
+
+Recompute the graph incidence, tangent-sky potential and optical matrices after this change. Its remaining defect is exact in $\mathcal S_m$. If $\delta u=r'$ and $D^2u=A'$, the vanishing class gives $A'=\operatorname{Hess}_0f_m$. Then $v_i=u_i-f_m$ has $D^2v_i=0$ and $\delta v=r'$. Adding these local homogeneous ray solutions cancels the actual target-minus-source defect. Appendix D supplies the homogeneous Hessian primitive explicitly.
+
+The remaining flat global kernel is
+$a+b\cdot x+\gamma\eta(x,x)$.
+Fix the value and gradient in the lifted lower selected scale, then compute the numerical coefficient $\lambda_*$ of this same section from its prolongation. Since
+$\Delta\eta(x,x)=8$, changing by $\gamma\eta(x,x)$ changes the highest numerical coefficient by $12\gamma$. Set
+
+$$
+ \gamma=\frac{\lambda_{\mathrm{target}}-\lambda_*}{12}.
+$$ {#eq:gg-numerical-normalization}
+
+Thus the original numerical label, including zero, is retained. No desired scalar curvature has been assigned to the off-shell optical potential. These conformal highest corrections do not change the highest Weyl record.
+
+A closed difference $v$ of trial lifts changes $(a,Z)$ into
+$(a+o_mv,Z-\Pi v)$. Since
+$L_mo_m=1-\iota\Pi$, the new correction is the old one minus $v$. The resulting marked geometric comparison preserves the selected density: its remaining difference is a scalar coboundary plus the six global modes just uniquely fixed. This proves trial independence at the needed geometric level, without asserting equality of arbitrary raw corner gauges.
+
+All spatial coefficients at this finite stage are analytic. The nontrivial inverse estimate is proved in Appendix C: a compatible analytic $A$ gives a conserved Ricci source, an explicit bounded potential with that Schouten tensor, and removal of its whole flat vacuum record. Applying the same fixed cochain lift $\ell$ represents precisely $L_ma_m$ with a bound after one fixed spatial restriction. The scalar splittings, double primitives and Hessian primitives have polynomial-times-exponential degree bounds. They can therefore be summed in normal degree. Finitely many operations complete each finite parameter stage, possibly on a smaller stage-dependent domain. No infinite-stage convergence is inferred here. ∎
+
+For the source execution sequence fix the trial rule as well. In each independent overlap orientation, expand the Hamiltonian logarithm relative to the fixed reference substitutions as
+$H_{ij}^{\le N}=\sum_{k=1}^N\varepsilon^kh_{ij,k}$.
+Its lift to $A_{N+1}$ is this same coefficient polynomial, with zero new coefficient. Exponentiate it and use the fixed two-cocycle repair of Lemma 5.1; store opposite orientations by exact inversion. Lift the already selected local scalar/Cauchy representatives by the same coefficient rule, and recompute all unit inverses, scale changes, incidence and optical data from those representatives before applying Theorem 5.5. This fixes a raw sequence without additional free coefficients. Other trial lifts remain allowed for the geometric independence assertion of that theorem; the prescribed normalized output is the same. For a finite algebra without a chosen coefficient grading, any fixed linear lift can be used, with normalized comparison and restriction supplied by §6.
+
+Starting with the original first-order lifts and the flat scale, this trial rule, Lemma 5.1 and Theorem 5.5 define all stages $\mathcal C_N$ compatibly. The next section specifies their stored normalization and proves its convergence on one common domain.
+
+
+
+
+<div id="def:gg-independent-affine"></div>
+
+**Definition 5.6.**
+
+A calibrated affine object consists of a regular contact seed $(Z,Q,\mathcal L)$ with $\mathcal L|_Q=\mathcal O(1,1)$, its ordered rulings and original marking, and an affine-line torsor $A\to Z$ with a specified translation identification $T(A)=\mathcal L^{-1}$. Its unique lifted compact sky must have normal bundle $\mathcal O_Q^4$. Let $j_A:F\to A$ be the unique family of lifted skies. Require that
+$j_A\iota^{-1}$ extend from the physical short incidence to a holomorphic fiberwise projective isomorphism
+
+$$
+ \overline J:\mathbb P(\mathcal E_J^*)\longrightarrow\overline A ,
+$$ {#eq:gg-independent-projective-extension}
+
+where $\overline A$ is the fiberwise projective completion of the affine torsor and $\iota$ is projective evaluation for Proposition 5.3. Both completions are defined from the supplied holomorphic objects.
+
+Retain the root pair $\beta:\mathcal E[1]^2\to\mathcal B$ of that proposition and its nonzero central density value $e_o$ fixed by the marking. With
+$b=(\mathrm d_qj_A)^{-1}$ descended to $\mathcal B$, its marked value must satisfy $b(o)=\beta(e_o^2)$; the selected root has $\sigma(o)=e_o$. The finite-jet invariant of Proposition 5.4 at the mark is the requested numerical $\Lambda$. The complete family, its lift $j_A$, and $\sigma$ are derived; no metric or scale is an independent input.
+
+<div id="prop:gg-affine-equivalence"></div>
+
+**Proposition 5.7.**
+
+These independently admitted affine objects are equivalent to the calibrated contact/optical objects with a whole unit section. Their overlap maps have the local holomorphic law
+
+$$
+ (z,\tau_j)\longmapsto
+       \bigl(\Phi_{ij}(z),\,c_{ij}^{-1}(z)\tau_j+a_{ij}(z)\bigr),
+ \qquad \Phi_{ij}^*\alpha_i=c_{ij}\alpha_j.
+$$ {#eq:gg-affine-local-law}
+
+For the generated objects the translations are determined by the original Cauchy matrices, without new free input. The same finite correction of Theorem 5.5 corrects precisely the obstruction to this calibrated affine reduction. Both representative maps and their inverses converge on the same conditioned parent domains as the stored optical data.
+
+*Proof.* Appendix D.7 proves uniqueness and holomorphic dependence of the lifted compact skies, and identifies their normal-bundle condition with invertibility of $\mathrm d_qj_A$. Appendix D.8 identifies the projective extension with the intrinsic Schwarzian equality, obtains the compatible marked root and the same whole optical section, and proves both inverse comparisons. Appendix D.9 gives the explicit matrix calculation and its cochain obstruction. The convergence statement follows from the finite formulas there and the common analytic witness in §6. Thus the Einstein recognition in Proposition 5.4 is a consequence of this holomorphic admission. ∎
+
+
+
+<div id="prop:gg-overlap-orientation"></div>
+
+**Proposition 5.8.**
+
+With equation ([-@eq:gg-overlap-operator-point-convention]), the contact class in Appendix C has the same sign as the actual conformal metric variation. A highest closed operator correction $d$ therefore changes the optical class by $+\mathfrak o d$ and the free record by $+\Pi d$, as used in Theorem 5.5.
+
+*Proof.* At first order write the scalar sky graphs as $f_i=f_0+\varepsilon v_i$. The point generator of $\Phi_{ij}$ is $-X_{h_{ij}}$, so
+$\mathscr A_{\Phi_{ij}}f_j=f_i$ gives
+$v_i-v_j=-h_{ij}|_{f_0}$. If $h_{ij}=a_j-a_i$ and
+$Da_i=h_{\mathrm{met}}(k,k)/2$ as in Appendix C, one can take $v_i=a_i$ up to a global contact-line section, which is the infinitesimal coordinate freedom. The null covector changes by $\mathrm d_xv_i$. For a covariant metric variation $h_{\mathrm{met}}$, the first variation of its null equation is
+
+$$
+ 2D v_i-h_{\mathrm{met}}(k,k)=0 .
+$$ {#eq:gg-overlap-metric-sign-check}
+
+This is exactly the stated primitive equation. The auxiliary scalar normalization changes only the trace; neither that trace nor the coordinate freedom changes the conformal class, optical Hessian quotient or linear free Weyl record. At a highest ideal all positive-parameter products vanish, so the same calculation gives the signs of $\mathfrak o$ and $\Pi$ at every finite stage.
+
+The convention also respects the exact cocycle order:
+$E_{ij}E_{jk}=(\Phi_{jk}^{-1}\circ\Phi_{ij}^{-1})^*
+=(\Phi_{ij}\circ\Phi_{jk})^{-1*}$.
+Assigning the positive point flow to the same positive operator generator would instead produce $-h_{\mathrm{met}}$; it is not an equivalent notation. For $F=(w^0)^4/\zeta$, Appendix C gives $h_{vv}=-24u^2$. The linearization of our last-slot curvature is
+
+$$
+ R^{(1)}_{abcd}(h)=\tfrac12
+ (\partial_a\partial_ch_{bd}+\partial_b\partial_dh_{ac}
+  -\partial_a\partial_dh_{bc}-\partial_b\partial_ch_{ad}).
+$$ {#eq:gg-last-slot-linear-curvature}
+
+Hence $C^{(1)}_{uvuv}=R^{(1)}_{uvuv}=-24$, and [@eq:gg-weyl-spinor-readout] gives $\Psi^+_{0000}=+24$, exactly the positive contour of Theorem 3.1. For the negative source $F_{-6}=1/\zeta$, Appendix C gives $h_{qq}=-u^2$, hence $C^{(1)}_{uquq}=-1$ and $\Psi^-_{0'0'0'0'}=+1$, the negative contour. Reversing the stored point velocity changes both metric variations and therefore both of these records by a minus sign. ∎
+
+<div id="prop:gg-finite-source-execution"></div>
+
+**Proposition 5.9.**
+
+For the fixed trial rule above, each finite parameter order $N$ and finite transverse jet order $d$ of the corrected stage and its prescribed stored normalization is determined by finitely many coefficients of the two original residue representatives, $\Lambda$ and the fixed marking/presentation choices. Transverse jets mean the normal ideal of the reference compact sky on the contact carrier, and the corresponding marked central incidence on the derived components. They are computed by the finite cochain, matrix, derivative, unit-inverse and initialized ODE operations specified here. An independently solved nonlinear Einstein metric is not an input of this rule.
+
+*Proof.* Let $\mathcal I$ be the normal ideal of the reference compact sky. In its adapted contact coordinates, a degree-$n$ Hamiltonian has normal vector components of degree $n$ and angular components of degree $n-1$. In particular
+
+$$
+ \{\mathcal I^a,\mathcal I^b\}
+             \subset\mathcal I^{a+b-1},\qquad a,b\ge1.
+$$ {#eq:gg-source-execution-filtration}
+
+The source Hamiltonians start in degree three. A fixed normal jet of a finite nilpotent product or logarithm consequently sees only finitely many homogeneous input degrees. The fixed repairs $S_n$ and representatives $\ell_n$ preserve their displayed homogeneous degrees. Each matrix $L_m$ and $\iota_{m+1}$ acts within one displayed degree, with constants fixed before any input is supplied.
+
+The scalar graph inverse and four-evaluation normalization are unit implicit operations. A specified finite jet of their output uses a finite jet of their source maps. The nine-direction metric inverse is another unit matrix inverse; covariant curvature readout and the tangent-sky projective operator use only finitely many further derivatives. The weighted optical splitting, double primitive and Hessian primitive preserve the indicated value/slope grading. Thus, at each of the finitely many parameter steps, a fixed output normal jet needs only finitely many trial graph jets and free record components. Terms above that finite homogeneous cutoff cannot enter through an unperformed infinite sum. Induction gives a finite original prefix for every $(N,d)$.
+
+The normalization of §6 has the same property. Its physical metric is the metric already read from the corrected incidence and its own selected density. Formal geodesic development, radial spin transport, the identity-initialized Moser flow and their unit inverses have unique finite Taylor recursions. Their fixed finite jets therefore require only finite jets of that derived metric. The fresh optical and affine components are finite derivatives and initialized linear ODEs of the same incidence. No new geometry is chosen to execute this normalization.
+
+The matrix $L_m$ is the substantive inverse of the optical obstruction on the zero-record complement. Appendix C uses a conserved linear potential to prove that this same fixed matrix has its analytic cochain bound; the execution rule evaluates its matrix on the derived defect. The nonlinear CK witnesses of Appendix A and the direct Cartan witness of §6 establish consistency and convergence, respectively, and are not arguments supplied to these finite cochain operations. This proves the asserted source dependence. ∎
+
+
+<div id="sec:gg-common-convergence"></div>
+
+## 6. The selected normalization and common convergence
+
+<div id="sec:gg-bounded-witness"></div>
+
+### 6.1. A direct bounded geometric witness
+
+The finite source procedure is the cochain construction of §5 and Proposition 5.9. For its convergence proof, Theorem 3.3 and Proposition 4.1 construct a bounded geometric comparison from the same original records. Section 6.2 defines one prescribed normalizer for both constructions, and Theorem 6.3 identifies every finite stored tuple with the corresponding Taylor coefficients of the comparison. The Cartan geometry is a proof witness, not an additional input to the finite source procedure.
+
+Fix $1<T_*<T_c<T_b<T_{\mathrm{in}}$ and consider
+$(\varepsilon U^+,\varepsilon U^-;\varepsilon\Lambda)$ for
+$|\varepsilon|<T_{\mathrm{in}}$. Scaling the numerical constant as well as the records makes the zero-amplitude residue flat, as required by the highest-ideal calculation in §5. The final value is $\varepsilon=1$.
+
+<div id="prop:gg-common-cartan-witness"></div>
+
+**Proposition 6.1.**
+
+For every bounded original family this amplitude family has a direct Cartan realization, its marked normal coordinates and canonical ray geometry on common spatial domains over $|\varepsilon|\le T_b$. Their fixed finite derivatives and inverse maps are bounded. The construction uses Theorem 3.3 and the finite equations of §4.
+
+*Proof.* The initial record bound is at most
+$T_{\mathrm{in}}(16C+|\Lambda|)$ on the fixed smaller record radius.
+Apply Theorem 3.3 successively to the four horizontal and six vertical basis directions used in Proposition 4.1. Use each intermediate output bound and positive radius as the next input, also for the reversed finite word. Their finite minimum gives a common ten-variable neighborhood. The coframe is constructed by the finite matrix equations
+$\partial_n\alpha_i=-C_n(\mathcal U_n)\alpha_i$,
+$\alpha_n=e_n$, with $\alpha(0,\varepsilon)=1$.
+The matrices depend on finitely many bounded record components.
+The ODE bound and interior Cauchy estimates therefore control $\alpha$ and its derivatives uniformly on the amplitude disk. Shrinking space gives
+$\|\alpha-1\|\le1/2$, $\|\alpha^{-1}\|\le2$.
+
+The anchor and structure equations proved in §4 apply to these flows. With horizontal directions first, the remaining six directions span $\ker\theta$, and its quotient has the derived metric. Its connection is torsion free and its curvature is $R_{\mathcal U}$, so its Ricci trace is exactly $\varepsilon\Lambda g_\varepsilon$.
+
+The finite geodesic and parallel-spin ODEs now give its marked exponential coordinates and radial spin frame. Their initial derivative is the identity for every amplitude. A finite implicit inverse and a spatial restriction give common normal-coordinate and inverse domains, with
+$g_\varepsilon(0)=\eta$ and $\partial_xg_\varepsilon(0)=0$.
+The metric, inverse and any specified finite derivatives have common bounds.
+
+In the physical scale the canonical sections are
+
+$$
+ I_\varepsilon=(1,0,-\varepsilon\Lambda/6),\qquad
+ X=(0,0,1),\qquad
+ H(I_\varepsilon,I_\varepsilon)=-\varepsilon\Lambda/3,\quad
+ H(I_\varepsilon,X)=1 .
+$$ {#eq:gg-common-canonical-sections}
+
+The scale plane has determinant $-1$ for every amplitude and constant.
+For a null affine tangent $k$, $D_k^2X=0$, so its actual transported positions form an affine line. The direct ray construction of §4 has a finite direction cover, common transverse-hit margins, short ODE and inverse-transport bounds. To specify the connected-fiber margin, fix the derivative bound $C$ on larger flow parents first. Where $k^\nu$ is a unit, use $u=x^\nu$ and write each geodesic as a graph $G_z(u)$ on a convex parent disc, with $|G_z'|\ge a>0$ and $|G_z''|\le C$. Restrict the entire graph family so that $|G_z|\le R_p$ on that parent and $R_pC<a^2/2$. The real Hessian of $|G_z|^2$ there is at least $(2a^2-2R_pC)$ times the Euclidean form. Its inner-ball sublevel is therefore convex and connected. Choose the inner spatial radius below the parent $u$-radius; the free coordinate cannot exit that parent while the graph remains in the inner ball. In a normal spin frame the connection is $O(|x|)$, so the $O(r)$ short hit changes the projective direction by $O(r^2)$; a fixed angular buffer keeps the entire retained plaque in one such parent. This establishes the assertion on the whole convex parent, rather than inferring connectedness from a Hessian bound only inside the sublevel. The hit comparisons and quotient are those of this short relation; their equality sets are closed by the same finite transverse coordinates, giving the Hausdorff germ. The ordered complete skies and actual initial spin lift are retained. The vector $I_\varepsilon$ varies with amplitude; it is not orthogonally transported to a fixed vector of another norm. ∎
+
+<div id="sec:gg-prescribed-normalizer"></div>
+
+### 6.2. The prescribed stored representative
+
+Fix once the finite direction cover and transverse slices, their flat identification with the contact charts of §5, the contact-line frames, the four evaluation directions of Proposition 5.2 and the normal central spin gauge. These are presentation choices, denoted by $P$. The same choices are used over finite algebras and analytic parameter families.
+
+The normalizer $\mathcal N_P$ is defined as follows. Reconstruct the selected normal geometry and its actual $I,X$ from the corrected contact incidence and whole section, using §§4–5. Develop its marked physical metric into geodesic normal coordinates and the radial spin frame. Form the prescribed short-ray charts and Hilbert contact forms there. Identify them with the fixed flat charts by the contact Moser path
+$\alpha_t=\alpha_0+t(\alpha_g-\alpha_0)$.
+Write $\gamma=\alpha_g-\alpha_0$ and solve
+
+$$
+ \alpha_t(Y_t)=0,\qquad
+ (\iota_{Y_t}\mathrm d\alpha_t)|_{\ker\alpha_t}
+                          =-\gamma|_{\ker\alpha_t}.
+$$ {#eq:gg-defined-contact-moser}
+
+Let $M_i$ be this identity-initialized point flow from the fixed model chart into the physical chart, so $M_i^*\alpha_g$ is a unit multiple of $\alpha_0$. Use its inverse and its actual contact multiplier as well. The normalized point overlaps are $M_i^{-1}\Phi_{ij}^{\mathrm{geom}}M_j$, and their algebra operators are their inverse pullbacks. The normal-coordinate expansion gives $\gamma$ of second normal order along the compact sky, hence $Y_t$ of second normal order. The construction fixes that sky and its first jets.
+
+Next send the actual complete skies through these same inverse maps $M_i^{-1}$ and take their scalar graphs. Use their same four evaluations to choose point coordinates, by the inverse of the map
+$E_4(x,\varepsilon)=\mathfrak e(f(x,\varepsilon))$. Finally recompute the nine-direction conformal form, the density representing the same selected $I$, the actual ray generators, tangent-sky potentials, hit times and the Cauchy matrices of Proposition 5.3. The affine data of Proposition 5.7 are then obtained by its fixed finite formulas. No old optical matrix is copied in place of this fresh computation.
+
+The augmented stored tuple consists of these contact maps and inverses, contact multipliers and inverses, scalar graph and evaluation inverses, actual density and Cauchy states, moving hit maps, optical matrices and inverses, and the derived affine transitions and inverse transitions. This definition fixes the representative, not just its geometric isomorphism class. It also defines its finite-algebra version by the same ODEs and unit inverses.
+
+<div id="prop:gg-bounded-prescribed-normalizer"></div>
+
+**Proposition 6.2.**
+
+For the witness of Proposition 6.1, the prescribed normalizer produces one jointly holomorphic augmented tuple $Y_C(\varepsilon)$ with a common finite bound on retained parent domains over $|\varepsilon|\le T_b$. It retains the same actual canonical section.
+
+*Proof.* Screen projection is bounded without a cosmological denominator. With
+$W_{\mathrm{scr}}=(\mathbb CI+\mathbb CX)^\perp$, it is
+
+$$
+ \Pi_{\mathrm{scr}}z=z-H(I,z)X-H(X,z)I+H(I,I)H(X,z)X .
+$$ {#eq:gg-bounded-screen-projection}
+
+For middle vectors with $H(e_a,X)=0$, the projected vectors
+$e_a-H(I,e_a)X$ have exactly their original Gram matrix.
+The finite normal-development, spin-transport and transverse-hit operations therefore have the fixed unit matrices and bounds supplied by Proposition 6.1.
+
+The Hilbert forms and their derivatives are uniformly controlled on the finite parents. Since $\gamma$ has second normal order, a spatial restriction keeps the entire fixed Moser path contact and its time-one flow and inverse inside their buffers. The contact multiplier is an exponential of a bounded scalar integral, so it and its inverse are bounded. This restriction changes space, not the amplitude disk.
+
+Direction projection for the pulled-back skies and the four-point map $E_4$ have their fixed invertible derivatives at the central sky for all amplitudes. The finite implicit theorem supplies common inverses. Consequently the scalar family is literally
+$f(E_4^{-1}(x,\varepsilon),\varepsilon)$ with the chosen four-evaluation normalization. The ten-by-ten system of Proposition 5.2 has its same uniform inverse, so it reads a bounded $g_{\mathrm{aux}}$ and inverse. Write
+$g_{\mathrm{aux}}=\Omega^2g_{\mathrm{phys}}$ in these point coordinates. The fixed mark gives $\Omega(0,\varepsilon)=1$. A common spatial restriction gives
+$|\Omega-1|\le1/2$, making the branch holomorphic over the retained amplitude disk. The selected auxiliary density is this same $\Omega$, its inverse is bounded by two, and its fixed finite derivatives have interior Cauchy bounds.
+
+The tangent-sky graph and its required three derivatives are bounded on a fixed invertible graph minor. Thus $\kappa$ is bounded by some $K$ on parent ray discs of length $\ell$. The fundamental matrices and inverses have bound
+$\exp(\ell(1+K))$ in a fixed induced matrix norm. The contact-unit factors give
+$\|B_{ij}^{\pm1}\|\le C_c\exp(\ell(1+K))$, including their moving arguments. The short projective evaluation margin and the matrices $G_i$ of §D.9 give the affine maps and their inverse domains with the bounds proved there.
+
+Every operation used a finite ODE, a specified finite inverse, or a holomorphic ratio with a common unit margin. It preserves the actual canonical $I$ and position $X$ under the derived geometry comparison. In a changed auxiliary scale the Cauchy states transform by $C_\Omega$, so the value and gradient are recomputed in that scale rather than treated as unchanged components. The same deterministic formulas make all operations commute with finite truncation. ∎
+
+<div id="sec:gg-literal-convergence"></div>
+
+### 6.3. Coefficient comparison with the finite generator
+
+At order $N$ let $\mathcal C_N$ be the corrected stage of §5 over
+$A_N=\mathbb C[\varepsilon]/(\varepsilon^{N+1})$, and store
+$X_N=\mathcal N_P(\mathcal C_N)$. The normalization always retains the selected whole section, including its value, gradient and numerical scalar.
+
+<div id="thm:gg-literal-stored-convergence"></div>
+
+**Theorem 6.3.**
+
+The defined stored tuples satisfy the equality
+$X_N=j_\varepsilon^NY_C(\varepsilon)$. In particular their coefficient series and every included inverse converge at $\varepsilon=1$ on common bounded-family domains. If $\|Y_C\|\le M_C$ on $|\varepsilon|=T_c>1$, then for every fixed $1<T_*<T_c$ their tails obey
+
+$$
+ \|X(1)-X_N(1)\|
+ \le \frac{M_CT_*^{-N-1}}{1-T_*^{-1}} .
+$$ {#eq:gg-literal-convergence-tail}
+
+Here $X=Y_C$ denotes the joint stored tuple in this estimate, so $X(1)=Y_C(1)$. The expression $X_N(1)$ means evaluation of its degree-$N$ coefficient polynomial, not a homomorphism from the nilpotent algebra.
+
+*Proof.* The finite corrected geometry has exactly the whole lists
+$\varepsilon U_r^\pm$ and constant $\varepsilon\Lambda$ in $A_N$, that is, modulo $\varepsilon^{N+1}$, including the highest retained coefficient. Its selected normal geometry and the truncated Cartan witness consequently have identical completed ordered jets by Proposition A.3. Proposition A.4, whose Jacobi recursion works coefficientwise over $A_N$, makes their metrics identical in marked normal coordinates. Spatial analyticity of each finite coefficient promotes that formal spatial identity to equality of actual coefficient germs.
+
+Their canonical bundles, $I$ and $X$ then agree, not just their scalar norm. Apply the same $P$ on both sides. Normal development, prescribed Moser path, initialized flow, graph projection and the same four-evaluation inverse have unique identical solutions. Their fresh tangent-sky graphs, potentials, hit maps, selected Cauchy states and optical fundamental matrices agree by the same finite ODE uniqueness. The affine matrices are the same finite functions of these states. This proves equality of every augmented component and inverse. It also proves compatibility under truncation.
+
+Put $a_n=[\varepsilon^n]Y_C$, so $Y_C(\varepsilon)=\sum_{n\ge0}a_n\varepsilon^n$ and $X_N=\sum_{n=0}^Na_n\varepsilon^n$. Coefficient Cauchy estimates on $|\varepsilon|=T_c$ give
+$\|a_n\|\le M_CT_c^{-n}\le M_CT_*^{-n}$. Hence $\|Y_C(1)-X_N(1)\|\le\sum_{n>N}\|a_n\|$, and summing the geometric series proves the displayed tail. A finite-stage coefficient initially defined on a smaller spatial neighborhood has a common representative because, as a germ, it equals the corresponding coefficient of the single holomorphic tuple $Y_C$. The exact cocycles and inverse identities hold for all truncations and hence for the common analytic sum.
+
+All finite parameter restrictions and derivatives are taken on this one joint analytic tuple. Interior Cauchy estimates give any specified finite transverse jet after its usual radius gap. Fixed finite conditioned point/spin diagrams add only finitely many ODE and hit-map restrictions. No bound for arbitrary unnormalized formal gauges, unbounded histories or norms of growing finite algebras is needed. ∎
+
+The finite-stage source dependence is Proposition 5.9, and the analytic bound for its fixed linear correction is proved in Appendix C. Theorem 6.3 supplies the common limit of the normalized stored tuples.
+
+
+<div id="sec:gg-ordinary-comparison"></div>
+
+## 7. The independent ordinary presentation
+
+The decoder uses the independently supplied data of Definition 2.3: the threefold, its complete line family, calibrated Einstein-bundle form and unrestricted analytic opposite-chirality class. We first recover the selected background and then register the negative class; Theorem 7.4 proves both counits on the entire ordinary domain.
+
+<div id="sec:gg-ordinary-background"></div>
+
+### 7.1. Reading the background and the selected scale
+
+<div id="prop:gg-independent-ordinary-background"></div>
+
+**Proposition 7.1.**
+
+An ordinary object determines an actual marked analytic Einstein germ $g_+$ with vanishing negative Weyl spinor, together with its numerical constant $-3H(I_\tau,I_\tau)$. Its complete-line correspondence, calibrated line and actual form are the ones recovered from $g_+$. The construction is holomorphic on common smaller representatives of conditioned bounded families and commutes with their finite Taylor reductions.
+
+*Proof.* The completeness theorem [@Kodaira1962], with $H^1(\ell,\mathcal O(1)^{\oplus2})=0$, gives a smooth four-dimensional curve-moduli germ. Its Kodaira map is
+$T_xM=H^0(\ell_x,N_{\ell_x/Z_+})$.
+A section of $\mathcal O(1)^{\oplus2}$ vanishes somewhere precisely when its $2$ by $2$ coefficient matrix has zero determinant. These null vectors define a nondegenerate conformal quadric, with the original tangent/spin mark. Vectors vanishing at a fixed point of $\ell_x$ form one of its null two-planes. The incidence fibers over $Z_+$ integrate these planes.
+
+For completeness, these null surfaces are totally geodesic. With $X,Y,Z$ tangent to such a surface, $g(\nabla_XY,Z)$ is symmetric in $X,Y$ by integrability and torsion-freeness, and alternating in $Y,Z$ by nullity and metric compatibility. The two symmetries force it to vanish. Thus its projective spinor is parallel along the surface. The resulting alpha distribution is exactly the projective spin-connection distribution; its Frobenius curvature is the negative Weyl spinor. That spinor is zero. This is the local complete-line correspondence of [@Penrose1976], with the chosen chirality.
+
+The incidence is the same actual germ: the map sending an incident pair to its curve point identifies its alpha leaves with the supplied quotient fibers, and the initialized transversal hits give the inverse. The whole-parent and angular argument in §E.2 uses only integrability and unit frame blocks, so applies already to this conformal geometry, before an Einstein scale has been selected. It supplies short connected simply connected quotient fibers and the required common representatives.
+
+The calibrated root is retained in this identification. Let $L_{\rm sp}^{-1}$ be the line obtained by parallel descent of the tautological spinor line. The incidence determinant sequences give
+$q_+^*K_{Z_+}\simeq\mathcal O(-4)$ from
+$T_{F_+/M}=\mathcal O(2)$ and
+$T_{F_+/Z_+}=p_+^*S\otimes\mathcal O(-1)$.
+One must also check that this determinant identification is parallel in the leaf directions. In a chosen homogeneous spin frame put $\Omega_F=\operatorname{vol}_{\mathrm{aux}}\wedge(\pi_{A'}D\pi^{A'})$, read as a local ordinary top form in that frame. Its direction factor is $-d\zeta$ in the north frame and $d\xi$ in the south frame; its horizontal terms vanish against the spacetime volume. These are the coherent spin factors, rather than separately chosen coordinate differentials. Put
+$s=\iota_{L_1}\iota_{L_0}\Omega_F$.
+Its spin transition weight is four times that of the tautological spinor line, and it is a local frame of the pullback canonical bundle. At any chosen incidence point take a Levi-Civita-normal spin frame. There $D_\alpha\pi=0$, the coefficient divergence of each $L_A$ against $\Omega_F$ is zero, and the horizontal projection of $[L_0,L_1]$ is zero. Involutivity and injectivity of the horizontal projection on the alpha distribution make the whole bracket zero there. Consequently
+
+$$
+ \mathcal L_{L_C}s
+ =\iota_{[L_C,L_1]}\iota_{L_0}\Omega_F
+  +\iota_{L_1}\iota_{[L_C,L_0]}\Omega_F
+  +\iota_{L_1}\iota_{L_0}\mathcal L_{L_C}\Omega_F=0
+$$ {#eq:gg-spin-determinant-bott-descent}
+
+at that point, in the same tautological parallel frame. The difference of these two partial line connections is tensorial. Choosing a normal frame at each point proves it is zero everywhere. Thus the determinant identification is Bott-parallel and descends along the connected short alpha leaves, giving the actual isomorphism
+$K_{Z_+}\simeq L_{\rm sp}^{-4}$.
+
+Retain the descended determinant isomorphism $\alpha_{\rm sp}:L_{\rm sp}^{-4}\xrightarrow{\sim}K_{Z_+}$ and its degree-one calibration $\kappa_{\rm sp}$ induced by the same spin mark. The quotient neighborhood retracts onto $\ell$. The supplied pair $(L,\alpha)$ and $(L_{\rm sp},\alpha_{\rm sp})$ differ by a $\mu_4$ torsor; $H^1(\mathbb P^1,\mu_4)=0$. Hence there is an actual root-preserving comparison $f:L\to L_{\rm sp}$. On $\ell$, the two calibrations have the same fourth power by Definition 2.3. There is a unique adjustment of $f$ by a constant in $\mu_4$ such that $\kappa_{\rm sp}\circ f|_\ell=\kappa$. Two such comparisons have ratio $c$ with $c^4=1$ and $c|_\ell=1$, hence $c=1$ on a smaller connected neighborhood. In particular the residual $c=-1$, invisible to $\tau$ and $\beta$ alone, is excluded at a fixed mark. Over a finite local coefficient algebra the same uniqueness follows from $(c-1)(c^3+c^2+c+1)=0$, since the second factor has unit residue four. The construction is holomorphic in the retained parameters. For moving full-spin marks the calibration is transported by $j_B$ as in Definition 2.3, so this uniqueness does not identify opposite specified spin lifts. No rescaling of $\tau$ or $\beta$ is used.
+
+Apply the bosonic Einstein-bundle correspondence [@Wolf2007, Propositions 3.4–3.7]. In that source the degree-minus-one universal line is our $L^{-1}$, so its bundle is precisely $\Omega^1_{Z_+}\otimes L^2$. It identifies the supplied section with an almost-Einstein density in the conformal germ. Only the branch in which that density is a unit is used here: its central value is one by the exact restriction in Definition 2.3. The argument uses the bundle section at zero cosmological constant as well; integrability of $\ker\tau$ is not used to infer a scalar value for a nilpotent family.
+
+The pullback identification can also be checked directly. On the homogeneous spinor incidence a weight-two one-form annihilating the Euler field and the alpha distribution has the form
+$\sigma\vartheta-\theta^A\pi^{A'}\mu_{AA'}$.
+Holomorphy on each complete projective line makes its vertical coefficient $\sigma$ independent of the direction and its remaining coefficients degree-one polynomials in $\pi$. In a Levi-Civita-normal spin frame, the coefficient of $\vartheta$ in its basicness equation is
+$\pi^{A'}(\nabla_{AA'}\sigma-\mu_{AA'})$.
+It vanishes in every direction exactly when $\mu=\nabla\sigma$. Thus the identification reads
+
+$$
+ q_+^*\tau=\sigma\,\vartheta
+       -\theta^A\pi^{A'}\nabla_{AA'}\sigma,\qquad
+ \vartheta=\pi_{A'}D\pi^{A'},\qquad
+ \theta^A=e^{AA'}\pi_{A'} .
+$$ {#eq:gg-ordinary-section-density}
+
+With the component conventions of §2, the flat north expressions are
+$\theta^A=du^A+\zeta\,dv^A$ and $\vartheta=-d\zeta$.
+For a change $\widehat g=\Omega^2g$, use the compatible spin frames
+$\widehat e^{AA'}=\Omega e^{AA'}$,
+$\widehat\pi_{A'}=\Omega^{-1/2}\pi_{A'}$ and
+$\widehat\sigma=\Omega\sigma$; the local square root has the existing central spin calibration. With $\Upsilon=\mathrm d\log\Omega$, the torsion-free spin-connection change gives
+
+$$
+ \widehat\theta^A=\Omega^{1/2}\theta^A,\qquad
+ \widehat\vartheta=\Omega^{-1}
+   (\vartheta+\theta^A\pi^{A'}\Upsilon_{AA'}),\qquad
+ \widehat\nabla_{AA'}\widehat\sigma
+          =\nabla_{AA'}\sigma+\sigma\Upsilon_{AA'}.
+$$ {#eq:gg-ordinary-section-scale-invariance}
+
+Substitution cancels the two $\Upsilon$ terms, proving invariance of the pullback form. Under $\pi\mapsto a\pi$ it is homogeneous of degree two and annihilates the Euler field, as required for an $L^2$-valued one-form. On the alpha-integrable locus, the remaining component of the basicness equation, obtained by differentiating in a normal spin frame, is
+
+$$
+ \iota_{L_A}\mathrm d(q_+^*\tau)
+ =-\theta^B\pi^{A'}\pi^{B'}
+       (\nabla_{AA'}\nabla_{BB'}\sigma+P_{AA'BB'}\sigma).
+$$ {#eq:gg-ordinary-section-basicness}
+
+The terms containing $D\pi$ cancel after $\mu=\nabla\sigma$. To fix the curvature coefficient and its sign, choose at the point an auxiliary scale with $\Omega=1$, $\Upsilon=0$ and $\nabla\Upsilon=P$. Then $\widehat P=0$ and the primed spin curvature vanishes there, since the negative Weyl spinor is zero. Differentiating the scale-change formula at that point gives $\iota_{L_A}d\vartheta=-\theta^B\pi^{A'}\pi^{B'}P_{AA'BB'}$, which gives the displayed identity after differentiating the density term. A metric trace is killed by $\epsilon_{A'B'}\pi^{A'}\pi^{B'}=0$. The remaining polynomial vanishes in every direction exactly when
+$(\nabla^2\sigma+P\sigma)_0=0$.
+The vertical restriction reads $\sigma$ itself, retaining the supplied scalar normalization.
+
+Proposition 5.4 now gives $I_\tau=(\sigma,\nabla\sigma,\rho)$ and
+$g_+=\sigma^{-2}g_{\mathrm{aux}}$, with
+$\operatorname{Ric}(g_+)=-3H(I_\tau,I_\tau)g_+$.
+This fixes our numerical normalization rather than importing a cosmological-constant convention from the cited source. In the physical scale $\sigma=1$, the same actual form is $\pi_{A'}D\pi^{A'}$.
+All moduli inverses, normal coordinates, unit roots, transversal hits and prolongations used here are finite holomorphic operations with retained unit margins. Their restrictions to parameter jets are therefore the same operations. ∎
+
+<div id="lem:gg-pure-chiral-background"></div>
+
+**Lemma 7.2.**
+
+If every negative free record is zero, the generated metric has identically zero negative Weyl spinor. Its alpha quotient is a smooth threefold germ along a complete line with normal bundle $\mathcal O(1)^{\oplus2}$, and the physical form $\pi_{A'}D\pi^{A'}$ descends with exactly the central normalization of Definition 2.3. The statement with the spin factors interchanged also holds.
+
+*Proof.* Differentiate the Einstein Bianchi identity for the negative Weyl spinor. Every commutator term contains a lower negative Weyl derivative, multiplied by known curvature derivatives. If all lower negative derivatives are zero, these terms vanish. The homogeneous highest-derivative kernel is the negative free module of Appendix A.2. Its zero free component therefore forces the next whole derivative to vanish. Starting with order zero proves that all negative Weyl derivatives at the mark vanish. Analyticity makes the field zero in the germ. Positive curvature and the scalar do not supply an independent term in this homogeneous identity.
+
+On $F_+=\mathbb P(S')$ the horizontal fields are
+$L_A=\pi^{A'}\nabla_{AA'}$. Their bracket modulo their span is the primed spin curvature contracted with the two tangent factors $\pi^{A'}\pi^{B'}$ and the tautological spinor. The negative Weyl contribution is zero. The trace-free Ricci contribution has the factor $\epsilon_{A'B'}\pi^{A'}\pi^{B'}=0$, independently of Einsteinity; scalar contributions likewise have an alternating contraction of two copies of $\pi$. Hence the alpha distribution is integrable at every numerical $\Lambda$, using only the vanished negative Weyl spinor.
+Section E.6 first constructs the separated short-leaf quotient from these fields, without assuming an existing $q_+$. Its initialized finite transversal flows, closed short-leaf relation and open quotient give the Hausdorff germ and embedded whole line. The subsequent whole-fiber constructions of §E.2 apply to that quotient.
+
+At the central line the normal infinitesimal quotient is
+$(T_oM\otimes\mathcal O)/(\,S\otimes\mathcal O(-1)\,)
+=S\otimes\mathcal O(1)$.
+Its four global sections are the four spacetime variations, so this is the complete local line family. On the homogeneous spinor lift $D\pi=0$ along $L_A$, and the form $\vartheta=\pi_{A'}D\pi^{A'}$ annihilates that field. Its exterior derivative now has only one alpha tangent inserted, so its trace-free Ricci contribution need not vanish by the preceding alternating identity. Equivalently, setting $\sigma=1$ in the basicness formula above gives
+$\iota_{L_A}d\vartheta=-\theta^B\pi^{A'}\pi^{B'}P_{AA'BB'}$.
+Here Einsteinity is used: $P=(\Lambda/6)g$, so this expression is zero. The physical form is therefore basic, including when $\Lambda=0$. Its value on the central line is literally $\pi_{A'}d\pi^{A'}$ in the marked frame. The spin-incidence determinant identity gives the same calibrated root. ∎
+
+<div id="sec:gg-negative-registration"></div>
+
+### 7.2. Registering the negative class
+
+Let $d_{\mathrm{rec}}$ decode an independently supplied ordinary object as follows. Proposition 7.1 first reads $g_+$ and its complete positive free record $U^+$. The contour $P_Z\beta$ is then an analytic negative massless spinor $\psi$ on that same curved background. Read all its symmetrized covariant free derivatives in the original spin frame, calling them $U^-$. Apply the original inverse residue formulas of Theorem 3.1 to these two whole sequences, and keep the numerical value $-3H(I_\tau,I_\tau)$. These operations define
+$d_{\mathrm{rec}}(Z_+,L,\tau,\beta)$ without a supplied ray construction or nonlinear Einstein metric with both chiralities.
+
+Conversely define $\Gamma$ on an original pair. Generate the pure-positive background from $(U^+,0;\Lambda)$ by §§5–6 and take the quotient and exact form of Lemma 7.2. To define the negative ordinary class at finite order, differentiate the *linear* massless Bianchi equation and commute its derivatives on this known background. At order $n$ its inhomogeneous terms use only background jets and lower field jets. The homogeneous highest kernel is $W_n^-$ by the same permutation argument as Appendix A.2. Choose the fixed representation-theoretic splitting on the image, and prescribe its free component to be $U_n^-$.
+Apply the finite-jet formula of the one operator $K_Z$ from Appendix E to these field jets. This is the registration rule for $\beta$. It uses neither a nonlinear Einstein inverse nor a newly chosen primitive at each order.
+
+<div id="prop:gg-negative-registration-convergence"></div>
+
+**Proposition 7.3.**
+
+This registration rule is consistent at every finite order and is the Taylor rule of an actual ordinary analytic class. Its representative has a common domain for bounded original input families, is holomorphic in their parameters, and has exactly the original negative free records and factorials.
+
+*Proof.* Use the joint analytic family already proved in Theorem 6.3,
+
+$$
+ g(\varepsilon,t)=g(\varepsilon U^+,\varepsilon tU^-;\varepsilon\Lambda),
+ \qquad
+ \psi_\varepsilon=
+ \left.\partial_t W^-\!\left(g(\varepsilon,t)\right)\right|_{t=0}.
+$$ {#eq:gg-negative-registration-witness}
+
+To apply Theorem 6.3, regard $(U^+,tU^-;\Lambda)$ on a fixed disk $|t|\le t_0$ as one bounded holomorphic input family of Definition 2.1. Its common output has an amplitude disk of radius greater than one and that same fixed positive $t$ radius. Here spinors are identified by the initialized physical normal spin frames of this family. By Lemma 7.2, $W^-(g(\varepsilon,0))=0$ identically. Differentiating the Einstein Bianchi identity consequently gives
+$\nabla^{AA'}\psi_{\varepsilon,A'B'C'D'}=0$ on $g(\varepsilon,0)$: every connection or frame variation term multiplies a zero background negative Weyl derivative. The same observation shows that its full free record is $\varepsilon U^-$.
+
+The ordered jets of this witness obey exactly the finite linear recurrence just specified. At each order, equality of the inhomogeneous equations and free component, with the highest-kernel description, gives equality of the whole jet. This proves consistency of the finite rule without putting the witness into that rule as an input. Lemma E.2 and Theorem E.1 then make its registered coefficients literally the coefficients of the one representative $K_Z\psi_\varepsilon$.
+Its norm is bounded on common domains by Theorem E.1 and the interior parameter Cauchy estimate for $\partial_tg$. Evaluation at $\varepsilon=1$ gives the asserted ordinary class and convergence.
+
+The normalization can also be checked on the line-normal graded pieces:
+
+$$
+ \operatorname{gr}^n\!\left(L^{-6}\right)
+   =\operatorname{Sym}^nS^*\otimes\mathcal O(-6-n),\qquad
+ \dim H^1=(n+1)(n+5),\qquad H^0=H^2=0.
+$$ {#eq:gg-negative-ordinary-graded-piece}
+
+In the original normal monomial and Laurent bases, changing only degree $n$ gives
+$\Delta U^-_{n,ab}=(n-a)!\,a!\,\Delta\beta_{n,ab}$.
+This is the same contour coefficient as Theorem 3.1. Curved lower-order terms have already been fixed and do not alter this associated graded map. The actual representative and its bound come from $K_Z$, not from an assumption that formal cohomology classes converge. ∎
+
+The negative class is a massless field on a curved selected half-flat background. It is not identified with the negative Weyl tensor of the fully coupled metric away from the mark. The latter is reconstructed by the full generator; registration reads its complete free input through the derivative in the displayed witness.
+
+<div id="sec:gg-ordinary-both-counits"></div>
+
+### 7.3. Both inverse comparisons on the independent domain
+
+<div id="thm:gg-independent-ordinary-inverses"></div>
+
+**Theorem 7.4.**
+
+The independently defined decoder and registration satisfy
+
+$$
+ d_{\mathrm{rec}}\Gamma=1,\qquad
+ \Gamma d_{\mathrm{rec}}\simeq1
+       \quad\text{on all of }\mathfrak W_\Lambda .
+$$ {#eq:gg-independent-ordinary-counits}
+
+The second comparison preserves the actual selected form, the calibrated root and the ordinary class by an actual holomorphic coboundary.
+
+*Proof.* For an original pair, Lemma 7.2 and Proposition 7.3 recover its entire positive and negative records, with the original factors in Theorem 3.1. The scalar is unchanged. This proves the first inverse.
+
+Now start with any independently admitted ordinary object $W$.
+Proposition 7.1 constructs its selected background directly from its curves and $\tau$. That background and the pure-positive background generated from $d_{\mathrm{rec}}W$ have the same whole positive free record, zero whole negative record, the same scalar and the same point/spin mark. Appendix A.2 and the normal-metric uniqueness of Proposition A.4 give the actual marked normal isometry. The complete-line correspondence carries it to an actual ordinary threefold comparison, with the calibrated root identification described in Proposition 7.1.
+
+Under this comparison the two selected metrics coincide. For an auxiliary coframe their two unit densities therefore have ratio $r$ with $r^2=1$ and $r(o)=1$. On a smaller connected germ $r+1$ is a unit, so $r=1$. The Einstein-bundle section map is injective, hence the forms coincide, including their derivatives. This argument also works over a finite local coefficient algebra because $r+1$ has unit residue. It does not replace preservation of the form by preservation of its kernel or its squared norm.
+
+The two negative massless fields are now on this same selected background. They have the same whole free covariant jet. The linear recurrence used in §7.2 shows inductively that their ordered jets agree: its lower commutator terms are known, and the highest-kernel difference is zero. Analyticity makes the fields equal. Let $\beta'$ be the generated representative transported by this actual ordinary comparison. Naturality of the contour under the spin/line identification gives
+$P_Z(\beta'-\beta)=0$. Apply the zero-contour construction of §E.4 directly to that difference. It gives $\beta'-\beta=\delta v$ with an actual bounded ordinary zero-cochain on common smaller representatives. This proves the second inverse for the transported representatives themselves, with the original class rather than only its associated graded or formal completion.
+
+Every comparison in this proof is an initialized normal map, complete-line hit map, unit root or the fixed operation $K_Z$. The proofs of §§6 and E give their common domains, holomorphic parameter dependence and literal finite-jet restrictions. ∎
+
+The independent ray correspondence is equally onto. Its decoder reads the metric and full free records by §4. Normal-metric uniqueness gives
+$\mathcal G\mathcal E\simeq1$ on the independently admitted objects of Definition 2.2, while exact record generation gives $\mathcal E\mathcal G=1$. Thus
+$\Gamma\mathcal E$ and $\mathcal Gd_{\mathrm{rec}}$ are inverse object comparisons between the ray/affine presentations and the independent ordinary presentation. Source changes, physical arrows and reality are established next.
+
+
+<div id="sec:gg-source-arrows-reality"></div>
+
+## 8. Source comparisons, classical limits and physical arrows
+
+<div id="sec:gg-actual-source-comparisons"></div>
+
+### 8.1. Actual representative comparisons
+
+An original source is a cohomology class on the fixed marked seed. The generating rule first applies the fixed residue and middle-Laurent projection of Theorem 3.1. Adding an ordinary source coboundary therefore gives exactly the same canonical pair and the same prescribed normal output. This comparison is the identity. A raw analytic presentation can also be retained when it satisfies the regular contact-seed conditions and the whole unit-section condition of Proposition 5.4, equivalently the calibrated affine admission of Definition 5.6 and Proposition 5.7. The comparison below applies to such retained presentations and to the independently admitted ray objects.
+
+<div id="prop:gg-actual-affine-source-comparisons"></div>
+
+**Proposition 8.1.**
+
+Two admitted analytic presentations with the same whole original records, numerical scalar and mark have actual holomorphic contact-affine comparisons. They intertwine the full transition maps, compact sky lifts, projective extensions and selected root. They are coherent under composition and holomorphic on conditioned common parents.
+
+*Proof.* Let their selected metrics be $g_1,g_2$. The normal-metric uniqueness of Proposition A.4 gives the marked isometry
+$f=\operatorname{Exp}_{2}\operatorname{Exp}_{1}^{-1}$.
+The tangent identification in this formula is the retained marked one. Its inverse and spin lift are fixed by the same initialized normal maps. Let $C_f$ be its induced null-ray map. In ray charts $\psi_i^a$ set
+$K_i=\psi_i^2C_f(\psi_i^1)^{-1}$ and define the unit $d_i$ by
+$K_i^*\alpha_i^2=d_i\alpha_i^1$.
+
+Let $\tau_i^a$ denote the affine coordinate along the canonical lifted incidence of §D.7. The comparison must have the form
+
+$$
+ \widehat K_i(z,\tau)
+   =\bigl(K_i(z),d_i(z)^{-1}\tau+u_i(z)\bigr).
+$$ {#eq:gg-actual-source-affine-comparison}
+
+Choose any one of the fixed local transversal hits on the short ray. Define $u_i$ there as
+$\tau_i^2\circ f^F-d_i^{-1}\tau_i^1$.
+This value is independent of the hit. Indeed the contact unit and the kinematic normalization of the ray fields give
+
+$$
+ f^F_*(\sigma_1^2D_1)
+       =d_i^{-1}\sigma_2^2D_2,\qquad
+ D_a\tau_i^a=\sigma_a^{-2},\qquad
+ D_1(\tau_i^2\circ f^F-d_i^{-1}\tau_i^1)=0 .
+$$ {#eq:gg-source-affine-slice-independence}
+
+The second density and field in the first formula are evaluated at the image point. The unit $d_i$ is a ray function and hence constant under $D_1$. The last equality follows directly from the first two. Whole short-ray connectedness therefore makes $u_i$ a holomorphic ray function with the stated transversal value.
+
+These definitions give
+$\widehat K_i j_1=j_2 f^F$ on the incidence, and hence intertwine all compact lifted skies. In point-map notation,
+
+$$
+ \Phi^2_{ij}=K_i\Phi^1_{ij}K_j^{-1},\qquad
+ \widehat\Phi^2_{ij}
+       =\widehat K_i\widehat\Phi^1_{ij}\widehat K_j^{-1}.
+$$ {#eq:gg-actual-source-overlap-conjugacy}
+
+All functions in these compositions are evaluated at their moving arguments.
+The projective extensions and their central compatible roots are unique by §D.8, so these are comparisons of the same whole section, not just its squared norm. In particular the numerical scalar is retained.
+
+The comparisons compose as follows. For successive comparisons write $(K_{12},d_{12},u_{12})$ and $(K_{23},d_{23},u_{23})$. Their composite has
+
+$$
+ K_{13}=K_{23}K_{12},\quad
+ d_{13}=(d_{23}\circ K_{12})d_{12},\quad
+ u_{13}=(d_{23}^{-1}\circ K_{12})u_{12}+u_{23}\circ K_{12}.
+$$ {#eq:gg-source-comparison-coherence}
+
+These are the direct composition formulas for the displayed affine maps. The normal isometries compose, and the two composite affine lifts agree on the canonical incidence and therefore agree everywhere in their chart germs. Identity and inverse comparisons follow in the same way. Every map here is a finite exponential, parallel transport, transversal hit, unit ratio or initialized linear ODE. The bounds of §§6 and D give the asserted common domains. ∎
+
+The source logarithm convention remains that of Proposition 5.8:
+$E=(\Phi^{-1})^*$ has generator $+X_h$, whereas the stored point map has infinitesimal velocity $-X_h$. In an identity local model the affine *operator* generator and its bracket are
+
+$$
+ \widehat X_{h,\chi}=X_h+(\chi-r_h\tau)\partial_\tau,\qquad
+ [\widehat X_{h,\chi},\widehat X_{k,\psi}]
+  =\widehat X_{\{h,k\},
+       X_h\psi-X_k\chi+r_h\psi-r_k\chi}.
+$$ {#eq:gg-affine-operator-bracket}
+
+Here $\mathcal L_{X_h}\alpha=r_h\alpha$.
+If $a_s$ is the actual point-translation with $a_0=0$, then
+$\chi=-\partial_sa_s|_0$. In the section-adapted matrix of §D.9,
+$a=-b/c$, so this is $\chi=\partial_sb_s|_0$ when $c_0=1$.
+Thus the affine coefficient is computed from the same Cauchy matrices and section; it is not new free source data.
+The stored affine point velocity is the negative of this operator vector field. Direct differentiation gives the displayed bracket. Its mixed contact term remains the one in Proposition 9.1, including the negative-source self-interaction.
+
+<div id="sec:gg-classical-cotangent-comparison"></div>
+
+### 8.2. The two classical chiral limits
+
+<div id="thm:gg-actual-chiral-cotangent-atlas"></div>
+
+**Theorem 8.2.**
+
+On either pure chiral axis the generated ray contact germ is actually isomorphic, along the whole physical sky, to the projectivized cotangent contact germ of the corresponding classical ordinary twistor threefold. The compact sky goes to the projectivized conormal of its ordinary line. The contact, line, selected-section and affine comparisons commute.
+
+*Proof.* Suppose $U^-=0$. Lemma 7.2 constructs the ordinary quotient
+$Z_+$ from $P(S')$ and identifies its whole complete line family and exact selected form. Each null geodesic lies in a unique alpha surface: choose its primed projective spinor at one point and use the unique integral surface there. Total geodesy keeps the whole short geodesic in that surface. This gives an actual holomorphic submersion
+$\rho:Z_{\mathrm{ray}}\to Z_+$.
+In the null incidence its kernel has the two alpha directions and the additional unprimed projective direction. Quotienting by the null-geodesic direction leaves $\ker d\rho$ of rank two.
+
+Write $\mathcal D$ for the ray contact distribution and
+$\mathcal V=\ker d\rho$. A ray variation within one alpha surface has spacetime variation tangent to that null surface. Its contact value is $g(k,\delta x)=0$. Hence $\mathcal V\subset\mathcal D$.
+The fibers are integral, so $\mathcal V$ is Legendrian. The quotient
+$d\rho(\mathcal D)$ is therefore a two-dimensional hyperplane in $T Z_+$. Its annihilator defines
+
+$$
+ C:Z_{\mathrm{ray}}\longrightarrow\mathbb P(T^*Z_+),\qquad
+ C(z)=\operatorname{Ann}\bigl(d\rho(\mathcal D_z)\bigr).
+$$ {#eq:gg-chiral-contact-annihilator-map}
+
+By definition its tautological contact value pulls back to the ray contact value, with the induced value-line isomorphism. The contact Levi pairing
+$\mathcal V\times\mathcal D/\mathcal V$ is perfect. It is exactly the derivative of this annihilator line along a $\rho$-fiber, so $dC$ is injective on $\mathcal V$. Since $\rho$ is a submersion, $C$ is a local biholomorphism.
+
+For a fixed spacetime point $x$, $\rho$ sends its whole sky $Q_x$ to $\ell_x$. The contact form is zero on $TQ_x$, so $C(Q_x)$ lies in
+$\mathbb P(N^*_{\ell_x/Z_+})$. On each unprimed ruling its source contact line has degree one, and is the pullback of the tautological contact line. Thus its map
+$\mathbb P^1\to\mathbb P(N^*_{\ell_x/Z_+}|_z)\simeq\mathbb P^1$
+has degree one and is an isomorphism. The base map is the line identification, so $C$ restricts to an isomorphism of whole compact skies with the conormal surface.
+
+A local biholomorphism injective on this compact surface is injective on some neighborhood of it. Otherwise two sequences of different points with the same image could approach the surface. Compactness would give limiting points with the same surface image, hence the same point; its local inverse excludes those sequences. The open image contains the whole target surface. This proves the asserted germ isomorphism.
+
+The form on $Z_+$ is the descended $\vartheta$ of Lemma 7.2. In the physical scale of the source metric, the pullback formula of Proposition 7.1 therefore reads the density $\sigma=1$; Proposition 5.4 evaluates the selected ray section as this same density. The contact comparison $C$ preserves the tautological contact value and the sky incidence, so the construction of §D.1 identifies their density lines with the same central root. For each fixed ray, its Hamilton affine parameter and these density frames then identify the two optical equations and their Cauchy data. ODE uniqueness identifies their full solutions, transition matrices and Wronskian isomorphism, including inverse transitions. Finally the affine coordinate is the ratio of the same companion solution to $\sigma$, with derivative $\sigma^{-2}$. The unique lift of each compact sky in §D.7 fixes its additive constant, and §D.8 gives the unique projective extension. This proves the contact, selected-section and affine commutative comparison with the same numerical scalar.
+
+If $U^+=0$, interchange the spin factors and the two rulings. The same curvature contraction, compact-line and annihilator arguments give the opposite ordinary quotient and its cotangent comparison. In the original convention its apparent positive dual Hamiltonian is obtained from $F_{-6}$ by the fixed residue dictionary, not by adding another input. The finite flow and inverse estimates used above are the ones of §§6 and E.2, so the diagrams have common representatives in bounded families at every numerical scalar. ∎
+
+In the mixed case the construction retains its derived contact-affine carrier. The theorem asserts a three-dimensional ordinary quotient on each classical chiral axis; the independent ordinary presentation of §7 encodes the mixed input on a selected curved background with its registered class.
+
+<div id="sec:gg-physical-spin-arrows"></div>
+
+### 8.3. Point changes and full spin arrows
+
+Let $H_a=a^bH_b$ be the horizontal constant-direction Cartan record flow of §3. For a small marked displacement $a$ and a full complex spin element $A$, define, directly on whole records,
+
+$$
+ R_{a,A}U=A^*\!\left(\operatorname{Fl}_{H_a}^{\,1}U\right).
+$$ {#eq:gg-independent-source-physical-action}
+
+Its admissibility means that the indicated short flow and marked maps lie in the retained parents. This definition precedes the ray or ordinary decoder. It retains the full spin element even when its tensor action has a kernel.
+
+<div id="thm:gg-full-spin-physical-homs"></div>
+
+**Theorem 8.3.**
+
+The generated metric, ray and contact-affine presentations have the same local physical arrow groupoid as the independently defined source action. Each actual orientation-preserving metric isometry with a specified full spin lift is represented by exactly one admissible $(a,A)$ in these marked representatives. The independent ordinary presentation has this same physical action through $d_{\mathrm{rec}}$, with actual representative comparisons and coherent finite diagrams.
+
+*Proof.* Set $x_a=\operatorname{Exp}_o(a)$ and let $\nu_a$ be the initialized spin parallel transport along its radial geodesic. If $V=R_{a,A}U$, the record-flow equations say that $V$ is precisely the full free record at $x_a$ in the frame $\nu_a A$. Normal-metric uniqueness therefore gives the actual isometry
+
+$$
+ \Xi_{a,A}:g[V]\longrightarrow g[U],\qquad
+ v\longmapsto
+ \operatorname{Exp}_{x_a}^{\,g[U]}(\nu_a A v).
+$$ {#eq:gg-physical-arrow-normal-isometry}
+
+Its spin differential is the specified initialized lift. The covariant source instruction $U\to V$ uses $\Xi_{a,A}^{-1}$; the displayed metric map has the opposite direction. Their ray and affine maps are the maps of Proposition 8.1 with that direction.
+
+For the group law put
+$h_U(a,c)=\operatorname{Exp}_o^{-1}
+ \operatorname{Exp}_{x_a}(\nu_ac)$.
+Let $K_U(a,c)$ be the spin rotation comparing direct radial transport to transport first to $x_a$ and then to this endpoint along the short second geodesic. Explicitly it is direct-radial transport inverted, composed with broken-path transport; it is initialized to the identity. Actual exponential composition gives
+
+$$
+ (b,B)\circ(a,A)=
+   \bigl(h_U(a,Ab),K_U(a,Ab)AB\bigr),\qquad
+ (a,A)^{-1}=\bigl(-A^{-1}a,A^{-1}\bigr)\quad\text{at }V.
+$$ {#eq:gg-source-physical-composition}
+
+Associativity follows from map composition, including its initialized spin transports. On the reversed radial segment the direct and broken transports cancel, which proves the inverse formula. For any metric isometry with spin lift, its image of the marked point determines $a$ and its differential relative to $\nu_a$ determines the full $A$. An isometry is fixed by these data since it intertwines the initialized exponential maps. This proves existence, uniqueness and the bijection of physical Hom sets. An element in the kernel of the tensor representation still has its distinct spin lift and is not removed.
+
+For independently supplied ordinary objects $W,W'$, define physical admission by the independently computed condition
+
+$$
+ d_{\mathrm{rec}}W'=R_{a,A}\,d_{\mathrm{rec}}W .
+$$ {#eq:gg-independent-ordinary-physical-admission}
+
+This uses complete-line reconstruction, the ordinary section and the contour on the supplied objects. It does not invoke an image test. The actual action on representatives is computed by
+$\Gamma R_{a,A}d_{\mathrm{rec}}$ together with the two counits of Theorem 7.4. Its composition and inverse diagrams are the ones just proved, followed by their ordinary comparisons. In a mixed field this operation rebuilds both the selected background and its registered class; there need not be a point map of one fixed old background threefold.
+
+The enriched ray maps preserve $I,X$ and $DX$. These generate the canonical six-dimensional fiber because the scale-plane Gram determinant is $-1$ and the solder is nondegenerate. Thus no independent vertical comparison remains once the physical map is fixed. The full spin lift is retained separately; it cannot be inferred from its action on tensor cochains. All constructions in this proof are finite exponential, transport, hit and unit operations. On any fixed finite conditioned point/spin diagram the estimates of §6 give common representatives and finite-jet compatibility. ∎
+
+<div id="sec:gg-lorentz-reality"></div>
+
+### 8.4. Lorentzian reality
+
+The fixed Lorentz spin identification, with the signature and scalar conventions of §2, defines an antilinear involution $\mathfrak c$ on the original whole records: conjugate coefficients, exchange the two spin factors and the two chiral records, and conjugate $\Lambda$. Transfer it to the original source classes by the exact two residue dictionaries of Theorem 3.1. Their different line-bundle weights $2$ and $-6$ are retained; both source classes have cohomological degree one.
+
+<div id="prop:gg-coupled-lorentz-reality"></div>
+
+**Proposition 8.4.**
+
+For real numerical $\Lambda$, the $\mathfrak c$-fixed original data generate all marked real analytic Lorentzian Einstein germs, with their full real spin arrows. The ray and affine constructions carry their actual induced reality. On the independent ordinary presentation the same reality is the coupled operation
+$\Gamma\mathfrak c\,d_{\mathrm{rec}}$.
+
+*Proof.* The Cartan record equations and the canonical normal connection are real under the declared spin identification and real tangent form. Their initialized analytic ODEs therefore give conjugate coframes from conjugate data. Uniqueness makes the coframe and metric real on the Lorentz tangent slice for fixed data. Their nondegenerate central Lorentz form fixes the signature after shrinking. Conversely the curvature records of every real analytic Lorentz Einstein germ have exactly this reality, and the normal-metric inverse reproduces that germ.
+
+Actual null transport, contact forms, optical solutions and compact affine lifts are natural under this conjugation. Unit roots have the fixed central branch. The contact-affine comparisons of Proposition 8.1 provide the same induced reality on all admitted representative charts. Real point changes and full real spin lifts are the restrictions of Theorem 8.3.
+
+The ordinary decoder is independent, so its reality condition is that its whole decoded records are fixed by $\mathfrak c$. Applying $\Gamma$ gives its actual real representative; Theorem 7.4 supplies the comparison to the original object. The resulting operation is involutive through that actual counit and obeys the same coherent diagrams. It generally changes the selected chiral background and registered class together. It is not a requirement for a pointwise antiholomorphic involution on a single old background. ∎
+
+<div id="sec:gg-main-proof"></div>
+
+### 8.5. Proof of the main correspondence
+
+*Proof of Theorem 2.4.* The two original analytic residue dictionaries are Theorem 3.1, with both factorial normalizations fixed. Lemma 3.2 and Appendix A supply the polynomial curvature completion. Theorem 3.3 proves convergence of its whole-record Cartan flows with all derivative slots and the ordered reserve of Appendix B.
+
+The source Hamiltonians and their interaction are the original ones of §5 and Proposition 9.1. The explicitly fixed cochain splittings and zero-record symbol inverse are proved in Appendix C; they correct the optical defect while retaining the complete free record. Proposition 5.8 fixes the operator/point orientation. Theorem 5.5 is the finite generating law. Proposition 5.9 fixes its trial execution and proves finite-prefix source dependence, including the normalization of its own derived geometry. The prescribed normalization and coefficient comparison of Theorem 6.3 prove common convergence of its maps, inverse maps, section, incidence and canonical connection.
+
+Propositions 4.1–4.3 and 5.4 recognize the canonical normal Einstein geometry and selected scalar. Proposition A.4 proves uniqueness from the whole free record and scalar. Every marked analytic Einstein germ supplies analytic original classes by Theorem 3.1; applying the generator and this uniqueness gives its marked inverse. The independent ray recognition and the same argument give both ray inverses. Definition 5.6 and Proposition 5.7 and Appendix D give the intrinsic optical and affine presentations and their two inverse comparisons.
+
+Proposition 7.1 decodes all independently admitted ordinary objects. Proposition 7.3 and Appendix E give the registered class and its common representative inverse. Theorem 7.4 proves both ordinary counits on their entire independent domain. Proposition 8.1 proves source independence and coherent chart comparisons. Theorem 8.2 proves both classical chiral cotangent limits by atlas maps along the whole compact sky. Theorem 8.3 gives the independent point action, its full spin Hom sets and the ordinary physical action. Proposition 8.4 gives the Lorentz real restriction.
+
+Every scalar occurrence in these constructions is polynomial, an initialized finite ODE coefficient or a unit expression with a scalar-independent central residue. The scale-plane Gram determinant is $-1$; no division by $\Lambda$ occurs. All assertions therefore include numerical zero and the finite Taylor restrictions of holomorphic scalar families. The common-domain bounds concern bounded original inputs and conditioned finite diagrams, as stated; they make no assertion about arbitrary unnormalized gauges or unbounded histories. These observations establish all the claimed comparisons. ∎
+
+
+<div id="sec:gg-active-realization"></div>
+
+## 9. Active twistor realization
+
+Penrose's active-patching proposal uses local Heisenberg algebras, structure-preserving comparisons, nonlocal point recognition and an infinity structure [@Penrose2015, §§3–6]. We first analyze the source interactions and calibrated affine preservation, then pass to the analytic operator presentation in Propositions 9.6–9.9. Theorems 9.10–9.11 give its independent-domain correspondence and the simultaneous structural conclusions.
+
+The following calculations explain the nonlinear correction and its intrinsic realization. The calibrated affine structure of Proposition 5.7 supplies explicit local models, overlap and inverse laws, and an independently defined holomorphic admission. Its source comparisons and classical limits concern these actual representatives.
+
+<div id="prop:gg-mixed-lift-nonclosure"></div>
+
+**Proposition 9.1.**
+
+The sum of the two bare contact-lift subspaces in equation ([-@eq:gg-two-contact-lifts]) is not closed under the actual mixed contact bracket. Negative self-brackets do close in their dual Hamiltonian subalgebra.
+
+*Proof.* Rename the contact coordinates $(a,b,r,s,\zeta)$, with
+$\alpha=\mathrm da+r\,\mathrm db+s\,\mathrm d\zeta$,
+$e=-a-rb-\zeta s$ and $c=rb+\zeta s$.
+Positive lifts $F_b-rF_a$ are independent of $s$.
+Negative lifts $-G_s+\zeta G_e$, with $G=G(e,s,r)$, are annihilated by
+$T=\partial_b-r\partial_a$.
+Since $[T,\partial_s]=0$, every sum satisfies $T\partial_s h=0$.
+
+For $F=a^4/\zeta$, $G=e^4/r$, the exact Hamiltonians are
+$h=-4ra^3/\zeta$ and $k=-4\zeta(a+c)^3/r$.
+Substitution in the contact field gives
+$X_hk=48a^2(a+c)^2(a+2c)$ and
+$-h_a k=-48a^2(a+c)^3$. Hence
+
+$$
+ M=\{h,k\}=48a^2c(a+c)^2,\qquad
+ T\partial_sM=-288r\zeta\,ac(a+c)\not\equiv0 .
+$$ {#eq:gg-mixed-nonclosure}
+
+The second formula uses $T=r(\partial_c-\partial_a)$ and
+$\partial_s=\zeta\partial_c$ on these polynomials. It rules out membership in the two bare lift spaces even locally on the indicated overlap.
+
+For negative self-interaction the dual contact form is
+$\mathrm de+\zeta\,\mathrm ds+b\,\mathrm dr=-\alpha$.
+The base field $v_G=G_s\partial_e-G_e\partial_s$ has the stated negative cotangent lift. Functoriality of cotangent lift gives
+
+$$
+ \{h_-(G),h_-(K)\}=h_-(B(G,K)),\qquad
+ B(G,K)=G_sK_e-G_eK_s .
+$$ {#eq:gg-negative-self-bracket}
+
+For $G=e^4/r$, $K=s^4/r$, this is
+$B=-16e^3s^3/r^2\ne0$. ∎
+
+This is a statement about the specified local lift spaces. It does not exclude additional operators, nonlinear corner comparisons, a larger ordinary structure or a noncommutative realization. The mixed operation presently lives in the derived contact algebra; the linear ordinary registration alone is not its geometric realization.
+
+<div id="prop:gg-mixed-einstein-defect"></div>
+
+**Proposition 9.2.**
+
+There are two exact opposite-chirality vacuum waves whose contact-compatible mixed trial has a nonzero obstruction to extending their selected Einstein scale. The obstruction is removable at the mixed order.
+
+*Proof.* In complex coordinates take
+
+$$
+ \eta=2\,\mathrm du\,\mathrm dv-2\,\mathrm dx\,\mathrm dy,\qquad
+ g=\eta+t f(u)\,\mathrm dx^2+s q(x)\,\mathrm dv^2 .
+$$ {#eq:gg-two-wave-trial}
+
+The inverse has
+$g^{uv}=1$, $g^{xy}=-1$, $g^{uu}=-sq$, $g^{yy}=-tf$,
+with their symmetric entries and no others. Its determinant is one. The entire nonzero Christoffel list, apart from lower-index symmetry, is
+
+$$
+ \begin{aligned}
+ \Gamma^v_{xx}&=-tf'/2,&
+ \Gamma^u_{xx}&=tsqf'/2,&
+ \Gamma^y_{ux}&=-tf'/2,\\
+ \Gamma^y_{vv}&=sq'/2,&
+ \Gamma^u_{vx}&=sq'/2.
+ \end{aligned}
+$$ {#eq:gg-two-wave-christoffels}
+
+In the order $(x,v,u,y)$ all connection matrices are strictly triangular. Thus their traces and product traces vanish. The Ricci formula reduces to the divergence of this list, giving exactly
+
+$$
+ \operatorname{Ric}(g)=\tfrac12tsqf''\,\mathrm dx^2,
+ \qquad \operatorname{Scal}(g)=0 .
+$$ {#eq:gg-two-wave-ricci}
+
+Each single wave is an exact vacuum metric. Their curvature two-forms are proportional to $\mathrm du\wedge\mathrm dx$ and $\mathrm dx\wedge\mathrm dv$ respectively. Exact null coframes for the two metrics are
+$\left(\begin{smallmatrix}\mathrm du&\mathrm dx\\\mathrm dy-(tf/2)\mathrm dx&\mathrm dv\end{smallmatrix}\right)$ and
+$\left(\begin{smallmatrix}\mathrm du+(sq/2)\mathrm dv&\mathrm dx\\\mathrm dy&\mathrm dv\end{smallmatrix}\right)$,
+with metric twice their determinant. The two curvature forms occupy a common row and a common column, respectively, and therefore have opposite chiralities.
+
+Put $f=u^3$, $q=x^2$ and work over
+$A=\mathbb C[t,s]/(t^2,s^2)$ with highest ideal $(ts)$.
+Then
+
+$$
+ [ts]P^\circ=\tfrac32ux^2\,\mathrm dx^2=:A_5,\qquad
+ [ts](\nabla_uP_{xx}-\nabla_xP_{ux})=\tfrac32x^2 .
+$$ {#eq:gg-mixed-cotton}
+
+The lower Schouten tensors vanish, so the highest derivative is flat. The tensor $A_5$ has zero flat divergence, but its class in $\mathcal Q_5$ is nonzero. Indeed if $A_5=\operatorname{Hess}_0\phi$, then
+$\eta_{xx}=\eta_{ux}=0$ gives
+$\phi_{xx}=3ux^2/2$ and $\phi_{ux}=0$.
+Commuting their next derivatives contradicts $\phi_{uxx}=3x^2/2\ne0$.
+
+This is an admitted contact trial, rather than an assumed Einstein output. The short null-geodesic and transverse-hit construction applied to the displayed nondegenerate analytic metric gives actual contact cocycles and compact skies, without an Einstein hypothesis. Its first variations have classes
+$J[h_{\mathrm{wave}}]$, $J[k_{\mathrm{wave}}]$, where
+$h_{\mathrm{wave}}=f(u)\mathrm dx^2$ and
+$k_{\mathrm{wave}}=q(x)\mathrm dv^2$.
+The linear vacuum-record isomorphism and analytic corner splittings of Appendix C identify these with the original two encoded lift classes and make their representatives agree. Pulling the lower selected states through the same comparison retains the highest nonzero optical class. This establishes an allowed contact-cocycle trial; it does not assert that a particular fixed two-cocycle repair selects this exact intermediate coefficient.
+
+For an explicit mixed correction put
+$H=3u^2vx^2/2$. The tensor $H\,\mathrm dx^2$ has zero flat trace and divergence, and
+
+$$
+ \Box_\eta H=6ux^2,\qquad
+ \operatorname{Ric}^{(1)}(H\,\mathrm dx^2)
+                           =-3ux^2\,\mathrm dx^2 .
+$$ {#eq:gg-mixed-explicit-repair}
+
+Thus $g+tsH\,\mathrm dx^2$ is exactly Ricci-flat over $A$. Any highest free-record change can subsequently be removed by the flat vacuum inclusion of Appendix C. This last operation uses that proved inclusion; it is not part of the displayed finite Ricci calculation. ∎
+
+The inverse in Theorem 5.5 has a precise content:
+
+$$
+ L_m=\left(o_m|_{\ker\Pi_{m+1}}\right)^{-1}
+       :\ker d_m\longrightarrow\ker\Pi_{m+1},\qquad
+ o_mJ[h]=[P(h)^\circ].
+$$ {#eq:gg-meaning-of-inverse}
+
+It removes the linearized Einstein-scale obstruction modulo homogeneous Hessians, with the entire free record fixed. It is not an inverse on arbitrary sources or on all metric gauges. Once the actual whole optical section glues, Einsteinity follows by Proposition 5.4; establishing that gluing and deriving its Einstein consequence are distinct steps.
+
+A tempting simplification would attach the optical bundle to the local contact structure without the complete family. The next obstruction rules out a specific such attempt.
+
+<div id="prop:gg-contact-local-optical-obstruction"></div>
+
+**Proposition 9.3.**
+
+No rank-two bundle associated to a holomorphic representation of a finite-order full contact-jet frame group of bare complex contact five-manifolds can be the optical bundle on the flat ray germ, with the identification intertwining every local conformal comparison between neighboring flat sky germs, including small translations and conformal dilations with their density-line action.
+
+*Proof.* In symmetric Darboux coordinates $(z,v)$, $v\in H=\mathbb C^4$ symplectic, write
+$\alpha=\mathrm dz+\omega(v,\mathrm dv)/2$.
+The isotropy contains $\operatorname{Sp}_4(\mathbb C)$. Its action on a two-dimensional fiber is trivial: a nonzero Lie algebra map from the simple ten-dimensional $\mathfrak{sp}_4$ to $\mathfrak{gl}_2$ would be injective, which is impossible. Connectedness gives the same assertion for the group.
+
+Every allowed horizontal Hamiltonian module
+$z^a\operatorname{Sym}^dH^*$ with $d>0$ consequently acts by zero. Its map to the trivially acted-on fiber endomorphisms would be an invariant functional; none exists, since the symplectic group is transitive on $H\setminus0$. For horizontal linear forms $\ell,m$ with nonzero symplectic pairing, the contact bracket is
+
+$$
+ \{z^a\ell,z^bm\}
+  =c\,z^{a+b}
+       +\tfrac{b-a}{2}z^{a+b-1}\ell m,\qquad c\ne0 .
+$$ {#eq:gg-contact-isotropy-bracket}
+
+Taking $a=1$, $b=k-1$ kills the pure powers $z^k$ for every $k\ge2$, because the inputs and the second output already act by zero. The identity holds in every finite jet quotient where that output survives. The remaining action factors through contact dilation. The symplectic and unipotent isotropy parts are connected, and the quotient is $\mathbb C^*$, so the representation is a sum of integer contact-line characters:
+$E=L^a\oplus L^b$.
+
+On a flat sky $L|_Q=\mathcal O(1,1)$ and the optical restriction is
+$\mathcal O\oplus\mathcal O(1,1)$.
+With generators $h_1,h_2$ its Chern classes imply
+$a+b=1$ and $2ab\,h_1h_2=0$. Hence $\{a,b\}=\{0,1\}$.
+The trivial character gives a nonzero natural global section invariant under the contact symmetries.
+
+The actual whole-neighborhood optical sections are
+$\sigma(x)=A+B_ax^a+C\eta(x,x)$.
+This follows by integrating $\operatorname{Hess}_0\sigma=0$. Write $\partial_a\partial_b\sigma=\tau\eta_{ab}$ and commute $\partial_c$ with $\partial_a$ to get $(\partial_c\tau)\eta_{ab}=(\partial_a\tau)\eta_{cb}$. Contracting $a,b$ gives $4\partial_c\tau=\partial_c\tau$, so $\tau$ is constant. Translation invariance forces such a section to be constant. Under the conformal dilation $x\mapsto rx$, expressed back in the fixed flat representative, its weight-one action is
+$\sigma(x)\mapsto r^{-1}\sigma(rx)$.
+No nonzero constant is invariant. The natural identification would carry the preceding nonzero invariant section to an impossible one. Small translations compare neighboring sky germs; no large global quotient is needed. ∎
+
+The hypotheses specify the finite-contact-jet setting and the conformal comparisons covered by Proposition 9.3. The present optical construction uses the complete compact family and falls outside them. This proposition says nothing against constructions using that family, a Legendrian seed, infinite-order operations or noncommutative algebras.
+
+The intrinsic bundle of Proposition 5.3 and the extension condition of Definition 5.6 use this complete compact family. The following corollary expresses their calibrated affine preservation law.
+
+<div id="prob:gg-intrinsic-active-realization"></div>
+
+<div id="cor:gg-active-affine-realization"></div>
+
+**Corollary 9.4.**
+
+The coupled source generator has the explicit calibrated affine realization of Proposition 5.7 on its derived contact carrier. Its preservation problem is the independently defined holomorphic admission of Definition 5.6. Its highest obstruction is the actual cochain in equation ([-@eq:gg-affine-obstruction-cochain]), and the stated contact/optical correction solves that same problem. These representatives and their inverses have the common analytic bounds of §6.
+
+*Proof.* The section equation makes $T_{ij}$ triangular with fixed first column and determinant $c_{ij}$. Equation ([-@eq:gg-affine-translation-from-source]) gives its affine coordinate and the exact overlap law, including all moving arguments. Conversely that affine law recovers the original Cauchy matrix. Sections D.7–D.8 derive the compact lift, root and whole section from the independent admission, so the preservation condition is defined before Einstein recognition. Section D.9 identifies its failure with the original target-minus-source defect; Theorem 5.5 therefore supplies the same correction at every finite order. Theorem 6.3 gives its analytic sum.
+
+Projection to the contact component preserves composition and brackets. Thus the negative self-operation and mixed operation already present in the source law are retained. They are not two separately reconstructed metrics: Proposition 9.2 exhibits their nonzero common obstruction before correction. The normal-bundle and projective-extension requirements are essential geometric restrictions on the coupled gluing. ∎
+
+The ordinary counits and physical comparisons of §§7–8 apply to this same contact-affine construction and its complete families.
+
+
+
+
+<div id="prop:gg-fixed-source-projection-obstruction"></div>
+
+**Proposition 9.5.**
+
+The displayed original contact lifts need not descend through the fixed cotangent projection to point transformations of $T_0$.
+
+*Proof.* In the marked chart let
+$\operatorname{pr}(w^0,w^1,\zeta,\varrho,s)=(w^0,w^1,\zeta)$.
+The positive lift has base components
+$(\partial_{w^1}F_2,-\partial_{w^0}F_2,0)$, independent of the cotangent directions, and is projectible. For the allowed original negative class
+$F_{-6}=24/\zeta$, equation ([-@eq:gg-derived-dual-class]) gives
+$G=(\eta^{0'})^4/\varrho$. Put
+$A=w^0+\varrho w^1+\zeta s$. Then
+
+$$
+ h_-=-4\zeta A^3/\varrho,\qquad
+ X_{h_-}\zeta=-12\zeta^2A^2/\varrho,\qquad
+ \partial_s(X_{h_-}\zeta)=-24\zeta^3A/\varrho\ne0 .
+$$ {#eq:gg-fixed-source-projection-obstruction}
+
+Thus the base component varies along a cotangent fiber on the overlap where the displayed denominators are units. No vector field on $T_0$ can be $\operatorname{pr}$-related to this contact field. Negating it for the stored point velocity does not remove that obstruction. ∎
+
+The obstruction concerns the fixed cotangent projection. On the opposite pure axis, Theorem 8.2 uses the dual polarization for the classical comparison. In the mixed case the analytic bijection $F_{-6}\leftrightarrow G$ determines $G$ from the original negative class, independently of $F_2$. Section F.1 represents the resulting nonprojectible operation by derivative variables in the same original twistor operator model; the independent admission and point comparisons are proved in Appendix H.
+
+
+<div id="prop:gg-finite-source-operator-realization"></div>
+
+**Proposition 9.6.**
+
+Both original contact source operations have order-one microdifferential representatives in the same original twistor coordinates. At every finite amplitude order, the corrected active overlaps have compatible filtered, adjoint-preserving operator comparisons and exact coherent inner triple comparisons. Their first negative-order unit sheaf transports precisely the calibrated affine torsor. Each fixed admitted analytic contact-affine object also has its canonical structured quantization and framed simple point objects on its complete skies.
+
+*Proof.* Appendix F.1 constructs the source operators and proves their analytic symbol bounds. Theorem F.1 proves the finite comparisons and all triple and quadruple identities. Proposition F.2 identifies the derived-sheaf torsor transport with the original affine law, retaining the moving arguments. Section F.4 applies the fixed-manifold quantization and structured uniqueness theorems with the filtration, full symbols and adjoint coherences retained. Proposition F.3 proves the framed point assertion using the symplectization of each sky. ∎
+
+This proposition gives finite-amplitude operator descent and a fixed-object enrichment. Its torsor transport is the derived-sheaf statement of Proposition F.2; the quantum commutator correction and the distinct unit-neutralization problem are described in §F.3. Analytic relative overlaps and moving point modules are supplied by Propositions 9.7–9.8.
+
+<div id="prop:gg-analytic-source-operator-realization"></div>
+
+**Proposition 9.7.**
+
+The actual corrected contact overlaps have analytic relative filtered operator comparisons and exact normalized inner coherence on common bounded-family parents, including amplitude one. Their classical symbols and calibrated affine cochains are the existing actual source tuples. Their amplitude jets agree with the auxiliary finite operator construction up to compatible normalized filtered inner equivalence.
+
+*Proof.* Theorem F.4 proves analytic transport on the classical tubes already furnished by Theorem 6.3, with coefficientwise locality and factorial symbol bounds. Lemma F.5 constructs the analytic negative-order units needed for coherence. Theorem F.6 applies these results to the actual overlap family, retaining exact inverse orientation and the same classical symbols. Proposition F.7 gives the finite comparison and the literal preservation of the affine cochains. ∎
+
+The moving supported modules for these analytic overlaps are constructed next.
+
+<div id="prop:gg-relative-sky-operator-modules"></div>
+
+**Proposition 9.8.**
+
+The analytic operator realization has actual holomorphic families of supported simple point modules on its complete skies, with the calibrated relative half-form and exact associator-compatible descent. They have common bounded-family estimates and natural finite parameter jets. With the actual whole-parameter framing, the constructed locally standard modules are unique up to unique framed comparison.
+
+*Proof.* The sky embeddings are the actual complete families of Theorem 6.3. Their fixed ruled parameterization and marking supply the relative root $\mathcal O(-1,-1)$ and its calibrated frames, including any retained base factor. Lemma G.1 constructs the analytic local module and proves division by its finite defining ideal. Lemma G.2 constructs tangent transport with uniform factorial bounds. Theorem G.3 constructs joint Hom generators and proves the exact equation $\tau_{ij}\tau_{jk}=C_{ijk}\tau_{ik}$, keeping the full operator associator. Proposition G.4 proves the framed relative uniqueness. ∎
+
+The framing is an actual nonzero holomorphic section along the calibrated cone lift for all parameters. A single value at a central parameter would be insufficient. These modules are constructed from the same complete source sky family; they do not assert neutralization of the algebroid by a global free object.
+
+<div id="prop:gg-op-physical-source-comparisons"></div>
+
+**Proposition 9.9.**
+
+The operator realization and its moving supported modules carry the actual physical point/full-spin comparisons of §8, their coherent finite diagrams and the coupled Lorentz operation. Their symbols, affine data, selected section and full spin labels are the original ones.
+
+*Proof.* Lemma F.8 gives actual relative normalized inner comparisons for maps with the same full symbols. Theorem G.5 applies it to the actual source physical maps, with the nonlinear physical amplitude and independent internal construction amplitude distinguished. It retains both associators in descent, constructs the module comparisons using the actual flattened generators, and gives the antilinear square and its framed-module coherence with the compatible Lorentz root calibration. The physical Hom assertion is over exactly the enriched admission of Theorem 8.3; full spin labels are retained separately from their possible scalar kernels. ∎
+
+Appendix H defines an independent operator domain and proves the two actual counits needed for the following correspondence. Its data retain the analytic source operations and complete calibrated point families of Propositions 9.6–9.9.
+
+
+<div id="thm:gg-independent-source-operator-correspondence"></div>
+
+**Theorem 9.10.**
+
+The actual source operator construction gives a correspondence between the whole original analytic domain $\mathcal A_\Lambda$ and the independently admitted operator data $\mathfrak O_\Lambda$ of Definition H.1. Its source decoder and constructor have both actual inverse comparisons on their entire stated domains, and are bijective on physical point/full-spin Hom classes. The inverse preserves the same coupled higher preservation law, selected optical section and derived numerical scalar. It includes both complete independent curvature records, all algebraic Weyl types, every complex numerical $\Lambda$ including zero, bounded holomorphic families, their finite jets, conditioned finite comparison diagrams and the coupled Lorentz restriction.
+
+*Proof.* Theorem H.4 gives the two actual inverses between the independently specified operator domain and Definition 5.6's calibrated affine domain. Definition 5.6 and Proposition 5.7, D.7–D.8 and Theorem 2.4 give the latter's inverse comparisons with all marked Einstein germs and their original analytic records. Composing these actual comparisons supplies the decoder on every independently admitted operator object.
+
+For the other direction use the actual source operators of F.1, their corrected analytic overlaps of Theorem F.6 and the calibrated module family of Appendix G. Their full symbols and first-unit torsor are literally the original actual contact-affine tuple. The counit of H.4 compares this supplied source operator object with the constructed quantization of that tuple. Thus composing the classical counit and H.4's counit compares the decoded-and-regenerated source object to the supplied independent object, with both associators and all module maps. The opposite source composite is the initialized comparison with the same whole records. Theorem H.4's uniqueness proves the unit/counit and finite naturality diagrams.
+
+Proposition H.5 identifies the actual source operation and the full holomorphic preservation obstruction, with the same $o_m$, $L_m$ and fresh correction. Einsteinity follows from the independent admission by Proposition 5.4. The physical/full-spin and coupled Lorentz assertions are those of H.4 and §8, with the labels retained. The source estimates of §§3–6 and the conditioned operator/module estimates of F–H give the common families and their actual finite jets. No Weyl-type determinant or $\Lambda$ is inverted. ∎
+
+The next theorem collects the operator, infinity-structure and point-recognition properties of this correspondence. Its proof uses the explicit comparisons in Appendix I.
+
+
+
+
+<div id="thm:gg-original-positive-realization"></div>
+
+<div id="thm:gg-structured-googly-realization"></div>
+
+**Theorem 9.11.**
+
+For every $\Lambda\in\mathbb C$, let $\mathcal S_{\mathrm{op}}$ and $\mathcal D_{\mathrm{op}}$ be the actual source constructor and decoder of Theorem 9.10. They have the following simultaneous properties.
+
+1. The two unrestricted original classes in $\mathcal A_\Lambda$ act by skew order-one analytic operators in the same half-density model of F.1. Their coupled gluing retains the nonzero mixed principal brackets and lower-order microdifferential commutator terms; no independent dual-twistor input is added.
+2. Einstein admission is the independently holomorphic projective-extension predicate of Definitions 5.6, H.1 and I.2. Under Proposition I.3 it is equivalent to the calibrated parallel normal tractor and local-twistor infinity forms. Its pre-admission defect and correction are the same actual $o_m$, $L_m$ and six normalizations of Theorem 5.5 and Proposition H.5.
+3. A physical point is recognized from a compact supported simple object. Proposition H.3 constructs its complete four-dimensional family and full null Segre quadric, with actual associator-compatible module comparisons.
+4. On the entire original and independently admitted domains,
+
+$$
+ \mathcal D_{\mathrm{op}}\mathcal S_{\mathrm{op}}=1_{\mathcal A_\Lambda},
+ \qquad
+ \mathcal S_{\mathrm{op}}\mathcal D_{\mathrm{op}}
+                \simeq1_{\mathfrak O_\Lambda}.
+$$ {#eq:gg-structured-source-operator-inverses}
+
+The first equality is on the original marked input classes and their numerical scalar; the comparison on operator objects and all arrows is the actual one of Theorem 9.10.
+
+The comparisons are bijective on physical point/full-spin Hom classes and retain both complete curvature records, every Weyl type, numerical $\Lambda=0$, the bounded families and their actual finite jets, conditioned finite diagrams and the coupled Lorentz restriction of Theorem 9.10. The convergent stored representatives are those selected in Theorem 6.3.
+
+*Proof.* Theorem I.4 proves the operator, infinity-structure and point-recognition assertions, using the actual source formulas and comparisons of F–H and Proposition I.3. Lemma I.1 and Proposition H.5 identify the pre-admission reduction defect with the same optical cochain and fixed inverse, followed by fresh recomputation. Theorem 9.10 supplies both inverse comparisons on the whole independent domains, with the stated physical Hom sets. Theorem 6.3 and the relative estimates of F–H supply the analytic family and jet assertions. All hypotheses are the original input and independent admission conditions already stated. ∎
+
+<div id="thm:gg-unified-projective-gravitational-correspondence"></div>
+
+**Theorem 9.12.**
+
+For the original input of Definition 2.1 and the independent operator domain of Definition H.1, the correspondence of Theorems 2.4 and 9.10–9.11 preserves, through one natural family of comparisons, all of the following:
+
+1. The same two original classes, their nonlinear source operations and six scale normalizations, with the convergent prescribed representatives of Theorem 6.3.
+2. The complete compact point-module family, the rank-four raywise local-twistor bundle $\mathcal T_{\mathrm{LT,ray}}$ with its volume and flag, and the optical point planes
+   $K_{x,\gamma}=\ker\mathcal F_{\mathrm{spin}}(X(x))$.
+3. The same torsor/root-selected infinity pair, optical evaluation and Wronskian, with its affine slice $H(I,v)=1$ and compact evaluation $X/\sigma$.
+4. Both actual inverse comparisons on the whole independently defined domains, including the associator-compatible module maps and physical point/full-spin Hom classes.
+
+Einstein admission is the holomorphic projective-extension predicate; under the comparison it is equivalent to descent of that same selected infinity form. Every marked local analytic Einstein germ, with arbitrary Weyl type and numerical $\Lambda\in\mathbb C$ including zero, is recovered. On the Lorentz restriction the rank-four comparison is the antilinear duality $(\mathcal T_{\mathrm{LT,ray}})_y\to (\mathcal T_{\mathrm{LT,ray}}^*)_{\iota(y)}$ of Proposition J.7, with the coupled square of G.5. These assertions hold for the bounded holomorphic families, actual finite jets and conditioned finite diagrams of Definition 2.1.
+
+*Proof.* Theorems 2.4 and 9.10 provide the source, geometric and independent operator correspondences. Proposition J.1, Theorem J.2 and Proposition J.3 construct the pre-admission normal spin transport and raywise local-twistor descent, with the same selected density and actual comparison data. Proposition J.4 identifies its optical evaluation with the point-plane pencil and supplied affine slice. Proposition J.5 identifies the pre-admission source defect and its correction. The natural comparisons of Theorem J.6 combine these identifications with the actual counits of H.4 and 9.10 on every independent object. Proposition J.7 proves the typed Lorentz compatibility. The common domains and restrictions are those of Theorem 6.3 and Appendices F–H after the finite buffered restrictions in J.5. ∎
+
+Theorem 9.12 gives a local analytic gravitational realization of Penrose's active-patching proposal in the projective operator model of Definition I.2 [@Penrose2015, §§5–6]. Its two independent classes lie on one $T_0$; their coupled source generates the contact fivefold and acts in one operator primitive, with the negative class represented by derivative variables. The holomorphic admission retains the affine torsor, root and calibration, and its selected optical section yields the Einstein scale and preserved infinity form by Propositions 5.4 and I.3. The fixed optical correction of Theorem 5.5 and Proposition H.5 constructs that admission from the source; compact point modules and raywise local-twistor descent supply the compared nonlocal incidence. A literal identification with every unreduced Palatial presentation remains a separate presentation question. The assertion is the stated local correspondence and preservation diagram, with no historical-priority claim.
+
+
+<div id="sec:gg-schwarzschild-future-horizon"></div>
+
+## 10. Schwarzschild near the future horizon
+
+We apply the correspondence to a fixed positive mass $m>0$ and a finite neighborhood crossing the future Schwarzschild horizon. In ingoing Eddington–Finkelstein coordinates, with the curvature and signature conventions of §2, put
+
+$$
+ g_m=f(r)\,dv^2-2\,dv\,dr-r^2g_{S^2},\qquad
+ f(r)=1-\frac{2m}{r},\qquad g_c=r^{-2}g_m.
+$$ {#eq:gg-schwarzschild-main-metric}
+
+Fix a compact core $K=[v_-,v_+]\times[2m-d,2m+d]\times S^2$, where $v_\pm$ are finite and $0<d<2m$. All representatives below have real-analytic parents with $r>0$ and smaller complex parents when the holomorphic correspondence is used. Take this finite core large enough to contain the ray family below. A point and a full spin frame, including its lift, are retained at each mark.
+
+<div id="prop:gg-schwarzschild-main-comparison"></div>
+
+**Proposition 10.1.** The complete curvature records of $g_m$ determine analytic inputs in $\mathcal A_0$. Their generated objects have actual marked comparisons with the canonical contact, calibrated affine and projective operator objects of $g_m$. The comparisons preserve the compact point modules, optical evaluation and Wronskian, density root and selected scale, normal local-twistor transport, infinity pair and point planes.
+
+The core $K$ admits a finite system of these short representatives covering its exterior, horizon and interior portions. The system has the common parents, positive buffers and unit margins of Definition 2.1, with actual inverse comparisons and coherent finite compositions, including their full-spin and coupled Lorentz data.
+
+In the representative $g_c$, the Einstein density and its normal tractor are
+
+$$
+ \sigma=\frac1r,\qquad
+ I=L\sigma=\left(\frac1r,-\frac{dr}{r^2},\frac{f}{2r}\right),
+ \qquad DI=0,\qquad H(I,I)=0.
+$$ {#eq:gg-schwarzschild-main-scale}
+
+The middle slot in this display is written as a covector; raising it with $g_c$ gives the vector $\partial_v+f\partial_r$ used by the canonical tractor convention of §4.
+
+For $r_0=r(o)$, the normalization $\sigma_o(o)=1$ preserving the selected physical metric is
+
+$$
+ g_{\rm aux}=r_0^2g_c,\qquad \sigma_o=\frac{r_0}{r},\qquad
+ \sigma_o^{-2}g_{\rm aux}=g_m.
+$$ {#eq:gg-schwarzschild-main-normalization}
+
+*Proof.* The $(v,r)$ metric block has determinant $-1$ at every $r>0$. Direct computation gives $\operatorname{Ric}(g_m)=0$. Regular orthonormal coframes and local sections of one fixed spin bundle extend across $r=2m$. Extract every free record by the averaged spin projection of $\nabla^j\Psi^\pm$ in §3. On the finite buffered point/frame parents, parallel transport along complex null directions and Cauchy's formula give a common bound $Cr!R^{-r}$ for the order-$r$ records. Theorem 3.1 supplies the exact two analytic classes. Theorem 2.4 and the normal-metric uniqueness of Appendix A identify the generated metric with $g_m$ through the initialized exponential maps. Their cotangent and calibrated ray maps, together with Theorems 9.10–9.12, give the stated enriched comparisons.
+
+The finite cover is constructed on compact point cores together with their whole skies. Finite null flow boxes, nonzero transversal derivatives, and bounded normal inverses supply the ray parents and buffers. Changes of sections of the fixed spin bundle supply compatible lifts; the operator and module comparisons retain the actual associators. The overlap identities follow from the physical metric maps and the normalized comparison uniqueness of Appendix H. These are finite physical comparisons and do not require a single global ray quotient or operator ring.
+
+For the scale calculation, $|dr|_{g_m}^2=-f$. The conformal Schouten formula gives
+
+$$
+ \nabla_{g_c}^2\sigma+P^{g_c}\sigma=-\frac{f}{2r}g_c,
+ \qquad
+ d\left(\frac f{2r}\right)=P^{g_c}\bigl((d\sigma)^{\sharp_{g_c}},\cdot\bigr).
+$$ {#eq:gg-schwarzschild-main-scale-check}
+
+These are all components of $DI=0$, and $2\sigma\rho+|d\sigma|_{g_c}^2=0$. In the normalized auxiliary splitting the same tractor is $(r_0/r,-r_0dr/r^2,f/(2r_0r))$; its selected Einstein splitting is $(1,0,0)$. The conformal frame change has dilation one at $o$, so the specified full spin mark is preserved there. The marked positive root fixes the sign of $\sigma_o$. Propositions K.1–K.4 give the scale and frame calculations; Theorems K.7–K.8 give the actual enriched maps and finite cover construction. ∎
+
+The normalization in [@eq:gg-schwarzschild-main-normalization] changes the auxiliary representative together with the density component. Changing only $\sigma$ to $r_0\sigma$ would select $r_0^{-2}g_m$. The scalar curvature of the defined representative $g_c$ is $-12m/r$ in our convention; hence $\sigma=-\operatorname{Scal}(g_c)/(12m)$.
+
+<div id="prop:gg-schwarzschild-main-optics"></div>
+
+**Proposition 10.2.** There is a compact nonradial family of affinely parametrized null segments crossing the future horizon from $r=5m/2$ to $r=3m/2$, with
+
+$$
+ r(0)=\frac52m,\quad v(0)=\phi(0)=0,\quad \theta=\frac\pi2,
+ \qquad E\in[1,2],\quad L/m\in[1/4,1/2].
+$$ {#eq:gg-schwarzschild-main-ray-family}
+
+Choose the ingoing branch and physical affine parameter $u$. A parallel orthonormal screen basis for the positive screen metric $-g_m$ has tidal matrix
+
+$$
+ \mathcal R_u=\frac{3mL^2}{r^5}
+ \begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+$$ {#eq:gg-schwarzschild-main-tide}
+
+Thus the transverse Jacobi phase space has dimension four and nonzero Weyl focusing. In the dimensionless time $t=u/m$, with phase $(x,p)=(x,m\,dx/du)$, its transfer matrix $\Phi(t,s)$ is symplectic and composes exactly on every finite subdivision.
+
+Writing $\Phi(\tau,0)=\left(\begin{smallmatrix}A&B\\C&D\end{smallmatrix}\right)$ at the final time, one has
+
+$$
+ \frac{10}{21}<\tau<\frac{100}{99},\qquad
+ \|\Phi(\tau,0)\|<3,\qquad
+ \sigma_{\min}(B)>\frac37,\qquad \|B^{-1}\|<\frac73.
+$$ {#eq:gg-schwarzschild-main-transfer-margin}
+
+Finite stationary quadratic generating families retain the complete phase relation when an endpoint-position projection is singular. In particular, on these same segments, put $t_c=\tau/2$ and let $A_c,B_c$ be the position blocks of $\Phi(t_c,0)$. The initial Lagrangian $p=P_0x$, where $P_0=-B_c^{-1}A_c=P_0^T$, propagates to the vertical Lagrangian at $t_c$.
+
+*Proof.* Put $q=(E^2-fL^2/r^2)^{1/2}$. The regular first integrals are
+
+$$
+ \frac{dr}{du}=-q,\qquad
+ \frac{dv}{du}=\frac{L^2}{r^2(E+q)},\qquad
+ \frac{d\phi}{du}=\frac L{r^2}.
+$$ {#eq:gg-schwarzschild-main-first-integrals}
+
+On the stated radial interval, $124/125\le q^2\le109/27$, so $99/100<q<21/10$. This gives the time bounds, unique transverse crossing and a common regular finite coordinate tube. The direct parallel-screen calculation in Appendix K gives [@eq:gg-schwarzschild-main-tide]; the rotational Jacobi fields $r\sin\phi$ and $r\cos\phi$ independently check its focusing sign.
+
+With $\rho=r/m$, $\ell=L/m$ and $\omega=3\ell^2/\rho^5$, the phase generator is $\left(\begin{smallmatrix}0&I\\\operatorname{diag}(-\omega,\omega)&0\end{smallmatrix}\right)$, where $6/3125\le\omega\le8/81$. Its norm is one and it is Hamiltonian. The iterated-integral estimate gives $\|\Phi(t,s)\|\le e^{t-s}$. The Volterra equation gives $\|B(h)-hI\|<h/10$ on every subsegment of length $0<h\le100/99$, proving the endpoint margin. ODE uniqueness proves finite composition. Short segments have invertible position blocks and quadratic endpoint actions. Keeping intermediate positions makes stationarity exactly momentum matching, even when the total projection is singular. Finally $A_c+B_cP_0=0$ and $C_c+D_cP_0=-B_c^{-T}$ prove the asserted vertical image. Appendix K supplies the generating functions and their finite composition proof. ∎
+
+The scalar optical bundle of §5 has rank two and affine equation $y''=0$ here. It differs from the four-dimensional transverse phase space in Proposition 10.2. The chosen point-source block $B$ is nonsingular on this short family. The displayed caustic concerns the specified initial linear Lagrangian condition; it asserts neither a further point-source conjugate point nor a nonlinear congruence. The full phase relation survives that projection failure, whereas an inverse endpoint block does not.
+
+<div id="prop:gg-schwarzschild-main-errors"></div>
+
+**Proposition 10.3.** Fix the finite coordinate and frame parents of Propositions 10.1–10.2. Suppose a single prescribed representative of Theorem 6.3 admits the finite metric readout of Proposition 6.2 on one fixed complex coordinate parent $\Omega^+$, jointly holomorphically in amplitude for $|a|<T_b$, where $T_b>1$, with the retained inverse-unit margins. Choose an inner polydisc $\Omega$ with coordinatewise Cauchy gap $\rho>0$ from $\Omega^+$. Assume the closure of an inflated position tube around the chosen ray family lies inside $\Omega$ with a further positive position buffer. Separately retain a bounded state tube for $Z=(x,k,n,e_1,e_2)$, with compact closure and positive first-exit buffer around the exact geodesic and parallel-frame states; its position projection lies in that position tube. Let $g_N$ be the degree-$N$ amplitude Taylor polynomial of the physical metric in these fixed coordinates, evaluated at $a=1$, using the coupled Lorentz-real amplitude family. For $1<T<T_b$, there is a finite $H_g$ such that
+
+$$
+ \|D^j(g_N-g_m)\|\le e_{j,N}:=
+ 4^j j!\rho^{-j}\frac{H_gT^{-N-1}}{1-T^{-1}},
+ \qquad 0\le j\le3.
+$$ {#eq:gg-schwarzschild-main-taylor-error}
+
+All norms are fixed Euclidean coordinate or multilinear operator norms. If $G\ge\|g_m^{-1}\|$ and $e_{0,N}\le(2G)^{-1}$, then $g_N$ is Lorentzian with $\|g_N^{-1}\|\le2G$. For sufficiently large $N$, the retained initial null-frame and domain margins also persist. The normalized approximate rays and parallel screens then exist on the same individual finite affine intervals. There is a finite constant $C_{\rm opt}$, depending only on the fixed mass, parents, metric derivative and inverse bounds, frame bounds and buffers, such that their dimensionless phase coefficients differ by at most
+
+$$
+ \epsilon_N=C_{\rm opt}\sum_{j=0}^3e_{j,N}.
+$$ {#eq:gg-schwarzschild-main-coefficient-error}
+
+For $\epsilon_N\le1/10$, the exact transfers for those metric systems obey
+
+$$
+ \|\Phi_N-\Phi\|\le\delta_N:=4\epsilon_N,\qquad
+ |m^2\det B_N-m^2\det B|\le9m^2\delta_N.
+$$ {#eq:gg-schwarzschild-main-optical-error}
+
+If also $\delta_N\le3/14$, then
+
+$$
+ \|B_N^{-1}\|\le\frac{14}{3},\qquad
+ \|B_N^{-1}-B^{-1}\|\le\frac{98}{9}\delta_N.
+$$ {#eq:gg-schwarzschild-main-inverse-error}
+
+*Proof.* Apply the finite readout and initialized normal development of Lemma K.9 on the prescribed coordinate parent $\Omega^+$ with its retained inverse-unit margins. The parent and inner domain $\Omega$ in the hypothesis are retained when applying the amplitude and spatial Cauchy estimates, which give [@eq:gg-schwarzschild-main-taylor-error]. Lorentz reality makes $g_N$ real symmetric on the real tube. The inverse series and constant inertia along $g_m+s(g_N-g_m)$ give the signature and inverse bound.
+
+The Christoffel formula and one further derivative bound the connection and curvature errors by finite linear combinations of $e_{0,N},e_{1,N},e_{2,N}$. Analytic normalization supplies nearby initial null frames. Gronwall's inequality for the joint geodesic/parallel-frame equation keeps the solutions inside the retained state buffer. Curvature evaluation in those frames then gives [@eq:gg-schwarzschild-main-coefficient-error], including the physical-to-dimensionless factor $m^2$. Lemmas K.9–K.11 and Theorem K.12 specify these constants and the precise smallness inequalities excluding a first exit.
+
+Duhamel's formula on $\tau<100/99$ gives the transfer bound $\epsilon_N\tau e^{(1+\epsilon_N)\tau}<4\epsilon_N$. The two-dimensional determinant estimate $|\det(B+E)-\det B|\le2\|B\|\|E\|+\|E\|^2$ gives the forward area bound. The singular-value margin in [@eq:gg-schwarzschild-main-transfer-margin] and the inverse difference identity give [@eq:gg-schwarzschild-main-inverse-error]. ∎
+
+Here $H_g$ and $C_{\rm opt}$ are finite constants specified by analytic parents and compact-frame margins; the rational constants in [@eq:gg-schwarzschild-main-transfer-margin]–[@eq:gg-schwarzschild-main-inverse-error] are explicitly evaluated bounds. The single-readout position-tube inclusion assumed in Proposition 10.3 has not been established for the whole $r:5m/2\to3m/2$ family of Proposition 10.2; this outstanding spatial-domain condition is separate from the numerical evaluation of $H_g$, $C_{\rm opt}$ and a sufficient $N$. Proposition 10.5 supplies a finite-readout alternative on that entire family. Sections K.6–K.7 instead choose the common parents, inner $C^3$ core and passive-displacement margin first and then obtain a positive short interval inside them. Comparisons in Proposition 10.3 use fixed affine endpoints. Reading data instead on $r=3m/2$ requires the transverse hitting-time margin and finite extension stated in Appendix K. The metric Taylor polynomials are taken after the exact chart comparisons are fixed. They supply local approximations and do not replace the exact gluing data. The forward phase and determinant estimates require no inverse projection; inverse estimates require their stated positive margin.
+
+
+<div id="prop:gg-schwarzschild-primitive-comparison"></div>
+
+**Proposition 10.4.** Fix the primitive restricted Dolbeault projector and positively oriented contour in §K.5, with its printed prefactor $1/(2\pi)$, the source parameter $\mu_{\rm src}=m/2$, and the continued signed radial sheet $\varrho=-r$. On a sufficiently small simply connected neighborhood of $(v,r,\theta,\phi)=(0,2m,\pi/2,0)$, retain the local angular inverse branches and $x+\mathrm iy\ne0$. The actual map
+
+$$
+ \Phi_{\rm pr}(v,r,\theta,\phi)
+ =\bigl(\mathrm i(r-v),r\sin\theta\cos\phi,
+                   r\sin\theta\sin\phi,r\cos\theta\bigr)
+$$ {#eq:gg-schwarzschild-primitive-map}
+
+into the complexification of the primitive metric domain has an actual local inverse and satisfies
+
+$$
+ \Phi_{\rm pr}^*G_{\rm int}=h_*:=2r^{-2}g_m,\qquad
+ \sigma_*=\sqrt2/r,\qquad \sigma_*^{-2}h_*=g_m.
+$$ {#eq:gg-schwarzschild-primitive-identity}
+
+The selected density, its square identification and central root value, and the normal tractor agree with those of Proposition 10.1 after the stated constant auxiliary-frame change. Transporting the specified EF full-spin frame gives actual marked comparisons. The selected primitive metric and the record-generated objects therefore have the actual enriched comparisons of Theorem K.7, with two-sided inverses, on their common local representatives.
+
+*Proof.* Proposition K.14 evaluates the projector and contour throughout the stated chart, including the factor $\omega_{\rm int}=2\omega_0$. Theorem K.15 gives the metric pullback, density, tractor, root and full-spin comparison, using the source parameter and signed sheet exactly as stated. The selected physical source tensor is $g_{\rm src}=(-\sqrt2/\varrho)^{-2}G_{\rm int}$. If $F:g[A_g]\to g_m$ is the initialized isometry in Theorem K.7, then $F_{\rm src}=\Phi_{\rm pr}\circ F$ and $F_{\rm src}^{-1}=F^{-1}\circ\Phi_{\rm pr}^{-1}$. The isometry identifies Levi–Civita connections, their iterated curvature derivatives and hence every averaged free spin record, in the transported full-spin frame. The canonical ray, affine, root, local-twistor, infinity and structured operator/module comparisons of that theorem apply to this same geometry, with the stipulated associators. Section K.6 gives compatible physical amplitude families for finite comparisons. ∎
+
+This primitive comparison is local in the spacetime angular and root variables. The full complex sky at each such base point is retained, but it is distinct from the spacetime angular $S^2$ in $K$. Proposition 10.1 continues to cover that standard-metric core with finitely many charts; Proposition 10.4 asserts no native gluing over all of it. With the conventions fixed in §K.5, the contour integral in [@AdamoEtAl2026v2, equation (2.32)] equals twice its displayed evaluated two-form; Proposition K.14 gives the residue calculation and the resulting metric normalization. The result uses neither an identity with its fixed SDTN ordinary background nor a direct class construction from its quadric.
+
+The nonlinear compatible family is $V_i(\varepsilon)=R_{a_i,A_i}(\varepsilon U;0)$, with a separate internal construction amplitude at each vertex, as in §K.6. A single such family admits the additionally initialized short optical example of §K.7 after a positive source-domain restriction. Its rational full-interval enclosure is a separate calculation from the earlier family of Proposition 10.2. The finite-readout proof in §K.4 performs inverses and initialized ODEs in the truncated amplitude algebra before evaluating the retained coefficient polynomial at one. The metric and optical error constants remain theoretical finite constants; no numerical sufficient amplitude order is asserted.
+
+
+<div id="prop:gg-schwarzschild-finite-readout"></div>
+
+**Proposition 10.5 (Finite-readout optical approximation).**
+
+Fix $m>0$ and the full nonradial family of Proposition 10.2, with its specified entrance, $E\in[1,2]$, $L/m\in[1/4,1/2]$, physical affine clock $u$. The construction uses the exact benchmark cuts, initialized coordinate comparisons and polar-first parallel Sachs reference frame specified in §K.8. There are a finite parameter cover, a finite local-readout schedule and positive spatial, inverse-unit and frame margins, all chosen independently of $N$, with the following property. There are $T_*>1$, finite constants $C_Z,K_{\rm tid},H_{\rm rot}$ and an integer $N_0$ such that for every $N\ge N_0$ the scheduled degree-$N$ metric readouts and their prescribed state and covariant Cauchy resets exist along every original individual interval $0\le t=u/m\le\tau_\lambda$. Put
+
+$$
+ \beta_N=\frac{T_*^{-N-1}}{1-T_*^{-1}},\qquad
+ \varepsilon_N=\left(K_{\rm tid}+\frac{H_{\rm rot}}{\tau_-}\right)\beta_N,
+ \qquad \tau_-=10/21.
+$$ {#eq:fro-main-effective-error}
+
+Use the maximum block norm of $Z=(X,K,\mathcal N,E_1,E_2)$ in dimensionless EF coordinates, with $g_0=m^{-2}g_m$, $t=u/m$ and physical frame $(K,\mathcal N,E_A)/m$. The complete piecewise state has error at most $C_Z\beta_N$, on both sides of every switch and inside every slab. Its full Cauchy transport $U_N$ is symplectic. For $N$ sufficiently large that $\varepsilon_N\le1/10$, at the original exact terminal affine time it obeys
+
+$$
+ \|U_N-\Phi_\lambda(\tau_\lambda,0)\|
+ \le4\varepsilon_N=:\delta_N,\qquad
+ \|U_N\|<4,\qquad
+ |m^2\det B_N-m^2\det B|\le9m^2\delta_N.
+$$ {#eq:fro-main-full-family-estimates}
+
+Here $B_N$ and $B$ are the endpoint position-response blocks in the same dimensionless-clock phases. The physical-slope response blocks are $mB_N$ and $mB$. If also $\delta_N\le3/14$, then
+
+$$
+ \sigma_{\min}(B_N)\ge3/14,\qquad
+ \|B_N^{-1}\|\le14/3,\qquad
+ \|B_N^{-1}-B^{-1}\|\le(98/9)\delta_N.
+$$ {#eq:fro-main-full-family-inverses}
+
+All conclusions are uniform over the original entire parameter rectangle. The forward phase and conditional expansion-trace estimates of Proposition K.25, and the Lagrangian-projection estimates [@eq:fr-opt-c-lagrangian-projection-error], hold as well. The retained exact twistor, full-spin, operator and compact point-module comparisons are those of the original physical atlas.
+
+*Proof.* Theorem K.18 constructs the finite cover, enlarged slabs and buffered node overlaps for the whole parameter rectangle, using the original exact family. Proposition K.19 produces the actual finite-algebra metric readouts and a common tail rate $T_*>1$; take $T_{\min}=T_*$ in §K.8 and enlarge the finite constants $D_{i,s}$ if needed. Proposition K.20 gives their common-coordinate overlap defects and retains the original exact enriched atlas. Lemma K.21 supplies the actual null/frame and covariant Cauchy resets in the same affine clock, including their computed screen rotations. Proposition K.22 proves all-slab and all-switch existence by first-exit induction and gives the state bound. The tidal estimate in §K.8 and Proposition K.23 sum every slab and jump error. Corollary K.24 then gives the transfer estimate with the displayed $\varepsilon_N$. Proposition K.25 gives the physical area and conditional inverse bounds from the original exact endpoint margin. The finite minima and maxima include all parameter cells. Since $\beta_N\to0$, one sufficiently large $N$ meets all these finitely many strict domain and non-strict observation margins. ∎
+
+This proposition provides a finite-readout alternative on the whole original crossing family. Proposition 10.3 remains a conditional single-readout result; the present construction does not establish its single-parent spatial inclusion. The short common-source construction of §§K.6–K.7 remains a separate one-source result. The constants, radii and a sufficient truncation degree of this finite-readout construction are theoretical finite data that have not been numerically evaluated. The constructed object is the piecewise metric and Cauchy model of Lemma K.21, rather than a single approximate metric or the differential of the nonlinear state-reset algorithm.
+
+
+
+<div id="app:gg-ordered-jets"></div>
+
+## Appendix A. Finite witnesses and polynomial curvature completion
+
+<div id="sec:gg-finite-witnesses"></div>
+
+### A.1. Every finite free list has an analytic witness
+
+Only this appendix uses the analytic constraint and evolution equations to establish finite algebraic consistency. The generator of §5 does not take their solutions as input. No common domain as the prefix length increases is asserted here.
+
+We use the analytic Cauchy theorem in normal form: a finite system solved for its highest derivatives transverse to an analytic hypersurface, with analytic right-hand side and analytic noncharacteristic Cauchy data, has a unique local analytic solution [@Kowalevsky1875]. The complex version with additional undifferentiated parameters gives joint holomorphic dependence after a common restriction. The normal principal matrices are verified below.
+
+<div id="lem:gg-finite-witness"></div>
+
+**Lemma A.1.**
+
+Every finite Lorentz-real list $U_r^\pm$, $0\le r\le N$, and real numerical $\Lambda$ has a real analytic Einstein witness with its prescribed tangent metric and spin marking. Its neighborhood may depend on $N$ and the list.
+
+*Proof.* First construct a finite family near the flat metric in signature $(-,+,+,+)$. A temporal transverse trace-free linear wave has spatial initial data $A,B$ with
+$\operatorname{tr}A=\operatorname{tr}B=0$ and
+$\partial^jA_{ij}=\partial^jB_{ij}=0$.
+Here $B=\partial_0h^{(1)}|_0/2$. For a finite set of real amplitude parameters $c$, put
+$\bar\gamma=\delta+\sum c_\nu A_\nu$ and let $\Sigma$ be the $\bar\gamma$-trace-free part of $\sum c_\nu B_\nu$.
+Use bilinear tensor contractions in the complexified equations. With
+$(\bar LZ)_{ij}=\bar\nabla_iZ_j+\bar\nabla_jZ_i
+-\frac23\bar\gamma_{ij}\bar\nabla_kZ^k$, solve
+
+$$
+ \overline{\operatorname{div}}\,\bar LZ
+       =-\overline{\operatorname{div}}\Sigma,\qquad
+ \bar\Delta\phi-\frac18R(\bar\gamma)\phi
+       +\frac18|\Sigma+\bar LZ|_{\bar\gamma}^2\phi^{-7}
+       +\frac{\Lambda}{4}\phi^5=0
+$$ {#eq:gg-finite-constraint-solve}
+
+with $Z=\partial_1Z=0$, $\phi=1$, $\partial_1\phi=0$ on $y^1=0$.
+The first equation is independent of $\phi$. Its normal principal matrix at the flat seed is
+$I+\frac13(\mathrm dy^1)^\sharp\otimes\mathrm dy^1$, with eigenvalues $1,1,4/3$. The second has normal coefficient $\bar\gamma^{11}$ and is analytic near the unit $\phi=1$. Both systems therefore have the stated local holomorphic solutions.
+
+Set $\gamma=\phi^4\bar\gamma$, $K=\phi^{-2}(\Sigma+\bar LZ)$.
+The conformal connection difference
+$2\phi^{-1}(\delta_i^k\partial_j\phi+
+\delta_j^k\partial_i\phi-\bar\gamma_{ij}\bar\gamma^{k\ell}\partial_\ell\phi)$
+gives
+
+$$
+ \begin{aligned}
+ R(\gamma)&=\phi^{-5}(-8\bar\Delta\phi+R(\bar\gamma)\phi),\\
+ \operatorname{div}_\gamma K
+       &=\phi^{-6}\overline{\operatorname{div}}(\Sigma+\bar LZ),\\
+ |K|_\gamma^2&=\phi^{-12}|\Sigma+\bar LZ|_{\bar\gamma}^2,\qquad
+ \operatorname{tr}_\gamma K=0 .
+ \end{aligned}
+$$ {#eq:gg-finite-constraint-transform}
+
+Consequently $R(\gamma)+(\operatorname{tr}K)^2-|K|^2=2\Lambda$
+and $\operatorname{div}K-\mathrm d\operatorname{tr}K=0$.
+At $\Lambda=0$, the first amplitude variations of $Z$ and $\phi-1$ vanish: their linear sources are respectively $\partial^jB_{ij}=0$ and
+$\partial_i\partial_jA_{ij}-\Delta\operatorname{tr}A=0$, with zero Cauchy data. Thus the initial metric and second fundamental form have the prescribed first variations.
+
+Evolve, with $\tau=\operatorname{tr}_\gamma K$, by
+
+$$
+ \partial_0\gamma_{ij}=2K_{ij},\qquad
+ \partial_0K_{ij}=-\operatorname{Ric}(\gamma)_{ij}
+                  -\tau K_{ij}+2K_i{}^kK_{kj}
+                  +\Lambda\gamma_{ij}.
+$$ {#eq:gg-finite-gaussian-evolution}
+
+Eliminating $K$ solves for $\partial_0^2\gamma$ with analytic right-hand side in the invertible metric and tangential derivatives of order at most two. The analytic Cauchy theorem applies again. For
+$g=-(\mathrm dx^0)^2+\gamma_{ij}\mathrm dy^i\mathrm dy^j$,
+the time-containing Christoffel symbols are
+$\Gamma^0_{ij}=K_{ij}$ and $\Gamma^i_{0j}=K^i{}_j$. They give
+
+$$
+ \begin{aligned}
+ \operatorname{Ric}(g)_{ij}
+    &=\operatorname{Ric}(\gamma)_{ij}+\partial_0K_{ij}
+                             +\tau K_{ij}-2K_i{}^kK_{kj},\\
+ \operatorname{Ric}(g)_{00}&=-\partial_0\tau-|K|^2,\qquad
+ \operatorname{Ric}(g)_{0i}=\nabla^jK_{ij}-\partial_i\tau .
+ \end{aligned}
+$$ {#eq:gg-finite-gaussian-ricci}
+
+The spatial equations hold. For their remaining residuals
+$\mathcal H=\operatorname{Ric}_{00}+\Lambda$ and
+$\mathcal M_i=\operatorname{Ric}_{0i}$, contracted Bianchi gives
+
+$$
+ \partial_0\mathcal H
+       =2\nabla^i\mathcal M_i-2\tau\mathcal H,\qquad
+ \partial_0\mathcal M_i=\frac12\partial_i\mathcal H-\tau\mathcal M_i .
+$$ {#eq:gg-finite-constraint-propagation}
+
+Their initial data vanish by the constraints, so analytic uniqueness gives the full Einstein equation. Linearization at the flat seed is the specified wave, by uniqueness of its linear analytic Cauchy problem. Reality follows from conjugation and uniqueness. The spatial metric is positive on a smaller real neighborhood.
+
+We next choose a finite wave family whose curvature-jet map is invertible. Put $\kappa(z)=(1,z)$ and take the real null covector
+$k(z)_{AA'}=\kappa_A(z)\bar\kappa_{A'}(z)$. For each $r$ the tensors
+$\kappa(z)^{r+4}\bar\kappa(z)^r$ span $W_r^+$ over $\mathbb C$.
+Indeed an annihilating functional is a polynomial in $z,\bar z$; substitution $z=x+iy$ makes it a polynomial vanishing for all real $x,y$, so it is zero. A finite spanning set valid for all $r\le N$ is the square grid
+$x,y\in\{0,\ldots,2N+4\}$, by interpolation in each real variable. Choose a basis separately for each $r$.
+
+The moment matrix $((i\tau_\ell)^j)_{0\le j,\ell\le N}$ for distinct nonzero real $\tau_\ell$ is invertible. Its inverse columns give finite profiles $f_r(t)=\sum_\ell b_\ell^{(r)}e^{i\tau_\ell t}$ with $f_r^{(j)}(0)=\delta_{jr}$ for $j\le N$.
+For each chosen direction put $k_{AA'}=\kappa_A\lambda_{A'}$, $\lambda=\bar\kappa$, and choose a complex null transverse polarization $p_{AA'}=\kappa_A\mu_{A'}$ with $d=\lambda_{0'}\mu_{1'}-\lambda_{1'}\mu_{0'}\ne0$. In the manuscript tangent convention, the linear wave $h_{ab}=a p_ap_be^{i\tau_\ell k\cdot x}$ has, by [@eq:gg-last-slot-linear-curvature],
+
+$$
+ R^{(1)}_{abcd}=-\tfrac12a\tau_\ell^2
+ (k_ap_b-k_bp_a)(k_cp_d-k_dp_c)e^{i\tau_\ell k\cdot x},\qquad
+ \Psi^+=\tfrac12a\tau_\ell^2d^2\kappa^4
+                                      e^{i\tau_\ell k\cdot x} .
+$$ {#eq:gg-finite-wave-component-readout}
+
+The second equality uses [@eq:gg-weyl-spinor-readout]. For the auxiliary opposite signature, the metric negation below sends $h$ to $-h$ in this component formula and changes the signed factor by $-1$. In either signature divide the amplitude by its actual nonzero factor. Replacing $p$ by $p-(p_0/k_0)k$ removes its time component without changing curvature, nullness or transversality; $k_0\ne0$ for a nonzero real null covector. Pair the wave with its Lorentz conjugate. Thus its positive curvature spinor can be normalized to
+$c\kappa^4f_r(k\cdot x)$, with the conjugate negative spinor, and its order-$j$ free list is
+$\delta_{jr}c\kappa^{r+4}\bar\kappa^r$.
+Complex $c$ supplies two real parameters.
+
+The resulting finite family has
+$2\sum_{r=0}^N(r+5)(r+1)$ real wave parameters.
+Read its free lists in an analytic orthonormal spin frame at the origin. At flat space all background Weyl derivatives vanish, so variations of that frame or connection do not alter the displayed linear curvature map. The analytic map from wave parameters and $\Lambda$ to their free lists and the unchanged $\Lambda$ therefore has invertible real derivative. The finite analytic inverse theorem realizes all sufficiently small lists. The construction also gives their complexified families. For an opposite Lorentz signature, run the construction with constant $-\Lambda$, negate the metric and use that signature's fixed spin readout before taking this inverse. The linear wave-jet map is still invertible and the resulting Einstein constant is exactly the requested $\Lambda$.
+
+For an arbitrary finite target choose $s>0$ large enough that
+$(s^{-r-2}U_r,s^{-2}\Lambda)$ lies in the small neighborhood. If $h$ is that witness, set $g=s^{-2}\delta_s^*h$, $\delta_s(x)=sx$.
+Then $g(x)=h(sx)$, its tangent metric is unchanged, its orthonormal curvature derivatives scale by $s^{r+2}$, and its Einstein constant scales by $s^2$. Hence it has the exact target list and constant. This final scaling only proves finite existence; it supplies no infinite-prefix bound. ∎
+
+<div id="sec:gg-polynomial-completion"></div>
+
+### A.2. The highest linear compatibility system
+
+<div id="lem:gg-highest-kernel"></div>
+
+**Lemma A.2.**
+
+For fixed lower curvature derivatives, the homogeneous difference of two order-$r$ Einstein curvature completions, subject to their differentiated algebraic and differential Bianchi identities and commutator identities, is exactly $W_r^+\oplus W_r^-$. Its two separately symmetric projections are the identity on that space.
+
+*Proof.* For $r=0$, use [@eq:gg-weyl-spinor-decomposition] and its inverse [@eq:gg-weyl-spinor-readout], with the Ricci part fixed. At every higher order the free projection is [@eq:gg-free-record-projection]. For $r>0$, the highest difference has commuting derivative slots, since their commutator is curvature acting on a lower derivative. Its Ricci derivatives vanish. For the positive Weyl spinor the differentiated Einstein Bianchi equation contracts any derivative unprimed index against a Weyl unprimed index to zero. In a two-space, a two-index antisymmetrization is its alternating trace. These zero traces therefore imply invariance under every interchange of a derivative unprimed index with a Weyl index, with the remaining slots fixed. Together with Weyl symmetry, those interchanges generate all unprimed permutations. Symmetry under exchange of derivative pairs consequently makes their primed indices symmetric too. This is precisely
+$\operatorname{Sym}^{r+4}S^*\otimes\operatorname{Sym}^rS'^*$.
+The negative spinor exchanges the factors. Conversely these completely symmetric spinors obey all homogeneous contractions and commuting-slot identities. Their projection is unchanged. ∎
+
+<div id="prop:gg-polynomial-completion"></div>
+
+**Proposition A.3.**
+
+The polynomial completion and the original Cartan derivations of Lemma 3.2 exist uniquely and obey all the identities stated there, on independent complex lists.
+
+*Proof.* At order $r$, collect the tensor symmetries, differentiated Bianchi equations, Ricci equations, commutator identities and prescribed free projection into a constant finite linear system for the ordered curvature derivative. Its right-hand side is polynomial in lower completed derivatives, $U_r^\pm$ and $\Lambda$. Lemma A.2 makes its coefficient matrix injective. Choose a constant left inverse. Induction therefore produces a unique candidate polynomial $\mathcal C_r$.
+
+For every finite Lorentz-real list, Lemma A.1 supplies an actual witness, so this candidate satisfies the whole compatibility system, not just its left-inverse projection. The residual is polynomial and vanishes on the maximal real form
+$U^-=\overline{U^+}$, $\Lambda\in\mathbb R$. Writing
+$U^+=x+iy$, $U^-=x-iy$ proves that it vanishes identically on the independent complex lists. This also proves independence of the left inverse and frame equivariance.
+
+Define $\mathsf H_aU_r$ by projecting the next completed covariant derivative, and define $\mathsf V_B$ by inserting the specified infinitesimal spin-frame action in every slot. On finite witnesses these are exactly horizontal displacement readout and vertical spin readout. Their commutators and their action on each $\mathcal C_r$ consequently hold as polynomial identities: each uses only a finite prefix, and the same maximal-real-form argument applies. This proves all Cartan identities, including the action on derivative slots.
+
+Dilation gives $\operatorname{wt}U_j=j+2$, $\operatorname{wt}\Lambda=2$, and $\operatorname{wt}(\mathsf H_aU_r)=r+3$.
+Its highest linear term is $i_aU_{r+1}$ with coefficient one, by averaged separate symmetry. Every nonlinear term therefore uses only $U_0,\ldots,U_{r-1},\Lambda$ and has index sum $r+3-2d$ at curvature degree $d$. In particular $Q_0=0$.
+The original Lorentz involution and all fixed spin actions commute with the construction by the same uniqueness. No quotient of the specified spin lift by its orthogonal image is made. ∎
+
+<div id="sec:gg-formal-normal-uniqueness"></div>
+
+### A.3. Formal marked normal uniqueness
+
+<div id="prop:gg-formal-normal-uniqueness"></div>
+
+**Proposition A.4.**
+
+The completed curvature list determines a unique formal metric in marked geodesic normal coordinates. This formal metric has its prescribed Einstein constant and ordered curvature derivatives. Two analytic marked normal metrics with the same complete free lists and numerical constant are equal as germs.
+
+*Proof.* Along the formal radial geodesic of initial vector $x$, express curvature in the parallel initial frame as
+$R_x(t)=\sum_{r\ge0}t^r\mathcal C_r(x,\ldots,x;\,\cdot)/r!$.
+For each $v$ solve the formal finite Jacobi equation
+
+$$
+ J_x''(t;v)+R_x(t)(J_x(t;v),x)x=0,\qquad
+ J_x(0;v)=0,\quad J_x'(0;v)=v .
+$$ {#eq:gg-formal-radial-jacobi}
+
+Its coefficient recursion is unique. Define
+$g_x(v,w)=\eta(J_x(1;v),J_x(1;w))$.
+Every fixed coefficient uses only finitely many completed derivatives. At a fixed spatial degree the Jacobi recursion has only finitely many terms and divides only by fixed positive integers, so its metric coefficients are polynomials in a finite free prefix and $\Lambda$. Formal inversion at the fixed tangent metric has the same property. Hence every coefficient of its curvature, Einstein and normal-coordinate residuals is also such a polynomial. On a finite Lorentz-real witness with the required longer prefix, the normal-coordinate Jacobi formula gives this coefficient and every residual vanishes. The maximal-real-form argument of Proposition A.3 makes these polynomial identities valid on independent complex lists and therefore over every commutative complex coefficient algebra. This explicitly supplies the formal parameter-ring use made in §6.
+
+It follows, coefficient by coefficient, that the constructed formal metric has the prescribed curvature, Einstein equation, normal-coordinate conditions, tangent metric and mark. Conversely every such metric satisfies the same Jacobi recursion. Analytic metrics with these jets have the same convergent Taylor series and hence the same germ. This argument neither takes a limit of the finite witnesses nor assumes their neighborhoods are uniform. ∎
+
+
+<div id="app:gg-record-budget"></div>
+
+## Appendix B. The coefficient estimate for the original record derivations
+
+<div id="sec:gg-budget-recursion"></div>
+
+### B.1. The normalized one-derivative equation
+
+Use the full-tensor Hermitian norms of §3, with the fixed alternating spin bases orthonormal. Symmetrizations are averaging projections. All adjoints below are adjoints of constant finite matrices; they do not introduce conjugated record variables.
+
+For either chirality and $r\ge0$ put $\mathcal D_r=V^*\otimes W_r$.
+For $r\ge1$, regrouping one spinor of each kind gives an isometric inclusion
+$j_r:W_r\to V^*\otimes W_{r-1}$. Let $J_r=1\otimes j_r$ and let $\tau$ exchange the two outer derivative pairs after that inclusion. Set $\delta_r=(1-\tau)J_r$, without dividing by two. For the positive chirality write $n=r+4,m=r$; exchange them for the negative one. The upper and lower projections in the two spin factors are denoted by $P_{++},P_{-+},P_{+-},P_{--}$.
+
+<div id="lem:gg-budget-spencer"></div>
+
+**Lemma B.1.**
+
+For the original derivation $\mathsf H_aU_r=i_aU_{r+1}+Q_{r,a}$, $r\ge0$, the initial case is $Q_0=0$. For $r\ge1$ one has the following identities, with the last sum interpreted as zero when $r=1$:
+
+$$
+ \begin{aligned}
+ \ker\delta_r&=\operatorname{im}P_{++},\\
+ M_r&=\frac n{n+1}P_{-+}+\frac m{m+1}P_{+-}
+                         +\frac{nm}{nm-1}P_{--},\\
+ Q_r&=M_rJ_r^*(\tau\,\mathsf H Q_{r-1}-K_r),\\
+ K_r(a,b)&=\mathsf V_{R_U(a,b)}U_{r-1},\\
+ (\mathsf H Q_{r-1})(a,b)
+  &=\sum_{j=0}^{r-2}D_{U_j}Q_{r-1,b}
+                         [i_aU_{j+1}+Q_{j,a}].
+ \end{aligned}
+$$ {#eq:gg-budget-actual-recursion}
+
+*Proof.* On $A\otimes\operatorname{Sym}^nA$, compression of an exchange of the outer slot with an inner slot is
+$C_n=((n+1)P_n-1)/n$. Indeed full symmetrization is
+$(1+\sum_{i=1}^n\tau_{0i})/(n+1)$, and the compressed inner exchanges agree. Its two eigenvalues are $1,-1/n$. Thus
+
+$$
+ \delta_r^*\delta_r=2(1-C_n\otimes C_m)
+$$ {#eq:gg-budget-spencer-spectrum}
+
+has nonzero eigenvalues $2(1+1/n)$, $2(1+1/m)$ and
+$2(1-1/(nm))$. Their minimum is at least $8/5$.
+On antisymmetric sources the complementary inverse of $\delta_r$ is
+$M_rJ_r^*$.
+
+Apply the commutator in Lemma 3.2 to $U_{r-1}$. The completely upper $U_{r+1}$ term cancels and gives
+$\delta_rQ_r=-K_r-(1-\tau)\mathsf H Q_{r-1}$.
+Differentiating the constant zero-upper-projection identity for $Q_{r-1}$ gives $J_r^*\mathsf H Q_{r-1}=0$. The inverse proves the formula. The last line is the ordinary polynomial product rule; $\mathsf H_a\Lambda=0$. The curvature in $K_r$ acts on all $2r+2$ spinor slots, including the derivative slots. Consistency is supplied by the already proved polynomial Cartan identity, not surjectivity onto arbitrary antisymmetric tensors. ∎
+
+For a degree-$q$ free-index polynomial $T_a(u)$ in one spin factor, with $q\ge0$, define the upper inclusion below. For $q\ge1$ also define the lower inclusion and $f$:
+
+$$
+ (U_{q+1}g)_a=\frac{\partial_ag}{q+1},\qquad
+ (\iota_qf)_0=-u^1f,\quad(\iota_qf)_1=u^0f,
+ \qquad
+ g=u^aT_a,\quad
+ f=\frac{\partial_0T_1-\partial_1T_0}{q+1}.
+$$ {#eq:gg-budget-strip}
+
+For $q\ge1$, $T=U_{q+1}g+\iota_qf$; for $q=0$, $T=U_1g$. The upper inclusion is isometric for every $q\ge0$.
+For $q\ge1$, the lower inclusion on degree $q-1$ has squared norm $(q+1)/q\le2$:
+on $(u^0)^{q-1}$ its two components have squared norms $1/q$ and $1$, and equivariance proves the general formula.
+
+A normalized contraction diagram has ordered symmetric input tensors, specified alternating contractions between input slots, and averaged symmetrization of all free outputs of each spin type. Selecting $h$ polynomial derivatives on a degree-$p$ input means dividing them by $(p)_h=p(p-1)\cdots(p-h+1)$. Thus each selected derivative is a tensor-slot operation. A diagram with $c$ alternating contractions has norm at most $2^{c/2}$. A contraction joining two slots of the same symmetric input is zero.
+
+<div id="lem:gg-budget-opening"></div>
+
+**Lemma B.2.**
+
+Replace a degree-$p$ input, incident to $h$ contractions, by a lower inclusion $(\iota_pf)_c$. Let $D_c(u)$ be the resulting degree-$N$ free-index output. Opening its $j$th incident edge gives a normalized diagram $E_j$ with orientation sign $\epsilon_j$. Then
+
+$$
+ u^cD_c=\frac1p\sum_{j=1}^h\epsilon_jE_j,\qquad
+ \frac1N u^c\partial_aD_c
+ =\frac{N+1}{N}(U_{N+1})_a
+                 \left(\frac1p\sum_j\epsilon_jE_j\right)
+                      -\frac1ND_a\quad(N\ge1).
+$$ {#eq:gg-budget-opened-edge}
+
+For a linear-shift insertion $U_{p+1}g$, contraction of its new outer index with $u$ gives exactly the old diagram with that input degree raised by one. An old lower output has transfer mass at most one. For an old upper output, its lower leakage is a sum of diagrams adding one edge to another input $j$, with coefficient of absolute value
+$(p_j-h_j)/(N(N+1))$. The total leakage mass is at most $1/(N+1)$.
+
+*Proof.* The normalized product rule is
+
+$$
+ \frac{\partial_{a_1}\cdots\partial_{a_h}
+                    (\epsilon_{bc}u^bf)}{(p)_h}
+ =\frac{p-h}{p}\epsilon_{bc}u^b
+          \frac{\partial_{a_1}\cdots\partial_{a_h}f}{(p-1)_h}
+ +\frac1p\sum_{j=1}^h\epsilon_{a_jc}
+       \frac{\prod_{\ell\ne j}\partial_{a_\ell}f}{(p-1)_{h-1}} .
+$$ {#eq:gg-budget-normalized-product}
+
+When $h=p$, omit the first term rather than using its zero denominator; when $h=0$, the sum is empty. Multiplication by $u^c$ kills the first term. On an opened edge the paired alternating tensors give a signed identity. Multiplying its released partner derivative by $u$ cancels the falling-factorial ratio, leaving exactly $E_j/p$, with no partner-degree multiplier. Differentiating that identity proves the second formula.
+
+For a linear shift the selected derivatives are
+$\partial_{a_1}\cdots\partial_{a_h}\partial_ag/(p+1)_{h+1}$.
+Contracting $a$ with $u$ gives unit total coefficient, since
+$(p+1-h)(p+1)_h/((p+1)(p)_h)=1$.
+For an old upper output the lower stripping cancels the second derivatives and leaves
+$(\partial_1D_0-\partial_0D_1)/(N(N+1))$.
+The derivative on the distinguished input vanishes by antisymmetry.
+On another input $j$ it selects one of its $p_j-h_j$ remaining slots and adds the stated normalized edge. Their sum is at most $N$. These arguments keep the raw lower inclusions and their orientation signs. ∎
+
+<div id="sec:gg-budget-mass"></div>
+
+### B.2. A single mass for all transfers
+
+The recursion generates finite normalized diagram representations by induction: its curvature formulas, Spencer projections, shifts, insertions and strippings use only alternating contractions and averaged permutations. Proposition A.3 gives weight $j+2$ to every order-$j$ record and weight two to $\Lambda$. After stripping the raw lower output factors, the positive output blocks
+$A=-+$, $B=+-$, $C=--$ have respective valences
+$(r+3,r+1)$, $(r+5,r-1)$, $(r+3,r-1)$.
+A curvature-degree-$d$ coefficient containing $\ell$ scalar factors has total input valence $2r+6-4\ell$. Consequently its bare edge counts are
+$1-2\ell$ in $A,B$ and $2-2\ell$ in $C$; negative counts give zero. There are at most two bare edges independently of arity.
+
+Fix an ordered input list, including each record’s order and chirality and each scalar $\Lambda$ factor. For a block $\nu\in\{A,B,C\}$ let $\widetilde B_\nu$ denote the coefficient after its raw lower output inclusions have been stripped. A bare normalized diagram specifies which slots of distinct symmetric inputs are paired by alternating tensors; all remaining slots of each spin type are averaged onto the indicated symmetric output. On a degree-$p$ input, selecting $h$ slots means $\partial^h/(p)_h$, as in Lemma B.2. Slot order and contraction orientations are part of the diagram. Raw lower inclusions are then restored in their original spin factors. Only diagrams with the specified input/output valences are used.
+
+For each block define its atomic mass by
+
+$$
+ m_{r,\nu}(B)=\inf\left\{\sum_{D\in\mathcal F}|a_D|:
+        \widetilde B_\nu=\sum_{D\in\mathcal F}a_DD,
+        \quad\mathcal F\text{ a finite set of such diagrams}\right\}.
+$$ {#eq:gg-budget-atomic-mass}
+
+The infimum is taken on the finite-dimensional span generated by the actual recursion, not on a different tensor norm. The recursion supplies a finite representation at every coefficient; the wire reductions below stay in this span. Scalar inputs have no spin slots. For negative chirality the two spin degrees and lower-inclusion roles are exchanged. In the tables below $A=-+$ and $B=+-$ always denote the physical unprimed/primed signs; after chirality exchange relabel the inherited $A,B$ names accordingly. Their equal weights make this relabelling immaterial to the mass. Put
+
+$$
+ m_r=2m_{r,A}+2m_{r,B}+m_{r,C}.
+$$ {#eq:gg-budget-common-mass}
+
+Missing blocks have zero mass. Concatenation gives the triangle inequality. The preceding diagram and raw-inclusion estimates imply
+$\|B\|_{\mathrm{op}}\le4m_r(B)$. In particular a nonzero coefficient has nonzero mass. The recursive ordered expansion is used throughout: inserting a polynomial replaces one specified position by its ordered inner input list.
+
+<div id="lem:gg-budget-transfers"></div>
+
+**Lemma B.3.**
+
+For an insertion of a coefficient of $Q_t$, $t\ge1$, into one specified position of a coefficient of $Q_{r-1}$, the actual recursion satisfies
+
+$$
+ \begin{aligned}
+ m_r(M_rJ_r^*\tau I_i(B,C))
+       &\le\frac{K_0}{t+1}m_{r-1}(B)m_t(C),&K_0&=2^{24},\\
+ m_r(M_rJ_r^*\tau L_iB)
+       &\le c_rm_{r-1}(B),&
+ c_r&=\frac{r(r+4)}{r(r+4)-1}.
+ \end{aligned}
+$$ {#eq:gg-budget-transfer-bounds}
+
+The transferred curvature source has mass at most $C_*(r+1)$ for a structural $C_*$. Moreover
+$1\le P_r=\prod_{s=1}^rc_s\le P_\infty\le e^{11/18}$.
+
+*Proof.* Work first with one finite diagram representation in each block. All estimates are homogeneous in its absolute coefficients, so passing to infima at the end is legitimate. A degree-$d$ coefficient with $\ell$ scalar inputs has record orders summing to $r+3-2d$. Its total spin valence is therefore
+$2(r+3-2d)+4(d-\ell)=2r+6-4\ell$.
+Subtracting the stripped output valences in B.2 and dividing by two gives $1-2\ell$ bare edges in either single-lower block and $2-2\ell$ in the double-lower block. Thus each inner or outer coefficient has at most two bare edges in both spin factors together. Negative counts mean the coefficient is zero; no edge can join two slots of one symmetric input.
+
+For $h$ selected slots distributed among symmetric factors of degrees $p_i$, the normalized assignment weights are
+
+$$
+ \binom h{\alpha_1,\ldots,\alpha_d}
+                  \frac{\prod_i(p_i)_{\alpha_i}}{(\sum_i p_i)_h}.
+$$ {#eq:gg-budget-assignment-weights}
+
+Their sum is one by the falling-factorial Vandermonde identity: both sides count ordered selections of $h$ distinct slots. A zero denominator corresponds to an unavailable selection, which is omitted. Thus splitting derivatives or averaging permutations incurs no factor depending on the number of inputs.
+
+The following list accounts for all alternating tensors in a composition before its final wire reduction.
+
+| Operation | Outer coefficient | Inner coefficient | Final projection | Total bound |
+|---|---:|---:|---:|---:|
+| Bare alternating contractions | $2$ | $2$ | $0$ | $4$ |
+| Raw lower output inclusions | $2$ | $2$ | $0$ | $4$ |
+| Normalized lower stripping contractions | $0$ | $0$ | one per spin factor | $2$ |
+
+Indeed the inserted coefficient replaces one specified input box of the outer coefficient. Each box has the bare-edge bound just proved and at most one raw lower inclusion in each spin factor. The maps $\tau$ and $J_r^*$ only permute or average slots. Upper projection is averaging, while lower projection has stripping factor $q/(q+1)\le1$ times one normalized slot contraction before restoring the declared raw lower output. Those restored output factors are not extra internal wires. No other operation in $M_rJ_r^*\tau I_i$ introduces an alternating tensor.
+
+Reduce a fixed assignment by following each wire. Paired alternating tensors give signed identities; a closed wire gives a scalar of absolute value two; a path ending twice in one symmetric input or in the symmetric output vanishes. The remaining paths give bare diagrams of the final valence. There are at most ten alternating tensors, hence the coefficient bound $2^{10}$ is valid. The assignment weights still sum to one. Including the three target block weights, whose sum is five, and the Spencer factor, at most $5/4$, gives at most $5(5/4)2^{10}<2^{13}$. We retain the coarser bound $2^{20}$ for these compositions and the opened-wire representations below. This counts both spin factors together; it is not a separate norm-equivalence loss at each arity or derivative order.
+
+To obtain the inverse-order gain, choose a lower spin factor of the inner coefficient before taking absolute values. All choices are exhausted by the following table, with the block signs referring to the unprimed and primed factors in that order.
+
+| Inner chirality | Degrees in $W_t$ | Inner block | A lower factor available for opening | Its degree $p$ |
+|---|---|---|---|---|
+| $+$ | $(t+4,t)$ | $A=-+$ | unprimed | $t+4$ |
+| $+$ | $(t+4,t)$ | $B=+-$ | primed | $t$ |
+| $+$ | $(t+4,t)$ | $C=--$ | unprimed or primed | $t+4$ or $t$ |
+| $-$ | $(t,t+4)$ | $A=-+$ | unprimed | $t$ |
+| $-$ | $(t,t+4)$ | $B=+-$ | primed | $t+4$ |
+| $-$ | $(t,t+4)$ | $C=--$ | unprimed or primed | $t$ or $t+4$ |
+
+For the double-lower block choose the unprimed factor, for definiteness; do not sum over the two choices. There is no inner $++$ block, and $Q_0=0$, so $t\ge1$ and $p\ge t\ge1$. In the chosen factor write the raw inclusion as $(\iota_pf)_c=\epsilon_{bc}u^bf$. The normalized product formula of Lemma B.2 has unhit coefficient $(p-h)/p$ and hit coefficients exactly $1/p$. After multiplication by $u^c$, the unhit term vanishes by $\epsilon_{bc}u^bu^c=0$. Each hit opens one of the at most two outer bare edges incident to this input. Multiplication of its released partner derivative by $u$ cancels the partner’s falling-factorial ratio. Thus no partner-degree factor survives.
+
+The outer block may have either sign in the chosen factor. The complete outer-block correspondence is
+
+| Chosen factor | Outer $A=-+$ | Outer $B=+-$ | Outer $C=--$ |
+|---|---|---|---|
+| unprimed | lower | upper | lower |
+| primed | upper | lower | lower |
+
+These rows hold for either outer chirality. To evaluate the exact slot map, write an upper outer block as $B_a=\partial_ag/(q+1)$, where its old $W_{r-1}$ degree is $q$. Substitute the chosen coefficient into $g$ and leave its new derivative index $c$ free, calling the resulting polynomial $D_c$. Substitution retains its prescribed output degree. After $J_r^*\tau$, the output in this factor is
+
+$$
+ T'_a=\frac{u^c\partial_aD_c}{N},\qquad
+ \deg D_c=N=q+1\in\{r,r+4\},\qquad
+ 1\le t\le r-2.
+$$ {#eq:gg-budget-exact-slot-degree}
+
+The last range follows because $Q_{r-1}$ uses only $U_0,\ldots,U_{r-2}$ and $Q_0=0$. The averaging in $J_r^*$ is multiplication by $u^c$ upon evaluation on equal symmetric arguments; it introduces no degree factor. Thus $1/N\le1/(t+1)$.
+
+Put $E=u^cD_c$. Euler's identity gives the exact upper projection
+
+$$
+ u^aT'_a=\frac{u^cu^a\partial_aD_c}{N}=E,
+ \qquad P_+T'=U_{N+1}E.
+$$ {#eq:gg-budget-exact-upper-projection}
+
+Its coefficient mass is at most $2/p$ by the opened-edge computation above. In particular, the two upper contributions obtained by applying Lemma B.2 separately cancel to this expression. For the lower final projection, the mixed second derivatives cancel:
+
+$$
+ \begin{aligned}
+ \partial_0(u^c\partial_1D_c)
+       -\partial_1(u^c\partial_0D_c)
+      &=\partial_1D_0-\partial_0D_1,\\
+ \operatorname{strip}_N T'
+      &=\frac{\partial_1D_0-\partial_0D_1}{N(N+1)}
+        =-\frac1N\operatorname{strip}_N D .
+ \end{aligned}
+$$ {#eq:gg-budget-upper-lower-cancellation}
+
+The remaining stripping is a normalized one-slot operation with scalar factor $N/(N+1)\le1$. Its graph cost is included in the common $2^{20}$ bound, and it leaves the explicit gain $1/N\le1/(t+1)$. For a lower outer block, its factor $\epsilon_{ba}u^b$ is independent of the record input. The output is $\epsilon_{ba}u^b E$, so its final upper projection is zero and its lower coefficient has the same opened mass $2/p\le4/(t+1)$. These identities cover both final projections. The other spin factor uses its ordinary normalized projections and the same common graph bound. Together the two tables cover every inner and outer chirality and block, with no multiplicity for the specified position.
+
+The nonlinear transfer mass is consequently at most
+$2^{22}m_{r-1}(B)m_t(C)/(t+1)\le K_0m_{r-1}(B)m_t(C)/(t+1)$.
+All coefficients are measured in the stipulated atomic mass: the assignment weights, ten-tensor reduction, target block weights and Spencer factors were counted above. Passing from finite representations to their defining infima proves the estimate with no dependence on arity or derivative order. The number of eligible positions is counted separately in Theorem B.4.
+
+For the linear transfer use the exact leakage coefficients, not the coarse graph bound. On raw block masses the componentwise transfer matrix is
+
+$$
+ \begin{pmatrix}
+ n/(n+1)&0&0\\
+ 0&m/(m+1)&0\\
+ c_r/(m+1)&c_r/(n+1)&c_r
+ \end{pmatrix},\qquad n=r+4,\quad m=r .
+$$ {#eq:gg-budget-linear-matrix}
+
+The first old block stays lower in its first factor and leaks only from its upper second factor; the second exchanges these roles; the third stays lower in both. This gives all entries from Lemma B.2. Its column sums with weights $(2,2,1)$ are at most $c_r$ times the input weights. For example the only potentially stronger comparison reduces to
+$m(n+1)\le2(m+1)^2$, whose difference is $r^2-r+2>0$. The other comparison is $n(m+1)\le2(n+1)^2$, with difference $r^2+15r+46>0$. Exchanging the two spin factors exchanges these comparisons and the first two block weights, so the same bound holds for negative chirality. This proves the linear bound without repeated fixed graph losses. Finally
+
+$$
+ \log c_r\le\frac1{r(r+4)-1}\le\frac1{r(r+3)},\qquad
+ \sum_{r\ge1}\frac1{r(r+3)}=\frac{11}{18}.
+$$ {#eq:gg-budget-linear-product}
+
+The curvature source has one order-zero curvature factor and acts on the $2r+2$ slots of $U_{r-1}$. Each slot action uses a fixed finite alternating-tensor formula. Normalized stripping has the same assignment bound, and final valence still permits at most two bare edges. The fixed curvature expressions and bounded Spencer factors therefore give $C_*(r+1)$. This includes the scalar-curvature factor and the action on derivative slots. ∎
+
+Rescale the same mass by
+$\gamma_r=4(P_\infty/P_r)m_r$. It dominates the operator norm, makes each specified linear transfer nonexpanding, and changes a nonlinear insertion by factor
+$P_{r-1}P_t/(4P_\infty P_r)\le1/4$. Lemma B.3 bounds each insertion with fixed input and output chiralities uniformly, so its rescaled constant is at most $K_0/4$. The product rule in Lemma B.1 sums over the two possible chiralities of the intermediate record; a scalar $\Lambda$ position contributes zero. Let $K$ include this finite sum. Since $2(K_0/4)=K_0/2\le K_0$, the gain $K/(t+1)$ holds with a structural $K\le K_0$. Eligible ordered insertion positions are still summed, not averaged away.
+
+<div id="sec:gg-budget-coefficients"></div>
+
+### B.3. Ordered coefficient bounds
+
+<div id="thm:gg-budget-coefficients"></div>
+
+**Theorem B.4.**
+
+There are structural $a,b>0$ such that the original ordered degree-$d$ coefficients satisfy
+
+$$
+ \gamma_r(B^{[d]}_{r,\mathbf j}),\ 
+ \|B^{[d]}_{r,\mathbf j}\|_{\mathrm{op}}
+ \le ab^{d-2}r\,\frac{r!}{\prod_i j_i!},
+ \qquad |\mathbf j|=r+3-2d,\quad d\ge2 .
+$$ {#eq:gg-budget-coefficient-conclusion}
+
+*Proof.* At degree two, a source introduced at order $t$ has indices
+$(0,t-1)$ and mass at most $C(t+1)$. The unit linear transfers give at final indices $j+k=r-1$
+
+$$
+ C\sum_{t=1}^{r-j}(t+1)\binom{r-t}{j}
+   =C\left\{\binom{r+1}{j+2}+\binom r{j+1}\right\}.
+$$ {#eq:gg-budget-quadratic-sum}
+
+Multiplying by $j!k!/r!$ bounds this by
+$C\{(r+1)/((j+1)(j+2))+1/(j+1)\}\le2Cr$.
+Choose $a$ to include the fixed curvature orderings and labels.
+
+Normalize a degree-$d$ coefficient by $\prod j_i!/r!$ and bound it by $A_dr$. Put $k=|\mathbf j|=r+3-2d$. The preceding-order linear terms contribute at most
+$A_d((r-1)/r)\sum_i j_i\le A_dk$.
+For an inner degree $e$ inserted into outer degree $f$, $e+f=d+1$, the old position index is
+$t=\sum_{\mathrm{inner}}j_i+2e-3\ge1$.
+Its factorial denominator cancels the inner numerator. After summing the intermediate chirality, the remaining normalized term is at most
+$KA_fA_e(r-1)t/(r(t+1))\le KA_fA_e$.
+There are $f$ positions for the fixed ordered lists. The reserve is $r-k=2d-3$, so the induction closes with
+
+$$
+ A_2=a,\qquad
+ A_d=\frac K{2d-3}\sum_{\substack{e+f=d+1\\e,f\ge2}}fA_eA_f
+ \le\frac{2K}{3}\sum_{\substack{e+f=d+1\\e,f\ge2}}A_eA_f .
+$$ {#eq:gg-budget-degree-recursion}
+
+The last inequality symmetrizes $e,f$ and uses
+$(d+1)/(2(2d-3))\le2/3$ for $d\ge3$.
+The binary-tree recurrence gives
+$A_d\le a(2Ka/3)^{d-2}\operatorname{Cat}_{d-2}
+\le ab^{d-2}$ with $b=8Ka/3$. All steps refer to the recursively ordered expansion, so no unique ordered expression of a commutative polynomial is assumed. ∎
+
+For completeness these estimates define the actual nonlinear field on smaller analytic-record radii. For the grouped records $X_j$ of Theorem 3.3 set $a_0=18a$ and $b_0=3b$: the at most $3^d$ input types and two output chiralities give $2\cdot3^d a b^{d-2}=a_0b_0^{d-2}$. This is the same single conversion used there. If $M=\|X\|_R$, $0<s<R$ and
+$\vartheta=b_0s^2M<1$, then
+
+$$
+ \|Q(X)\|_s
+ \le a_0sM^2\left(2+\frac{s}{R-s}\right)
+                     \frac{2-\vartheta}{(1-\vartheta)^2}.
+$$ {#eq:gg-budget-nonlinear-sum}
+
+Indeed put $c_j=R^j\|X_j\|/j!$ and $q=s/R$. Unrestricted product sums are at most $M^d$, and their $k=\sum j_i$ weighted sum is at most
+$dM^dq/(1-q)$. Since $r=k+2d-3$, summing the bound gives the display using
+$\sum_{d\ge2}d\vartheta^{d-2}=(2-\vartheta)/(1-\vartheta)^2$.
+Strict interior inequalities give normal convergence and parameter holomorphy.
+Lemma B.1 identifies these coefficients with the original polynomial derivation. The scalar characteristic argument in Theorem 3.3 therefore proves convergence of that derivation's flows and their finite words, rather than flows of a replacement field.
+
+
+
+<div id="app:gg-contact-linear-operators"></div>
+
+## Appendix C. Contact cochains and the analytic linear correction
+
+<div id="sec:gg-contact-cochain-repair"></div>
+
+### C.1. The fixed cochain operations
+
+The contact normal-jet resolution and its conformal-metric deformation interpretation are classical [@LeBrun1991, §8, pp.29–31 and Proposition 8.1]. We fix the following cochain representatives and normalizations.
+
+At the flat reference let $K=\mathcal O_Q(-1,-1)$ and
+$0\to K\to V\otimes\mathcal O_Q\to N\to0$.
+Put $L=K^*=\mathcal O(1,1)$ and
+$F_n=L\otimes\operatorname{Sym}^nN^*$.
+The symmetric derivative gives
+
+$$
+ 0\longrightarrow F_n\longrightarrow
+ A_n=L\otimes\mathcal P_n
+ \xrightarrow{d_n}B_n=L^2\otimes\mathcal P_{n-1}
+ \longrightarrow0,\qquad d_n=\frac1n k^a\partial_{x^a}.
+$$ {#eq:gg-contact-tautological-resolution}
+
+For $n=0$ omit the last term. The kernel consists of polynomials on $V/K$; local integration in $k$ proves surjectivity. We use the usual alternating Čech differential, so $(\delta a)_{ij}=a_j-a_i$, with reference transitions understood.
+
+Both fixed positive line bundles $L,L^2$ have vanishing $H^1,H^2$.
+Their product two-circle Laurent contractions are bounded on fixed nested annuli independently of the constant polynomial coefficient space. A local holomorphic right inverse is
+
+$$
+ (R_n^{\mathrm{hol}}b)(x)
+   =n\lambda(x)\int_0^1
+        b(x-(1-t)\lambda(x)k)\,\mathrm dt,\qquad \lambda(k)=1 .
+$$ {#eq:gg-contact-holomorphic-right-inverse}
+
+Its bound is $nC^n$ in symmetric coefficient norms on the fixed finite direction charts. Given a two-cocycle $c$ in $F_n$, split it in $A_n$ as $\delta a=c$; split $d_na$ in $B_n$ as $\delta b=d_na$; then
+
+$$
+ S_nc=a-\delta(R_n^{\mathrm{hol}}b),\qquad
+ \delta S_nc=c,\quad d_nS_nc=0,\quad
+ \|S_nc\|_{\mathrm{inner}}
+       \le C_0(n+1)C_1^n\|c\|_{\mathrm{outer}}.
+$$ {#eq:gg-contact-fixed-repair-bound}
+
+This proves the repair used in Lemma 5.1, including its analytic estimate. Polynomial factors and fixed exponentials are summable after one strict normal-radius restriction.
+
+We also specify the closed-cochain lift $\ell_n$ rather than choose uncontrolled degreewise representatives. Give the constant tensor spaces their full Hilbert norms and the two fixed line bundles their product Fubini–Study metrics. Identify
+$\mathscr C_n=H^1(F_n)$ with the quotient
+$H^0(B_n)/d_nH^0(A_n)$ and give it the quotient norm.
+For a class $u$ choose its unique minimal global representative $b_u$.
+The pointwise smooth right inverse
+$R_n=d_n^\dagger(d_nd_n^\dagger)^{-1}$ has
+$\|R_n\|\le\sqrt n$: in a unitary frame with $k=e_0$, normalized contraction on a monomial with $j$ copies of that slot has singular value $\sqrt{j/n}$. In particular $d_nd_n^\dagger\ge n^{-1}$. Fixed angular derivatives of $d_n$ are bounded independently of $n$; repeated differentiation of this inverse gives polynomial bounds in $n$ for every fixed derivative of $R_n$.
+
+The closed form $\mu_u=\bar\partial R_nb_u$ takes values in $F_n$.
+On each fixed buffered chart solve $\bar\partial w_i=\mu_u$ in $A_n$ by the componentwise two-variable Cauchy–Green contraction. Its operator bounds concern only the fixed line bundle and chart. Since $d_nw_i$ is holomorphic, put
+$\phi_i=w_i-R_n^{\mathrm{hol}}d_nw_i$.
+Then $\phi_i$ takes values in $F_n$ and
+$\bar\partial\phi_i=\mu_u$. The sections
+$a_i=R_nb_u-\phi_i$ are holomorphic in $A_n$, with $d_na_i=b_u$.
+Define $\ell_nu=(a_j-a_i)_{ij}$. This fixes the sign and the actual holomorphic representative. The same formulas prove
+
+$$
+ \delta\ell_nu=0,\qquad [\ell_nu]=u,\qquad
+ \|\ell_nu\|_{\mathrm{inner}}
+          \le C(n+1)^bC_2^n\|u\|_{\mathscr C_n}
+$$ {#eq:gg-contact-fixed-class-lift-bound}
+
+for a fixed sufficiently high angular Sobolev norm in the intermediate estimate, followed by Sobolev embedding on the compact real four-dimensional $Q$. All degree dependence has been exhibited in $R_n$ and the local symmetric powers; no uniform Green estimate for all the $F_n$ is assumed. Minimal representatives are complex-linear in their quotient classes, since their orthogonal complements are complex subspaces. The fixed choices therefore preserve holomorphic input parameters and commute with finite truncation. These definitions fix the cochains used in §5.
+
+<div id="sec:gg-contact-conformal-identification"></div>
+
+### C.2. The contact class and its two original records
+
+Global sections of $L$ are linear functions of the null vector $k$, and those of $L^2$ are its quadratic functions modulo $\eta(k,k)$.
+Consequently, for $n\ge3$,
+
+$$
+ \mathscr C_n\cong
+ \frac{\mathcal P_{n-1}\otimes\operatorname{Sym}^2_0V^*}
+      {\mathsf K(\mathcal P_n\otimes V)},\qquad
+ (\mathsf K\xi)_{ab}
+   =\partial_a\xi_b+\partial_b\xi_a
+                      -\frac12\partial^c\xi_c\,\eta_{ab}.
+$$ {#eq:gg-contact-conformal-quotient}
+
+The same sequence identifies $H^0(F_n)$ with homogeneous conformal Killing fields of degree $n$. Their higher vanishing, used in §D.6, is explicit. If $\partial_a\xi_b+\partial_b\xi_a=2\vartheta\eta_{ab}$ and $\vartheta=\operatorname{div}\xi/4$, differentiation and permutation give
+
+$$
+ \partial_a\partial_b\xi_c
+  =\eta_{ac}\partial_b\vartheta+\eta_{bc}\partial_a\vartheta
+                                  -\eta_{ab}\partial_c\vartheta .
+$$ {#eq:gg-contact-killing-finite-type}
+
+Diverging in $c$ gives $2\partial_a\partial_b\vartheta=-\eta_{ab}\Box\vartheta$. Taking the trace gives $\Box\vartheta=0$ and then its Hessian vanishes. Thus every third derivative of $\xi$ is zero. The degree-zero fields are translations; degree one consists of skew linear fields and a dilation; degree two is $2(b\cdot x)x-\eta(x,x)b$. In particular $H^0(F_n)=0$ for $n\ge3$.
+
+The normalization is the connecting map $J_n$ from
+$b_h=h_{ab}k^ak^b/(2n)$. A global middle section $k^a\xi_a$ maps to
+$k^ak^b(\mathsf K\xi)_{ab}/(2n)$.
+This proves the quotient and its kernel. Local holomorphic lifts are
+
+$$
+ a_i(x,k)=\frac12\int_0^{\lambda_i(x)}
+      h_{ab}(x-\lambda_i(x)k+sk)k^ak^b\,\mathrm ds,\qquad
+ J_n[h]=[\delta a].
+$$ {#eq:gg-contact-metric-ray-primitive}
+
+They give exactly the first variation of the null hitting maps: changing
+$\frac12\eta^{ab}p_ap_b$ to that Hamiltonian minus
+$h^{ab}p_ap_b/2$ is removed locally by these Hamiltonian primitives.
+Their overlap difference is therefore the contact deformation class.
+A trace has zero null contraction. The finite direction cover bounds the integrals on a smaller tube. Conversely embed a contact cocycle into $A_n$ and split it by the fixed $L$ Laurent contraction; its $d_n$ image is global in $B_n$ and reads $h/(2n)$.
+Normalized differentiation is bounded on coefficient tensors and fixed coordinate substitutions cost at most $C^n$. Both directions therefore act on actual analytic germs after one fixed restriction.
+
+The first-order lifts of §5 have the original, rather than freely rescaled, curvature records. In
+$\eta=2\,\mathrm dx^{00'}\mathrm dx^{11'}-
+2\,\mathrm dx^{01'}\mathrm dx^{10'}$, take
+$F=(w^0)^{r+4}/\zeta$. Splitting its lifted Hamiltonian
+$-(r+4)\varrho(w^0)^{r+3}/\zeta$ gives the metric representative
+
+$$
+ h=-2(r+4)(r+3)(x^{00'})^{r+2}(\mathrm dx^{01'})^2 .
+$$ {#eq:gg-contact-positive-normalization}
+
+For an explicit check of its contact class, put $p=r+4$, $A=x^{00'}$, $B=x^{01'}$ and $k=(\zeta\varrho,-\varrho,-\zeta,1)$. In a common north frame the two middle-bundle primitives are
+
+$$
+ u_N=\frac{p\varrho}{\zeta}
+             \bigl((A+\zeta B)^{p-1}-A^{p-1}\bigr),\qquad
+ u_S=-\frac{p\varrho}{\zeta}A^{p-1}.
+$$ {#eq:gg-contact-highest-vector-primitives}
+
+Both have derivative $-\!p(p-1)\varrho^2A^{p-2}=h(k,k)/2$ along $k$. The first is holomorphic at $\zeta=0$ by divisibility; the second, after the $L$ south-frame factor $\zeta^{-1}$, is holomorphic at infinity. The ordered difference $u_S-u_N$ is exactly $-\!p\varrho(A+\zeta B)^{p-1}/\zeta$, the prescribed lifted Hamiltonian. The dependence on $\varrho$ is a global section of its degree-one line. This verifies the class.
+
+Its trace, divergence and wave operator vanish, hence its linearized Ricci tensor vanishes. By [@eq:gg-last-slot-linear-curvature] its last-slot component is
+$C^{(1)}_{00'\,01'\,00'\,01'}=\partial_{00'}^2h_{01'01'}/2=-(r+4)!(x^{00'})^r/r!$. The minus sign in the component readout in [@eq:gg-weyl-spinor-readout] therefore gives
+$\Psi^+_{0000}=-\partial_{00'}^2h_{01'01'}/2=(r+4)!(x^{00'})^r/r!$.
+The order-$r$ free component is exactly $(r+4)!$, the extraction multiplier in Theorem 3.1. The maps are equivariant under the two spin factors, and the orbit of this highest pure tensor spans each separately symmetric space, so the identity holds for every component.
+
+For the negative highest source $F_{-6}=(w^0)^r/\zeta$, the flat contour is $\Psi^-_{0'0'0'0'}=(x^{00'})^r$ and its record is $r!$. Its derived class ([-@eq:gg-derived-dual-class]) is
+$G=c_r(\eta^{0'})^{r+4}/\varrho$, where $c_r=(-1)^rr!/(r+4)!$. Put $u=x^{00'}$, $q=x^{10'}$ and $a_r=r!/(r+3)!$. The factor exchange $\widetilde A=-u$, $\widetilde B=-q$, $\widetilde\zeta=\varrho$, $\widetilde\varrho=-\zeta$ gives the primitives
+
+$$
+ \widetilde u_N=\frac{a_r\zeta}{\varrho}
+                  \bigl((u+\varrho q)^{r+3}-u^{r+3}\bigr),\qquad
+ \widetilde u_S=-\frac{a_r\zeta}{\varrho}u^{r+3} .
+$$ {#eq:gg-contact-negative-highest-primitives}
+
+The ordered difference $\widetilde u_S-\widetilde u_N$ is the prescribed $h_-=-a_r\zeta(u+\varrho q)^{r+3}/\varrho$. For the same $k=(\zeta\varrho,-\varrho,-\zeta,1)$ their derivatives are both $-r!\zeta^2u^{r+2}/(r+2)!$. Consequently the metric representative and its component readout are
+
+$$
+ h^-=-\frac{2r!}{(r+2)!}u^{r+2}(\mathrm dq)^2,\qquad
+ C^{(1)}_{uquq}=-u^r,\qquad
+ \Psi^-_{0'0'0'0'}=-C^{(1)}_{uquq}=u^r .
+$$ {#eq:gg-contact-negative-component-readout}
+
+The negative representative also has zero trace, divergence and wave operator. Thus the $r$th derivative is exactly $r!$, including the $(-1)^r$ from $\eta=-\kappa x$ and the stated dual coefficient. The same orbit argument gives all negative components. Thus the two actual cohomology classes are the two linear vacuum inclusions with exactly the original component and factorial conventions.
+
+<div id="sec:gg-linear-vacuum-inclusion"></div>
+
+### C.3. The vacuum inclusion and its kernel
+
+Write $\mathsf R(h)$ for the linearized Ricci tensor and
+$\mathsf P(h)=\frac12(\mathsf R(h)-\operatorname{tr}\mathsf R(h)\eta/6)$.
+The linear Cotton tensor is $\mathrm d\mathsf P(h)$.
+For $r=n-3$, the free Weyl projection is the same geometric readout as in §3:
+
+$$
+ \Pi_n[J_nh]=
+ \left.\operatorname{Sym}\partial^r
+       \bigl(\mathfrak p_+(C^{(1)}(h)),
+             \mathfrak p_-(C^{(1)}(h))\bigr)\right|_{x=0} .
+$$ {#eq:gg-contact-free-projection-readout}
+
+Here the symmetrizations and both component contractions are exactly [@eq:gg-free-record-projection] and [@eq:gg-weyl-spinor-readout]. It and the linear Cotton tensor descend to $\mathscr C_n$: symmetric gradients have zero curvature, a trace has zero Weyl tensor, and $\mathsf P(2f\eta)=-\partial^2f$.
+
+If $m=n-1$ and $\mathrm d\mathsf P(h)=0$, two Euler homotopies give
+$f=x^ax^b\mathsf P(h)_{ab}/(m(m-1))$ with
+$\partial^2f=\mathsf P(h)$. Hence $h+2f\eta$ is Ricci-flat and represents the same contact class.
+
+Conversely, for $r=n-3$ insert $r$ copies of $x$ into $U_r^\pm/r!$ to form the flat Weyl spinor polynomials. Apply the inverse component formula [@eq:gg-weyl-spinor-decomposition] to form $C$, and put $\mathcal W^a{}_b=\tfrac12\eta^{af}C_{cdbf}\,\mathrm dx^c\wedge\mathrm dx^d$. Their separate symmetry gives zero flat divergence. This curvature two-form obeys
+$\mathrm d\mathcal W=0$ and
+$\mathcal W^a{}_b\wedge\mathrm dx^b=0$.
+For $E=x^a\partial_a$, define
+
+$$
+ \omega^a{}_b=\frac{\iota_E\mathcal W^a{}_b}{r+2},\qquad
+ e^a=\frac{x^b\omega^a{}_b}{r+3},\qquad
+ v(U)_{ab}=\eta_{ac}e^c{}_b+\eta_{bc}e^c{}_a .
+$$ {#eq:gg-linear-vacuum-radial-homotopy}
+
+The Euler identity gives $\mathrm d\omega=\mathcal W$ and
+$\iota_E\omega=0$. Applying it to the closed form
+$\omega^a{}_b\wedge\mathrm dx^b$ gives
+$\mathrm de^a+\omega^a{}_b\wedge\mathrm dx^b=0$.
+Since $\omega$ is skew, it is the linearized Levi–Civita connection of $v(U)$. Thus $v(U)$ is Ricci-flat, has precisely $U$, and is in marked radial normal gauge.
+Set $\iota_nU=J_n[v(U)_0]$; taking the trace-free representative only passes to the conformal quotient.
+
+For a homogeneous Ricci-flat variation, flat Bianchi and commuting derivatives make its Weyl derivatives separately symmetric by Lemma A.2. Its one homogeneous free list therefore determines its full curvature. If that list is zero, the Christoffel one-forms are closed. Two polynomial Poincaré integrations, using torsion symmetry, give
+$\Gamma^a{}_{bc}=\partial_b\partial_c\xi^a$.
+The remaining $h-\mathcal L_\xi\eta$ is constant and vanishes by positive degree. This proves
+
+$$
+ \ker(\mathrm d\mathsf P:\mathscr C_n\to\operatorname{im}\mathrm d\mathsf P)
+       =\operatorname{im}\iota_n,\qquad \Pi_n\iota_n=1 .
+$$ {#eq:gg-contact-cotton-kernel}
+
+The radial construction is also analytic for a whole factorially bounded free list. Tensor-norm conversion costs a polynomial in $r$, the fixed spin-to-coordinate change costs at most $C^r$, and division by $r!$ and the two positive Euler degrees gives a normally convergent metric series after a fixed restriction. The same reasoning and Cauchy estimates apply to the entire free projection of any analytic metric variation, including a nonvacuum one.
+
+<div id="sec:gg-conserved-linear-potential"></div>
+
+### C.4. A bounded potential for the conserved linear source
+
+<div id="lem:gg-conserved-linear-ricci-potential"></div>
+
+**Lemma C.1.**
+
+For $\eta=\operatorname{diag}(\epsilon,1,1,1)$, $\epsilon=\pm1$, a symmetric holomorphic tensor $S$ with
+$\partial^aS_{ab}=\frac12\partial_b\operatorname{tr}S$
+has a fixed complex-linear potential $G S$ satisfying
+$\mathsf R(GS)=S$. There are structural $c,C>0$ with
+
+$$
+ \|GS\|_{\mathbb D_{cR}^4}\le CR^2\|S\|_{\mathbb D_R^4}.
+$$ {#eq:gg-conserved-linear-potential-bound}
+
+Homogeneous degree $d$ maps to degree $d+2$. The operation preserves bounded holomorphic parameter families and real coefficients in Lorentz coordinates.
+
+*Proof.* Put
+$T=S-\frac12(\operatorname{tr}S)\eta$ and
+$\bar h=h-\frac12(\operatorname{tr}h)\eta$.
+Then $\operatorname{div}T=0$. Solve
+$\Box\bar h=-2T$ with $\beta_b=\partial^a\bar h_{ab}=0$.
+We specify compatible initial data at $t=0$.
+Let $\Delta_yf=-2\epsilon T_{00}(0,y)$, with $f=\partial_1f=0$ on $y^1=0$.
+Set $A_{ij}=\delta_{ij}f$, $A_{00}=A_{0i}=0$ and
+
+$$
+ \begin{aligned}
+ B_{12}&=2\int_0^{y^1}T_{02}(0,s,y^2,y^3)\,\mathrm ds,&
+ B_{13}&=2\int_0^{y^1}T_{03}(0,s,y^2,y^3)\,\mathrm ds,\\
+ B_{11}&=\int_0^{y^1}
+       (2T_{01}-\partial_2B_{12}-\partial_3B_{13})
+                        (0,s,y^2,y^3)\,\mathrm ds,&
+ B_{22}&=B_{23}=B_{33}=0,\\
+ B_{0i}&=-\epsilon\partial_if,&B_{00}&=0 .
+ \end{aligned}
+$$ {#eq:gg-linear-source-compatible-data}
+
+Then $\partial^jB_{ji}=2T_{0i}(0,y)$.
+For $\epsilon\partial_t^2\bar h+\Delta_y\bar h=-2T$ with initial data $A,B$,
+
+$$
+ \beta_b|_0=\epsilon B_{0b}+\partial^iA_{ib}=0,\qquad
+ \partial_t\beta_b|_0
+       =-\Delta_yA_{0b}-2T_{0b}+\partial^iB_{ib}=0 .
+$$ {#eq:gg-linear-source-gauge-data}
+
+The scalar equation for $f$ proves the second equality for $b=0$; the spatial divergence of $B$ proves it for $b=i$.
+Also $\Box\beta=-2\operatorname{div}T=0$, so analytic uniqueness gives $\beta=0$. The linearized Einstein tensor is now
+$-\Box\bar h/2=T$, hence trace reversal yields $\mathsf R(h)=S$.
+
+The estimates can be proved directly. If $I_1$ denotes integration in $y^1$ with zero initial value, then
+
+$$
+ f=-2\epsilon\sum_{j\ge0}(-1)^j
+       I_1^{2j+2}(\partial_2^2+\partial_3^2)^jT_{00}(0,y).
+$$ {#eq:gg-linear-source-poisson-series}
+
+On a fixed tangential buffer $\delta R$ the differentiated numerator is bounded by
+$2^j(2j)!(\delta R)^{-2j}\|T\|$; the integrations give
+$|y^1|^{2j+2}/(2j+2)!$. A fixed restriction makes the sum geometric and bounds $f$ by $CR^2\|T\|$. Interior derivatives and the finite integrals give
+$\|A\|\le CR^2\|T\|$, $\|B\|\le CR\|T\|$ on a common three-polydisk.
+
+The wave solution has homogeneous-data sums
+$t^{2j}(-\epsilon\Delta_y)^jA/(2j)!$ and
+$t^{2j+1}(-\epsilon\Delta_y)^jB/(2j+1)!$, and source sum
+
+$$
+ -2\epsilon\sum_{l,j\ge0}
+ \frac{t^{l+2j+2}}{(l+2j+2)!}
+              (-\epsilon\Delta_y)^j\partial_t^lT(0,y).
+$$ {#eq:gg-linear-source-wave-series}
+
+Cauchy bounds give numerator factors at most
+$C3^j(2j)!l!$ times the fixed-buffer inverse powers of $R$.
+Since $(2j)!l!\le(l+2j+2)!$, sufficiently small fixed $|t|/R$ makes all sums geometric. This gives the asserted bound and justifies termwise differentiation and uniqueness. For a homogeneous polynomial source all terms have degree $d+2$ and only finitely many survive. The formulas use real coefficients for $\epsilon=-1$ and normally convergent complex-linear operations, proving the remaining claims. ∎
+
+<div id="sec:gg-same-symbol-inverse-budget"></div>
+
+### C.5. The same finite inverse and its analytic budget
+
+For a compatible trace-free polynomial $A$ of degree $m-2$ with
+$\mathrm d\operatorname{div}A=0$, put
+
+$$
+ j=\frac43\int_0^1x^b(\operatorname{div}A)_b(tx)\,\mathrm dt,
+ \qquad P_A=A+\frac14j\eta,\qquad S_A=2P_A+j\eta .
+$$ {#eq:gg-compatible-schouten-source}
+
+Closedness and the Euler homotopy give
+$\operatorname{div}A=3\,\mathrm dj/4$, so
+$\operatorname{div}P_A=\mathrm dj$, $\operatorname{tr}P_A=j$.
+The source $S_A$ satisfies the conservation equation of Lemma C.1.
+Its potential $h=GS_A$ has $\mathsf P(h)=P_A$, and therefore
+$[\mathsf P(h)^\circ]=[A]$ in the Hessian quotient.
+Remove its entire free record with the radial vacuum inclusion:
+$c=(1-\iota\Pi)J[h]$.
+It has zero free record and optical image $[A]$.
+
+If its optical image is zero, then
+$\mathsf P(h)^\circ=\operatorname{Hess}_0f$.
+Contracted linear Bianchi makes the remaining pure trace in
+$\mathsf P(h)-\partial^2f$ constant. In degree $m-2>0$ it vanishes; in degree zero a multiple of $\eta$ is itself a Hessian of a multiple of $q$. A conformal change therefore makes the same class Ricci-flat.
+Equation ([-@eq:gg-contact-cotton-kernel]) then says that the zero-record class is zero. Thus the class just constructed depends only on $[A]$ and is the unique inverse
+$L_m$ of $\mathfrak o_m$ on $\ker\Pi$.
+This proves the kernel and image assertions used in Appendix D. Surjectivity of $d_m[A]=\mathrm d\,\operatorname{div}A$ onto closed polynomial two-forms of coefficient degree $m-4$ is proved separately in §D.5; for $m<4$ this target is zero. No analytic bound for an inverse of $d_m$ is used in the estimate below.
+
+This construction also bounds that same inverse, not an unrelated right inverse. For an analytic compatible representative $A(x)$, its scalar Euler primitive has a common bound after a fixed derivative buffer; Lemma C.1 gives an analytic $h$ with the stated radius loss. Its whole free record has the factorial Cauchy bound, and §C.3 supplies one analytic vacuum removal. The ray primitive gives a bounded analytic representative of the resulting contact class. More explicitly take $\widehat h=h-v(\Pi J[h])$; in degree $m=n-1$, $b_{\widehat h}=\widehat h_{ab}k^ak^b/(2n)$ is a global quotient representative with this analytic coefficient bound. Its minimal quotient representative has no larger norm. The polynomial-times-exponential bound of the fixed $\ell_n$ in §C.1 then sums on another fixed smaller tube. Hence the actual selected cochain
+$\sum_{m\ge2}\ell_{m+1}L_m[A_m]$ is analytic for this one correction.
+Likewise $\sum\ell_{m+1}\iota_{m+1}Z_{m-2}$ is analytic for every factorially bounded record $Z$.
+
+The selection rule evaluates the finite matrices $L_m$ on the optical defect and uses these fixed cochains; it does not evaluate a nonlinear Einstein solution or replace the selected maps by the auxiliary potential. The potential proves consistency and a common spatial estimate for the same unique class inverse. Repetition over a finite parameter algebra makes each finite stage analytic. Common convergence of all normalized stages is the separate coefficient comparison of §6.
+
+<div id="app:gg-optical"></div>
+
+## Appendix D. The intrinsic projective optical bundle and its obstruction
+
+<div id="sec:gg-optical-density-line"></div>
+
+### D.1. The density line of compact contact skies
+
+Write $\mathcal K=\ker\mathrm dq$ on the complete incidence, to distinguish this line from the fixed spinor bundles. Its projection to $T_xM$ is the kernel of first-jet evaluation of $H^0(Q_x,\mathcal L)$. In bilinear coordinates on $\mathbb P^1\times\mathbb P^1$, a section whose value and two first derivatives vanish at a point spans a line of type $\mathcal O(-1,-1)$. Thus $\mathcal K|_{Q_x}=\mathcal O(-1,-1)$ as an isomorphism type. This does not choose its varying constant factor.
+
+The line $\mathcal N=\mathcal K\otimes q^*\mathcal L$ is trivial on every compact sky. Since $H^0(\mathcal O_Q)=\mathbb C$ and $H^{>0}(\mathcal O_Q)=0$, proper base change and evaluation give
+
+$$
+ \mathcal B=p_*\mathcal N,\qquad
+ p^*\mathcal B\xrightarrow{\sim}
+               \mathcal K\otimes q^*\mathcal L .
+$$ {#eq:gg-intrinsic-density-line}
+
+The evaluation is an isomorphism on the compact central fiber and hence on a common nearby incidence. Over a finite local algebra we use the proper flat compact family, a relatively smooth moduli germ, and invertible $\mathcal K,\mathcal L$; these follow from the residue regularity and the finite construction. Vanishing of $H^1(\mathcal O_Q)$ lifts the fiber section through each highest ideal. Its evaluation remains a unit, proving the same assertion by induction.
+
+On a small smooth contractible moduli representative take a root pair
+$(\mathcal E[1],\beta)$ with
+$\beta:\mathcal E[1]^2\to\mathcal B$. The marked central fiber fixes its sign. Such pairs have a unique comparison preserving $\beta$ and that fiber lift: in local frames the comparison is the square root of a nonzero holomorphic unit with its prescribed central sign. It exists by a local logarithm; a nilpotent unit has its finite binomial root. All comparisons commute with finite parameter restriction. In particular
+
+$$
+ (p^*\mathcal E[1])^2
+             =\mathcal K\otimes q^*\mathcal L .
+$$ {#eq:gg-intrinsic-root-line}
+
+There is no use of a square root of $\mathcal O(1,1)$. The two sky degrees cancel before this root is taken.
+
+The contact variation defines
+$\operatorname{ev}_z:T_xM\to\mathcal L_z$. Its polar hyperplane is that of the ray line $\mathcal K_z$ for the complete Segre null quadric. For $k\in\mathcal K_z$ and $v\in T_xM$, evaluation in the preceding line identifies $k\otimes\operatorname{ev}_z(v)$ with an element of $\mathcal B_x$. Choose temporarily a scalar conformal representative $g_0$ with this same Segre null cone and a nonzero $b\in\mathcal B_x$. The complete-family and tangent-space identifications used here are proved in §D.7. The two polar maps have the same lines and hyperplanes, so
+
+$$
+ \operatorname{ev}_{\mathcal B}^{-1}
+       (k\otimes\operatorname{ev}_z(v))
+          =a(z)g_0(k,v)b .
+$$ {#eq:gg-intrinsic-metric-ratio}
+
+The nonzero ratio $a(z)$ is holomorphic on the compact connected sky and is therefore constant. It defines a symmetric nondegenerate $\mathcal B$-valued metric $\boldsymbol g$ on $M$, independent of both temporary choices. Holomorphic dependence follows from the same finite quadric coefficient equations. In a frame $e$ of $\mathcal E[1]$, write $\boldsymbol g=g_e e^2$. Replacing $e$ by $\Omega^{-1}e$ gives $\widehat g_e=\Omega^2g_e$ and $\widehat\sigma=\Omega\sigma$. Thus this root is exactly the density line required in §5.
+
+<div id="sec:gg-optical-projective-ray"></div>
+
+### D.2. A projective connection on each ray
+
+At fixed $z\in Z$, the tangent spaces to the incident skies form a Lagrangian curve
+$\Lambda_u=T_zQ_{p(f(u))}\subset\mathcal D_z$. Here $u$ is any ray coordinate. A constant symplectic frame writes it as a symmetric graph $S(u)$, with $S'$ invertible by regularity. Put
+
+$$
+ \mathcal S_u(S)=
+       \tfrac12(S')^{-1}S'''
+       -\tfrac34\big((S')^{-1}S''\big)^2,\qquad
+ \kappa_u=\tfrac12\operatorname{tr}\mathcal S_u(S).
+$$ {#eq:gg-intrinsic-matrix-schwarzian}
+
+We prove invariance without first introducing a spacetime metric. Locally solve
+
+$$
+ Y'=-\tfrac12YS''(S')^{-1},\qquad
+ Y(u_0)^{\mathsf T}Y(u_0)=S'(u_0)^{-1},
+ \qquad Z=YS .
+$$ {#eq:gg-intrinsic-jacobi-normalization}
+
+The initial factor exists locally over $\mathbb C$ and is only a proof witness. Differentiation and ODE uniqueness give
+$Y^{\mathsf T}Y=(S')^{-1}$, with $Y^{\mathsf T}Y'$ symmetric. Set $R=-Y''Y^{-1}$. Differentiating the symmetry proves $R^{\mathsf T}=R$. The equation for $Y$ and
+$S'=Y^{-1}Y^{-{\mathsf T}}$ give
+
+$$
+ Y''+RY=0,\quad Z''+RZ=0,\quad
+ Y^{\mathsf T}Z'-(Y')^{\mathsf T}Z=1,\quad
+ Y^{\mathsf T}Y'-(Y')^{\mathsf T}Y=0 .
+$$ {#eq:gg-intrinsic-jacobi-identities}
+
+The remaining symplectic identity follows from $S=S^{\mathsf T}$. If $A=(S')^{-1}S''$, then $A=-2(Y^{-1}Y')^{\mathsf T}$ and direct differentiation gives
+
+$$
+ \mathcal S_u(S)=(Y^{-1}RY)^{\mathsf T}.
+$$ {#eq:gg-intrinsic-schwarzian-conjugacy}
+
+A constant symplectic graph change takes constant linear combinations of the same normalized fundamental pair $Y,Z$; it retains $R$ and its trace. Scaling the symplectic form by a nonzero raywise constant also changes no trace. This covers contact frames, whose Levi form is line-valued.
+
+For $v=f(u)$, direct chain differentiation, with all derivatives at the same fixed ray, gives
+
+$$
+ \mathcal S_v(S)=f'^{-2}
+       \left(\mathcal S_u(S)-\tfrac12\{f,u\}1_2\right),
+ \qquad
+ \kappa_v=f'^{-2}\left(\kappa_u-\tfrac12\{f,u\}\right),
+ \quad
+ \{f,u\}=\frac{f'''}{f'}-\frac32\left(\frac{f''}{f'}\right)^2.
+$$ {#eq:gg-intrinsic-projective-covariance}
+
+For verification,
+$(S_v')^{-1}S_v''=f'^{-1}A-f''f'^{-2}1_2$.
+The third derivative cancels its mixed $A$ term in
+$\frac12(S_v')^{-1}S_v'''-\frac34A_v^2$; the remaining scalar is the displayed Schwarzian. No simultaneous diagonalization or commutation of matrix derivatives is used.
+
+<div id="sec:gg-optical-actual-cauchy"></div>
+
+### D.3. The global operator and its transition frames
+
+Let $l$ be a local frame of $\mathcal L$ pulled back from $Z$. Choose a local frame $m_u$ of $p^*\mathcal E[1]$ with
+$m_u^2=\partial_u\otimes l$ under the root-line isomorphism. For $v=f(u)$ and $l_v=h\,l$, with $h$ constant along rays, the same root pair gives
+
+$$
+ m_v=\sqrt{h/f'}\,m_u,\qquad
+ y_v=\sqrt{f'/h}\,y_u .
+$$ {#eq:gg-intrinsic-half-density-change}
+
+These are comparisons in an existing root line, not new independent roots of $\mathcal L$. The preceding projective covariance gives
+
+$$
+ (\partial_v^2+\kappa_v)y_v
+       =h^{-1/2}f'^{-3/2}
+                     (\partial_u^2+\kappa_u)y_u.
+$$ {#eq:gg-intrinsic-operator-change}
+
+Hence the ray equations define one intrinsic operator
+
+$$
+ P_J:p^*\mathcal E[1]\longrightarrow
+                  p^*\mathcal E[1]\otimes(\mathcal K^*)^2.
+$$ {#eq:gg-intrinsic-ray-operator}
+
+Its solutions descend to a rank-two holomorphic bundle $\mathcal E_J$ on the short-ray space. Local transverse slices provide the two Cauchy values; finite holomorphic ODE uniqueness supplies the inverse transitions and exact cocycle. Connected simply connected short fibers ensure that continuation defines one solution. The construction is natural under contact/incidence comparisons and the retained root mark.
+
+For solutions $s_a=y_a m_u$, the Wronskian is
+$W_u(s_1,s_2)=y_1\partial_uy_2-(\partial_uy_1)y_2$.
+It changes by $W_v=h^{-1}W_u$. Thus
+$s_1\wedge s_2\mapsto W_u(s_1,s_2)l$ is the specified, nondegenerate isomorphism
+
+$$
+ \bigwedge^2\mathcal E_J\xrightarrow{\ \sim\ }\mathcal L .
+$$ {#eq:gg-intrinsic-wronskian-line}
+
+To obtain equality with the specified matrices in §5, use its already fixed $g_{\mathrm{aux}}$ only at this comparison step. Write
+$\boldsymbol g=g_{\mathrm{aux}}b_{\mathrm{aux}}$, and choose
+$e^2=b_{\mathrm{aux}}$ with the central sign. The incidence definition of $\boldsymbol g$ says exactly
+$D_i\otimes l_i=p^*e^2$. Thus $m_i=p^*e$ in the original calibrated affine parameters. The Jacobi trace comparison gives
+$\kappa_i=P^{g_{\mathrm{aux}}}(k_i,k_i)$.
+
+If $\alpha_i=c_{ij}\alpha_j$, then
+$l_i=c_{ij}^{-1}l_j$, $D_i=c_{ij}D_j$, and
+$\mathrm du_i/\mathrm du_j=c_{ij}^{-1}$. The half-density change therefore gives $y_i=y_j$ and multiplication of its slope by $c_{ij}$. For the identical slices, moving base point and hitting time,
+
+$$
+ B^J_{ij}=
+       \begin{pmatrix}1&0\\0&c_{ij}\end{pmatrix}
+                       F_j(\tau_{ij})=B_{ij}.
+$$ {#eq:gg-intrinsic-literal-optical-matrices}
+
+Their inverses also coincide. With an arbitrary other density frame only the stated $C_\Omega$ comparison follows; literal equality is asserted in the preceding specified frame. For $\widehat g=\Omega^2g$,
+$\mathrm d\widehat u=\Omega^2\mathrm du$ and the half-density formula gives $\widehat y=\Omega y$. Its differentiated first jet is exactly the matrix $C_{\Omega,i}$ in §5.
+
+For a controlled analytic incidence family, three-jet interior Cauchy estimates and a common lower bound on the regular graph minor bound $\kappa$. The finite two-dimensional ODE and its inverse have common positive slice domains and bounds. This observation does not provide a new bound for an arbitrary unnormalized formal contact atlas. Section 6 supplies the required common witness for the specified stored representatives.
+
+<div id="sec:gg-optical-weighted-resolution"></div>
+
+### D.4. The weighted resolution and its intrinsic obstruction map
+
+Let $P_m=\mathcal P_m=\operatorname{Sym}^mV^*$, with both notations zero for negative degrees, and let
+$D=k^a\partial_a$ in the original flat model. The weight-$m$ Cauchy state has value degree $m$ and slope degree $m-1$. For $m\ge2$ its coefficient bundle is
+
+$$
+ 0\longrightarrow\mathcal S_m
+ \longrightarrow P_m\otimes\mathcal O_Q
+ \xrightarrow{D^2}P_{m-2}\otimes\mathcal L^2
+ \longrightarrow0 .
+$$ {#eq:gg-app-weighted-resolution}
+
+On a direction patch choose $\ell(k)=1$. For a degree-$(m-2)$ polynomial $q(x)$,
+
+$$
+ (\mathsf I_kq)(x)=
+       \int_0^{\ell(x)}(\ell(x)-t)
+                    q(x-\ell(x)k+tk)\,\mathrm dt
+$$ {#eq:gg-app-double-primitive}
+
+is homogeneous of degree $m$ and satisfies $D^2\mathsf I_kq=q$. Its kernel consists precisely of
+$a_m(b)+t\,b_{m-1}(b)$ with $x=b+tk$. Slice and generator changes are the flat intrinsic Cauchy transitions, proving the coefficient identification, including its different value/slope degrees.
+
+The kernel has rank $\dim P_m-\dim P_{m-2}=(m+1)^2$. The two right-hand bundles are sums of $\mathcal O_Q$ and $\mathcal O(2,2)$ and have zero higher cohomology. The long exact sequence gives
+
+$$
+ H^1(\mathcal S_m)=\mathcal Q_m,\qquad H^2(\mathcal S_m)=0,
+ \qquad
+ \mathcal Q_m=
+ \frac{P_{m-2}\otimes\operatorname{Sym}^2_0V^*}
+      {\operatorname{Hess}_0P_m}.
+$$ {#eq:gg-app-hessian-quotient}
+
+The null evaluation identifies $H^0(\mathcal L^2)$ with the trace-free symmetric quadratic forms. With $\delta u_{ij}=u_j-u_i$, a scalar lift $\delta u=r$ of an optical cocycle has agreeing $D^2u_i=A(k,k)$ and connecting class $[A]$. A different lift adds $\operatorname{Hess}_0f$; conversely the local double primitives of any $A(k,k)$ realize its class. Thus the two Čech constructions are inverse with the asserted sign.
+
+If $\partial^2f=\tau\eta$, symmetry of third derivatives forces $\mathrm d\tau=0$. Hence the global section kernels in weights $0,1,2$ are $\mathbb C,V^*,\mathbb Cq$, and vanish in weights at least three. Here $q=\eta(x,x)$. Consequently $\mathcal Q_2=0$; only for $m\ge3$ is its dimension
+$9\binom{m+1}{3}-\binom{m+3}{3}$.
+
+The intrinsic construction defines $o_m$ by varying the actual $\mathcal E_J$ transitions and the residue section. Its identification with the fixed symbol in §5 is
+
+$$
+ o_mJ[h]=[P(h)^\circ].
+$$ {#eq:gg-app-intrinsic-contact-derivative}
+
+To prove it, choose the derived scalar representative for comparison. Its highest ray residual on the lower density $1$ is $P(h)(k,k)$. The local solution is exactly
+$1-\mathsf I_k(P(h)(k,k))$ over the highest square-zero ideal. Its target-minus-source defect is the positive Čech difference of those double primitives, giving the displayed class. Changing a local section lift adds a coboundary. Changing a contact representative also gives a coboundary by naturality of $\mathcal E_J$. Thus $o_m$ is the actual derivative of the independently defined preservation problem; the Schouten identity verifies that derivative rather than defining it by an assigned curvature tensor.
+
+At a lower finite stage, first lift its selected Einstein scale. Every product of a highest coefficient with a positive parameter coefficient then vanishes, so the same flat symbol applies. All lower moving bases and endpoint variations are kept before taking this highest coefficient. The Bianchi identity and the spatially constant lower trace give
+$\mathrm d\,\operatorname{div}a_m=0$ for the extracted trial class.
+
+<div id="sec:gg-optical-correction-exactness"></div>
+
+### D.5. Exactness, correction and the numerical scalar
+
+The contact comparison and linear vacuum construction of Appendix C identify
+$\mathcal C_{m+1}$ with degree-$m$ trace-free metric polynomials modulo conformal Killing gradients, with both full curvature projections. We verify the remaining exact-symbol assertions here.
+
+The identity
+$\operatorname{div}\operatorname{Hess}_0f=\frac34\mathrm d\Delta f$
+makes $d_m[A]=\mathrm d\,\operatorname{div}A$ well defined. If
+$\mathrm d\,\operatorname{div}A=0$, choose homogeneous $j$ with
+$\operatorname{div}A=\frac34\mathrm dj$. For $m\ge3$ take
+
+$$
+ j=\frac4{3(m-2)}x^b\partial^aA_{ab};
+$$ {#eq:gg-app-compatible-trace}
+
+for $m=2$ choose $j=0$. Then
+$S=2A+\frac32j\eta$ has
+$\operatorname{div}S=\frac12\mathrm d\operatorname{tr}S$.
+The explicit conserved-source linear potential in Appendix C gives homogeneous $h$ with
+$\operatorname{Ric}_{\mathrm{lin}}h=S$. It has $P(h)^\circ=A$.
+This proves $\operatorname{im}o_m=\ker d_m$ for these actual symbols.
+
+If $[P(h)^\circ]=0$, choose $f$ with
+$P(h)^\circ=\operatorname{Hess}_0f$. Then
+$P(h)-\partial^2f=\tau\eta$, and Bianchi gives $\mathrm d\tau=0$.
+Homogeneity makes $\tau=0$ unless $m=2$, where replacing $f$ by
+$f+\frac12\tau q$ removes it. The metric polynomial $h+2f\eta$ is Ricci-flat and has the same conformal contact class. Its two complete vacuum records give exactly the image of $\iota$; the zero-record ambiguity is a symmetric gradient by Appendix C's two-Poincaré construction.
+
+For surjectivity of $d_m$, divergence from trace-free symmetric polynomial tensors onto polynomial one-forms is onto. In a complex orthogonal basis its Fischer adjoint is trace-free multiplication by $x$. If
+$\operatorname{sym}_0(x\otimes v)=0$, contraction once and twice gives
+
+$$
+ qv+\tfrac12(x\cdot v)x=0,\qquad
+ \tfrac32q(x\cdot v)=0.
+$$ {#eq:gg-app-divergence-adjoint-injectivity}
+
+The polynomial ring has no zero divisors, so $v=0$; finite-dimensional duality proves surjectivity. Exterior differentiation is onto closed polynomial two-forms by the Euler homotopy
+$\omega=\mathrm d(\iota_E\omega/(j+2))$ for coefficient degree $j$.
+This establishes the full exact sequence in §5.
+
+The fixed $L_m$ is therefore the inverse of the derivative of the intrinsic section obstruction on the zero-record complement. The correction
+$-L_ma_m+\iota Z_{m-2}$ cancels that actual obstruction and the entire record defect. Recompute the incidence, projective potential and optical matrices afterwards. For its exact residual solve $\delta u=r'$ and write
+$D^2u=A(k,k)$ with $A=\operatorname{Hess}_0f$. Then
+$u_i-f$ are local flat-ray solutions with the same difference. Their Cauchy states cancel the defect. For $m\ge3$ an explicit primitive is
+
+$$
+ j=\frac4{3(m-2)}x^b\partial^aA_{ab},\qquad
+ P'=A+\tfrac14j\eta,\qquad
+ f=\frac{x^ax^bP'_{ab}}{m(m-1)}.
+$$ {#eq:gg-app-exact-section-primitive}
+
+For $m=2$ take $\frac12A_{ab}x^ax^b$ and retain its free multiple of $q$; weights zero and one retain a constant and a linear function. These are exactly the six flat whole-neighborhood section freedoms. Central value and gradient remove five. With them fixed, adding $\gamma q$ changes the numerical scalar by $12\gamma$, since $\Delta q=8$ and the central prolongation is the one in §5. Thus
+$\gamma=(\lambda_{\mathrm{target}}-\lambda_{\mathrm{actual}})/12$ reaches the target with no division by $\Lambda$. The actual scalar comes from this same section's jet.
+
+The invariance of the highest full Weyl record under this final scale correction follows because its linear conformal variation is zero; all action on lower nonzero records is a product in $\mathfrak m_BJ$. This argument applies also to their differentiated slots.
+
+A closed change $v$ of contact trial changes
+$(a,Z)$ to $(a+ov,Z-\Pi v)$.
+The identities $Lo=1-\iota\Pi$ and $\Pi\iota=1$ make the selected correction change by $-v$. This proves the trial independence claimed in §5 as a correction of the intrinsic contact-plus-section problem.
+
+<div id="sec:gg-optical-normalized-comparisons"></div>
+
+### D.6. Normalized formal comparisons
+
+There is a direct Čech proof of uniqueness at the relevant highest degrees. For $n\ge3$,
+
+$$
+ H^0(Q,\mathcal F_n)=0.
+$$ {#eq:gg-app-no-high-contact-corners}
+
+A global element of the middle contact bundle is $k\cdot\xi(x)$, with $\xi$ homogeneous of degree $n$. Its null derivative vanishes exactly when
+
+$$
+ \partial_a\xi_b+\partial_b\xi_a=2\phi\eta_{ab},\qquad
+ \phi=\tfrac14\operatorname{div}\xi.
+$$ {#eq:gg-app-conformal-killing-equation}
+
+The finite-type calculation in §C.2, starting from ([-@eq:gg-contact-killing-finite-type]), gives $\partial^3\xi=0$. Hence a homogeneous solution of degree $n\ge3$ vanishes.
+
+Compare two corrected lifts with the same lower object, original record and numerical scalar, after fixing the same normal central gauge and actual spin lift. Translation, linear frame/dilation and quadratic special-conformal freedom have already been fixed. The remaining highest Hamiltonian corners have $n\ge3$. Their contact difference $v$ is closed, with $o[v]=0$ because both sections glue and $\Pi[v]=0$ because their full records agree. Exactness gives $[v]=0$, so $\delta b=v$; the preceding vanishing makes this highest corner unique. Transport the section by the natural optical comparison. The remaining difference lies in $H^0(\mathcal S_m)$ and vanishes by its kernel calculation and the same value, gradient and scalar normalizations.
+
+Induction gives compatible formal comparisons. The actual spin lift is fixed in this statement; the distinct retained central spin arrows are not collapsed by their identical tensor action. This formal proof neither proves convergence of arbitrary raw gauges nor replaces the literal normalized common-domain witness in §6.
+
+
+<div id="sec:gg-affine-compact-lifts"></div>
+
+### D.7. Canonical lifts of the compact skies
+
+The contact-quadric reconstruction and its deformation framework are classical [@LeBrun1983, III.2–III.3 and III.6]. We first prove the embedded deformation statement used for the compact family.
+
+
+<div id="lem:gg-compact-support-completeness"></div>
+
+**Lemma D.1.**
+
+Let $Q$ be a compact smooth complex submanifold of a separated finite-dimensional complex manifold $Y$. If $H^1(Q,N_{Q/Y})=0$, then its germ of embedded compact deformations is smooth of dimension $h^0(Q,N_{Q/Y})$, with tangent space $H^0(Q,N_{Q/Y})$. It has an actual universal proper smooth embedded family after restriction.
+
+*Proof.* Douady's theorem represents proper flat closed analytic subspaces of $S\times Y$ on finite-dimensional analytic bases, including nonreduced bases, by a locally finite-dimensional analytic space $H(Y)$. Its tangent at $[Q]$ is
+$\operatorname{Hom}_Y(\mathcal I_Q,\mathcal O_Q)=H^0(Q,N_{Q/Y})$
+[@Douady1966, §9.1, Remarks 2–3; §9.7, Theorem 1; §9.8, Theorem 2]. For finite-dimensional bases the anaplat condition in the construction is exactly coherence and ordinary base flatness [@Douady1966, §8.3, Proposition 1]. We apply this commutative-support theorem only to the fixed ordinary ambient $Y$. For a smooth embedded compact submanifold with $H^1(N)=0$, its unobstructed complete-family consequence is also the classical completeness theorem [@Kodaira1962]; the small-extension argument below gives the form needed here.
+
+We first prove the needed infinitesimal lifting directly. Let $A'\to A$ be a surjection of finite local Artin complex algebras with kernel $J$ and $\mathfrak m_{A'}J=0$. A proper flat embedded deformation $Q_A$ of $Q$ is locally a graph $z=f_i(q)$ in coordinates with $Q=\{z=0\}$. Indeed flatness makes reduction of its ideal exactly $\mathcal I_Q$: the Tor sequence injects that reduction into $\mathcal O_Y$. Lift the central normal coordinate generators, use Nakayama to generate the ideal, and solve the equations by finite nilpotent recursion with invertible normal Jacobian. This gives the graph and an $A$-flat quotient $A\otimes_\mathbb C\mathcal O_q$.
+
+Lift the finitely many coefficient functions of each $f_i$ linearly to $A'$. On an overlap let $T_{ij}$ be graph substitution and $n_{ij}$ the central normal-bundle transition. The failure
+$c_{ij}=f_i-T_{ij}(f_j)$ lies in $N_{Q/Y}\otimes J$ and satisfies
+
+$$
+ c_{ik}=c_{ij}+n_{ij}c_{jk}.
+$$ {#eq:gg-compact-support-small-extension}
+
+Terms involving positive base coefficients or graph derivatives times $J$ vanish since $\mathfrak m_{A'}J=0$. Hence the normal linearization and this cocycle equation are exact. Since $H^1(N_{Q/Y}\otimes J)=0$, after refinement write
+$c_{ij}=b_i-n_{ij}b_j$ and replace $f_i$ by $f_i-b_i$. The graphs now glue exactly; $J^2=0$ leaves no quadratic error. Their quotients are coherent and $A'$-flat. Their underlying support is the compact $Q$, so the resulting embedded deformation is proper. This gives every small-extension lift.
+
+Put $n=h^0(N_{Q/Y})$. A minimal analytic presentation of the represented germ has local ring
+$R=\mathbb C\{x_1,\ldots,x_n\}/I$, $I\subset\mathfrak m^2$; linear relations have been eliminated by the ordinary analytic inverse theorem. If $I\ne0$, choose a nonzero relation $f$ of least order $d\ge2$ among all relations. Since $I\subset\mathfrak m^d$, the map $R\to A=\mathbb C[x]/\mathfrak m^d$ exists. Representability and the graph lift just proved give a lift to
+$A'=\mathbb C[x]/\mathfrak m^{d+1}$.
+Its images of $x_i$ are $x_i+u_i$ with $u_i\in\mathfrak m^d/\mathfrak m^{d+1}$. But
+
+$$
+ f(x+u)\equiv f_d(x)\not=0
+                  \pmod{\mathfrak m^{d+1}},
+$$ {#eq:gg-compact-support-least-relation}
+
+because $2d-1\ge d+1$. This contradicts $f=0$ in $R$. Thus $I=0$ and the actual analytic germ is smooth.
+
+Finally restrict the universal proper flat family to this smooth germ. At each central point the same flat ideal reduction and Nakayama give normal generators; their central normal Jacobian is invertible. The holomorphic implicit theorem makes the family a smooth graph there. Let $V$ be a finite union of these good neighborhoods covering the central fiber. Properness makes the image of the closed complement of $V$ closed and disjoint from the central base point. Removing that image gives a base neighborhood on which the entire family is smooth. Universal embeddedness, properness and the tangent identification persist under this restriction. ∎
+
+
+
+The compact family in Definition 5.6 is derived from its Legendrian seed $Q$. Its contact normal sequence is
+
+$$
+ 0\longrightarrow T^*Q\otimes\mathcal L
+   \longrightarrow N_{Q/Z}\longrightarrow\mathcal L\longrightarrow0 .
+$$ {#eq:gg-contact-sky-normal}
+
+Here the left term is
+$\mathcal O(-1,1)\oplus\mathcal O(1,-1)$.
+Its $H^0,H^1$ vanish, while $H^0(\mathcal L)$ has dimension four and $H^1(\mathcal L)=0$.
+Thus $h^0(N)=4$, $H^1(N)=0$. Lemma D.1 gives the universal smooth complete four-dimensional embedded family. The quadric and polarization stay of type $(\mathbb P^1\times\mathbb P^1,\mathcal O(1,1))$. Indeed proper base change for $\mathcal L$ and $\mathcal L^2$ gives ranks four and nine. Their complete linear system remains an embedding near the compact central member: its derivative stays injective, distinct limiting points remain separated, and a common local immersion neighborhood excludes collisions of points with the same limit. The multiplication map from the symmetric square of the four sections onto the nine sections is surjective at the center and nearby. Its one-dimensional kernel gives a nondegenerate quadric equation. The embedded compact surface is that smooth quadric, proving the asserted polarized type.
+Every nearby compact member is Legendrian because
+$H^0(\Omega_Q^1\otimes\mathcal L)=0$.
+
+An infinitesimal Legendrian normal field is its contact scalar and its first derivative. Consequently the complete normal evaluation is the first-jet evaluation of $H^0(\mathcal O(1,1))$, which is onto at every point, as the local sections $1,\varrho,\zeta,\varrho\zeta$ show. The universal evaluation $q:F\to Z$ is therefore a submersion near the complete central sky, with one-dimensional kernel $\mathcal K=\mathcal O(-1,-1)$. Its projectivized contact-scalar evaluation identifies $F$ with the null-covector incidence of the conformal form read from these four sections. The pullback of the contact form is the tautological null-covector form; its characteristic line is precisely $\ker\mathrm dq$. This identifies the rays with the null geodesics of any representative, without an Einstein equation. We take short representatives with the buffered regularity used in §§4–5.
+
+The affine-torsor construction below is the metric-cohomology correspondence of [@LeBrun1983, Appendix, p.230]. It selects a metric in the reconstructed conformal class; the additional projective-extension condition is treated in §D.8.
+
+On any sky the affine torsor has translation $\mathcal O(-1,-1)$, whose $H^0,H^1,H^2$ all vanish. Its Čech cocycle has exactly one primitive. These unique sections vary holomorphically: the fixed two-circle splittings give bounded relative primitives, or proper base change gives
+$p_*q^*\mathcal L^{-1}=R^1p_*q^*\mathcal L^{-1}=0$.
+The zero kernel makes local primitives agree. Over a highest finite extension the same $H^1$ gives existence and $H^0$ uniqueness. We obtain the canonical $j_A:F\to A$.
+
+For a lifted sky,
+
+$$
+ 0\longrightarrow\mathcal O(-1,-1)
+ \longrightarrow N_{\widehat Q/A}
+ \longrightarrow N_{Q/Z}\longrightarrow0 .
+$$ {#eq:gg-lifted-sky-normal}
+
+The complete lifted family has the same four-dimensional tangent space, because projection is an isomorphism on $H^0$ and the middle $H^1$ vanishes. The finite inverse theorem identifies it with the same $M$. At a point of $Q$, the kernel of complete normal evaluation to $N_{Q/Z}$ is $\mathcal K$. Its lifted evaluation into the vertical line is exactly
+
+$$
+ \Theta=\mathrm d_qj_A:\mathcal K\longrightarrow q^*\mathcal L^{-1}.
+$$ {#eq:gg-affine-vertical-derivative}
+
+Thus $\Theta$ is a unit if and only if complete evaluation
+$T_xM\otimes\mathcal O_Q\to N_{\widehat Q/A}$ is an isomorphism, if and only if $N_{\widehat Q/A}=\mathcal O_Q^4$.
+Central triviality gives this on a common neighborhood by compactness.
+It also makes $j_A$ a local biholomorphism. Completeness alone does not do so: for the trivial torsor the unique lifts all lie in its zero section and $\Theta=0$.
+
+<div id="sec:gg-affine-projective-extension"></div>
+
+### D.8. The holomorphic extension condition
+
+Evaluation of ray solutions defines
+$\iota:F\to\mathbb P(\mathcal E_J^*)$. Locally its fiber coordinate is $w=y_2/y_1$ and
+$w'=W(y_1,y_2)/y_1^2$, a unit wherever $y_1\ne0$.
+It is a local biholomorphism over $Z$. Uniform short injectivity is explicit: normalized solutions with initial data $(1,0)$ and $(0,1)$ obey
+$\|y_1-1\|\le(K\ell^2/2)/(1-K\ell^2/2)\le1/19$
+when $K\ell^2\le1/10$. Hence $|w'-1|<1/2$ on that convex disc. Segment integration proves injectivity. The finite parent cover gives the short evaluation embedding used in Definition 5.6; no long-geodesic compactification is asserted.
+
+Let $\tau$ be the scalar coordinate of $j_A$ in an affine frame. Since affine changes along each ray have constant coefficients, the equality
+
+$$
+ \{\tau,u\}=2\kappa_u
+$$ {#eq:gg-affine-schwarzian}
+
+is frame independent. By the Schwarzian chain rule it is equivalent to $\{\tau,w\}=0$.
+For clarity its fractional-linear conclusion has a root-free proof. Put $v=\tau_w$, $h=v'/v$, $v_0=\tau_w(0)$ and $d_0=\tau_{ww}(0)/(2\tau_w(0))$. The zero Schwarzian equation is $h'=h^2/2$. Its unique local holomorphic solution with $h(0)=2d_0$ is $h=2d_0/(1-d_0w)$. Then $v=v_0/(1-d_0w)^2$, and integration with the value $\tau(0)$ gives
+
+$$
+ \tau(w)=\tau(0)+\frac{v_0w}{1-d_0w},\qquad
+ \begin{pmatrix}
+ v_0-\tau(0)d_0&\tau(0)\\-d_0&1
+ \end{pmatrix}
+ \quad\text{has determinant }v_0 .
+$$ {#eq:gg-affine-projective-jet-formula}
+
+This single formula also works when $d_0$ is zero or nilpotent. The ODE uniqueness is coefficientwise over a finite parameter algebra. The formula uses only the unit $v_0$, has holomorphic base-dependent coefficients, and defines a projective isomorphism of the full fiber. Its inverse is $w=(\tau-\tau(0))/(v_0+d_0(\tau-\tau(0)))$, with unit denominator at the slice. On overlapping base charts the projective maps agree on the open physical ray and therefore everywhere. They glue to the unique $\overline J$. Conversely a fiberwise projective extension has zero Schwarzian in $w$ and proves the displayed condition. Nonzero derivative on a short open set alone would not imply degree one; the isomorphism requirement in the definition is essential.
+
+By §D.1, $\Theta^{-1}$ is a section of
+$\mathcal K\otimes q^*\mathcal L=p^*\mathcal B$.
+Its coefficients are constant on compact connected skies and descend to a unit $b$ on $M$. Take the unique root $\sigma$ with
+$\beta(\sigma^2)=b$ and its specified compatible central value.
+In a ray frame its coefficient is $(\partial_u\tau)^{-1/2}$.
+Direct differentiation gives
+$\sigma_u''/\sigma_u=-\{\tau,u\}/2$, so the extension is exactly
+$P_J\sigma=0$. Its Cauchy values define the actual whole section $s$ of $\mathcal E_J$. Proposition 5.4 now gives the Einstein scale and the same numerical invariant. No metric was supplied to define the extension.
+
+Conversely let $s$ be a whole section with unit evaluated density. Define
+
+$$
+ A_s=\{\lambda\in\mathcal E_J^*:\lambda(s)=1\},\qquad
+ j_s(f)=\epsilon_f/\sigma(p(f)),\qquad
+ \alpha_\nu(v)=\nu(s\wedge v),\quad \nu\in\mathcal L^{-1}.
+$$ {#eq:gg-affine-from-section}
+
+The last formula fixes the translation identification
+$\operatorname{Ann}(s)=\mathcal L^{-1}$ by the Wronskian.
+With $W(s,t)=l$, its coordinate is $\tau=t/\sigma$ and
+$\partial_u\tau=\sigma_u^{-2}$. Thus its lifted normal bundle is trivial, and its completion is the same $\mathbb P(\mathcal E_J^*)$ with infinity $\lambda(s)=0$.
+
+For the inverse comparison, choose any transverse slice. Send its value $j_A$ to $\epsilon/\sigma$ with identity translation map under the specified $\mathcal L^{-1}$ identifications. The two maps have the same derivative $\Theta$ along a ray and agree on the slice, hence agree on each connected short fiber. The comparison is slice independent and glues exactly. Unique compact lifts, the compatible marked root and unique projective extension make these comparisons natural on the full admitted domains. The actual spin lifts remain separate arrow data.
+
+<div id="sec:gg-actual-affine-cocycles"></div>
+
+### D.9. Actual affine transitions and their obstruction
+
+For the local section states let
+
+$$
+ G_i=
+ \begin{pmatrix}\sigma_i&0\\\dot\sigma_i&\sigma_i^{-1}\end{pmatrix},
+ \qquad
+ T_{ij}=(G_i\circ\Phi_{ij})^{-1}B_{ij}G_j .
+$$ {#eq:gg-affine-adapted-cauchy}
+
+The first column is the selected solution; the second is the companion with Wronskian $l_i$. Its section equation and $\det B_{ij}=c_{ij}$ give
+
+$$
+ T_{ij}=\begin{pmatrix}1&b_{ij}\\0&c_{ij}\end{pmatrix},
+ \qquad a_{ij}=-b_{ij}/c_{ij}.
+$$ {#eq:gg-affine-translation-from-source}
+
+Indeed the transported companion is
+$t_j=b_{ij}s_i+c_{ij}t_i$, so $\tau_j=b_{ij}+c_{ij}\tau_i$.
+The exact matrix product has
+$b_{ik}=b_{jk}+(b_{ij}\circ\Phi_{jk})c_{jk}$ and therefore
+
+$$
+ a_{ik}=a_{ij}\circ\Phi_{jk}
+                  +(c_{ij}^{-1}\circ\Phi_{jk})a_{jk}.
+$$ {#eq:gg-affine-translation-cocycle}
+
+The inverse contact unit is $c^{-1}\circ\Phi^{-1}$ and the inverse translation is $-(ca)\circ\Phi^{-1}$. Conversely these affine maps recover $T$, then the same $B$ by the same $G$, including inverses and all moving arguments.
+
+The specified calibration is stronger than an infinity line. For a general $T$ of determinant $c$ the projective coordinate law is
+$\tau_i=(T_{11}\tau_j-T_{12})/(T_{22}-T_{21}\tau_j)$.
+Infinity preservation gives $T_{21}=0$, but its affine slope is $T_{11}^2/c$.
+The calibrated slope $c^{-1}$ forces $T_{11}^2=1$, and the fixed branch forces $T_{11}=1$; over finite algebras $T_{11}+1$ is a unit. This preserves the section.
+
+For a trial highest target-minus-source defect $r_{ij}$ the same matrices give
+
+$$
+ (G_i\circ\Phi_{ij})^{-1}r_{ij}=e_1-T_{ij}e_1 .
+$$ {#eq:gg-affine-obstruction-cochain}
+
+Its entries are exactly $1-T_{11}$ and $-T_{21}$.
+Consequently the connecting class and symbol of §D.4 are the obstruction and derivative of this calibrated affine reduction itself. The correction of Theorem 5.5, followed by fresh incidence, fresh $B$ and the exact scalar correction, makes this cochain zero. There is no independent affine correction or additional free translation.
+
+Finally let $|\sigma_i|\ge u_0$, $|\sigma_i|\le M_0$,
+$|\dot\sigma_i|\le M_1$ on retained parents, and put
+$H=C(M_0+M_1+u_0^{-1})$ in a fixed submultiplicative matrix norm.
+Then
+$\|G_i^{\pm1}\|\le H$,
+$\|T_{ij}^{\pm1}\|\le H^2\|B_{ij}^{\pm1}\|$ and
+$|a_{ij}|\le\|c_{ij}^{-1}\|H^2\|B_{ij}\|$.
+Nested source and target fiber discs supply the actual inverse domains.
+The jet formula in §D.8 requires a common lower bound on $v_0$ and common parent jet bounds for uniform independent-family estimates; pointwise invertibility is insufficient. The generated families obtain these margins from §6. All these finite formulas commute with truncation, root restriction on the marked branch, and Lorentz conjugation. They divide by neither a Weyl invariant nor $\Lambda$.
+
+<div id="app:gg-curved-penrose"></div>
+
+## Appendix E. A fixed representative inverse for the curved Penrose transform
+
+Let $g_+$ be a selected analytic Einstein background with vanishing negative Weyl spinor. Write
+$p_+:F_+=\mathbb P(S')\to M$ and $q_+:F_+\to Z_+$ for its complete-line correspondence. The $q_+$-fibers are the short integral surfaces of
+$\pi^{A'}\nabla_{AA'}$. The degree-one line is the same calibrated $L$ as in §7. All frames below are induced by this selected physical scale and the original spin mark.
+
+Denote the curved negative contour by $P_Z$. In these frames its components are the fiber residues of
+$\pi_{A'}\pi_{B'}\pi_{C'}\pi_{D'}q_+^*b$.
+The relative flat line connection defines a complex
+$\mathcal R^j=q_+^*L^{-6}\otimes\Omega^j_{F_+/Z_+}$.
+On a complete $p_+$-fiber its three terms have types
+$\mathcal O(-6)$, $S^*\otimes\mathcal O(-5)$ and
+$\mathcal O(-4)$. Its degree-one fiber-cohomology equation is precisely
+$\nabla^{AA'}\psi_{A'B'C'D'}=0$. This follows by applying the relative derivative $\pi^{A'}\nabla_{AA'}$ to the contour and contracting the alternating primed indices; equivalently the four surviving $\mathcal O(-5)$ Laurent terms in each unprimed component are that divergence.
+
+<div id="thm:gg-fixed-curved-penrose-inverse"></div>
+
+**Theorem E.1.**
+
+On the germ of the whole marked line there is a fixed linear representative map $K_Z$ from analytic negative massless fields to actual ordinary $L^{-6}$ cocycles, with
+
+$$
+ P_ZK_Z\psi=\psi,\qquad
+ K_ZP_Zb-b=\delta v
+$$ {#eq:gg-curved-penrose-actual-inverses}
+
+on common smaller representatives. The second equality has an actual bounded holomorphic ordinary zero-cochain $v$. For conditioned bounded background families and their retained parent charts,
+
+$$
+ \|K_Z\psi\|\le C(\|\psi\|+\|\nabla\psi\|).
+$$ {#eq:gg-curved-penrose-representative-bound}
+
+A single choice of spatial and angular domains works at all jet orders. The map preserves spatial/line-normal ideal filtrations, holomorphic parameters and finite Taylor reductions. No inverse power of the cosmological constant is used.
+
+*Proof.* We construct the domains and the operator together. Supplied ordinary cocycles are first restricted to common parent charts containing all complete lines over a sufficiently small source ball. The choices below are made inside those parents. Uniform assertions require the stated background, inverse-frame and parent margins; they do not concern arbitrary unbounded coordinate changes.
+
+<div id="sec:gg-penrose-complete-fiber-splitting"></div>
+
+### E.1. Complete fiber splitting
+
+Choose geodesic normal coordinates $x=(u^A,v^A)$ and radial spin frames. The coframe is the identity and the connection is zero at the mark. On a common source ball $B_R$ take complete fiber charts
+$|\zeta|<4$, $|\xi|<4$, $\xi=\zeta^{-1}$, with the original lower spinor $\pi=(1,\zeta)$ in the north frame. With $u^A=x^{A0'}$ and $v^A=x^{A1'}$, the flat relative fields are $\pi^{A'}\partial_{AA'}=-\zeta\partial_{u^A}+\partial_{v^A}$. Their $dv$-normalized graphs are exactly the north graphs in [@eq:gg-penrose-flat-leaf-graphs]. In the south lift $\pi=(\xi,1)$, multiplication by $-1$ gives the $du$-normalized fields $\partial_{u^A}-\xi\partial_{v^A}$ and the displayed south graphs. Thus the leaf formula and the contour differential use the same index convention [@eq:gg-spin-index-convention].
+A massless field has the fiber representative
+
+$$
+ h(x,\zeta)=\sum_{j=0}^4\psi_j(x)\zeta^{-j-1}.
+$$ {#eq:gg-penrose-five-term-lift}
+
+The components are tensor components, not coefficients of a binomially expanded spin polynomial. The relative derivative $d_\alpha h$ has zero fiber class by the massless equation. Split it with the fixed Laurent circles $|\zeta|=7/2$ and $|\zeta|=2/7$, using the ordinary north/south tail allocation, to obtain a zero-cochain $k$ in $\mathcal R^1$ satisfying
+$\delta k=d_\alpha h$.
+The output angular radii can be taken to be three. A spatial Cauchy restriction pays the one derivative, giving
+$\|k\|\le C(\|\psi\|+\|\nabla\psi\|)$.
+
+Now $\delta(d_\alpha k)=d_\alpha^2h=0$. On every complete $p_+$-fiber, $d_\alpha k$ is therefore a global section of $\mathcal O(-4)$ and is zero. This proves
+
+$$
+ \delta k=d_\alpha h,\qquad d_\alpha k=0 .
+$$ {#eq:gg-penrose-complete-fiber-identities}
+
+The vanishing is applied before any leaf refinement. It would not follow from negative-degree cohomology on a disconnected or incomplete part of a fiber.
+
+<div id="sec:gg-penrose-whole-leaf-domains"></div>
+
+### E.2. Whole short fibers and quotient overlaps
+
+In the north chart use the transversal $v=0$ and leaf coordinate $\lambda=v$. Normalize the two alpha fields by the inverse of their $dv$ matrix. It has its fixed unit value at the marked model. The normalized fields $E_A$ satisfy
+$dv^B(E_A)=\delta_A^B$.
+Their bracket is in the alpha distribution and has zero $dv$ projection, so $[E_0,E_1]=0$.
+Their initialized holomorphic flows give coordinates
+$(\lambda;w,\zeta_0)$, where $(w,\zeta_0)$ is the actual hit on the transversal. In the south chart use $u=0$, $\lambda=u$, with the analogous normalization. At the flat model the spacetime graphs are
+
+$$
+ X_N(\lambda;w,\zeta_0)=(w-\zeta_0\lambda,\lambda),\qquad
+ X_S(\lambda;w,\xi_0)=(\lambda,w-\xi_0\lambda).
+$$ {#eq:gg-penrose-flat-leaf-graphs}
+
+The actual graphs have the same free coordinate block. Finite ODE and implicit-inverse estimates give common bounds on their first and second leaf derivatives. Fix these bounds on larger parents before choosing smaller radii.
+
+Here are the domain choices and the whole-fiber verification. Fix a positive angular-footprint separation $\eta$ between the closed quotient direction-two patch and the complement of the corresponding direction-three $p_+$ patch on the compact central line. First choose $r\ll R$ so the flow parents stay in the source, the connection and inverse-frame margins hold, and
+$C_0C_1r<1/2$, $C_qr<\eta/4$, $C_\pi r^2<1/10$.
+Next choose $\delta\ll r$, with $C_\perp\delta<\eta/4$.
+The quotient patches $V_i$ have normal radius $\delta$ and direction radius two. Their fixed local sections
+$s_i(z)=X_i(0;z)$ lie in $B_{r/10}$.
+The leaf graphs extend to $|\lambda|<2r$ with a direction buffer up to three, and remain in the original spatial/angular source.
+
+For the auxiliary Hermitian coordinate norm, the free block gives
+$|D_\lambda X_i a|\ge|a|$. On the whole convex parent
+$|\lambda|<2r$, $|w|<\delta$, the chosen bounds give
+$|X_i|\le C_0r$ and $|D_\lambda^2X_i|\le C_1$. Thus
+
+$$
+ \frac12\,\operatorname{Hess}_{\mathbb R}|X_i|^2(a,a)
+ =|D_\lambda X_i a|^2+
+       \operatorname{Re}\langle X_i,D_\lambda^2X_i[a,a]\rangle
+ \ge(1-C_0C_1r)|a|^2\ge\frac12|a|^2 .
+$$ {#eq:gg-penrose-whole-parent-convexity}
+
+The sublevel $|X_i|<r$ is convex, connected and contains $\lambda=0$.
+It lies in $|\lambda|<r$ because $\lambda$ is an actual coordinate block. It cannot meet the parent leaf-chart boundary.
+
+This graph is the whole small-ball fiber, not merely one component. On the complete central line, $q_+(0,\pi)$ is its fixed line identification. Uniform finite flow bounds give
+$|q_+(x,\pi)-q_+(0,\pi)|\le C_q|x|$ in the finite auxiliary charts.
+The angular separation and the chosen $\delta,r$ therefore imply
+
+$$
+ q_+^{-1}(V_i)\cap p_+^{-1}B_r
+ \subset\{\text{the corresponding }p_+\text{ angle has modulus }<3\}.
+$$ {#eq:gg-penrose-angular-containment}
+
+Every point of this preimage can be transported to the chosen transversal. The connection is $O(|x|)$ in the radial frame, so a path of length $O(r)$ changes its bounded spin ratio by $O(r^2)$ and stays inside the angular parent. Its hit has the same quotient image $z$. The quotient restricted to that transversal has a common unit Jacobian and an injective neighborhood, so the hit is uniquely $s_i(z)$. Flow uniqueness identifies the point with $X_i(\lambda;z)$ for its actual free block. The displayed convex sublevel therefore describes the full fiber.
+
+Put $\Omega_i=q_+^{-1}(V_i)\cap p_+^{-1}B_r$.
+For $z\in V_N\cap V_S$, both local sections lie in $B_{r/10}$ and in the same full fiber, which the containment argument puts in both middle angular charts. Hence
+
+$$
+ q_+(\Omega_N\cap\Omega_S)=V_N\cap V_S .
+$$ {#eq:gg-penrose-actual-overlap-surjectivity}
+
+The fibers there are connected and are the same whole short fibers in both descriptions. The quotient transition is the transverse hit map, with its line factor. No global section of $q_+$ is chosen.
+
+Finally choose the output ball $B_\varepsilon$ only after $\delta$, with
+$\varepsilon\ll\delta\ll r\ll R$.
+Every complete projective fiber has $|\zeta|\le1$ or $|\xi|\le1$.
+Its corresponding hit has normal displacement at most
+$C_{\mathrm{cov}}\varepsilon<\delta/10$ and angular drift $O(\varepsilon^2)$.
+The complete final $p_+$ cover of radii $5/4$ thus lands inside quotient directions $3/2$, with a buffer to two. All complete output fibers are retained. The patches $V_i$ are coordinate products of a normal ball and a direction disc, so ordinary two-chart cocycles modulo actual coboundaries compute the required line-bundle $H^1$ there.
+
+<div id="sec:gg-penrose-typed-primitive"></div>
+
+### E.3. The line-valued primitive and descent
+
+In the following, the superscript $p$ on $u_i^p$ and $k_i^p$ denotes components in the original $p_+$ line frame. On $\Omega_i$ let $t_i(\lambda,z)$ be the change from that frame to its parallel frame along the alpha leaf, initialized by $t_i(0,z)=1$. Solve its radial linear ODE. Flatness of the relative line connection and $[E_0,E_1]=0$ make this frame parallel in both leaf directions. The same finite ODE bounds control $t_i$ and its inverse on the parents.
+
+In the original frame define
+
+$$
+ u_i^p(\lambda,z)=t_i(\lambda,z)
+ \int_0^1t_i(a\lambda,z)^{-1}
+          \lambda^A k_i^p(E_A)(a\lambda,z)\,\mathrm da .
+$$ {#eq:gg-penrose-typed-line-primitive}
+
+The integrand contracts the relative one-form with the coordinate-normalized vector fields $E_A$. It is not an unconverted spin-frame component. The path stays in the convex whole fiber. In the parallel frame, $d_\alpha k_i=0$ is the ordinary closed-one-form identity, so the radial homotopy gives $d_\alpha u_i=k_i$, with zero value at the chosen transversal.
+The bound is $\|u_i\|\le Cr\|k_i\|$.
+
+The overlap section $h^{\mathrm{bas}}=h-\delta u$ is now horizontal:
+$d_\alpha h^{\mathrm{bas}}=0$.
+The actual overlap surjectivity and connected fibers proved above make it descend uniquely to an ordinary cocycle on $V_N\cap V_S$. Its quotient line frames are the frames induced at the two actual local sections; their transition is computed by these same parallel factors and the original $p_+$ transition. Evaluation on either section proves holomorphy and the stated bound. Define that actual representative to be $K_Z\psi$.
+On each complete final $p_+$-fiber it differs from $h$ by an actual coboundary, proving $P_ZK_Z\psi=\psi$.
+
+<div id="sec:gg-penrose-actual-coboundary"></div>
+
+### E.4. The inverse on arbitrary ordinary classes
+
+Suppose an analytic ordinary cocycle $b$ has zero contour field.
+Pull it back on a smaller complete $p_+$ cover of radii $3/2$, inside the quotient direction-two parents. Its zero fiber class has a unique splitting
+$q_+^*b=\delta v$ in $\mathcal R^0$, since $H^0(\mathcal O(-6))=0$.
+Use fixed circles $7/5$ and $5/7$ to obtain bounded $v_i$ on the complete radius-$5/4$ cover.
+
+Horizontality of $q_+^*b$ makes $d_\alpha v$ glue on every complete fiber. Its type is $S^*\otimes\mathcal O(-5)$, with no global sections, so $d_\alpha v=0$ there.
+Restrict to quotient directions $11/10$ and a normal radius sufficiently small relative to the available moduli ball. The same angular separation, transversal-hit and whole-fiber argument places the full preimage inside the $5/4$ $p_+$ patch and makes $v_i$ descend to bounded ordinary zero-cochains.
+Their coboundary is $b$. Apply this result to
+$K_ZP_Zb-b$, whose contour is zero by the first inverse, to obtain the second equality in Theorem E.1. There are only finitely many fixed restrictions; none is indexed by a Taylor order.
+
+<div id="sec:gg-penrose-filtration-and-families"></div>
+
+### E.5. Filtration and analytic families
+
+In each leaf chart the spatial ideal of $p_+^{-1}(o)$ is
+$\mathfrak m=(\lambda,w)$, and $q_+^*\mathcal I_\ell=(w)$.
+The transversals meet the central line at $\lambda=w=0$.
+Fixed complete-fiber Laurent projections and analytic unit frames preserve spatial order. For $n\ge1$,
+$d_\alpha(\mathfrak m^n)\subset\mathfrak m^{n-1}\mathcal R^1$.
+The primitive in §E.3 takes
+$\mathfrak m^n\mathcal R^1$ to $\mathfrak m^{n+1}$:
+its path preserves total order and its prefactor $\lambda$ adds one.
+Consequently $h\mapsto h-\delta u$ preserves spatial order.
+For a horizontal output, its order is exactly line-normal order, by evaluation at $\lambda=0$.
+Thus its line-normal degree $n$ uses only finitely many field and background jets, with no field Taylor order above $n$.
+
+All choices are fixed: parent covers, normalized commuting fields, transversals, radial initial values, line frames, Laurent circles and tail allocations. The auxiliary Hermitian inequalities only prove that their paths and domains are valid. They introduce no conjugation of holomorphic parameters into the operator.
+Finite ODE and implicit inverses, contours and radial integrals therefore depend holomorphically on the background and field parameters. Uniform parent bounds give a single set of output domains.
+
+For a finite coefficient algebra use the coefficients of these same holomorphic formulas, with the same unit residues and initialized ODEs. Uniqueness gives compatibility with an analytic family's Taylor reduction. This does not postulate an analytic extension of arbitrary finite algebra data or a norm uniform in the algebra's dimension. Parameter derivatives of a supplied analytic family are taken before Taylor reduction. These facts prove all remaining assertions of Theorem E.1. ∎
+
+<div id="sec:gg-initial-alpha-quotient"></div>
+
+### E.6. Constructing the initial separated quotient
+
+The use of $q_+$ in §§E.1–E.5 is legitimate for an independently supplied ordinary background. For a source-generated pure chiral metric, its initial quotient must first be constructed from the distribution itself. We give that step separately.
+
+<div id="lem:gg-initial-alpha-quotient"></div>
+
+**Lemma E.2.**
+
+Let an analytic metric germ have an integrable projective alpha distribution, with the standard marked tangent spin plane at the central fiber. On sufficiently small common representatives it has a Hausdorff three-dimensional short-leaf quotient along the whole embedded central $\mathbb P^1$. It contains all complete fibers over a smaller source ball. Its charts and transitions are actual initialized finite flows and hit maps, uniformly in conditioned bounded metric families. This assertion does not assume an already existing quotient map.
+
+*Proof.* Take finitely many projective-spin cores covering the compact central fiber, with successively larger angular buffers. In a geodesic-normal spin frame the connection is $O(|x|)$. The alpha distribution has its fixed injective spacetime projection. On each angular parent choose two free spacetime coordinates $y$; their minor is the model unit and remains invertible after shrinking. Normalize the fields to
+
+$$
+ E_A=\partial_{y^A}
+        +V_A^\mu(y,t)\partial_{t^\mu},\qquad [E_0,E_1]=0,
+$$ {#eq:gg-initial-quotient-commuting-fields}
+
+where $t$ consists of the remaining two spacetime coordinates and the spin direction. The bracket vanishes because involutivity puts it in the distribution and its free-coordinate projection is zero.
+
+The initialized flows give actual graph coordinates $X(y;t_0)$ and their inverse hit on $y=0$. First fix all derivative bounds on larger spatial and angular parents. Then choose $r$ small. Any point with $|x|<r$ and direction in a core hits $y=0$ in a still larger spatial parent with normal transverse value at most $C_wr$. This follows by reverse finite flows of free-coordinate length at most $Cr$. For these hits the graphs extend throughout the convex parent $|y|<2r$, have $|X|\le C_0r$, and satisfy
+$|D_yX a|\ge|a|$, $|D_y^2X|\le C_1$.
+Here the free coordinate is a block of $X$. Taking $C_0C_1r<1/2$ gives the strict convexity estimate ([-@eq:gg-penrose-whole-parent-convexity]). Hence a graph's intersection with $|X|<r$ is convex and connected. Its free coordinates lie in $|y|<r$, away from the parent boundary.
+
+The spin component of $E_A$ is $O(r)$ on these spatial parents. Over any one retained graph its direction moves by at most $C_\pi r^2$, by the initialized path of length $O(r)$. Choose $r$ so this is smaller than every angular buffer. A connected leaf inside the working domain
+$U=p_+^{-1}B_r$ cannot escape the graph of its first core while remaining in $U$. Along that graph its free coordinates stay within $|y|<r$, its transverse hit is constant, and its spin direction stays inside the larger angular parent. Unique continuation of the same commuting flows then keeps any path in the leaf on this graph. This does not estimate the length of an arbitrary winding path: it uses one graph already defined on the whole convex free-coordinate parent. Conversely any two graph points in $B_r$ are joined by its convex free-coordinate segment. Thus the connected leaf in $U$ is exactly that whole graph sublevel.
+
+Define $R$ to mean membership in the same such connected leaf in $U$.
+It is closed in $U\times U$. Indeed for a convergent sequence of related pairs, select a subsequence with the first directions in one fixed core. The whole related leaves stay in its larger parent by the preceding no-exit argument. Their two transverse hits are equal. The buffered hit maps extend at both limiting points, so their hits remain equal. The whole graph sublevel is connected, and the limiting pair is again related.
+
+The quotient projection is open: the saturation of an open set is a union of its images under the local holomorphic leaf flows and is open. For an unrelated pair, closedness of $R$ supplies a product neighborhood disjoint from $R$; its two open quotient images are disjoint. The quotient is therefore Hausdorff.
+
+To exhibit its complex charts near the central line, choose a smaller normal transverse radius $\delta\ll r$ and buffered angular slices. Their zero sections lie in $B_{r/10}$. Every corresponding graph sublevel is nonempty and connected and remains in its parent, so the transverse hit gives a bijective local quotient chart. Its projection is a holomorphic submersion and is open. Overlapping quotient charts are related by the actual finite hit on the other transversal. Three routes hit the same point on the same connected short leaf, proving exact transition and inverse laws with moving arguments. No prior quotient or its angular coordinates were used.
+
+The central projective fiber is transverse to the alpha distribution. Two different points of that fiber cannot be related: in a parent graph both have free spacetime coordinate zero, whose hit is unique. The compact fiber is consequently an embedded $\mathbb P^1$ in this separated threefold. Finally choose $\varepsilon\ll\delta$. The finite inverse-hit bound puts every point of every complete $p_+$-fiber over $B_\varepsilon$ inside these transverse chart images, using the finite core cover of the projective line. Thus the initial quotient contains the complete incidence needed in the preceding sections.
+
+All constants came from bounded finite flows, unit free minors and fixed angular margins. They can be chosen on the retained parameter parents and do not involve an inverse scalar curvature. This proves the uniform and holomorphic family assertions. ∎
+
+<div id="app:gg-source-operators"></div>
+
+## Appendix F. Source operators and their first negative-order units
+
+<div id="sec:gg-op-local-model"></div>
+
+### F.1. The fixed local operator model
+
+Let $\mathcal E=\mathcal E_{T_0}^{1/2}$ be the analytic microdifferential algebra on the retained open part of $\mathbb P(T^*T_0)$, acting on half-densities of the original threefold. Its order filtration has $\operatorname{gr}_m\mathcal E=\mathcal L^m$. In local coordinates $y=(w^0,w^1,\zeta)$ and momenta $p$, its product and principal commutator are
+
+$$
+ P\circ Q=\sum_\alpha\frac1{\alpha!}
+                  (\partial_p^\alpha P)(\partial_y^\alpha Q),
+ \qquad
+ \sigma_{m+n-1}[P,Q]
+       =\{\sigma_mP,\sigma_nQ\}_{\mathrm{can}} .
+$$ {#eq:gg-op-symbol-product}
+
+The product formula is for the total symbol $\sigma_{\mathrm{tot}}(P)=\sum_{r\ge0}P_{m-r}$ of an order-$m$ operator. On every strict conic compact its homogeneous terms satisfy $\|P_{m-r}\|\le MA^rr!$ for suitable $M,A>0$. These are the analytic, rather than unrestricted formal, microdifferential operators. The complex-linear formal adjoint reverses products and satisfies $\sigma_m(P^*)=(-1)^m\sigma_m(P)$. It is distinct from Lorentz conjugation. These are the local models of [@Kashiwara1996, Lemma 1 and Theorem 2; @Polesello2005, §1].
+
+This model uses the projective reduction of the original twistor Heisenberg operators. Set $r=\pi_{0'}$, $y=(Z_i/r)_{i=1}^3$ and $\Upsilon=r\partial_r$ in homogeneous coordinates. The operators $y^i$ and $r\partial_{Z_i}=\partial_{y^i}$ commute with $\Upsilon$ and obey $[\partial_{y^i},y^j]=\delta_i^j$. Euler reduction at $\Upsilon=\nu$ gives the local twisted differential operators on $\mathcal O(\nu)$. Since $K_{T_0}=\mathcal O(-4)$, the half-density choice is $\nu=-2$. Microlocalization gives $\mathcal E$. This fixed Euler sector does not retain every generator of the unreduced four-variable algebra.
+
+For $\alpha=\mathrm dw^0+\varrho\,\mathrm dw^1+s\,\mathrm d\zeta$, write $(p_0,p_1,p_2)=t(1,\varrho,s)$. A contact Hamiltonian $h$ becomes the degree-one symbol $H=th$. Choose the local normal symbol lift $Q_0(H)$ with only the term $H$ and put $B(H)=(Q_0(H)-Q_0(H)^*)/2$. Then $B(H)^*=-B(H)$ and $\sigma_1 B(H)=H$. Its negative total-symbol terms satisfy the required analytic bounds: in
+
+$$
+ \sigma_{\mathrm{tot}}(Q_0(H)^*)
+   =\sum_\alpha\frac1{\alpha!}
+       \partial_p^\alpha\partial_y^\alpha[H(y,-p)],
+$$ {#eq:gg-op-adjoint-bound}
+
+the derivatives act on the displayed composite function. On fixed strict coordinate and conic parents, the term of degree $1-k$ is bounded by $M C^k k!$. Indeed two Cauchy derivative estimates give $(\alpha!)^2$, division by $\alpha!$ leaves one factorial, and the number of multiindices of length $k$ is polynomial in $k$. The constants are uniform for bounded holomorphic families of $H$. This estimates an individual skew lift, not an integrated operator flow.
+
+Both original source operations have such lifts in the same model. The positive one is the divergence-free half-density operator
+$F_{w^1}\partial_{w^0}-F_{w^0}\partial_{w^1}$, with symbol $p_0F_{w^1}-p_1F_{w^0}$. For the negative source, set $K=w^0p_0+w^1p_1+\zeta p_2$. With $U^-_{r;a,j}$ as in Theorem 3.1, a direct formula is
+
+$$
+ \begin{aligned}
+ H_-={}&\sum_{r\ge0}\sum_{a=0}^r\sum_{j=0}^{r+4}
+ \frac{(-1)^rU^-_{r;a,j}}
+ {(r+4-j)!\,j!\,p_0^{r+1-a}p_1^{a+1}}\\
+ &\quad{}\times
+ \left[-j(-K)^{r+4-j}p_2^{j-1}
+       +\zeta(r+4-j)(-K)^{r+3-j}p_2^j\right].
+ \end{aligned}
+$$ {#eq:gg-op-general-negative}
+
+A summand with zero prefactor is omitted before evaluating its power. Differentiate the two monomials of the derived dual class before making the incidence substitution
+$\eta^0=-K/p_0$, $\eta^1=p_2/p_0$, $\varrho=p_1/p_0$, and multiply by $t=p_0$; this gives the displayed formula. Every summand has degree one. Its analytic sum is the already convergent Hamiltonian symbol of §5 on the same smaller sectors. Quantize that analytic symbol as one order-one operator; no convergence of an increasing-order sum of operator representatives is needed.
+
+For example, $F_{-6}=24/\zeta$ gives
+
+$$
+ H_-=-4\zeta K^3/(p_0p_1),\qquad
+ Q_-=-4\zeta
+ (w^0\partial_{w^0}+w^1\partial_{w^1}
+                         +\zeta\partial_\zeta)^3
+ \partial_{w^0}^{-1}\partial_{w^1}^{-1}.
+$$ {#eq:gg-op-negative-example}
+
+The inverse derivatives exist microlocally on $p_0p_1\ne0$. The skew part of $Q_-$ has the displayed symbol. Thus Proposition 9.5's nonprojectible field is represented by an operator in the original twistor coordinates, although it is not a finite differential operator or an ordinary point transformation. For any two source symbols,
+$\sigma_1[B(h),B(k)]=t\{h,k\}$. This includes their mixed operation; lower-order quantum terms remain.
+
+<div id="sec:gg-op-finite-descent"></div>
+
+### F.2. Coherent finite amplitude overlaps
+
+<div id="thm:gg-op-finite-descent"></div>
+
+**Theorem F.1.**
+
+At every amplitude order $N$, the corrected contact overlaps admit filtered, adjoint-preserving operator comparisons with their actual classical symbols and coherent normalized inner triple comparisons. These constructions commute with amplitude truncation.
+
+*Proof.* Work over $A_N=\mathbb C[\varepsilon]/(\varepsilon^{N+1})$. Let $\varphi^0_{ij}$ be the exact reference half-density substitutions. In one orientation, take the Hamiltonian logarithm of the actual operator $E_{ij}=(\Phi_{ij}^{-1})^*$ relative to this reference, and lift it by the fixed linear skew section of F.1 to $B_{ij}\in\varepsilon F_1\mathcal E\otimes A_N$. Use exact inverse comparisons in the other orientation. Set
+
+$$
+ U_{ij}=\exp B_{ij},\qquad
+ \varphi_{ij}=\operatorname{Ad}(U_{ij})\varphi^0_{ij},
+ \qquad
+ C_{ijk}=U_{ij}\varphi^0_{ij}(U_{jk})U_{ik}^{-1}.
+$$ {#eq:gg-op-finite-comparisons}
+
+The exponentials are finite in $\varepsilon$. Their coefficients can have positive order, but $\operatorname{ad}B_{ij}$ preserves every filtration piece, since $[F_1,F_m]\subset F_m$. The associated graded action is the actual homogeneous contact action of $E_{ij}$. Skewness gives $U_{ij}^*=U_{ij}^{-1}$ and makes $\varphi_{ij}$ commute with $*$.
+
+The finite Baker–Campbell–Hausdorff series $R=\log C_{ijk}$ has order at most one. Its order-one symbol is the Hamiltonian logarithm of the classical triple defect and is zero. Thus $R$ has order at most zero. Since $C_{ijk}$ is unitary, $R^*=-R$; the adjoint fixes degree-zero symbols, so that symbol is also zero. Therefore
+
+$$
+ \begin{gathered}
+ C_{ijk}\in1+F_{-1}\mathcal E\otimes A_N,\qquad
+ C_{ijk}^*C_{ijk}=1,\\
+ \varphi_{ij}\varphi_{jk}
+        =\operatorname{Ad}(C_{ijk})\varphi_{ik},\qquad
+ C_{ijk}C_{ikl}
+        =\varphi_{ij}(C_{jkl})C_{ijl}.
+ \end{gathered}
+$$ {#eq:gg-op-coherence}
+
+The last identity follows by expanding the products and using the exact reference cocycle. These identities are the descent data for the local module categories. All operations use fixed sections and finite polynomials in the amplitude ideal, so reduction from $N+1$ to $N$ gives precisely the order-$N$ construction. ∎
+
+The filtration and its symbol identification are part of this assertion. Over a nonreduced amplitude algebra, conjugation by the positive-order nilpotent exponentials is legitimate, but forgetting the filtration would erase the classical deformation. Faithfulness of an unfiltered module category is not asserted.
+
+<div id="sec:gg-op-first-units"></div>
+
+### F.3. The calibrated torsor and the additional operator cocycle
+
+Inside the units of the truncated order-zero algebra define
+
+$$
+ \mathscr U_1=
+ \{1+\bar A:\bar A\in F_{-1}\mathcal E/F_{-2}\mathcal E\}
+       \subset(F_0\mathcal E/F_{-2}\mathcal E)^\times .
+$$ {#eq:gg-op-first-units}
+
+Here $F_{-2}$ is an ideal of $F_0$, not of the whole operator algebra. Products of two negative-one classes vanish, so $\mathscr U_1$ is the additive sheaf $\mathcal L^{-1}$. Any normalized order-zero inner change acts trivially on it, by the commutator estimate. Thus the quantized comparisons induce its strict classical contact transport despite their inner triple defects.
+
+<div id="prop:gg-op-torsor-transport"></div>
+
+**Proposition F.2.**
+
+The calibrated affine torsor of Proposition 5.7 is canonically a torsor of the derived sheaf $\mathscr U_1$. Its transported contact action, transition coefficients, inverses and compact lifts agree with the existing affine data. This is not a strict embedding of the affine Lie algebra into the raw microdifferential commutator algebra.
+
+*Proof.* The symbol isomorphism identifies the underlying translation sheaves. If $\Phi_{ij}^*\alpha_i=c_{ij}\alpha_j$, the homogeneous scale satisfies $t_i\circ\Phi_{ij}=c_{ij}^{-1}t_j$. Transport by $E_{ij}$ on degree-minus-one symbols therefore has the coefficient multiplier $c_{ij}^{-1}$ in the affine point transition. The same torsor is consequently written
+
+$$
+ \tau_i=c_{ij}^{-1}\tau_j+a_{ij},\qquad
+ a_{ik}=a_{ij}\circ\Phi_{jk}
+            +(c_{ij}^{-1}\circ\Phi_{jk})a_{jk}.
+$$ {#eq:gg-op-affine-transport}
+
+The first equality uses the same local point arguments as in §5. Since the identification is an isomorphism of sheaves with their transport, it preserves the actual cochains and their inverses, rather than only their cohomology classes.
+
+Infinitesimally, the homogeneous lift is
+$\widetilde X_H=X_h-r_ht\partial_t$, whence
+
+$$
+ \{th,t^{-1}a\}=t^{-1}(X_ha+r_ha).
+$$ {#eq:gg-op-unit-action}
+
+For affine generators $(h,\chi)$ and $(k,\psi)$ as in §8.1, this gives the external semidirect bracket
+$(\{h,k\},X_h\psi-X_k\chi+r_h\psi-r_k\chi)$ in [@eq:gg-affine-operator-bracket], with the existing negative stored point velocity. It is independent of the skew principal section, because the difference of two such sections has order at most minus one and acts trivially on $\mathscr U_1$. This proves the asserted transport, not a section of the full operator extension. ∎
+
+The distinction can be tested on the mixed example of Proposition 9.1. Use Weyl symbols, for which the homogeneous order-one symbols themselves give skew lifts. If $\Pi$ is the canonical Poisson bidifferential, the degree-minus-one term of their commutator beyond the principal bracket is $\Pi^3(H,K)/24$. Put
+
+$$
+ H=-4a^3p_1/\zeta,\qquad
+ K=-4\zeta(ap_0+bp_1+\zeta p_2)^3/(p_0p_1).
+$$ {#eq:gg-op-moyal-example}
+
+Differentiate before restricting to $b=p_2=0$. The contributing paired derivatives on that slice are
+
+$$
+ \begin{aligned}
+ H_{\zeta\zeta\zeta}&=24a^3p_1/\zeta^4,&
+ K_{p_2p_2p_2}&=-24\zeta^4/(p_0p_1),\\
+ H_{p_1\zeta\zeta}&=-8a^3/\zeta^3,&
+ K_{bp_2p_2}&=-24\zeta^3/p_0 .
+ \end{aligned}
+$$ {#eq:gg-op-moyal-derivatives}
+
+All other paired third derivatives vanish on this slice: those of $H$ containing $b$ or two momentum derivatives vanish identically, and the remaining paired derivatives of $K$ containing $p_0$ have a positive power of $bp_1+\zeta p_2$. Hence
+
+$$
+ \left.\frac{\Pi^3(H,K)}{24}\right|_{b=p_2=0}
+ =\frac{-H_{\zeta\zeta\zeta}K_{p_2p_2p_2}
+          +3H_{p_1\zeta\zeta}K_{bp_2p_2}}{24}
+ =48a^3/p_0\ne0 .
+$$ {#eq:gg-op-moyal-defect}
+
+Thus even an allowed skew section need not identify the raw operator bracket with the external affine bracket. This example does not prove that every other section has a nontrivial cohomology class.
+
+Likewise an external $\mathscr U_1$-torsor must not be confused with neutralizing the whole algebroid by units. For normalized units $g_{ij}$ that stronger problem is
+
+$$
+ g_{ij}\varphi_{ij}(g_{jk})C_{ijk}=g_{ik}.
+$$ {#eq:gg-op-neutralization}
+
+Modulo $F_{-2}$, with $g_{ij}=1+A_{ij}$ and
+$c^{(-1)}_{ijk}=\sigma_{-1}(C_{ijk}-1)$, it becomes
+$\delta a=-c^{(-1)}$. Equation ([-@eq:gg-op-affine-transport]) gives the homogeneous equation $\delta a=0$ and does not supply such a primitive. The quadruple identity makes $c^{(-1)}$ closed; its vanishing class has not been established here. This additional problem concerns an invertible local object used to neutralize the algebroid. It is not required for the existence of the supported simple modules below.
+
+<div id="sec:gg-op-fixed-enrichment"></div>
+
+### F.4. Canonical enrichment of a fixed contact-affine object
+
+Kashiwara's Theorem 2 gives the canonical module stack of a complex contact manifold $Y$. The relevant uniqueness statement is stronger than unfiltered Morita equivalence: [@Polesello2005, Theorem 3.3] gives uniqueness up to an equivalence unique up to a unique isomorphism, when the filtration, full graded-symbol identification and compatible anti-involution are retained. The anti-involution includes its square and degree-zero duality coherences. A global operator ring is not supplied by this statement.
+
+For fixed $Y$, its commutator recovers the contact Jacobi bracket on $\operatorname{gr}_1$, and its first-unit sheaf recovers $\mathcal L^{-1}$. Proposition F.2 therefore transports the calibrated torsor and the independent admission of Definition 5.6 to the structured quantization. Conversely the full symbols and torsor recover the same contact-affine object. Structured uniqueness removes the extra quantization choice; Einstein recognition still uses that holomorphic admission and Proposition 5.4.
+
+The relative analytic construction is proved in §§F.6–F.9 and Appendix G. Proposition F.7 compares its finite jets with the auxiliary construction of §F.2.
+
+<div id="sec:gg-op-static-points"></div>
+
+### F.5. Supported point objects
+
+<div id="prop:gg-op-static-points"></div>
+
+**Proposition F.3.**
+
+On each actual complete sky $Q\simeq\mathbb P^1\times\mathbb P^1$, the marked half-form choice gives a unique isomorphism class of rank-one simple supported module. Framing its rank-one local-system fiber at a calibrated cone lift of the marked direction removes its scalar automorphisms.
+
+*Proof.* The contact restriction is $\mathcal L|_Q=\mathcal O(1,1)$ and the chosen root is $K_Q^{1/2}=\mathcal O(-1,-1)=\mathcal L^{-1}|_Q$. The precise regular-module classification is [@DAgnoloSchapira2007, Theorem 6.1 and Corollary 6.4], which corrects the earlier formulation in [@Kashiwara1996, Proposition 4]. After its half-form twist, local systems live on the symplectization cone $\widehat Q=\mathcal O(-1,-1)^\times$, not merely on $Q$. The displayed root neutralizes that twist.
+
+The homotopy sequence of this punctured line bundle contains
+
+$$
+ \pi_2(Q)=\mathbb Z^2
+   \longrightarrow\pi_1(\mathbb C^\times)=\mathbb Z
+   \longrightarrow\pi_1(\widehat Q)
+   \longrightarrow\pi_1(Q)=0.
+$$ {#eq:gg-op-sky-cone-homotopy}
+
+The first map is $(a,b)\mapsto-a-b$, by the Chern class of $\mathcal O(-1,-1)$, and is onto. Thus $\widehat Q$ is connected and simply connected. There is exactly one rank-one local-system isomorphism class, with automorphisms $\mathbb C^\times$. A nonzero framed value at the calibrated cone point leaves only the identity. The cited equivalence gives the asserted supported object and its automorphisms. ∎
+
+Simple connectedness of a Legendrian base alone would not suffice: [@DAgnoloSchapira2007, Example 6.5] has a point support with cone $\mathbb C^\times$ and nontrivial monodromy choices. The complete compact sky and its actual cone are essential here. The physical full spin lift is retained as in §8, rather than inferred from a projective support.
+
+Sections F.6–F.9 construct the relative operator overlaps and comparisons. Appendix G constructs the moving modules, relative half-form calibration and whole-parameter framing directly, rather than obtaining them pointwise from the static classification.
+
+<div id="sec:gg-op-analytic-transport"></div>
+
+### F.6. Analytic transport on the actual classical tube
+
+Quantized Hamiltonian transport is classical; compare [@Kashiwara1986, Example 7.3.2]. We give the coefficient estimate and locality argument needed for the relative construction. All symbol algebras in this argument are scalar.
+
+<div id="thm:gg-op-analytic-transport"></div>
+
+**Theorem F.4.**
+
+Let $B(t,\mu)$ be a holomorphic order-one microdifferential family with uniform factorial symbol bounds on fixed larger cotangent-sector parents. Suppose the homogeneous Hamiltonian $H=\sigma_1B$ has an actual holomorphic classical transport $T_t$, with $T_0=\mathrm{id}$ and $\dot T_t=X_HT_t$, on a common tube with bounded inverse maps and fixed Cauchy buffers. Then
+$\dot{\mathcal Q}_t=\operatorname{ad}(B(t))\mathcal Q_t$, $\mathcal Q_0=\mathrm{id}$, has a filtered quantized-contact sheaf solution on smaller tube parents. It is jointly holomorphic in all passive parameters $\mu$, with uniform factorial negative-symbol bounds. If $B^*=-B$, it preserves the formal adjoint. Its principal-symbol action is exactly $T_t$.
+
+*Proof.* Normal and Weyl total symbols determine the same analytic microdifferential class. Their conversion is the formal differential transform
+$\exp(\pm\frac12\sum_i\partial_{y_i}\partial_{p_i})$.
+On strict parents, a degree-drop-$k$ term has two Cauchy factorials divided by $\alpha!$, leaving $\alpha!\le k!$. Combining an input drop $r_0$ with $k$ uses $r_0!k!\le(r_0+k)!$. Thus this conversion preserves factorial symbol bounds on smaller parents, uniformly in the parameters.
+
+Use Weyl symbols. For an input of order $m$ and the generator write
+
+$$
+ \|P_{m-r}\|\le M_PA_P^r r!,\qquad
+ \|B_{1-l}\|\le M_BA_B^l l!,\qquad r,l\ge0.
+$$ {#eq:gg-op-flow-input-bounds}
+
+The Weyl commutator contribution involving $B_{1-l}$ and an odd total derivative order $k\ge1$ is a differential operator $D_{l,k}$ of order $k$ on the other symbol. It increases its homogeneous drop by $\Delta=l+k-1$. Cauchy estimates on the generator factor cancel the factorial divisors $\alpha!\beta!$ of the Weyl product. After one fixed buffer its coefficients therefore satisfy
+
+$$
+ \|{\rm coeff}(D_{l,k})\|
+       \le M_BA_B^l l!C_B^k .
+$$ {#eq:gg-op-flow-differential-bound}
+
+The multiindex count is absorbed into $C_B^k$. The only zero-drop term is $D_{0,1}=X_H$.
+
+For a fixed input $P$, put $A(t)=\mathcal Q_t(P)$. Set $A(t)=T_tV(t)$ and conjugate the remaining operators by $T_t$. An analytic change of variables turns an order-$k$ derivative into derivatives of orders $j\le k$ with coefficient bounds $C_{\rm flow}^k k!/j!$. To verify this bound, expand $f(\chi(z+h))$ in powers of $\chi(z+h)-\chi(z)$. The $j$-th derivative has its Taylor divisor $j!$, while the analytic composition coefficients have an exponential bound times $k!$; several-variable counts are absorbed into the exponential. Since $k!/j!\le2^k(k-j)!$, and $l+k=\Delta+1$, the conjugated operators obey
+
+$$
+ \begin{gathered}
+ \dot V=\sum_{\Delta\ge1}\widetilde D_\Delta(t)V,\qquad
+ \operatorname{ord}_{\rm diff}\widetilde D_\Delta\le\Delta+1,\\
+ \|\widetilde d_{\Delta,j}\|
+   \le M_1C_1^{\Delta+1}(\Delta+1-j)!,
+       \qquad 0\le j\le\Delta+1 .
+ \end{gathered}
+$$ {#eq:gg-op-flow-interaction-bound}
+
+These constants depend only on the supplied tube and its buffers, the classical maps and their inverses, and the generator bounds. They are independent of the input drop and the parameters.
+
+In the time-ordered series, $n$ steps from input drop $r_0$ to output drop $r$ have positive drops $\Delta_i$ with sum $\Delta=r-r_0$. Thus $n\le\Delta$. For a derivative order $j_i$ put $s_i=\Delta_i+1-j_i$ and $J=\sum_i j_i$. On nested initial polydisks allocate a total shrink $\delta$ proportionally to the positive $j_i$, omitting zero-derivative steps. Cauchy's formula bounds the derivative composition by $(e/\delta)^J J!$, with value one when $J=0$. This follows from $j_i!\le j_i^{j_i}$ and $J^J\le e^JJ!$. Derivatives hitting earlier coefficients are included in this operator-composition bound. The remaining factorials satisfy
+
+$$
+ r_0!\left(\prod_i s_i!\right)J!\le(r+n)!,
+ \qquad
+ r_0+\sum_i s_i+J=r+n .
+$$ {#eq:gg-op-flow-factorial-budget}
+
+After increasing $C_1$ to at least one, put $D=C_1\max(1,e/\delta)$. A chosen sequence is bounded before integration by
+$M_PA_P^{r_0}M_1^nD^{\Delta+n}(r+n)!$.
+There are at most $2^{\Delta+3n}$ allowed pairs $(\Delta_i,j_i)$: the nonnegative $2n$-tuple $(s_i,j_i)$ has sum $\Delta+n$, and discarding its additional restrictions gives this bound. The time simplex contributes $|t|^n/n!$, while
+
+$$
+ \frac{(r+n)!}{n!}
+   =r!\binom{r+n}{r}\le r!2^{r+n}.
+$$ {#eq:gg-op-flow-time-budget}
+
+For $|t|\le T$ set $q=16M_1DT$. Since $n\le\Delta$, the finite sum is bounded by
+$\sum_{n=0}^{\Delta}q^n\le(1+q)^\Delta$.
+Summing also in $r_0$ gives, for example,
+
+$$
+ \|V_{m-r}(t)\|
+ \le M_Pr!\left[2\{A_P+2D(1+q)\}\right]^r .
+$$ {#eq:gg-op-flow-output-bound}
+
+The initial term $n=0$, $\Delta=0$ is included. There is no condition $q<1$. Pullback by the classical maps gives the same type of bound on the corresponding smaller final tube.
+
+At each fixed drop the series has finitely many positive-drop steps and uses finitely many input derivatives at the classical endpoint. Hence it applies to arbitrary input germs near that endpoint; the input need not extend along the whole trajectory. The tube carries the coefficient operators. This proves locality as a sheaf map, as well as coefficientwise holomorphy and the analytic-microdifferential growth estimate.
+
+Uniqueness is recursive in the drop. The highest symbol has the prescribed classical transport; every lower symbol has that transport with source determined by earlier drops. The commutator derivation rule makes products solve the same equation, so uniqueness gives multiplicativity. Reverse evolution gives the inverse after finite parent restrictions. Applying the formal adjoint to the equation gives adjoint preservation when $B$ is skew. All estimates are uniform on the stated parameter parents. ∎
+
+The theorem constructs a transport automorphism. It does not place a positive-order exponential inside the operator ring, and it does not assert scalar convergence of the negative homogeneous symbol series.
+
+<div id="sec:gg-op-analytic-coherence"></div>
+
+### F.7. Analytic inner coherence
+
+<div id="lem:gg-op-negative-unit-evolution"></div>
+
+**Lemma F.5.**
+
+Let $R(t,\mu)$ have order at most minus one and uniform analytic symbol bounds on a fixed larger parent and bounded time disk. Then $C'=RC$, $C(0)=1$, has a jointly holomorphic normalized order-zero unit solution on a smaller parent. If $R^*=-R$, then $C^*C=1$.
+
+*Proof.* In normal symbols assume
+$\|R_{-l}\|\le M_RA_R^ll!$, $l\ge1$.
+A product term with component drop $l$ and derivative order $k$ increases the drop by $l+k$. Cauchy on the $R$ factor cancels the derivative factorial divisor. At output drop $r$, an $n$-fold product has $n\le r$ and $L+K=r$. The nested Cauchy estimate gives factorial factor $(\prod_i l_i!)K!\le r!$. Counting the choices by $2^{r+n}$ and integrating over the simplex yields
+
+$$
+ \|C_{-r}\|\le e^{2M_RT}(2D_R)^r r!,
+ \qquad
+ D_R\ge\max(1,A_R,eC_R/\delta).
+$$ {#eq:gg-op-negative-unit-bound}
+
+At each drop the series is finite. Right multiplication similarly constructs the inverse, and the principal symbol is one. If $R$ is skew, differentiation gives $(C^*C)'=0$. The same estimates and finite coefficient formulas prove holomorphy in every passive parameter. ∎
+
+<div id="thm:gg-op-analytic-source-descent"></div>
+
+**Theorem F.6.**
+
+The actual corrected contact source overlaps admit analytic relative filtered operator comparisons and normalized unitary triple units on common bounded-family parents, including amplitude one. Their symbols are the original actual contact maps, and their induced transport on $\mathscr U_1$ is the original calibrated affine transport.
+
+*Proof.* Theorem 6.3 provides the contact maps, multipliers and inverses on a common complex amplitude disk containing one. Relative to the exact reference atlas, their homogeneous symplectizations supply the classical tubes of Theorem F.4. Fixed finite cover refinements and parent restrictions give uniform coordinate and inverse bounds. Cauchy in a larger amplitude disk reads the holomorphic Hamiltonian of the actual logarithmic time derivative. No logarithm of an infinite diffeomorphism series is used. Section F.1 lifts this Hamiltonian to a skew order-one family $B_{ij}(t)$ with the required uniform symbol bounds.
+
+Integrate only one independent orientation of each overlap, starting at $\varphi^0_{ij}$. Define the reverse literally by
+
+$$
+ \varphi_{ji}=\varphi_{ij}^{-1},\qquad
+ B_{ji}=-\varphi_{ji}(B_{ij}).
+$$ {#eq:gg-op-analytic-inverse-generator}
+
+The reverse generator is the displayed actual generator, rather than a separately reselected principal lift. Theorem F.4 gives the analytic filtered comparisons with their actual classical symbols. Proposition F.2 then gives the old affine cochains and moving arguments.
+
+On a triple put $D_{ijk}=\varphi_{ij}\varphi_{jk}\varphi_{ik}^{-1}$. Direct differentiation gives
+
+$$
+ \dot D_{ijk}D_{ijk}^{-1}=\operatorname{ad}R_{ijk},\qquad
+ R_{ijk}=B_{ij}+\varphi_{ij}(B_{jk})-D_{ijk}(B_{ik}).
+$$ {#eq:gg-op-analytic-triple-generator}
+
+The classical symbol of $D_{ijk}$ is the identity for every amplitude. Thus the degree-one symbol of $R_{ijk}$ is Poisson central and is zero, since a homogeneous degree-one central function vanishes. Skewness then kills its degree-zero symbol, so $R_{ijk}$ has order at most minus one. Theorem F.4 applied with input families $B_{jk}$ and $B_{ik}$ gives uniform factorial bounds for this generator after finitely many extra parent restrictions.
+
+Lemma F.5 constructs the actual holomorphic unit $C_{ijk}$ with
+$C'_{ijk}=R_{ijk}C_{ijk}$ and $C_{ijk}(0)=1$.
+Its adjoint action equals $D_{ijk}$ by uniqueness. The two sides of the quadruple relation have the same inner action, are unitary, and have degree-zero symbol one. A normalized order-zero unit with trivial inner action is one, so the quadruple relation is exact. This also follows from the normalized-inner injectivity of the local model in [@Kashiwara1996, Lemma 1]. This constructs relative analytic coherence. ∎
+
+The construction uses the source family's classical parents and finitely many extra buffer restrictions.
+
+<div id="sec:gg-op-analytic-finite-comparison"></div>
+
+### F.8. Comparison with the auxiliary finite operators
+
+<div id="prop:gg-op-analytic-finite-comparison"></div>
+
+**Proposition F.7.**
+
+The amplitude jets of Theorem F.6 are compatible with Theorem F.1 up to normalized filtered inner equivalence. The contact and calibrated affine tuples are unchanged.
+
+*Proof.* For an oriented overlap write $B(a)$ for the generator of Theorem F.6 in its amplitude variable $a$. Over $A_N=\mathbb C[\varepsilon]/(\varepsilon^{N+1})$, use a separate path parameter $t$ and set
+
+$$
+ B_N(t,\varepsilon)=\varepsilon B(t\varepsilon)\pmod{\varepsilon^{N+1}},\qquad
+ \partial_t U_N(t,\varepsilon)=B_N(t,\varepsilon)U_N(t,\varepsilon),\qquad
+ U_N(0,\varepsilon)=1.
+$$ {#eq:gg-op-finite-fundamental-unit}
+
+Since $B_N\in\varepsilon F_1\mathcal E\otimes A_N$, its time-ordered series has at most $N$ factors and defines a finite polynomial with operator coefficients. Put $U_N=U_N(1,\varepsilon)$. Its adjoint action solves the amplitude-jet equation of Theorem F.6. This construction takes the finite Taylor coefficients of $B$ and does not exponentiate a positive-order operator over the ordinary analytic coefficient field. Its logarithm belongs to $\varepsilon F_1$ by the finite Magnus recursion, since $F_1$ is closed under commutators. Let $U_N^{\rm old}$ be the auxiliary exponential of Theorem F.1. The logarithm of $W_N=U_N(U_N^{\rm old})^{-1}$ has order at most one and zero degree-one symbol: both have the same classical contact action. Unitarity makes its logarithm skew and kills the degree-zero symbol. Hence $W_N\in1+F_{-1}\mathcal E\otimes A_N$.
+
+These compatible units relate the finite comparisons by conjugation. Their triple units satisfy the exact change law
+
+$$
+ C^{\rm an}_{ijk}
+ =W_{ij}\varphi^{\rm old}_{ij}(W_{jk})
+             C^{\rm old}_{ijk}W_{ik}^{-1}
+       \pmod{\varepsilon^{N+1}} .
+$$ {#eq:gg-op-analytic-finite-triple-change}
+
+Both sides are the normalized unit with the indicated inner action, so equality follows also by injectivity. Conjugation by $W_N$ is trivial on $\mathscr U_1$. Thus the affine cochains, their inverses and compact lifts remain the same. ∎
+
+This comparison does not assert literal equality or convergence of the previously chosen auxiliary infinite operator section. The physical source tuples retain their classical gauge.
+
+<div id="sec:gg-op-relative-inner-comparisons"></div>
+
+### F.9. Relative normalized inner comparisons
+
+<div id="lem:gg-op-relative-inner-comparisons"></div>
+
+**Lemma F.8.**
+
+Let $\psi_\mu$ be a holomorphic family of filtered, adjoint-preserving automorphisms of the local half-density algebra, inducing the identity on its full graded-symbol algebra. On a common parent assume the coordinate differences $\Delta_i=\psi_\mu(y_i)-y_i$ have uniform analytic factorial symbol bounds. There is a unique holomorphic normalized unit $P_\mu$ with
+
+$$
+ \psi_\mu=\operatorname{Ad}P_\mu,\qquad
+ \operatorname{ord}P_\mu=0,\qquad
+ \sigma_0(P_\mu)=1,\qquad P_\mu^*P_\mu=1.
+$$ {#eq:gg-op-relative-inner-normalization}
+
+It and its inverse have common factorial estimates after fixed parent restrictions. The construction commutes with restrictions and finite jets of the holomorphic parameter family.
+
+*Proof.* The fixed-manifold normalized-inner theorem [@Kashiwara1996, Lemma 1] supplies existence and uniqueness at each fixed parameter and spatial germ. We prove the relative assertion directly. Since $y_i^*=y_i$, the difference $\Delta_i$ is self-adjoint. Identity on the graded algebra gives order at most minus one, and self-adjointness kills that odd degree. Thus $\operatorname{ord}\Delta_i\le-2$.
+
+Use normal total symbols, with momenta $p_i$. The orientation $\psi(A)=PAP^{-1}$ gives
+
+$$
+ [P,y_i]=\partial_{p_i}P=\Delta_i\circ P,\qquad
+ P_{-r}=-\frac1r
+  \left[\sum_i p_i(\Delta_i\circ P_{<r})\right]_{-r},
+ \quad P_0=1.
+$$ {#eq:gg-op-relative-inner-euler}
+
+Here $p_i$ outside the parentheses is ordinary multiplication of total-symbol functions, not another operator product. A term from $\Delta_{i,-l}$, $P_{-s}$ and $k$ paired derivatives has output drop $r=s+l+k-1$. Because $l\ge2$, it uses only $s<r$. Each recursive coefficient is therefore a finite holomorphic differential polynomial. At every fixed parameter the actual normalized unit obeys this recursion; triangular uniqueness identifies it with the recursive coefficients. This establishes all intertwining and adjoint equations, rather than inferring them from the Euler-contracted equation alone.
+
+For completeness, suppose $\|\Delta_{i,-l}\|\le MA^l l!$. Reserve one fixed momentum buffer first. Normal composition and Cauchy estimates give
+
+$$
+ \left\|\frac{p_i}{\alpha!}
+           \partial_p^\alpha\Delta_{i,-l}\right\|
+ \le M_1 A^l l! C^k,\qquad k=|\alpha|.
+$$ {#eq:gg-op-relative-inner-coefficient-bound}
+
+The finite coordinate sum, momentum factor and multiindex count are included in $M_1,C$. These coefficient functions remain holomorphic on a fixed larger $y$-parent. In an iterated recursive term with $n$ steps write $L=\sum l_i$, $K=\sum k_i$. Its positive drops $d_i=l_i+k_i-1$ give $r=L+K-n$ and $n\le r$. The successive Euler divisors are the strictly increasing cumulative drops, so their product is at least $n!$.
+
+Allocate a total $y$-buffer $\delta$ in proportions $\delta k_i/K$ to steps with $k_i>0$. Nested Cauchy estimates, applied to each entire preceding expression, include derivatives of its intermediate coefficients and give $(e/\delta)^K K!$. For $K=0$ the factor is one. Moreover,
+
+$$
+ \left(\prod_i l_i!\right)K!\le(r+n)!,\qquad
+ \frac{(r+n)!}{n!}\le r!2^{r+n},\qquad
+ \#\{(l_i,k_i)\}\le
+       \binom{r+n-1}{2n-1}\le2^{r+n}.
+$$ {#eq:gg-op-relative-inner-factorial-budget}
+
+The count uses $l_i-2,k_i\ge0$ with total $r-n$; counting terms that differentiate the constant $P_0$ only enlarges the bound. With $D=\max(1,A,eC/\delta)$,
+
+$$
+ \|P_{-r}\|
+ \le r!(4D)^r\sum_{n=1}^r(4M_1D)^n
+ \le r!\,[4D(1+4M_1D)]^r.
+$$ {#eq:gg-op-relative-inner-final-bound}
+
+No smallness condition is needed. These are analytic microdifferential symbol bounds, not scalar convergence of the negative-homogeneous series. The inverse is $P^*$; its normal adjoint expansion has drop $r=s+k$, and the two Cauchy factorials divided by $\alpha!$ leave at most $s!k!\le r!$, with exponentially many indices. It therefore has the same type of bound. Finite coefficient formulas establish joint holomorphy, restrictions and parameter-jet compatibility. This does not assert a theorem about arbitrary nonlifted nonreduced bases.
+
+Finally, two such units differ by a central passive-parameter function. Its degree-zero symbol is itself, so symbol-one normalization makes it one. The locally constructed units thus glue uniquely. ∎
+
+For two actual structured quantizations covering the same full classical symbol map and satisfying the common-parent bounds, their quotient satisfies this lemma. Its unique normalized unit gives the actual relative comparison and the coherent finite comparison diagrams.
+
+<div id="app:gg-relative-sky-modules"></div>
+
+## Appendix G. Relative simple modules on complete skies
+
+<div id="sec:gg-module-standard-model"></div>
+
+### G.1. An analytic order-zero local model
+
+Use contact coordinates $(z,q^1,q^2;p_1,p_2)$ with $\alpha=dz+p_i\,dq^i$, and homogeneous cotangent coordinates $(t,\xi_1,\xi_2)$ with $t\ne0$, $p_i=\xi_i/t$. The reference Legendrian has $z=\xi=0$. All algebras below are the scalar analytic half-density algebras of Appendix F.
+
+<div id="lem:gg-module-standard-model"></div>
+
+**Lemma G.1.**
+
+The finite presentation
+
+$$
+ P_0=zD_z+\tfrac12,\qquad
+ \mathcal M_0=\mathcal E/
+       (\mathcal E P_0+\mathcal E D_{q^1}+\mathcal E D_{q^2})
+$$ {#eq:gg-module-standard-presentation}
+
+defines a simple analytic module of order zero on this Legendrian. It has coefficient normal form $f(q,t)u_0$, with the usual factorial bounds, and actions
+
+$$
+ D_z=t,\qquad D_{q^i}=\partial_{q^i},\qquad
+ z=Z=-\partial_t+\frac1{2t}.
+$$ {#eq:gg-module-standard-action}
+
+Its endomorphisms are $\mathbb C$; in a passive holomorphic family they are $\mathcal O_S$. All normal-form and action formulas are analytic and relative.
+
+*Proof.* These operators satisfy the Weyl relations. In particular
+$(Zt+\tfrac12)f=-t\partial_t f$, so $P_0u_0=0$ and $zD_zu_0=-u_0/2$.
+
+We give analytic division. Expand a normal symbol of order $m$ in $z$ and $\theta=\xi/t$:
+
+$$
+ P=\sum_{l,h,\beta}
+ a_{l,h,\beta}(q)\,z^hD_q^\beta D_z^{m-l-|\beta|},
+ \qquad
+ |a_{l,h,\beta}|\le MA^l l!C^{h+|\beta|}.
+$$ {#eq:gg-module-symbol-taylor}
+
+For $\beta\ne0$, the division uses finitely many actual analytic generators. If $F_l(z,q,\theta)$ is the analytic Taylor coefficient at order $m-l$, write
+
+$$
+ F_l(z,q,\theta)-F_l(z,q,0)
+ =\sum_i\theta_i\int_0^1
+           \partial_{\theta_i}F_l(z,q,a\theta)\,da .
+$$ {#eq:gg-module-finite-taylor-division}
+
+On a fixed strict $\theta$-parent, Cauchy gives the integrals a bound $M'A^l l!$. Since $\theta_i=\xi_i/t$, their order-$(m-1)$ symbols define the two analytic rightmost-$D_{q^i}$ quotients. No $q$-dependent coefficient is moved through a $D_q$. Thus the entire infinite $\beta$ tail is in the displayed finite left ideal with analytic quotient bounds. For $\beta=0$, put $s=m-l$ and use
+
+$$
+ zD_z^s=D_z^{s-1}P_0+(\tfrac12-s)D_z^{s-1},\qquad
+ c_{h,s}=(-1)^h(s-\tfrac12)_{\underline h}.
+$$ {#eq:gg-module-ore-division}
+
+The remainder of $z^hD_z^s$ is $c_{h,s}D_z^{s-h}$; its quotient by the rightmost $P_0$ is
+$\sum_{v=0}^{h-1}z^{h-1-v}c_{v,s}D_z^{s-1-v}$.
+At quotient drop $r=l+v$, only finitely many $(l,v)$ occur. The remaining tail is the convergent analytic sum
+$\sum_{h\ge v+1}a_{l,h,0}(q)z^{h-1-v}$.
+On $C|z|\le1/2$ its norm is at most $2MA^l l!C^{v+1}$. The elementary falling-factorial bound
+
+$$
+ l!\,|c_{v,m-l}|\le C_m^{l+v}(l+v)!
+$$ {#eq:gg-module-division-bound}
+
+therefore gives factorial bounds for the actual quotient. The remainder has $r=l+h$ and satisfies the same estimate. Consequently there are actual analytic operators $Q_0,Q_1,Q_2$ and an analytic normal form such that
+$P=Q_0P_0+Q_iD_{q^i}+f(q,D_z)$.
+Its action on $u_0$ retains exactly $f$, proving that the kernel is the displayed finite left ideal, not only its formal closure.
+
+For the full action one has
+
+$$
+ Z^h(t^sf)=(-1)^h
+   \sum_{a=0}^h\binom ha
+    (s-\tfrac12)_{\underline{h-a}}\,
+       t^{s-h+a}\partial_t^a f .
+$$ {#eq:gg-module-z-action}
+
+Here $s=m-l-|\beta|$. Put $\Delta=l+h+|\beta|$ and $j=|\beta|+a$. The falling factorial, together with $l!$, is bounded by
+$C_m^{l+|\beta|+h-a}(l+h-a)!$.
+For example, bound it by the ratio of factorials with arguments
+$l+|\beta|+c+h-a-1$ and $l+|\beta|+c-1$, where $c$ depends only on $m$, and absorb its binomial ratio into an exponential constant. Since $l+h-a=\Delta-j$, the order-$j$ differential coefficient is bounded by
+
+$$
+ M C_m^\Delta(\Delta-j)!,\qquad j\le\Delta.
+$$ {#eq:gg-module-action-bound}
+
+The fixed radial annulus and Taylor counts only alter the exponential constants. An input coefficient of drop $r_0$, followed by $j$ Cauchy derivatives on one buffer, obeys
+$r_0!(\Delta-j)!j!\le(r_0+\Delta)!$.
+Thus the full action preserves the analytic normal-form class. At each drop only finitely many jets enter. The Weyl relations give coefficientwise associativity, and the bounds restrict that same representation to the analytic class.
+
+The graded annihilator is the reduced ideal $(z,\xi)$ and the simple symbol line has rank one. Its order-zero local half-form is
+
+$$
+ \rho_0=\sqrt{dq^1\,dq^2\,dt/t}.
+$$ {#eq:gg-module-order-zero-half-form}
+
+Indeed $P_0$ has zero subprincipal symbol and principal Hamilton field $-t\partial_t$ on the cone; its Lie action on this half-form is zero. This agrees with the simple-symbol calculus of [@DAgnoloSchapira2007, §4]. It differs from the order-one-half delta generator. An endomorphism sends $u_0$ to $f(q,t)u_0$ killed by $D_q$ and $P_0$, whence $\partial_qf=t\partial_tf=0$. This proves the endomorphism assertion. Uniform Taylor convergence and the finite drop formulas prove all relative assertions. ∎
+
+<div id="sec:gg-module-tangent-transport"></div>
+
+### G.2. Actual analytic tangent transport
+
+<div id="lem:gg-module-tangent-transport"></div>
+
+**Lemma G.2.**
+
+Let $B(a,\mu)$ be a skew-adjoint order-one family with uniform analytic symbol bounds whose principal Hamiltonian vanishes on the reference Legendrian. Suppose its actual tangent cone flow and inverse have common holomorphic tubes. The equation $S'=BS$, $S_0=1$, has an analytic filtered module evolution with inverse and uniform factorial bounds. If $\varphi'=\operatorname{ad}(B)\varphi$ and $\varphi_0=\mathrm{id}$, then
+
+$$
+ S_a(Pm)=\varphi_a(P)S_a(m).
+$$ {#eq:gg-module-transport-semilinearity}
+
+Its leading symbol is the actual half-form transport. The construction is local and holomorphic in passive parameters.
+
+*Proof.* The first transverse Taylor terms of the principal symbol are
+$H=tzb(q)+\xi_i v^i(q)+\text{higher transverse terms}$.
+There is no degree-raising action on $\mathcal M_0$. In normal symbols skew-adjointness gives
+$B_0|_\Lambda=(b+\operatorname{div}_qv)/2$.
+The action of $bzD_z$ is $-bt\partial_t-b/2$, so the zero-drop part is exactly
+
+$$
+ L_0=v^i\partial_{q^i}-bt\partial_t+
+                         \tfrac12\operatorname{div}_qv .
+$$ {#eq:gg-module-leading-lie-transport}
+
+For the volume $dq^1dq^2dt/t$, the divergence of
+$v\partial_q-bt\partial_t$ is $\operatorname{div}_qv$. Thus $L_0$ is its half-form Lie derivative, including the scalar term. Its actual evolution is the tangent pullback with the initialized nonzero half-density Jacobian amplitude.
+
+For all higher terms put $\Delta=l+h+|\beta|-1\ge1$. Equation ([-@eq:gg-module-action-bound]), with $m=1$, gives differential order $j\le\Delta+1$ and coefficient bound
+$MC^{\Delta+1}(\Delta+1-j)!$.
+Conjugate by the actual $L_0$ evolution, including its amplitude and inverse. Analytic coordinate changes and multiplication by these amplitudes change an order-$j$ derivative to order $i\le j$ at cost at most $C_1^j j!/i!$. The inequality
+
+$$
+ (\Delta+1-j)!\frac{j!}{i!}
+ \le 2^j(\Delta+1-i)!
+$$ {#eq:gg-module-conjugated-action-bound}
+
+retains exactly the same factorial type.
+
+The interaction-picture iteration now has positive drops, as in Theorem F.4. At output drop $r$, an input of drop $r_0$ permits only $n\le r-r_0$ steps. If $s_i=\Delta_i+1-j_i$ and $J=\sum j_i$, the single-total-buffer estimate is
+
+$$
+ r_0!\left(\prod_i s_i!\right)J!\le(r+n)!.
+$$ {#eq:gg-module-transport-factorial-budget}
+
+The ordered time simplex supplies $1/n!$. The finite composition counts and
+$(r+n)!/n!\le2^{r+n}r!$ give a uniform exponential times $r!$, by the finite $n$ sum of Theorem F.4. There is no loss of a new domain at each normal order. This constructs the analytic evolution. Reverse evolution gives the inverse. Its leading term is the $L_0$ half-form transport.
+
+Both sides of ([-@eq:gg-module-transport-semilinearity]) have derivative $B$ times themselves: on the right the commutator term and the module derivative combine to $B\varphi(P)S(m)$. They have the same initial value, so coefficientwise uniqueness proves equality. Each output coefficient uses finitely many endpoint jets; this proves locality, passive holomorphy and compatibility with restrictions and finite parameter jets. ∎
+
+<div id="sec:gg-module-relative-descent"></div>
+
+### G.3. Moving modules and exact algebroid descent
+
+Write $B$ for the passive parameter base and $S\to B$ for the total physical point family; at a fixed passive parameter its fiber is the four-germ $M$. The sky projection is $p:F\to S$. For the source family $F=Q\times S$, $Q=\mathbb P^1\times\mathbb P^1$, with its actual parameterized embeddings. Retain an actual relative half-canonical root $R^2=K_{F/S}$ and its marked calibration. The relative cotangent sequence gives the specified canonical-line comparison
+
+$$
+ K_{F/B}\simeq K_{F/S}\otimes p^*K_{S/B}.
+$$ {#eq:gg-module-relative-canonical-base}
+
+Thus the canonical line relative only to the passive base has an additional point-base factor. At a fixed passive parameter $S=M$, so the sky-relative notation becomes $K_{F/M}$. In the ruled parameterization one may take $R=\mathcal O(-1,-1)$ with its actual root frames. Any base line factor in comparing $R$ to the inverse contact line is retained with its calibrated frame; fiberwise bidegree alone does not identify relative lines.
+
+<div id="thm:gg-module-relative-descent"></div>
+
+**Theorem G.3.**
+
+The analytic operator descent of Theorem F.6 has an actual holomorphic family of locally standard order-zero regular simple modules supported on its complete skies. Their local semilinear maps obey
+
+$$
+ \tau_{ij}\tau_{jk}=C_{ijk}\tau_{ik}.
+$$ {#eq:gg-module-actual-triple}
+
+They have common bounded-family representatives, inverses and finite parameter-jet compatibility. Their chosen order-zero lattices have degree-zero symbol line $R$.
+
+*Proof.* Locally choose a fixed contact polarization adapted to the central sky. A fixed partial Legendre quantized chart change is permitted. Nearby skies are graphs
+$z=f_s(q)$, $p=-df_s$.
+The base substitution $(z,q)\mapsto(z-f_s(q),q)$ and its cotangent half-density pullback flatten them analytically. Pull back $\mathcal M_0$ to obtain the local modules and their finite presentations.
+
+Write $L_i$ for the flattening algebra maps and
+$\psi_{ij}=L_i\varphi_{ij}L_j^{-1}$.
+If $\dot L_i=\operatorname{ad}(A_i)L_i$ and
+$\dot\varphi_{ij}=\operatorname{ad}(B_{ij})\varphi_{ij}$, the flattened generator is
+
+$$
+ B^{\rm flat}_{ij}
+     =A_i+L_i(B_{ij})-\psi_{ij}(A_j).
+$$ {#eq:gg-module-actual-flat-generator}
+
+Every $\psi_{ij}$ preserves the reference Legendrian, so this generator is tangent. It is the generator of the given comparison, not a separately reselected principal lift.
+
+We construct joint Hom generators in two stages. At source amplitude zero, move the physical point along $x=ax$, starting at $x=0$. The reference $\varphi_{ij}$ is fixed, so the displayed formula has $B_{ij}=0$. Start from a single fixed same-order simple intertwiner $\tau_0$, supplied by the local simple-symbol calculus [@DAgnoloSchapira2007, §4]. Apply Lemma G.2 to $\psi_a\psi_0^{-1}$ and take $S_a\tau_0$; this gives an actual holomorphic family in $x$. Next follow the source amplitude path, with $x$ and the remaining source parameters passive, using the same initialized relative evolution with the full generator. It gives holomorphic semilinear intertwiners on the whole retained family. Thus local Hom is actually free of rank one over $\mathcal O_S$, rather than merely one-dimensional at each parameter.
+
+Choose local simple generators $u_i$ with prescribed projective half-form symbols $\rho_i$ of $R$, by an elliptic order-zero symbol lift. The cone half-form in ([-@eq:gg-module-order-zero-half-form]) descends to this relative half-root: changing the radial frame adds a base $d\log$ term, which wedges to zero with the top $q$-form. Let
+$\rho_j=s_{ij}\rho_i$ at the actual moving arguments. For an intertwiner
+$u_j\mapsto b_{ij}u_i$ let $e_{ij}$ be its leading coefficient. The fixed initial simple-symbol calculus and Lemma G.2's half-form transport imply
+
+$$
+ e_{ij}/s_{ij}\in\mathcal O_S^\times .
+$$ {#eq:gg-module-symbol-normalization}
+
+This is an actual holomorphic unit, evaluated on a local calibrated cone section; its holomorphy follows from the Hom construction just given. Divide by it. The resulting $\tau_{ij}$ has symbol ratio exactly $s_{ij}$ and is unique with that normalization.
+
+Both $\tau_{ij}\tau_{jk}$ and $C_{ijk}\tau_{ik}$ are semilinear for
+$\varphi_{ij}\varphi_{jk}=\operatorname{Ad}(C_{ijk})\varphi_{ik}$.
+Their symbols agree because $\sigma_0(C_{ijk})=1$ and
+$s_{ij}s_{jk}=s_{ik}$ is the actual root cocycle. Their ratio is an $\mathcal O_S$ scalar by Lemma G.1 and is one by its actual symbol. This proves the full module equation. On generators it reads
+
+$$
+ \varphi_{ij}(b_{jk})b_{ij}u_i=C_{ijk}b_{ik}u_i .
+$$ {#eq:gg-module-generator-triple}
+
+The unit acts from the left; this is a module identity, not a ring identity for representatives $b_{ij}$. The actual associator has therefore been retained. Inverses are literal inverses and have the inverse root symbol.
+
+A finite cover of compact $Q$, its actual graph tubes and fixed parent restrictions give the common estimates. The filtered comparisons and elliptic order-zero intertwiners preserve the chosen $\mathcal E_i(0)u_i$ lattices with their module descent. The associator has degree-zero action one, so their degree-zero lines glue honestly with transitions $s_{ij}$ to $R$. All coefficient constructions commute with restrictions and finite jets of holomorphic parameter families. ∎
+
+<div id="sec:gg-module-relative-framing"></div>
+
+### G.4. Calibration on the whole parameter family
+
+<div id="prop:gg-module-relative-framing"></div>
+
+**Proposition G.4.**
+
+In the locally standard family category of Theorem G.3, retain an actual nonzero holomorphic vector section of the degree-zero line along the calibrated cone section $\sigma:S\to\widehat F$. The supported module is then unique up to unique framed isomorphism, locally on the parameter base. The source construction has this calibration, and auxiliary local choices have canonical relative comparisons.
+
+*Proof.* Local Hom is the rank-one $\mathcal O_S$ local system constructed above. Both $Q$ and its actual symplectization
+$\mathcal O(-1,-1)^\times$ are simply connected, by Proposition F.3. Thus its global Hom along each complete sky/cone is a rank-one $\mathcal O_S$ line locally on $S$. Evaluation at the calibrated cone section identifies its scalar with the action on the actual degree-zero line. The prescribed nonzero vector section fixes that scalar holomorphically. An automorphism acts by $f(s)\in\mathcal O_S^\times$; preserving the entire section gives $f=1$. The marked ruled-root calibration supplies this vector section for the source family. This proves existence and uniqueness of comparisons of its auxiliary realizations. ∎
+
+Fixing a vector only at one parameter $s_0$ would leave nonconstant units with $f(s_0)=1$ and would not prove this assertion. The proposition concerns the stated locally standard analytic family category; it does not classify arbitrary nonflat relative regular modules or arbitrary good lattices.
+
+<div id="sec:gg-op-physical-comparisons"></div>
+
+### G.5. Actual physical comparisons and coupled reality
+
+Physical admission is the enriched admission of §8: preserve the complete incidence, calibrated affine/projective data, canonical section and actual full spin lift. It is stronger than preserving a bare contact distribution. Comparisons below are between the same actual source presentations and use their conditioned common parents.
+
+<div id="thm:gg-op-physical-comparisons"></div>
+
+**Theorem G.5.**
+
+Every actual physical source comparison of Theorem 8.3 has an analytic structured operator lift and a comparison of its calibrated supported modules. The lifts have coherent composition, identity and inverse comparisons. Their first negative-order unit action is the original affine action, and their physical Hom sets after normalized comparison are precisely the full-spin Hom sets of §8, with the same map directions. The coupled Lorentz operation of Proposition 8.4 has an antilinear structured lift with its actual square coherence and Real-compatible framed supported modules.
+
+*Proof.* Put $V=R_{a,A}U$. The displayed metric map is
+$\Xi_{a,A}:g[V]\to g[U]$. Use its ray point map $K$ in that direction and quantize $(K^{-1})^*$. Thus local algebra maps have direction
+$k_i:\mathcal E_i^V\to\mathcal E_i^U$.
+The inverse realizes the covariant source instruction $U\to V$; the directions are not interchanged.
+
+Use the actual nonlinear physical amplitude family
+
+$$
+ U_\varepsilon=(\varepsilon U;\varepsilon\Lambda),
+ \qquad V_\varepsilon=R_{a,A}(U_\varepsilon).
+$$ {#eq:gg-op-physical-amplitude}
+
+In general $V_\varepsilon\ne\varepsilon R_{a,A}U$. The record-flow bounds and the actual exponential, transport and hit formulas of §8 give the analytic $K_\varepsilon$ and its inverse on fixed finite conditioned diagrams. Evaluate Theorem F.6 at the passive source family $V_\varepsilon$; its own internal amplitude is an independent variable, set to one after construction. Joint bounds justify this evaluation.
+
+At $\varepsilon=0$ the transformation is the flat translation and the two determinant-one spin actions. Its homogeneous twistor substitution has determinant one and the fixed half-density action on $\mathcal O(-2)$. It supplies the reference quantum map, including its actual parameter dependence. Read the logarithmic derivative of $(K_\varepsilon^{-1})^*$ with the point/operator sign convention of §8.1. After reference identification, Theorem F.4 constructs the initialized local $k_i$. Extra parent restrictions are finite and retain the whole compact sky.
+
+On overlaps the two maps $k_i\varphi^V_{ij}$ and
+$\varphi^U_{ij}k_j$ have the same full classical symbol by Proposition 8.1. Their quotient satisfies Lemma F.8, with bounds from the actual constructed maps and inverses. It gives a unique holomorphic normalized unit $T_{ij}$ such that
+
+$$
+ k_i\varphi^V_{ij}
+       =\operatorname{Ad}(T_{ij})\varphi^U_{ij}k_j,\qquad
+ T_{ij}\varphi^U_{ij}(T_{jk})C^U_{ijk}
+       =k_i(C^V_{ijk})T_{ik}.
+$$ {#eq:gg-op-physical-descent}
+
+For the second equation, compute the inner action of
+$k_i\varphi^V_{ij}\varphi^V_{jk}$ in the two ways. All implementers are unitary with symbol one, so Lemma F.8 makes them equal. Both original associators occur in the equation. A composite physical lift and a selected lift of the composite have the same actual symbol and full spin label; the same lemma compares them. Its uniqueness proves all finite coherence equations, including identities and inverses.
+
+Normalized inner conjugation is trivial on $\mathscr U_1$. Hence the affine map remains exactly
+$(K,d^{-1}\tau+u)$ of Proposition 8.1, with its moving arguments and product law. Keep the actual full $A$, including central elements whose scalar or tensor action has a kernel. Over each fixed admitted physical map and full label, the structured quantum choices form a contractible comparison groupoid. Conversely, physical symbol admission is exactly that of §8, so Theorem 8.3 gives its unique $(a,A)$. Thus the resulting physical Hom classes are the same, without forgetting the label or passing to unfiltered Morita equivalence.
+
+For modules, pull the source and target sky families to a common parameter base by the actual physical map. With their actual flatteners,
+$\psi=L_UkL_V^{-1}$ has generator
+$A_U+L_U(B^k)-\psi(A_V)$.
+Its principal vanishes on the reference Legendrian. Apply Lemma G.2 to
+$\psi_\varepsilon\psi_0^{-1}$, preceded by the fixed reference module map. Theorem G.3's root-symbol normalization and Proposition G.4's entire framing section give actual module comparisons $F_i$ satisfying
+
+$$
+ F_i\tau^V_{ij}=T_{ij}\tau^U_{ij}F_j .
+$$ {#eq:gg-op-physical-module-descent}
+
+Both sides are semilinear for $k_i\varphi^V_{ij}$, have the same root symbol and whole frame, and their ratio is a scalar; hence they agree. The full triple equations above and in Theorem G.3 give descent and coherence. The framing is transported with the actual sky, cone lift, full spin mark and any calibrated base factor, rather than fixed in an old coordinate direction.
+
+For reality, conjugate coefficients and use the actual coupled operation of Proposition 8.4, including both chiral records, their different residue weights and conjugation of $\Lambda$. On conjugate complex manifolds the remaining contact map is holomorphic. The preceding construction quantizes it; a fixed quantized contact chart change handles its reference polarization. Write the resulting maps as
+$J_U:\overline{\mathcal E_U}\to\mathcal E_{\mathfrak cU}$.
+Their square has identity full classical symbol. Lemma F.8 gives its normalized unit $Z_U$ and exact coherence
+
+$$
+ J_{\mathfrak cU}\overline{J_U}
+       =\operatorname{Ad}(Z_U),\qquad
+ J_U(\overline{Z_U})=Z_{\mathfrak cU}.
+$$ {#eq:gg-op-real-square}
+
+For the second equation, transport the first square through $J_U$; both normalized implementers have the same inner action. The same uniqueness proves the descent and finite Real comparison diagrams. This is a Real structure in the structured algebroid category with its specified square isomorphism, rather than an assertion that every selected local map squares strictly to the identity.
+
+The Lorentz sky operation exchanges the two conjugate spin factors. Their product $\mathcal O(-1,-1)$ has an antilinear lift of square one, compatible with the half-canonical root after fixing its calibrated phase. In ordered local coordinates the factor exchange reverses the top-form wedge; the corresponding fixed half-form phase compensates its minus sign. Multiplying an antilinear lift by a unit phase does not change its antilinear square. Fix this compatible phase once with the Lorentz marking. Choose the calibrated cone section on its real null-direction locus and a nonzero compatible real vector along it, and extend holomorphically on the source germ. These compatible choices exist locally and are transported over the source family by the fixed real spin identification and initialized transports.
+
+With these actual compatible root and whole-parameter frames, Theorems G.3–G.4 give the unique framed module comparison
+$j_U:\overline{\mathcal M_U}\to\mathcal M_{\mathfrak cU}$.
+Its square is
+
+$$
+ j_{\mathfrak cU}\overline{j_U}=Z_U\cdot(-).
+$$ {#eq:gg-op-real-module-square}
+
+Both sides have the same semilinearity, actual root symbol and frame, so scalar injectivity proves equality. Higher Real/module diagrams follow in the same way. The antilinear operation is distinct from the complex-linear formal adjoint, and from a one-factor antipodal involution. On real numerical $\Lambda$ and fixed original data its classical metric and physical arrows are exactly the Lorentz ones of Proposition 8.4.
+
+All constructions use the existing finite conditioned physical diagrams and finite buffer restrictions; they do not claim uniformity over unbounded point/spin histories. The actual chiral cotangent and source/ordinary counit contact comparisons can be lifted by the same argument, with their original directions and classical symbols. No point action or point reality on one fixed mixed ordinary background is asserted. ∎
+
+The lifted maps are the physically admitted classical comparisons of §8.
+
+<div id="app:gg-independent-operator-domain"></div>
+
+## Appendix H. Independently admitted operator data
+
+<div id="sec:gg-independent-op-definition"></div>
+
+### H.1. The independent domain
+
+<div id="def:gg-independent-op-domain"></div>
+
+**Definition H.1.**
+
+A calibrated operator presentation consists of local copies of the analytic half-density algebra of F.1, their order filtration, full graded-symbol identifications and complex-linear formal adjoints, with the square and degree-zero duality coherences. Its overlaps are actual filtered adjoint-preserving algebra maps $\varphi_{ij}$ and normalized units $C_{ijk}$ satisfying
+
+$$
+ \varphi_{ij}\varphi_{jk}
+   =\operatorname{Ad}(C_{ijk})\varphi_{ik},\qquad
+ C_{ijk}C_{ikl}=\varphi_{ij}(C_{jkl})C_{ijl},\qquad
+ C_{ijk}^*C_{ijk}=1,\quad \sigma_0(C_{ijk})=1.
+$$ {#eq:gg-independent-op-algebroid}
+
+Presentations and their comparison maps may be restricted to a common finite refinement covering the whole compact characteristic family. In a holomorphic family this may also refine parameter charts over a retained compact parameter set. All algebra maps, associators, torsors, module maps, root square identifications and calibrated frames are restricted together. Restriction is an equivalence of the represented descent data: sections and morphisms glue by their sheaf or module descent equations. Thus two such refinements represent the same object and the same physical arrows; a full spin label is retained under restriction. No global algebra map on an old overlap is required merely because its germs have local quantizations.
+
+The graded-symbol identifications must glue their contact sectors to a separated germ $Y$ along a compact characteristic. Thus $Y$ and its contact line $\mathcal L=\operatorname{gr}_1\mathcal E$ are read from the presentation; the local operator total symbols satisfy the factorial bounds of F.1. Retain a torsor of the intrinsic sheaf $\mathscr U_1$ of F.3, with its translation identification. The symbol identification $\mathscr U_1\simeq\mathcal L^{-1}$ gives its actual affine bundle $A$.
+
+Retain one compact, locally standard order-zero simple module with reduced multiplicity-one Legendrian characteristic $Q\simeq\mathbb P^1\times\mathbb P^1$, with $\mathcal L|_Q=\mathcal O(1,1)$ and ordered rulings. Its complete point family is derived as in H.3. The resulting contact-affine data must satisfy Definition 5.6, including the lifted normal-bundle and projective-extension conditions, the optical root pair $\beta:\mathcal E[1]^2\to\mathcal B$, the marked value $e_o$ and the derived numerical label $\Lambda$.
+
+For a passive parameter base $B$, let $S\to B$ be the total derived point family and $p:F\to S$ its sky projection, as in G.3; for a fixed parameter $S=M$. The module half-canonical root is $R^2=K_{F/S}$, with the canonical-line comparison [@eq:gg-module-relative-canonical-base]. It is distinct from the optical density root. Retain its actual square identification and projective simple-symbol calibration, with any parameter-base factor and its frame. Module framing means a nonzero vector of the rank-one local-system factor on the actual cone for the whole parameter family. Module morphisms are all semilinear module isomorphisms carrying that vector. They are not additionally required to preserve a fixed linear identification $\operatorname{gr}_0\mathcal M=R$ with principal scalar one. Normalized algebra comparison units, separately, have symbol one.
+
+A bounded family has the conditioned finite-diagram margins of Definition 2.1 on common analytic coordinate and operator parents, uniform factorial bounds on the actual operator coordinate images and inverse comparisons, actual locally standard presentations, and upper and lower root/frame margins. Parameter bases are the finite-dimensional germs of Definition 2.1. On a relatively compact smaller representative, a required compact parameter set is kept in full and covered by finitely many parameter charts. In the source construction that set includes the retained amplitude disk containing one. Finite refinement changes the presentation over this same set, rather than selecting a subset of its inputs. The intrinsic incidence and projective-extension inverses have the conditioned margins of D.7–D.9. These are geometric and analytic conditions on supplied data, not membership in a source image.
+
+Physical comparisons preserve the full symbolic incidence, torsor, projective extension and optical calibration, and retain an actual full spin lift of the induced calibrated tangent map. They can carry a central sky to a nearby sky; point displacement is allowed. Their operator and module comparisons obey the actual descent equations below. Normalized comparison isomorphisms lie over the same actual physical map and the same full spin label. Auxiliary cone framings are transported with their local-system identification rather than fixed in an old coordinate direction. Write $\mathfrak O_\Lambda$ for this structured comparison category, with physical Hom sets taken modulo normalized comparison isomorphisms.
+
+No metric, independent dual-twistor class or four-dimensional spacetime solution is input in this definition. The torsor and projective condition are substantive structure; they are not claimed to follow from the bare algebra or a characteristic support.
+
+<div id="sec:gg-general-relative-qct"></div>
+
+### H.2. Actual local contact comparisons
+
+<div id="lem:gg-general-relative-qct"></div>
+
+**Lemma H.2.**
+
+A holomorphic family of actual contact chart maps with actual inverses and conditioned common parents has local analytic filtered adjoint-preserving quantizations of its inverse pullback, with uniform factorial estimates after fixed finite restrictions. Their normalized comparison groupoid is contractible. Supplied structured comparisons with bounded coordinate images have actual skew logarithmic generators of order at most one along holomorphic parameter paths. All finite composition, identity and inverse comparison diagrams are coherent.
+
+*Proof.* Work with $\alpha=dz+p_i\,dq^i$ and center a source contact point at zero. If its image is $a=(z_0,q_0,p_0)$, remove it by
+
+$$
+ T_a(z,q,p)=(z+z_0-p_0\cdot q,\ q+q_0,\ p+p_0).
+$$ {#eq:gg-qct-contact-translation}
+
+This preserves $\alpha$ and is the contact cotangent lift of an ordinary base substitution, with its exact half-density action.
+
+For a contact germ fixing zero, use the dilations
+$\delta_s(z,q,p)=(s^2z,sq,sp)$.
+Its weighted leading map has the form
+
+$$
+ S(z,q,p)=(\lambda z+Q(q,p),L(q,p)),\qquad
+ L^*d(p\,dq)=\lambda\,d(p\,dq),\qquad
+ dQ=\lambda p\,dq-L^*(p\,dq).
+$$ {#eq:gg-qct-weighted-leading}
+
+The last one-form is closed and linear in the coordinates, so its quadratic primitive with zero constant is unique. In particular $L$ is conformal symplectic. Removing $S$ gives a remainder $R$ with weighted leading identity.
+
+The conformal symplectic group is connected. At one fixed reference matrix choose a finite product of Lie-algebra exponentials. Near it, the remaining near-identity matrix has a holomorphic logarithm. Their contact paths are generated by Hamiltonians quadratic in $(q,p)$ and linear in $z$. A finite path and its inverse have common small spatial tubes. Symplectization gives degree-one Hamiltonians; F.1 and Theorem F.4 quantize these paths with the required bounds.
+
+For the nonlinear remainder take the actual path
+
+$$
+ R_s=\delta_s^{-1}R\delta_s,\qquad R_0=\mathrm{id}.
+$$ {#eq:gg-qct-weighted-path}
+
+The remainders in $(q,p)$ have weight at least two and that in $z$ has weight at least three. Their scaled Taylor terms therefore have strictly positive powers of $s$. After one weighted spatial restriction, both this series and its actual inverse converge normally on an $s$-disk containing $[0,1]$. The contact multiplier is one at $s=0$ and has a common unit margin after restriction. The given map and inverse Cauchy bounds thus supply an actual classical tube. Read the Hamiltonian of the inverse-pullback logarithmic derivative, with the sign convention of §5, and apply F.1 and Theorem F.4. Composing the three factors quantizes exactly the supplied contact map.
+
+Bounded weighted first jets and inverse jets have compact closure in the finite-dimensional conformal symplectic group. Finitely many reference neighborhoods suffice, with maximum constants and a common finite spatial shrink. The other constants depend on the stipulated map, inverse and parent margins. This proves uniformity on the conditioned diagrams, without a global matrix logarithm or a strict global quantizer.
+
+For a supplied comparison $\varphi$ and a constructed controlled comparison $k$ with the same full symbols, first use the left quotient
+
+$$
+ \psi=k^{-1}\varphi,\qquad
+ \psi(y_i)-y_i=k^{-1}\bigl(\varphi(y_i)\bigr)-y_i .
+$$ {#eq:gg-qct-controlled-left-quotient}
+
+The known bounds for $k^{-1}$ act on the stipulated bounded coordinate-image families of $\varphi$. Lemma F.8 gives a normalized source unit $Q$ with $\psi=\operatorname{Ad}(Q)$. Hence
+$\varphi=\operatorname{Ad}(P)k$ with $P=k(Q)$, including uniform bounds for $P$ and its inverse. No uniform action of the unknown $\varphi$ on an arbitrary symbol family was presumed. Two supplied quantizers are each compared with the same constructed $k$; their target units $P,P'$ give the comparison $P'P^{-1}$. Lemma F.8's uniqueness proves all finite coherence equations and glues the local parameter choices up to that unique comparison.
+
+For the generator assertion, let
+$\dot k_t=\operatorname{ad}(B_t)k_t$, initialized by $k_0=\mathrm{id}$ independently of a passive parameter $\mu$. Differentiating $k_t^{-1}\partial_\mu k_t$ gives
+
+$$
+ \partial_\mu k_t\,k_t^{-1}=\operatorname{ad}(A_\mu(t)),
+ \qquad
+ A_\mu(t)=k_t\int_0^t k_u^{-1}(\partial_\mu B_u)\,du .
+$$ {#eq:gg-qct-passive-generator}
+
+Theorem F.4 and one parameter Cauchy gap give its order-one skew symbol bounds. Ordinary parameter-dependent substitutions have their explicit first-order half-density generators; fixed reference factors are independent of these parameters. Finite products use the transported sum. Finally, from $\varphi_s=\operatorname{Ad}(P_s)k_s$ its actual generator is
+
+$$
+ A_s^\varphi=P_s'P_s^{-1}
+                  +\operatorname{Ad}(P_s)A_s^k .
+$$ {#eq:gg-qct-given-generator}
+
+The first term is skew of order at most minus one, and the second is skew of order at most one. This is the generator of the supplied comparison, rather than a new principal lift. ∎
+
+<div id="sec:gg-independent-module-points"></div>
+
+### H.3. Complete point objects from a compact characteristic
+
+<div id="prop:gg-independent-module-points"></div>
+
+**Proposition H.3.**
+
+The compact characteristic in Definition H.1 determines a complete smooth four-dimensional support germ and its actual calibrated supported-module family. With proper smooth supports and actual locally standard holomorphic presentations, its framed module comparisons are unique. The construction has the same conditioned analytic bounds and finite jets of holomorphic families as Appendix G. It does not classify arbitrary flat relative regular modules.
+
+*Proof.* The contact normal sequence is
+
+$$
+ 0\longrightarrow\Omega_Q^1\otimes\mathcal L
+   \longrightarrow N_{Q/Y}\longrightarrow\mathcal L
+   \longrightarrow0,\qquad
+ \Omega_Q^1\otimes\mathcal L
+     =\mathcal O(-1,1)\oplus\mathcal O(1,-1).
+$$ {#eq:gg-independent-op-normal-sequence}
+
+Its left term has zero cohomology in every degree. Thus
+$H^0N=H^0\mathcal O(1,1)$ has dimension four and $H^1N=0$.
+Lemma D.1 gives the complete support germ; D.7 also proves polarized-quadric preservation and Legendrianness. This derives the family from the single compact characteristic.
+
+For a smooth parameter germ $B$ of dimension $d$, the relative contact atlas has an ordinary smooth total ambient $Y_{\mathrm{tot}}$. The central total normal sequence has quotient $\mathcal O_Q^d$ and kernel $N_{Q/Y_0}$. Its $H^1$ vanishes and its $H^0$ has dimension $4+d$, so Lemma D.1 gives the total complete family. The same polarization argument of D.7 makes nearby members compact quadrics. Their holomorphic functions are constant; proper base change for $\mathcal O$ therefore makes the ambient projection descend to a holomorphic map of the complete base to $B$. Its tangent is the surjection $H^0(N_{Q/Y_{\mathrm{tot}}})\to\mathbb C^d$. The finite implicit theorem gives the actual relative four-dimensional family. Denote its total point base by $S$; thus $S\to B$ has relative dimension four and the sky projection is $p:F\to S$, consistently with G.3 and H.1. This uses the fixed ordinary total ambient, not a general relative theorem over nilpotent ambients.
+
+The full normal evaluation is the first-jet evaluation. In affine coordinates $(\varrho,\zeta)$ its matrix and kernel are
+
+$$
+ \begin{pmatrix}
+ 1&\varrho&\zeta&\varrho\zeta\\
+ 0&1&0&\zeta\\
+ 0&0&1&\varrho
+ \end{pmatrix},\qquad
+ \ker=\mathbb C(\varrho\zeta,-\zeta,-\varrho,1).
+$$ {#eq:gg-independent-op-jet-evaluation}
+
+It has rank three and its kernel lines form the entire nondegenerate Segre quadric. The universal incidence evaluation $q:F\to Y_{\mathrm{tot}}$ has relative rank five over $B$ and total rank $5+d$; both differentials have a line kernel. D.7 identifies it with the same conformal null incidence and short rays, before Einstein recognition.
+
+For a fixed actual algebroid, flatten the moving skies by $L_i(x)$. Along $x=ax$, the comparison
+$\psi_{ij}=L_i\varphi_{ij}L_j^{-1}$
+has actual generator $A_i-\psi_{ij}(A_j)$ because $\varphi_{ij}$ is point independent. It preserves the reference Legendrian, so its principal generator vanishes there. Apply Lemma G.2 to
+$\psi_a\psi_0^{-1}$ and the given initial intertwiner. This is the construction of G.3 with $B_{ij}=0$, with no flat-source assumption.
+
+For parameterized algebroids, Lemma H.2 supplies their actual $B_{ij}$, so the flattened generator is
+$A_i+L_i(B_{ij})-\psi_{ij}(A_j)$.
+Contraction of the small parameter coordinate germ, with the remaining variables passive, gives joint Hom generators from one fixed reference. Root-symbol normalization gives exactly
+$\tau_{ij}\tau_{jk}=C_{ijk}\tau_{ik}$.
+The finite compact cover, tangent transport and inverse estimates are those of G.1–G.3.
+
+For a holomorphic family of supports, its classifying map is unique locally. In the complete family choose four nearby grid points of one affine sky chart. Evaluation of $H^0\mathcal O(1,1)$ there is an isomorphism, so their four contact graph values give coordinates by the finite inverse theorem. Equal embedded supports have the same four values and hence the same point parameter. This uses actual graph evaluations in addition to the tangent dimension.
+
+Over a fixed support family the Hom line is the actual rank-one $\mathcal O_S$ line of G.4. Root frames first construct and glue it and a local-symbol-normalized comparison. Locally on the parameter base, a single global unit along the complete sky/cone then adjusts its section to carry the entire local-system vector. This scalar is not constrained again by a fixed linear root identification: frames $e$ and $2e$ on the same module are compared by $2\,\mathrm{id}$.
+
+The auxiliary cone section is fixed on the derived family and pulled back, or its vector is read by the canonical transport in the simply connected cone local system. It is not an independent sky-direction modulus. Relative root choices retain their actual square identifications and base factors; on the parameter germ their ratio is a base two-torsion line, whose calibrated root comparison is unique. These facts give the stated framed comparisons and parameter restrictions. No general microdifferential-module flatness or nonlifted Artin-family classification has entered the proof. ∎
+
+<div id="sec:gg-independent-op-equivalence"></div>
+
+### H.4. Both inverse comparisons on the independent domain
+
+<div id="thm:gg-independent-op-equivalence"></div>
+
+**Theorem H.4.**
+
+Taking full symbols, compact characteristics and the intrinsic first-unit torsor gives an equivalence between the independently admitted operator data of Definition H.1 and the calibrated affine data of Definition 5.6. It has actual inverse comparisons on the whole independent domains, coherent on conditioned bounded holomorphic families and finite physical diagrams. It preserves the selected optical section, numerical scalar, all physical point/full-spin Hom classes and the coupled Lorentz operation.
+
+*Proof.* Write $\mathfrak C_\Lambda$ for the calibrated affine category. Taking the classical data while forgetting the remaining operator choices defines
+$F:\mathfrak O_\Lambda\to\mathfrak C_\Lambda$.
+Proposition H.3 supplies its complete incidence. Definition H.1 supplies the affine/projective admission of Definition 5.6.
+
+Conversely take any $\mathfrak C_\Lambda$ object. We first choose a finite refinement on which every overlap has a single quantization. In a bounded family retain the required compact passive-parameter set $B_0$. At every vertex $v$ of the fixed finite physical diagram choose a compact point core $S_v^0\Subset S_v$ containing all the required endpoints and composite images over $B_0$. Let
+
+$$
+ K=\bigcup_v q_v\bigl(p_v^{-1}(S_v^0)\bigr).
+$$ {#eq:gg-quantization-whole-diagram-core}
+
+Each sky projection $p_v$ is proper, so $K$ is compact; take the finite disjoint union of the vertex ambients when necessary. The point cores keep the entire stipulated diagram and passive-parameter set. All later restrictions concern neighborhoods of this same $K$, including its moving skies, rather than selecting a subset of the original inputs. Enlarge it to a compact neighborhood $K^+$ inside the supplied parents, with $K$ in its interior. Choose finitely many original chart parents $U_i$ and closed subsets $K_i\Subset U_i$ covering $K^+$. At $y\in K^+$ put $I_y=\{i:y\in K_i\}$. Lemma H.2 gives, near $y$, quantizers and inverses for all pairs of original charts with indices in this finite set. Choose nested neighborhoods $V_y\Subset V_y^+$ inside all these quantization parents, and disjoint from every $K_j$ with $j\notin I_y$. Finite intersections reserve the parents for each map and its inverse. All choices are in the total space, so they include the required local parameter neighborhoods.
+
+A finite closed-star refinement $\{W_a\}$ of $\{V_y\}$ covers $K$ and has each closed star contained in one $V_y$. To obtain it, take a finite subcover on the compact metrizable set $K^+$ and a Lebesgue number $\lambda>0$. Put $d=\operatorname{dist}(K,Y_{\mathrm{tot}}\setminus K^+)>0$ and use ambient metric balls centered on $K$ of radius $\rho<\min(\lambda/8,d/4)$. Each closed star has diameter at most $6\rho<\lambda$ and lies in $K^+$. A finite subcover of $K$ therefore has the required property. Choose $x_a\in W_a\cap K$ and an original index $i(a)$ with $x_a\in K_{i(a)}$. If $W_a\cap W_b\ne\varnothing$, a single $V_y$ contains both sets and their closures. Since it contains $x_a,x_b$ and avoids $K_j$ for $j\notin I_y$, both $i(a),i(b)$ belong to $I_y$. Its chosen quantizer for that pair is therefore defined on a parent of the entire new overlap. On that overlap restrict this quantizer to obtain $\varphi_{ab}$, and define the reverse as its literal inverse. The closed-star buffer, taken before restriction, is a positive Cauchy buffer for these maps. For the specified finite composite diagram, intersect each source neighborhood with the preimages of the assigned target parents along its composites, and take a finite closed shrinking once more. The compact cores are retained because each stipulated composite already has its image in its target parent with positive buffer. This constructs maps on the new overlaps; coherence is the following separate step.
+
+On a triple the classical cocycle makes
+$D_{abc}=\varphi_{ab}\varphi_{bc}\varphi_{ac}^{-1}$ have identity full symbols. Lemma F.8 supplies local normalized units for it. Their uniqueness makes them agree on intersections, so they give one $C_{abc}$ on the entire triple, with uniform bounds from the finite compact cover. The two units
+$C_{abc}C_{acd}$ and $\varphi_{ab}(C_{bcd})C_{abd}$ implement the same inner automorphism on a quadruple and have symbol one and unitary adjoint; injectivity in Lemma F.8 makes them equal. Thus the full algebroid equation, not only the pairwise maps, holds on this refinement. The constants are maxima over finitely many parents and the buffers and unit margins are their positive minima. They do not depend on homogeneous order. This uses local quantization and normalized-inner uniqueness, not a claim that the twisted-algebra classification of [@Polesello2005, Corollary 1.6] trivializes every old overlap.
+
+Keep the same torsor under $\mathscr U_1\simeq\mathcal L^{-1}$, with its restricted cochains. Pull this finite operator cover to the complete incidence and choose H.3's finite graph/module charts over it. Carry any extra chart indices in all pulled-back algebra data as well. Restrict the relative root, its square identification and all base factors to those same charts. Proposition F.3 supplies the static central module and H.3 constructs its family there. The root transitions obey their exact cocycle; G.3's symbol normalization then gives $\tau_{ab}\tau_{bc}=C_{abc}\tau_{ac}$ with these same $C_{abc}$. Its tangent transports and their inverses have the retained buffers, so taking the finite maxima gives the common module bounds. The whole-parameter calibrated vector is restricted, not reselected at each parameter. This defines $Q:\mathfrak C_\Lambda\to\mathfrak O_\Lambda$ without first decoding an Einstein metric. The composition $FQ$ is the original contact-affine object under the restriction equivalence of H.1, with its tautological complete-family identifications.
+
+For an independently supplied operator object compare it to $QF$ on a common chart refinement obtained by applying the same closed-star construction to the union of their finite chart families and identity comparisons. This retains the same compact parameter set and admits all maps in the finite comparison diagram on buffered parents. Lemma H.2 quantizes the actual identity contact comparison in these possibly different chart coordinates. Its normalized overlap units satisfy
+
+$$
+ \begin{aligned}
+ k_i\varphi^{s}_{ij}
+   &=\operatorname{Ad}(T_{ij})\varphi^{t}_{ij}k_j,\\
+ T_{ij}\varphi^{t}_{ij}(T_{jk})C^{t}_{ijk}
+   &=k_i(C^{s}_{ijk})T_{ik}.
+ \end{aligned}
+$$ {#eq:gg-independent-op-two-inverse-descent}
+
+Indeed the two expansions of
+$k_i\varphi^s_{ij}\varphi^s_{jk}$
+have the same inner action. Both implementers are normalized, so Lemma F.8 makes them equal. Both associators are retained.
+
+The module comparisons $F_i$ obey
+
+$$
+ F_i\tau^s_{ij}=T_{ij}\tau^t_{ij}F_j .
+$$ {#eq:gg-independent-op-module-counit}
+
+Construct their Hom line by the actual flattened tangent transport of H.3, normalize its projective root symbols and then its whole local-system vector. The two sides have the same semilinearity and global normalization, so scalar injectivity proves equality. The $\mathscr U_1$-torsor action is literally the original affine comparison, since normalized inner changes act trivially on this sheaf.
+
+If $k'_i=\operatorname{Ad}(P_i)k_i$, the two normalized overlap implementers give
+
+$$
+ T'_{ij}\varphi^t_{ij}(P_j)=P_iT_{ij}.
+$$ {#eq:gg-independent-op-counit-uniqueness}
+
+Their module maps are compared by $P_iF_i$ and framed Hom uniqueness. Hence $QF$ is canonically equivalent to the supplied object. On a further common refinement all comparison equations restrict literally, and any two choices are compared by the unique normalized units and framed Hom maps just constructed. Consequently these equations descend independently of the auxiliary cover. The unit/counit triangle, composition and finite naturality diagrams follow from these exact uniqueness statements. This compares actual representatives, rather than just their original records.
+
+The symbols of an admitted physical comparison preserve the entire affine/projective calibration. D.8 and Proposition 5.4 recover the selected metric naturally, so that map is an isometry. Its full spin lift gives the distinct label of Theorem 8.3. Conversely Lemma H.2 and H.3 lift each such physical comparison. Thus the physical Hom classes agree, including spin-center distinctions not detectable by the scalar action.
+
+The coupled antilinear construction and normalized square of Theorem G.5 use the same comparisons and compatible root/local-system frames. The preceding uniqueness transports its square and finite Real diagrams. On the declared Lorentz slice it gives Proposition 8.4's physical real structure. Every parameter comparison used the given common parents, finite refinements and unit margins; finite jets are taken from those holomorphic families. ∎
+
+<div id="sec:gg-independent-op-active-comparison"></div>
+
+### H.5. The same source operation and preservation obstruction
+
+<div id="prop:gg-independent-op-active-comparison"></div>
+
+**Proposition H.5.**
+
+The equivalence of Theorem H.4 identifies the actual operator source construction with the same coupled contact-affine law, including its higher preservation correction. Its independently read holomorphic obstruction is the cochain of D.9, with the same derivative $o_m$ and the same inverse $L_m$ on the zero-record complement. Its Einstein consequence is Proposition 5.4.
+
+*Proof.* Use F.1's positive differential operator and its complete negative symbol formula, with the fixed skew lift. The latter is a direct formula in the original $U^-_{r;a,j}$ and the original twistor coordinates and derivative momenta. The dual class $G$ used to derive it is not a separate execution primitive.
+
+At a trial operator stage, the regular compact seed gives the characteristic-family construction of H.3 and F.3 gives the intrinsic first-unit translation sheaf. Retain the calibrated affine reduction of the preceding corrected stage and choose provisional section-state lifts at the next order. Lemma I.1 reads their actual defect on the freshly recomputed incidence; its vanishing supplies the next affine reduction. A particular torsor is not manufactured by the bare algebra. Projective-extension admission is not assumed before this defect vanishes. Its states and matrices are exactly those of D.9. In particular,
+
+$$
+ T_{ij}=(G_i\circ\Phi_{ij})^{-1}B_{ij}G_j,\qquad
+ (G_i\circ\Phi_{ij})^{-1}r_{ij}=e_1-T_{ij}e_1.
+$$ {#eq:gg-independent-op-same-obstruction}
+
+Thus its entries are $1-T_{11}$ and $-T_{21}$, the same actual connecting cochain. Its derivative on the fixed zero-record complement is $o_m$. The same $L_m$ and original record correction remove it, followed by fresh incidence, root, matrices and scalar recomputation. Lemma 5.1's cubic-gauge induction applies to this actual source execution; it is not inferred from a first point jet.
+
+At finite source stages the incidence graphs are the explicit finite-coefficient construction of Proposition 5.2. Lift each corrected Hamiltonian by F.1. Theorems F.1 and F.6 give finite and analytic structured comparisons, Lemma F.8 supplies their actual normalized comparisons, and Appendix G supplies the full module families. Their full symbols and first-unit torsor are the same corrected tuple. Proposition F.7 compares the finite active recursion with their amplitude jets by compatible normalized filtered inner equivalence. This requires neither equality nor convergence of another auxiliary infinite quantum section.
+
+The mixed principal commutator is $t\{h,k\}$, while the raw order-minus-one Weyl correction of F.3 remains. No strict affine Lie embedding has replaced that correction. These are actual operations in the same fixed projective Heisenberg half-density model, with its intrinsic derived sheaves and point objects.
+
+The projective extension and calibrated root of Definition H.1 supply the whole optical section. Proposition 5.4 gives Einsteinity with the same numerical scalar, and $L_m$ is the same inverse of the optical obstruction on the zero-record complement. Proposition 9.2 exhibits a nonzero obstruction before correction; the flat-scale calculation of Proposition I.3 identifies the role of the calibrated scale data. ∎
+
+Theorem H.4 and Proposition H.5 give both inverse comparisons and identify the active preservation law on the independent operator domain. Appendix I identifies its infinity structure with the normal tractor and rank-four local-twistor forms, and assembles the primitive, admission and point comparisons used in Theorem 9.11.
+
+<div id="app:gg-original-positive-comparison"></div>
+
+## Appendix I. Infinity structure and the original twistor model
+
+<div id="sec:gg-preadmission-reduction"></div>
+
+### I.1. The calibrated reduction before admission
+
+<div id="lem:gg-preadmission-reduction"></div>
+
+**Lemma I.1.**
+
+The intrinsic first-unit translation sheaf does not select a particular affine torsor on an uncorrected trial. At that stage the obstruction to extending the previously calibrated optical reduction is the cochain of D.9. Its vanishing supplies the actual next calibrated affine torsor.
+
+*Proof.* Recompute the trial compact incidence and its optical transitions $B_{ij}$. Choose provisional local section states $s_i=(\sigma_i,\dot\sigma_i)^T$, lifting the preceding corrected reduction, in the retained Cauchy charts where $\sigma_i$ is a unit. Use exactly $G_i=\left(\begin{smallmatrix}\sigma_i&0\\\dot\sigma_i&\sigma_i^{-1}\end{smallmatrix}\right)$, so $\det G_i=1$. The fixed unit margins persist under these highest-order lifts. Set
+
+$$
+ r_{ij}=s_i\circ\Phi_{ij}-B_{ij}s_j,\qquad
+ T_{ij}=(G_i\circ\Phi_{ij})^{-1}B_{ij}G_j .
+$$ {#eq:gg-preadmission-actual-states}
+
+Then direct multiplication gives
+
+$$
+ (G_i\circ\Phi_{ij})^{-1}r_{ij}
+       =e_1-T_{ij}e_1
+       =\begin{pmatrix}1-T_{11}\\-T_{21}\end{pmatrix}.
+$$ {#eq:gg-preadmission-exact-defect}
+
+When this cochain is zero, $T_{ij}$ fixes $e_1$. Its determinant is the contact-line factor $c_{ij}$, so it has the form
+$\left(\begin{smallmatrix}1&b_{ij}\\0&c_{ij}\end{smallmatrix}\right)$.
+With the companion and ratio convention of D.9,
+$a_{ij}=-b_{ij}/c_{ij}$ and
+$\tau_i=c_{ij}^{-1}\tau_j+a_{ij}$.
+The matrix cocycle is exactly the affine cocycle with all moving arguments. Before vanishing, a general $T_{ij}$ is not such an affine transition. F.3 provides its translation sheaf $\mathscr U_1\simeq\mathcal L^{-1}$; it does not remove this reduction obstruction or manufacture a distinguished torsor from the bare ring. The same calculation applies at a highest finite stage. ∎
+
+<div id="sec:gg-projective-infinity-structure"></div>
+
+### I.2. The intrinsic infinity-structure predicate
+
+<div id="def:gg-projective-infinity-structure"></div>
+
+**Definition I.2.**
+
+The projective infinity structure on an operator presentation is its actual first-unit affine torsor, the induced projective optical extension, optical density root and central calibration. Its admission predicate is the whole-neighborhood holomorphic extension condition of Definition H.1, with its derived numerical scalar. The predicate is defined on these primitive holomorphic data before Einstein recognition. A compact point object means the calibrated locally standard supported simple module of H.1–H.3.
+
+This definition specifies the projective alternative used here. It does not assert a literal equivalence with every presentation of the speculative unreduced Palatial algebra.
+
+<div id="prop:gg-geometric-infinity-structure"></div>
+
+**Proposition I.3.**
+
+The admitted projective infinity structure is equivalent to the calibrated nonvanishing parallel normal tractor of norm $-\Lambda/3$. Its local-twistor spin realization has the infinity tensors and numerical normalization of the original gravitational construction, including their degeneration at $\Lambda=0$. The correspondence is natural for the actual physical operator comparisons and their full spin lifts. On the Lorentz slice it has the original local phase-scaled ray and point fibers.
+
+*Proof.* D.8 and Proposition 5.4 identify the holomorphic projective extension and root with a nonvanishing density $\sigma$ satisfying
+
+$$
+ (\nabla_a\nabla_b\sigma+P_{ab}\sigma)_0=0 .
+$$ {#eq:gg-original-infinity-almost-einstein}
+
+Its normal prolongation is parallel, has norm $-\Lambda/3$, and selects $g=\sigma^{-2}g_{\mathrm{aux}}$. Conversely the parallel section with the retained unit scale component gives this equation and D.8's projective extension. The two constructions are inverse comparisons preserving the actual root and central value.
+
+Here is an explicit spin and sign comparison. Put $c=\Lambda/6$ and use the selected Einstein scale, where the standard Schouten tensor is $P=cg$. Let $J=\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$ in the marked spin bases. Write $\theta_v$ for the tangent soldering matrix, with
+$g(v,w)=\operatorname{tr}(\theta_v\theta_w^\sharp)$ and $\theta^\sharp=\operatorname{adj}(\theta)$. Represent the raised middle tractor component by the matrix $\mu$. Define
+
+$$
+ \Omega_v=
+ \begin{pmatrix}0&i\theta_v\\ic\theta_v^\sharp&0\end{pmatrix},
+ \qquad
+ \mathcal F(\sigma,\mu,\rho)=
+ \begin{pmatrix}
+ \rho J&-iJ\mu\\-i\mu^TJ&\sigma J
+ \end{pmatrix}.
+$$ {#eq:gg-original-infinity-spin-connection}
+
+The matrix $\mathcal F$ is a covariant alternating form on the rank-four local-twistor bundle $\mathcal T_{\mathrm{LT}}$, with marked conformal splitting $S\oplus S'$. Its Spin representation differs from that of the middle bundle $W_{\mathrm{scr}}\simeq TM$, which has type $S\otimes S'$. For its induced covariant connection
+$D^{\wedge}K=\nabla K-\Omega^TK-K\Omega$,
+ordinary two-by-two multiplication gives
+
+$$
+ \begin{aligned}
+ D_v^\wedge\mathcal F(\sigma,\mu,\rho)
+   =\mathcal F\bigl(&d_v\sigma-g(v,\mu),\\
+                   &\nabla_v\mu+(c\sigma+\rho)\theta_v,\\
+                   &d_v\rho-cg(v,\mu)\bigr),\\
+ 2\operatorname{Pf}\mathcal F(\sigma,\mu,\rho)
+   &=2\sigma\rho+g(\mu,\mu).
+ \end{aligned}
+$$ {#eq:gg-original-infinity-exterior-square}
+
+For example $(\theta^\sharp)^TJ=J\theta$ and
+$JX+X^TJ=\operatorname{tr}(X)J$ prove the connection identity; the Pfaffian is $\sigma\rho+\det\mu$. Thus this is exactly the normal tractor connection and its quadratic form in §4, including its soldering, scale and norm signs.
+
+The selected tractor is $(1,0,-c)$ in this scale. Its covariant spin form and volume dual are therefore
+
+$$
+ I_{\alpha\beta}=\operatorname{diag}(-cJ,J),\qquad
+ I^{\alpha\beta}=\operatorname{diag}(J,-cJ),\qquad
+ I_{\alpha\beta}I^{\beta\gamma}
+                   =c\,\delta_\alpha{}^\gamma .
+$$ {#eq:gg-original-infinity-product}
+
+Both forms are parallel, and $2\operatorname{Pf}(I)=-2c=-\Lambda/3$. The initial full spin marking fixes the volume used in the dual and the entire identification. Their ranks are four for $c\ne0$ and two at zero.
+
+The curvature-component dictionary is ([-@eq:gg-original-infinity-curvature-dictionary]); in particular, $\Lambda_{\mathrm P}=-\Lambda$ and $P^{\mathrm P}=P$, while the prescribed Einstein coefficient $\Lambda$ is unchanged. The spinor component dictionary requires a separate declaration. For this comparison only, use the numerical arrays
+
+$$
+ \begin{gathered}
+ [\varepsilon^{\mathrm P}_{AB}]
+ =[\varepsilon_{\mathrm P}^{AB}]
+ =[\varepsilon^{\mathrm P}_{A'B'}]
+ =[\varepsilon_{\mathrm P}^{A'B'}]=J,\\
+ u^A=\varepsilon_{\mathrm P}^{AB}u_B,\qquad
+ u_A=u^B\varepsilon^{\mathrm P}_{BA},
+ \end{gathered}
+$$ {#eq:gg-original-infinity-external-spinor-convention}
+
+with the same order in the primed operations. Raising acts on the left and lowering on the right. On coefficient columns these are respectively $J$ and $-J$, so they are inverse operations. In particular,
+$\varepsilon^{\mathrm P}_{AB}\varepsilon_{\mathrm P}^{CB}=\delta_A{}^C$,
+whereas contraction in the order $AB,BC$ gives $-\delta_A{}^C$. These comparison arrays are distinct from the arrays in ([-@eq:gg-spin-index-convention]): the lower arrays agree numerically, the upper arrays have opposite signs, and the lowering operation uses the opposite side. Thus an upper $\varepsilon_{\mathrm P}$ in a primary block formula cannot be replaced by the upper $\epsilon$ of §2.
+
+This reading agrees with the primary coordinate normalization. Its unnumbered formulas for $\delta\pi$ and $\tfrac12\mathrm d\delta\pi$ give
+$\delta\pi=\varepsilon_{\mathrm P}^{F'G'}\pi_{F'}\mathrm d\pi_{G'}$
+and $\tfrac12\mathrm d\delta\pi=\mathrm d\pi_{0'}\wedge\mathrm d\pi_{1'}$, which fix $\varepsilon_{\mathrm P}^{0'1'}=1$ in those coordinates [@Penrose2015, p. 5]. The primary article does not explicitly prescribe the side of the two-spinor raising and lowering operations. The operations just declared specify our component comparison rather than attribute an unstated historical convention to it.
+
+Here is the calibrated basis map. If $(b_0,b_1,b_{0'},b_{1'})$ is the ordered rank-four frame used above, identify the primary ordered twistor column $(\omega^0,\omega^1,\pi_{0'},\pi_{1'})^T$ with
+
+$$
+ C(\omega,\pi)
+   =\omega^0b_0+\omega^1b_1
+                         +\pi_{0'}b_{0'}+\pi_{1'}b_{1'} .
+$$ {#eq:gg-original-infinity-external-basis}
+
+Thus $[C]=\operatorname{Id}_4$ in the indicated frames. The second slot is identified using the covariant primed coefficient column itself, not a column obtained by applying the raising rule of §2. The map on covectors is the inverse transpose, and the map on bivectors is the exterior square of $C$; these are not independent choices. Calibrate the two twistor volumes by
+$\varepsilon^{\mathrm P}_{0123}=1=\varepsilon_{\mathrm P}^{0123}$,
+as in the primary unnumbered duality formulas [@Penrose2015, p. 7]. Since $\det C=1$, this is the volume fixed by the existing full spin marking.
+
+Write $\lambda_{\mathrm P}=\Lambda_{\mathrm P}/6=-c$. In these ordered coordinates the primary displays become
+
+$$
+ \begin{aligned}
+ I^{\mathrm P}_{\alpha\beta}
+   &=\operatorname{diag}
+          (\lambda_{\mathrm P}\varepsilon^{\mathrm P}_{AB},
+                                  \varepsilon_{\mathrm P}^{A'B'})
+     =\operatorname{diag}(-cJ,J),\\
+ I_{\mathrm P}^{\alpha\beta}
+   &=\operatorname{diag}
+          (\varepsilon_{\mathrm P}^{AB},
+                        \lambda_{\mathrm P}\varepsilon^{\mathrm P}_{A'B'})
+     =\operatorname{diag}(J,-cJ),\\
+ I_{\mathrm P}^{\alpha\beta}
+   &=\tfrac12\varepsilon_{\mathrm P}^{\alpha\beta\rho\sigma}
+                                    I^{\mathrm P}_{\rho\sigma},
+ \qquad
+ I^{\mathrm P}_{\alpha\beta}I_{\mathrm P}^{\beta\gamma}
+      =-\lambda_{\mathrm P}\delta_\alpha{}^\gamma .
+ \end{aligned}
+$$ {#eq:gg-original-infinity-external-volume-forms}
+
+Indeed the volume dual has $01$ entry $I^{\mathrm P}_{23}=1$ and $23$ entry $I^{\mathrm P}_{01}=\lambda_{\mathrm P}$; all mixed entries vanish. Its product with the covariant matrix is $-\lambda_{\mathrm P}\operatorname{Id}_4$, since $J^2=-\operatorname{Id}_2$. Conversely the same lower volume recovers the covariant form. Starting with the primary normalization $\varepsilon_{\mathrm P}^{0'1'}=1$, these duality and product displays force the other three alternating arrays to be $J$ when $\lambda_{\mathrm P}\ne0$; the same fixed arrays give their rank-two degeneration at zero [@Penrose2015, pp. 7–8]. Consequently $C$ carries both tensors together, their volume duality, their product and their ranks to ([-@eq:gg-original-infinity-product]).
+
+The transport comparison uses the same basis map. Read the primary tangent matrix $[t^{AA'}]$ as $\theta_v$. Since $P^{\mathrm P}=cg$, its lower spinor components are
+$P^{\mathrm P}_{AA'BB'}=c\varepsilon^{\mathrm P}_{AB}\varepsilon^{\mathrm P}_{A'B'}$.
+For an arbitrary $\theta_v=\left(\begin{smallmatrix}a&b\\d&e\end{smallmatrix}\right)$, contraction gives
+
+$$
+ \left[
+  \sum_{A,A'}t^{AA'}P^{\mathrm P}_{AA'BB'}
+ \right]_{B'B}
+   =c\begin{pmatrix}e&-b\\-d&a\end{pmatrix}
+   =c\theta_v^\sharp .
+$$ {#eq:gg-original-infinity-external-transport}
+
+Thus the primary equations
+$\nabla_v\omega^B=-it^{BB'}\pi_{B'}$ and
+$\nabla_v\pi_{B'}=-it^{AA'}P^{\mathrm P}_{AA'BB'}\omega^B$
+are $\nabla_v(\omega,\pi)^T=-\Omega_v(\omega,\pi)^T$ in this calibration [@Penrose2015, p. 12]. The initialized map $C$ therefore intertwines the connections as well as both infinity tensors. This comparison uses no metric rescaling, no inverse infinity form and no division by $\Lambda$.
+
+Along every short null ray the initialized local-twistor ODE has a four-dimensional solution space and carries these same forms. Conversely constancy of a calibrated tractor along all null directions implies its full parallelism, since the null vectors span each tangent space. This explains the original raywise infinity structure without imposing any Weyl-type restriction.
+
+For a normalization test put $q=\eta_{ab}x^ax^b$ and $\sigma_C=1+Cq$ on a flat conformal carrier. Its Hessian is pure trace, its prolongation has $\rho=-2C$, and
+
+$$
+ |d\sigma_C|_\eta^2+2\sigma_C\rho=-4C,
+ \qquad \Lambda_C=12C .
+$$ {#eq:gg-original-infinity-scale-test}
+
+Every member has central value one and central gradient zero. Thus bare contact geometry and a bare standard local operator algebra do not determine this infinity structure or selected scale. The retained torsor, whole projective extension and calibration are substantive.
+
+An actual structured comparison carries the full symbols, torsor, projective extension and root, and hence their actual optical section. The derived metric comparison is an isometry; its retained full spin lift carries the normal and rank-four spin connections and the displayed forms. Normalized inner comparison units act trivially on $\mathscr U_1$ and its classical data, while their actual point-module and associator actions remain in H.4's descent. This gives coherent naturality on the full structured category.
+
+Finally on the Lorentz slice a nonzero primed spinor gives
+$p_{AA'}=\overline\pi_A\pi_{A'}$.
+Its parallel transport along short null geodesics defines the local phase-scaled ray space: four real spacetime variables and four real nonzero-spinor variables, modulo one geodesic parameter, give dimension seven. The phase quotient is dimension six and its positive momentum-scaling quotient is dimension five. At a fixed point the fibers are respectively $\mathbb C^2\setminus0$ and $S^2$, with the intermediate positive null-momentum cone. The real locus of the coupled sky operation is this same $S^2$ inside the complex quadric. The actual full spin marking retains its phase and central distinctions. Only local short representatives are used; no global hyperbolicity or global topology is assumed. ∎
+
+<div id="sec:gg-positive-original-adequacy"></div>
+
+### I.3. Operator, infinity-structure and point comparisons
+
+<div id="thm:gg-positive-original-adequacy"></div>
+
+<div id="thm:gg-primitive-infinity-point-structure"></div>
+
+**Theorem I.4.**
+
+In the standard projective Heisenberg/Euler-minus-two analytic model, the source construction and the independent domain of Definition H.1 have these properties:
+
+1. Both complete original helicity classes act in the same analytic half-density operator primitive. Their actual nonlinear gluing has filtered adjoint-preserving overlaps, normalized inner associators and the original coupled source corrections.
+2. The primitive holomorphic infinity predicate of Definition I.2 is equivalent, with its actual root and central calibration, to the parallel normal tractor and rank-four local-twistor infinity forms of Proposition I.3. Its failure before affine admission is the reduction defect of Lemma I.1, and Proposition H.5 removes it with the same source rule.
+3. Compact supported simple modules determine the complete physical point family and null directions by Proposition H.3. The constructor and decoder have both inverse comparisons on the whole independent domains, with the physical point/full-spin Hom, numerical scalar, bounded-family and coupled-real assertions of Theorem 9.10.
+
+*Proof.* For the first assertion, §F.1 gives the positive differential operator and the direct analytic negative symbol in the original twistor variables and their derivative momenta. The negative operation introduces no new dual input and need not project to a vector field on $T_0$. Theorems F.1 and F.6 give actual finite and analytic algebra gluing with normalized triple units. Proposition 9.1 and §F.3 retain the mixed principal bracket and lower quantum terms. Theorem 3.1 identifies both complete source-to-curvature lists with their original factorials. The primitive’s Euler-minus-two ket sector does not replace either gravitational deformation class by a scalar-field state.
+
+For the second assertion, the torsor, projective extension and density root are holomorphic data specified before Einstein recognition. Section D.8 and Proposition 5.4 recover the unit almost-Einstein density and its canonical parallel tractor. Proposition I.3’s explicit exterior-square map intertwines the normal and rank-four spin connections, with the norm and numerical dictionary fixed in §2. The reverse construction recovers the same projective extension and root. The operator, torsor and module comparisons of Theorem H.4 make this correspondence natural; a principal symbol alone is insufficient. The flat scale test in Proposition I.3 shows why the retained infinity data are substantive.
+
+Lemma I.1 reads the pre-admission failure on the actual provisional Cauchy states. Proposition H.5 identifies its cochain, derivative $o_m$, zero-record inverse $L_m$ and six normalizations with Theorem 5.5. Each contact correction is followed by fresh incidence, root, optical-state, matrix and scalar computation. Finite-prefix execution is Proposition 5.9. The bounded comparison of §6.1 and Theorem 6.3 gives its common-domain analytic limit, together with the operator and module estimates of Appendices F–G.
+
+For the third assertion, Proposition H.3 derives the complete four-dimensional family from one compact characteristic; the first-jet kernel is its full null Segre quadric. Sections G.1–G.4 construct the actual simple modules, Hom generators, root-symbol comparisons, whole-family framing and exact associator descent. Thus points are nonlocal supported objects rather than an input four-manifold. Proposition I.3 supplies their Lorentz sky and geometric phase-scaled fibers. Finally Theorem H.4 compares every independently admitted operator object with its constructed classical quantization, retaining both associators and all module maps. Theorem 9.10 composes those counits with the source/affine correspondence and supplies all stated physical and analytic quantifiers, including every Weyl type and numerical $\Lambda=0$. ∎
+
+These are the operator, infinity-structure and point comparisons collected in Theorem 9.11. Appendix J identifies their same-data raywise local-twistor, optical and affine diagrams; Theorem 9.12 states the resulting unified correspondence.
+
+
+<div id="app:gg-simultaneous-projective-comparison"></div>
+
+## Appendix J. The same source, infinity structure and point objects
+
+<div id="sec:gg-derived-ward-construction"></div>
+
+### J.1. Normal spin transport before Einstein admission
+
+We use the independent operator domain $\mathfrak O_\Lambda$ of Definition H.1 and the symbol and quantization functors $F$ and $Q$ of Theorem H.4. For the constructions before Einstein admission, retain its filtered embedded compact characteristic, complete support family, global first-unit torsor $A$, compact lifts, unit optical derivative, root and central calibration, and temporarily omit its projective-extension predicate and numerical readback. Call this the regular affine domain. A highest source trial with a nonzero affine obstruction is treated separately in J.4.
+
+Let $M\xleftarrow{p}\mathcal F\xrightarrow{q}Y$ be the incidence derived from the compact characteristic. Write $\mathcal L$ for the contact line on $Y$, $\mathcal E[1]^2\xrightarrow{\beta}\mathcal B$ for the optical root, and $\sigma$ for the density selected by the same torsor. Appendix D gives these objects from the complete embedded support family and its actual affine data. They are retained in all comparisons below.
+
+For clarity, the contact normal sequence of a sky is
+
+$$
+ 0\longrightarrow\Omega^1_{Q_x}\otimes\mathcal L
+ \longrightarrow N_{Q_x/Y}\longrightarrow\mathcal L
+ \longrightarrow0,
+ \qquad
+ \mathcal L|_{Q_x}=\mathcal O(1,1).
+$$ {#eq:gg-ward-contact-normal-sequence}
+
+The left term is $\mathcal O(-1,1)\oplus\mathcal O(1,-1)$ and is acyclic. Completeness and proper base change identify $TM=p_*q^*\mathcal L$, of rank four. First-jet evaluation gives the Segre null quadric and the conformal structure. The line $K=\ker dq$ obeys $K\otimes q^*\mathcal L=p^*\mathcal B$. The derivative $\Theta=d_qj_A$ of the unique compact lifts is constant on each compact sky and gives the same unit metric section as in D.8. The density is characterized by
+
+$$
+ \beta(\sigma^2)=\Theta^{-1},\qquad \sigma(o)=e_o.
+$$ {#eq:gg-ward-selected-root}
+
+The rank-six standard tractor is the jet quotient
+
+$$
+ \mathcal T=J^2\mathcal E[1]\big/
+ \bigl(\operatorname{Sym}^2_0T^*M\otimes\mathcal E[1]\bigr).
+$$ {#eq:gg-ward-tractor-jet-quotient}
+
+In a conformal representative $g$, set $J=\operatorname{Scal}(g)/6$ and write
+
+$$
+ \begin{aligned}
+ L\sigma&=(\sigma,\mu,\rho),&
+ \mu&=\nabla\sigma,&
+ \rho&=-\tfrac14(\Delta\sigma+J\sigma),\\
+ H(\sigma,\mu,\rho)&=2\sigma\rho+g^{-1}(\mu,\mu),\\
+ D_a(\sigma,\mu_b,\rho)
+ &=\bigl(\nabla_a\sigma-\mu_a,
+ \nabla_a\mu_b+P_{ab}\sigma+g_{ab}\rho,
+ \nabla_a\rho-P_a{}^b\mu_b\bigr).
+ \end{aligned}
+$$ {#eq:gg-ward-normal-tractor}
+
+These formulas apply before Einstein admission. Under $\widehat g=e^{2\omega}g$, $\Upsilon=d\omega$, their splitting change is
+
+$$
+ \widehat\sigma=e^\omega\sigma,\qquad
+ \widehat\mu=e^\omega(\mu+\sigma\Upsilon),\qquad
+ \widehat\rho=e^{-\omega}
+ \bigl(\rho-\Upsilon\cdot\mu-\tfrac12|\Upsilon|^2\sigma\bigr).
+$$ {#eq:gg-ward-conformal-splitting}
+
+Substitution, together with
+$\widehat P=P-\nabla\Upsilon+\Upsilon\otimes\Upsilon-|\Upsilon|^2g/2$,
+preserves $H$ and intertwines $D$. The full marked spin lift gives the rank-four local-twistor bundle $\mathcal T_{\mathrm{LT}}$ with volume and the exterior-square identification $\mathcal F_{\mathrm{spin}}:\mathcal T\simeq\Lambda^2\mathcal T_{\mathrm{LT}}^*$ of Proposition I.3. Before admission its connection has upper-right block $i\theta_v$ and lower-left block $i\theta_{P^\sharp(v)}^\sharp$. The same two-by-two identities in I.3 give the middle tractor term $\nabla_v\mu+\sigma P^\sharp(v)+\rho v$ and last term $d_v\rho-P(v,\mu)$. Thus the normal spin connection is defined for the derived conformal geometry, with no Einstein assumption.
+
+The bundle $\mathcal T_{\mathrm{LT}}$ is a geometric functor of the structured operator object. It is distinct from $TM=p_*q^*\mathcal L$ and carries no asserted fiberwise finite-dimensional representation of the Heisenberg algebra: taking a trace of $[d_a,y^a]=1$ would exclude such a representation.
+
+<div id="prop:gg-exact-ward-defect"></div>
+
+**Proposition J.1.**
+
+For $I=L\sigma$ selected by the same torsor and root, put
+$E_{ab}=(\nabla_a\nabla_b\sigma+P_{ab}\sigma)_0$.
+On the regular affine domain,
+
+$$
+ D_aI=\bigl(0,E_{ab},-\tfrac13\nabla^bE_{ab}\bigr).
+ \qquad
+ DI=(0,P^\circ,-\tfrac14dJ)
+ \quad\text{in the selected scale }\sigma=1.
+$$ {#eq:gg-exact-ward-defect}
+
+In particular $DI=0$ if and only if $E=0$.
+
+*Proof.* The first component is zero and the middle component has zero trace by the definition of $\rho$. Put $\zeta_a=\nabla_a\rho-P_a{}^b\mu_b$. The gradient commutator, contracted Bianchi identity and $\operatorname{Ric}=2P+Jg$ give
+
+$$
+ \begin{aligned}
+ \nabla^bE_{ab}
+ &=\nabla_a\Delta\sigma+\operatorname{Ric}_a{}^b\mu_b
+   +(\nabla_aJ)\sigma+P_a{}^b\mu_b+\nabla_a\rho\\
+ &=3P_a{}^b\mu_b-3\nabla_a\rho=-3\zeta_a.
+ \end{aligned}
+$$ {#eq:gg-ward-defect-divergence}
+
+In the selected scale $\mu=0$ and $\rho=-J/4$, giving the remaining formula. ∎
+
+<div id="sec:gg-relative-ward-descent"></div>
+
+### J.2. Raywise descent and the infinity predicate
+
+Here raywise descent is descent of the normal rank-four local-twistor bundle by its initialized flat partial connection along the connected short null rays. The bundle, its flag and its tensor comparisons are constructed by that transport.
+
+<div id="thm:gg-derived-ward-datum"></div>
+
+**Theorem J.2.**
+
+On the regular affine domain, the normal rank-four spin bundle descends along the short null-ray incidence to a holomorphic bundle $\mathcal T_{\mathrm{LT,ray}}$ on $Y$, with volume and a flag $\ell\subset h$ of ranks one and three. The alternating form of the selected $I=L\sigma$ descends if and only if the projective-extension predicate of Definition H.1 holds. On that admitted subdomain its covariant and contravariant forms have the numerical label, ranks and zero-constant limit of Proposition I.3.
+
+*Proof.* Restrict the connection on $p^*\mathcal T_{\mathrm{LT}}$ to $K=\ker dq$. Its one-dimensional fibers have a flat partial connection. On the retained short flow-box cover, transverse sections and the initialized finite matrix ODE give
+
+$$
+ \mathcal T_{\mathrm{LT,ray}}(U)
+ =\{s\in\Gamma(q^{-1}U,p^*\mathcal T_{\mathrm{LT}}):D_qs=0\},
+ \qquad q^*\mathcal T_{\mathrm{LT,ray}}\simeq p^*\mathcal T_{\mathrm{LT}}.
+$$ {#eq:gg-ward-descent}
+
+The fibers are connected and contractible. Uniqueness gives exact inverse and triple laws, and holomorphic dependence gives local freeness. Trace zero of the connection descends the volume.
+
+Write a null tangent as $k^{AA'}=\kappa^A\pi^{A'}$ and choose parallel spin factors along its affine geodesic. In the splitting $\mathcal T_{\mathrm{LT}}=S\oplus S'$, the vector $(0,\pi)$ is parallel: its upper derivative is proportional to $\kappa(\pi\cdot\pi)=0$ and its lower Schouten term multiplies zero. The dual covector $(\kappa_A,0)\in \mathcal T_{\mathrm{LT}}^*$, with $\kappa_A=\epsilon_{AB}\kappa^B$, is parallel by $\kappa_A\kappa^A=0$. Their line and kernel descend to $\ell$ and $h$, with $\ell\subset h$. Evaluation at $x$ identifies
+
+$$
+ \mathcal T_{\mathrm{LT,ray}}|_{Q_x}\simeq (\mathcal T_{\mathrm{LT}})_x\otimes\mathcal O_{Q_x},\qquad
+ \ell|_{Q_x}=\mathcal O(0,-1),\qquad
+ \operatorname{Ann}(h)|_{Q_x}=\mathcal O(-1,0),\qquad
+ \ell\otimes\operatorname{Ann}(h)\simeq\mathcal L^{-1}.
+$$ {#eq:gg-ward-flag-lines}
+
+The last identification is obtained by pulling back to the incidence: $\kappa_A\pi_{A'}$ and $q^*\mathcal L^{-1}$ are the same tautological null-covector line, with the same parallel transport and root calibration. It descends along $q$. Triviality of the rank-four bundle on a sky leaves these tautological sublines intact.
+
+Under $\mathcal F_{\mathrm{spin}}$, the same $I$ is an alternating form on $p^*\mathcal T_{\mathrm{LT}}$. Descent requires $D_qI=0$ on the whole incidence. Every null direction occurs on its complete compact sky; null vectors span $T_xM$. Consequently this condition is equivalent to $DI=0$. Proposition J.1, D.8 and Proposition 5.4 identify it with the original projective-extension predicate for the same unit density. The tensor being tested is specified by the torsor on the whole incidence; parallel extension of arbitrary initial tensor values is a different operation.
+
+For an admitted object $\Lambda=-3H(I,I)$ is constant. In the selected Einstein splitting, with $c=\Lambda/6$ and the alternating matrix $J_2$, Proposition I.3 gives
+
+$$
+ I_{\mathrm{cov}}=\operatorname{diag}(-cJ_2,J_2),\qquad
+ I_{\mathrm{contra}}=\operatorname{diag}(J_2,-cJ_2),\qquad
+ I_{\mathrm{cov}}I_{\mathrm{contra}}=c\,1,\qquad
+ 2\operatorname{Pf}(I_{\mathrm{cov}})=-\Lambda/3.
+$$ {#eq:gg-ward-infinity-pair}
+
+The contravariant form is the volume dual. Their ranks are four for $\Lambda\ne0$ and two for $\Lambda=0$; the construction uses their values and not their inverses. The marked root fixes the sign of $I$. ∎
+
+<div id="prop:gg-ward-naturality"></div>
+
+**Proposition J.3.**
+
+The raywise local-twistor descent is natural for the physical comparisons of H.1/H.4. A normalized comparison 2-isomorphism over the same classical data and Spin label has identity finite-rank geometric comparison. The actual associator actions on point modules remain those of H.4. The physical central Spin arrow acts by $-1$ on $\mathcal T_{\mathrm{LT,ray}}$.
+
+*Proof.* Write the descent as
+
+$$
+ \varphi_{ij}\varphi_{jk}
+   =\operatorname{Ad}(C_{ijk})\varphi_{ik},\qquad
+ C_{ijk}C_{ikl}=\varphi_{ij}(C_{jkl})C_{ijl},\qquad
+ \tau_{ij}\tau_{jk}=C_{ijk}\tau_{ik}.
+$$ {#eq:gg-ward-actual-associators}
+
+Since $\sigma_0(C)=1$, the associated graded glues strictly. Normalized inner action on $\mathscr U_1=(1+F_{-1})/(1+F_{-2})\simeq\mathcal L^{-1}$ is identity. The torsor maps are supplied in H.1 and the normalized comparisons lie over that same classical torsor and root. Thus the normalized associator comparison fixes the embedded support, torsor, root, their compact lifts and derived jets. Its specified same Spin label fixes the normal spin comparison. Uniqueness of the initialized ray ODE makes its raywise local-twistor comparison identity. This uses both the strict translation sheaf and the supplied torsor maps; identity on a translation sheaf alone would not determine an affine map.
+
+The last equation in the display continues to describe the actual module action. The finite-rank construction reads classical characteristic and affine data and imposes no neutralization equation for $C$. A physical comparison carries those data, hence $\Theta,\sigma,H,D$ and the retained spin lift. Proper base change and ray transport commute with it. This proves naturality and its finite composition diagrams. Finally the central spin element acts by $-1$ on $S\oplus S'$, so by $-1$ on $\mathcal T_{\mathrm{LT,ray}}$. It acts trivially on exterior squares and projective flags, and on the even Euler-minus-two sector; the full physical spin label nevertheless remains distinct. ∎
+
+<div id="sec:gg-optical-point-pencil"></div>
+
+### J.3. The optical evaluation, point plane and affine slice
+
+The classical Einstein-bundle recognition is described in §1 [@LeBrun1985; @Wolf2007, §3.8]. For the intrinsic ray operator used here, the following Cauchy/tractor identification is explicit.
+
+<div id="prop:gg-same-optical-point-pencil"></div>
+
+**Proposition J.4.**
+
+Let $\gamma$ be a retained short null ray. Its optical solution space $\mathcal E_{J,\gamma}$ is canonically $V_\gamma^*$, where $V_\gamma$ is the parallel totally null two-plane spanned by its position tractor and derivative. For $x\in\gamma$, its evaluation gives the point plane
+
+$$
+ K_{x,\gamma}=\ker\mathcal F_{\mathrm{spin}}(X(x))
+       \subset(\mathcal T_{\mathrm{LT,ray}})_\gamma.
+$$ {#eq:gg-same-point-plane}
+
+The completed optical pencil is the projective line of planes $K$ with $\ell_\gamma\subset K\subset h_\gamma$. On an admitted object, the same torsor is the affine slice $H(I,v)=1$ in $V_\gamma$, with compact evaluation $X/\sigma$ and the original moving affine transitions.
+
+*Proof.* In an auxiliary conformal scale, along an affinely parametrized null geodesic,
+
+$$
+ D_kX=(0,k^\flat,0),\qquad
+ D_k^2X=-P(k,k)X,\qquad
+ V_\gamma=\operatorname{span}(X,D_kX).
+$$ {#eq:gg-same-optical-plane}
+
+The two vectors are independent, and their three pairings under $H$ vanish. A parallel $\lambda\in V_\gamma^*$ gives the optical solution $\lambda(X(u))$. Value and slope on a transverse slice give its inverse, so this is the Cauchy identification
+
+$$
+ V_\gamma^*\simeq\mathcal E_{J,\gamma},\qquad
+ X(u)\longleftrightarrow\epsilon_u\in\mathcal E_{J,\gamma}^*.
+$$ {#eq:gg-same-optical-cauchy-comparison}
+
+At a point $x$, in the marked spin splitting and with $\operatorname{rank}\mu=1$, the exterior-square map gives
+
+$$
+ \mathcal F_{\mathrm{spin}}(X)=
+ \begin{pmatrix}J_2&0\\0&0\end{pmatrix},\qquad
+ \mathcal F_{\mathrm{spin}}(D_kX)=
+ \begin{pmatrix}0&-iJ_2\mu\\-i\mu^TJ_2&0\end{pmatrix}.
+$$ {#eq:gg-same-point-pencil-matrices}
+
+The first kernel is the point plane $S'_x$. For a finite pencil coordinate $z$, the kernel is
+$\{(iz\mu v,v):v\in S'_x\}$, since $\mu^TJ_2\mu=0$.
+Its common line is $0\oplus\ker\mu=\ell_\gamma$, and the span of all kernels is $\operatorname{im}\mu\oplus S'_x=h_\gamma$. The other projective chart completes the pencil between this line and hyperplane. The short physical evaluations select the open subset of D.8, rather than all points in the completed projective line. For a compact point module, H.3 supplies its support $Q_x$; evaluation of $\mathcal T_{\mathrm{LT,ray}}$ on that support supplies these same point planes.
+
+This argument commutes with actual finite Taylor restriction. Over a finite Artin base one uses primitive homogeneous pairs in $\mathbb P(V_\gamma)$. On its two standard charts a rank-two minor is a unit by the reduced computation, while the Pfaffian vanishes by total nullity. The kernel is therefore a rank-two direct summand. The unit spinor charts likewise give its common line and hyperplane. This verifies the assertion on finite jets of the admitted holomorphic families.
+
+For an admitted object $H(I,X)=\sigma$ and $I$ is parallel. Its restriction to $V_\gamma$ is exactly the optical section $s$, with the same Cauchy values. Its affine slice and evaluation are
+
+$$
+ A_s=\{v\in V_\gamma:H(I,v)=1\},\qquad
+ j_s=X/\sigma\longleftrightarrow\epsilon/\sigma.
+$$ {#eq:gg-same-infinity-affine-slice}
+
+With the Wronskian $\Lambda^2\mathcal E_J\simeq\mathcal L$, a translation $\nu\in\mathcal L^{-1}$ is the functional
+$v\mapsto\nu(s\wedge v)$ in $\operatorname{Ann}(s)\subset\mathcal E_J^*$.
+In the calibrated Cauchy trivialization, choose the companion with $W(s,t)=l$. Its affine coordinate is $t/\sigma$, with $\partial_u(t/\sigma)=\sigma^{-2}$. It is the same $\Theta=d_qj_A$ used in D.8. On a transverse slice identify the supplied $j_A$ with $\epsilon/\sigma$, with identity translation map. The evaluations have the same derivative on each connected short fiber, so they agree throughout that fiber. Uniqueness of the compact lifts glues these identifications over the complete sky. The comparison preserves the origins, moving arguments and affine transitions, and is independent of the chosen slice. ∎
+
+<div id="sec:gg-source-ward-defect"></div>
+
+### J.4. The source obstruction and six scale modes
+
+<div id="prop:gg-source-ward-defect"></div>
+
+**Proposition J.5.**
+
+In the flat-residue source filtration of Theorem 5.5, the actual highest optical mismatch is the Hessian quotient of the middle normal-tractor defect of Proposition J.1. Its derivative and compatible zero-record inverse are the same $o_m$ and $L_m$. The six normalizations are the corresponding six flat tractor initial values.
+
+*Proof.* Scale the original records and $\Lambda$ by $\varepsilon$, as in §6. The residue at $\varepsilon=0$ is flat. At a highest square-zero ideal $\mathfrak j$, with $\mathfrak m\mathfrak j=0$, lift the lower selected scale provisionally and keep its moving incidence and Cauchy frames. The trial already has conformal incidence, but need not have a global affine reduction. In that scale the provisional density $1$ has ray residual $P^{\mathrm{trial}}(k,k)$. Use the fixed double primitives of D.4 to set
+
+$$
+ \widetilde\sigma_i
+ =1-\mathsf I_i(P^{\mathrm{trial}}(k,k)),\qquad
+ r_{ij}=\widetilde s_i\circ\Phi_{ij}-B_{ij}\widetilde s_j,
+ \qquad
+ (G_i\circ\Phi_{ij})^{-1}r_{ij}=e_1-T_{ij}e_1.
+$$ {#eq:gg-source-ward-actual-mismatch}
+
+Thus the entries are $1-T_{11}$ and $-T_{21}$. With $\delta u_{ij}=u_j-u_i$, the fixed splitting has $D^2u_i=A(k,k)$ and
+
+$$
+ a_m=[A]=[P^{\mathrm{trial}\,\circ}]
+ \in\frac{\mathcal P_{m-2}\otimes\operatorname{Sym}^2_0V^*}
+              {\operatorname{Hess}_0\mathcal P_m},
+ \qquad o_mJ[h]=[P(h)^\circ].
+$$ {#eq:gg-source-ward-hessian-class}
+
+Proposition J.1 gives $DI=(0,P^{\mathrm{trial}\,\circ},-dJ_{\mathrm{trial}}/4)$ for the provisional density. This identifies the class and its sign. The contracted Bianchi identity gives $d\operatorname{div}a_m=0$, so D.5 applies its fixed inverse and the correction is $\Delta c=-L_ma_m+\iota Z$. Recompute the incidence, optical states, adapted matrices, root and scalar. Once the class vanishes, the same double-primitive argument gives $v_i=u_i-f$ with $\delta v=r$ and $D^2v=0$; adding it cancels the target-minus-source mismatch. This is the stage at which the next global affine reduction is obtained.
+
+The remaining modes $a+b\cdot x+\gamma q$ have flat tractor initial values $(a,b,-2\gamma)$. Marked value, four gradients and the numerical invariant fix them. Since $\Delta q=8$, the scalar changes by $12\gamma$ and $\gamma=(\lambda_{\mathrm{target}}-\lambda_*)/12$. These highest-coefficient formulas are used in this flat-residue filtration. The analytic output at $\varepsilon=1$ is the unrestricted prescribed representative of Theorem 6.3. ∎
+
+<div id="sec:gg-simultaneous-comparison-proof"></div>
+
+### J.5. Simultaneous comparison on the independent domain
+
+For $O\in\mathfrak O_\Lambda$, let $\mathcal R(O)$ be the marked Einstein germ read from $F(O)$ by D.8, Proposition 5.4 and Proposition 4.3. Let $\mathcal P(O)$ be the diagram consisting of its supplied operator algebroid and complete compact point modules, their actual associators, the derived incidence and affine torsor, optical evaluation and Wronskian, local-twistor volume and flags, infinity pair and point-plane map. It is an output diagram, not additional admission data. For an Einstein germ $g$, define $\operatorname{Can}(g)$ from its canonical ray geometry, tractor and spin transport, point planes and calibrated affine slice, enriched by the specified $Q$ of Theorem H.4 and the framed modules of Appendix G. These definitions use the canonical geometry of $g$ independently of $O$.
+
+<div id="thm:gg-simultaneous-projective-comparison"></div>
+
+**Theorem J.6.**
+
+On the whole independent domain there are natural actual diagram comparisons
+
+$$
+ \beta_O:\mathcal P(O)\xrightarrow{\sim}
+       \operatorname{Can}(\mathcal R(O)),\qquad
+ \alpha_A:\mathcal P(\mathcal S_{\mathrm{op}}A)
+       \xrightarrow{\sim}\operatorname{Can}(g_A),
+$$ {#eq:gg-simultaneous-diagram-comparisons}
+
+where $g_A$ is the canonical Einstein germ of Proposition 4.1 for the original records. These preserve the same source operations, torsor, optical evaluation, infinity pair and compact point objects. Both inverse comparisons of Theorem 9.10 act on these diagrams, with their physical point/full-spin Hom classes, bounded holomorphic families, actual finite jets and conditioned finite diagrams. Their coupled Lorentz comparison has the type of Proposition J.7.
+
+*Proof.* H.4 supplies an actual counit $\rho_O:O\simeq QF(O)$. D.8 and Proposition 4.3 supply the calibrated classical comparison $\theta_O$ from $F(O)$ to the canonical ray geometry of $\mathcal R(O)$. The operator and module component of $\beta_O$ is $Q(\theta_O)\rho_O$. Propositions J.1, J.3 and J.4, together with Theorem J.2, identify all its finite-rank components with the independently defined $\operatorname{Can}(\mathcal R(O))$: the same $\Theta$ selects $\sigma$ and $I$, the same spin connection gives raywise local-twistor transport, and the same optical evaluation gives the point pencil and affine slice.
+
+For actual comparison units $U_{ij}$ the algebra and module equations are
+
+$$
+ \begin{aligned}
+ k_i\varphi^s_{ij}
+   &=\operatorname{Ad}(U_{ij})\varphi^t_{ij}k_j,\\
+ U_{ij}\varphi^t_{ij}(U_{jk})C^t_{ijk}
+   &=k_i(C^s_{ijk})U_{ik},\\
+ F_i\tau^s_{ij}&=U_{ij}\tau^t_{ij}F_j.
+ \end{aligned}
+$$ {#eq:gg-simultaneous-actual-comparison-equations}
+
+Both associators and their module actions occur here. Proposition J.3 gives the identity finite-rank shadow for normalized 2-isomorphisms over the same physical map and Spin label. For a physical arrow $f:O\to O'$, complete embedded support classification carries the point parameter and incidence. Unique compact lifts carry $j_A,\Theta$; the calibrated root carries $\sigma,I$; jet functoriality carries $H,D$. Its spin lift and initialized transport then carry the flags, point planes and affine slice. Framed Hom uniqueness in H.4 gives
+
+$$
+ \beta_{O'}\mathcal P(f)
+   =\operatorname{Can}(\mathcal R(f))\beta_O
+$$ {#eq:gg-simultaneous-naturality}
+
+on physical Hom classes, with the coherent normalized comparison of H.4 on actual representatives. This proves naturality and its finite composition laws on every independent object.
+
+For an original input $A$, H.5 identifies $F(\mathcal S_{\mathrm{op}}A)$ with the full corrected contact-affine tuple of Theorems 5.5–6.3. Proposition J.5 verifies its same source obstruction and six normalizations. The operators in F.1, the mixed principal bracket and lower quantum term of F.3, and Proposition 9.2's shared optical defect remain its source operations. F.6 and Appendix G supply their analytic operator and module comparisons; F.7 identifies the amplitude jets with the normalized finite operator construction. Theorem 6.3 gives the canonical marked comparison
+$\eta_A:\mathcal R(\mathcal S_{\mathrm{op}}A)\simeq g_A$.
+Define $\alpha_A=\operatorname{Can}(\eta_A)\beta_{\mathcal S_{\mathrm{op}}A}$.
+Its components are the identical constructions just described. Naturality of $\eta$ and $\beta$ proves the source diagrams.
+
+The actual counit $\mathcal S_{\mathrm{op}}\mathcal D_{\mathrm{op}}O\simeq O$ of Theorem 9.10, including its H.4 module maps, transports through $\mathcal P$. The opposite composite is its initialized equality on original classes and scalar. H.4's uniqueness gives the unit/counit and finite composition coherences on these diagrams. The physical central Spin label acts by $-1$ on $\mathcal T_{\mathrm{LT,ray}}$ and remains distinct, as in J.3.
+
+All operations use the existing complete families, fixed finite covers, unit root and frame margins, and initialized finite matrix transports. Finitely many buffered restrictions remain within the common parents of §§3–6 and F–H. Proper base change, finite jet operations and the primitive-pair argument of J.4 commute with the parameter restrictions of Definition 2.1. Proposition J.7 proves compatibility with the typed coupled Lorentz operation and its retained square. ∎
+
+<div id="sec:gg-ward-lorentz-duality"></div>
+
+### J.6. The type of the Lorentz comparison
+
+<div id="prop:gg-ward-lorentz-duality"></div>
+
+**Proposition J.7.**
+
+For the coupled antiholomorphic operation $\iota$ of §8 and G.5, the raywise local-twistor comparison is an antilinear duality
+
+$$
+ J_{\mathrm{LT}}:(\mathcal T_{\mathrm{LT,ray}})_y\longrightarrow (\mathcal T_{\mathrm{LT,ray}}^*)_{\iota(y)}.
+$$ {#eq:gg-typed-ward-lorentz-duality}
+
+Its companion on the dual and its composite have the retained normalized square. It exchanges $\ell$ with $\operatorname{Ann}(h)$, sends a point plane to the annihilator of its paired point plane, and exchanges the covariant and contravariant infinity forms. These operations are natural for Theorem J.6 and the actual operator/module comparison of G.5/H.4.
+
+*Proof.* On a fixed Lorentz object, use compatible marked spin frames and
+
+$$
+ H_{\mathrm{LT}}=\begin{pmatrix}0&1_2\\1_2&0\end{pmatrix},\qquad
+ J_{\mathrm{LT}}(Z)=Z^\dagger H_{\mathrm{LT}},\qquad
+ \Omega_v=\begin{pmatrix}0&i\theta_v\\ic\theta_v^\sharp&0\end{pmatrix}.
+$$ {#eq:gg-ward-hermitian-duality-matrix}
+
+The row $Z^\dagger H_{\mathrm{LT}}$ is a covector. Since $H_{\mathrm{LT}}^\dagger=H_{\mathrm{LT}}$ and $H_{\mathrm{LT}}^2=1$, its companion has square one in these normalized frames; globally use the actual root/frame square of G.5. For real tangent $v$, $\theta_v$ and its adjugate are Hermitian and $c$ is real, so
+
+$$
+ \Omega_v^\dagger H_{\mathrm{LT}}+H_{\mathrm{LT}}\Omega_v=0.
+$$ {#eq:gg-ward-duality-connection}
+
+Before admission replace $c\theta_v$ by $\theta_{P^\sharp(v)}$; the same identity follows from reality of $P$. Including the Lorentz spin connection proves parallelism. It therefore descends through the initialized ray ODE. On paired complex objects the same identity conjugates the parameter and $c$ to their values in the paired object.
+
+For a real ray, $(0,\pi)$ maps to $(\pi^\dagger,0)$, giving the asserted flag exchange. In a spin splitting at $x$ the point plane is $0\oplus S'_x$, and its image is its annihilator $S_x^*\oplus0$. Equivalently, in a flat marked frame with Hermitian solder $X$,
+
+$$
+ U_x=\{(iX\pi,\pi)\},\qquad
+ \operatorname{Ann}(U_x)=\{(\kappa,-i\kappa X)\}.
+$$ {#eq:gg-ward-point-plane-duality}
+
+The same statement is tensorial for curved splittings and natural under the spin connection and raywise local-twistor transport. For complex points it pairs $x$ with $\iota x$. Finally the matrices in J.2 satisfy
+
+$$
+ H_{\mathrm{LT}}^{-1}\overline{I_{\mathrm{cov}}}H_{\mathrm{LT}}^{-T}
+       =I_{\mathrm{contra}}
+$$ {#eq:gg-ward-infinity-duality}
+
+on the real slice, with conjugated $c$ on the paired complex object. This uses the same fixed volume and is valid at $c=0$. The central Spin arrow is $-1$ on both $\mathcal T_{\mathrm{LT,ray}}$ and $\mathcal T_{\mathrm{LT,ray}}^*$ and commutes with this duality. The operation on the operator ring called formal adjoint is complex linear; its type is distinct from the coupled antiholomorphic comparison just proved. ∎
+
+<div id="app:sh-schwarzschild"></div>
+
+## Appendix K. Finite Schwarzschild comparisons and screen transport
+
+Throughout this appendix, $m>0$ is fixed and $g_E=g_m$ denotes the explicitly displayed Schwarzschild metric. Its conformal representative is $g_c=r^{-2}g_m$.
+
+<div id="sec:sh-integrated-scale"></div>
+
+### K.1. Einstein scale and calibrated full-spin frame
+
+<div id="sec:sh-scale-1"></div>
+
+#### K.1.1. Metric, conventions, and domain
+
+Fix $m>0$. On a finite connected real-analytic future-horizon neighborhood $U$, choose ingoing coordinates $(v,r,\theta,\phi)$ with
+
+$$
+0<r_-<r<r_+<\infty,\qquad r_-<2m<r_+,
+\qquad f(r)=1-\frac{2m}{r}.
+$$ {#eq:sh-scale-a1}
+
+An angular coordinate patch is understood in each formula; different regular angular patches give the same tensors. Set
+
+$$
+g_E=f\,dv^2-2\,dv\,dr-r^2d\Omega_2^2,
+\qquad g_c=r^{-2}g_E,
+\qquad \sigma=r^{-1}.
+$$ {#eq:sh-scale-a2}
+
+Here $g_c$ denotes the analytically continued conformal tensor; no real orthogonal complex structure for a real Lorentz metric is asserted. Thus $g_E$ has the signature of §2 $+---$. Its Levi-Civita connection is the connection of the negative of the usual $-+++$ Schwarzschild metric. The curvature and Ricci conventions are
+
+$$
+R(X,Y)=[\nabla_X,\nabla_Y]-\nabla_{[X,Y]},\qquad
+\operatorname{Ric}(Y,Z)=\operatorname{tr}(X\mapsto R(X,Y)Z),
+$$ {#eq:sh-scale-a3}
+
+and
+
+$$
+P=\frac12\left(\operatorname{Ric}-\frac{\operatorname{Scal}}6g\right),
+\qquad J=\frac{\operatorname{Scal}}6.
+$$ {#eq:sh-scale-a4}
+
+Every statement is local on $U$ or on a sufficiently small common complexification with $r\ne0$. There is no limit $m\to0$, infinite-time assertion, or global quotient assertion.
+
+For reference, the vacuum property can be checked before extending across the horizon. In static $-+++$ coordinates, direct substitution into the Christoffel formula gives
+
+$$
+\begin{aligned}
+\operatorname{Ric}_{tt}&=f\left(\frac{f''}{2}+\frac{f'}r\right),&
+\operatorname{Ric}_{rr}&=-f^{-1}\left(\frac{f''}{2}+\frac{f'}r\right),\\
+\operatorname{Ric}_{\theta\theta}&=1-f-rf',&
+\operatorname{Ric}_{\phi\phi}&=(1-f-rf')\sin^2\theta.
+\end{aligned}
+$$ {#eq:sh-scale-a5}
+
+All mixed components vanish. For $f=1-2m/r$ these expressions are zero. Metric negation preserves the connection and covariant Ricci tensor. The ingoing formula [@eq:sh-scale-a2] is analytic and nondegenerate at $f=0$, so the zero Ricci tensor extends there by continuity. Thus $\operatorname{Ric}(g_E)=0$ everywhere under consideration.
+
+<div id="sec:sh-scale-2"></div>
+
+#### K.1.2. Exact scale statement
+
+<div id="prop:sh-scale-1"></div>
+
+**Proposition K.1.**
+
+In the representative $g_c$, the nonvanishing density whose component is $\sigma=1/r$ selects precisely $g_E$:
+
+$$
+g_E=\sigma^{-2}g_c.
+$$ {#eq:sh-scale-a6}
+
+It satisfies the almost-Einstein equation of Proposition 5.4. Its normal prolongation is
+
+$$
+I=L\sigma=(\sigma,\mu,\rho)
+=\left(\frac1r,-\frac{dr}{r^2},\frac{f}{2r}\right),
+\qquad D I=0,\qquad H(I,I)=0.
+$$ {#eq:sh-scale-a7}
+
+It consequently has prescribed numerical Einstein label $\Lambda=-3H(I,I)=0$, including at the future horizon.
+
+*Proof.* The algebraic identity [@eq:sh-scale-a6] is immediate from [@eq:sh-scale-a2]. We verify the differential and tractor statements directly. Write $g=g_E$, $\omega=-\log r$, and $h=g_c=e^{2\omega}g$. The basic radial norm is
+
+$$
+|dr|_g^2=-f,\qquad |d\omega|_g^2=-\frac f{r^2}.
+$$ {#eq:sh-scale-a8}
+
+The conformal connection formula, obtained by substituting $e^{2\omega}g$ in the Koszul formula, is
+
+$$
+\nabla^h_XY=\nabla^g_XY+d\omega(X)Y+d\omega(Y)X
+-g(X,Y)\operatorname{grad}_g\omega.
+$$ {#eq:sh-scale-a9}
+
+Since $P^g=0$, its Schouten consequence is
+
+$$
+P^h=-\nabla_g^2\omega+d\omega\otimes d\omega
+-\frac12|d\omega|_g^2g
+=\frac1r\nabla_g^2r+\frac f{2r^2}g.
+$$ {#eq:sh-scale-a10}
+
+For $\sigma=e^\omega$, [@eq:sh-scale-a9] gives
+
+$$
+\begin{aligned}
+\nabla_h^2\sigma
+&=\nabla_g^2\sigma-d\omega\otimes d\sigma-d\sigma\otimes d\omega
++\langle d\omega,d\sigma\rangle_g g\\
+&=\sigma\left(\nabla_g^2\omega-d\omega\otimes d\omega
++|d\omega|_g^2g\right).
+\end{aligned}
+$$ {#eq:sh-scale-a11}
+
+Adding $P^h\sigma$ from [@eq:sh-scale-a10] cancels both trace-free terms and leaves
+
+$$
+\nabla_h^2\sigma+P^h\sigma
+=\frac12\sigma|d\omega|_g^2g
+=-\frac f{2r}h.
+$$ {#eq:sh-scale-a12}
+
+Taking the trace yields $\rho=-\frac14(\Delta_h\sigma+J_h\sigma)=f/(2r)$, with the exact convention of Proposition 5.4 and Appendix J.1 of the correspondence. The first two tractor equations are therefore
+
+$$
+d\sigma-\mu=0,\qquad
+\nabla_h\mu+P^h\sigma+h\rho=0.
+$$ {#eq:sh-scale-a13}
+
+We check the last equation separately. Raising $\mu=-dr/r^2$ by $h^{-1}=r^2g^{-1}$ gives $\mu^{\sharp_h}=-\operatorname{grad}_g r$. Also
+
+$$
+\nabla_g^2r(\operatorname{grad}_g r,\cdot)
+=\frac12d(|dr|_g^2)=-\frac{f'}2dr.
+$$
+
+It follows from [@eq:sh-scale-a10] that
+
+$$
+P^h(\mu^{\sharp_h},\cdot)
+=\left(\frac{f'}{2r}-\frac f{2r^2}\right)dr
+=d\left(\frac f{2r}\right)=d\rho.
+$$ {#eq:sh-scale-a14}
+
+Thus every component of $DI$ vanishes. Finally,
+
+$$
+H(I,I)=2\sigma\rho+|\mu|_h^2
+=\frac f{r^2}-\frac f{r^2}=0.
+$$ {#eq:sh-scale-a15}
+
+All the displayed expressions are analytic at $r=2m$. At the horizon $\rho=0$, while $\sigma=1/(2m)\ne0$ and $\mu=-dr/(4m^2)$ remains a nonzero null covector. The tractor itself is nonzero there. No inverse power of $f$ or of $\Lambda$ appears. ∎
+
+In the selected Einstein splitting the same tractor has the simpler components $(1,0,0)$. The calculation above specifies its components in the different auxiliary splitting, rather than equating these two triples term by term.
+
+<div id="sec:sh-scale-3"></div>
+
+#### K.1.3. Scalar curvature of the conformal representative
+
+<div id="prop:sh-scale-2"></div>
+
+**Proposition K.2.**
+
+With [@eq:sh-scale-a3], the scalar curvature of the auxiliary metric in [@eq:sh-scale-a2] is
+
+$$
+\operatorname{Scal}(g_c)=-\frac{12m}{r},\qquad
+\sigma=-\frac{\operatorname{Scal}(g_c)}{12m}.
+$$ {#eq:sh-scale-a16}
+
+If the metric is negated to signature $-+++$, its scalar is $12m/r$ and its scale component is the scalar divided by $12m$.
+
+*Proof.* For the static $-+++$ metric $g_-=-g_E$, the radial divergence identity gives
+
+$$
+\Box_{g_-}(r^{-1})
+=\frac1{r^2}\partial_r\left(r^2f\partial_r(r^{-1})\right)
+=-\frac{2m}{r^4}.
+$$ {#eq:sh-scale-a17}
+
+In dimension four, the scalar transformation is
+
+$$
+\operatorname{Scal}(\Omega^2g)
+=\Omega^{-2}\left[\operatorname{Scal}(g)-6\Omega^{-1}\Box_g\Omega\right].
+$$ {#eq:sh-scale-a18}
+
+Use $\Omega=r^{-1}$ and $\operatorname{Scal}(g_-)=0$ to obtain $12m/r$. Negating the metric changes the inverse metric and hence the scalar sign, while fixing the covariant Ricci tensor. This proves [@eq:sh-scale-a16]. An independent check is $\Box_{r^{-2}g_-}r=2m$, obtained directly from $\sqrt{|\det(r^{-2}g_-)|}=r^{-2}\sin\theta$ and $(r^{-2}g_-)^{rr}=r^2f$. For $r^{-2}g_-$, the reciprocal of its scalar, $r/(12m)$, has Laplacian $1/6$, the value required for the scalar-flat conformal metric. ∎
+
+<div id="sec:sh-scale-4"></div>
+
+#### K.1.4. Point normalization and the auxiliary representative
+
+Fix a marked point $o\in U$ and put $r_0=r(o)>0$. Densities are represented by functions only after specifying a representative metric. We use the density convention of §5: under $\widehat h=c^2h$ with a positive constant $c$, a weight-one density component changes by $\widehat\sigma=c\sigma$.
+
+<div id="prop:sh-scale-3"></div>
+
+**Proposition K.3.**
+
+The auxiliary representative and scale
+
+$$
+g_{\rm aux}=r_0^2g_c,\qquad
+\sigma_o=\frac{r_0}{r}
+$$ {#eq:sh-scale-a20}
+
+satisfy
+
+$$
+\sigma_o(o)=1,\qquad
+\sigma_o^{-2}g_{\rm aux}=g_E.
+$$ {#eq:sh-scale-a21}
+
+The same parallel tractor in this constant-rescaled splitting has components
+
+$$
+I=\left(\frac{r_0}{r},-\frac{r_0}{r^2}dr,\frac{f}{2r_0r}\right).
+$$ {#eq:sh-scale-a22}
+
+In particular this change of auxiliary representative preserves the selected physical metric, the tractor itself, its zero norm, and its calibrated central value.
+
+*Proof.* Equation [@eq:sh-scale-a21] is direct multiplication. Constant rescaling fixes the connection and covariant Schouten tensor, and scales the inverse metric by $r_0^{-2}$. Hence $\mu_o=d\sigma_o=r_0\mu$ and
+
+$$
+\rho_o=-\frac14(\Delta_{r_0^2h}\sigma_o+J_{r_0^2h}\sigma_o)
+=r_0^{-1}\rho.
+$$
+
+All three equations [@eq:sh-scale-a13]–[@eq:sh-scale-a14], and the norm [@eq:sh-scale-a15], are preserved. These are the component transformation laws of the same normal tractor. ∎
+
+If instead one keeps $g_c$ fixed and replaces only $\sigma$ by $r_0\sigma$, the selected metric becomes $r_0^{-2}g_E$, and the tractor becomes $r_0 I$. That is a different constant physical calibration. At $\Lambda=0$ the numerical Einstein label remains zero and cannot detect this error. Proposition K.3 avoids it by changing the auxiliary representative at the same time.
+
+The auxiliary scalar after [@eq:sh-scale-a20] is
+
+$$
+\operatorname{Scal}(g_{\rm aux})=-\frac{12m}{r_0^2r},\qquad
+\sigma_o=-\frac{r_0^3}{12m}\operatorname{Scal}(g_{\rm aux}).
+$$ {#eq:sh-scale-a23}
+
+Consequently even a correct scalar/scale formula must track the auxiliary constant: it is not invariant as an equality of numerical component functions.
+
+<div id="sec:sh-scale-5"></div>
+
+#### K.1.5. Full spin marking and the optical root
+
+The auxiliary normalization above also admits a regular, fully marked implementation at the horizon. Put
+
+$$
+a=dv,\qquad b=\frac f2dv-dr,\qquad
+\vartheta^0=\frac{a+b}{\sqrt2},\quad
+\vartheta^1=\frac{a-b}{\sqrt2},\quad
+\vartheta^2=r\,d\theta,\quad
+\vartheta^3=r\sin\theta\,d\phi.
+$$ {#eq:sh-scale-a24}
+
+Then
+
+$$
+g_E=(\vartheta^0)^2-(\vartheta^1)^2-(\vartheta^2)^2-(\vartheta^3)^2.
+$$ {#eq:sh-scale-a25}
+
+The forms $a,b$ are independent even at $f=0$. On an angular coordinate patch away from its coordinate poles, [@eq:sh-scale-a24] is an analytic orthonormal coframe throughout the crossing neighborhood. A regular angular coframe replaces it on the other finite patches.
+
+Choose its orientation and time orientation once. Fix a spin lift at $o$ and retain its actual label, including the sign distinguishing the two lifts of the same orthonormal frame. In the lower-index conventions of §2 $\epsilon_{01}=\epsilon_{0'1'}=1$, a compatible solder is
+
+$$
+\vartheta^{AA'}=\frac1{\sqrt2}
+\begin{pmatrix}
+\vartheta^0+\vartheta^3&\vartheta^1-i\vartheta^2\\
+\vartheta^1+i\vartheta^2&\vartheta^0-\vartheta^3
+\end{pmatrix},\qquad
+2\det(\vartheta(v))=g_E(v,v).
+$$ {#eq:sh-scale-a26}
+
+The conformal frame identification from $g_E$ to $g_{\rm aux}$ sends its dual vector frame $e_a$ to $\sigma_o^{-1}e_a$, or equivalently its solder coframe to $\sigma_o\vartheta^{AA'}$. It preserves the Spin factor of the conformal frame and changes only the positive dilation. At $o$ its dilation is one, so the two marked spin frames coincide under this specified identification. A conformal weight-half convention can be lifted using the unique positive square root $\sqrt{\sigma_o}$ with value one at $o$; on a sufficiently small simply connected complexification, the same root is its analytic continuation. Multiplication of an internal symplectic spin basis by $\sqrt{\sigma_o}$ is not being asserted to be an $SL(2)$ gauge change.
+
+Let $\beta:\mathcal E[1]^{\otimes2}\to\mathcal B$ be the retained density-square identification and $\Theta$ the compact-lift optical derivative of Appendix J.1. Its root condition is $\beta(\sigma_o^2)=\Theta^{-1}$ with marked value $\sigma_o(o)=+1$; these choices fix the sign of the scale root. Changing it to $-\sigma_o$ would keep $g_E$ but send $I$ to $-I$ and change the selected affine slice, and is therefore excluded by the marked root. The central spin element instead changes the local-twistor spin lift by $-1$, while fixing its exterior-square tractor; it is retained as a distinct physical spin label.
+
+To compare with marked normal coordinates in the manuscript, apply the exponential map of the *selected* $g_E$ using the dual of [@eq:sh-scale-a24] at $o$ and the specified spin lift. This gives $g_E(o)=\eta$ and its initialized radial spin frame. This same choice is used on both sides of the metric-mediated comparison. The Levi-Civita radial frames of $g_E$ and of $g_{\rm aux}$ are not identified away from $o$. Their difference is [@eq:sh-scale-a9], and the normal tractor comparison has already accounted for it.
+
+<div id="sec:sh-scale-6"></div>
+
+#### K.1.6. Optical section and local-twistor infinity tensors
+
+The normal connection and its norm used above are exactly
+
+$$
+\begin{aligned}
+D_a(s,\nu_b,q)
+&=(\nabla_as-\nu_a,
+\nabla_a\nu_b+P_{ab}s+h_{ab}q,
+\nabla_aq-P_a{}^b\nu_b),\\
+H(s,\nu,q)&=2sq+h^{-1}(\nu,\nu).
+\end{aligned}
+$$ {#eq:sh-scale-a27}
+
+Let $k$ be any $h$-affinely parametrized null tangent on a short ray and put $\kappa=P^h(k,k)$. Equation [@eq:sh-scale-a12] implies
+
+$$
+\frac{d^2\sigma}{dt^2}+\kappa\sigma=0.
+$$ {#eq:sh-scale-a28}
+
+Thus the same weight-one density gives the optical section of Proposition 5.3 on every null direction of the complete sky, rather than only on one chosen principal ray. Conversely, testing this equation on all null directions forces the trace-free symmetric tensor $(\nabla_h^2\sigma+P^h\sigma)_0$ to vanish: a quadratic form vanishing on the nondegenerate null cone is proportional to $h$. This is the almost-Einstein recognition step in Proposition 5.4. The raywise section, its Cauchy derivative, and the parallel prolongation are consequently those of the very same $I$.
+
+The selected affine parameter obeys
+
+$$
+\frac{d\widehat t}{dt}=\sigma^{-2},
+\qquad\text{or}\qquad
+\frac{d\widehat t}{dt_o}=\sigma_o^{-2}
+\text{ in the representative }g_{\rm aux}.
+$$ {#eq:sh-scale-a29}
+
+More explicitly, if $t$ is the $g_c$ affine parameter calibrated by $dt/d\widehat t=\sigma^2$, choose the $g_{\rm aux}$ affine parameter $t_o$ with $dt_o=r_0^2dt$ and the same calibrated origin. Then $dt_o/d\widehat t=\sigma_o^2$. Constant metric rescaling alone does not force an affine-parameter rescaling; it is this stated Cauchy calibration that selects it. These formulas therefore describe the same physical affine parameter under Proposition K.3. A bare numerical comparison of affine parameters without their initial Cauchy scale would discard retained data.
+
+In the selected Einstein splitting $P^{g_E}=0$, the rank-four normal local-twistor bundle has splitting $S\oplus S'$ and the connection of Proposition I.3 with off-diagonal solder block $i\vartheta$ and zero lower off-diagonal block. The exterior-square tractor map is
+
+$$
+\mathcal F(s,\nu,q)=
+\begin{pmatrix}qJ_2&-iJ_2\nu\\-i\nu^TJ_2&sJ_2\end{pmatrix},
+\qquad
+J_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
+$$ {#eq:sh-scale-a30}
+
+Here $\nu$ is the raised middle component in the specified solder frame. For $I=(1,0,0)$, the covariant infinity form and its volume dual are
+
+$$
+I_{\alpha\beta}=\operatorname{diag}(0,J_2),\qquad
+I^{\alpha\beta}=\operatorname{diag}(J_2,0),\qquad
+I_{\alpha\beta}I^{\beta\gamma}=0.
+$$ {#eq:sh-scale-a31}
+
+They are parallel, each has rank two, and $2\operatorname{Pf}(I)=0$. The chosen full spin marking fixes the volume dual and the exterior-square identification; there is no division by a cosmological constant. In an auxiliary conformal splitting the nonzero middle component and the $\rho$ of [@eq:sh-scale-a7] or [@eq:sh-scale-a22] must be inserted in [@eq:sh-scale-a30] with the corresponding solder. One cannot substitute their numerical triples into the selected-scale block formula [@eq:sh-scale-a31] without that change of splitting. Appendix J.1 gives this same normal-spin naturality. The tensors therefore agree on the two sides of the metric-mediated comparison, including their exact constant calibration and root.
+
+<div id="sec:sh-scale-7"></div>
+
+#### K.1.7. Uniqueness of the calibrated scale on this Schwarzschild neighborhood
+
+For this fixed nonzero mass, the scale selecting an Einstein metric in the conformal class is determined up to a constant. This is stronger than the assertion that arbitrary null-cone data determine a scale.
+
+<div id="prop:sh-scale-4"></div>
+
+**Proposition K.4.**
+
+Any holomorphic parallel normal tractor on a connected complexification of $U$ has, in the Ricci-flat $g_E$ splitting, the form $(c,0,0)$ with a constant $c$. Thus any nonvanishing almost-Einstein density is a constant multiple of the density in Proposition K.1. In the representative [@eq:sh-scale-a20], its value one at $o$ forces it to equal $\sigma_o$.
+
+*Proof.* In the Ricci-flat splitting the parallel equations are
+
+$$
+\nabla s=\nu,\qquad \nabla\nu=-qg_E,\qquad dq=0.
+$$ {#eq:sh-scale-a32}
+
+Commuting the middle equation gives $R(X,Y)\nu^\sharp=0$ for every $X,Y$. We verify directly that Schwarzschild curvature has no vector nullity for $m\ne0$, rather than deducing this from a scalar invariant alone. In the exterior static region use the orthonormal frame
+
+$$
+e_0=f^{-1/2}\partial_t,\quad e_1=f^{1/2}\partial_r,\quad
+e_2=r^{-1}\partial_\theta,\quad e_3=(r\sin\theta)^{-1}\partial_\phi.
+$$
+
+Let $a=f'/(2\sqrt f)$ and $b=\sqrt f/r$. The Koszul formula gives $\nabla_{e_0}e_0=ae_1$, $\nabla_{e_0}e_1=ae_0$, $\nabla_{e_1}e_j=0$, and $\nabla_{e_A}e_1=be_A$, $\nabla_{e_A}e_A=-be_1$ for $A=2$, with the usual additional sphere connection for $A=3$. The relevant brackets are $[e_0,e_1]=ae_0$ and $[e_0,e_A]=0$. Substitution in [@eq:sh-scale-a3] yields
+
+$$
+\begin{aligned}
+R(e_0,e_1)e_0&=-\frac{f''}{2}e_1=\frac{2m}{r^3}e_1,&
+R(e_0,e_1)e_1&=\frac{2m}{r^3}e_0,\\
+R(e_0,e_A)e_0&=-\frac{f'}{2r}e_A=-\frac m{r^3}e_A,&
+R(e_0,e_A)e_A&=-\frac m{r^3}e_0.
+\end{aligned}
+$$ {#eq:sh-scale-a33}
+
+Each displayed curvature operator vanishes on the remaining frame directions. Thus $R(e_0,e_1)v=0$ forces $v^0=v^1=0$, and the equations with $A=2,3$ force $v^2=v^3=0$. Therefore $\nu=0$ in the nonempty exterior open subset. Analyticity and connectedness extend this equality throughout the chosen horizon-crossing neighborhood and its connected sufficiently small complexification. Equation [@eq:sh-scale-a32] then gives $q=0$ and constant $s=c$. In the auxiliary representative the component is $c/r$, or $cr_0/r$ after [@eq:sh-scale-a20]. The marked value one fixes $c=1$ in the latter representative. ∎
+
+No assertion of this kind is made for the zero-mass limit, where additional parallel tractors occur. The role of the complete sky in the optical scale construction and the role of the Einstein equation in Proposition K.4 are substantive: a point value plus unparametrized null rays alone would not determine a scale field.
+
+
+<div id="sec:sh-integrated-comparison"></div>
+
+### K.2. Complete records and finite horizon comparisons
+
+<div id="sec:schw-bc-regular-metric"></div>
+
+<div id="sec:sh-comparison-1"></div>
+
+#### K.2.1. The regular metric and the exact scope
+
+Put $f(r)=1-2m/r$. On an ingoing Eddington–Finkelstein neighborhood let
+
+$$
+ g_m=f(r)\,dv^2-2\,dv\,dr-r^2\gamma,
+ \qquad \gamma=g_{S^2}.
+$$ {#eq:schw-bc-ef-metric}
+
+Fix $0<\delta<2m$ and finite $v_-<v_+$. The compact physical core is
+
+$$
+ K=[v_-,v_+]\times[2m-\delta,2m+\delta]\times S^2.
+$$ {#eq:schw-bc-physical-core}
+
+Choose an open real-analytic parent of $K$ with $r>r_->0$ and finite angular charts with compact subcores. Complexify these charts on smaller parents when using the holomorphic results of the manuscript. All comparisons in this appendix are short representatives near points of this parent, or finite compositions with explicitly retained common parents. The horizon is the hypersurface $r=2m$ in this given Schwarzschild region.
+
+<div id="lem:schw-bc-ef-vacuum"></div>
+
+**Lemma K.5 (regular vacuum and regular full-spin frames).**
+
+The metric in [@eq:schw-bc-ef-metric] is nondegenerate and real analytic across $r=2m$, has Lorentz signature $(+---)$, and has zero Ricci tensor. There is a finite system of real-analytic orthonormal frames over the parent of $K$ with compatible full-spin lifts. The induced complexified frames, density calibration and sky-root comparisons are regular after finite restrictions of their parents.
+
+*Proof.* The $(v,r)$ block and its inverse are
+
+$$
+ \begin{pmatrix}f&-1\\-1&0\end{pmatrix},\qquad
+ \begin{pmatrix}0&-1\\-1&-f\end{pmatrix}.
+$$ {#eq:schw-bc-ef-blocks}
+
+Its determinant is $-1$ for every $r>0$. Thus no factor $f^{-1}$ is required. The angular block is negative definite on the real sphere. For a direct curvature check, temporarily allow an arbitrary function $f(r)$. In angular coordinates the non-spherical Christoffel symbols, together with their lower-index symmetries, are
+
+$$
+ \begin{aligned}
+ \Gamma^v_{vv}&=\tfrac12f',&
+ \Gamma^r_{vv}&=\tfrac12ff',&
+ \Gamma^r_{vr}&=-\tfrac12f',\\
+ \Gamma^v_{AB}&=-r\gamma_{AB},&
+ \Gamma^r_{AB}&=-fr\gamma_{AB},&
+ \Gamma^A_{rB}&=r^{-1}\delta^A_B.
+ \end{aligned}
+$$ {#eq:schw-bc-ef-connection}
+
+The remaining angular symbols are those of $\gamma$. Substituting these into the curvature convention above gives, with $a=f''/2+f'/r$,
+
+$$
+ \operatorname{Ric}_{vv}=fa,\quad
+ \operatorname{Ric}_{vr}=-a,\quad
+ \operatorname{Ric}_{rr}=0,\quad
+ \operatorname{Ric}_{AB}=(1-f-rf')\gamma_{AB},
+$$ {#eq:schw-bc-ef-ricci}
+
+and zero mixed angular components. For $f=1-2m/r$, both $a$ and $1-f-rf'$ vanish. These formulas also fix the sign of the check: replacing $f$ by $1-cr^2$ gives $\operatorname{Ric}=-3c\,g$ in the convention of §2.
+
+For regular frames set $a_0=(f-1)/2$, $b_0=(f+1)/2$, and choose an oriented orthonormal sphere coframe $(\eta^2,\eta^3)$ on each angular chart. One explicit choice on a stereographic chart is $\eta^2=2\,dx/(1+x^2+y^2)$, $\eta^3=2\,dy/(1+x^2+y^2)$. Finitely many smaller oriented stereographic disks with compact subcores cover the sphere; their complex thickenings can be chosen to keep this denominator nonzero. Then
+
+$$
+ e^0=b_0\,dv-dr,\qquad
+ e^1=dr-a_0\,dv,\qquad
+ e^2=r\eta^2,\qquad e^3=r\eta^3
+$$ {#eq:schw-bc-regular-coframe}
+
+satisfies $g_m=(e^0)^2-(e^1)^2-(e^2)^2-(e^3)^2$. Indeed $b_0-a_0=1$, $a_0+b_0=f$, and the determinant of the first two coframe rows is $1$. Its dual timelike and radial spacelike vectors are
+
+$$
+ T=\partial_v+a_0\partial_r,\qquad
+ S=\partial_v+b_0\partial_r.
+$$
+
+They obey $g_m(T,T)=1$, $g_m(S,S)=-1$, $g_m(T,S)=0$ also at $f=0$. Choose the time orientation in which $T$ is future directed. These are regular analytic frames on the finite angular parents, without the static square root $\sqrt f$.
+
+On a common angular chart with the same angular frame, let $e_0,e_1$ be dual to the first two coframe elements in [@eq:sh-scale-a24]. Direct substitution gives
+
+$$
+ \begin{pmatrix}T\\S\end{pmatrix}
+ =\frac1{2\sqrt2}
+  \begin{pmatrix}3&1\\1&3\end{pmatrix}
+  \begin{pmatrix}e_0\\e_1\end{pmatrix}.
+$$ {#eq:sh-r29-radial-frame-boost}
+
+This is the proper time-oriented boost of rapidity $\log\sqrt2$. Its two full-spin lifts retain the distinction fixed by the specified marks.
+
+The oriented time-oriented product region has a spin structure: its tangent bundle is the sum of a trivial real rank-two bundle and $TS^2$, and $w_2(TS^2)$ is the Euler class $2$ modulo $2$. Fix that spin structure and take local analytic sections of its full principal spin bundle on a finite good cover. Their transition functions satisfy the spin cocycle. This constructs compatible lifts first; it does not choose unrelated signs on different double overlaps. Their local complexifications extend after finite shrinkage. The unit physical density for $g_m$ fixes the density calibration. The spinor-line construction of the sky roots, with the base factor retained as in G.5 and H.4, is functorial for these full-spin transitions. Its root comparisons therefore extend on the same finite system after a further finite restriction. ∎
+
+For orientation with the usual exterior chart, on any retained overlap with $r\ge 2m+\varepsilon$ one may use $v=t+r_*(r)$, $r_*'=f^{-1}$. Direct substitution gives $g_m=f\,dt^2-f^{-1}dr^2-r^2\gamma$. Both directions of this coordinate comparison are analytic on such an exterior overlap. The EF charts, rather than this exterior change, cover $r=2m$ and the inside part of $K$.
+
+<div id="sec:schw-bc-all-records"></div>
+
+<div id="sec:sh-comparison-2"></div>
+
+#### K.2.2. The complete records and the initialized metric map
+
+Let $p$ belong to the parent of $K$ and let $s$ be a chosen full-spin frame above the orthonormal frame at $p$. In that frame extract $\Psi^\pm$ from the covariant Weyl tensor by the fixed manuscript's readout
+
+$$
+ C_{AA'BB'CC'DD'}
+ =-\Psi^+_{ABCD}\epsilon_{A'B'}\epsilon_{C'D'}
+  -\Psi^-_{A'B'C'D'}\epsilon_{AB}\epsilon_{CD}.
+$$ {#eq:schw-bc-spin-readout}
+
+For every $r\ge0$, define
+
+$$
+ U_r^+(p,s)=\operatorname{Sym}_{A_1\cdots A_{r+4}}
+ \operatorname{Sym}_{A'_1\cdots A'_r}
+ \nabla_{A_1A'_1}\cdots\nabla_{A_rA'_r}
+ \Psi^+_{A_{r+1}\cdots A_{r+4}}\big|_{(p,s)}.
+$$ {#eq:schw-bc-all-record-extraction}
+
+The negative formula exchanges the two spin factors. Each symmetrization is an average, exactly as in Theorem 3.1. This is one definition of every order using the connection of $g_m$; it introduces no separate guessed formula for higher derivatives. On the physical real slice it gives $U^-_r=\overline{U^+_r}$ in the coupled spin identification.
+
+<div id="lem:schw-bc-record-family"></div>
+
+**Lemma K.6 (analytic all-record extraction).**
+
+The records in [@eq:schw-bc-all-record-extraction] satisfy the factorial evaluation bounds of Theorem 3.1. They do so uniformly on each fixed finite family of buffered complex point/frame parents with bounded frame and inverse. Their exact Theorem 3.1 encoders define analytic classes $A_{p,s}\in\mathcal A_0$, holomorphically in those parameters. An actual isometry with a specified full-spin lift transports every one of these records by the same point/full-spin rule.
+
+*Proof.* Solve the analytic geodesic and parallel-spin-frame equations starting at $(p,s)$ with initial direction $k=\xi\otimes\pi$, where $|\xi|,|\pi|\le1$. For a compact parameter core of this type, holomorphic ODE existence gives a common complex affine disk $|t|<R$ and a common bound $C$ on the Weyl components evaluated in the transported frame. Such a disk exists because the initial data form a compact set inside finitely many analytic parents, the metric and inverse are bounded there, and the initial values have positive distance to their boundaries. The $r$th derivative at $t=0$ is $\nabla_k^r\Psi^\pm$ in that parallel frame. Its coherent contraction is exactly $U_r^+(\xi^{r+4},\pi^r)$ or its negative counterpart: repeated identical spinors make the averaged symmetrizations invisible. Cauchy's formula gives
+
+$$
+ \|U_r^\pm(p,s)\|_{\mathrm{ev}}\le C\,r!R^{-r}.
+$$ {#eq:schw-bc-record-bound}
+
+This also follows by the metric-to-record argument in §4 immediately after Proposition 4.1, now on the explicit finite EF parents. Theorem 3.1, including its fixed factorial multipliers and Laurent projection, produces the two classes on common smaller fiber disks and annuli. Holomorphic dependence follows from the same ODE and uniform Cauchy estimates. All orders use the same contraction convention [@eq:schw-bc-spin-readout]. An isometry intertwines Levi–Civita connections, curvature and every iterated covariant derivative; its specified spin lift intertwines the two spinor contractions and averaged projections. This proves the last assertion for all $r$, not just a finite prefix. ∎
+
+Write $g[A_{p,s}]$ for the generated marked metric and let $s:\mathbb C^4\to T_pM$ denote the soldering identification supplied by the mark. Here and below, $g[A]$ is identified with the canonical marked germ $g_A$ of Proposition 4.1 through the initialized marked isometry of Proposition A.4 and Theorem 6.3; the canonical bundle and operator constructions are transported through that isometry. Define the physical normal map and the generated normal map by
+
+$$
+ n_{p,s}(x)=\operatorname{Exp}^{g_m}_p(sx),\qquad
+ n_A(x)=\operatorname{Exp}^{g[A]}_o(x).
+$$
+
+They are holomorphic embeddings on sufficiently small common representatives. Theorem 2.4 gives the exact entire records of $g[A]$, with scalar $\Lambda=0$. Proposition A.4 therefore gives equality of the two pulled-back analytic normal metrics and the actual initialized isometry
+
+$$
+ f_{p,s}=n_{p,s}\circ n_A^{-1}:
+ (g[A_{p,s}],o,\text{full spin})\xrightarrow{\sim}(g_m,p,s).
+$$ {#eq:schw-bc-normal-isometry}
+
+For specificity, A.4 obtains the normal metric from the unique radial Jacobi equations with curvature Taylor coefficients given by the completed ordered record. Equality of all the extracted free records gives equality of those ordered coefficients by A.3, equality of the radial Jacobi Taylor series, and equality of convergent metric series. Thus [@eq:schw-bc-normal-isometry] is an actual analytic map on common short representatives with its initialized spin lift and inverse.
+
+<div id="sec:schw-bc-typed-comparison"></div>
+
+<div id="sec:sh-comparison-3"></div>
+
+#### K.2.3. The actual enriched comparison
+
+<div id="thm:schw-bc-metric-mediated-comparison"></div>
+
+**Theorem K.7 (marked metric-mediated comparison).**
+
+For the extracted input $A=A_{p,s}$, the source-generated contact, calibrated affine and projective operator diagram has an actual comparison with $\operatorname{Can}(g_m,p,s)$. It preserves the full compact point family, its modules, the optical evaluation and Wronskian, the density root and selected scale, the normal tractor and local-twistor transport, the calibrated infinity pair and point planes. The comparison and its inverse retain the specified physical full-spin label. They are holomorphic on conditioned common parents and satisfy the finite coherence laws on conditioned diagrams of Definition 2.1.
+
+*Proof.* We describe the comparison induced by the initialized isometry $f=f_{p,s}$, and then its operator representative.
+
+**Contact geometry.** On the nonzero null cotangent cone use the cotangent lift
+
+$$
+ (x,\ell)\longmapsto
+ \bigl(f(x),(df_x^{-1})^*\ell\bigr).
+$$ {#eq:schw-bc-cotangent-map}
+
+It preserves the tautological one-form, the metric null Hamiltonian, homogeneous scaling and its Hamiltonian characteristic curves. On short ray flow boxes it therefore descends to a holomorphic contact map $C_f$ with inverse $C_{f^{-1}}$. It sends the whole compact sky $Q_x$ to $Q_{f(x)}$. In contact charts set $K_i=\psi_i^t C_f(\psi_i^s)^{-1}$ and $K_i^*\alpha_i^t=d_i\alpha_i^s$. Then $d_i$ is a holomorphic unit and
+
+$$
+ \Phi^t_{ij}=K_i\Phi^s_{ij}K_j^{-1}.
+$$ {#eq:schw-bc-contact-comparison}
+
+The map is induced on every null direction, so its definition includes the complete compact sky rather than only one affine direction chart.
+
+**Optical solution space and affine calibration.** The optical bundle $\mathcal E_J$ here is the rank-two bundle of scalar solutions of $D^2y+P(k,k)y=0$, with the contact-line-valued Wronskian specified in §5 and Appendix D. It is distinct from the full transverse Jacobi phase space used in the transverse screen calculation. The metric isometry and its ray-parameter/line identifications carry this differential equation and its Cauchy evaluation to the same equation. Denote the resulting solution map by $\mathsf S:\mathcal E_J^s\to\mathcal E_J^t$. In transported Cauchy frames this is the identity; in arbitrary retained frames it is the unique map intertwining value and derivative at a transversal. Uniqueness for the scalar ODE proves intertwining throughout the short connected ray. Wronskians agree under the same contact-line map, and $\mathsf S$ carries the selected density solution $s_s$ to $s_t$ because $f^*g_m=g[A]$ with the retained root calibration.
+
+The affine slice has the intrinsic description
+
+$$
+ A_{s_s}=\{\lambda\in(\mathcal E_J^s)^*: \lambda(s_s)=1\},
+ \qquad
+ \lambda\longmapsto\lambda\circ\mathsf S^{-1}\in A_{s_t}.
+$$ {#eq:schw-bc-affine-solution-map}
+
+This map carries the evaluation $\epsilon_x/\sigma_s(x)$ to $\epsilon_{f(x)}/\sigma_t(f(x))$. By Proposition J.4 it is the same affine comparison as that obtained from the compact incidence. In §8.1's affine charts its point map is
+
+$$
+ \widehat K_i(z,\tau)
+  =\bigl(K_i(z),d_i(z)^{-1}\tau+u_i(z)\bigr),\qquad
+ u_i=\tau_i^t\circ f^{\mathcal F}-d_i^{-1}\tau_i^s.
+$$ {#eq:schw-bc-affine-chart-map}
+
+The latter expression is evaluated at any one retained transversal hit. It is independent of that hit: the identities $f^{\mathcal F}_*(\sigma_s^2D_s)=d_i^{-1}\sigma_t^2D_t$ and $D_a\tau_i^a=\sigma_a^{-2}$ give $D_su_i=0$, with target quantities evaluated at the image. Consequently
+
+$$
+ \widehat\Phi^t_{ij}
+ =\widehat K_i\widehat\Phi^s_{ij}\widehat K_j^{-1}.
+$$
+
+The compact lifts, affine origins and projective extensions are carried by this same map. The selected root is transported as a line/root map with its central calibration, not recovered merely from the square of a function. If two such root comparisons cover the same squared comparison and have the retained central value, their ratio is a holomorphic unit $q$ with $q^2=1$ and $q(o)=1$. On a smaller connected parent $q+1$ is a unit, hence $q=1$. Thus the calibration removes a possible extra sign.
+
+**Normal transport, infinity and point planes.** The isometry and its specified full-spin lift induce the connection isomorphisms on the normal tractor and local-twistor bundles. In a metric splitting the tractor map is the identity on the scalar slots and the induced cotangent map on the middle slot. Substitution in J.1's formula for $D$ verifies the intertwining, since $f$ preserves $\nabla$, $P$ and $g$. It preserves $H$, $X$, the selected density and $I=L\sigma$. In the physical vacuum scale $\sigma=1$, $P=0$, so $I=(1,0,0)$ and $H(I,I)=0$. No division by this zero norm is used. Proposition I.3's spin exterior-square identification is natural for the full-spin lift, hence carries both infinity tensors, including their normalization, and all raywise local-twistor flags. The point-plane kernels in J.4 are carried by the same linear map. Evaluation and $X/\sigma$ agree with [@eq:schw-bc-affine-solution-map], so there is no separate unmatched choice of affine lift.
+
+**Operators, associators and point modules.** Form the comparison
+
+$$
+ \mathcal P(\mathcal S_{\mathrm{op}}A)
+ \xrightarrow{\alpha_A}\operatorname{Can}(g[A])
+ \xrightarrow{\operatorname{Can}(f)}\operatorname{Can}(g_m,p,s),
+$$ {#eq:schw-bc-enriched-map}
+
+where $\alpha_A$ is the actual comparison of Theorem J.6. For the second arrow, H.4 quantizes the symbol map $(K_i^{-1})^*$ in the calibrated projective Heisenberg charts, retaining the chosen root, and G.5 supplies the framed module maps. More explicitly, on a common finite refinement there are chart algebra maps $k_i$, normalized units $U_{ij}$ and point-module maps $F_i$ satisfying
+
+$$
+ \begin{aligned}
+ k_i\varphi^s_{ij}
+    &=\operatorname{Ad}(U_{ij})\varphi^t_{ij}k_j,\\
+ U_{ij}\varphi^t_{ij}(U_{jk})C^t_{ijk}
+    &=k_i(C^s_{ijk})U_{ik},\\
+ F_i\tau^s_{ij}&=U_{ij}\tau^t_{ij}F_j.
+ \end{aligned}
+$$ {#eq:schw-bc-actual-operator-comparison}
+
+Here $\varphi$ and $C$ are the overlap maps and associators, and $\tau$ are the module overlaps. All base changes and moving arguments are those of H.4 and Theorem J.6. The second equation retains both associators; replacing it by a principal-symbol equality would be insufficient. Compact embedded support classification and the framed module construction identify the module supported on $Q_x$ with the module on $Q_{f(x)}$ over its whole compact support. G.5 and H.4's normalized-inner and framed-Hom uniqueness give inverses and coherent finite composites. The geometric components are those already described, by Theorem J.6. In particular, a central full-spin label is retained even if some tensor components factor through its orthogonal image.
+
+All constituent operations are the existing analytic normal maps, ray hit maps, root maps, finite matrix transports and H.4 finite refinements. Under the conditioned-parent hypotheses their finitely many restrictions retain common positive domains. This proves the asserted parameter and finite-coherence statements. ∎
+
+<div id="sec:schw-bc-finite-coherence"></div>
+
+<div id="sec:sh-comparison-4"></div>
+
+#### K.2.4. Finite representatives across the future horizon
+
+<div id="thm:schw-bc-finite-horizon"></div>
+
+**Theorem K.8 (finite horizon system).**
+
+The core $K$ in [@eq:schw-bc-physical-core] admits a finite system of short analytic normal representatives, their generated contact/affine/operator objects, and actual physical comparisons covering its exterior, horizon and interior portions. The system can be chosen with common positive buffers and unit margins on its retained compact subcores, including the required inverse maps and every specified finite double/triple comparison. It carries compatible full-spin lifts, roots and density calibration, compact point modules and actual operator associators. Its finite composition diagrams have the coherence of Definition 2.1, Theorem 8.3 and H.4. All assertions are relative to this finite system; no global ray quotient or global operator ring is constructed.
+
+*Proof.* We give the parent-domain construction before the overlap identities.
+
+**Short common parents.** Enlarge $K$ slightly inside $r>0$ and use the finite real-analytic angular frame parents of Lemma K.5. On their compact subcores the metric, inverse, connection, chosen frames and inverse frames are bounded. The analytic exponential and parallel-spin-transport ODEs depend holomorphically on their point/frame parameters. At zero displacement the exponential differential is the initialized isomorphism. The analytic inverse theorem with compact parameters therefore gives a common strictly positive short radius after finite restriction. More concretely, the differential remains uniformly close to the initial identity in the finite coordinate trivializations on a small complex polydisk; shrinking that disk yields injective normal maps and bounded inverses on smaller disks with a reserved buffer.
+
+Cover $K$ by finitely many small cores inside these normal parents. Choose the cores small enough relative to the retained parent radius that if two cores meet, each center and the relevant double/triple overlap lie within the larger normal parents needed for the comparison. Restricting an overlap at any of its points then gives an actual short physical comparison. Its normal displacement, spin transport and inverse stay inside the retained parents. This is a finite covering construction, not a lower bound on the injectivity radius of every possible long null segment.
+
+The bundle of whole complex skies over each compact point core is compact: its fiber is $\mathbb P^1\times\mathbb P^1$. Cover it by finitely many bounded direction charts, normalizing a nonzero direction component in each. The null-geodesic vector field is nonzero there. At each central incidence point choose a transversal coordinate with nonzero directional derivative; shrink so this derivative has a positive lower bound on the chosen compact subcore. The implicit-function theorem for the short hit time gives a ray flow box and its inverse with a positive buffer. Compactness provides finitely many such boxes and a common positive short bound. Their transitions describe the entire compact sky, including directions missing in one affine spinor chart. This is the geometric hypothesis used by Proposition 4.2 and Appendix D, now verified for the EF parents.
+
+Lemma K.16 below is local in the physical displacement. Its application to the finite core $K$ of Theorem K.8 is as follows. Enlarge $K$ slightly within $r>0$ and keep its finite analytic point/full-spin frame parents. Lemma K.6 gives uniformly bounded record families $U(p,s)$ on their compact subcores. Apply the preceding construction also with $(p,s)$ as passive parameters. Compactness and finitely many frame charts give a positive common local displacement radius for the fixed finite comparison shapes, including the double/triple and required higher coherence diagrams. This radius controls small local stars of point charts; it is not a normal-coordinate radius from one chosen point that contains all of $K$.
+
+Now choose the finite physical cover of $K$ with cores small relative to these local radii and with larger buffered normal parents. It may be refined before selecting the final finite list of charts. On every nonempty local comparison star, take one center as a local reference mark and express the other marks and frames by small displacements and actual initialized spin transports from that center. At physical amplitude one these are the prescribed Schwarzschild point/frame records. The compatible family in that star is
+
+$$
+ U^{(\alpha)}_\varepsilon=\varepsilon U_\alpha,\qquad
+ V^{(\alpha)}_\beta(\varepsilon)
+      =R_{a_{\beta\alpha},A_{\beta\alpha}}
+                                    (U^{(\alpha)}_\varepsilon).
+$$ {#eq:schw-bc-local-star-families}
+
+All finite-star parents are chosen before their passive marks are specialized. The local cover may be chosen sufficiently fine that the centers in a common double/triple comparison lie inside the relevant passive displacement balls. The same construction with finitely many extra passive vertices handles any additional specified finite local composite. There is no quantifier over arbitrary unbounded words.
+
+At $\varepsilon=1$, a vertex obtained from either incident star has exactly the same complete marked Schwarzschild records. Its prescribed generated object is the one for those records. If auxiliary representative choices differ, H.4 and Theorem J.6 give their actual normalized comparisons. Thus the physical operator/module lifts furnished by G.5 at amplitude one compare the original vertex objects. The selected composite and the composite of selected lifts have the same actual physical symbol and full-spin label. Lemma F.8's normalized-inner uniqueness and the whole-family framed-Hom uniqueness then give the actual comparison units and all finite coherence equations. This argument does not require the local star families to glue to a single spacetime metric for $\varepsilon\ne1$.
+
+The compact point cores still cover $K$: for any required point, the sufficiently small chart cores and their larger parents can be chosen around that point before the finite subcover is taken. Subsequent simultaneous closed-star refinements retain those whole compact cores and the complete compact sky fibers. All norms have finite maxima and all actually inverted units and composite buffers have positive minima over the finite system. This proves the amplitude and structured-comparison part of Theorem K.8 on its original finite core. It does not replace the exact physical transition maps by gluing independently truncated charts.
+
+In particular, the older ray family from $r=5m/2$ to $r=3m/2$ can remain in that finite physical cover. It is not thereby contained in one root germ's common physical amplitude parent. Nor are independent families $\varepsilon U_\alpha$ at different marks automatically physical comparisons of one another.
+
+
+**Physical double and triple maps.** Write $f_\alpha:g[A_\alpha]\to U_\alpha\subset(M,g_m)$ for [@eq:schw-bc-normal-isometry]. On the retained overlaps the comparison from chart $\alpha$ to chart $\beta$ is
+
+$$
+ t_{\beta\alpha}=f_\beta^{-1}f_\alpha,\qquad
+ t_{\gamma\beta}t_{\beta\alpha}=t_{\gamma\alpha},\qquad
+ t_{\alpha\beta}=t_{\beta\alpha}^{-1}.
+$$ {#eq:schw-bc-physical-chart-coherence}
+
+Use the full-spin frame transitions of the already fixed spin bundle for their lifts. Those lifts satisfy the same identities, because they are changes of its actual local sections. To describe an overlap by Theorem 8.3's instructions, take $a$ to be the short normal displacement from the $\beta$ mark to the $\alpha$ mark and take $A$ so that radial spin transport followed by $A$ is the actual $\alpha$ frame. Then $U_\alpha=R_{a,A}U_\beta$ and $t_{\beta\alpha}=\Xi_{a,A}$ on their common representative. Composite instructions use
+
+$$
+ (b,B)\circ(a,A)
+   =\bigl(h_U(a,Ab),K_U(a,Ab)AB\bigr),
+$$ {#eq:schw-bc-full-instruction-composition}
+
+with the source-dependent radial/broken-path spin correction $K_U$ of §8.3. The physical point-map direction is the one specified there. In particular, we have not replaced this law by addition of displacements or by multiplication $AB$ alone. The spin holonomy around a curved path is allowed to be nontrivial. The strict chart-transition identity [@eq:schw-bc-physical-chart-coherence] follows from changes of sections, not from path independence of the connection.
+
+The cotangent lifts and descended contact maps compose exactly with [@eq:schw-bc-physical-chart-coherence]. For successive source-to-target affine maps $(K_{12},d_{12},u_{12})$ and $(K_{23},d_{23},u_{23})$, direct substitution in [@eq:schw-bc-affine-chart-map] gives
+
+$$
+ \begin{aligned}
+ K_{13}&=K_{23}K_{12},\\
+ d_{13}&=(d_{23}\circ K_{12})d_{12},\\
+ u_{13}&=(d_{23}^{-1}\circ K_{12})u_{12}
+                   +u_{23}\circ K_{12}.
+ \end{aligned}
+$$ {#eq:schw-bc-affine-coherence}
+
+These equations include the moving arguments. The inverse is the inverse affine map, with translation $-(d_{12}u_{12})\circ K_{12}^{-1}$. The full-spin maps carry the root and its calibration, hence the optical section, infinity tensors and affine slice agree on triples by functoriality, with no sign selected afresh on the triple. The compact support $Q_x$ and its lifted evaluation are carried to the same compact support and evaluation under both routes.
+
+**Finite operator refinement and module coherence.** Take the compact union of whole skies over the enlarged point cores and all stipulated finite comparison images. It is compact. Apply H.4's finite buffered closed-star refinement to the contact and root charts and to the comparison maps and their inverses simultaneously. Intersect the finitely many required preimages of parent neighborhoods so every stipulated composite remains inside its assigned parent with a positive buffer. This does not remove points from the required physical core: at any retained physical point all chart-transition routes represent that same point in charts whose larger parents contain it. Their finitely many preimages contain a neighborhood of that point; a finite refinement of those neighborhoods still covers $K$ and its whole skies. This is precisely the finite-conditioned-diagram procedure of Definition 2.1. It does not assert that a quantizer exists on an arbitrary previously chosen full overlap without refinement.
+
+On this finite system each $t_{\beta\alpha}$ has actual operator/module comparisons as in [@eq:schw-bc-actual-operator-comparison]. On a triple choose their normalized comparison between the two routes. At the chart-algebra level denote the equivalences by $L_{\beta\alpha}$ and the actual implementer by $P_{\gamma\beta\alpha}$. On common refined charts they satisfy
+
+$$
+ L_{\gamma\beta}L_{\beta\alpha}
+   =\operatorname{Ad}(P_{\gamma\beta\alpha})L_{\gamma\alpha},
+ \qquad
+ M_{\gamma\beta}M_{\beta\alpha}
+   =P_{\gamma\beta\alpha}M_{\gamma\alpha}
+$$ {#eq:schw-bc-operator-triple}
+
+for the framed point-module maps $M$. These equations are in addition to the internal chart-overlap associators $C_{ijk}$ retained in [@eq:schw-bc-actual-operator-comparison]. The two routes through a fourfold composite have the equality
+
+$$
+ P_{\delta\gamma\beta}P_{\delta\beta\alpha}
+ =L_{\delta\gamma}(P_{\gamma\beta\alpha})P_{\delta\gamma\alpha}.
+$$ {#eq:schw-bc-operator-quadruple}
+
+To see this equality, associate $L_{\delta\gamma}L_{\gamma\beta}L_{\beta\alpha}$ in its two ways. The displayed sides implement the same inner action over the same physical map and full-spin label. Both have the normalization of Lemma F.8. Their equality follows from normalized-inner uniqueness; the framed module equality then follows from the framed-Hom uniqueness in H.4. The same uniqueness gives identities, inverse comparisons and every retained finite composition diagram. Whole compact point modules, the local-twistor flags and calibrated infinity forms are preserved by Theorem J.6, including their module actions. The full-spin center remains part of the label in these equalities.
+
+**Margins and reality.** The geometric maps above are analytic isomorphisms on their parents. On smaller compact subcores every coordinate or frame determinant, contact multiplier, scalar root-transition coefficient and hit-time derivative that is used as a unit is nonzero. Thus the absolute values of these units have positive minima, the inverse frame matrices are bounded, and the core images have positive distance from the finite parent boundaries. Individual entries of an invertible frame matrix need not be nonzero. The explicit $r$ denominators stay bounded away from zero by $r_->0$; $f=0$ is not a denominator. There are finitely many stipulated maps, inverses and composites, so the minima of their positive buffers and unit margins are positive and the maxima of their bounds are finite. The source common parents follow from Lemma K.6 and Theorem 3.1; the prescribed generated representatives use §6; the finite operator refinement uses H.4. These observations verify every type of conditioning item in Definition 2.1 for this constructed finite diagram.
+
+The real analytic metric and chosen real spin structure give the coupled Lorentz operation. Its induced operator comparison is the structured Real comparison of G.5 and J.7, with its retained square isomorphism. We do not replace that square by a claim that every local representative is strictly involutive. Refining the finite cover with its conjugate carries the same maps and compact cores and preserves the positive margins. This proves the theorem. ∎
+
+
+<div id="sec:sh-integrated-optics"></div>
+
+### K.3. Nonradial screen transport and stationary relations
+
+<div id="sec:sh-optics-1"></div>
+
+#### K.3.1. Conventions and the two optical systems
+
+Use the auxiliary metric
+
+$$
+ h=-f(r)\,dv^2+2\,dv\,dr+r^2(d\theta^2+\sin^2\theta\,d\phi^2),
+ \qquad f(r)=1-\frac{2m}{r},
+$$
+
+of signature $(-,+,+,+)$. The metric in the signature of the correspondence is $g=-h$. We use
+
+$$
+ R(X,Y)=[\nabla_X,\nabla_Y]-\nabla_{[X,Y]},\qquad
+ \operatorname{Ric}(Y,Z)=\operatorname{tr}(X\mapsto R(X,Y)Z).
+$$
+
+Metric negation leaves the connection, the curvature operator, the null geodesics with their affine parameters, and the covariant Ricci tensor unchanged. On the screen $k^\perp/\langle k\rangle$, its positive definite inner product is $h=-g$. If $e_1,e_2$ are parallel and $h$-orthonormal screen vectors, put
+
+$$
+ \mathcal R_{ij}=h(e_i,R(e_j,k)k)=-g(e_i,R(e_j,k)k).
+$$
+
+Then the transverse Jacobi equation is $x''+\mathcal R x=0$. This convention agrees with the curvature-operator Jacobi equation of the correspondence.
+
+The correspondence's rank-two scalar optical bundle $\mathcal E_J$ consists of solutions of $y''+\kappa y=0$, where $\kappa=\tfrac12\operatorname{Ric}(k,k)$ in an affine metric calibration; see Proposition 5.3 and its proof. It is a two-dimensional scalar solution space. In this Ricci-flat example its affine equation is $y''=0$.
+
+The transverse screen has dimension two at a point. Its Jacobi solution space, or phase space of $(x,x')$, has dimension four. It retains the trace-free Weyl tidal term even when $\kappa=0$. These three spaces are distinct. The calculation below concerns the four-dimensional screen phase space.
+
+<div id="sec:sh-optics-2"></div>
+
+#### K.3.2. An explicit compact family of finite crossing rays
+
+Let $u$ be affine parameter, and impose
+
+$$
+ u_0=0,\quad r(0)=\frac52m,\quad v(0)=0,\quad
+ \theta=\frac\pi2,\quad \phi(0)=0,\qquad
+ 1\le E\le2,\quad \frac14\le\ell:=\frac Lm\le\frac12.
+$$
+
+Choose the future ingoing branch. The conserved quantities and the null equation give
+
+$$
+ E=f\dot v-\dot r,\qquad L=r^2\dot\phi,\qquad
+ q(r)=\sqrt{E^2-f(r)\frac{L^2}{r^2}},
+$$
+
+$$
+ \dot r=-q,\qquad
+ \dot v=\frac{L^2}{r^2(E+q)},\qquad
+ \dot\phi=\frac L{r^2}.
+$$ {#eq:sh-optics-d-1}
+
+The expression for $\dot v$ is rationalized before crossing the horizon. It is regular at $r=2m$ and gives $\dot v=L^2/(8Em^2)$ there. Moreover $E=f\dot v+q$ holds, so the stated energy has the same value on both sides. These equations solve the geodesic equation: conservation of the cyclic momenta gives the $v,\phi$ Euler--Lagrange equations, and differentiation of the null first integral gives the radial equation because $\dot r\ne0$. The equatorial plane is totally geodesic.
+
+Put $t=u/m$, $\rho=r/m$, and $V=v/m$. On $3/2\le\rho\le5/2$,
+
+$$
+ a(\rho)=\frac{\rho-2}{\rho^3},\qquad
+ a'(\rho)=\frac{6-2\rho}{\rho^4}>0,\qquad
+ -\frac4{27}\le a\le\frac4{125}.
+$$
+
+Consequently
+
+$$
+ \frac{124}{125}\le q^2=E^2-\ell^2a(\rho)\le\frac{109}{27},
+ \qquad \frac{99}{100}<q<\frac{21}{10}.
+$$ {#eq:sh-optics-d-2}
+
+There is a unique endpoint $T$ at $r(T)=3m/2$. The dimensionless length $\tau=T/m$ satisfies
+
+$$
+ \frac{10}{21}<\tau<\frac{100}{99}.
+$$ {#eq:sh-optics-d-3}
+
+The horizon is met exactly once, transversely, with $\dot r=-E\le-1$. More strongly, $-\dot r>99/100$ throughout. The ray is nonradial everywhere: $L\ge m/4$.
+
+The complete coordinate solution is specified by monotone quadratures:
+
+$$
+ t=\int_{\rho(t)}^{5/2}\frac{ds}{q(s)},\qquad
+ \phi(t)=\ell\int_{\rho(t)}^{5/2}\frac{ds}{s^2q(s)},\qquad
+ V(t)=\ell^2\int_{\rho(t)}^{5/2}\frac{ds}{s^2q(s)(E+q(s))}.
+$$ {#eq:sh-optics-d-4}
+
+They define real-analytic functions of the parameters and the affine variable on a common neighborhood of the compact family: the radicand has the uniform positive lower bound in [@eq:sh-optics-d-2], and $dt/d\rho=-1/q$ is a unit. No elliptic-integral inversion convention is needed.
+
+The coordinate derivatives obey the explicit bounds
+
+$$
+ \frac1{410}\le\frac{dV}{dt}=\dot v\le\frac1{16},\qquad
+ \frac1{25}\le\frac{d\phi}{dt}=\frac\ell{\rho^2}\le\frac29.
+$$
+
+Indeed the lower bound for $\dot v$ follows from
+$\ell^2\ge1/16$, $\rho^2\le25/4$, and $E+q\le41/10$; its upper bound follows from $E+q\ge199/100$. Hence
+
+$$
+ 0\le V(t)<\frac{25}{396}<\frac1{15},\qquad
+ 0\le\phi(t)<\frac{200}{891}<\frac14.
+$$ {#eq:sh-optics-d-5}
+
+In particular the whole family lies in one regular angular and advanced-time chart inside the parent domain
+
+$$
+ \frac43<\rho<\frac83,\quad |V|<\frac14,\quad
+ |\theta-\pi/2|<\frac18,\quad -\frac18<\phi<\frac38.
+$$ {#eq:sh-optics-d-6}
+
+The radial buffer is at least $1/6$, the angular $\phi$ buffer is at least $1/8$, and the advanced-time buffer is greater than $1/4-1/15=11/60$, in the displayed dimensionless coordinates. The equator has a $1/8$ latitude buffer. The metric determinant is $-r^4\sin^2\theta$, so its nondegeneracy on the closure of a slightly smaller parent is explicit, including the horizon. These are finite coordinate buffers, not statements about the global null-ray quotient.
+
+<div id="sec:sh-optics-3"></div>
+
+#### K.3.3. A genuinely parallel Sachs basis
+
+Along each ray define the regular null frame
+
+$$
+ l=\partial_v+\frac f2\partial_r,\quad n=-\partial_r,
+ \quad e_\theta=\frac1r\partial_\theta,\quad
+ e_\phi=\frac1r\partial_\phi.
+$$
+
+On the equator, $h(l,n)=-1$ and $e_\theta,e_\phi$ are unit spacelike. Write
+
+$$
+ A=\dot v>0,\qquad c=\frac Lr,\qquad
+ b=q+\frac{fA}{2},\qquad
+ k=A l+b n+c e_\phi,\qquad 2Ab=c^2.
+$$
+
+Set
+
+$$
+ z=\frac cA=\frac{r(E+q)}L,\qquad
+ H(u)=\frac{Eu+r(0)-r(u)}L,
+$$
+
+$$
+ e_1=e_\theta,\qquad e_2=e_\phi+z n+Hk.
+$$ {#eq:sh-optics-d-7}
+
+These satisfy $h(e_i,e_j)=\delta_{ij}$ and $h(e_i,k)=0$. In particular $e_2$ is not obtained by deleting the angular momentum of the ray. The nonprincipal character of the ray remains in both $k$ and $e_2$.
+
+Here is a direct parallelism calculation. The EF connection on the equator gives
+
+$$
+ \nabla_k e_\theta=0,\quad
+ \nabla_k e_\phi=-\frac crl+\frac{fc}{2r}n,\quad
+ \nabla_k n=-\frac{Af'}2 n-\frac cr e_\phi.
+$$
+
+Also $\dot A=-f'A^2/2+c^2/r$, $\dot c=qc/r$, and thus
+
+$$
+ \dot z=-\frac{Ez}{r}+\frac{cf'}2,\qquad
+ \nabla_k(e_\phi+z n)=-\frac zr k=-\frac{E+q}L k,
+ \qquad \dot H=\frac{E+q}L.
+$$
+
+Equation [@eq:sh-optics-d-7] is therefore an exactly parallel orthonormal Sachs basis, not merely a choice parallel modulo $k$. It is regular at the horizon. Uniform coefficient bounds useful for comparison are
+
+$$
+ 0<z\le41,\qquad 0\le H<\frac{1196}{99}<13.
+$$ {#eq:sh-optics-d-8}
+
+The second bound uses $u\le100m/99$ and $r(0)-r\le m$. These are coefficient bounds in the regular frame above, not Lorentzian positive norms of arbitrary spacetime vectors.
+
+<div id="sec:sh-optics-4"></div>
+
+#### K.3.4. Actual curvature and the two nonzero tidal eigenvalues
+
+For completeness the nonzero connection coefficients, besides symmetry in the lower slots, are
+
+$$
+ \begin{gathered}
+ \Gamma^v_{vv}=f'/2,\quad \Gamma^r_{vv}=ff'/2,
+ \quad \Gamma^r_{vr}=-f'/2,\quad
+ \Gamma^v_{\theta\theta}=-r,\quad
+ \Gamma^v_{\phi\phi}=-r\sin^2\theta,\\
+ \Gamma^r_{\theta\theta}=-fr,\quad
+ \Gamma^r_{\phi\phi}=-fr\sin^2\theta,\quad
+ \Gamma^\theta_{r\theta}=\Gamma^\phi_{r\phi}=1/r,\\
+ \Gamma^\theta_{\phi\phi}=-\sin\theta\cos\theta,
+ \qquad\Gamma^\phi_{\theta\phi}=\cot\theta.
+ \end{gathered}
+$$ {#eq:sh-optics-d-9}
+
+Substitution in the stated curvature convention yields
+
+$$
+ \begin{gathered}
+ \operatorname{Ric}_{vv}=f(f''/2+f'/r),\qquad
+ \operatorname{Ric}_{vr}=-(f''/2+f'/r),\qquad
+ \operatorname{Ric}_{rr}=0,\\
+ \operatorname{Ric}_{\theta\theta}=1-f-rf',\qquad
+ \operatorname{Ric}_{\phi\phi}=\sin^2\theta(1-f-rf').
+ \end{gathered}
+$$
+
+All other components vanish; $f=1-2m/r$ makes this tensor zero.
+
+The out-of-plane tidal entry can be calculated without taking a Ricci trace. For the two-dimensional base metric $-f\,dv^2+2\,dv\,dr$, the Hessian of $r$ has entries $-ff'/2,f'/2,0$ in its $vv,vr,rr$ slots. If $k_B=A\partial_v-q\partial_r$, the null identity $fA^2+2Aq=c^2$ gives
+
+$$
+ (\nabla_B^2r)(k_B,k_B)=-\frac{f'c^2}{2}.
+$$
+
+The mixed and spherical curvature terms from [@eq:sh-optics-d-9] are respectively $-(\nabla_B^2r)(k_B,k_B)/r$ and $c^2(1-f)/r^2$. Their sum is
+
+$$
+ h(e_\theta,R(e_\theta,k)k)
+ =c^2\left(\frac{f'}{2r}+\frac{1-f}{r^2}\right)
+ =\frac{3mL^2}{r^5}=:d_u>0.
+$$ {#eq:sh-optics-d-10}
+
+The equatorial reflection fixes $k$ and $e_2$ and reverses $e_1$, so the off-diagonal tidal entries vanish. The screen trace is $\operatorname{Ric}(k,k)=0$; the two missing null-frame contributions vanish by curvature antisymmetry. It follows that
+
+$$
+ \mathcal R=\begin{pmatrix}d_u&0\\0&-d_u\end{pmatrix},
+ \qquad x_1''=-d_u x_1,\quad x_2''=d_u x_2.
+$$ {#eq:sh-optics-d-11}
+
+Adding $Hk$ in [@eq:sh-optics-d-7] changes neither screen curvature entry. The ordering is fixed: the out-of-plane direction focuses, while the in-plane direction has the opposite Weyl tide.
+
+There is a separate sign check using a geometric Jacobi field. Rotation of the orbital plane gives an out-of-plane amplitude $y=r\sin\phi$; this follows by differentiating a spatial rotational isometry and pairing with $e_\theta$, up to an immaterial constant sign. The geodesic first integrals give
+
+$$
+ \ddot r=\frac{L^2}{r^3}-\frac{3mL^2}{r^4},\qquad
+ \dot\phi=\frac L{r^2},\qquad
+ 2\dot r\dot\phi+r\ddot\phi=0.
+$$
+
+Therefore $y''=-(3mL^2/r^5)y$. Using the second rotational field gives $r\cos\phi$ and removes any issue at zeros of $\sin\phi$. This independently checks the sign and the nonzero coefficient of [@eq:sh-optics-d-10]. Ricci-flatness alone would not give [@eq:sh-optics-d-10].
+
+<div id="sec:sh-optics-5"></div>
+
+#### K.3.5. Full phase transport and an exact representation
+
+Use $t=u/m$ and the dimensionally consistent phase vector
+
+$$
+ Z=\binom{x}{p},\qquad p=m\frac{dx}{du}=\frac{dx}{dt},\qquad
+ \omega(t)=\frac{3\ell^2}{\rho(t)^5},\qquad
+ K(t)=\operatorname{diag}(-\omega(t),+\omega(t)).
+$$
+
+Then
+
+$$
+ \frac{dZ}{dt}=\mathsf A(t)Z,\qquad
+ \mathsf A(t)=\begin{pmatrix}0&I_2\\K(t)&0\end{pmatrix},
+ \qquad\Phi(s,s)=I_4.
+$$ {#eq:sh-optics-d-12}
+
+All matrix norms below are Euclidean operator norms in this phase basis. Direct evaluation gives
+
+$$
+ \frac6{3125}\le\omega\le\frac8{81},\qquad
+ \|\mathsf A\|=1,\qquad
+ |\omega'|=\frac{15\ell^2q}{\rho^6}\le\frac{56}{81}.
+$$ {#eq:sh-optics-d-13}
+
+The exact fundamental matrix is the uniformly convergent Peano--Baker series
+
+$$
+ \Phi(t,s)=I_4+
+ \sum_{n=1}^\infty
+ \int_{s<t_n<\cdots<t_1<t}
+ \mathsf A(t_1)\cdots\mathsf A(t_n)\,dt_n\cdots dt_1.
+$$ {#eq:sh-optics-d-14}
+
+This, together with the explicit quadratures [@eq:sh-optics-d-4], is a specification of every entry of the full transport. It does not replace the matrix by its trace. With $h=t-s\le100/99$ and the series truncated after degree $N$,
+
+$$
+ \|\Phi(t,s)\|\le e^h<3,\qquad
+ \|\Phi(t,s)-\Phi_N(t,s)\|
+ \le e^h\frac{h^{N+1}}{(N+1)!}
+ \le3\frac{(100/99)^{N+1}}{(N+1)!}.
+$$ {#eq:sh-optics-d-15}
+
+For example the $N=8$ upper bound is less than $1/40320$, using $(100/99)^9<(11/10)^9<3$. This is an analytic finite error certificate, not a numerical integration result. The loose elementary bound $e^{100/99}<3$ follows from $e<11/4$ and $e^{1/99}\le99/98$.
+
+More explicitly let $c_\pm,s_\pm$ solve $y''=\pm\omega y$ with initial data $(1,0)$ and $(0,1)$ at $t=0$. In the ordered basis $(x_1,x_2,p_1,p_2)$ the exact matrix is
+
+$$
+ \Phi(t,0)=
+ \begin{pmatrix}
+ c_-&0&s_-&0\\
+ 0&c_+&0&s_+\\
+ c_-'&0&s_-'&0\\
+ 0&c_+'&0&s_+'
+ \end{pmatrix}.
+$$ {#eq:sh-optics-d-16}
+
+Two entries are available directly from the rotational Jacobi fields. With $\rho_0=5/2$ and $q_0=q(\rho_0)$,
+
+$$
+ s_-(t)=\frac{\rho_0}{\ell}\rho(t)\sin\phi(t),\qquad
+ c_-(t)=\frac{\rho(t)}{\rho_0}\cos\phi(t)
+                 +\frac{q_0}{\rho_0}s_-(t).
+$$ {#eq:sh-optics-d-17}
+
+The lower bound on $\ell$ makes these formulas regular for the whole family. The other two solutions are specified by their convergent Volterra equations or [@eq:sh-optics-d-14]; no elementary closed form is asserted.
+
+There is also a finite approximation preserving the exact symplectic structure. For a partition $0=t_0<\cdots<t_n=\tau$ of mesh $\delta$, use the exact matrix exponential of the frozen generator $\mathsf A(t_j)$ on each subinterval and compose them in time order. If $h_j=t_{j+1}-t_j$ and $w=\omega(t_j)$, that factor has blocks
+
+$$
+ \begin{pmatrix}C&S\\K(t_j)S&C\end{pmatrix},\quad
+ C=\operatorname{diag}(\cos(\sqrt w h_j),\cosh(\sqrt w h_j)),
+$$
+
+$$
+ S=\operatorname{diag}\left(
+ \frac{\sin(\sqrt w h_j)}{\sqrt w},
+ \frac{\sinh(\sqrt w h_j)}{\sqrt w}\right).
+$$
+
+By [@eq:sh-optics-d-13] the piecewise coefficient error is at most $(56/81)\delta$. Duhamel's formula gives the global bound
+
+$$
+ \|\Phi_{\mathrm{frozen}}(\tau,0)-\Phi(\tau,0)\|
+ \le\frac{5600}{2673}\delta<3\delta.
+$$ {#eq:sh-optics-d-18}
+
+For a uniform partition it is in particular less than $3/n$. Exact values of the sampled coefficients in this construction are defined by [@eq:sh-optics-d-4]. Computation or certified enclosure of those samples would be an additional numerical step; none has been performed here. Further sample errors are covered by the coefficient-stability estimate below. An unmodified finite Peano--Baker polynomial need not itself be symplectic, whereas these exact frozen factors are symplectic.
+
+<div id="sec:sh-optics-6"></div>
+
+#### K.3.6. Symplecticity, finite composition, and stationary generating families
+
+Let
+
+$$
+ \mathsf J=\begin{pmatrix}0&I_2\\-I_2&0\end{pmatrix},\qquad
+ \Omega(Z,\widehat Z)=Z^{\mathsf T}\mathsf J\widehat Z.
+$$
+
+Since $K=K^{\mathsf T}$,
+$\mathsf A^{\mathsf T}\mathsf J+\mathsf J\mathsf A=0$.
+Differentiating $\Phi^{\mathsf T}\mathsf J\Phi$ proves
+
+$$
+ \Phi(t,s)^{\mathsf T}\mathsf J\Phi(t,s)=\mathsf J,
+ \qquad \Phi(t,s)^{-1}=\Phi(s,t),\qquad
+ \Phi(t,s)\Phi(s,r)=\Phi(t,r).
+$$ {#eq:sh-optics-d-19}
+
+The composition identity follows from the initial-value theorem and holds for every finite partition. The Hamiltonian is
+
+$$
+ H_t(x,p)=\frac12|p|^2+\frac12\omega(t)(x_1^2-x_2^2).
+$$
+
+Its potential is indefinite; no positivity, minimizing principle, or positive-definite closed-system theorem is used. With the metric $g=-h$, the Jacobi Wronskian of Proposition 5.3 is $-m^{-1}\Omega$ in this basis. Multiplication by the constant $-m^{-1}$ changes neither symplectic maps nor Lagrangian subspaces.
+
+Write a short-segment matrix as $U_j=\begin{pmatrix}a_j&b_j\\c_j&d_j\end{pmatrix}$. When $b_j$ is invertible, symplecticity makes $b_j^{-1}a_j$ and $d_jb_j^{-1}$ symmetric and gives $c_j-d_jb_j^{-1}a_j=-b_j^{-\mathsf T}$. Thus
+
+$$
+ S_j(x_j,x_{j+1})=
+ \frac12 x_j^{\mathsf T}b_j^{-1}a_jx_j
+ -x_j^{\mathsf T}b_j^{-1}x_{j+1}
+ +\frac12x_{j+1}^{\mathsf T}d_jb_j^{-1}x_{j+1}
+$$ {#eq:sh-optics-d-20}
+
+generates the exact graph by $p_j=-\partial_{x_j}S_j$ and
+$p_{j+1}=\partial_{x_{j+1}}S_j$.
+
+For a finite chain retain all intermediate positions and put
+$S=\sum_j S_j$. Stationarity in $x_j$ for $0<j<n$ is exactly equality of the outgoing and incoming momenta at that vertex. The critical relation with endpoint momenta defined by the endpoint derivatives is therefore the graph of $U_{n-1}\cdots U_0$. This proof does not require a nondegenerate Hessian in the intermediate positions, nor does it eliminate those positions.
+
+More generally, for any continuous bounded symmetric tidal matrix on a finite interval, sufficiently short segments have invertible $b_j$. Indeed, if $\|K\|\le M$ and $a=\max(1,M)$, the initial solution with position zero and momentum $p_0$ satisfies $|x(s)|\le s e^{as}|p_0|$. The Volterra equation then gives
+$\|b_j-h_jI\|\le M e^{ah_j}h_j^3/6$. A finite partition with $M e^{ah_j}h_j^2/6<1$ therefore suffices. This is a direct finite Hamiltonian argument.
+
+Consequently the graph of the full transport is always a Lagrangian subspace of
+$(\mathbb R^4,-\Omega)\times(\mathbb R^4,\Omega)$ and remains of dimension four when its endpoint-position projection becomes singular. A propagated initial Lagrangian is likewise still a Lagrangian subspace at a caustic of that projection. The retained finite generating family describes that phase relation. A singular projection need not determine a unique phase point from its projected endpoints, and no inverse projection or inverse-Hessian estimate follows there.
+
+<div id="sec:sh-optics-7"></div>
+
+#### K.3.7. An evaluated endpoint-block margin for this family
+
+For a segment of dimensionless length $0<h\le100/99$, the initial-position-zero block $b(h)$ obeys
+
+$$
+ \|b(h)-hI_2\|
+ \le\frac8{81}e^h\frac{h^3}{6}
+ \le\frac4{81}\left(\frac{100}{99}\right)^2 h
+ <\frac1{10}h.
+$$
+
+Hence
+
+$$
+ \sigma_{\min}(b(h))\ge\frac9{10}h,\qquad
+ \|b(h)\|\le h e^h.
+$$ {#eq:sh-optics-d-21}
+
+At the full endpoint, [@eq:sh-optics-d-3] gives
+
+$$
+ \sigma_{\min}(b(\tau))>\frac37,\qquad
+ \|b(\tau)^{-1}\|<\frac73,\qquad
+ \|b(\tau)\|<\frac{100}{33},\qquad
+ \det b(\tau)>\frac9{49}.
+$$ {#eq:sh-optics-d-22}
+
+Here $b=\operatorname{diag}(s_-,s_+)$. Its entries are positive: [@eq:sh-optics-d-21] prevents a zero, and their initial derivatives are positive. The Volterra equations then give $s_-<h<s_+$ at every positive segment length, since $\omega>0$. Thus the optical effect is not the scalar free propagation of $\mathcal E_J$.
+
+There is no point-source conjugate point within this particular short family. The finite stationary-composition argument proves what remains meaningful if a projection of a general initial Lagrangian becomes singular; it does not assert that the point-source family constructed here passes through a caustic. Nor is [@eq:sh-optics-d-22] uniform as a segment length tends to zero. For initial physical transverse rate $\dot x(0)$, the physical endpoint map is $m b$ and its inverse norm is at most $7/(3m)$.
+
+A concrete singular Lagrangian projection can nevertheless be exhibited on these same intervals. Choose $t_c=\tau/2$, write $\Phi(t_c,0)=\begin{pmatrix}a_c&b_c\\c_c&d_c\end{pmatrix}$, and impose the initial screen condition
+
+$$
+ \Lambda_0=\{(x,P_0x):x\in\mathbb R^2\},\qquad
+ P_0=-b_c^{-1}a_c=P_0^{\mathsf T}.
+$$
+
+Equation [@eq:sh-optics-d-21] gives $\sigma_{\min}(b_c)>3/14$, so $\|P_0\|<14$. At $t_c$ the position is identically $(a_c+b_cP_0)x=0$, while invertibility and symplecticity of $\Phi$ imply that the propagated two-plane is exactly the vertical Lagrangian $\{(0,p)\}$. The projection is therefore singular there, although the full transport remains invertible. A retained generating family for this propagated condition is obtained by adding $\tfrac12x_0^{\mathsf T}P_0x_0$ to $\sum_jS_j$ and imposing stationarity also in $x_0$. It remains an exact phase relation at $t_c$; solving it as a single graph over the final position is unavailable there. This example is a caustic of the specified linear Lagrangian screen condition. No additional point-source conjugate point or nonlinear congruence construction is claimed.
+
+<div id="sec:sh-optics-8"></div>
+
+#### K.3.8. Finite coefficient and observation error
+
+This section is the ODE part of the metric-to-optics error bridge. It assumes that the comparison has already placed the exact and approximate systems on the same affine interval and in identified phase bases. The derivation of that identification and its coefficient bound from finite metric records is a separate input.
+
+Suppose
+
+$$
+ \sup_{0\le t\le\tau}\|\widetilde{\mathsf A}(t)-\mathsf A(t)\|
+ \le\varepsilon,\qquad 0\le\varepsilon\le\frac1{10}.
+$$
+
+The approximate coefficient need not be Hamiltonian for this stability assertion. Both initial fundamental matrices are the identity. Duhamel's formula gives
+
+$$
+ \|\widetilde\Phi(\tau,0)-\Phi(\tau,0)\|
+ \le\varepsilon\tau e^{(1+\varepsilon)\tau}\le4\varepsilon,
+ \qquad \|\widetilde\Phi\|<4.
+$$ {#eq:sh-optics-d-23}
+
+For an elementary evaluated bound, $(1+\varepsilon)\tau\le10/9$ and $e^{10/9}<(11/4)(9/8)=99/32<4$; the first bound is actually at most $(25/8)\varepsilon$. An initial phase error $\eta_0$ therefore contributes at most $4\eta_0$, and the coefficient error contributes at most $4\varepsilon\|Z_0\|$ to endpoint phase error.
+
+If an exact-system Peano--Baker truncation error $r_N$ is also retained, a common total transfer tolerance is $\delta=4\varepsilon+r_N$. If truncating the approximate system instead, its own series bound with $\|\widetilde{\mathsf A}\|\le1+\varepsilon$ must be used for $r_N$. The exact transfer blocks and any surrogate then satisfy $\|\widetilde b-b\|\le\delta$.
+
+One finite optical observation is the oriented transverse area factor
+
+$$
+ \mathcal O=m^2\det b(\tau),
+$$
+
+with initial angular/rate normalization fixed as above. For $\delta\le1$ the $2\times2$ determinant identity and [@eq:sh-optics-d-22] give
+
+$$
+ |\widetilde{\mathcal O}-\mathcal O|
+ \le m^2(2\|b\|\delta+\delta^2)\le9m^2\delta.
+$$ {#eq:sh-optics-d-24}
+
+This is a forward observation estimate; it requires no inverse projection. If in addition $\delta\le3/14$, the evaluated endpoint margin survives:
+
+$$
+ \sigma_{\min}(\widetilde b)\ge\frac3{14},\qquad
+ \|\widetilde b^{-1}\|\le\frac{14}{3},\qquad
+ \|\widetilde b^{-1}-b^{-1}\|\le\frac{98}{9}\delta.
+$$ {#eq:sh-optics-d-25}
+
+The last estimate is the matrix inverse identity. For the inverse of the physical map $m b$, multiply its right side by $m^{-1}$. At a caustic the hypothesis $\sigma_{\min}(b)>0$ is false, so [@eq:sh-optics-d-25] is unavailable; [@eq:sh-optics-d-23], finite symplectic composition, and the full phase relation still make sense wherever the coefficients remain bounded on a finite interval.
+
+
+<div id="sec:sh-integrated-error"></div>
+
+### K.4. Metric truncation and finite optical errors
+
+Fix one of the finite coordinate representatives constructed in the finite horizon construction and an inner real tube containing the chosen ray segments. Coordinate and tensor bounds below use fixed auxiliary Euclidean operator norms, including multilinear derivative norms; they are not norms of an indefinite metric. Write $g$ for the Schwarzschild metric with the signature of §2 and use the same coordinates for every approximation. All constants refer to this one fixed positive mass and this finite tube.
+
+<div id="lem:sh-holomorphic-metric-tail"></div>
+
+**Lemma K.9.**
+
+Suppose the prescribed stored representative of Proposition 6.2 is defined on complex spatial parents with positive buffer, holomorphically for $|\varepsilon|<T_b$, with $T_b>1$, and that the finite metric reconstruction and its inverse units stay in the fixed margins of that proposition. Choose $1<T<T_b$ and an inner spatial polydisc whose coordinatewise gap from the retained parent is $\rho>0$. There is a finite $H_g$ such that, for the degree-$N$ amplitude Taylor polynomial $g_N$ of the reconstructed physical metric in the fixed coordinates,
+
+$$
+ \|g-g_N\|\le\delta_N:=\frac{H_gT^{-N-1}}{1-T^{-1}},\qquad
+ \|D^j(g-g_N)\|\le e_j:=4^j j!\rho^{-j}\delta_N
+ \quad(0\le j\le3).
+$$ {#eq:sh-metric-tail-cauchy}
+
+The metric coefficients are real on the real tube when the source and retained frames obey the Lorentz reality of §8.4. The same conclusion and bound hold on a fixed finite cover after taking the largest $H_g$ and smallest gap.
+
+<div id="sec:sh-r1-finite-readout-proof"></div>
+
+*Proof.* Fix the presentation choices and a bounded holomorphic original family of the construction of §§5–6. Write $Y(\varepsilon)$ for its prescribed augmented stored tuple, and let $q_N$ denote reduction modulo $\varepsilon^{N+1}$. Theorem 6.3 identifies the actual finite output with $X_N=q_NY$. In this proof all finite readout operations are performed over $A_N=\mathbb C[\varepsilon]/(\varepsilon^{N+1})$. Evaluation at one is applied only to the resulting coefficient polynomial.
+
+Choose $T<T_c<T_b$ and keep the compact amplitude disk $|\varepsilon|\le T_c$. Retain a smaller point-coordinate parent with a positive complex Cauchy gap inside the stored graph parent. At each of the fixed nine buffered directions put $\ell_\nu=\partial_xf(q_\nu)$. Proposition 5.2 reconstructs the symmetric inverse conformal form by the ten-by-ten system
+
+$$
+ A(x,\varepsilon)G(x,\varepsilon)=b,\qquad
+ G^{ab}(\ell_\nu)_a(\ell_\nu)_b=0\quad(1\le\nu\le9),\qquad
+ \eta_{ab}G^{ab}=4.
+$$ {#eq:sh-r1-nine-direction-readout}
+
+The system uses the ten independent entries of $G$. The fixed central sky jets and four-evaluation normalization give the same invertible $A(0,\varepsilon)=A_0$ for every amplitude. Put $a_0=\|A_0^{-1}\|$. Spatial Cauchy estimates on the first smaller parent control the evaluated derivatives. A further uniform restriction, keeping the entire compact amplitude disk, gives
+
+$$
+ \|A-A_0\|\le\frac1{2a_0},\qquad
+ \|A^{-1}\|\le2a_0.
+$$ {#eq:sh-r1-readout-inverse-margin}
+
+Indeed $A=A_0(I+A_0^{-1}(A-A_0))$ and the Neumann series has ratio at most $1/2$. At the mark $G=\eta^{-1}$. A further common restriction bounds $G^{-1}$. The retained selected density has $\sigma(0,\varepsilon)=1$, so we can also require $|\sigma|\ge1/2$. Consequently
+
+$$
+ \widetilde g_\varepsilon=\sigma_\varepsilon^{-2}G_\varepsilon^{-1}
+$$ {#eq:sh-r1-physical-metric-readout}
+
+is jointly holomorphic, uniformly bounded and uniformly invertible on a common point-coordinate parent. These restrictions exist by compactness of the amplitude disk and the fixed central units, rather than by smallness of the Schwarzschild records. For a fixed finite passive family take the largest inverse and derivative bounds and the smallest positive radii.
+
+We spell out the uniform normal development used in this readout. Choose a further positive complex spatial gap, and a convex complex ball $B_R$ on which
+
+$$
+ \|\Gamma_\varepsilon\|\le K_\Gamma,\qquad
+ \|D\Gamma_\varepsilon\|\le L_\Gamma
+ \quad(|\varepsilon|\le T_c).
+$$
+
+These are finite bounds from the metric, its inverse and interior Cauchy estimates. For initial velocity $y$, use the complex time disk $|s|\le1$ and write
+
+$$
+ q_v(s)=\int_0^s v(u)\,du,\qquad
+ (\mathcal T_\varepsilon v)(s)
+ =y-\int_0^s\Gamma_\varepsilon(q_v(u))(v(u),v(u))\,du.
+$$ {#eq:sh-r1-normal-picard-map}
+
+The integrals are holomorphic primitives. Choose $a>0$ with
+
+$$
+ a\le R/4,\qquad
+ 4K_\Gamma a\le1/4,\qquad
+ 4L_\Gamma a^2\le1/4,
+$$ {#eq:sh-r1-picard-margins}
+
+omitting a constraint whose coefficient is zero. If $\|y\|\le a$ and $\|v-y\|_\infty\le a$, then $\|v\|_\infty\le2a$ and $\|q_v\|_\infty\le2a<R$. The Picard map stays in this ball, since
+$\|\mathcal T_\varepsilon v-y\|_\infty\le4K_\Gamma a^2\le a/4$.
+For two velocities in it,
+
+$$
+ \|\mathcal T_\varepsilon v-\mathcal T_\varepsilon w\|_\infty
+ \le(4L_\Gamma a^2+4K_\Gamma a)\|v-w\|_\infty
+ \le\tfrac12\|v-w\|_\infty.
+$$ {#eq:sh-r1-picard-contraction}
+
+Thus the solution is unique and jointly holomorphic in $y,\varepsilon$, by uniformly convergent Picard iteration. Let $E_\varepsilon(y)=q(1)$. Its integral equation gives
+
+$$
+ \|E_\varepsilon(y)-y\|\le2K_\Gamma a^2\quad(\|y\|\le a),
+ \qquad
+ \|DE_\varepsilon-I\|\le4K_\Gamma a\le1/4
+ \quad(\|y\|\le a/2).
+$$ {#eq:sh-r1-normal-endpoint-margin}
+
+The derivative estimate follows by vector-valued directional Cauchy estimates, with radius $a/2$ in each unit complex direction. Hence $\|DE_\varepsilon\|\le5/4$. Writing $E_\varepsilon=I+e_\varepsilon$, the contraction
+$y\mapsto x-e_\varepsilon(y)$ preserves $\|y\|\le a/2$ for $\|x\|\le a/4$, because $e_\varepsilon(0)=0$ and $\|De_\varepsilon\|\le1/4$. Its fixed point is the actual initialized endpoint inverse, jointly holomorphic on that common target ball, with derivative norm at most $4/3$.
+
+The normal-coordinate physical metric is therefore
+
+$$
+ g^{\mathrm{nor}}_\varepsilon(y)
+ =DE_\varepsilon(y)^{\mathsf T}
+   \widetilde g_\varepsilon(E_\varepsilon(y))DE_\varepsilon(y).
+$$ {#eq:sh-r1-normal-metric-readout}
+
+On a common smaller normal parent $P_1$, a bound $B_{\widetilde g}$ for the physical point-coordinate readout gives the possible bound
+$B_g=(25/16)B_{\widetilde g}$ for this normal metric. This $B_g$ is a metric-readout bound. It is not the original stored-tuple bound $M_C$; its dependencies include the first spatial gaps, evaluation and density inverse margins, and the initialized endpoint bounds. The normal initial equations give $g^{\mathrm{nor}}_\varepsilon(0)=\eta$ and $\partial g^{\mathrm{nor}}_\varepsilon(0)=0$ at every amplitude. The fixed mark and tangent/full-spin identification identify it with the marked normal geometry in Proposition 6.1.
+
+We next verify compatibility with the finite computation. Let $A^{(0)}(x)$ be the amplitude-zero matrix on the common parent. With
+$\Delta_N=(A^{(0)})^{-1}(q_NA-A^{(0)})$, the matrix $\Delta_N$ belongs to the nilpotent amplitude ideal. The inverse of $q_NA$ is the finite expression
+
+$$
+ (q_NA)^{-1}
+ =\sum_{j=0}^{N}(-\Delta_N)^j(A^{(0)})^{-1}
+ =q_N(A^{-1}).
+$$ {#eq:sh-r1-finite-inverse-recursion}
+
+The same argument applies to the density and every other retained unit. Spatial derivatives, finite products and sums commute with $q_N$. Composition commutes as well: expand around the amplitude-zero argument, and a coefficient through degree $N$ uses only finitely many derivatives and nilpotent Taylor terms through degree $N$.
+
+For the initialized ODE, its amplitude-zero solution is the solution of the residue equation. At each degree $n\ge1$, the combined state coefficient satisfies
+
+$$
+ z_n'=D_z\mathcal V_0(z_0)z_n
+          +F_n(s,z_0,\ldots,z_{n-1}),
+$$ {#eq:sh-r1-finite-ode-recursion}
+
+with the prescribed initial coefficient. This is a uniquely initialized finite linear inhomogeneous ODE once the lower coefficients are fixed. Induction identifies the finite-algebra ODE with the reduction of the jointly holomorphic solution. Differentiation gives the same conclusion for $DE_\varepsilon$; the initialized endpoint inverse is likewise compatible, either by coefficient recursion or its unique inverse identity. It follows that the complete specified readout, including the pullback in the preceding display, satisfies
+
+$$
+ \mathcal R_N(X_N)=q_N g^{\mathrm{nor}}_\varepsilon.
+$$ {#eq:sh-r1-finite-readout-identity}
+
+This is an equality of analytic coefficient germs over the finite algebra for every $N$. If an original finite-stage coefficient was constructed on a smaller parent, its germ has the common representative given by the corresponding coefficient of this single holomorphic metric. No estimate for norms of growing quotient algebras is used. The common parents and the bounds were chosen from the holomorphic family before $N$ was fixed.
+
+Now use the exact initialized coordinate isometry at amplitude one to express the metric in the fixed physical chart of the lemma. Write $\kappa$ for its inverse, mapping that chart to the normal parent, and define $g^{\mathrm{fix}}_\varepsilon=\kappa^*g^{\mathrm{nor}}_\varepsilon$. The same $\kappa$ is used for every amplitude and every $N$; it is not an independently recomputed approximate coordinate map. On a smaller fixed complex parent whose closure maps into $P_1$, this family has a finite holomorphic bound $H_g$, for example $\sup\|D\kappa\|^2B_g$. The fixed-coordinate pullback commutes with reduction. Only after these operations set
+
+$$
+ g_N=\operatorname{ev}^{\mathrm{poly}}_1
+          (q_Ng^{\mathrm{fix}}_\varepsilon),\qquad
+ g=g^{\mathrm{fix}}_1.
+$$ {#eq:sh-r1-final-polynomial-evaluation}
+
+Here $\operatorname{ev}^{\mathrm{poly}}_1$ means evaluation of the unique coefficient polynomial of degree at most $N$, not a homomorphism $A_N\to\mathbb C$. In particular this is not the nonlinear readout $\mathcal R(X_N(1))$.
+
+Cauchy's formula on $|\varepsilon|=T$ gives the coefficient bound $H_gT^{-n}$. Summing the tail at one gives exactly $\delta_N$ in the statement of Lemma K.9. Keep the second, independent spatial gap $\rho$ between this fixed parent and the inner polydisc. For each multi-index $\alpha$ with $|\alpha|=j\le3$, spatial Cauchy gives
+
+$$
+ \|\partial^\alpha(g-g_N)\|
+ \le\alpha!\rho^{-j}\delta_N.
+$$ {#eq:sh-r1-second-gap-cauchy}
+
+Expanding a $j$-linear derivative into the four coordinate directions bounds its Euclidean operator norm by the safe factor $4^j j!\rho^{-j}\delta_N$ stated in the lemma. The first loss supplies bounded differentiated readout, inverses and initialized developments; the second loss differentiates the already bounded amplitude tail. Neither depends on $N$.
+
+For real amplitude the coupled Lorentz operation of §8.4 gives a real physical metric, and initialized normal development in the fixed real tangent frame is real. Holomorphy and uniqueness give
+$g^{\mathrm{fix}}_{\bar\varepsilon}(\bar x)=\overline{g^{\mathrm{fix}}_\varepsilon(x)}$.
+All coefficient metrics and their polynomial sum are therefore real symmetric. On a fixed finite cover the same proof applies chartwise, taking the largest bound and smallest positive gap. This proves the lemma. ∎
+
+<div id="sec:sh-r1-ef-tube-and-initialization"></div>
+
+**Common EF tube and initialization.** The $C^3$ estimate must hold on the whole inflated position tube used in the ray/frame first-exit argument. Choose its closure inside the inner fixed-coordinate polydisc on which the stated derivative estimate holds, with a positive additional position buffer; containment only in an earlier readout parent is insufficient. If a normal-coordinate $C^3$ estimate is transported instead of applying spatial Cauchy directly in the fixed chart as above, the coordinate-change constant depends on derivatives of $\kappa$ through order four, because three derivatives can hit either Jacobian factor. Fixed powers of the mass from the dimensionless phase/time dictionary are included explicitly in that constant. A numerical approximation of $\kappa$ would require a separate certified $C^4$ error.
+
+For the earlier $r:5m/2\to3m/2$, $E\in[1,2]$, $L/m\in[1/4,1/2]$ family, apply Proposition 10.3 under its stated single-readout position-tube inclusion hypothesis. Its initial clock, screen order and exact optical constants are unchanged. The finite-cover conclusion of Lemma K.9 is chartwise; independently evaluated vertex polynomials are not asserted to glue as exact metrics, and using several readouts would also require compatible physical comparisons and finite state matching. Section K.8 constructs those finite state and Cauchy matchings on the whole original crossing family. For each approximation use the same specified reference initial data and affine-clock normalization rule. At a noncentral entrance apply Lemma K.11: the actual null tangent is $k_N=k+an$ and the normalized initial frame differs from the reference frame by at most $C_{\rm init}e_0$, as retained in Theorem K.12. At the common marked point, coefficientwise calibration gives $g_N(o)=g(o)$, so the tangent and screen can actually be chosen identical. The initialized screen component phase is the same; no unmarked affine rescaling or screen rotation is introduced. The approximate metric need not conserve the exact Schwarzschild energy and angular momentum. Bounds such as $B_g,H_g$ and the resulting coordinate/stability constants are finite theoretical bounds until their inputs and parent radii are numerically evaluated; no numerical sufficient $N$ is asserted here.
+
+
+<div id="lem:sh-inverse-curvature-stability"></div>
+
+**Lemma K.10.**
+
+On the real tube suppose $g$ is symmetric with signature $(+,-,-,-)$ and
+$\|g^{-1}\|\le G$, $\|D^jg\|\le K_j$ for $0\le j\le3$. If $g_N$ is real symmetric, $e_0\le(2G)^{-1}$ and $e_0,e_1,e_2\le1$, then $g_N$ has the same signature and
+
+$$
+ \|g_N^{-1}\|\le2G,\qquad
+ \|g_N^{-1}-g^{-1}\|\le2G^2e_0.
+$$ {#eq:sh-inverse-margin}
+
+Put $\Gamma$ for the Christoffel bilinear map, $R(a,b)c$ for the curvature operator in the convention of §2, and
+
+$$
+ \begin{aligned}
+ \gamma_0&=3G(K_1+1),\\
+ \gamma_1&=6G^2(K_1+1)^2+3G(K_2+1),\\
+ d_0&=6G^2(K_1+1)e_0+3Ge_1,\\
+ d_1&=\{24G^3(K_1+1)^2+6G^2(K_2+1)\}e_0
+       +12G^2(K_1+1)e_1+3Ge_2,\\
+ d_R&=2d_1+4\gamma_0d_0.
+ \end{aligned}
+$$ {#eq:sh-connection-error-constants}
+
+Then $\|\Gamma\|,\|\Gamma_N\|\le\gamma_0$,
+$\|D\Gamma\|,\|D\Gamma_N\|\le\gamma_1$,
+$\|\Gamma_N-\Gamma\|\le d_0$,
+$\|D\Gamma_N-D\Gamma\|\le d_1$ and
+$\|R_N-R\|\le d_R$. All these are coordinate tensor bounds on the common tube.
+
+*Proof.* For $g_s=g+s(g_N-g)$, $\|g^{-1}(g_s-g)\|\le1/2$. The Neumann series gives inverse bound $2G$ and the inverse difference identity gives the stated estimate. The path $g_s$ consists of real invertible symmetric matrices, so inertia is constant. No indefinite positive norm is used.
+
+Write $\Gamma=\tfrac12g^{-1}A(Dg)$, where
+$A(Dg)(u,v,w)=Dg[u](v,w)+Dg[v](u,w)-Dg[w](u,v)$.
+Its norm is at most $3\|Dg\|$. Differentiate $g^{-1}$ by
+$Dg^{-1}=-g^{-1}(Dg)g^{-1}$. The displayed bounds for $\gamma_0,\gamma_1$ follow uniformly along $g_s$. The derivative in $s$ of $\Gamma_s$ is bounded by $6G^2(K_1+1)e_0+3Ge_1$. For $D\Gamma_s$ its two inverse factors and two first derivatives contribute respectively $24G^3(K_1+1)^2e_0$ and $12G^2(K_1+1)e_1$; its second-derivative term contributes $6G^2(K_2+1)e_0+3Ge_2$. Integrating in $s$ proves $d_0,d_1$.
+
+Finally $R(a,b)c=D\Gamma[a](b,c)-D\Gamma[b](a,c)+\Gamma(a,\Gamma(b,c))-\Gamma(b,\Gamma(a,c))$. Subtract the two formulas and use the uniform $\gamma_0$ bound, obtaining $2d_1+4\gamma_0d_0$. ∎
+
+<div id="lem:sh-null-frame-initialization"></div>
+
+**Lemma K.11.**
+
+A real initial null frame $(k,n,e_1,e_2)$ with
+$g(k,n)=1$, $g(e_A,e_B)=-\delta_{AB}$, and every other pairing zero has a real, locally analytic normalization for every sufficiently small symmetric perturbation of $g$. On a compact family with these initial vectors bounded, its difference from the original frame is at most $C_{\rm init}e_0$ for a finite constant depending only on the displayed frame bounds and the prescribed nonzero denominator margins.
+
+*Proof.* First choose the small root $a$ of $g_N(k+an,k+an)=0$, with $a=0$ at $g_N=g$. The derivative in $a$ there is $2g(k,n)=2$, so the analytic implicit theorem gives the root, uniformly on the compact family. It can also be found by the quadratic formula using the branch tending to zero. Put $k_N=k+an$,
+
+$$
+ b=g_N(k_N,n),\qquad
+ n_N=b^{-1}\left(n-\frac{g_N(n,n)}{2b}k_N\right),\qquad
+ p_A=e_A-g_N(e_A,n_N)k_N-g_N(e_A,k_N)n_N.
+$$ {#eq:sh-null-frame-normalization}
+
+These satisfy $g_N(k_N,n_N)=1$ and both null conditions, and $p_A$ is orthogonal to $k_N,n_N$. The matrix $H_{AB}=-g_N(p_A,p_B)$ tends to the identity. Require $|b|\ge1/2$ and $\|H-I\|\le1/2$; its positive inverse square root is analytic. Then $(e_{1,N},e_{2,N})=(p_1,p_2)H^{-1/2}$ is the desired screen frame. All operations are analytic on these fixed margins. The supremum of their first derivatives on a smaller compact matrix neighborhood is a finite $C_{\rm init}$. The mean-value formula gives the estimate. This constant is specified by a finite supremum, not numerically evaluated here. ∎
+
+<div id="thm:sh-finite-optical-stability"></div>
+
+**Theorem K.12.**
+
+Fix a compact family of the finite Schwarzschild null segments in the explicit screen calculation, a coordinate/state tube with positive buffer $\eta_Z$, and individual affine-time intervals $[0,S_\lambda]$ with a common bound $S_\lambda\le S$. Each ray is retained only on its own interval, with a fixed small extension when a terminal hitting time is compared. Let
+$Z=(x,k,n,e_1,e_2)$ consist of the position, tangent, null companion and parallel screen frame. On a larger compact tube assume their vector norms are at most $V\ge1$, and put
+
+$$
+ L_Z=1+\gamma_1 V^2+2\gamma_0V,\qquad
+ \epsilon_Z=e^{L_ZS}\{C_{\rm init}e_0+SV^2d_0\}.
+$$ {#eq:sh-geodesic-frame-error}
+
+Require $\epsilon_Z<\eta_Z$, as well as the metric and frame margins of Lemmas K.10–K.11. Then, for each parameter $\lambda$, the normalized $g_N$-null geodesic and its parallel frame exist on that same individual finite time interval, remain on the common parent and differ from $Z$ by at most $\epsilon_Z$.
+
+Let $R_0=\sup\|R\|$, $R_1=\sup\|DR\|$ on that tube. These are finite, with $R_1$ controlled by the third metric derivative and inverse bounds. Define
+
+$$
+ \epsilon_{\mathcal T}=2V^4\{R_0e_0+(K_0+1)d_R\}
+ +2\{V^4(K_1R_0+K_0R_1)+4K_0R_0V^3\}\epsilon_Z.
+$$ {#eq:sh-tidal-error}
+
+The $2\times2$ screen tidal matrices differ by at most $\epsilon_{\mathcal T}$. If their first-order Jacobi generators have norm at most $B$ on the common interval, their full transfer matrices obey
+
+$$
+ \|U_N(t,s)-U(t,s)\|
+ \le (t-s)e^{B(t-s)}\epsilon_{\mathcal T},\qquad s\le t\le S_\lambda\le S.
+$$ {#eq:sh-jacobi-transfer-error}
+
+One may choose $B=1+\sup\|\mathcal T\|+\epsilon_{\mathcal T}$ in the induced Euclidean phase norm. The estimate also holds for a fixed finite subdivision, with the same total-time factor and the largest tidal error in the finitely many fixed screen charts.
+
+*Proof.* In the fixed coordinates the joint equations are
+$\dot x=k$, $\dot k=-\Gamma(k,k)$, and
+$\dot z=-\Gamma(k,z)$ for $z=n,e_1,e_2$. Use the maximum of the Euclidean norms of these five blocks as state norm. Their coordinate derivative has row sums at most $L_Z$ on the stated larger tube. At the same state the two right-hand sides differ by at most $V^2d_0$. The initial difference has the bound of Lemma K.11. The integral inequality and Gronwall give the displayed $\epsilon_Z$ until the first exit. Its strict buffer bound excludes that exit, proving existence on the full fixed interval. Nullity, frame pairings and signature follow from metric compatibility and the exact normalized initial values.
+
+The tidal entries are $\mathcal T_{AB}=-g(R(e_A,k)k,e_B)$ in the signature of §2. At a fixed state the metric and curvature perturbations contribute at most $V^4\{R_0e_0+(K_0+1)d_R\}$. Moving the position contributes $V^4(K_1R_0+K_0R_1)\epsilon_Z$, and moving the four vector arguments contributes $4K_0R_0V^3\epsilon_Z$. The factor two changes an entrywise bound into a safe $2\times2$ operator bound. This proves the tidal estimate.
+
+The first-order phase generator is $A=\left(\begin{smallmatrix}0&I\\-\mathcal T&0\end{smallmatrix}\right)$. The variation-of-constants identity gives
+$U_N(t,s)-U(t,s)=\int_s^tU_N(t,u)(A_N(u)-A(u))U(u,s)\,du$.
+Both fundamental matrices have bound $e^{B|t-s|}$; their product inside the integral has bound $e^{B(t-s)}$. This proves the estimate. On a subdivision, exact matching of the full intermediate phase state gives matrix multiplication; the same Duhamel identity applies piecewise. Orthogonal changes of screen basis preserve the norms. ∎
+
+For the explicit screen calculation, the initial companion can be chosen as $n_0=(-\partial_r)/\dot v(0)$. At $u=0$ its $H$ coefficient is zero, so $g(k,n_0)=1$ and it is orthogonal to both initial screen vectors. The lower bound $\dot v(0)\ge1/410$ gives the required compact companion bound.
+
+The comparison is at fixed affine parameter in a common coordinate domain. If terminal data are instead read on the fixed surface $r=r_-$, a separate hitting-time margin is needed. The exact family in the explicit screen calculation has $-\dot r\ge a>0$. If $\epsilon_Z<a/2$, the approximate family is also transverse, and the difference of hitting times is at most $2\epsilon_Z/a$, provided both are extended by this amount within the retained buffers. Here $S$ is chosen to include those individual small extensions, and $B$, $\epsilon_Z$ and all tube bounds are taken on the same extended intervals; no member is required to remain in the radial tube up to the maximum endpoint time of a different member. The transfer at the moved endpoint acquires at most $2Be^{BS}\epsilon_Z/a$. No trapped or infinitely long ray estimate is involved.
+
+
+To use the dimensionless screen equations, distinguish physical affine time $u$ from $t=u/m$. The phase bases are $Z_u=(x,dx/du)$ and $Z_t=(x,m\,dx/du)$, with
+
+$$
+ C_m=\operatorname{diag}(I_2,mI_2),\qquad
+ Z_t=C_mZ_u,\qquad U_t=C_mU_uC_m^{-1},\qquad
+ \mathcal T_t=m^2\mathcal T_u.
+$$ {#eq:sh-phase-time-dictionary}
+
+Thus the coefficient error for the evaluated dimensionless system is at most $m^2\epsilon_{\mathcal T,u}$. A physical hitting-time error $\Delta u$ becomes $\Delta t=\Delta u/m$. If one uses the already proved physical transfer estimate instead, its norm must be multiplied by $\|C_m\|\,\|C_m^{-1}\|=\max(m,m^{-1})$. The physical point-source endpoint block is $mB_t$, and the expansion traces satisfy $\theta_t=m\theta_u$. The mass is fixed, so these are finite constants, not uniform zero-mass limits. To apply the evaluated $4\varepsilon$ and endpoint-inverse margins of the explicit screen calculation, impose the dimensionless condition $m^2\epsilon_{\mathcal T,u}\le1/10$ (including any separate coefficient approximation error).
+
+<div id="cor:sh-optical-observables"></div>
+
+**Corollary K.13.**
+
+Write $U=\left(\begin{smallmatrix}A&B_0\\ C&D\end{smallmatrix}\right)$ and let $\epsilon_U$ denote the right-hand side of the transfer estimate, including a chosen hitting-time term when applicable. For an initial phase of norm at most $J$, the outgoing phase error is at most $J\epsilon_U$. The signed point-source beam determinant obeys
+
+$$
+ |\det B_{0,N}-\det B_0|
+ \le2\|B_0\|\epsilon_U+\epsilon_U^2.
+$$ {#eq:sh-beam-determinant-error}
+
+If additionally the least singular value of $B_0$ is at least $b>0$ and $\epsilon_U\le b/2$, then $\|B_{0,N}^{-1}\|\le2/b$ and
+
+$$
+ |\operatorname{tr}(D_NB_{0,N}^{-1})-\operatorname{tr}(DB_0^{-1})|
+ \le4\epsilon_U\{b^{-1}+\|D\|b^{-2}\}.
+$$ {#eq:sh-expansion-error}
+
+*Proof.* Block projections have operator norm one. Expand the two-dimensional determinant by its columns; the two linear terms have magnitude at most $\|B_0\|\epsilon_U$ and the quadratic term at most $\epsilon_U^2$. The inverse estimates follow from the Neumann series and
+$B_{0,N}^{-1}-B_0^{-1}=-B_{0,N}^{-1}(B_{0,N}-B_0)B_0^{-1}$. Subtract the two products and use $|\operatorname{tr}Q|\le2\|Q\|$. ∎
+
+The phase and determinant estimates continue through a caustic. The expansion estimate is restricted to its positive singular-value margin. The full transfer relation, rather than an inverse endpoint block, is the observable retained in the stationary representation of the explicit screen calculation. Constants $H_g,T,\rho,G,K_j,V,R_0,R_1,\eta_Z,C_{\rm init}$ come from specified analytic parents and compact-frame margins; they are finite theoretical constants. The dimensionless Schwarzschild tidal and crossing bounds of the explicit screen calculation are separately evaluated constants. No floating-point experiment is used as a proof of these estimates.
+
+
+<div id="sec:sh-r1-primitive-comparison"></div>
+
+### K.5. A calibrated Schwarzschild source primitive
+
+Fix the physical mass $m>0$ of Section 10 and put $\mu_{\rm src}=m/2$. We compute a specified local primitive of AASS v2: its explicit principal spinors, the first line of its restricted Dolbeault operator (3.12), and the contour on the left of (2.32) [@AdamoEtAl2026v2, equations (2.5), (2.10), (2.15), (2.26), (2.32) and (3.12)]. The defining differential operator and integral will be evaluated directly.
+
+This construction is on one local source chart. Put $u_s=x+iy$, choose a signed square root $\varrho^2=x^2+y^2+z^2$, and require $u_s\varrho\ne0$. Choose the square root $q$ on a simply connected parent and set
+
+$$
+ q^2=-\frac{iu_s}{2},\qquad
+ z_-=\frac{z+\varrho}{u_s},\qquad
+ z_+=\frac{z-\varrho}{u_s},\qquad
+ X^{aa'}=\frac1{\sqrt2}
+ \begin{pmatrix}\tau-iz&ix-y\\ix+y&\tau+iz\end{pmatrix}.
+$$ {#eq:sh-r1-source-coordinates}
+
+For this source calculation use the raising and lowering order of [@Adamo2018SpinorConventions, arXiv v2, §1.2, equations (1.5)–(1.10)]. The upper and lower epsilon *symbols* have the same numerical array $E$, whereas their left-acting matrices differ:
+
+$$
+ E=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
+ L=E^T=-E,\qquad
+ v^a=E^{ab}v_b,\qquad v_a=v^bE_{ba}=L_{ab}v^b.
+$$ {#eq:sh-r1-source-index-order}
+
+Apply the same rule in the primed factor. In particular $\langle ab\rangle=a^cb_c$, $dX^b{}_{a'}=L_{a'c'}dX^{bc'}$, and $\varphi_{a'}{}^{b'}=E^{b'c'}\varphi_{a'c'}$. These are local source conventions, distinct from the fixed component convention of §2. The flat tensor is nevertheless
+
+$$
+ \delta=L_{ab}L_{a'b'}dX^{aa'}dX^{bb'}
+       =d\tau^2+dx^2+dy^2+dz^2,
+$$ {#eq:sh-r1-source-flat-metric}
+
+since changing both alternating factors from $E$ to $L=-E$ has no effect on their product.
+
+The required arrays, with lower dyad $o_a=(1,0)$, are
+
+$$
+ \begin{aligned}
+ \alpha^{a'}&=q(z_-,-1),&\beta^{a'}&=q(z_+,-1),\\
+ \alpha_{a'}&=q(1,z_-),&\beta_{a'}&=q(1,z_+),\\
+ A_a&=q(-z_-,1),&B_a&=q(-z_+,1),\\
+ \varphi_{a'b'}&=-\frac{4\mu_{\rm src}}{\varrho q^2}
+                       \alpha_{a'}\alpha_{b'}.
+ \end{aligned}
+$$ {#eq:sh-r1-source-arrays}
+
+They give $s=\langle AB\rangle=-i\varrho$, $[\beta\alpha]=i\varrho$ and $c=\langle oA\rangle^2=q^2$. In particular $A,B$ are independent. Define an endomorphism of the complexified tangent bundle by
+
+$$
+ \mathsf P^{bb'}{}_{aa'}=
+ \frac{A^bB_a}{s}\delta_{a'}^{b'}
+ +\frac{c}{s^2}\varphi_{a'}{}^{b'}B_aB^b,
+ \qquad J=i(1-2\mathsf P).
+$$ {#eq:sh-r1-primitive-projector}
+
+The image of $\mathsf P$ is designated the $-i$ eigenspace. Define $Q(\lambda)=\langle A\lambda\rangle\langle B\lambda\rangle$, $D\lambda=\lambda^a d\lambda_a$, and, with the base point fixed, take a positively oriented fiber contour around $[A]$ excluding $[B]$:
+
+$$
+ \omega_{\rm int}=\frac1{2\pi}\oint_{[A]}
+ \frac{\lambda_a\lambda_b}{Q(\lambda)^2}
+ D\lambda\wedge dX^{aa'}\wedge dX^b{}_{a'},
+ \qquad
+ G_{\rm int}(U,V)=\omega_{\rm int}(U,JV).
+$$ {#eq:sh-r1-primitive-contour}
+
+We compare the two sides of [@AdamoEtAl2026v2, equation (2.32)] with the displayed source index rule, a contour making one positive turn around $[A]$, and the ordinary exterior-product convention
+
+$$
+ (\alpha\wedge\beta)(U,V)=\alpha(U)\beta(V)-\alpha(V)\beta(U).
+$$ {#eq:sh-r27-exterior-evaluation}
+
+For a two-form we use $\omega=\tfrac12\omega_{IJ}\,dX^I\wedge dX^J$, so $\omega(U,V)=\omega_{IJ}U^IV^J$, where $I=(a,a')$. With these conventions the left side of the cited (2.32), including its printed $1/(2\pi)$ and $D\lambda=\langle\lambda,d\lambda\rangle$, is exactly $\omega_{\rm int}$ in [@eq:sh-r1-primitive-contour]. Its printed right side is exactly $\omega_0$ in [@eq:sh-r1-contour-value]. Proposition K.14 evaluates their relation directly.
+
+<div id="prop:sh-r1-primitive-tensor"></div>
+
+**Proposition K.14 (Primitive tensor calculation).** On this source chart, $\mathsf P$ is a rank-two projector and its two eigendistributions are involutive. The form and symmetric metric defined above are
+
+$$
+ \omega_{\rm int}=2\omega_0,\qquad
+ \omega_0=\frac{i}{s^3}A_aB_b\,dX^{aa'}\wedge dX^b{}_{a'},
+$$ {#eq:sh-r1-contour-value}
+
+$$
+ G_{\rm int}=2G_0,\qquad
+ G_0=-\frac1{\varrho^2}
+ \left[\delta+\frac{4\mu_{\rm src}}{\varrho}
+                  (d\tau+i\,d\varrho)^2\right].
+$$ {#eq:sh-r1-general-source-metric}
+
+The form is closed and nondegenerate, and $\omega_0(JU,JV)=\omega_0(U,V)$. These identities hold on the whole chart with either signed radial branch.
+
+*Proof.* Write $\mathsf P=\mathsf P_0+\mathsf N$ for the two terms in [@eq:sh-r1-primitive-projector]. The contractions $B_aA^a=s$, $A_aB^a=-s$ and $B_aB^a=0$ give
+
+$$
+ \mathsf P_0^2=\mathsf P_0,\qquad
+ \mathsf P_0\mathsf N=0,\qquad
+ \mathsf N\mathsf P_0=\mathsf N,\qquad \mathsf N^2=0.
+$$ {#eq:sh-r1-projector-identities}
+
+Thus $\mathsf P^2=\mathsf P$ and $\operatorname{tr}\mathsf P=2$. Its kernel is spanned by $B^a\partial_{aa'}$ and its image by
+
+$$
+ A^a\partial_{aa'}+\frac c s\varphi_{a'}{}^{b'}B^a\partial_{ab'}.
+$$ {#eq:sh-r1-projector-image}
+
+Write $V_{a'}$ for the displayed image generator. The first line of [@AdamoEtAl2026v2, equation (3.12)] gives $\mathsf P(A^a\partial_{aa'})=V_{a'}$. Symmetry of $\varphi_{a'b'}$ and the source index rule give $\varphi^{b'}{}_{a'}=\varphi_{a'}{}^{b'}$. The annihilator of this image is spanned by
+
+$$
+ \begin{aligned}
+ \vartheta^{b'}&=A_a\,dX^{ab'}
+       +\frac cs\varphi^{b'}{}_{c'}B_a\,dX^{ac'},\\
+ \vartheta^{b'}(V_{a'})
+       &=-c\varphi_{a'}{}^{b'}+c\varphi^{b'}{}_{a'}=0,\\
+ \vartheta^{b'}(B^a\partial_{aa'})&=-s\delta_{a'}^{b'}.
+ \end{aligned}
+$$ {#eq:sh-r29-projector-annihilator}
+
+The last identity proves independence. The vectors and forms printed in [@AdamoEtAl2026v2, equations (3.14)–(3.15)] instead have minus signs in both correction terms; the displayed forms annihilate the displayed vectors. Here the plus signs are fixed by the adopted first line of (3.12). Also $J^2=-1$.
+
+Use the local homogeneous lift $\lambda=A+wB$ of the fiber contour. Directly,
+
+$$
+ Q=-s^2w,\qquad D\lambda=s\,dw,\qquad
+ \operatorname*{Res}_{w=0}\frac{\lambda_a\lambda_bD\lambda}{Q^2}
+       =\frac{A_aB_b+B_aA_b}{s^3}.
+$$ {#eq:sh-r1-residue}
+
+The tensor $dX^{aa'}\wedge dX^b{}_{a'}$ is symmetric in $a,b$, because exchanging its two exterior factors and its dotted alternating factor gives two minus signs. Multiplication by $(2\pi)^{-1}2\pi i$ therefore gives exactly $2\omega_0$. This calculation uses the printed prefactor and the stated contour orientation. Thus the left side of [@AdamoEtAl2026v2, equation (2.32)] evaluates to twice its printed right side under the conventions just specified. Replacing the contour prefactor by $1/(4\pi)$ would instead give $\omega_0$. The two-form components below are bilinear components in this convention, so they contain $A_aB_b+B_aA_b$, rather than $A_{(a}B_{b)}$; the factor $1/2$ belongs to the component expansion of the two-form.
+
+The two-form components and the undeformed endomorphism are
+
+$$
+ (\omega_0)_{aa',bb'}=
+ \frac{i}{s^3}(A_aB_b+B_aA_b)L_{a'b'},\qquad
+ J_0{}^{bb'}{}_{aa'}=-\frac i s(B_aA^b+A_aB^b)\delta_{a'}^{b'},
+ \qquad J=J_0-2i\mathsf N.
+$$ {#eq:sh-r1-form-components}
+
+Using $A_aB_b-B_aA_b=sL_{ab}$, contract the second slot of this two-form with $J$. The undeformed contraction is $L_{ab}L_{a'b'}/s^2$. The deformation contraction uses $A_cB^c=-s$ and $L_{a'c'}\varphi_{b'}{}^{c'}=\varphi_{a'b'}$. Consequently
+
+$$
+ G_0=\frac{\delta}{s^2}
+       -\frac{2c}{s^4}B_aB_b\varphi_{a'b'}dX^{aa'}dX^{bb'}.
+$$ {#eq:sh-r1-unspecialized-metric}
+
+All its terms are symmetric. The coefficient two here is the evaluation coefficient of a two-form; it is additional to the contour factor two already computed.
+
+For the remaining tensor reduction put $a_s=B_a\alpha_{a'}dX^{aa'}$. The arrays give
+
+$$
+ \begin{aligned}
+ a_s=\frac{q^2}{\sqrt2}\bigl[&(z_--z_+)d\tau
+   +i(1-z_-z_+)dx+(1+z_-z_+)dy
+   +i(z_-+z_+)dz\bigr]\\
+ =\frac1{\sqrt2}&(x\,dx+y\,dy+z\,dz-i\varrho\,d\tau)
+ =\frac{\varrho}{\sqrt2}(d\varrho-i\,d\tau).
+ \end{aligned}
+$$ {#eq:sh-r1-null-form}
+
+Here $z_--z_+=2\varrho/u_s$, $z_-+z_+=2z/u_s$, $z_-z_+=-(x-iy)/u_s$ and $\varrho\,d\varrho=x\,dx+y\,dy+z\,dz$. These relations are valid on both radial sheets. Substitution into [@eq:sh-r1-unspecialized-metric] gives
+
+$$
+ G_0=-\frac\delta{\varrho^2}+\frac{8\mu_{\rm src}}{\varrho^5}a_s^2
+ =-\frac1{\varrho^2}
+   \left[\delta+\frac{4\mu_{\rm src}}{\varrho}
+                          (d\tau+i\,d\varrho)^2\right].
+$$ {#eq:sh-r1-metric-reduction}
+
+This proves the metric formula at general points, without using finitely many test points.
+
+For closure and integrability one can retain the equally explicit form calculation. The symmetric matrix $S_{ab}=A_aB_b+B_aA_b$ is
+
+$$
+ S=i\begin{pmatrix}x-iy&z\\z&-x-iy\end{pmatrix}.
+$$ {#eq:sh-r1-symmetric-spinor-matrix}
+
+Substitute this matrix and $dX$ into [@eq:sh-r1-form-components]. It gives the Cartesian expression
+
+$$
+ \omega_0=\frac1{\varrho^3}
+ \left[d\tau\wedge(x\,dx+y\,dy+z\,dz)
+       -x\,dy\wedge dz-y\,dz\wedge dx-z\,dx\wedge dy\right].
+$$ {#eq:sh-r1-cartesian-form}
+
+On a local polar chart $(x,y,z)=\varrho(\sin\Theta\cos\psi,\sin\Theta\sin\psi,\cos\Theta)$ it becomes
+
+$$
+ \omega_0=\varrho^{-2}d\tau\wedge d\varrho
+                -\sin\Theta\,d\Theta\wedge d\psi.
+$$ {#eq:sh-r1-polar-form}
+
+The one-form $d\tau+i\,d\varrho$ is $\delta$-null, so the rank-one determinant formula in Cartesian coordinates gives $\det G_0=\varrho^{-8}$. Thus $\omega_0$ is nondegenerate throughout the source chart. The polar formula proves closure on its regular subcharts, and the holomorphic Cartesian formula extends closure across the remaining points. Since $G_0=\omega_0(\cdot,J\cdot)$ is symmetric and $J^2=-1$, the claimed compatibility follows as well. In the radial and angular coordinate orders the same equality determines
+
+$$
+ J_{\rm rad}=\begin{pmatrix}ia&1-a\\-(1+a)&-ia\end{pmatrix},\qquad
+ J_{\rm ang}=\begin{pmatrix}0&-\sin\Theta\\\csc\Theta&0\end{pmatrix},
+ \qquad a=4\mu_{\rm src}/\varrho.
+$$ {#eq:sh-r1-source-complex-structure}
+
+The $-i$ eigenspace is spanned by $(1-a)\partial_\tau-i(1+a)\partial_\varrho$ and $\partial_\Theta+i\csc\Theta\partial_\psi$; the $+i$ eigenspace is spanned by $\partial_\tau+i\partial_\varrho$ and $\partial_\Theta-i\csc\Theta\partial_\psi$. The two generators in each pair commute. Their radial generators never vanish and the two radial generators have determinant $2i$ in the displayed order. Hence both distributions are involutive, including where $1+a=0$. The Nijenhuis tensor is holomorphic in the Cartesian primitives; its vanishing on the dense regular polar subcharts therefore extends across their coordinate degeneracies. This proves integrability without a static logarithm or an external signature-dependent theorem. ∎
+
+The chosen graph also has its stated primitive origin. In the source convention the quadric is exactly
+
+$$
+ Q=-\frac i2\left[u_s\lambda_0^2+2z\lambda_0\lambda_1
+                         -(x-iy)\lambda_1^2\right]
+ =\frac1{\sqrt2}\left[-X^{01'}\lambda_0^2
+ +(X^{00'}-X^{11'})\lambda_0\lambda_1+X^{10'}\lambda_1^2\right].
+$$ {#eq:sh-r1-explicit-quadric}
+
+The vertical $\partial/\partial\hat\lambda$ term of the ambient operator vanishes because $Q$ is holomorphic in $\lambda$ and independent of $\hat\lambda$. Base derivatives are taken with $\lambda$ fixed before graph substitution. They give $\lambda^a\partial_{aa'}Q=0$ and
+
+$$
+ \alpha^{b'}\partial_{bb'}Q
+   =\frac q{\sqrt2}(\lambda_0+z_-\lambda_1)(\lambda_0,\lambda_1)_b.
+$$ {#eq:sh-r1-coincidence-check}
+
+The latter vanishes at $\lambda=A$. It kills the deformation term of the ambient operator (2.21), while the former kills its flat horizontal term. Thus $Q=\overline\nabla Q=0$ on the selected graph. On the projective chart $A_0\ne0$, its coordinate is $A_1/A_0=-e^{i\psi}\tan(\Theta/2)$, whose differential annihilates the displayed $-i$ distribution. This is a local check of the selected graph and restricted primitive. It introduces no assertion about a global coincidence surface or completeness of a positive-definite SDTN slice.
+
+<div id="thm:sh-r1-calibrated-horizon-map"></div>
+
+**Theorem K.15 (Calibrated primitive-to-Schwarzschild map).** Let $U$ be a sufficiently small simply connected complex EF parent of $o=(0,2m,\pi/2,0)$ on which $r$, $\sin\theta$ and the following source units are nonzero. Use $\mu_{\rm src}=m/2$, take $\varrho=-r$, and define
+
+$$
+ \Phi_{\rm pr}(v,r,\theta,\phi)=
+ \left(\tau=i(r-v),\ x=r\sin\theta\cos\phi,
+       \ y=r\sin\theta\sin\phi,\ z=r\cos\theta\right).
+$$ {#eq:sh-r1-horizon-map}
+
+The source branches of $q$ and the contour pole $[A]$ are fixed as above. Then $\Phi_{\rm pr}$ and its actual inverse are regular across $r=2m$, and
+
+$$
+ h_*:=\Phi_{\rm pr}^*G_{\rm int}=\frac2{r^2}g_m,\qquad
+ \sigma_*=\frac{\sqrt2}{r},\qquad \sigma_*^{-2}h_*=g_m.
+$$ {#eq:sh-r1-calibrated-pullback}
+
+With the density root and full spin lift fixed by their marked central values, this is an actual calibrated comparison. In the vector-middle-slot normal-tractor convention its auxiliary components are
+
+$$
+ I_*=
+ \left(\frac{\sqrt2}{r},\frac{\partial_v+f\partial_r}{\sqrt2},
+                         \frac f{2\sqrt2r}\right),\qquad
+ DI_*=0,\qquad H(I_*,I_*)=0.
+$$ {#eq:sh-r1-vector-tractor}
+
+*Proof.* The Jacobian in coordinate orders $(\tau,x,y,z)$ and $(v,r,\theta,\phi)$ is $-ir^2\sin\theta$, a unit at the mark. The inverse is
+
+$$
+ r=-\varrho,\qquad v=r+i\tau,\qquad
+ \theta=\arccos(z/r),\qquad
+ \phi=-i\log\left(\frac{x+iy}{r\sin\theta}\right),
+$$ {#eq:sh-r1-horizon-inverse}
+
+with the inverse branches initialized at $o$. Shrink $U$ so these are mutual analytic inverses. No inverse power of $f$ occurs. Direct substitution gives
+
+$$
+ d\tau+i\,d\varrho=-i\,dv,\qquad
+ \Phi_{\rm pr}^*\delta=-dv^2+2\,dv\,dr+r^2d\Omega^2,\qquad
+ 4\mu_{\rm src}/\varrho=-2m/r.
+$$ {#eq:sh-r1-pullback-identities}
+
+The bracket in [@eq:sh-r1-general-source-metric] therefore pulls back to $-g_m$, proving the factor $2/r^2$ in [@eq:sh-r1-calibrated-pullback]. The source density coefficient $\sigma_{\rm src}=-\sqrt2/\varrho$ pulls back to the stated positive $\sigma_*$. Thus $\Phi_{\rm pr}^*(\sigma_{\rm src}^{-2}G_{\rm int})=g_m$ with no constant homothety left over.
+
+The sign of the radial sheet is an analytic continuation choice. Starting from a real spatial point with positive radius and $u_s\ne0$, the finite path
+
+$$
+ (x_t,y_t,z_t)=e^{i\pi t}(x_0,y_0,z_0),\qquad
+ \varrho_t=e^{i\pi t}\varrho_0,\qquad
+ q_t=e^{i\pi t/2}q_0,\qquad 0\le t\le1
+$$ {#eq:sh-r1-sheet-path}
+
+has no zero of $u_s,\varrho,q,s$ or $[\beta\alpha]$. It ends at the antipodal real spatial point on the negative sheet. Choosing the initial antipode of the desired point gives the required endpoint. The ratios $z_\pm$ are constant along the path, so the continued poles remain distinct, and the coordinate contour $|w|=\epsilon$ in $\lambda=A+wB$ transports its positive orientation throughout. A finite chain of local neighborhoods covers this compact path. No global real SDTN interpretation is needed for this continuation.
+
+One can also check the continued tensors directly:
+
+$$
+ \Phi_{\rm pr}^*\omega_0=\frac i{r^2}dv\wedge dr
+                          +\sin\theta\,d\theta\wedge d\phi,
+ \quad
+ J_*^{\rm rad}=\begin{pmatrix}-i&0\\-if&i\end{pmatrix},\qquad
+ J_*^{\rm ang}=\begin{pmatrix}0&\sin\theta\\-\csc\theta&0\end{pmatrix}.
+$$ {#eq:sh-r1-continued-structure}
+
+Their product is $r^{-2}g_m$. The angular sign follows from the antipodal source angular coordinates $\Theta=\pi-\theta$, $\psi=\phi+\pi$. These are complex continued tensors on the Lorentz slice; a real orthogonal complex structure for a real Lorentz metric is not asserted.
+
+To track the density itself, let $e_g$ be the unit frame in the physical scale. For $h_0=r^{-2}g_m$ and $h_*=2h_0$, choose
+
+$$
+ \boldsymbol g=g_me_g^2=h_0e_c^2=h_*e_*^2,
+ \qquad e_c=re_g,\quad e_*=(r/\sqrt2)e_g,\qquad
+ \boldsymbol\sigma=e_g=\frac1r e_c=\frac{\sqrt2}{r}e_*.
+$$ {#eq:sh-r1-density-frame}
+
+These are components of one section. The preceding scale calculation gives, in $h_0$, the vector-slot tractor $(1/r,\partial_v+f\partial_r,f/(2r))$. Under a constant auxiliary rescaling $\widehat h=\Omega^2h$ its components transform as $(\Omega\sigma,\Omega^{-1}\mu,\Omega^{-1}\rho)$. Taking $\Omega=\sqrt2$ gives [@eq:sh-r1-vector-tractor]. In contrast, the corresponding covector component is
+
+$$
+ d\sigma_*=-\frac{\sqrt2}{r^2}dr,
+ \qquad \mu_*=(d\sigma_*)^{\sharp_{h_*}}
+               =\frac{\partial_v+f\partial_r}{\sqrt2}.
+$$ {#eq:sh-r1-vector-covector-dictionary}
+
+Thus the earlier covector $-dr/r^2$ belongs to $h_0$, not to the untransformed middle vector slot of $I_*$. The normal equations and norm are preserved by the specified splitting change. Explicitly $2\sigma_*\rho_*=f/r^2$ and $h_*(\mu_*,\mu_*)=-f/r^2$. At $r=2m$ the tractor is $(\sqrt2/(2m),\partial_v/\sqrt2,0)$, regular and nonzero. Changing to the physical splitting by $\Omega=r/\sqrt2$ gives $(1,0,0)$.
+
+If a coefficient equal to one at $o$ is required, put $r_0=r(o)$ and simultaneously use
+
+$$
+ h_o=\frac{r_0^2}{2}h_* =\frac{r_0^2}{r^2}g_m,
+ \qquad \sigma_o=\frac{r_0}{r},\qquad
+ \sigma_o(o)=1,\qquad \sigma_o^{-2}h_o=g_m.
+$$ {#eq:sh-r1-point-normalization}
+
+The physical affine calibration is retained by this simultaneous change. In the final Einstein scale the scalar optical section has Cauchy data $(1,0)$. Its root is the retained square identification $\beta:\mathcal E[1]^2\to\mathcal B$, satisfying $\beta(\boldsymbol\sigma^2)=\Theta^{-1}$ in the calibrated affine torsor. The marked positive value fixes the density-root sign. Replacing $\sigma_{\rm src}$ by $+\sqrt2/\varrho$ would give the same metric but the opposite selected density and tractor, violating the fixed central root value.
+
+Finally take the regular physical tetrad $l=\partial_v+f\partial_r/2$, $n=-\partial_r$, $e_2=r^{-1}\partial_\theta$, $e_3=(r\sin\theta)^{-1}\partial_\phi$ and $e_0=(l+n)/\sqrt2$, $e_1=(l-n)/\sqrt2$. Declare $e_0$ future and choose its full spin lift at $o$. Push this tetrad through $d\Phi_{\rm pr}$ to the selected source metric, and extend the chosen spin lift on the contractible parent. This specifies an actual marked isometry and inverse. The central Spin sign is retained separately from the density sign and the choice of $q$; no principal-spinor array is silently treated as the physical marked frame. Normal transport and the local-twistor exterior-square identification therefore preserve the same calibrated infinity pair of Proposition I.3. ∎
+
+The scalar factors distinguish the two native tensors. The evaluated-form tensor has $\operatorname{Scal}(G_0)=24\mu_{\rm src}/\varrho$ and $\Delta_{G_0}\varrho=4\mu_{\rm src}$. The literal-contour tensor has half those quantities. Indeed [@eq:sh-r1-general-source-metric] is $-\varrho^{-2}$ times the complex Schwarzschild tensor of formal mass $-2\mu_{\rm src}$, and the radial scalar and Laplacian calculation of Proposition K.2 applies with that parameter and the displayed metric constant. Hence
+
+$$
+ \operatorname{Scal}(G_{\rm int})=\frac{12\mu_{\rm src}}{\varrho},
+ \qquad \operatorname{Scal}(h_*)=-\frac{6m}{r},\qquad
+ \sigma_*=-\frac{\sqrt2}{6m}\operatorname{Scal}(h_*).
+$$ {#eq:sh-r1-calibrated-scalar}
+
+
+
+Theorem K.15 is restricted to $U$ and its image with $u_s\ne0$ and the specified angular, root and inverse branches. It does not extend the primitive comparison over the full spatial angular sphere of the finite core in Section 10. Complete complex point skies arise instead from the selected metric's null directions. The finite standard-metric atlas and its whole skies in K.2 remain independent of any extension of the primitive across $u_s=0$.
+
+
+<div id="prop:schw-bc-native-generated-composite"></div>
+
+
+
+**Enriched comparison on the same local source chart.** Use the primitive recipe with source parameter $\mu_{\rm src}=m/2>0$, the continued sheet $\varrho=-r$, the selected pole and contour orientation, and the local angular and root branches of the primitive tensor calculation. On that actual source chart put
+
+$$
+ \sigma_{\rm src}=-\frac{\sqrt2}{\varrho},\qquad
+ g_{\rm src}=\sigma_{\rm src}^{-2}G_{\rm int}.
+$$
+
+Let $\Phi_{\rm pr}$ be the physical-to-source map
+
+$$
+ \tau=\mathrm i(r-v),\quad
+ x=r\sin\theta\cos\phi,\quad
+ y=r\sin\theta\sin\phi,\quad
+ z=r\cos\theta,
+ \qquad\varrho=-r.
+$$ {#eq:schw-bc-native-chart-map}
+
+On a neighborhood where its stated inverse branches, $u_{\rm src}=x+\mathrm iy\ne0$, $q$, $\varrho$ and the retained roots are defined, the primitive tensor identity is $\Phi_{\rm pr}^*G_{\rm int}=2r^{-2}g_m$. It follows that $\Phi_{\rm pr}^*g_{\rm src}=g_m$ with the calibrated density, point and full-spin lift. If $F:g[A_g]\to(g_m,o,s)$ is the initialized metric comparison of Theorem K.7, the completed native comparison and inverse are
+
+$$
+ F_{\rm src}=\Phi_{\rm pr}\circ F,\qquad
+ F_{\rm src}^{-1}=F^{-1}\circ\Phi_{\rm pr}^{-1}.
+$$ {#eq:schw-bc-native-generated-composite}
+
+They induce the actual enriched comparisons of that theorem on common smaller representatives.
+
+The map has Jacobian $-\mathrm ir^2\sin\theta$ and the explicit local inverse $r=-\varrho$, $v=r+\mathrm i\tau$, with the retained inverse angular branches. It is nonsingular at the chosen horizon point. Pullback of $\sigma_{\rm src}$ is $\sqrt2/r$, so the selected physical metric is exactly $g_m$, including its constant. The positive central density-root value and the specified full-spin lift fix these comparisons; the source's principal spinor arrays are not directly identified with a marked orthonormal frame.
+
+The pullback of the Levi–Civita connection of $g_{\rm src}$ is torsion free and preserves $g_m$, so it is its Levi–Civita connection. Inductively,
+
+$$
+ \Phi_{\rm pr}^*((\nabla^{g_{\rm src}})^jR^{g_{\rm src}})
+       =(\nabla^{g_m})^jR^{g_m}\qquad(j\ge0).
+$$
+
+The transported full-spin frame therefore intertwines the exact Weyl contractions and averaged spin symmetrizations at every order. The source records are the same complete records used to define $A_g$. Normal uniqueness gives $F$ and its inverse. Composition now gives the displayed two-sided inverse identities on the common restricted source and target domains.
+
+The induced null-cotangent map preserves the tautological form and null characteristics, so it gives the ray contact maps and their inverse hit maps. Its scalar optical solution map preserves value, slope, Wronskian, density-square calibration and the selected affine evaluation. The normal tractor and full-spin local-twistor maps preserve $I,X,DX$, optical flags, point planes and both infinity forms. H.4 and Theorem J.6 then supply the projective operator and whole compact point-module maps, including the two-associator and framed-module equations [@eq:schw-bc-compatible-enriched-comparisons]. G.5, Lemma F.8 and framed-Hom uniqueness give their finite inverse and composition coherence. These enrichments are canonically constructed from the selected native metric; an operator presentation of the original coincidence surface is not assumed as input. ∎
+
+This native comparison is restricted to the primitive recipe's actual angular/root chart and its common normal representatives. It is not a native atlas over all spacetime angular directions in the $S^2$ factor of the standard core $K$. A complete compact point sky $\mathbb P^1\times\mathbb P^1$ consists of complex null directions at one base point; it is independent of that spacetime angular $S^2$. Complete-sky comparisons over this local base chart therefore do not supply a full-angular native gluing theorem. The standard metric finite-cover argument above still covers the original $K$ with finitely many regular angular charts. No identification of an independently selected ordinary background with the fixed SDTN background, direct $Q\to\beta_Q$ map, global ray quotient or global operator ring is used.
+
+
+<div id="lem:schw-bc-compatible-local-amplitude"></div>
+
+### K.6. Compatible physical amplitude families
+
+**Lemma K.16 (Compatible local physical family).** Fix a marked analytic Einstein germ with numerical constant zero and complete records $U$, a compact amplitude disk $C_\varepsilon=\{|\varepsilon|\le T_b\}$ with $T_b>1$ lying strictly inside a retained larger disk, and a finite list of physical comparison operations and their required inverses and composites. There are positive common point and passive-displacement neighborhoods on which all these operations have actual representatives over $C_\varepsilon$. Every vertex is obtained by rebasing the same central metric family. The source construction at a vertex uses a separate internal amplitude. These representatives retain the complete compact skies, full-spin labels, both root calibrations, actual operator associators and framed point-module maps.
+
+*Proof.* Use the complete source family
+
+$$
+ U_\varepsilon=(\varepsilon U^+,\varepsilon U^-;0),\qquad
+ g_\varepsilon=g[U_\varepsilon].
+$$ {#eq:schw-bc-central-amplitude-family}
+
+Propositions 6.1–6.2 give its marked normal geometry, finite derivatives, normal inverses and initialized spin transport on common smaller parents, uniformly on the entire compact disk. At this stage no final displaced marks or final affine interval have been chosen.
+
+Let finitely many passive parameters $(a_i,A_i)$ vary in a small neighborhood of $(0,1)$ and put
+
+$$
+ \begin{aligned}
+ x_i(\varepsilon)&=\operatorname{Exp}^{g_\varepsilon}_o(a_i),\\
+ e_i(\varepsilon)&=\nu_i(\varepsilon)A_i,\\
+ V_i(\varepsilon)&=R_{a_i,A_i}(U_\varepsilon).
+ \end{aligned}
+$$ {#eq:schw-bc-compatible-rebased-records}
+
+Here $\nu_i$ is the initialized full-spin transport along the radial geodesic. Theorem 8.3 identifies $V_i(\varepsilon)$ with the entire curvature record of this same metric at $x_i(\varepsilon)$ in frame $e_i(\varepsilon)$. The record-flow estimates and the null-geodesic/parallel-spin Cauchy argument of Lemma K.6 give a uniform factorial bound on a smaller record radius. Thus the exact encoders of Theorem 3.1 make $V_i$ bounded holomorphic passive source families.
+
+The initialized metric maps are
+
+$$
+ \Xi_i^\varepsilon:g[V_i(\varepsilon)]\longrightarrow g_\varepsilon,
+ \qquad
+ y\longmapsto\operatorname{Exp}^{g_\varepsilon}_{x_i(\varepsilon)}
+                                      (e_i(\varepsilon)y).
+$$ {#eq:schw-bc-compatible-metric-maps}
+
+At $a_i=0,A_i=1$ these maps are the identity in the marked normal representatives for every $\varepsilon\in C_\varepsilon$. The finite endpoint equations, their inverse equations and the specified finite composites are jointly holomorphic. Their central determinants and the scalar coefficients actually used as units are nonzero. Compactness of $C_\varepsilon$ therefore permits one sufficiently small passive neighborhood, then smaller compact passive subcores, such that all maps, inverses and stipulated composite images retain positive parent buffers and bounded inverse matrices. Only scalar line-transition coefficients that are inverted, or frame determinants, require positive modulus minima; individual entries of an invertible frame matrix may vanish.
+
+On these common representatives define the physical map from vertex $j$ to vertex $i$ by
+
+$$
+ f_{ij}^\varepsilon=(\Xi_i^\varepsilon)^{-1}\Xi_j^\varepsilon.
+$$
+
+It has actual inverse $f_{ji}^\varepsilon$ and satisfies $f_{ij}^\varepsilon f_{jk}^\varepsilon=f_{ik}^\varepsilon$. Its full-spin lift uses the same initialized maps. Expressed as source instructions, composition includes the radial-versus-broken-path correction $K_{U_\varepsilon}$ of Theorem 8.3. These chart identities do not assert path independence of spin parallel transport.
+
+The nonlinear source action must be retained:
+
+$$
+ V_i(\varepsilon)=R_{a_i,A_i}(\varepsilon U;0),\qquad
+ V_i(\varepsilon)\ne\varepsilon R_{a_i,A_i}(U;0)
+ \quad\hbox{in general}.
+$$ {#eq:schw-bc-amplitude-rebase-distinction}
+
+For the prescribed construction at vertex $i$, regard $V_i(\varepsilon)$, together with the passive displacement and frame parameters, as the bounded input family. Apply §§6 and F–G using the independent internal source amplitude
+
+$$
+ (s_{\rm in}V_i^+(\varepsilon),s_{\rm in}V_i^-(\varepsilon);0),
+$$
+
+and set $s_{\rm in}=1$ after construction. The physical variable $\varepsilon$ is still retained. There is no assertion that these vertex metrics are physically compared for arbitrary $s_{\rm in}$ by scaling the rebased records linearly. Theorem G.5 uses exactly this independent-internal-amplitude evaluation and quantizes the inverse pullback of the ray map of $f_{ij}^\varepsilon$. Its reference at $\varepsilon=0$ is the flat translation/full-spin action, with its half-density calibration.
+
+The resulting chart algebra maps, normalized comparison units and framed module maps obey
+
+$$
+ \begin{aligned}
+ k_i\varphi^s_{ij}
+    &=\operatorname{Ad}(T_{ij})\varphi^t_{ij}k_j,\\
+ T_{ij}\varphi^t_{ij}(T_{jk})C^t_{ijk}
+    &=k_i(C^s_{ijk})T_{ik},\\
+ F_i\tau^s_{ij}&=T_{ij}\tau^t_{ij}F_j.
+ \end{aligned}
+$$ {#eq:schw-bc-compatible-enriched-comparisons}
+
+Both original associators, the optical density-square identification, the module half-canonical root with any base factor, and the entire parameter framing are retained. G.5 and H.4 give the normalized comparisons between selected composites and composites of the selected lifts. Lemma F.8 and framed-Hom uniqueness imply the identity, inverse and all specified finite coherence equations, over the same compact physical amplitude and passive parameter sets.
+
+For clarity, the complete-sky restriction is uniform in these parameters. Let $\mathcal F\to B\times P$ be the proper sky incidence over the common four-dimensional normal base $B$ and a parameter parent $P$ containing the retained compact parameter set $C$. Let $\mathcal U\subset\mathcal F$ be the open locus where all stipulated direction charts, hit maps and finite composite conditions have their required parents. The preceding finite restrictions make it contain every central whole sky over $\{0\}\times C$. Properness makes the image of $\mathcal F\setminus\mathcal U$ closed locally in $B\times P$. Its projection over the compact set $C$ is closed in $B$ and avoids $0$. A smaller positive base neighborhood therefore retains all the required chart coverage for every parameter in $C$. Equivalently one may take a finite subcover of the compact central-sky/parameter set. This supplies a common base neighborhood, rather than intersecting infinitely many unrelated neighborhoods without a compactness argument. H.4's finite closed-star refinement restricts all root, operator and module data together over that same set. This proves the lemma. ∎
+
+There is a separate, stronger common-family assertion on a sufficiently short subsystem about the horizon mark $o$. Use the single $U_\varepsilon=\varepsilon U(o)$ and the positive displacement radius $a_{\rm pass}$ and base parents already obtained above. Also fix the central metric-readout parent and its smaller $C^3$ core if an amplitude error estimate is to be used. Let $\chi$ be the exact amplitude-one normal-to-EF coordinate map, fixed independently of amplitude. Choose a dimensionless EF polydisc of radius $r_c>0$ whose doubled polydisc is inside the geometric parents, the required base comparison parents and the dimensionless image of that $C^3$ core. This intersects four-dimensional base parents; it does not map a five-dimensional contact chart into spacetime.
+
+For the nonradial affine geodesic initialized at $o$, let $t=\lambda/m$ and let $k_0=d\gamma/dt|_0$ in the fixed normal tangent norm. Keep a finite coordinate-speed bound $V_\infty$ on the exact short geometric ray. After a further positive restriction of $r_c$, choose
+
+$$
+ 0<d\le\min\left\{
+ d_{\rm geom},\frac{r_c}{8\max(1,V_\infty)},
+ \frac{a_{\rm pass}}{2\|k_0\|}
+ \right\}.
+$$ {#eq:schw-bc-common-subsystem-length}
+
+Here $d_{\rm geom}>0$ is an independently established finite geodesic control length and $k_0\ne0$. Only now specialize $a_i=t_i k_0$ for $t_i=-d,0,d$, and take $A_i=1$ in the parallel full-spin frames, or the fixed bounded initialized changes to the desired final frames. Since $\gamma$ is affine through $o$, $\operatorname{Exp}_o(t_i k_0)=\gamma(t_i)$ on the retained representatives. The choices satisfy both the passive displacement margin and the fixed base/core inclusion. Transversality at the horizon gives an exterior point, the horizon point and an interior point for every sufficiently small positive $d$.
+
+For the ray of §K.7 and its speed bound $V_\infty=2$, one may equivalently follow its order of choices: first require $r_c\|k_0\|\le8a_{\rm pass}$, then put $d=\min\{1/8,r_c/16\}$. The inequalities $d\|k_0\|\le a_{\rm pass}/2$ and $V_\infty d\le r_c/8$ follow. The length is positive but generally unevaluated. Its optical formulas use $h=2d$; numerical constants derived specifically for $d=1/8$ do not become constants for an unevaluated common source radius.
+
+Thus the quantifiers are: fix the bounded record family and the compact amplitude/parameter sets; choose common parents, passive displacement and inverse/root margins; choose the common base and readout core; then choose the positive short length and final marks. The optical amplitude truncation on this subsystem remains the single central Taylor polynomial in $\varepsilon$, read out before evaluation at one. It neither requires linearity of the rebased records in $\varepsilon$ nor asserts an exact cocycle for independently truncated vertex metrics.
+
+
+
+<div id="sec:sch-r1-rational-optics"></div>
+
+### K.7. A separately initialized rational optical example
+
+The family of §K.3 retains its entrance point, affine clock and polar-first screen. Here we choose a different ray and a horizon initialization. Let the physical energy be $E=1$, angular momentum $L=m$, and physical affine parameter $\lambda$. Put $t=\lambda/m$, $\rho=r/m$, $V=v/m$, and initialize $(V,\rho,\theta,\phi)=(0,2,\pi/2,0)$ at $t=0$. The physical point is $o=(0,2m,\pi/2,0)$, also the mark for the source and readout in this example. All primes in this subsection denote $d/dt$. Then
+
+$$
+ \rho'=-w,\qquad w=\sqrt{1-(\rho-2)/\rho^3},\qquad
+ V'=\frac1{\rho^2(1+w)},\qquad \phi'=\rho^{-2},\qquad \theta'=0.
+$$ {#eq:sch-r1-central-ray}
+
+These are the regular null first integrals, with the positive square root. Differentiating gives $\rho''=\rho^{-3}-3\rho^{-4}$ and the geodesic equation, so this is the stated affine clock. On $7/4\le\rho\le9/4$ one has
+
+$$
+ \frac{713}{729}\le w^2\le\frac{359}{343},\qquad
+ \frac{15}{16}<w<\frac{17}{16}.
+$$
+
+A first exit from that radial interval takes at least $4/17>1/8$ units of $t$. Hence the ray exists for $|t|\le1/8$, with $|\rho-2|\le17/128$ and radial endpoint margins $15/128$. The inequalities $0<V'\le256/1519$ and $0<\phi'\le16/49$ give $|V|\le32/1519$ and $|\phi|\le2/49$. Thus this is a finite nonradial future-horizon crossing in a regular angular chart.
+
+Write $g_m=m^2\bar g$ in these dimensionless coordinates and $K=d\gamma/dt$. A parallel unit screen for $\bar g$, in the order in-plane then polar, is
+
+$$
+ E_2=\rho^{-1}\partial_\theta,\qquad
+ E_1=-\rho(1+w)\partial_\rho+\rho^{-1}\partial_\phi+A_0K,
+ \qquad A_0(t)=\int_0^t(1+w(s))\,ds.
+$$ {#eq:sch-r1-central-screen}
+
+Indeed the first two terms of $E_1$ have covariant derivative $-(1+w)K$, while $\nabla_KE_2=0$; addition of $A_0K$ makes the representatives parallel. Their Gram matrix is $-I_2$ and they are orthogonal to $K$. Physical unit vectors are $e_i=m^{-1}E_i$. Rotating the orbital plane gives the polar Jacobi solutions $\rho\cos\phi$, $\rho\sin\phi$, whose Wronskian is $\rho^2\phi'=1$. They satisfy $j_2''=-3\rho^{-5}j_2$. Reflection makes the off-diagonal tidal entries zero and Ricci flatness makes their trace zero. Thus
+
+$$
+ j''+\mathcal Rj=0,\qquad
+ \mathcal R=\operatorname{diag}(-Q,Q),\qquad Q=3\rho^{-5},\qquad
+ \frac{3072}{59049}\le Q\le\frac{3072}{16807}<\frac15.
+$$ {#eq:sch-r1-central-tide}
+
+The screen order is reversed from §K.3, and $L/m=1$ lies outside that earlier family. Consequently none of the following numerical values changes its initialization or endpoint bounds.
+
+<div id="ex:sch-r1-rational-observable"></div>
+
+**Example K.17.**
+
+For any $0<d\le1/8$, put $a=-d$, $b=d$, $h=2d$. Let $F(t,s)$ be the full transfer of $(j,j')$, initialized by $F(s,s)=I_4$, and let $B$ be its upper-right block. The observable $\mathcal O=B_{11}(b,a)$ obeys
+
+$$
+ 0<\mathcal O-\left(h+\frac{h^3}{64}\right)<\frac{79h^5}{9000}.
+$$ {#eq:sch-r1-rational-general}
+
+In particular, on the full exactly controlled interval $d=1/8$,
+
+$$
+ \frac{1025}{4096}<\mathcal O<\frac{1025}{4096}+\frac{79}{9216000},
+ \qquad \left|\mathcal O-\frac{1025}{4096}\right|<10^{-5}.
+$$ {#eq:sch-r1-rational-enclosure}
+
+*Proof.* The phase generator is $H=\left(\begin{smallmatrix}0&I_2\\-\mathcal R&0\end{smallmatrix}\right)$, with $\|H\|_2=1$ and $H^TJ_0+J_0H=0$. Differentiation therefore proves symplecticity, $\|F(t,s)\|\le e^{|t-s|}$ and exact finite composition. The defocusing component $u=B_{11}(t,a)$ satisfies
+
+$$
+ u(t)=t-a+\int_a^t(t-s)Q(s)u(s)\,ds.
+$$
+
+Its positive Volterra series gives $u(t)\ge t-a$. The first iterate is $\mathcal O_1=h+\int_{-d}^d(d^2-s^2)Q(s)\,ds$. Direct differentiation of the ray equations gives
+
+$$
+ Q'=15w\rho^{-6},\qquad
+ Q''=15(3-\rho)\rho^{-10}+90w^2\rho^{-7}.
+$$
+
+On the retained radial parent, $\rho^{-7}<1/50$, $\rho^{-10}<1/250$, $w^2<17/16$ and $0<3-\rho\le5/4$. Hence $0<Q''<159/80<2$. Taylor's integral formula yields $0<Q(s)-Q(0)-Q'(0)s<s^2$ for $s\ne0$. The odd term integrates to zero against $d^2-s^2$, and $Q(0)=3/32$, so
+
+$$
+ 0<\mathcal O_1-\left(h+h^3/64\right)<h^5/120.
+$$
+
+The full transfer bound gives $u(s)\le(s-a)e^h$. Substitution in its Volterra equation then gives $u(s)-(s-a)\le Q_{\max}e^h(s-a)^3/6$. Substituting this once more gives
+
+$$
+ 0<\mathcal O-\mathcal O_1
+ \le Q_{\max}^2 e^h h^5/120<4h^5/(75\cdot120).
+$$
+
+Addition gives $79h^5/9000$, and $h=1/4$ gives the rational enclosure. This is an analytic interval bound, without numerical ODE integration. ∎
+
+For $0<h\le1/4$, the same Volterra calculation gives $\|B-hI\|<h/360$, while $\|A-I\|<1/120$. Thus $\sigma_{\min}(B)>(359/360)h$ and $\sigma_{\min}(A)>119/120$. These are projection margins for this example, in addition to the full symplectic transfer. With physical input slope $dj/d\lambda$, its position-response block is $mB$.
+
+The exact interval $|t|\le1/8$ is independent of any source-domain estimate. To apply a single central amplitude approximation, first choose the common source, incidence and inverse domains in §K.6 and the inner normal $C^3$ core of K.9, denoted here by $P_2$. Let $\chi$ be the exact initialized map from that normal core to EF coordinates. Choose a doubled dimensionless EF polydisc inside $\chi(P_2)$ and inside all retained base neighborhoods, with positive radius $r_{\rm common}$. Require also $r_{\rm common}\|k_0\|\le8a_{\rm pass}$, where $k_0=d\chi_o^{-1}K(0)$ is expressed in the fixed normal tangent norm for the passive displacement radius in §K.6. Set $d=\min\{1/8,r_{\rm common}/16\}$. The exact coordinate speed is less than two, so the ray remains inside the polydisc with a positive buffer and its three marks are admitted passive displacements. This asserts only a strictly positive interval; it supplies no numerical lower bound on $r_{\rm common}$.
+
+Write $\epsilon_N=D_gT_*^{-N-1}/(1-T_*^{-1})$, where $T_*>1$ and $D_g$ includes the independent spatial Cauchy gap and the fixed coordinate change through order four. For normalized approximations with the same central null tangent and screen, K.9 and the state-stability argument of K.12, applied on this example's own tube with its displayed velocity and screen bounds, give a finite tidal constant $C_K$ such that, under their inverse, state and crossing margins,
+
+$$
+ \|F_N(b,a)-F(b,a)\|\le
+ \mathcal E_N:=hC_K\epsilon_N e^{(1+C_K\epsilon_N)h},\qquad
+ |\mathcal O_N-\mathcal O|\le\mathcal E_N.
+$$ {#eq:sch-r1-rational-amplitude-error}
+
+To check the initialization, the normal metric satisfies $g_\varepsilon(0)=\eta$ for every amplitude. Thus each coefficient polynomial has the same central metric, and the exact central null and screen data are valid for every $g_N$; parallel transport is integrated in both directions. The $C^3$ tail bounds the Christoffel difference in $C^2$ and curvature difference in $C^1$. On a compact buffered state tube the integral equation gives a state error $C_Z\epsilon_N$, by Gronwall. Replacing each factor in $-\bar g(E_i,R(E_j,K)K)$ bounds the tidal difference by $C_K\epsilon_N$. Requiring $C_Z\epsilon_N<\min\{\eta_Z,15d/32,15/32\}$ retains the tube and transverse crossing of the fixed surface $r=2m$. Duhamel's formula then proves the displayed transfer bound; the approximate tidal matrix is symmetric for its own real metric and its transfer remains symplectic even if $g_N$ is not Einstein.
+
+Combining the two independently specified approximations gives
+
+$$
+ |\mathcal O_N-(h+h^3/64)|<\mathcal E_N+79h^5/9000.
+$$
+
+Inverse-position bounds additionally require $\mathcal E_N< (359/720)h$. All margins can be met for sufficiently large $N$ because $d$ and the gaps are fixed and positive. The constants $D_g,C_K,r_{\rm common}$ and a numerical sufficient $N$ have not been evaluated. The full-interval rational numbers above cannot be assigned to this common source interval unless $d=1/8$ has independently been justified.
+
+
+<div id="sec:sh-finite-readout-concatenation"></div>
+
+### K.8. Finite readouts along the complete crossing family
+
+We now prove the finite-readout alternative of Proposition 10.5 on the entire original family. The local inputs are K.6–K.9 and the explicit calculations in K.3; local flows use K.10–K.12. The physical comparisons stay in the original exact atlas, while the approximate Cauchy evolution is defined explicitly below.
+
+<div id="sec:fro-a-domains-readouts"></div>
+
+**Finite readout domains.**
+
+Fix $m>0$ and the ingoing Schwarzschild family of §K.3.2, with
+
+$$
+ P=[1,2]\times[1/4,1/2],\qquad
+ \lambda=(E,\ell),\qquad L=m\ell,\qquad t=u/m.
+$$
+
+Use the dimensionless EF coordinates $x=(V,\rho,\theta,\phi)=(v/m,r/m,\theta,\phi)$. Write $g=g_0=\bar g$ for $m^{-2}g_m$ after expressing $g_m$ in these coordinates with its Jacobian factors. This explicit fixed unit conversion leaves the Levi–Civita connection unchanged. Every metric readout and tail norm in this section is taken after this conversion. The selected physical metric and the physical enriched atlas remain $g_m$; their interpretation undoes the same fixed conversion. All coordinate and tensor norms are auxiliary Euclidean norms, and all constants may depend on this fixed $m$. Let $x_\lambda(t)$ be the exact trajectory and let $\tau(\lambda)$ be its first time at $\rho=3/2$. Thus
+
+$$
+ \tau(\lambda)=\int_{3/2}^{5/2}
+   \frac{\mathrm d\rho}
+    {\sqrt{E^2-\ell^2(\rho-2)/\rho^3}},
+ \qquad
+ \frac{10}{21}<\tau(\lambda)<\frac{100}{99}.
+$$ {#eq:fro-a-duration}
+
+The parameter $s=t/\tau(\lambda)$ will be used only to choose a finite schedule. The metric, geodesic, parallel-frame and Jacobi equations retain the affine clock $t$.
+
+<div id="thm:fro-a-finite-domain-schedule"></div>
+
+**Theorem K.18 (finite buffered readout schedule).**
+
+The whole family from $\rho=5/2$ to $\rho=3/2$, with every $\lambda\in P$, has the following data, chosen before the amplitude truncation degree $N$.
+
+There are finitely many exact local normal-to-EF maps $\chi_i$ and nested complex EF domains
+
+$$
+ V_i^0\Subset V_i^1\Subset V_i^2\Subset V_i^3,
+$$ {#eq:fro-a-nested-domains}
+
+where $V_i^2$ lies in a $C^3$ metric-control core of a local readout of Lemma K.9 and $V_i^3$ lies in its fixed-coordinate readout parent. The metric and all inverse units needed for that readout have their retained bounds. There are compact parameter cores $P_a$ covering $P$, larger compact parameter neighborhoods $P_a^+$, a single integer $J\ge1$, and a choice $i=i(a,j)$ for $1\le j\le J$, such that the whole exact enlarged slab
+
+$$
+ \left\{
+  x_\lambda\bigl(\tau(\lambda)s\bigr):
+   \lambda\in P_a^+,\quad
+   \frac{j-3}{J}\le s\le\frac{j+2}{J}
+ \right\}
+ \Subset V_{i(a,j)}^0 .
+$$ {#eq:fro-a-enlarged-slab}
+
+The extensions in this display are short extensions of the exact family. The cuts for $\lambda\in P_a$ are
+
+$$
+ t_j(\lambda)=\tau(\lambda)\frac jJ,\qquad
+ \frac{10}{21J}<t_j-t_{j-1}<\frac{100}{99J}.
+$$ {#eq:fro-a-affine-cuts}
+
+Order the finite parameter cores once and, for each $\lambda\in P$, use the least index $a$ with $\lambda\in P_a$ and its assigned readout list. Every estimate is uniform over all cores; no analytic dependence across these selection seams is required. Adjacent readouts contain a common open time neighborhood of their exact node, with a positive common position buffer. There are also compact enlarged state tubes, uniform vector bounds and positive state buffers for the exact tangent, null companion and parallel screen frame on every assigned slab. All these choices are independent of $N$.
+
+*Proof.* The radicand in [@eq:fro-a-duration] is bounded below by $124/125$ on the original compact parameter/radial rectangle. It stays nonzero on a slightly larger real rectangle and on a complex neighborhood of that rectangle. Fix the positive square-root branch there. The quadratures of §K.3.2, followed by the inverse with $\partial t/\partial\rho=-1/q$, prove real-analytic dependence of $x_\lambda(t)$ and $\tau(\lambda)$ on their arguments near the full compact family.
+
+Choose a compact parameter rectangle $\widehat P$ with $P\subset\operatorname{int}\widehat P$, sufficiently small that this branch and the same initial data remain defined. The regular EF parent of §K.3.2 has positive radial, advanced-time and angular buffers around the original trajectories. Existence and continuous dependence for the exact ODE, compactness and the transverse radial derivative therefore give $\alpha>0$ such that
+
+$$
+ \Gamma(\lambda,s)=x_\lambda(\tau(\lambda)s)
+$$
+
+is real analytic on an open neighborhood of
+$\widehat X=\widehat P\times[-\alpha,1+\alpha]$,
+and its image remains in a compact subcore of that regular EF parent. The companion and screen-frame ODEs have the same property: their coefficients and initial data are analytic, all original initial denominators have positive lower bounds, and their solutions are bounded on this compact set. A small further restriction of $\widehat P$ and $\alpha$ makes these choices simultaneous. The sharp rational estimates of §K.3 apply on the original $P$ and its original intervals; the added extensions need only the finite analytic bounds just obtained. The assertion does not ask one ray to remain in the radial strip until the larger terminal time of another ray.
+
+We next construct the readout domains; this step does not assume that one old readout contains any long segment. The compact image $\Gamma(\widehat X)$ lies inside $r>0$ and inside a finite physical core of Theorem K.8 chosen to contain a small neighborhood of this image. Such a core can be chosen with radial endpoints strictly outside $[3m/2,5m/2]$, advanced-time endpoints strictly outside the displayed trajectory range and the whole angular sphere. For the original family choose $m/2<\delta<2m$, $v_-<0$ and $v_+>25m/396$ in that core definition; take the parameter and time extensions small enough to retain strict buffers inside it. Its finite angular charts include the regular strip used here.
+
+At each point of this compact image, choose a marked full-spin frame in one of the finite analytic frame parents. Lemma K.6 extracts a bounded all-record family on a neighborhood of that mark. Propositions 6.1–6.2 and Theorem 6.3 supply the prescribed stored representative over an amplitude disk of radius greater than one, on a sufficiently small spatial neighborhood. Lemma K.9 supplies its holomorphic physical metric readout, bounded inverse units, initialized normal development and independent spatial gaps. This is applicable to these actual bounded original inputs; the amplitude parent is furnished by §§6.1–6.3, rather than added as an assumption about the long tube. The required restrictions decrease space and retain the compact amplitude disk.
+
+At amplitude one, Lemma K.6 and the initialized normal metric comparison preceding Theorem K.7 give an exact normal-to-EF map $\chi$ with analytic inverse $\kappa$. Choose sufficiently small concentric complex EF polydiscs around the marked point. Four nested such polydiscs can be placed inside the physical image of the normal readout parent, so that the second larger polydisc $V^2$ and its closure lie in the image of the normal $C^3$ control core and the largest $V^3$ has a positive gap to the readout boundary. Reserve any further spatial Cauchy gap needed below before making this choice. The real locus of the smallest $V^0$ contains the marked point.
+
+These local choices may also be made smaller than the local comparison-star radii in Theorem K.8. Taking a finite subcover of the compact image gives finitely many nested domains as in [@eq:fro-a-nested-domains], with all their exact maps, inverse-unit margins and derivative bounds fixed. In particular the real open sets
+
+$$
+ O_i=\Gamma^{-1}(V_i^0)\cap\widehat X
+$$
+
+cover $\widehat X$. Give $\widehat X$ the maximum product metric. By the Lebesgue-number lemma there is $d>0$ such that every subset of $\widehat X$ of diameter less than $d$ lies in some $O_i$. This use of compactness is on the parameter-time product, after the readout domains have been fixed.
+
+Let $\Delta_P=\operatorname{dist}_\infty(P,\partial\widehat P)>0$. Choose
+
+$$
+ 0<r<\min\{d/16,\Delta_P/4\},
+ \qquad
+ \frac1J<\min\{d/10,\alpha/3\}.
+$$ {#eq:fro-a-product-mesh}
+
+Choose finitely many $\lambda_a\in P$ whose open maximum-norm balls of radius $r/2$ cover $P$, and put
+
+$$
+ P_a=P\cap\overline B_\infty(\lambda_a,r),\qquad
+ P_a^+=\overline B_\infty(\lambda_a,2r)
+                              \subset\operatorname{int}\widehat P.
+$$
+
+The core $P_a$ has a relative open neighborhood contained in $P_a^+$, and the $P_a$ cover $P$. For each $a,j$ consider the compact product
+
+$$
+ C_{aj}=P_a^+\times
+          \left[\frac{j-3}{J},\frac{j+2}{J}\right].
+$$
+
+It is contained in $\widehat X$: its time endpoints lie between $-2/J$ and $1+2/J$. Its product diameter is at most $\max\{4r,5/J\}<d$. The Lebesgue property therefore assigns a single $i(a,j)$ with $C_{aj}\subset O_{i(a,j)}$. Its image is compact in $V_{i(a,j)}^0$, which proves [@eq:fro-a-enlarged-slab]. This supplies an actual common schedule for the whole slab at every parameter in a parameter core, rather than a different unspecified cover of each individual ray. Equation [@eq:fro-a-affine-cuts] follows from [@eq:fro-a-duration].
+
+For adjacent cells, both enlarged intervals contain $|s-j/J|\le1/J$. Thus their exact images over $P_a^+$ lie in both assigned readouts on this whole node neighborhood. In particular the images over the smaller compact set
+$P_a\times\{|s-j/J|\le1/(2J)\}$
+are compact in the intersection of the two smallest domains. Their distances to the complements of the two $V^1$ domains have a positive minimum. There are only finitely many such nodes and cells. Taking the minimum of their positive margins gives a common position buffer. Compactness likewise gives a margin between every enlarged slab image and the boundary of its assigned $V^1$.
+
+For clarity, state buffers are chosen separately from these four-dimensional point domains. Use the fixed EF coordinates, affine clock $t$, and the $\bar g$-normalized state $(K,\mathcal N,E_1,E_2)$, where $K=\mathrm dx/\mathrm dt$, $\bar g(K,\mathcal N)=1$ and $\bar g(E_A,E_B)=-\delta_{AB}$. The physical vectors are $(k,n,e_A)=(K,\mathcal N,E_A)/m$, with the same coordinate interpretation; in particular $k=\mathrm dx/\mathrm du$. All four vectors are transported in their own exact normalized frame. This is the fixed mass unit conversion, not a rescaling by $\tau(\lambda)$. Denote the joint exact state by
+
+$$
+ Z_\lambda(t)=(x_\lambda(t),K_\lambda(t),
+                       \mathcal N_\lambda(t),E_{1,\lambda}(t),E_{2,\lambda}(t)).
+$$
+
+Its values on the finitely many enlarged slabs form compact sets. Choose a position radius smaller than one quarter of the common position buffer, and vector radii at most one. Shrink these radii and fix a positive metric-perturbation tolerance $\beta_g$ so that the frame-normalization denominators and Gram-matrix neighborhoods used in Lemma K.11 retain their strict margins for every state in the resulting tubes and every symmetric metric within $\beta_g$ of the exact metric there. This is possible by joint continuity at the exact normalized compact frame family; the normalizing formulas are analytic on an open neighborhood of that family. A common smaller radius $\eta_Z>0$ and a common finite vector bound $V$ exist by taking the finite minima and maxima. The point projections of all these state tubes lie inside the corresponding $V^1$, and hence inside the prescribed $C^3$ cores. The radii, $\beta_g$, $V$, all domain gaps and the schedule have now been fixed without choosing $N$. ∎
+
+<div id="prop:fro-a-finite-readout-tail"></div>
+
+**Proposition K.19 (local finite readouts and common-coordinate tails).**
+
+For every readout retained in Theorem K.18 there is a radius $T_i>1$ and a constant $D_i<\infty$ such that its degree-$N$ finite readout defines a holomorphic symmetric tensor $g_{i,N}$ on $V_i^2$, real on the real slice, with
+
+$$
+ \|g_{i,N}-g\|_{C^3(V_i^2)}
+ \le\delta_{i,N}
+ :=D_i\frac{T_i^{-N-1}}{1-T_i^{-1}}.
+$$ {#eq:fro-a-local-tail}
+
+Here the norm is the maximum of the tensor norms and the multilinear derivative norms through order three. The finite readout is performed over its own finite amplitude algebra, followed by coefficient-polynomial evaluation at one. There is a common $T_*=\min_iT_i>1$ and a finite $D_*$ with
+
+$$
+ \max_i\delta_{i,N}\le D_*T_*^{-N-1}.
+$$ {#eq:fro-a-uniform-tail}
+
+*Proof.* For each fixed original input at the selected mark, use its own amplitude variable $\varepsilon_i$, stored analytic tuple $Y_i$ and finite tuple
+$X_{i,N}=q_{i,N}Y_i$, where
+$q_{i,N}$ is reduction modulo $\varepsilon_i^{N+1}$.
+Choose nested amplitude radii $1<T_i<T_{c,i}<T_{b,i}$ before taking any truncation. Lemma K.9 proves, including its finite inverse and initialized ODE recursions, the coefficient identity
+
+$$
+ \mathcal R_{i,N}(X_{i,N})
+       =q_{i,N}h_i(\varepsilon_i),
+ \qquad
+ h_{i,N}=\operatorname{ev}^{\mathrm{poly}}_1
+                             (q_{i,N}h_i).
+$$ {#eq:fro-a-finite-readout-identity}
+
+Here $h_i$ is $m^{-2}$ times the physical metric in the initialized normal coordinates, and $\mathcal R_{i,N}$ includes this final fixed scalar multiplication. It commutes with finite reduction and coefficient-polynomial evaluation; the bound $H_i$ below includes the factor $m^{-2}$. This identity is an equality of coefficient germs on their common representatives. Inverses use finite nilpotent sums; compositions use only the finitely many amplitude coefficients and derivatives needed at the retained degree; initialized ODE coefficients satisfy unique finite linear inhomogeneous recursions. These are the operations in the readout, so the identity includes its nonlinear metric reconstruction and normal development. Evaluating the stored tuple first and then applying a nonlinear readout would not give this identity.
+
+Write $\kappa_i=\chi_i^{-1}$ for the exact amplitude-one EF-to-normal map. It is fixed for all $\varepsilon_i$ and $N$. The initialized metric isometry gives
+
+$$
+ g=\kappa_i^*h_i(1),\qquad
+ g_{i,N}
+   =\kappa_i^*h_{i,N}
+   =\operatorname{ev}^{\mathrm{poly}}_1
+                      q_{i,N}\bigl(\kappa_i^*h_i(\varepsilon_i)\bigr).
+$$ {#eq:fro-a-fixed-coordinate-readout}
+
+The equality on the right holds because this fixed pullback is linear in the tensor and independent of amplitude. Its finite coordinate factors have their exact values; this is not an approximate coordinate map recomputed from $h_{i,N}$.
+
+Keep a positive normal spatial gap $\rho_i$ around $\kappa_i(\overline V_i^2)$ inside the normal readout parent. Lemma K.9 and amplitude Cauchy estimates give a finite $H_i$ with
+
+$$
+ \|D^q(h_i(1)-h_{i,N})\|
+ \le 4^q q!\rho_i^{-q}
+                  \frac{H_iT_i^{-N-1}}{1-T_i^{-1}},
+ \qquad 0\le q\le3,
+$$
+
+on this retained normal core. The first spatial loss has already made the nonlinear readout and its inverses bounded; this $\rho_i$ is the independent loss for differentiating its amplitude tail.
+
+We record explicitly the coordinate cost. Put
+
+$$
+ B_i=\max\left\{1,\sup_{\overline V_i^2}
+                           \|D^q\kappa_i\|:1\le q\le4\right\}<\infty.
+$$
+
+Finiteness follows from analyticity on $V_i^3$ and the retained gaps. The coordinate map $\chi_i$ also has finite derivatives through order four on the corresponding compact normal cores, with bounded inverse differential. Either direction of the coordinate comparison is therefore controlled. For a covariant two-tensor $r$, differentiating
+$(\kappa_i^*r)(x)(v,w)
+=r(\kappa_i(x))(D\kappa_i(x)v,D\kappa_i(x)w)$
+three times uses no derivative of $\kappa_i$ above order four. If
+$R=\max_{q\le3}\|D^qr\|$,
+the chain-rule bounds on $D^a(r\circ\kappa_i)$, for $a=0,1,2,3$, are respectively
+$R$, $RB_i$, $2RB_i^2$ and $5RB_i^3$.
+The Leibniz rule for these three factors has coefficient sum $3^j\le27$ at order $j\le3$. Consequently the safe bound
+
+$$
+ \|\kappa_i^*r\|_{C^3(V_i^2)}
+       \le135B_i^5
+                    \max_{q\le3}\|D^qr\|
+$$ {#eq:fro-a-coordinate-c4-cost}
+
+holds in the stated operator norms. One may therefore take
+
+$$
+ D_i=135B_i^5H_i
+              \max_{0\le q\le3}(4^q q!\rho_i^{-q}).
+$$
+
+This proves [@eq:fro-a-local-tail]. The Lorentz reality assertion in Lemma K.9 and the exact real coordinate map give real symmetric coefficient tensors and hence real $g_{i,N}$.
+
+There are only finitely many readouts. Thus $T_*=\min_iT_i>1$ and
+$D_*=\max_i D_i/(1-T_i^{-1})<\infty$
+give [@eq:fro-a-uniform-tail]. The constants and domains were fixed before $N$. In particular all strict metric inverse, frame-normalization and state first-exit smallness conditions that use finitely many of these constants can subsequently be imposed by one sufficiently large $N$. This last observation does not itself perform the finite state matching or its error propagation. ∎
+
+<div id="prop:fro-a-overlaps-exact-atlas"></div>
+
+**Proposition K.20 (overlap defect and the retained exact atlas).**
+
+On every common EF overlap of two domains used in the schedule,
+
+$$
+ \|g_{i,N}-g_{k,N}\|_{C^3(V_i^2\cap V_k^2)}
+     \le\delta_{i,N}+\delta_{k,N}.
+$$ {#eq:fro-a-overlap-defect}
+
+At amplitude one the exact local metric comparisons, full-spin lifts, contact and affine comparisons, structured operator comparisons and compact point-module comparisons are those of the finite physical atlas in Theorem K.8, with its actual finite coherence. They can be retained on the compact node neighborhoods of Theorem K.18. Independently truncated metrics need satisfy neither an exact metric cocycle nor a common physical amplitude family.
+
+*Proof.* Both exact amplitude-one tensors in the fixed EF coordinates equal $g$. The triangle inequality applied to the two differences in [@eq:fro-a-local-tail], and to their derivatives, proves [@eq:fro-a-overlap-defect]. There is no coordinate-transition factor in this formula because the two tensors and norms are already in the same EF coordinates. In normal coordinates the equivalent assertion must retain the pullback by the exact transition $\kappa_k\chi_i$, and its coordinate bound; it is not a literal difference of arrays from different coordinate systems.
+
+The exact charts satisfy
+$h_i(1)=\chi_i^*g$. Undoing the fixed unit conversion gives the original physical metrics and initialized isometries, with their original root and full-spin calibration. Their coordinate transitions are the maps
+$\chi_k^{-1}\chi_i$, and their specified full-spin lifts are the changes of the same fixed spin bundle. By Theorems K.7–K.8 they induce the retained contact, affine, infinity, operator and compact point-module comparisons, with actual comparison units and module maps. On a triple their comparisons are the existing finite coherence comparisons, not separately chosen principal-symbol identifications.
+
+Only finitely many chart pairs and node neighborhoods occur in Theorem K.18. Their exact compact node images lie in the interiors of both assigned chart parents and retain positive buffers. Keeping these compact cores and their whole complex skies, apply Theorem K.8's simultaneous finite closed-star refinement to this finite list of maps, inverses and stipulated finite composites. Its parent restrictions retain the required compact sets and all sky fibers. Existing atlas maps are restricted, not altered; an additional local normal representative is compared through its initialized exact metric isometry as in Theorem K.7. Thus the required exact old comparisons and their root/full-spin/module calibrations remain available at every switching node.
+
+No identity between $\varepsilon_iU_i$ and the record family at a different mark is used. The $\varepsilon_i$ are internal construction parameters of the separate readouts; only their amplitude-one exact metrics have been identified. Polynomial evaluation at one preserves their approximation estimates but does not turn the overlap defect into zero or supply a cocycle for the truncated metrics. The finite schedule and node buffers make them suitable inputs for a separate finite matching argument; they do not claim that argument for free. ∎
+
+
+<div id="sec:fro-b-switches"></div>
+
+**Metric and Cauchy switches.**
+
+<div id="lem:fro-b-cauchy-switch"></div>
+
+**Lemma K.21 (Metric and Cauchy switches).**
+
+Use the finite buffered schedule and local readouts of Theorem K.18 and Propositions K.19–K.20. On a fixed neighborhood of each exact framed node, the formulas below define a locally analytic null-frame reset, a metric-to-metric tangent isometry and an oriented screen identification. Their state and phase errors are bounded by the incoming state error and the two readout metric errors, with constants and positive margins independent of the truncation degree. The prescribed covariant Cauchy-jet rule is well defined on the screen quotient, preserves the same affine-clock Wronskian, and has the symplectic phase matrix $\operatorname{diag}(R,R)$ with $R\in SO(2)$. At exact reference data this phase matrix is the identity. All previously accumulated phase data are transported by that matrix.
+
+*Proof.* We give the normalization, quotient map and phase calculation explicitly.
+
+**Fixed coordinates, clocks and reference data.**
+
+Fix $m>0$ and common dimensionless EF coordinates $x=(V,\rho,\theta,\phi)$, where $V=v/m$ and $\rho=r/m$. Put
+
+$$
+ g_0=\bar g=m^{-2}g_m,\qquad t=u/m.
+$$
+
+The components of $g_m$ here are expressed in these dimensionless coordinates. Its connection is the connection of $g_0$, since their factor $m^2$ is constant. The reference state is
+
+$$
+ Z_*(\lambda,t)=(x_*,K_*,\mathcal N_*,E_{*,1},E_{*,2}),\qquad
+ \dot x_*=K_*,
+$$
+
+with dot denoting $d/dt$. The vectors are parallel along the reference ray and have Gram matrix
+
+$$
+ Q=
+ \begin{pmatrix}
+ 0&1&0&0\\1&0&0&0\\0&0&-1&0\\0&0&0&-1
+ \end{pmatrix}.
+$$
+
+In particular, $g_0(K_*,\mathcal N_*)=1$. Choose the same global polar-first parallel Sachs screen and null companion as in §K.3, rescaled to this convention. The physical tangent, companion and unit screen vectors are $K_*/m,\mathcal N_*/m,E_{*,A}/m$. The parameter $\lambda$ ranges over the fixed compact family of Proposition 10.2. Its exact dimensionless terminal time is $\tau(\lambda)$.
+
+These reference data are supplied by the already proved first integrals, quadratures and explicit parallel Sachs screen of §K.3, rather than by an unknown Jacobi transfer. For example, with $\ell=L/m$,
+
+$$
+ \tau(E,\ell)=\int_{3/2}^{5/2}
+ \frac{d\rho}{\sqrt{E^2-(1-2/\rho)\ell^2/\rho^2}}.
+$$
+
+The reference companion can also be recovered algebraically from that screen. Put $\widetilde n=-\partial_\rho/\dot V_*$, whose denominator has the positive lower bound of §K.3, and set
+
+$$
+ \widetilde{\mathcal N}=\widetilde n+
+       \sum_Ag_0(\widetilde n,E_{*,A})E_{*,A},\qquad
+ \mathcal N_*=\widetilde{\mathcal N}-\tfrac12g_0(\widetilde{\mathcal N},\widetilde{\mathcal N})K_*.
+$$
+
+It is the unique null vector orthogonal to the screen with $g_0(K_*,\mathcal N_*)=1$. Differentiating these conditions, using the parallel $K_*,E_{*,A}$, proves that $\mathcal N_*$ is parallel. Thus specifying the reference columns or the cuts requires no optical observable or Jacobi transfer and is not circular.
+
+Fix a finite integer $J$ and exact cut times $t_j(\lambda)=j\tau(\lambda)/J$. At each cut, the incoming and outgoing coordinate parents have a common overlap containing a fixed positive position buffer around $x_*(\lambda,t_j)$. Retain the finitely many interfaces over compact parameter cores with these uniform margins. A fixed compact state neighborhood and its positive buffer are also retained. Only an interface whose incoming approximate position remains in this overlap is used.
+
+Let $g=g_{i,N}$ and $h=g_{k,N}$ be the incoming and outgoing real symmetric dimensionless metric readouts. They are measured in these same coordinates. On their respective buffered position domains assume
+
+$$
+ \|g_{i,N}-g_0\|_{C^3}\le\delta_{i,N},\qquad
+ \|g_{k,N}-g_0\|_{C^3}\le\delta_{k,N},\qquad
+ d_{ik,N}:=\delta_{i,N}+\delta_{k,N}.
+$$
+
+Thus $\|h-g\|_{C^0}$ on the overlap is at most $d_{ik,N}$. The switch below uses only this $C^0$ difference; the $C^3$ bounds are used for the actual flows and tidal estimates between cuts. All constants below may depend on the fixed mass, coordinate and frame bounds, finite interface system and compact reference family, but not on $N$.
+
+**The null-frame reset.**
+
+Suppose the incoming state at the cut is $Z^-=(x,K,\mathcal N,E_1,E_2)$ and the incoming frame $F=(K,\mathcal N,E_1,E_2)$ has Gram matrix $Q$ for $g(x)$. Write $\mathcal E^-=\|Z^--Z_*(\lambda,t_j)\|$ in the maximum of the five fixed coordinate-block norms. All reference vector components in this comparison are taken at the exact cut.
+
+At the approximate position $x$ apply Lemma K.11 with the incoming metric and its actual normalized frame as the reference, and with $h(x)$ as the perturbed metric. Its formulas are as follows. Put
+
+$$
+ q=h(K,K),\qquad b_0=h(K,\mathcal N),\qquad d=h(\mathcal N,\mathcal N),\qquad
+ a=-\frac{q}{b_0+\sqrt{b_0^2-dq}},\qquad K^+=K+a\mathcal N.
+$$
+
+The square root is the positive branch near $1$. This expression is valid also when $d=0$ and is the root tending to zero of $h(K+a\mathcal N,K+a\mathcal N)=0$. Define
+
+$$
+ \begin{aligned}
+ b&=h(K^+,\mathcal N),&
+ \mathcal N^+&=b^{-1}\left(\mathcal N-\frac{h(\mathcal N,\mathcal N)}{2b}K^+\right),\\
+ P_h(w)&=w-h(w,\mathcal N^+)K^+-h(w,K^+)\mathcal N^+,&
+ W&=(P_h(E_1),P_h(E_2)),\\
+ H_{\rm temp}&=-W^ThW,&
+ E_{\rm temp}&=W H_{\rm temp}^{-1/2}.
+ \end{aligned}
+$$
+
+The last inverse square root is the positive symmetric one. The formulas give $h(K^+,K^+)=h(\mathcal N^+,\mathcal N^+)=0$, $h(K^+,\mathcal N^+)=1$, and
+
+$$
+ E_{\rm temp}^ThE_{\rm temp}=-I_2,\qquad
+ h(E_{{\rm temp},A},K^+)=h(E_{{\rm temp},A},\mathcal N^+)=0.
+$$
+
+There are constants $\epsilon_*>0$ and $C_{\rm n}<\infty$, common to all the finitely many interfaces, such that if $\mathcal E^-+d_{ik,N}<\epsilon_*$ these formulas are defined and
+
+$$
+ b_0>\tfrac12,\qquad b>\tfrac12,\qquad
+ \|H_{\rm temp}-I_2\|<\tfrac12,\qquad
+ \|F_{\rm temp}-F\|\le C_{\rm n}d_{ik,N},
+ \quad F_{\rm temp}=(K^+,\mathcal N^+,E_{\rm temp}).
+$$
+
+Here and below a four-column frame norm is the induced Euclidean operator norm, with fixed finite conversions to the state-block norm. To prove the assertions uniformly, at $h=g$ one has $q=d=a=0$, $b_0=b=1$, $H_{\rm temp}=I_2$ and $F_{\rm temp}=F$. The displayed formulas are real analytic on a fixed neighborhood of the compact reference data. A smaller closed neighborhood keeps the denominators and eigenvalues in the stated margins. Its derivative bounds are finite. Applying the mean-value formula with the source frame held fixed gives the last estimate. For instance, $|q|\le\|h-g\|\|K\|^2$ and the displayed root formula gives $|a|\le2|q|$ once $b_0>1/2$; no inverse power of a metric error is used. This is precisely the uniform version of Lemma K.11, now with the actual incoming frame as reference.
+
+There is no change of the cut time or of the affine clock: the next segment starts at the same $(x,t_j)$ with tangent $K^+$. In particular, $K^+$ is generally different from $K$, but it is not multiplied by an additional affine-scale factor.
+
+Define the full-frame map at this point by
+
+$$
+ L=F_{\rm temp}F^{-1}.
+$$
+
+It is an actual isometry from $(T_xM,g(x))$ to $(T_xM,h(x))$:
+
+$$
+ L^ThL=g,\qquad LK=K^+,\qquad L\mathcal N=\mathcal N^+,\qquad LE_A=E_{{\rm temp},A}.
+$$
+
+Moreover $\|L-I_4\|\le C_Ld_{ik,N}$. Indeed $F^{-1}=Q^{-1}F^Tg$, so its norm is uniformly bounded by the retained metric and frame bounds, and $L-I_4=(F_{\rm temp}-F)F^{-1}$. On the small connected neighborhood this map preserves the retained orientation and time orientation. The path obtained by replacing $h$ with $g+s(h-g)$ starts at the identity and specifies its near-identity full spin lift. An existing central spin label is not discarded.
+
+**The target screen and the recorded phase.**
+
+Let $\mathsf E_*=(E_{*,1}(\lambda,t_j),E_{*,2}(\lambda,t_j))$ be the coordinate-component columns of the known exact parallel screen at the cut. For this pointwise operation extend those columns locally as constant coordinate vector fields. Evaluate them at the approximate position $x$, and set
+
+$$
+ W_*=(P_h(E_{*,1}),P_h(E_{*,2})),\qquad
+ H_*=-W_*^ThW_*,\qquad
+ E^+=W_*H_*^{-1/2}.
+$$
+
+The constant-coordinate extension is a specified use of the common EF chart, not an assertion that these extended fields are parallel. After the switch, the initial columns $E^+$ are parallel transported by $h$ along the next approximate segment.
+
+At the exact state and exact metric these formulas give $E^+=E_{\rm temp}=\mathsf E_*$. Compactness and a smaller common $\epsilon_*$ give $\|H_*-I_2\|<1/2$ throughout the retained neighborhood. Thus $E^+$ is an oriented orthonormal basis of the same two-plane
+
+$$
+ \mathcal S^+=\{w:h(w,K^+)=h(w,\mathcal N^+)=0\}
+$$
+
+as $E_{\rm temp}$. Define the computed transition matrix
+
+$$
+ R_{AB}=-h(E_A^+,E_{{\rm temp},B}).
+$$
+
+Then
+
+$$
+ E_{\rm temp}=E^+R,\qquad R^TR=I_2,\qquad \det R=1.
+$$
+
+The first identity follows by orthonormal expansion in the common negative-definite plane, and the second by taking its Gram matrix. The sign of the determinant is positive at the reference data and remains so on the retained neighborhood; equivalently require $\|R-I_2\|<1$. Hence $R\in SO(2)$. Its near-identity spin lift, when retained, is specified by the same continuous choice. The target full-spin frame is the lifted temporary frame followed by the lift of $\operatorname{diag}(I_2,R^{-1})$, since $F^+=F_{\rm temp}\operatorname{diag}(I_2,R^{-1})$. Thus its central label is transported from the source lift, not recovered from the target frame columns alone.
+
+There are common constants $A_{\rm sw},B_{\rm sw},C_{\rm ph}$ such that the reset state $Z^+=(x,K^+,\mathcal N^+,E_1^+,E_2^+)$ satisfies
+
+$$
+ \begin{aligned}
+ \mathcal E^+
+   &\le A_{\rm sw}\mathcal E^-+B_{\rm sw}d_{ik,N},\\
+ \eta_{ik,N}:=\|\operatorname{diag}(R,R)-I_4\|
+   &\le C_{\rm ph}(\mathcal E^-+d_{ik,N}).
+ \end{aligned}
+$$
+
+For the first bound, the temporary frame differs from the incoming frame by $C_{\rm n}d_{ik,N}$. The target-screen formula is a fixed smooth function of $h(x),K^+,\mathcal N^+$ and the exact reference columns. At the reference data its value is $\mathsf E_*$. Also
+
+$$
+ \|h(x)-g_0(x_*)\|
+ \le\delta_{k,N}+\|Dg_0\|\,|x-x_*|.
+$$
+
+The retained compact derivative bounds therefore give $\|E^+-\mathsf E_*\|\le C(\mathcal E^-+d_{ik,N})$, proving the state bound after including the unchanged position. For the second bound, use
+
+$$
+ R-I_2=-(E^+)^Th(E_{\rm temp}-E^+)
+$$
+
+and the same bounds for both screen matrices. All these constants are suprema on a fixed compact neighborhood, chosen before $N$. The number of interfaces is finite, so taking their maxima and the smallest of their positive margins preserves this independence.
+
+**Covariant Jacobi jets and the phase switch.**
+
+At a normalized state use the screen quotient
+
+$$
+ \mathscr S(K)=K^{\perp_g}/\mathbb RK
+$$
+
+with positive metric induced by $-g$. The incoming $E_A$ identify it with $\mathbb R^2$; the companion $\mathcal N$ merely chooses representatives. Along an actual metric-null geodesic, the transverse Jacobi phase consists of the value class $[J]$ and covariant slope class $[V]$, with $V=\nabla_KJ$. Its phase coordinates are $z=(q,p)$, where
+
+$$
+ [J]=[Eq],\qquad [V]=[Ep],\qquad p=\dot q
+$$
+
+in the parallel screen. Actual Jacobi lifts with these classes may have longitudinal components. The transverse equation and its Cauchy phase do not depend on those components.
+
+Every pair of screen classes has a full Jacobi solution with representatives in $K^\perp$ initially: solve the ordinary Jacobi Cauchy problem with the chosen representatives of its two slots. Metric compatibility and the curvature symmetries keep $g(J,K)=g(V,K)=0$. Changing the initial representatives by multiples of $K$ adds a longitudinal Jacobi field $(a+bt)K$ and hence leaves the transverse solution unchanged.
+
+Prescribe the interface map on covariant Cauchy jets by
+
+$$
+ (J,V)^+=(LJ,LV).
+$$
+
+Since $L$ is an isometry and $LK=K^+$, it maps $K^{\perp_g}$ to $(K^+)^{\perp_h}$ and $\mathbb RK$ to $\mathbb RK^+$. Consequently the rule induces a well-defined isometry on the screen quotient for each of the two jet slots. Its coordinate rule in the target screen is exactly
+
+$$
+ z^+=\mathsf C_{ik,N}z^-,
+ \qquad
+ \mathsf C_{ik,N}=\operatorname{diag}(R,R).
+$$
+
+Indeed $LEq=E_{\rm temp}q=E^+Rq$, and the same computation holds for $V$. Longitudinal representatives map to longitudinal representatives, so they introduce no correction to this formula.
+
+With $\mathbb J=\left(\begin{smallmatrix}0&I_2\\-I_2&0\end{smallmatrix}\right)$,
+
+$$
+ \mathsf C_{ik,N}^T\mathbb J\mathsf C_{ik,N}=\mathbb J.
+$$
+
+Thus the switch is symplectic and preserves the transverse Jacobi Wronskian. This is also the direct consequence of $L^ThL=g$ applied to $-g(J,\widetilde V)+g(V,\widetilde J)$. There is no derivative-of-$R$ term: the rule specifies Cauchy data at one cut, and the outgoing screen is initialized there and then parallel transported. It is not a time-dependent rotation of a single screen along one uninterrupted segment.
+
+The coordinate derivative corresponding to this covariant jet reset is explicitly
+
+$$
+ \dot J^{+\,\mu}=(LV)^\mu
+       -\Gamma(h)^\mu_{\alpha\beta}(K^+)^\alpha(LJ)^\beta.
+$$
+
+Therefore copying a raw coordinate derivative across a metric switch would generally give a different rule. The formula prescribes a valid Jacobi Cauchy jet for the outgoing metric. It does not differentiate the nonlinear null-frame reset map, nor does it assert $\nabla^h_{K^+}(LJ)=LV$ for a previously chosen field of maps $L$ away from this cut.
+
+The reference switch is the identity: at $Z^-=Z_*$ and $g=h=g_0$ one has $a=0$, $L=I_4$, $E^+=E_{\rm temp}=\mathsf E_*$ and $R=I_2$. This identifies the exact comparison phase without a new screen gauge. The rule is nevertheless nontrivial. If $g=h=g_0$, $K,\mathcal N$ are exact and the incoming screen is $\mathsf E_*R_0$ for a small nonidentity $R_0\in SO(2)$, then $L=I_4$, the target screen is $\mathsf E_*$, and the recorded phase switch is $\operatorname{diag}(R_0,R_0)$. The physical jet is unchanged while its coordinates are correctly carried into the target frame.
+
+**Piecewise propagation and scope.**
+
+On each subinterval integrate the null geodesic and parallel frame of its own readout metric, together with the transverse Jacobi equation of that metric. Its tidal matrix is real symmetric, so the corresponding four-dimensional transfer $U_{j,N}$ is symplectic. At a cut use the state reset above and record the computed matrix $\mathsf C_{j,N}$. The full optical algorithm uses, in the stipulated order,
+
+$$
+ U_{J-1,N}\mathsf C_{J-1,N}U_{J-2,N}
+       \cdots \mathsf C_{1,N}U_{0,N}.
+$$
+
+Every factor and hence the product is symplectic. Earlier frame and phase discrepancies remain in the incoming state, in $R$, and in this accumulated product. Target-frame reinitialization retains $\mathsf C_{j,N}$ and the accumulated transfer.
+
+The local state-flow estimates of Theorem K.12 apply on each retained interval with its initial error. The two switch inequalities propagate this error and the interface contributions through the finite iteration, using the same affine clock.
+
+In the fixed scalar position units used above, $p=dq/dt=m\,dq/du$. If physical unit-screen coefficients are used instead of coefficients in $E_A$, both $q$ and $p$ acquire the same constant factor $m$, which leaves the four-by-four transfer unchanged. Once the position units are fixed, the conversion between $(q,dq/du)$ and $(q,dq/dt)$ is the single global conjugation $\operatorname{diag}(I_2,mI_2)$ of §K.4. No additional clock conversion occurs at an interface.
+
+The construction is a piecewise optical approximation with continuous position. Each open segment is a null geodesic of its own readout metric; the prescribed small interface resets join tangents, frames and covariant Jacobi data. Its optical transfer uses the covariant Cauchy prescription above. The exact cuts and parallel Sachs frame from §K.3, together with the coordinate comparisons fixed in Theorem K.18, are benchmark data independent of the transfer being approximated. The bounds are relative to these inputs and the retained analytic margins. ∎
+
+
+<div id="sec:fro-c-accumulation"></div>
+
+**Finite accumulation and optical observables.**
+
+Use the finite readouts and reset maps just constructed. The reference is the fixed positive-mass Schwarzschild family of §K.3 with signature $(+,-,-,-)$. All comparisons use its original individual affine intervals and exact terminal times.
+
+<div id="sec:fr-opt-c-setting"></div>
+
+**Fixed finite data and local bounds.**
+
+Write $\lambda=(E,\ell)\in[1,2]\times[1/4,1/2]$ for the parameters of the original nonradial family. Keep its physical affine parameter $u$, dimensionless time $t=u/m$, entrance $r=5m/2$ and exact final time $\tau_\lambda$, so that
+
+$$
+ \tau_-:=\frac{10}{21}<\tau_\lambda<\tau_+:=\frac{100}{99}.
+$$ {#eq:fr-opt-c-time-bounds}
+
+Keep the polar-first parallel Sachs frame of §K.3 and a parallel null companion. In the common dimensionless EF coordinates $X=(v/m,r/m,\theta,\phi)$, let
+
+$$
+ g_0=\bar g=m^{-2}g_m,\qquad
+ Z_\lambda=(X,K,\mathcal N,E_1,E_2),\qquad
+ K=dX/dt,\qquad g_0(K,\mathcal N)=1,\qquad
+ g_0(E_A,E_B)=-\delta_{AB}.
+$$ {#eq:fr-opt-c-dimensionless-convention}
+
+The displayed $g_m$ includes the coordinate Jacobian factors. The physical tangent, companion and unit screen vectors are $(K,\mathcal N,E_1,E_2)/m$, and $u=mt$ throughout. These states and their prescribed coordinate descriptions range over a compact set. The screen phase is a different space: $y=(\xi,p)\in\mathbb R^2\oplus\mathbb R^2$, with $p=d\xi/dt=m\,d\xi/du$. Using physical unit-screen position coefficients instead of the coefficients in $E_A$ multiplies both phase slots by the same constant $m$ and leaves the four-by-four transfer unchanged. Fix one such position convention throughout.
+
+The finite schedule has $J$ slabs and nodes
+
+$$
+ t_j(\lambda)=\frac{j\tau_\lambda}{J},\qquad
+ h_j=t_{j+1}-t_j,\qquad 0\le j<J.
+$$ {#eq:fr-opt-c-schedule}
+
+The parameter set may have finitely many compact cells, with a specified finite list of readouts on each cell. Every bound below is a maximum over this finite list and its compact parameter sets. Neither this list nor $J$, the nodes, parents, exact coordinate comparisons or reset rules depend on $N$.
+
+Here slab $j=0,\ldots,J-1$ uses Theorem K.18's label $i_j=i(a,j+1)$; its nodes and enlarged domains are unchanged.
+
+The exact times $\tau_\lambda$ are the quadratures of §K.3.2, and the reference Sachs frame is the explicit parallel frame of §K.3.3. They, the specified companion and the exact readout-to-physical coordinate comparisons are retained benchmark data. They are not values of the unknown Jacobi transfer obtained in advance: the new $U_N$ below is obtained from the local approximate Jacobi equations and the specified switch maps. The conclusion is an approximation theorem with these exact inputs, not numerical certification from finite source coefficients alone.
+
+For readout $i$, use Proposition K.19 and its finite-algebra readout followed by coefficient-polynomial evaluation at one. In the fixed dimensionless EF coordinates let $g_{i,N}$ be the real tensor obtained after the same constant rescaling by $m^{-2}$. Its exact value at amplitude one is the reference metric $g_0$. The local result supplies, on an inflated inner position domain with a positive additional buffer,
+
+$$
+ \|D^s(g_{i,N}-g_0)\|\le D_{i,s}\beta_N,
+ \qquad 0\le s\le3,\qquad
+ \beta_N=\frac{T_{\min}^{-N-1}}{1-T_{\min}^{-1}},
+ \quad T_{\min}>1.
+$$ {#eq:fr-opt-c-local-metric-tail}
+
+All $D_{i,s}$ are finite and independent of $N$. Exact coordinate/frame comparisons and the fixed metric factor $m^{-2}$ are included in these bounds before taking finite maxima. Different $g_{i,N}$ need not agree on overlaps. There is no use of a single approximate spacetime metric or of a physical gluing of different source amplitude families away from amplitude one.
+
+On the retained compact state tubes fix uniform metric inverse, connection, derivative and vector bounds. Choose an initial tail threshold $\bar\beta>0$ so that the local real-signature, inverse-unit and null/frame normalizations hold whenever $\beta_N\le\bar\beta$. With $D_0=\max_iD_{i,0}$, also take $D_0\bar\beta<\beta_g$; this condition is automatic if $D_0=0$. These are possible because there are finitely many strictly positive margins. The reference state is interior to each slab and switch domain, and the position projection of the larger state tube is inside that readout's inner $C^3$ domain.
+
+Here are the local state bounds used in the proof. Set $E_j^+=\|Z_N(t_j^+)-Z(t_j)\|$. Up to a possible first exit on slab $j$, the joint geodesic/parallel-frame equation gives
+
+$$
+ \sup_{t_j\le t\le t_{j+1}}
+       \|Z_N(t)-Z(t)\|
+ \le a_j E_j^+ +b_j\beta_N,
+ \qquad a_j\ge1,\quad b_j\ge0.
+$$ {#eq:fr-opt-c-local-state-flow}
+
+One can take, for example, $a_j=e^{L_j\tau_+/J}$ and
+$b_j=e^{L_j\tau_+/J}(\tau_+/J)F_j$, where $L_j$ is a Lipschitz bound for the dimensionless-$t$ state equation on the larger tube and $F_j\beta_N$ bounds the difference of its vector fields there. This follows from the integral inequality with initial error $E_j^+$, not only from a zero-error initialization. At time $t_{j+1}$ write $E_{j+1}^-$ for the incoming error.
+
+The actual reset normalizes this incoming state with the target metric and the same specified affine-clock rule. It uses the small null root, null-companion normalization, positive Gram square root and the prescribed oriented screen alignment. Its compact-neighborhood estimate is
+
+$$
+ E_{j+1}^+\le r_{j+1}E_{j+1}^-+c_{j+1}\beta_N,
+ \qquad r_{j+1}\ge1,\quad c_{j+1}\ge0.
+$$ {#eq:fr-opt-c-local-reset}
+
+These constants exist for the actual finite-matrix reset, rather than for a replacement by the exact state. Indeed its null equation has nonzero derivative at the reference root; its scalar denominators and Gram matrices have the retained nonzero or positive margins. The small root and positive square root are analytic on a common smaller neighborhood. The target screen is obtained by projecting the globally parallel exact Sachs frame into the target screen and normalizing its positive Gram matrix. At the exact metric and exact state all these operations return that same reference state and frame. On a fixed smaller compact neighborhood, suprema of the first derivatives of this finite collection of maps give $r_{j+1}$ and $c_{j+1}$ by the mean-value formula. The metric perturbations at the reset are bounded by the source and target versions of [@eq:fr-opt-c-local-metric-tail]. The incoming error is retained in [@eq:fr-opt-c-local-reset].
+
+For example Lemma K.21's constants permit
+$r_{j+1}=\max\{1,A_{{\rm sw},j+1}\}$ and
+$c_{j+1}=B_{{\rm sw},j+1}(D_{i_j,0}+D_{i_{j+1},0})$
+at an actual switch. The final endpoint convention below has no target readout and uses no such reset.
+
+At the first entrance keep the full initialization estimate
+
+$$
+ E_0^+\le c_0\beta_N.
+$$ {#eq:fr-opt-c-initial-error}
+
+For example $c_0=C_{\rm init}D_{i_0,0}$, with any fixed coordinate/frame constants included, is permitted by Lemma K.11. This term is not set to zero merely because a later slab has a different central mark.
+
+<div id="prop:fr-opt-c-state-accumulation"></div>
+
+**Proposition K.22 (Finite state accumulation).**
+
+There are a finite $C_Z$ and an integer $N_0$, depending only on the fixed finite schedule, its readouts and buffers, such that every $N\ge N_0$ admits every slab evolution and every prescribed reset on its full scheduled domain. Throughout every slab, and on both sides of every reset,
+
+$$
+ \|Z_N-Z\|\le C_Z\beta_N.
+$$ {#eq:fr-opt-c-global-state}
+
+*Proof.* For the last endpoint put $r_J=1,c_J=0$, meaning that there is no reset there. For $0\le j<J$ set
+
+$$
+ A_j=r_{j+1}a_j,\qquad
+ B_j=r_{j+1}b_j+c_{j+1},\qquad
+ H_0=c_0,\qquad H_{j+1}=A_jH_j+B_j.
+$$ {#eq:fr-opt-c-state-majorant-recursion}
+
+The finite recurrence has the explicit solution
+
+$$
+ H_j=c_0\prod_{\ell=0}^{j-1}A_\ell
+     +\sum_{k=0}^{j-1}B_k
+                    \prod_{\ell=k+1}^{j-1}A_\ell,
+ \qquad
+ C_Z=\max\left\{\max_{0\le j\le J}H_j,
+                  \max_{0\le j<J}(a_jH_j+b_j)\right\}.
+$$ {#eq:fr-opt-c-state-product-sum}
+
+Empty products equal one and empty sums zero. Thus all constants are fixed before $N$ is chosen. In particular this bound includes $c_0$ and the error carried through every switch; it does not restart the error estimate at zero.
+
+Choose a single positive tail threshold small enough that $C_Z\beta_N$ is less than half of every retained slab state buffer. Also require it to be less than the position buffers after applying their fixed coordinate comparison bounds. There are finitely many reset-domain tests: their errors are bounded by finite linear combinations of the incoming state error and the source and target metric errors. Decrease the same threshold so that each such combination is less than half its positive margin. More explicitly, if a test requires $\alpha_qE+ d_q\beta_N<\mu_q$ with $\mu_q>0$, impose
+
+$$
+ (\alpha_q C_Z+d_q)\beta_N<\mu_q/2.
+$$ {#eq:fr-opt-c-margin-test}
+
+Tests with zero left-hand coefficient need no restriction. Include $\beta_N\le\bar\beta$. Their finite minimum is a strictly positive threshold $\beta_*$.
+
+Now prove existence and the bounds together by finite induction. The initial normalization exists at this threshold and [@eq:fr-opt-c-initial-error] gives $E_0^+\le H_0\beta_N$. If the solution on slab $j$ had a first exit before $t_{j+1}$, the integral estimate valid up to that exit would give error at most $(a_jH_j+b_j)\beta_N\le C_Z\beta_N$, strictly inside its retained state and position buffers. This contradicts a first exit. The ODE therefore continues to the slab endpoint inside its compact parent, and $E_{j+1}^-\le(a_jH_j+b_j)\beta_N$.
+
+The reset tests are satisfied by [@eq:fr-opt-c-margin-test], so the actual reset exists. Its bound gives
+$E_{j+1}^+\le[A_jH_j+B_j]\beta_N=H_{j+1}\beta_N$,
+again strictly inside the next slab's initialization neighborhood. This proves the induction and all switch assertions. Since $T_{\min}>1$, $\beta_N\to0$; choose $N_0$ so that $\beta_N<\beta_*$ for all $N\ge N_0$. Equivalently it suffices to take $T_{\min}^{N+1}>[(1-T_{\min}^{-1})\beta_*]^{-1}$. No numerical value of this sufficient order is asserted. ∎
+
+<div id="sec:fr-opt-c-tidal"></div>
+
+**Tidal coefficients on the accepted slabs.**
+
+All local estimates now hold on the whole scheduled slabs. Apply the generic calculations of results K.10–K.12 directly to $g_0$ and $g_{i,N}$ in the $t$-clock and unit-$g_0$ frame convention above. Let $D_s=\max_iD_{i,s}$ and retain common $G,K_s,V,R_0,R_1$ in these coordinates. Thus $\|g_0^{-1}\|\le G$, $\|D^sg_0\|\le K_s$, the reference and approximate vector components have norm at most $V$, and $R_0,R_1$ bound the exact curvature operator and its first coordinate derivative. Fixed mass factors are already included in the coordinate readout constants.
+
+The metric $C^3$ estimate gives a curvature $C^1$ estimate on these tubes. To check this directly, express $\Gamma$ by $g_0^{-1}Dg_0$ and $R$ by $D\Gamma+\Gamma\Gamma$, and use the same formulas for each $g_{i,N}$. Each component of $(R,DR)$ is a finite sum of products of inverse metric entries and metric derivatives of order at most three. On the retained inverse margins, replace one factor at a time and use [@eq:fr-opt-c-local-metric-tail]. The result is a finite constant $C_{R,1}$, independent of $N$, with $\|R_{i,N}-R\|_{C^1}\le C_{R,1}\beta_N$. In particular the exact $R_1$ used to move the evaluation point is bounded on the same tube; this is not inferred from a curvature $C^0$ estimate alone.
+
+For an explicit admissible $C^0$ curvature constant define
+
+$$
+ \begin{aligned}
+ \gamma_0&=3G(K_1+1),\\
+ d_0^*&=6G^2(K_1+1)D_0+3GD_1,\\
+ d_1^*&=\{24G^3(K_1+1)^2+6G^2(K_2+1)\}D_0
+          +12G^2(K_1+1)D_1+3GD_2,\\
+ d_R^*&=2d_1^*+4\gamma_0d_0^*.
+ \end{aligned}
+$$ {#eq:fr-opt-c-tidal-input-constants}
+
+The smallness conditions in Lemma K.10 are included when choosing $N_0$. Its proof gives $\|R_{i,N}-R\|\le d_R^*\beta_N$. In the present convention the exact tidal matrix is $\mathcal R_{AB,t}=-g_0(R(E_A,K)K,E_B)$. Replacing its metric, curvature and four vector factors and moving the position, exactly as in Theorem K.12, gives on each slab a dimensionless coefficient bound
+
+$$
+ \|\mathsf A_{j,N}(t)-\mathsf A_\lambda(t)\|
+ \le\kappa_N:=K_{\rm tid}\beta_N,
+$$ {#eq:fr-opt-c-coefficient-bound}
+
+where one valid finite choice is
+
+$$
+ \begin{aligned}
+ K_{\rm tid}=\bigl[&2V^4\{R_0D_0+(K_0+1)d_R^*\}\\
+ &+2\{V^4(K_1R_0+K_0R_1)+4K_0R_0V^3\}C_Z\bigr].
+ \end{aligned}
+$$ {#eq:fr-opt-c-tidal-constant}
+
+Each state norm and coordinate comparison is the one used in obtaining $C_Z$. There is no additional $m^2$ factor here: $-g_0(R(E_A,K)K,E_B)$ is already the dimensionless tidal coefficient, equal to $m^2$ times its physical-$u$, unit-physical-frame counterpart. More generally the same calculation before substituting Proposition K.22 gives a bound $C(\beta_N+\|Z_N-Z\|)$.
+
+On a slab use its own real metric, null tangent and parallel orthonormal screen. Its tidal matrix is symmetric, even though $g_{i,N}$ need not be Einstein. Therefore
+
+$$
+ \mathsf A_{j,N}(t)=
+ \begin{pmatrix}0&I_2\\-\mathcal R_{j,N,t}(t)&0\end{pmatrix},
+ \qquad
+ \mathsf A_{j,N}^{\mathsf T}\mathsf J+
+                  \mathsf J\mathsf A_{j,N}=0,
+ \qquad
+ \mathsf J=\begin{pmatrix}0&I_2\\-I_2&0\end{pmatrix}.
+$$ {#eq:fr-opt-c-local-hamiltonian}
+
+The matrices in [@eq:fr-opt-c-coefficient-bound] are expressed in the corresponding ordered screen components. The state comparison includes the chosen alignment to the global exact Sachs frame; arbitrary independent screen rotations are not silently suppressed.
+
+<div id="prop:fr-opt-c-phase-accumulation"></div>
+
+**Proposition K.23 (Piecewise Jacobi Cauchy transport).**
+
+Let $V_{j,N}$ be the exact fundamental matrix on slab $j$, initialized by the identity at $t_j$. At switch $j$, use the oriented orthogonal screen identification supplied by the reset construction. In Cauchy components its phase map is
+
+$$
+ C_{j,N}=\operatorname{diag}(R_{j,N},R_{j,N}),
+ \qquad R_{j,N}\in\operatorname{SO}(2),
+ \qquad 1\le j<J.
+$$ {#eq:fr-opt-c-screen-jump}
+
+Its exact reference is $C_j=I_4$, because both the temporary and target screen reduce to the same globally parallel exact Sachs frame when the metric errors and incoming state error vanish. There are finite $H_j^{\rm rot}$ such that
+
+$$
+ \eta_{j,N}:=\|C_{j,N}-I_4\|
+ \le H_j^{\rm rot}\beta_N,\qquad
+ H_{\rm rot}:=\sum_{j=1}^{J-1}H_j^{\rm rot}<\infty.
+$$ {#eq:fr-opt-c-jump-error}
+
+Define the piecewise Jacobi Cauchy transport by solving the slab Jacobi equation and imposing $y(t_j^+)=C_{j,N}y(t_j^-)$. Its complete endpoint matrix is
+
+$$
+ U_N=V_{J-1,N}C_{J-1,N}\cdots C_{1,N}V_{0,N}.
+$$ {#eq:fr-opt-c-global-transport}
+
+Then $U_N$ is symplectic and
+
+$$
+ \|U_N-\Phi_\lambda(\tau_\lambda,0)\|
+ \le e^{(1+\kappa_N)\tau_\lambda}
+       \left(\tau_\lambda\kappa_N+
+                    \sum_{j=1}^{J-1}\eta_{j,N}\right).
+$$ {#eq:fr-opt-c-product-error}
+
+Here $\Phi_\lambda$ is the §K.3 transport in its polar-first screen and dimensionless phase. The Cauchy transport is the one defined in Lemma K.21.
+
+*Proof.* The oriented screen identification is analytic near the exact framed state: projection, positive Gram normalization and the oriented orthogonal factor are finite matrix operations on the retained positive margins. At the exact state its rotation is the identity. Its derivative is uniformly bounded on the finite compact reset neighborhoods. Its mean-value estimate is
+
+$$
+ \eta_{j,N}\le c_j^{\rm rot}
+    \bigl(E_j^-+D_{i_{j-1},0}\beta_N+D_{i_j,0}\beta_N\bigr),
+$$ {#eq:fr-opt-c-rotation-input-error}
+
+with any finite matrix/coordinate factors included. Proposition K.22 thus permits
+$H_j^{\rm rot}=c_j^{\rm rot}(C_Z+D_{i_{j-1},0}+D_{i_j,0})$.
+In particular the jump estimate carries the incoming state error; it does not erase it.
+
+With the common $g_0$ and $t$-clock convention, one may take $c_j^{\rm rot}=C_{{\rm ph},j}$ from Lemma K.21. The fixed coordinate/state-block conversions are included in that constant.
+
+Symmetry in [@eq:fr-opt-c-local-hamiltonian] proves $V_{j,N}^{\mathsf T}\mathsf JV_{j,N}=\mathsf J$ by differentiation. Orthogonality gives $C_{j,N}^{\mathsf T}\mathsf JC_{j,N}=\mathsf J$ and $\|C_{j,N}\|=1$. Thus the full product is symplectic. The definition explicitly transports both displacement and slope components with the same orthogonal identification, in the common physical clock $u=mt$. It is a well-defined linear phase model attached to the reset ray/frame. It does not require a derivative of that reset on a family of spacetime rays.
+
+The exact Sachs generator has norm one. By [@eq:fr-opt-c-coefficient-bound], the approximate generator has norm at most $1+\kappa_N$. On a slab of length $h_j$ the two fundamental matrices satisfy
+
+$$
+ \|V_{j,N}\|\le e^{(1+\kappa_N)h_j},\qquad
+ \|V_j\|\le e^{h_j},\qquad
+ \|V_{j,N}-V_j\|\le h_j\kappa_N e^{(1+\kappa_N)h_j}.
+$$ {#eq:fr-opt-c-slab-matrix-error}
+
+The last inequality is Duhamel's integral formula. Compare the finite products factor by factor, inserting $I_4$ at each exact switch. A slab-difference term is bounded by $h_j\kappa_N e^{(1+\kappa_N)\tau_\lambda}$; a jump-difference term is bounded by $\eta_{j,N}e^{(1+\kappa_N)\tau_\lambda}$. The remaining jump factors all have norm one, so no product of $1+\eta_{j,N}$ is introduced. Summing and using $\sum_jh_j=\tau_\lambda$ gives [@eq:fr-opt-c-product-error]. The same argument applies to every partial product, with its elapsed time and switches. This also proves exact composition of this piecewise Cauchy transport at any retained cut, including a cut just before or just after a reset. ∎
+
+<div id="cor:fr-opt-c-effective-error"></div>
+
+**Corollary K.24 (A uniform effective coefficient error).**
+
+Put
+
+$$
+ \varepsilon_N=\kappa_N+\frac{H_{\rm rot}\beta_N}{\tau_-}
+  =\left(K_{\rm tid}+\frac{H_{\rm rot}}{\tau_-}\right)\beta_N.
+$$ {#eq:fr-opt-c-effective-epsilon}
+
+For $N\ge N_0$ large enough that $\varepsilon_N\le1/10$, the full transfer satisfies
+
+$$
+ \|U_N-\Phi_\lambda(\tau_\lambda,0)\|
+ \le4\varepsilon_N=:\delta_N,\qquad \|U_N\|<4,
+$$ {#eq:fr-opt-c-four-epsilon}
+
+uniformly for the entire original compact ray family. The transfer inequality is strict when $\varepsilon_N>0$.
+
+*Proof.* Since $\tau_\lambda>\tau_-$,
+$\tau_\lambda\kappa_N+\sum_j\eta_{j,N}\le\tau_\lambda\varepsilon_N$.
+Moreover $\kappa_N\le\varepsilon_N$. Consequently Proposition K.23 bounds the transfer difference by
+$\tau_\lambda\varepsilon_Ne^{(1+\varepsilon_N)\tau_\lambda}$.
+Here $(1+\varepsilon_N)\tau_\lambda<10/9$. The elementary estimates
+$e<11/4$ and $e^{1/9}\le9/8$ give $e^{10/9}<99/32$, whence
+
+$$
+ \tau_\lambda e^{(1+\varepsilon_N)\tau_\lambda}
+ <\frac{100}{99}\frac{99}{32}=\frac{25}{8}<4.
+$$
+
+The product norm is at most $e^{(1+\kappa_N)\tau_\lambda}<99/32<4$ because every jump has norm one. If $\varepsilon_N=0$, the coefficient and jump errors vanish and the transfer difference is zero. This proves both assertions. All choices remain independent of $N$, and increasing $N$ meets the final smallness condition. ∎
+
+<div id="prop:fr-opt-c-observables"></div>
+
+**Proposition K.25 (Forward observations and conditional inverse observations).**
+
+Under the hypotheses of Corollary K.24, in particular $N\ge N_0$ and $\varepsilon_N\le1/10$, write $\Phi_\lambda=\left(\begin{smallmatrix}A&B\\C&D\end{smallmatrix}\right)$ and $U_N=\left(\begin{smallmatrix}A_N&B_N\\C_N&D_N\end{smallmatrix}\right)$ in the endpoint phases just specified. Let $\delta_N=4\varepsilon_N$. Then the outgoing phase of an initial component vector of norm at most $J_0$ has error at most $J_0\delta_N$. If the initial phase itself is approximated with error $\eta_0$, its total outgoing error is at most $4\eta_0+J_0\delta_N$.
+
+For point-source Cauchy data in this piecewise phase model, $\xi(0)=0$ and $p(0)=m\,d\xi/du(0)$, so its endpoint response block to the physical slope is $mB_N$. The oriented area observations $\mathcal O_N=m^2\det B_N$ and $\mathcal O=m^2\det B$ satisfy
+
+$$
+ |\mathcal O_N-\mathcal O|\le9m^2\delta_N.
+$$ {#eq:fr-opt-c-area-error}
+
+If additionally $\delta_N\le3/14$, then
+
+$$
+ \sigma_{\min}(B_N)\ge\frac3{14},\qquad
+ \|B_N^{-1}\|\le\frac{14}{3},\qquad
+ \|B_N^{-1}-B^{-1}\|\le\frac{98}{9}\delta_N.
+$$ {#eq:fr-opt-c-inverse-error}
+
+The corresponding inverse difference for $mB_N$ is at most $98\delta_N/(9m)$. On the same margin the dimensionless expansion trace also satisfies
+
+$$
+ |\operatorname{tr}(D_NB_N^{-1})-
+                  \operatorname{tr}(DB^{-1})|
+ \le4\delta_N\left\{\frac73+\|D\|\frac{49}{9}\right\}.
+$$ {#eq:fr-opt-c-expansion-error}
+
+The physical-$u$ trace has this bound divided by $m$.
+
+*Proof.* Block projections have norm one, so the global transfer bound gives each block error at most $\delta_N$. The outgoing phase bounds follow from
+$U_Ny_N-\Phi y=U_N(y_N-y)+(U_N-\Phi)y$.
+The phase identification is oriented orthogonal at the switches; it introduces neither a determinant sign nor an affine-clock dilation. Thus the same physical normalization of the original point-source observation gives $mB_N$.
+
+Since $\varepsilon_N\le1/10$, $\delta_N\le2/5<1$. The two-column determinant identity gives
+
+$$
+ |\det B_N-\det B|
+ \le2\|B\|\delta_N+\delta_N^2.
+$$
+
+For the original exact family, §K.3.7 gives $\|B\|<100/33$. Hence the right-hand side is at most $(200/33+1)\delta_N\le9\delta_N$, proving the area bound; the final inequality is strict when $\delta_N>0$. This use of the constant nine is justified by the new full product estimate, not by an assumption that different metric readouts glue.
+
+The same exact family has $\sigma_{\min}(B)>3/7$. Therefore $\delta_N\le3/14$ implies $\sigma_{\min}(B_N)\ge3/14$ and the inverse norm bound. The inverse identity yields
+
+$$
+ B_N^{-1}-B^{-1}=-B_N^{-1}(B_N-B)B^{-1},\qquad
+ \|B_N^{-1}-B^{-1}\|
+ \le\frac{14}{3}\frac73\delta_N=\frac{98}{9}\delta_N.
+$$
+
+For the trace, subtract the products as
+$(D_N-D)B_N^{-1}+D(B_N^{-1}-B^{-1})$ and use $|\operatorname{tr}M|\le2\|M\|$. This gives exactly [@eq:fr-opt-c-expansion-error]. The physical clock conversion follows from $p=m\,d\xi/du$, with the same fixed positive mass on every slab. ∎
+
+<div id="sec:fr-opt-c-scope"></div>
+
+**Singular position projections.**
+
+For every $N$ under consideration, $U_N$ is an invertible symplectic map. Its graph is a four-dimensional Lagrangian relation in the product phase space with forms $-\Omega$ and $\Omega$. It carries every initial Lagrangian plane to a Lagrangian plane even when a position projection is singular. The piecewise Cauchy definition and the forward product and determinant estimates remain meaningful there. An inverse endpoint block or expansion trace requires the explicit singular-value margin in Proposition K.25; it does not follow from symplecticity alone. For the original point-source family that margin persists for sufficiently large $N$ by [@eq:fr-opt-c-inverse-error]. No persistence at a prescribed caustic time of a different initial Lagrangian is asserted.
+
+More explicitly, represent any fixed initial Lagrangian plane by a rank-two matrix $Y_0\in\mathbb R^{4\times2}$ with $Y_0^{\mathsf T}\mathsf JY_0=0$. Then $U_NY_0$ has rank two and the same isotropy identity. With $Q=\operatorname{pr}_{\xi}\Phi_\lambda Y_0$ and $Q_N=\operatorname{pr}_{\xi}U_NY_0$, one has
+
+$$
+ \|Q_N-Q\|\le\delta_N\|Y_0\|,\qquad
+ |\det Q_N-\det Q|
+ \le2\|Q\|\delta_N\|Y_0\|+\delta_N^2\|Y_0\|^2.
+$$ {#eq:fr-opt-c-lagrangian-projection-error}
+
+These forward inequalities do not divide by $\det Q$ and therefore remain valid when that projection has a caustic. The full transported plane, rather than an inverse of $Q$, is retained.
+
+The final times are the exact scheduled $t_J=\tau_\lambda$, corresponding to $u=m\tau_\lambda$. The approximate endpoint need not lie exactly on $r=3m/2$. Comparing approximate hitting events instead would require additional time-of-hit and matching estimates; none is used here. The approximate piecewise state need not conserve the exact Schwarzschild $E$ and $L$, although its reference ray is exactly the original family with those parameters.
+
+All finite readout constants, reset derivative bounds, buffers, $C_Z$, $K_{\rm tid}$ and $H_{\rm rot}$ are theoretical finite constants. The finite product/sum and the sufficient tail inequalities specify them and a sufficient $N$ in terms of the chosen parents and local data. They have not been numerically evaluated. The rational constants $4$, $9$, $14/3$ and $98/9$ are explicit and apply by the proofs above. No whole-long-family containment in a single local readout, global approximate metric, off-one physical-amplitude gluing, or variational interpretation of the reset derivative is required by these conclusions.
+
+
+
+<div id="app:gg-notation"></div>
+
+<div id="sec:gg-notation-index"></div>
+
+## Appendix L. Notation index
+
+The following tables collect the notation used in the manuscript. It introduces no additional assumptions or definitions. Chiral labels refer to the two spin factors in the fixed convention, and the numerical Einstein label is always the one in $\operatorname{Ric}=\Lambda g$. The Lorentz signature is $(+,-,-,-)$; the curvature contraction and primary printed-label dictionary are collected in §2.
+
+<div id="sec:gg-notation-source"></div>
+
+### L.1. Source and presentation spaces
+
+| Symbol | Meaning | First definition |
+|---|---|---|
+| $T_0$ | The germ of $\operatorname{Tot}(\mathcal O(1)^{\oplus2})$ along its whole zero line. | §2 |
+| $\mathscr H_m(T_0)$ | Analytic two-chart Čech classes of weight $m$, on the whole line germ. | Definition 2.1 |
+| $\mathcal A_\Lambda$ | The original independent pair $\mathscr H_2(T_0)\oplus\mathscr H_{-6}(T_0)$ at numerical $\Lambda$. | Definition 2.1 |
+| $U_r^+,U_r^-$ | The separately symmetric free curvature records of types $(r+4,r)$ and $(r,r+4)$, with the displayed component factorials. | §3 and Theorem 3.1 |
+| $\mathfrak E_\Lambda$ | Marked local analytic Einstein germs, with physical point and full-spin instructions retained. | Definition 2.1 |
+| $\mathfrak S_\Lambda$ | Independently recognized regular-normal affine ray objects. | Definition 2.2 |
+| $\mathfrak W_\Lambda$ | Independent ordinary threefold data, calibrated actual form and unrestricted opposite-chirality class. | Definition 2.3 |
+| $\mathfrak C_\Lambda$ | The calibrated affine presentation category, with independent projective-extension admission. | Definition 5.6 and Theorem H.4 |
+| $\mathfrak O_\Lambda$ | Independently admitted structured analytic operator objects and their physical comparison classes. | Definition H.1 |
+
+<div id="sec:gg-notation-bundles"></div>
+
+### L.2. Bundles, roots and operators
+
+| Symbol | Meaning | Location |
+|---|---|---|
+| $Q_x$ | The compact Legendrian sky $\mathbb P^1\times\mathbb P^1$ of a physical point. | §2 |
+| $p:F\to M$, $q:F\to Z$ | The complete sky incidence; $Z$ is the contact fivefold. | §2 |
+| $\mathcal L$ | The contact line, restricting to $\mathcal O(1,1)$ on each sky. | §5 and Definition H.1 |
+| $\mathcal E_J$ | The intrinsic rank-two projective optical solution bundle, with its specified Wronskian isomorphism $\bigwedge^2\mathcal E_J\simeq\mathcal L$. | Proposition 5.3 and Appendix D.3 |
+| $\mathcal E[1]$ | The calibrated conformal density line; its optical square identification is retained. | Appendix D |
+| $\mathcal V$, $\mathcal T$ | Respectively the descended rank-six ray bundle and its reconstructed normal tractor bundle. | Definition 2.2 and §4 |
+| $W_{\mathrm{scr}}$ | The rank-four middle bundle $(\mathbb CI+\mathbb CX)^\perp$, identified with $TM$ by the solder; its tangent Spin type is $S\otimes S'$. | Definition 2.2 and Proposition 4.3 |
+| $\mathcal T_{\mathrm{LT}}$ | The rank-four normal local-twistor bundle, with volume and marked conformal splitting $S\oplus S'$; the tractor identification is $\mathcal T\simeq\Lambda^2\mathcal T_{\mathrm{LT}}^*$. | Proposition I.3 and Appendix J.1 |
+| $L$, $\alpha$, $\kappa$ | The ordinary degree-one line, its actual fourth-root identification and central degree-one calibration in the retained full-spin mark. | Definition 2.3 |
+| $R$, $R^2=K_{F/S}$ | The module half-canonical root. Here $S\to B$ is the total point family over the passive base, with $S=M$ at fixed parameter; retain $K_{F/B}\simeq K_{F/S}\otimes p^*K_{S/B}$, its square comparison and every calibrated base factor. | Appendix G.3 |
+| $\mathcal E_{T_0}^{1/2}$ | The analytic half-density microdifferential operator sheaf on the derived projective cotangent carrier. | Appendix F |
+| $\mathscr U_1$ | The truncated-unit sheaf $1+(F_{-1}\mathcal E/F_{-2}\mathcal E)$ inside $(F_0\mathcal E/F_{-2}\mathcal E)^\times$, identified with the additive sheaf $\mathcal L^{-1}$. | Appendix F.3 |
+| $\varphi_{ij}$, $C_{ijk}$ | Actual operator comparisons and their normalized inner associators. | Appendices F–H |
+| $\tau_{ij}$ | Module descent comparisons satisfying $\tau_{ij}\tau_{jk}=C_{ijk}\tau_{ik}$. | Appendix G |
+
+The operator sheaf $\mathcal E_{T_0}^{1/2}$, density line $\mathcal E[1]$ and optical bundle $\mathcal E_J$ are different objects. The module root $R$ is also different from the optical density root. A module comparison's principal scalar and its whole local-system frame have separate roles.
+
+<div id="sec:gg-notation-execution"></div>
+
+### L.3. Execution, inverses and scalar conventions
+
+| Symbol | Meaning | Location |
+|---|---|---|
+| $A_N$ | The amplitude algebra $\mathbb C[\varepsilon]/(\varepsilon^{N+1})$. | §5 |
+| $o_m$, $d_m$, $L_m$ | The optical obstruction derivative, its compatibility map and the unique inverse on the zero-free-record summand. | §5, Theorem 5.5 and Appendices C–D |
+| $\mathcal C_N$ | A finite source contact/optical stage before the selected storage normalization. | §§5–6 |
+| $\mathcal N_P$, $X_N$, $Y_C$ | The fixed storage normalizer, its finite output and the one joint analytic comparison tuple, with $X_N=j_\varepsilon^N Y_C$. | §6 |
+| $\mathcal G$, $\mathcal E$ | The source-to-ray constructor and full-record decoder; the latter is a map, not an operator sheaf. | Theorem 2.4 |
+| $\Gamma$, $d_{\mathrm{rec}}$ | Ordinary registration and its independently defined record decoder. | §7 |
+| $P_Z$, $K_Z$ | The curved negative contour and its one fixed bounded representative inverse. | Appendix E |
+| $\mathcal S_{\mathrm{op}}$, $\mathcal D_{\mathrm{op}}$ | The actual source/operator constructor and decoder, with both independent-domain inverse comparisons. | Theorem 9.11 |
+| $m_{r,\nu}$, $m_r$, $\gamma_r$ | Block atomic diagram masses, the one weighted mass and its bounded-product rescaling; all refer to the same recursively ordered coefficients. | Appendix B.2 and Lemma B.3 |
+| $F$, $Q$ | Classical extraction and structured quantization, with actual units and counits on the independent domains. | Theorem H.4 |
+| $I$ | The selected normal tractor, or its identified local-twistor form; it is parallel on Einstein-admitted objects. The pre-admission defect is given in J.1. | §§4–5 and Appendices I–J |
+| $H(I,I)$ | On Einstein-admitted objects, the selected normal-tractor norm is $-\Lambda/3$. | Definition 2.2 and Appendix J.1 |
+| $c$ | The scalar $\Lambda/6$ in the rank-four spin realization; it is distinct from a contact overlap factor $c_{ij}$. | Proposition I.3 |
+| $\Lambda_P$ | The primary printed label under the declared curvature-component dictionary: $\Lambda_P=-\Lambda$. The prescribed native $\Lambda$ is unchanged. | §2 and Proposition I.3 |
+
+Both original sources have their gravitational weights $2$ and $-6$. The projective ket Euler sector has weight $-2$; it is not a relabeling of either gravitational source. The microlocal cone $\mathcal O(-1,-1)^\times$ and the Lorentz phase-scaled spinor bundle are distinct typed objects.
+
+<div id="sec:gg-notation-simultaneous-diagram"></div>
+
+### L.4. The simultaneous projective diagram
+
+| Symbol | Meaning | Location |
+|---|---|---|
+| $L\sigma$ | The canonical tractor prolongation of the density selected by the same affine torsor and optical root. This $L$ is a differential operator, distinct from either line bundle denoted $L$ or $\mathcal L$. | Appendix J.1 |
+| $\mathcal T_{\mathrm{LT,ray}}$ | The rank-four local-twistor bundle on the ray space, obtained by descending $\mathcal T_{\mathrm{LT}}$ along the retained short null rays, with its volume. It is distinct from the middle bundle $W_{\mathrm{scr}}$ and the rank-six tractor $\mathcal T$. | Theorem J.2 |
+| $\ell\subset h$ | The descended rank-one/rank-three flag; $\ell|_{Q_x}=\mathcal O(0,-1)$ and $\operatorname{Ann}(h)|_{Q_x}=\mathcal O(-1,0)$. | Theorem J.2 |
+| $\mathcal F_{\mathrm{spin}}$ | The exterior-square identification $\mathcal T\simeq\Lambda^2\mathcal T_{\mathrm{LT}}^*$ of the normal tractor with alternating forms on the local-twistor bundle. | Proposition I.3 and Appendix J.1 |
+| $V_\gamma$ | The parallel totally null optical two-plane $\operatorname{span}(X,D_kX)$, with $V_\gamma^*\simeq\mathcal E_{J,\gamma}$. | Proposition J.4 |
+| $K_{x,\gamma}$ | The rank-two point plane $\ker\mathcal F_{\mathrm{spin}}(X(x))$ for a ray through $x$. | Proposition J.4 |
+| $\mathcal R(O)$, $g_A$ | The independently decoded marked Einstein germ and the canonical germ for the original input records. | Appendix J.5 |
+| $\mathcal P(O)$, $\operatorname{Can}(g)$ | The full derived projective diagram of a supplied operator object, and the canonical diagram of an Einstein germ enriched by the specified quantization. | Appendix J.5 |
+| $\beta_O$, $\alpha_A$ | The actual independent-domain and source diagram comparisons. The subscript distinguishes $\beta_O$ from the optical root-square map $\beta$. | Theorem J.6 |
+| $J_{\mathrm{LT}}$ | The antilinear Lorentz duality from $(\mathcal T_{\mathrm{LT,ray}})_y$ to $(\mathcal T_{\mathrm{LT,ray}}^*)_{\iota(y)}$. The target is the paired dual fiber; the complex-linear operator formal adjoint has a different type. | Proposition J.7 |
+| $H_{\mathrm{LT}}$ | The Hermitian pairing matrix of the local-twistor Lorentz comparison in compatible marked spin frames. | Proposition J.7 |
+
+Parameter families are based on finite-dimensional complex manifold germs. Their finite jets mean actual Taylor restrictions, as specified in Definition 2.1.
+
+<div id="sec:gg-notation-local-conventions"></div>
+
+### L.5. Component and locally reused notation
+
+| Symbol | Meaning and scope | Location |
+|---|---|---|
+| $\epsilon_{AB},\epsilon^{AB}$ | The mutually inverse alternating matrices; raising and lowering are left contractions. The primed matrices have the same convention. | §2 |
+| $C_{abcd},\Psi^\pm,\mathfrak p_\pm$ | Last-slot covariant Weyl tensor, its signed chiral readouts, and their explicitly inverse component contractions. | §2 |
+| $\mathcal D_z$ | The ray contact plane, identified with orthogonal Jacobi solutions modulo $(a+bu)k$. It is distinct from the source decoder $\mathcal E$. | Proposition 5.3 |
+| $S(u)$ | A matrix graph of the tangent-sky curve; its symbol is local to the optical calculation. | Proposition 5.3 and Appendix D.2 |
+| $S\to B$, $M$ | Total physical point family over passive parameters; $M$ is a fiber at a fixed passive parameter. These bases are distinct from the spin spaces $S,S'$ of §2. | Appendices G.3 and H.1 |
+| $X$, $X_N$, $Y_C$ | Position tractor in the tractor constructions, with locally declared reuse for leaf graphs, solder matrices and EF coordinates; $Y_C$ is the joint analytic tuple and $X_N$ its amplitude Taylor polynomial. | §§4 and 6, Appendices E.6 and K.8, and Proposition J.7 |
+| $P$, $\mathsf P$, $P_Z$ | The Schouten tensor, its flat linearized metric operator, and the curved contour transform, respectively. | §2, Appendix C.3, Appendix E |
+| $P_m=\mathcal P_m$, $\mathcal P(O)$ | The space $\operatorname{Sym}^mV^*$, zero for $m<0$, and the derived projective diagram of an operator object, respectively. | Appendix D.4 and Appendix J.5 |
+| $J$, $\mathfrak j$ | $J=\operatorname{Scal}/6$ is the Schouten trace; a separately declared highest square-zero ideal is a coefficient-algebra ideal. | §§5 and J.1 |
+| $\iota$, $\mathcal K$, $B$ | Vacuum inclusion, ray/density or kernel objects, and block/parameter symbols are used only with their displayed local domains. The passive base $B$ in G–H is distinct from the optical matrices $B_{ij}$. | §§5–6 and Appendices C–H |
+| $g_0=\bar g$, $K,\mathcal N,E_A$ | Dimensionless EF metric $m^{-2}g_m$ and its normalized full null frame; the physical vectors are $(K,\mathcal N,E_A)/m$. | §K.8 |
+| $\beta_N$, $\varepsilon_N$ | The common local-readout geometric tail and the effective tidal-plus-switch error. | Proposition 10.5, §K.8 |
+| $L$, $R$, $C_{j,N}$ | The pointwise metric-to-metric tangent isometry, recorded oriented screen rotation and symplectic Cauchy switch; these symbols are local to the finite-readout construction. | Lemma K.21 |
+| $U_N$ | The complete piecewise metric Jacobi Cauchy transport at the original exact affine endpoint. | §K.8 |
+
+<div id="sec:gg-ai-use-disclosure"></div>
+
+<div id="ai-use-disclosure"></div>
+
+**AI-use disclosure.** AI systems were used extensively throughout this research and the preparation of this manuscript. The models used were GPT-6 Pro, gpt-6.1-sol (xhigh), and Claude Opus 5.5 (xhigh). Selected symbolic identities and explicit metric examples were checked using SageMath and SymPy; the code, inputs, computational environment and recorded results are provided in the computational supplement [@Isthmus2026LocalComputations].

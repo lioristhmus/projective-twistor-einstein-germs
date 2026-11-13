@@ -1,0 +1,180 @@
+{
+  "job": "b-low4",
+  "status": "PASS",
+  "client_exit_code": 0,
+  "checks": [
+    {
+      "classification": "numerical-diagnostic",
+      "id": "B-RESIDUAL-R4",
+      "info": "",
+      "maxima": {
+        "JsHQ": 4.8e-17,
+        "resF3": 1.9e-16,
+        "resL": 2.6e-16,
+        "sym2": 9.6e-16
+      },
+      "norm": "Unweighted Frobenius norm of coefficient arrays, not the weighted tensor norm",
+      "record": "check",
+      "status": "PASS",
+      "title": "Finite float64 recursion and quadratic JstarHQ residuals",
+      "tolerance": 1e-10
+    },
+    {
+      "classification": "numerical-diagnostic",
+      "id": "B-VALUES-R4",
+      "info": "",
+      "insertion_table_rows": 2,
+      "labels": [
+        {
+          "chirality": "+",
+          "pi": [
+            0.24578803576743347,
+            -0.9693235999776271
+          ],
+          "xi": [
+            0.38771363110095136,
+            0.9217798762494848
+          ]
+        },
+        {
+          "chirality": "+",
+          "pi": [
+            -0.6786461510329862,
+            0.7344653849488846
+          ],
+          "xi": [
+            0.8969110660465839,
+            0.44221096730314147
+          ]
+        },
+        {
+          "chirality": "-",
+          "pi": [
+            0.051917388635129444,
+            0.998651382994741
+          ],
+          "xi": [
+            0.7782852357617386,
+            0.6279108947894558
+          ]
+        }
+      ],
+      "orders": [
+        {
+          "JsHQ": 0.0,
+          "N2/r": 2.5793,
+          "N2full": 3.873,
+          "N2max": 2.5793,
+          "N3/r": 0.0,
+          "N3max": 0.0,
+          "dt": 0.0,
+          "maxrss": 60.0,
+          "r": 1,
+          "resF3": 0.0,
+          "resL": 1.6e-16,
+          "sym2": 1.4e-16
+        },
+        {
+          "JsHQ": 0.0,
+          "N2/r": 0.99241,
+          "N2full": 2.622,
+          "N2max": 1.9848,
+          "N3/r": 0.0,
+          "N3max": 0.0,
+          "dt": 0.0,
+          "maxrss": 60.0,
+          "r": 2,
+          "resF3": 0.0,
+          "resL": 2.3e-16,
+          "sym2": 3.2e-16
+        },
+        {
+          "JsHQ": 3.7e-17,
+          "N2/r": 0.65615,
+          "N2full": 2.4944,
+          "N2max": 1.9685,
+          "N3/r": 4.3775e-18,
+          "N3max": 1.3132e-17,
+          "dt": 0.0,
+          "maxrss": 60.0,
+          "r": 3,
+          "resF3": 0.0,
+          "resL": 2.3e-16,
+          "sym2": 8.8e-16
+        },
+        {
+          "JsHQ": 4.8e-17,
+          "N2/r": 0.51012,
+          "N2full": 2.5957,
+          "N2max": 2.0405,
+          "N3/r": 0.02152,
+          "N3max": 0.086078,
+          "dt": 0.0,
+          "maxrss": 62.0,
+          "r": 4,
+          "resF3": 1.9e-16,
+          "resL": 2.6e-16,
+          "sym2": 9.6e-16
+        }
+      ],
+      "record": "check",
+      "scope": "Finite observations of unscaled labeled polarized coefficient sums only. Their coherent values approximate lower bounds on the corresponding polarized maps under the full operator norms; no identification with one ordered paper coefficient is asserted. The values have float64 error. No upper bound or convergence assertion. Insertion denominators use 40-step power estimates, not certified operator norms.",
+      "seed": 1,
+      "status": "PASS",
+      "title": "Sampled coherent values and restricted-slot norm estimates"
+    },
+    {
+      "classification": "numerical-diagnostic",
+      "id": "B-CROSS-R4",
+      "info": "",
+      "max_scaled_difference": 5.012692e-17,
+      "record": "check",
+      "scope": "Norms of coefficient sums on the same labels; shared projection helpers. No componentwise equality or implementation independence claimed.",
+      "status": "PASS",
+      "title": "Polarized and nilpotent routes: four printed coefficient norms",
+      "tolerance": 1e-05
+    },
+    {
+      "classification": "numerical-diagnostic",
+      "id": "B-RANDOM-R4",
+      "info": "",
+      "max_r": 4,
+      "maximum": 5.98e-16,
+      "record": "check",
+      "scope": "Float64 operations, including nilpotent directional derivatives; Lambda=0.",
+      "seed": 7,
+      "status": "PASS",
+      "title": "Nilpotent recursion on one real random record prefix",
+      "tolerance": 1e-10
+    }
+  ],
+  "worker_summary": {
+    "error": null,
+    "expected_count": 4,
+    "failed": [],
+    "job": "b-low4",
+    "metrics": {
+      "cpu.stat": "usage_usec 1410377\nuser_usec 1293013\nsystem_usec 117364\nnice_usec 0\nnr_periods 14\nnr_throttled 7\nthrottled_usec 52153\nnr_bursts 0\nburst_usec 0",
+      "memory.peak": "83251200",
+      "pids.peak": "7"
+    },
+    "missing": [],
+    "observed_count": 4,
+    "record": "summary",
+    "status": "PASS",
+    "versions": {
+      "machine": "x86_64",
+      "numpy": "2.4.4",
+      "platform": "Linux",
+      "python": "3.12.3",
+      "sage": "10.9",
+      "sympy": "1.14.0"
+    },
+    "worker_seconds": 0.465
+  },
+  "stopped": true,
+  "removed": true,
+  "lock_released": true,
+  "log_sha256": "636efe7ab0de3bc605a880ab030032fa568536293c4b37f8c2cd9838b52bc620",
+  "error": null
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this locally prepared supplement, cite the accompanying paper and identify version 0.2.0, local revision 3."
+title: "Computational supplement for A projective twistor correspondence for local analytic Einstein germs"
+version: 0.2.0
+type: software
+authors:
+  - family-names: Isthmus
+    given-names: Lior
+license: Apache-2.0
+repository-code: "https://github.com/lioristhmus/projective-twistor-einstein-germs"

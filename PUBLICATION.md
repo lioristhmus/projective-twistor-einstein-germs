@@ -1,61 +1,30 @@
-# Publication preparation
+# Paper v1.1 publication record
 
-This document records the local preparation of v1.0 on 5 November 2026.
-No remote repository, deposit, DOI, submission identifier or publication date
-was created by this local preparation. Public deposit metadata must be updated
-from the actual publication receipts.
+Date: 2026-11-13. GitHub tag: `paper-v1.1`.
 
-Intended repository name: `lioristhmus/projective-twistor-einstein-germs`.
-Intended release tag: `paper-v1.0`.
+Repository: `lioristhmus/projective-twistor-einstein-germs`.
+Release: https://github.com/lioristhmus/projective-twistor-einstein-germs/releases/tag/paper-v1.1
+Title: A projective twistor correspondence for local analytic Einstein germs.
+Author: Lior Isthmus. ORCID: https://orcid.org/0009-0004-7908-9876.
+Contact: lioristhmus@proton.me. Version: 1.1. Manuscript date: 2026-11-13.
 
-## Publication files
+## Release assets
 
-The fixed paper is under `release/paper-v1.0/`. Locally prepared distribution
-assets are under the ignored `dist/` directory:
-
-- `projective-twistor-einstein-germs-v1.0.pdf`
-- `projective-twistor-einstein-germs-v1.0-source.zip`
-- `projective-twistor-einstein-germs-v1.0-hexagon.zip`
+- `projective-twistor-einstein-germs-v1.1.pdf`
+- `projective-twistor-einstein-germs-v1.1-source.zip`
+- `projective-twistor-einstein-germs-v1.1-hexagon.zip`
+- `local-einstein-computations-0.2.0-r3.zip`
 - `SHA256SUMS`
 
-The full source archive contains only the publication allowlist, without Git
-metadata, intermediate builds or internal research/review logs. The Hexagon
-archive contains the standalone TeX and bibliography. Verify any server-produced
-PDF before completing a submission.
+The full source archive includes both fixed paper versions and the unchanged
+r3 supplement. Git metadata, builds, temporary exports and private review notes
+are excluded. The Hexagon ZIP contains only manuscript.tex and references.bib.
+The supplement reference resolves to the fixed `paper-v1.1/computations` tree.
 
-## Deposit worksheet
+## Retained v1.0 and later services
 
-Title: A Projective Twistor Correspondence for Local Analytic Einstein Germs
-
-Author: Lior Isthmus
-
-ORCID: https://orcid.org/0009-0004-7908-9876
-
-Contact: lioristhmus@proton.me
-
-Version: 1.0
-
-Manuscript date: 2026-11-05
-
-Public-release date: set to the actual date when publication occurs.
-
-Zenodo resource: Publication / Preprint. Publish the paper and source together
-as one record; no software DOI is needed for an unperformed Lean formalization.
-Record the version DOI and concept DOI separately after publication.
-
-Hexagon: submit this same paper as its first version. Suggested subject:
-Mathematical Physics, with Differential Geometry if a secondary subject is
-available. The contributor must select the AI/text-generation and human-
-understanding declarations according to their own actual involvement. The
-paper's AI-use paragraph remains unchanged.
-
-Abstract: use the manuscript's Abstract verbatim.
-
-## Agreed order
-
-Prepare and review the public package and the short Adamo et al. technical
-inquiry. Notify the authors before or at the initial public release, asking
-about the contour normalization and distribution signs rather than requesting
-publication permission or a review of the full general correspondence.
-Publish GitHub, then the matching Zenodo record and Hexagon submission.
-Publication is not conditional on receiving a reply.
+The `paper-v1.0` tag, release assets and `release/paper-v1.0/` files are retained.
+Its version DOI is https://doi.org/10.5281/zenodo.23975732 and its Hexagon record
+is https://hexagonmath.org/2611.00123v1. These identify v1.0, not v1.1.
+This GitHub release does not update Zenodo, Hexagon or ORCID. Future version
+identifiers must be read from the actual publication receipts.

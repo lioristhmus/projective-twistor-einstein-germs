@@ -1,43 +1,41 @@
 #!/usr/bin/env python3
-"""Regenerate the release paper without overwriting the frozen artifacts."""
+"""Build a paper copy without overwriting either fixed release."""
+import argparse
 from pathlib import Path
-import argparse, os, re, shutil, subprocess, sys
-
+import shutil
+import sys
+import subprocess
 ROOT = Path(__file__).resolve().parents[1]
-PAPER = ROOT/'release/paper-v1.0'
-
-def run(args, **kwargs):
-    return subprocess.run(args, check=True, text=True, **kwargs)
-
 def main():
-    parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--from-tex',action='store_true',help='Compile the frozen standalone TeX only')
-    args=parser.parse_args()
-    out=ROOT/'build/paper-v1.0';out.mkdir(parents=True,exist_ok=True)
-    if args.from_tex:
-        shutil.copyfile(PAPER/'manuscript.tex',out/'manuscript.tex')
-        for step in (1,2,3):
-            result=run(['xelatex','-no-shell-escape','-halt-on-error','-interaction=nonstopmode',
-                        '-file-line-error','manuscript.tex'],cwd=out,capture_output=True,timeout=120)
-            (out/f'latex-tex-{step}.log').write_text(result.stdout+'\n'+result.stderr)
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--version', choices=('1.0', '1.1'), default='1.1')
+    p.add_argument('--from-tex', action='store_true')
+    args = p.parse_args()
+    paper = ROOT / ('release/paper-v' + args.version)
+    out = ROOT / ('build/paper-v' + args.version)
+    out.mkdir(parents=True, exist_ok=True)
+    if args.from_tex or args.version == '1.0':
+        shutil.copyfile(paper / 'manuscript.tex', out / 'manuscript.tex')
+        engine = 'xelatex' if args.version == '1.0' else 'pdflatex'
+        for i in range(3):
+            result = subprocess.run([engine, '-no-shell-escape', '-halt-on-error',
+                                     '-interaction=nonstopmode', 'manuscript.tex'],
+                                    cwd=out, text=True, capture_output=True, timeout=180)
+            (out / ('latex-' + str(i + 1) + '.log')).write_text(result.stdout + result.stderr)
+            result.check_returncode()
     else:
-        log=out/'export.log'
-        with log.open('w') as stream:
-            result=subprocess.run(['bash',str(ROOT/'scripts/export_markdown.sh'),'--profile','standard',
-                                    '--output-dir',str(out),'--keep-work',str(PAPER/'manuscript.md')],
-                                   cwd=PAPER,stdout=stream,stderr=subprocess.STDOUT,text=True,timeout=600)
-        text=log.read_text()
-        if result.returncode:
-            print(text[-5000:],file=sys.stderr);raise SystemExit(result.returncode)
-        matches=re.findall(r'Work directory retained: (.+)',text)
-        if not matches: raise RuntimeError('Exporter did not report its retained work directory')
-        work=Path(matches[-1]).resolve()
-        run([sys.executable,str(ROOT/'scripts/prepare_layout.py'),str(work)],cwd=ROOT,timeout=300)
-        for name in ['manuscript.tex','manuscript.pdf','MANUAL-TEX-DIFF.patch','MANUAL-TEX-ADJUSTMENTS.json']:
-            shutil.copyfile(work/name,out/name)
-        for name in ['manuscript.aux','manuscript.toc','latex-final-1.log','latex-final-2.log']:
-            shutil.copyfile(work/name,out/name)
-        (out/'WORK-DIRECTORY.txt').write_text(str(work)+'\n')
-    print(out/'manuscript.pdf')
-
-if __name__=='__main__': main()
+        subprocess.run(['bash', str(ROOT / 'scripts/export_markdown.sh'),
+                        '--profile', 'standard', '--keep-work', '--output-dir', str(out),
+                        '--output-stem', 'manuscript', str(paper / 'manuscript.md')],
+                       cwd=paper, check=True, timeout=900)
+        subprocess.run([sys.executable, '-B', str(ROOT / 'scripts/prepare_release_v1_1.py'),
+                        str(out / 'manuscript.tex')], check=True, timeout=30)
+        for i in range(3):
+            result = subprocess.run(['pdflatex', '-no-shell-escape', '-halt-on-error',
+                                     '-interaction=nonstopmode', 'manuscript.tex'],
+                                    cwd=out, text=True, capture_output=True, timeout=180)
+            (out / ('latex-final-' + str(i + 1) + '.log')).write_text(result.stdout + result.stderr)
+            result.check_returncode()
+    print(out / 'manuscript.pdf')
+if __name__ == '__main__':
+    main()

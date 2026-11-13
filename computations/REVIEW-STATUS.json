@@ -1,0 +1,31 @@
+{
+  "status": "FINAL_LOCAL_RECONCILIATION_COMPLETED",
+  "candidate_version": "0.2.0",
+  "candidate_revision": 3,
+  "primary_paper_to_code_static_audit_completed": true,
+  "three_additions_executed": true,
+  "secondary_independent_audit_completed": true,
+  "secondary_independent_audit_scope": "Claude completed audit of frozen 0.1.0 plus independent derivation and execution of the three additions; not a full line audit of final 0.2.0 code.",
+  "secondary_full_line_audit_of_final_code_completed": false,
+  "secondary_final_recommendations_reconciled": true,
+  "final_code_confirmation_scope": "Primary r2 mathematical code and source-bound runs unchanged; final scoped static reconciliation, separate independent r<=2 witness adapter and its explicit controls freshly executed; file/package QA and archive readback.",
+  "direct_geometric_witness_test_of_primary_ab_exact": false,
+  "independent_implementation_witness_test": {
+    "id": "IW-GEOMETRY-CONTROLS-R2",
+    "max_r": 2,
+    "negative_controls_enforced_by_adapter": true
+  },
+  "registered_primary_record_ids": 28,
+  "independent_evidence_groups": 1,
+  "evidence_roles": {
+    "paper-exact-check": 20,
+    "external-exact-comparison": 2,
+    "finite-numerical-residual-or-crosscheck": 4,
+    "numerical-observation-record": 2
+  },
+  "historical_audit_logs_are_new_executions": false,
+  "whole_paper_verified": false,
+  "human_peer_review_completed": false,
+  "all_order_bound_or_convergence_verified": false,
+  "publication_performed": false
+}

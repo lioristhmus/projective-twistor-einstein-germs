@@ -1,59 +1,41 @@
-# Building the paper
+# Building and verifying v1.1
 
-The canonical source is `release/paper-v1.0/manuscript.md`. Keep its neighboring
-`references.bib` available. The generated `manuscript.tex` is standalone and has
-its rendered bibliography embedded.
+Canonical source: `release/paper-v1.1/manuscript.md`, with the neighboring
+`references.bib`. The generated TeX embeds its bibliography.
 
-## Requirements
-
-- Python 3.10 or later (standard library only for build and release verification)
-- Pandoc and pandoc-crossref on PATH for a full Markdown build
-- XeLaTeX and standard TeX Live packages, including amsart, unicode-math,
-  mathtools, booktabs, longtable, microtype and needspace
-- Poppler (`pdfinfo`, `pdftotext`, `pdftoppm`) for display checks
-
-Exact tool versions used for preparation are in
-`release/paper-v1.0/BUILD-REPORT.json`. No package download or model call is
-performed by the build scripts.
-
-## Full regeneration
+Requirements: Python 3.10+, Pandoc, pandoc-crossref, pdfLaTeX and standard
+TeX Live packages. Poppler supports PDF inspection. The bundled standard exporter
+and generated-TeX repair helper are copies of the maintained research pipeline.
+Tool versions and export warnings are in the release's BUILD-REPORT.json.
 
 ```sh
 python3 scripts/build_paper.py
-```
-
-The bundled exporter is the maintained standard Pandoc/XeLaTeX profile as used
-for the preceding fixed manuscript. `scripts/prepare_layout.py` applies the
-retained manuscript-specific export adjustments: title/contact-footnote
-placement, table widths, paragraph/page breaks and equation line wrapping.
-It checks ordered labels and mathematical fingerprints during those adjustments.
-The original Markdown is not edited. Other exporter profiles are outside this
-package's supported build path.
-
-Generated files and logs are written to `build/paper-v1.0/`; intermediate exporter
-files are retained under `tmp/`. Successful typesetting verifies the export, not
-the mathematical proofs. Byte-identical PDFs across different TeX installations
-are not promised.
-
-## Standalone TeX build
-
-```sh
 python3 scripts/build_paper.py --from-tex
 ```
 
-This runs three XeLaTeX passes without shell escape and writes into the same
-ignored build directory. It does not require Pandoc or external input files.
-For a preprint server, `dist/*-hexagon.zip` contains the standalone manuscript
-TeX and its bibliography; the source ZIP is prepared by the maintainer separately.
+The first command regenerates from Markdown; the second compiles the fixed
+standalone TeX. Both write to `build/paper-v1.1/`. Intermediate files go to
+`tmp/`. No download, mathematical computation or model call is performed.
+PDF bytes and pagination can vary across TeX installations.
 
-## Frozen artifact verification
+For the old frozen TeX, use `python3 scripts/build_paper.py --version 1.0 --from-tex`.
+This uses XeLaTeX. The original full Markdown/layout workflow is preserved at
+the immutable `paper-v1.0` tag.
 
 ```sh
 python3 scripts/verify_release.py
+python3 scripts/verify_v1_1.py
+python3 computations/code/verify_package.py
 shasum -a 256 -c SHA256SUMS
 ```
 
-The verifier checks the publication allowlist and hashes, reverses the exact
-editorial ledger to the v0.2.12 source, and checks the retained AI paragraph,
-source anchors, displayed formulas and dependency data. It does not run
-mathematical computation or claim Lean verification.
+Verification checks file hashes, source preservation, ordered labels, recorded
+executions and the exact supplement package. It does not execute mathematical
+checks or establish the mathematical correctness of all statements. Re-running
+the mathematical checks is a separate, resource-limited Docker operation; see
+`computations/README.md`.
+
+The source archive contains the paper, supplement and build support with their
+respective licenses. The Hexagon archive contains only the standalone paper TeX
+and bibliography. No software files with a different license are placed in that
+paper submission archive.

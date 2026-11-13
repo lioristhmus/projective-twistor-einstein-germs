@@ -1,0 +1,116 @@
+{
+  "job": "s9-two-wave",
+  "status": "PASS",
+  "client_exit_code": 0,
+  "checks": [
+    {
+      "christoffel_components_checked": 64,
+      "classification": "symbolic-exact",
+      "coordinate_order": [
+        "u",
+        "v",
+        "x",
+        "y"
+      ],
+      "determinant": "1",
+      "id": "S9-WAVE-RICCI",
+      "info": "",
+      "record": "check",
+      "relative_hodge_signs": [
+        1,
+        -1
+      ],
+      "ricci": "(t*s/2)*q(x)*f_second(u)*dx^2",
+      "ricci_components_checked": 16,
+      "scalar": "0",
+      "scope": "Exact symbolic identity for arbitrary f(u),q(x) and unrestricted t,s. No contact-cocycle admission or cohomology statement is checked.",
+      "single_wave_curvature_supports": [
+        [
+          "u",
+          "x"
+        ],
+        [
+          "v",
+          "x"
+        ]
+      ],
+      "status": "PASS",
+      "title": "Arbitrary-function two-wave connection, Ricci and relative chirality"
+    },
+    {
+      "classification": "symbolic-exact",
+      "cotton_ts_uxx": "3*x^2/2",
+      "f": "u^3",
+      "id": "S9-MIXED-COTTON",
+      "info": "",
+      "q": "x^2",
+      "record": "check",
+      "ring": "C[t,s]/(t^2,s^2)",
+      "schouten_ts_xx": "3*u*x^2/2",
+      "scope": "All 16 Schouten entries and the specified Cotton component. The geometric quotient-class nonvanishing argument remains theoretical.",
+      "status": "PASS",
+      "title": "Nonzero highest mixed Schouten and Cotton coefficients"
+    },
+    {
+      "H": "3*u^2*v*x^2/2",
+      "classification": "symbolic-exact",
+      "flat_box_H": "6*u*x^2",
+      "flat_divergence": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "flat_trace": "0",
+      "id": "S9-MIXED-REPAIR",
+      "info": "",
+      "linearized_ricci_xx": "-3*u*x^2",
+      "quotient_ricci_components_checked": 16,
+      "quotient_ricci_zero": true,
+      "quotient_ring": "C[t,s]/(t^2,s^2)",
+      "record": "check",
+      "scope": "A highest mixed correction, not an exact unrestricted-parameter vacuum or a fixed-free-record restoration algorithm.",
+      "status": "PASS",
+      "title": "Mixed repair is Ricci-flat in the declared quotient ring",
+      "unrestricted_counterexample": {
+        "Ricci_xx": "3/2",
+        "s": 1,
+        "t": 1,
+        "u": 1,
+        "v": 1,
+        "x": 1,
+        "y": 0
+      },
+      "unrestricted_ricci_xx": "3*t*s^2*v*x^4/2"
+    }
+  ],
+  "worker_summary": {
+    "error": null,
+    "expected_count": 3,
+    "failed": [],
+    "job": "s9-two-wave",
+    "metrics": {
+      "cpu.stat": "usage_usec 1176002\nuser_usec 1088449\nsystem_usec 87553\nnice_usec 0\nnr_periods 12\nnr_throttled 7\nthrottled_usec 39408\nnr_bursts 0\nburst_usec 0",
+      "memory.peak": "69451776",
+      "pids.peak": "7"
+    },
+    "missing": [],
+    "observed_count": 3,
+    "record": "summary",
+    "status": "PASS",
+    "versions": {
+      "machine": "x86_64",
+      "numpy": "2.4.4",
+      "platform": "Linux",
+      "python": "3.12.3",
+      "sage": "10.9",
+      "sympy": "1.14.0"
+    },
+    "worker_seconds": 0.325
+  },
+  "stopped": true,
+  "removed": true,
+  "lock_released": true,
+  "log_sha256": "2e11f76e305109292de439f2d4e0aff31a0148694f9adbc44732b458c211cbbd",
+  "error": null
+}

@@ -1,0 +1,121 @@
+{
+  "job": "adamo",
+  "status": "PASS",
+  "client_exit_code": 0,
+  "checks": [
+    {
+      "classification": "symbolic-exact",
+      "data": {
+        "2.13": {
+          "2.3_scalar_coefficient_only": true,
+          "first_equals_second": true
+        },
+        "2.24": {
+          "half_tetrad_fails_printed_sigma_generically": true,
+          "metric_correction_multiplier": "2*c; c=1/2 matches (2.17)",
+          "sigma_correction_multiplier": "c; printed (2.23) requires c=1",
+          "theta_matches_printed_sigma": true
+        },
+        "3.28": {
+          "consistent_Omega": "(-r)/(12*M)",
+          "consistent_lap_Omega": "24*M/(144*M)",
+          "lap_r_over_24M_with_printed_metric": "(-48*M)/(576*M)",
+          "scalar_of_printed_metric": "(-12*M)/r"
+        },
+        "3.6": {
+          "AB_equals_minus_TX": true,
+          "AB_matrix": "[           (-1/2*zeta8^2)*x + 1/2*y                    (-1/2*zeta8^2)*z]\n[                   (-1/2*zeta8^2)*z (-z^2 + r^2)/((-2*zeta8^2)*x + 2*y)]",
+          "TX_matrix": "[ (1/2*zeta8^2)*x - 1/2*y          (1/2*zeta8^2)*z]\n[         (1/2*zeta8^2)*z (-1/2*zeta8^2)*x - 1/2*y]"
+        }
+      },
+      "id": "AASS-ALGEBRA",
+      "info": "",
+      "record": "check",
+      "scope": "External AASS v2 formulas, not extra claims of the local paper.",
+      "status": "PASS",
+      "title": "Printed external-source algebra under specified conventions"
+    },
+    {
+      "classification": "symbolic-exact",
+      "data": {
+        "ell_equals_minus_k_over_sqrt2": true,
+        "gK_scalar_direct": "(-49152*mm)/(4096*rr)",
+        "gS_Ricci_zero": true
+      },
+      "id": "AASS-PRINTED-CURVATURE",
+      "info": "",
+      "record": "check",
+      "status": "PASS",
+      "title": "Ricci and scalar of the printed external metric"
+    },
+    {
+      "classification": "symbolic-exact",
+      "data": {
+        "G0_equals_minus_r_inv_sq_delta_plus_4mu": true,
+        "G0_lap_r_over_24mu": "96*M/(576*M)",
+        "G0_symmetric": true,
+        "calibrated_EF_pullback": true,
+        "omega0_wedge_matches_components": true,
+        "original_projector_idempotent": true,
+        "projector_trace_two": true
+      },
+      "id": "K5-PROJECTOR",
+      "info": "",
+      "record": "check",
+      "status": "PASS",
+      "title": "Local source projector and symmetric primitive metric"
+    },
+    {
+      "classification": "symbolic-exact",
+      "density": "sqrt(2)/r",
+      "id": "K5-EF",
+      "info": "",
+      "mu_src": "m/2",
+      "pullback": "2*g_m/r^2",
+      "radial_sheet": "varrho=-r",
+      "record": "check",
+      "scope": "Local angular/root chart; no global native gluing tested.",
+      "status": "PASS",
+      "title": "Full EF pullback and calibrated density"
+    },
+    {
+      "classification": "symbolic-exact",
+      "condition": "span=<AB> != 0; ordinary exterior-product convention",
+      "id": "K5-RESIDUE",
+      "info": "",
+      "record": "check",
+      "result": "omega_int=2*omega_0",
+      "status": "PASS",
+      "title": "One positive contour turn with prefactor 1/(2*pi)"
+    }
+  ],
+  "worker_summary": {
+    "error": null,
+    "expected_count": 5,
+    "failed": [],
+    "job": "adamo",
+    "metrics": {
+      "cpu.stat": "usage_usec 4874735\nuser_usec 4648165\nsystem_usec 226569\nnice_usec 0\nnr_periods 49\nnr_throttled 15\nthrottled_usec 53040\nnr_bursts 0\nburst_usec 0",
+      "memory.peak": "270704640",
+      "pids.peak": "7"
+    },
+    "missing": [],
+    "observed_count": 5,
+    "record": "summary",
+    "status": "PASS",
+    "versions": {
+      "machine": "x86_64",
+      "numpy": "2.4.4",
+      "platform": "Linux",
+      "python": "3.12.3",
+      "sage": "10.9",
+      "sympy": "1.14.0"
+    },
+    "worker_seconds": 3.927
+  },
+  "stopped": true,
+  "removed": true,
+  "lock_released": true,
+  "log_sha256": "a5c5d80db92a27a3d08d43627fc1db0ec73a156a7a77d0a9d5027460914246c7",
+  "error": null
+}

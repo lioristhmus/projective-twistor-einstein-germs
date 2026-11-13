@@ -1,0 +1,26 @@
+{
+  "events": [
+    "Preserve v1.0 heading anchor: literal-comparison-with-the-finite-generator",
+    "Preserve v1.0 heading anchor: d.3.-the-global-operator-and-its-actual-transition-frames",
+    "Preserve v1.0 heading anchor: e.2.-whole-short-fibers-and-actual-quotient-overlaps",
+    "Remove duplicate body title and author while retaining anchor",
+    "Retain title author contact marker and plain short author",
+    "Place contact footnote on first page",
+    "Match separate centered Abstract and References headings",
+    "Allow discretionary table-text hyphen",
+    "Allow existing tuple-comma line break",
+    "Permit transport equality line break",
+    "Permit transport equality line break",
+    "Permit transport equality line break",
+    "Retain unnumbered first transport display",
+    "Reflow source-coordinate tuple",
+    "Reflow native-coordinate tuple"
+  ],
+  "math_regions": 5748,
+  "mathematical_fingerprints_preserved": true,
+  "heading_anchor_aliases": {
+    "coefficient-comparison-with-the-finite-generator": "literal-comparison-with-the-finite-generator",
+    "d.3.-the-global-operator-and-its-transition-frames": "d.3.-the-global-operator-and-its-actual-transition-frames",
+    "e.2.-whole-short-fibers-and-quotient-overlaps": "e.2.-whole-short-fibers-and-actual-quotient-overlaps"
+  }
+}

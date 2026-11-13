@@ -1,0 +1,21 @@
+{
+  "image_tag": "sagemath/sagemath:10.9",
+  "image_reference": "sagemath/sagemath@sha256:e068670ae5863b54b2550e72437ec637b0283acb0dc712c8584c124dbf44e667",
+  "local_image_id": "sha256:e068670ae5863b54b2550e72437ec637b0283acb0dc712c8584c124dbf44e667",
+  "image_platform": "linux/amd64",
+  "sage": "10.9",
+  "sympy": "1.14.0",
+  "python": "3.12.3",
+  "network": "none",
+  "memory_bytes": 1999998976,
+  "memory_plus_swap_bytes": 1999998976,
+  "cpus": 1,
+  "pids": 32,
+  "command_term_seconds": 117,
+  "command_kill_grace_seconds": 3,
+  "pid1_term_seconds": 297,
+  "host_job_seconds": 300,
+  "tmpfs_bytes": 268435456,
+  "log_bytes": 1048576,
+  "pull_policy": "never"
+}

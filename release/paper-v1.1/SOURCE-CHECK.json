@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "version": "1.1",
+  "file_sha256": {
+    "manuscript.md": "4656ea43e242db566847247a8a189417760055f0a0dd7f3efa2f71e8f3e4f379",
+    "manuscript.tex": "1e6246a8f73b140ed22305f51f5183bcb5b05c427d3daba6bc5dc6c65a183999",
+    "manuscript.pdf": "9c05180dea784348747c5b2d8593901366f10fcade085e244ec61ae99d0fb4f7",
+    "references.bib": "d78d3aee73dd68cc41a3770bf0041bf60aadf6f774f482ae697dc2300d170dc7"
+  },
+  "mathematical_content_preservation": {
+    "status": "PASS",
+    "ordered_Markdown_math_nodes_unchanged": 5748,
+    "ordered_TeX_labels_unchanged": 875,
+    "original_bibliography_retained_with_one_added_entry": true,
+    "source_changes_reversible": true
+  },
+  "additional_citation_key": "Isthmus2026LocalComputations",
+  "unchanged_supplement_archive_sha256": "780400c2f0c0832090a1c68986608715da8fe2041dcd9caf71147bea67a1a9b5",
+  "AI_use_disclosure_aligned_with_global_paper": true,
+  "supplement_citation_occurrences": 2
+}

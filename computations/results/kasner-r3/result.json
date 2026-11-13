@@ -1,0 +1,112 @@
+{
+  "job": "kasner-r3",
+  "status": "PASS",
+  "client_exit_code": 0,
+  "checks": [
+    {
+      "classification": "finite-exact",
+      "data": {
+        "HQ_route": "geometrically differentiated Q, not polynomial record product rule",
+        "Lambda": 0,
+        "Q0_zero_checked": true,
+        "at_t": 1,
+        "elapsed_seconds": 2.3623873760006973,
+        "field": "Q(i)",
+        "kasner_exponents": [
+          "-2/7",
+          "3/7",
+          "6/7"
+        ],
+        "max_r": 3,
+        "max_rss_kib": 327332,
+        "metric": "dt^2 - sum(t^(2*p_i) dx_i^2)",
+        "orders": [
+          {
+            "chirality": "+",
+            "components": 48,
+            "free_projection_residuals": 0,
+            "r": 1,
+            "recursion_residuals": 0
+          },
+          {
+            "chirality": "-",
+            "components": 48,
+            "free_projection_residuals": 0,
+            "r": 1,
+            "recursion_residuals": 0
+          },
+          {
+            "chirality": "+",
+            "components": 84,
+            "free_projection_residuals": 0,
+            "r": 2,
+            "recursion_residuals": 0
+          },
+          {
+            "chirality": "-",
+            "components": 84,
+            "free_projection_residuals": 0,
+            "r": 2,
+            "recursion_residuals": 0
+          },
+          {
+            "chirality": "+",
+            "components": 128,
+            "free_projection_residuals": 0,
+            "r": 3,
+            "recursion_residuals": 0
+          },
+          {
+            "chirality": "-",
+            "components": 128,
+            "free_projection_residuals": 0,
+            "r": 3,
+            "recursion_residuals": 0
+          }
+        ],
+        "runtime_cgroup_limits": {
+          "cpu.max": "100000 100000",
+          "memory.max": "1999998976",
+          "memory.swap.max": "0",
+          "pids.max": "32"
+        },
+        "scope": "finite exact geometric commutator checks on this Einstein metric, not a polynomial all-input or all-order proof",
+        "status": "PASS"
+      },
+      "id": "KASNER-R3",
+      "info": "",
+      "record": "check",
+      "status": "PASS",
+      "title": "Kasner geometric derivatives versus Spencer recursion"
+    }
+  ],
+  "worker_summary": {
+    "error": null,
+    "expected_count": 1,
+    "failed": [],
+    "job": "kasner-r3",
+    "metrics": {
+      "cpu.stat": "usage_usec 5959569\nuser_usec 5735623\nsystem_usec 223946\nnice_usec 0\nnr_periods 60\nnr_throttled 12\nthrottled_usec 46437\nnr_bursts 0\nburst_usec 0",
+      "memory.peak": "261419008",
+      "pids.peak": "7"
+    },
+    "missing": [],
+    "observed_count": 1,
+    "record": "summary",
+    "status": "PASS",
+    "versions": {
+      "machine": "x86_64",
+      "numpy": "2.4.4",
+      "platform": "Linux",
+      "python": "3.12.3",
+      "sage": "10.9",
+      "sympy": "1.14.0"
+    },
+    "worker_seconds": 5.004
+  },
+  "stopped": true,
+  "removed": true,
+  "lock_released": true,
+  "log_sha256": "86be76e2190452d527b02057bb097cede9e752890b8a578d74d9b793e871f320",
+  "error": null
+}

@@ -1,0 +1,21 @@
+{
+  "reports": {
+    "REVIEW.md": "a96a4eff38de5302875e8ebb6914cff00d1e065bd392cb55d2da475b1f6711be",
+    "CHECK-MAPPING.md": "b53a4224b455b40f991421fd35d0e128d86e953194357cf17ca2e9bed1b7c816",
+    "SUMMARY-JA.md": "bebc059f823f4b427b5f2928692bd3bea1408968a8db1b134014c9a25de58bf7",
+    "EXPECTATIONS-BEFORE-COMPARISON.md": "a8bf114243776512ad4a08e88a868a406e4bb03c713f7878c412955398a0609b"
+  },
+  "final_code_manifest": "bffdabdd009c43a43fb3d3c98e100215251d3085eeef9ee93f46163d2debd6f9",
+  "final_run_manifest": "bb3ee55d715b15342762067308415846578d5aae9a6a5a09c1e4ffce82a15748",
+  "selected_historical_logs": {
+    "independent/prior-audit/t3_algebra_r4.log": "4b23d7768fad77676f53e7318c3985acb0c3575e967e711825fb2b8a48bb77ca",
+    "independent/prior-audit/t3_witness_r3_k4.log": "8e601d156d06923882cb8d904e291f9664c295172f2765ef8f543fdd40c45323"
+  },
+  "independent_library": {
+    "file": "independent/code/t3_recursion.py",
+    "sha256": "a8fa9e73f51dd0a6c3a8eb4944c592b018623c483213de64a48af1ad3222cfa3",
+    "byte_identical_to_claude_final_source": true
+  },
+  "historical_execution_attribution": "The auditor states these two final logs used the final code. Their old logs do not attest every executed-source/input digest. Their numerical scopes are historical audit evidence, not newly source-bound accepted runs. The fresh witness-r2 run separately binds all executed code and inputs.",
+  "historical_negative_controls": "Upstream wrong_convention_mismatches and non-Einstein mismatches are printed observations, not enforced PASS gates. Historical NC1/NC3 compatibility residuals are zero, not expected failures. The new adapter enforces only its listed r<=2 witness controls."
+}

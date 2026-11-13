@@ -96,6 +96,12 @@ local function block_to_latex(block)
   return pandoc.write(pandoc.Pandoc({block}), "latex"):gsub("%s+$", "")
 end
 
+local function is_contents_command(block)
+  return block.t == "RawBlock"
+      and (block.format == "latex" or block.format == "tex")
+      and block.text:match("^%s*\\tableofcontents%s*$") ~= nil
+end
+
 local function has_short_leading_abstract(blocks)
   if #blocks == 0
       or blocks[1].t ~= "Header"
@@ -108,7 +114,7 @@ local function has_short_leading_abstract(blocks)
   for index = 2, #blocks do
     local block = blocks[index]
     if block.t == "HorizontalRule" or block.t == "Header"
-        or is_empty_div(block) then
+        or is_empty_div(block) or is_contents_command(block) then
       break
     end
     text[#text + 1] = pandoc.utils.stringify(block)
@@ -189,7 +195,8 @@ function Pandoc(doc)
     local abstract_blocks = pandoc.Blocks({})
     while #blocks > 0
         and blocks[1].t ~= "HorizontalRule"
-        and blocks[1].t ~= "Header" do
+        and blocks[1].t ~= "Header"
+        and not is_contents_command(blocks[1]) do
       abstract_blocks:insert(table.remove(blocks, 1))
     end
     if #abstract_blocks > 0 then
@@ -199,6 +206,15 @@ function Pandoc(doc)
       table.remove(blocks, 1)
     end
   else
+    -- Long leading abstracts stay in the page-breakable body. Use the same
+    -- unnumbered section heading as References instead of a run-in subsection.
+    if doc.meta.abstract == nil and #blocks > 0
+        and blocks[1].t == "Header" and blocks[1].level == 2
+        and pandoc.utils.stringify(blocks[1]):lower() == "abstract" then
+      blocks[1] = pandoc.Div({
+        pandoc.RawBlock("latex", "\\pandocabstractheading")
+      }, blocks[1].attr)
+    end
     for index = #abstract_anchors, 1, -1 do
       blocks:insert(1, abstract_anchors[index])
       abstract_anchors:remove(index)

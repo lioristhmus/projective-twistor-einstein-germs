@@ -9,6 +9,45 @@
 \usepackage{centernot}
 \usepackage{newunicodechar}
 
+\ifPDFTeX
+  % unicode-math supplies mathscr on Xe/LuaTeX; pdfTeX needs its own font.
+  \usepackage{mathrsfs}
+  % Explicit, meaning-preserving mappings only. Other unsupported input errors
+  % are fatal; never discard characters or guess a different math expression.
+  \newunicodechar{α}{\ensuremath{\alpha}}
+  \newunicodechar{β}{\ensuremath{\beta}}
+  \newunicodechar{γ}{\ensuremath{\gamma}}
+  \newunicodechar{δ}{\ensuremath{\delta}}
+  \newunicodechar{ε}{\ensuremath{\varepsilon}}
+  \newunicodechar{θ}{\ensuremath{\theta}}
+  \newunicodechar{λ}{\ensuremath{\lambda}}
+  \newunicodechar{μ}{\ensuremath{\mu}}
+  \newunicodechar{π}{\ensuremath{\pi}}
+  \newunicodechar{σ}{\ensuremath{\sigma}}
+  \newunicodechar{ω}{\ensuremath{\omega}}
+  \newunicodechar{ℂ}{\ensuremath{\mathbb{C}}}
+  \newunicodechar{ℕ}{\ensuremath{\mathbb{N}}}
+  \newunicodechar{ℚ}{\ensuremath{\mathbb{Q}}}
+  \newunicodechar{ℝ}{\ensuremath{\mathbb{R}}}
+  \newunicodechar{ℤ}{\ensuremath{\mathbb{Z}}}
+  \newunicodechar{∞}{\ensuremath{\infty}}
+  \newunicodechar{∈}{\ensuremath{\in}}
+  \newunicodechar{∅}{\ensuremath{\emptyset}}
+  \newunicodechar{⊂}{\ensuremath{\subset}}
+  \newunicodechar{⊆}{\ensuremath{\subseteq}}
+  \newunicodechar{∩}{\ensuremath{\cap}}
+  \newunicodechar{∪}{\ensuremath{\cup}}
+  \newunicodechar{≤}{\ensuremath{\leq}}
+  \newunicodechar{≥}{\ensuremath{\geq}}
+  \newunicodechar{≠}{\ensuremath{\neq}}
+  \newunicodechar{→}{\ensuremath{\rightarrow}}
+  \newunicodechar{↦}{\ensuremath{\mapsto}}
+  \newunicodechar{⇒}{\ensuremath{\Rightarrow}}
+  \newunicodechar{⇔}{\ensuremath{\Leftrightarrow}}
+  \newunicodechar{−}{\ensuremath{-}}
+\fi
+\newunicodechar{□}{\ensuremath{\square}}
+
 % Portable negated hooked arrow used by several manuscripts.
 \providecommand{\nhookrightarrow}{\centernot\hookrightarrow}
 

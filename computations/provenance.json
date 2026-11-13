@@ -1,0 +1,142 @@
+{
+  "schema": "local-twistor-provenance-v0.2",
+  "scripts": [
+    {
+      "file": "code/kasner_exact.py",
+      "source_sha256": "59e44d925558eaae3925a31bf59e20081f1a243df8107f787a52e031da76812d",
+      "adapted_sha256": "8460d1fef4058a8a195a73acb21970225d6b037773b0fb9e570196352e90798b",
+      "origin": "kasner_exact.py",
+      "adaptation": "Adds explicit Q0=0 and identifies geometric HQ scope.",
+      "previous_candidate_sha256": "59e44d925558eaae3925a31bf59e20081f1a243df8107f787a52e031da76812d"
+    },
+    {
+      "file": "code/schwarzschild_exact.py",
+      "source_sha256": "8b7c27a9a3d583cdedc648e81808191103c3811ed3f1551a90a45bd5803160fa",
+      "adapted_sha256": "dfaacd9abf57e5e24d7e060f21eabbcca4bb6b2607b2f502f2f1b9db7d0c2d76",
+      "origin": "schwarzschild_exact.py",
+      "adaptation": "Geodesic-derived Jacobi amplitude, metric-volume Laplacian and third tractor equation added.",
+      "previous_candidate_sha256": "b62fa230ef0bb35b7399e36796baa038f09926b4cacfbdce56b0c5e1a5383d33"
+    },
+    {
+      "file": "code/adamo_exact.py",
+      "source_sha256": "88202dced5cb3c9d390a849f1c5c98c9571a6283d9ca53d36220c8c177786cb3",
+      "adapted_sha256": "758680cf9d5cc7bc02ddad4e9242cc2e9bf1c16cc5d81ca8ca53125ac6e65893",
+      "origin": "adamo_exact.py",
+      "adaptation": "Actual wedge-to-component bridge, trace P=2, J^2=-I; scalar-only external field renamed.",
+      "previous_candidate_sha256": "88202dced5cb3c9d390a849f1c5c98c9571a6283d9ca53d36220c8c177786cb3"
+    },
+    {
+      "file": "code/b3check.py",
+      "source_sha256": "8449b6b12d0985f6050c57aef6b3a61f7cb192ac7064679eba7a153d1f8b89ab",
+      "adapted_sha256": "c948ca59377d9289326ec74ed11ec36ec9f6e035d7cb816455c4b212ba5e2708",
+      "origin": "b3check.py",
+      "adaptation": "Finite scalar guards before maxima and NumPy exceptional-operation policy; mathematical recurrence unchanged.",
+      "previous_candidate_sha256": "8449b6b12d0985f6050c57aef6b3a61f7cb192ac7064679eba7a153d1f8b89ab"
+    },
+    {
+      "file": "code/bfcheck.py",
+      "source_sha256": "a188ca92cdeb336b6a6d7ed1a6cff033d47915379979b289ec9a51d8895c0499",
+      "adapted_sha256": "65a8f159da0e0a34f8c71e428c00a4e889fdb129dc1b03dce734733b94171e08",
+      "origin": "bfcheck.py",
+      "adaptation": "Finite scalar guards, including denominator before branch; shared helpers retained.",
+      "previous_candidate_sha256": "5dc5024342f2e0fca21eb10b8e102d3909f3eb42d38540fbd4c485abde3bfe22"
+    }
+  ],
+  "controller_origin": {
+    "work": "Global twistor sources, computational supplement",
+    "license": "Apache-2.0",
+    "source_hashes": {
+      "code/run.py": "69a7e849aa6fdfc09915f9ec0133c75fb8b7699b7e3e8a32777013d53244c5d1",
+      "code/worker.py": "1e5aa2bd69552f874f6650982a75ae5d158edb567635d245969eac609c386ebb",
+      "code/report.py": "0484298f5fc05f0abc6841e2718a07e65aac21cfe5789ab644751bde1669ff6a"
+    },
+    "changes": "Local job dispatch, all mathematical source hashes, NumPy version, current Docker-info compatibility and explicit atomic mkdir. Resource/cleanup design retained. Version 0.2 uses explicit per-job dependency lists; all executed source and common input hashes are recorded."
+  },
+  "external_source": {
+    "identifier": "arXiv:2607.06236v2",
+    "tex_sha256": "523f4df2d652e5cc2e84894ff085bb6a6ab40ac53c8c3c606ecfa37f1ff1c796",
+    "redistributed": false
+  },
+  "historical_adamo_variants": {
+    "expanded_root_sha256": "88202dced5cb3c9d390a849f1c5c98c9571a6283d9ca53d36220c8c177786cb3",
+    "shorter_passed_run_2_sha256": "4bb1ab13bade144e9f93374c71df61717d7038ecc6546746f98434236fc88c86",
+    "failed_run_1_sha256": "45ea943e651be76fd2145d383b8e00f7e26d3f6a522c4f5e1566ee4d01f58453",
+    "attribution_limit": "Historical receipts do not contain executed-code digests. The expanded output includes printed_metric_bridge, absent from the shorter output, so those runs can be distinguished structurally, not attested byte-for-byte from the old receipts. Fresh runs hash the distributed code and inputs before execution."
+  },
+  "historical_outputs_reused_as_fresh": false,
+  "previous_candidate": {
+    "version": "0.1.0",
+    "archive_sha256": "52aa667ce66bdc2f31fb94ac22042858ccce0eaa08b3baad655df48647d08062",
+    "unchanged": true
+  },
+  "new_modules": [
+    {
+      "file": "code/ab_exact.py",
+      "sha256": "7a494c7be6ad3fa61a365101c94e37ec1784f2e41db5fdd457eb970811201b95",
+      "purpose": "Finite rational Spencer bases and polynomial product-rule family, with algebraic Weyl admissibility and mixed cubic nonvanishing. Includes signed inverse chiral readout on 320 components."
+    },
+    {
+      "file": "code/two_wave.py",
+      "sha256": "eba18ec31245281aec86f5ea3496eeca2c530880a4c3f7c5b42d6a388cd2e0b0",
+      "purpose": "Metric-derived arbitrary-function Ricci, specialized Cotton and quotient-ring mixed repair."
+    },
+    {
+      "file": "code/schwarzian_exact.py",
+      "sha256": "a0872095e30101bbc272f52aa0f7a4ea1f362360f050425e962731a8e67c42b5",
+      "purpose": "Ordered noncommuting chain rule and conditional Jacobi algebra plus a rational 2x2 example."
+    }
+  ],
+  "preacceptance_attempts": [
+    {
+      "label": "attempt-ab-r1-01",
+      "status": "FAIL",
+      "error": "AssertionError: ",
+      "source_sha256": "9dc52d017fcc49b4fa3976b2dfcbd9cf277c507206733fe58b10527880638ddf",
+      "log_sha256": "b253e74d4f3c9eaa086b01c6af0fa40a394967f843129109b83f71e19acd0425",
+      "reason": "NumPy/Sage scalar coercion introduced float coefficients; explicit QQ elementwise scaling and type checks repaired it.",
+      "source_snapshot_retained_locally": true,
+      "failed_source_snapshot_included": false,
+      "counted_as_accepted_mathematics": false
+    },
+    {
+      "label": "attempt-ab-r1-02",
+      "status": "FAIL",
+      "error": "AssertionError: ('inverse', 1, 1, [(98, '2.7755575615628914e-17'), (120, '-2.7755575615628914e-17'), (169, '-1.3877787807814457e-17'), (180, '-2.7755575615628914e-17'), (196, '5.551115123125783e-17'), (218, '-5.551115123125783e-17'), (256, '5.551115123125783e-17'), (267, '-2.7755575615628914e-17')])",
+      "source_sha256": "812d99fa30d7b3934557601470206053f58ee79f818272d714799a16156d80d8",
+      "log_sha256": "63da383de9c46bf7acd9df2d3ef6e9644bcf3082dce85907a0146fdb2ab27023",
+      "reason": "NumPy/Sage scalar coercion introduced float coefficients; explicit QQ elementwise scaling and type checks repaired it.",
+      "source_snapshot_retained_locally": true,
+      "failed_source_snapshot_included": false,
+      "counted_as_accepted_mathematics": false
+    }
+  ],
+  "candidate_revision": 3,
+  "previous_local_candidate_archive_sha256": "55a16f0e441ab9aad4dffe27f37801fc89ab2d1fb49d95b3923ed80de702d633",
+  "revision3_primary_execution_files_unchanged": true,
+  "independent_witness_source": {
+    "reports": {
+      "REVIEW.md": "a96a4eff38de5302875e8ebb6914cff00d1e065bd392cb55d2da475b1f6711be",
+      "CHECK-MAPPING.md": "b53a4224b455b40f991421fd35d0e128d86e953194357cf17ca2e9bed1b7c816",
+      "SUMMARY-JA.md": "bebc059f823f4b427b5f2928692bd3bea1408968a8db1b134014c9a25de58bf7",
+      "EXPECTATIONS-BEFORE-COMPARISON.md": "a8bf114243776512ad4a08e88a868a406e4bb03c713f7878c412955398a0609b"
+    },
+    "final_code_manifest": "bffdabdd009c43a43fb3d3c98e100215251d3085eeef9ee93f46163d2debd6f9",
+    "final_run_manifest": "bb3ee55d715b15342762067308415846578d5aae9a6a5a09c1e4ffce82a15748",
+    "selected_historical_logs": {
+      "independent/prior-audit/t3_algebra_r4.log": "4b23d7768fad77676f53e7318c3985acb0c3575e967e711825fb2b8a48bb77ca",
+      "independent/prior-audit/t3_witness_r3_k4.log": "8e601d156d06923882cb8d904e291f9664c295172f2765ef8f543fdd40c45323"
+    },
+    "independent_library": {
+      "file": "independent/code/t3_recursion.py",
+      "sha256": "a8fa9e73f51dd0a6c3a8eb4944c592b018623c483213de64a48af1ad3222cfa3",
+      "byte_identical_to_claude_final_source": true
+    },
+    "historical_execution_attribution": "The auditor states these two final logs used the final code. Their old logs do not attest every executed-source/input digest. Their numerical scopes are historical audit evidence, not newly source-bound accepted runs. The fresh witness-r2 run separately binds all executed code and inputs.",
+    "historical_negative_controls": "Upstream wrong_convention_mismatches and non-Einstein mismatches are printed observations, not enforced PASS gates. Historical NC1/NC3 compatibility residuals are zero, not expected failures. The new adapter enforces only its listed r<=2 witness controls."
+  },
+  "new_adapter": {
+    "file": "independent/code/witness_controls.py",
+    "sha256": "59c7a8b14e830cd283cc5205f7a8448e251e2fec08c0d8c1f66fea3acdc8f2b4",
+    "adaptation": "Calls unchanged independent T3 library; enforces previously printed witness convention and non-Einstein distinctions. Primary backend is not called. Fresh source-bound r<=2 execution only."
+  }
+}

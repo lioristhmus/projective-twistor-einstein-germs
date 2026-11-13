@@ -1,0 +1,93 @@
+{
+  "classification": "document-and-package-QA",
+  "status": "PASS",
+  "scope": "File integrity and correspondence of saved executions; no mathematics rerun or proof verification.",
+  "checked_files": 85,
+  "checksums": 84,
+  "local_markdown_links": 128,
+  "execution_record_classifications": {
+    "finite-exact": 8,
+    "symbolic-exact": 14,
+    "numerical-diagnostic": 6
+  },
+  "evidence_role_counts": {
+    "paper-exact-check": 20,
+    "external-exact-comparison": 2,
+    "finite-numerical-residual-or-crosscheck": 4,
+    "numerical-observation-record": 2
+  },
+  "runs": [
+    {
+      "job": "kasner-r1",
+      "status": "PASS",
+      "checks": 1
+    },
+    {
+      "job": "kasner-r3",
+      "status": "PASS",
+      "checks": 1
+    },
+    {
+      "job": "schwarzschild",
+      "status": "PASS",
+      "checks": 3
+    },
+    {
+      "job": "adamo",
+      "status": "PASS",
+      "checks": 5
+    },
+    {
+      "job": "b-low4",
+      "status": "PASS",
+      "checks": 4
+    },
+    {
+      "job": "b-low8",
+      "status": "PASS",
+      "checks": 2
+    },
+    {
+      "job": "ab-r1",
+      "status": "PASS",
+      "checks": 3
+    },
+    {
+      "job": "ab-r4",
+      "status": "PASS",
+      "checks": 3
+    },
+    {
+      "job": "s9-two-wave",
+      "status": "PASS",
+      "checks": 3
+    },
+    {
+      "job": "d2-schwarzian",
+      "status": "PASS",
+      "checks": 3
+    },
+    {
+      "job": "failure-probe",
+      "status": "FAIL",
+      "checks": 1
+    }
+  ],
+  "private_path_session_credential_patterns": "none detected in inspected text files",
+  "manuscript_anchor_count": 41,
+  "primary_registered_records": 28,
+  "independent_evidence": {
+    "groups": 1,
+    "id": "IW-GEOMETRY-CONTROLS-R2",
+    "status": "PASS",
+    "max_r": 2,
+    "witness_metrics": 7,
+    "classification": "finite-exact",
+    "role": "independent-implementation-witness",
+    "negative_controls_enforced_by_adapter": true,
+    "primary_ab_backend_executed": false,
+    "historical_logs_are_fresh_runs": false
+  },
+  "final_secondary_reconciliation_completed": true,
+  "final_code_full_secondary_line_audit_completed": false
+}

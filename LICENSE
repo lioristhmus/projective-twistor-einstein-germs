@@ -9,7 +9,12 @@ This repository uses two licenses, according to file scope:
    See LICENSE-CC-BY-4.0.md.
 
 2. Build and validation code under scripts/ and rendering support under
-   common/styles/ are licensed under the Apache License, Version 2.0.
+   common/styles/, and code under computations/ (including its independent/
+   code) are licensed under the Apache License, Version 2.0.
    See LICENSE-APACHE-2.0.
 
 Standard TeX packages and system dependencies are not redistributed here.
+
+The computational supplement retains its own detailed LICENSES.md and license
+texts under computations/. Recorded scholarly data and documentation are CC BY
+4.0; its code is Apache-2.0. Existing v1.0 release files are unchanged.

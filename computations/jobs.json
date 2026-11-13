@@ -1,0 +1,178 @@
+{
+  "kasner-r1": {
+    "module": "checks",
+    "function": "kasner",
+    "profile": {
+      "max_r": 1
+    },
+    "check_ids": [
+      "KASNER-R1"
+    ],
+    "dependencies": [
+      "checks.py",
+      "kasner_exact.py",
+      "schwarzschild_exact.py",
+      "adamo_exact.py",
+      "b3check.py",
+      "bfcheck.py"
+    ]
+  },
+  "kasner-r3": {
+    "module": "checks",
+    "function": "kasner",
+    "profile": {
+      "max_r": 3
+    },
+    "check_ids": [
+      "KASNER-R3"
+    ],
+    "dependencies": [
+      "checks.py",
+      "kasner_exact.py",
+      "schwarzschild_exact.py",
+      "adamo_exact.py",
+      "b3check.py",
+      "bfcheck.py"
+    ]
+  },
+  "schwarzschild": {
+    "module": "checks",
+    "function": "schwarzschild",
+    "profile": {},
+    "check_ids": [
+      "SCH-RICCI",
+      "SCH-SCREEN",
+      "SCH-CONFORMAL"
+    ],
+    "dependencies": [
+      "checks.py",
+      "kasner_exact.py",
+      "schwarzschild_exact.py",
+      "adamo_exact.py",
+      "b3check.py",
+      "bfcheck.py"
+    ]
+  },
+  "adamo": {
+    "module": "checks",
+    "function": "adamo",
+    "profile": {},
+    "check_ids": [
+      "AASS-ALGEBRA",
+      "AASS-PRINTED-CURVATURE",
+      "K5-PROJECTOR",
+      "K5-EF",
+      "K5-RESIDUE"
+    ],
+    "dependencies": [
+      "checks.py",
+      "kasner_exact.py",
+      "schwarzschild_exact.py",
+      "adamo_exact.py",
+      "b3check.py",
+      "bfcheck.py"
+    ]
+  },
+  "b-low4": {
+    "module": "checks",
+    "function": "diagnostic",
+    "profile": {
+      "max_r": 4,
+      "seed": 1,
+      "chiralities": "++-",
+      "crosscheck": true
+    },
+    "check_ids": [
+      "B-RESIDUAL-R4",
+      "B-VALUES-R4",
+      "B-CROSS-R4",
+      "B-RANDOM-R4"
+    ],
+    "dependencies": [
+      "checks.py",
+      "kasner_exact.py",
+      "schwarzschild_exact.py",
+      "adamo_exact.py",
+      "b3check.py",
+      "bfcheck.py"
+    ]
+  },
+  "b-low8": {
+    "module": "checks",
+    "function": "diagnostic",
+    "profile": {
+      "max_r": 8,
+      "seed": 1,
+      "chiralities": "++-",
+      "crosscheck": false
+    },
+    "check_ids": [
+      "B-RESIDUAL-R8",
+      "B-VALUES-R8"
+    ],
+    "dependencies": [
+      "checks.py",
+      "kasner_exact.py",
+      "schwarzschild_exact.py",
+      "adamo_exact.py",
+      "b3check.py",
+      "bfcheck.py"
+    ]
+  },
+  "ab-r1": {
+    "module": "ab_exact",
+    "function": "run",
+    "profile": {
+      "max_r": 1
+    },
+    "dependencies": [
+      "ab_exact.py"
+    ],
+    "check_ids": [
+      "AB-PROJECTORS-R1",
+      "AB-WEYL-ADMISSIBILITY-R1",
+      "AB-EXACT-SET-R1"
+    ]
+  },
+  "ab-r4": {
+    "module": "ab_exact",
+    "function": "run",
+    "profile": {
+      "max_r": 4
+    },
+    "dependencies": [
+      "ab_exact.py"
+    ],
+    "check_ids": [
+      "AB-PROJECTORS-R4",
+      "AB-WEYL-ADMISSIBILITY",
+      "AB-EXACT-SET-R4"
+    ]
+  },
+  "s9-two-wave": {
+    "module": "two_wave",
+    "function": "run",
+    "profile": {},
+    "dependencies": [
+      "two_wave.py"
+    ],
+    "check_ids": [
+      "S9-WAVE-RICCI",
+      "S9-MIXED-COTTON",
+      "S9-MIXED-REPAIR"
+    ]
+  },
+  "d2-schwarzian": {
+    "module": "schwarzian_exact",
+    "function": "run",
+    "profile": {},
+    "dependencies": [
+      "schwarzian_exact.py"
+    ],
+    "check_ids": [
+      "D2-MATRIX-CHAIN-RULE",
+      "D2-JACOBI-ALGEBRA",
+      "D2-RATIONAL-MATRIX"
+    ]
+  }
+}
