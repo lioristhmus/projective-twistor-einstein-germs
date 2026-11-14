@@ -42,9 +42,19 @@ disclosure edits and restoring the date/version. Equation and theorem numbering 
 - v1.0: [Hexagon](https://hexagonmath.org/2611.00123v1),
   [Zenodo version DOI](https://doi.org/10.5281/zenodo.23975732),
   [GitHub release](https://github.com/lioristhmus/projective-twistor-einstein-germs/releases/tag/paper-v1.0).
-- v1.1: [GitHub release](https://github.com/lioristhmus/projective-twistor-einstein-germs/releases/tag/paper-v1.1),
+- v1.1: [Hexagon 2611.00123v2](https://hexagonmath.org/2611.00123v2),
+  [Zenodo version DOI](https://doi.org/10.5281/zenodo.24197319),
+  [GitHub release](https://github.com/lioristhmus/projective-twistor-einstein-germs/releases/tag/paper-v1.1),
   with PDF, source archives, computational supplement and SHA-256 checksums.
-  The Zenodo and Hexagon records above continue to identify v1.0; their v1.1 updates are pending.
+  Hexagon's v2 is paper v1.1; the version labels belong to different services.
+- [All-version DOI](https://doi.org/10.5281/zenodo.23975731).
+- The work is listed on the author's [ORCID record](https://orcid.org/0009-0004-7908-9876)
+  with the current Hexagon URL. Zenodo also links to that Hexagon version.
+
+Publication links were checked on 14 November 2026. See
+[PUBLICATION.md](PUBLICATION.md) and [PUBLICATION-STATUS.json](PUBLICATION-STATUS.json).
+The default branch carries current publication metadata; frozen tags and
+release assets retain their original bytes, including their checksum files.
 
 ## Build and verify
 
@@ -61,7 +71,7 @@ build pipeline, use the `paper-v1.0` Git tag.
 
 ## Citation and licenses
 
-[CITATION.cff](CITATION.cff) identifies v1.1 and its GitHub release date. No new
-DOI is assigned by this GitHub release. [LICENSE](LICENSE) defines the CC BY 4.0 scholarly
+[CITATION.cff](CITATION.cff) identifies paper v1.1, its version-specific Zenodo
+DOI and its Hexagon record. [LICENSE](LICENSE) defines the CC BY 4.0 scholarly
 material and Apache-2.0 code scopes. No mathematical job or model call is run by
 the release verifiers. Lean formalization is maintained separately.

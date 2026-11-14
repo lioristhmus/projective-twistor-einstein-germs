@@ -1,0 +1,30 @@
+{
+  "paper_version": "1.1",
+  "supplement_version": "0.2.0-r3",
+  "metadata_updated_date": "2026-11-14",
+  "publication_status": "github-zenodo-hexagon-published-orcid-registered",
+  "repository_url": "https://github.com/lioristhmus/projective-twistor-einstein-germs",
+  "tag": "paper-v1.1",
+  "release_url": "https://github.com/lioristhmus/projective-twistor-einstein-germs/releases/tag/paper-v1.1",
+  "zenodo_record_id": 24197319,
+  "zenodo_record_url": "https://zenodo.org/records/24197319",
+  "zenodo_doi": "10.5281/zenodo.24197319",
+  "zenodo_concept_doi": "10.5281/zenodo.23975731",
+  "zenodo_published": true,
+  "zenodo_hexagon_link_added": true,
+  "hexagon_published": true,
+  "hexagon_identifier": "2611.00123v2",
+  "hexagon_url": "https://hexagonmath.org/2611.00123v2",
+  "hexagon_version": 2,
+  "orcid_registered": true,
+  "orcid_url": "https://orcid.org/0009-0004-7908-9876",
+  "frozen_tags_and_release_assets_unchanged": true,
+  "paper_and_computational_files_unchanged": true,
+  "mathematical_jobs_rerun": 0,
+  "previous_version": {
+    "paper_version": "1.0",
+    "tag": "paper-v1.0",
+    "zenodo_doi": "10.5281/zenodo.23975732",
+    "hexagon_url": "https://hexagonmath.org/2611.00123v1"
+  }
+}
